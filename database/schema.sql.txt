@@ -1,3 +1,92 @@
 -- Washington County Federal Fiscal Balance Database
 -- Core Database Schema
 -- Version 0.1
+-- ============================================================
+-- Core Metadata Tables
+-- Washington County Federal Fiscal Balance Database
+-- ============================================================
+
+-- ------------------------------------------------------------
+-- County Registry
+-- ------------------------------------------------------------
+CREATE TABLE county_registry (
+    county_id INTEGER PRIMARY KEY,
+    fips_code CHAR(5) NOT NULL UNIQUE,
+    county_name VARCHAR(100) NOT NULL,
+    state_abbreviation CHAR(2) NOT NULL DEFAULT 'WA',
+    state_name VARCHAR(50) NOT NULL DEFAULT 'Washington',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ------------------------------------------------------------
+-- Source Manifest
+-- ------------------------------------------------------------
+CREATE TABLE source_manifest (
+    source_id INTEGER PRIMARY KEY,
+    source_name VARCHAR(200) NOT NULL,
+    agency VARCHAR(200),
+    description TEXT,
+    source_url TEXT,
+    citation TEXT,
+    update_frequency VARCHAR(50),
+    first_year INTEGER,
+    last_year INTEGER,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ------------------------------------------------------------
+-- Variable Registry
+-- ------------------------------------------------------------
+CREATE TABLE variable_registry (
+    variable_id INTEGER PRIMARY KEY,
+    variable_name VARCHAR(100) NOT NULL UNIQUE,
+    display_name VARCHAR(200),
+    description TEXT,
+    units VARCHAR(50),
+    data_type VARCHAR(50),
+    source_id INTEGER,
+    FOREIGN KEY (source_id)
+        REFERENCES source_manifest(source_id)
+);
+
+-- ------------------------------------------------------------
+-- Dataset Releases
+-- ------------------------------------------------------------
+CREATE TABLE dataset_release (
+    release_id INTEGER PRIMARY KEY,
+    version VARCHAR(25),
+    release_date DATE,
+    notes TEXT
+);
+
+-- ------------------------------------------------------------
+-- ETL Run Log
+-- ------------------------------------------------------------
+CREATE TABLE etl_run_log (
+    run_id INTEGER PRIMARY KEY,
+    process_name VARCHAR(100),
+    start_time TIMESTAMP,
+    end_time TIMESTAMP,
+    status VARCHAR(25),
+    records_processed INTEGER,
+    notes TEXT
+);
+
+-- ------------------------------------------------------------
+-- Observation Registry
+-- ------------------------------------------------------------
+CREATE TABLE observation_registry (
+    observation_id INTEGER PRIMARY KEY,
+    county_id INTEGER,
+    year INTEGER,
+    variable_id INTEGER,
+    source_id INTEGER,
+    quality_flag VARCHAR(20),
+    notes TEXT,
+    FOREIGN KEY (county_id)
+        REFERENCES county_registry(county_id),
+    FOREIGN KEY (variable_id)
+        REFERENCES variable_registry(variable_id),
+    FOREIGN KEY (source_id)
+        REFERENCES source_manifest(source_id)
+);
