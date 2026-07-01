@@ -1,0 +1,3 @@
+-- Washington County Federal Fiscal Balance Database
+-- Core Database Schema
+-- Version 0.1
