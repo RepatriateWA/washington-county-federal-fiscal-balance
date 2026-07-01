@@ -11,13 +11,16 @@
 -- ------------------------------------------------------------
 CREATE TABLE county_registry (
     county_id INTEGER PRIMARY KEY,
-    fips_code CHAR(5) NOT NULL UNIQUE,
+    state_id INTEGER NOT NULL,
+    county_fips CHAR(3) NOT NULL,
     county_name VARCHAR(100) NOT NULL,
-    state_abbreviation CHAR(2) NOT NULL DEFAULT 'WA',
-    state_name VARCHAR(50) NOT NULL DEFAULT 'Washington',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+    full_fips CHAR(5) NOT NULL UNIQUE,
+    county_type VARCHAR(30),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
+    FOREIGN KEY (state_id)
+        REFERENCES state_registry(state_id)
+);
 -- ------------------------------------------------------------
 -- Source Manifest
 -- ------------------------------------------------------------
@@ -89,4 +92,18 @@ CREATE TABLE observation_registry (
         REFERENCES variable_registry(variable_id),
     FOREIGN KEY (source_id)
         REFERENCES source_manifest(source_id)
+);
+
+-- ============================================================
+-- Geographic Reference Tables
+-- ============================================================
+
+CREATE TABLE state_registry (
+    state_id INTEGER PRIMARY KEY,
+    state_fips CHAR(2) NOT NULL UNIQUE,
+    state_abbreviation CHAR(2) NOT NULL UNIQUE,
+    state_name VARCHAR(100) NOT NULL,
+    census_region VARCHAR(50),
+    census_division VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
