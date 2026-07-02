@@ -4,6 +4,9 @@ from pathlib import Path
 import pandas as pd
 
 from etl.db import get_connection
+from etl.logging_config import get_logger
+
+logger = get_logger(__name__)
 
 STATE_ID = 48
 
@@ -185,8 +188,8 @@ def load_irs_soi(tax_year: int, source_file: Path):
     cur.close()
     conn.close()
 
-    print(f"Loaded {rows_loaded} IRS SOI rows for {tax_year}.")
-    print(f"Skipped {skipped_rows} non-data rows.")
+    logger.info("Loaded %s IRS SOI rows for %s.", rows_loaded, tax_year)
+    logger.info("Skipped %s non-data rows.", skipped_rows)
 
 
 def main():
