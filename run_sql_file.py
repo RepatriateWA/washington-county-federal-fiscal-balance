@@ -1,15 +1,29 @@
+import argparse
 from pathlib import Path
-from etl.loaders.load_states import get_connection
 
-sql_file = Path("etl/sql/002_create_irs_schema.sql")
+from etl.db import get_connection
 
-conn = get_connection()
-cur = conn.cursor()
 
-cur.execute(sql_file.read_text())
+def run_sql_file(sql_file: Path):
+    conn = get_connection()
+    cur = conn.cursor()
 
-conn.commit()
-cur.close()
-conn.close()
+    cur.execute(sql_file.read_text())
 
-print(f"Executed {sql_file}")
+    conn.commit()
+    cur.close()
+    conn.close()
+
+    print(f"Executed {sql_file}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Run a SQL file.")
+    parser.add_argument("sql_file", type=Path)
+
+    args = parser.parse_args()
+    run_sql_file(args.sql_file)
+
+
+if __name__ == "__main__":
+    main()
