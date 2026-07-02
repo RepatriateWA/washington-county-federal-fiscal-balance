@@ -160,15 +160,15 @@ def load_irs_soi_2015():
             to_int(row[4]),
             to_int(row[5]),
             to_int(row[16]),  # adjusted_gross_income
-            to_int(row[17]),  # total_income_amount
-            to_int(row[19]),  # salaries_and_wages_amount
-            to_int(row[21]),  # taxable_interest_amount
-            to_int(row[23]),  # ordinary_dividends_amount
-            to_int(row[25]),  # qualified_dividends_amount
-            to_int(row[29]),  # business_net_income_amount
-            to_int(row[31]),  # net_capital_gain_amount
-            to_int(row[35]),  # taxable_pensions_amount
-            to_int(row[40]),  # taxable_social_security_amount
+            to_int(row[18]),  # total_income_amount
+            to_int(row[20]),  # salaries_and_wages_amount
+            to_int(row[22]),  # taxable_interest_amount
+            to_int(row[24]),  # ordinary_dividends_amount
+            to_int(row[26]),  # qualified_dividends_amount
+            to_int(row[30]),  # business_net_income_amount
+            to_int(row[32]),  # net_capital_gain_amount
+            to_int(row[36]),  # taxable_pensions_amount
+            to_int(row[41]),  # taxable_social_security_amount
         ))
 
         rows_loaded += 1
