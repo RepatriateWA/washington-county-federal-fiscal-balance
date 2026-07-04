@@ -49,6 +49,24 @@ def main():
         status = "PASS" if row_count == 360 else "NOT IMPORTED"
         print(f"{year}......................... {status} ({row_count} rows)")
 
+        print("\nIRS State Collections")
+        print("-" * 60)
+
+    for year in [2023, 2024]:
+        row_count = get_scalar(
+            cur,
+            """
+            SELECT COUNT(*)
+            FROM irs.state_collections
+            WHERE fiscal_year = %s;
+            """,
+            (year,),
+        )
+
+        status = "PASS" if row_count == 8 else "NOT IMPORTED"
+
+        print(f"FY{year}....................... {status} ({row_count} rows)")
+    
     print("\nProject Files")
     print("-" * 60)
 
