@@ -10,6 +10,38 @@ logger = get_logger(__name__)
 
 STATE_ID = 48
 
+IRS_LAYOUTS = {
+    "2015_2016": {
+        "adjusted_gross_income": 16,
+        "total_income_amount": 18,
+        "salaries_and_wages_amount": 20,
+        "taxable_interest_amount": 22,
+        "ordinary_dividends_amount": 24,
+        "qualified_dividends_amount": 26,
+        "business_net_income_amount": 30,
+        "net_capital_gain_amount": 32,
+        "taxable_pensions_amount": 36,
+        "taxable_social_security_amount": 41,
+    },
+    "2017_plus": {
+        "adjusted_gross_income": 18,
+        "total_income_amount": 20,
+        "salaries_and_wages_amount": 22,
+        "taxable_interest_amount": 24,
+        "ordinary_dividends_amount": 26,
+        "qualified_dividends_amount": 28,
+        "business_net_income_amount": 32,
+        "net_capital_gain_amount": 34,
+        "taxable_pensions_amount": 38,
+        "taxable_social_security_amount": 43,
+    },
+}
+
+
+def get_layout(tax_year: int):
+    if tax_year <= 2016:
+        return IRS_LAYOUTS["2015_2016"]
+    return IRS_LAYOUTS["2017_plus"]
 
 def to_int(value):
     if pd.isna(value):
@@ -70,6 +102,8 @@ def load_irs_soi(tax_year: int, source_file: Path):
         raise FileNotFoundError(f"Missing source file: {source_file}")
 
     df = pd.read_excel(source_file, sheet_name=0, header=None, skiprows=6)
+
+    layout = get_layout(tax_year)
 
     conn = get_connection()
     cur = conn.cursor()
@@ -165,16 +199,16 @@ def load_irs_soi(tax_year: int, source_file: Path):
             to_int(row[3]),
             to_int(row[4]),
             to_int(row[5]),
-            to_int(row[16]),
-            to_int(row[18]),
-            to_int(row[20]),
-            to_int(row[22]),
-            to_int(row[24]),
-            to_int(row[26]),
-            to_int(row[30]),
-            to_int(row[32]),
-            to_int(row[36]),
-            to_int(row[41]),
+            to_int(row[layout["adjusted_gross_income"]]),
+            to_int(row[layout["total_income_amount"]]),
+            to_int(row[layout["salaries_and_wages_amount"]]),
+            to_int(row[layout["taxable_interest_amount"]]),
+            to_int(row[layout["ordinary_dividends_amount"]]),
+            to_int(row[layout["qualified_dividends_amount"]]),
+            to_int(row[layout["business_net_income_amount"]]),
+            to_int(row[layout["net_capital_gain_amount"]]),
+            to_int(row[layout["taxable_pensions_amount"]]),
+            to_int(row[layout["taxable_social_security_amount"]]),
         ))
 
         rows_loaded += 1
