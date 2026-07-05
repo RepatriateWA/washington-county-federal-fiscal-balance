@@ -22,6 +22,10 @@ IRS_LAYOUTS = {
         "net_capital_gain_amount": 32,
         "taxable_pensions_amount": 36,
         "taxable_social_security_amount": 41,
+        "income_tax_amount": 118,
+        "total_tax_liability_amount": 120,
+        "total_tax_payments_amount": 106,
+        "overpayments_refunded_amount": 128,
     },
     "2017_plus": {
         "adjusted_gross_income": 18,
@@ -34,6 +38,10 @@ IRS_LAYOUTS = {
         "net_capital_gain_amount": 34,
         "taxable_pensions_amount": 38,
         "taxable_social_security_amount": 43,
+        "income_tax_amount": 118,
+        "total_tax_liability_amount": 120,
+        "total_tax_payments_amount": 106,
+        "overpayments_refunded_amount": 128,
     },
 }
 
@@ -182,10 +190,14 @@ def load_irs_soi(tax_year: int, source_file: Path):
                 business_net_income_amount,
                 net_capital_gain_amount,
                 taxable_pensions_amount,
-                taxable_social_security_amount
+                taxable_social_security_amount,
+                income_tax_amount,
+                total_tax_liability_amount,
+                total_tax_payments_amount,
+                overpayments_refunded_amount
             )
             VALUES (
-                %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+                %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
             );
         """, (
             tax_year,
@@ -209,6 +221,10 @@ def load_irs_soi(tax_year: int, source_file: Path):
             to_int(row[layout["net_capital_gain_amount"]]),
             to_int(row[layout["taxable_pensions_amount"]]),
             to_int(row[layout["taxable_social_security_amount"]]),
+            to_int(row[layout["income_tax_amount"]]),
+            to_int(row[layout["total_tax_liability_amount"]]),
+            to_int(row[layout["total_tax_payments_amount"]]),
+            to_int(row[layout["overpayments_refunded_amount"]]),
         ))
 
         rows_loaded += 1
