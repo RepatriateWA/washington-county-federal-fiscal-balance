@@ -18,4 +18,4 @@ for path in FILES:
     df = pd.read_excel(path, sheet_name=0, header=None)
 
     print("\nHeader detail: rows 3-6, columns 80-130")
-    print(df.iloc[3:7, 80:131].to_string())
+    print(df.iloc[3:7, 110:170].to_string())
