@@ -127,7 +127,7 @@ def extract_table5_dataframe(pdf_file: Path) -> pd.DataFrame:
         raise ValueError("Could not locate Table 5 text.")
 
     first_marker = "Table 5. Gross Collections, by Type of Tax and State, Fiscal Year"
-    continued_marker = "Table 5. Gross Collections, by Type of Tax and State, Fiscal Year 2020—Continued"
+    continued_marker = "—Continued"
     footnotes_marker = "Footnotes"
 
     if continued_marker not in text:
