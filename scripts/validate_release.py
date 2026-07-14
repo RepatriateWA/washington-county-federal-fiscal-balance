@@ -2,6 +2,12 @@ from etl.db import get_connection
 
 SOI_YEARS = range(2015, 2023)
 DATABOOK_YEARS = range(2015, 2025)
+SSA_YEARS = [2024]
+EXPECTED_SSA_COUNTIES = 39
+EXPECTED_SSA_BENEFIT_TYPES = 9
+EXPECTED_SSA_ROWS_PER_YEAR = (
+    EXPECTED_SSA_COUNTIES * EXPECTED_SSA_BENEFIT_TYPES
+)
 
 EXPECTED_STATE_COLLECTION_CATEGORIES = 6
 MINIMUM_STATE_COLLECTION_ROWS = 300
@@ -107,7 +113,83 @@ def main():
             EXPECTED_STATE_COLLECTION_CATEGORIES,
         )
 
+        print("\nSSA OASDI County Benefits")
+    print("-" * 80)
+
+    for year in SSA_YEARS:
+        passed &= check(
+            f"{year} SSA benefit rows",
+            scalar(
+                cur,
+                """
+                SELECT COUNT(*)
+                FROM ssa.benefit_payments
+                WHERE report_year = %s
+                  AND agency_code = 'SSA';
+                """,
+                (year,),
+            ),
+            EXPECTED_SSA_ROWS_PER_YEAR,
+        )
+
+        passed &= check(
+            f"{year} SSA counties",
+            scalar(
+                cur,
+                """
+                SELECT COUNT(DISTINCT county_id)
+                FROM ssa.benefit_payments
+                WHERE report_year = %s
+                  AND agency_code = 'SSA';
+                """,
+                (year,),
+            ),
+            EXPECTED_SSA_COUNTIES,
+        )
+
+        passed &= check(
+            f"{year} SSA benefit types",
+            scalar(
+                cur,
+                """
+                SELECT COUNT(DISTINCT ssa_benefit_type_id)
+                FROM ssa.benefit_payments
+                WHERE report_year = %s
+                  AND agency_code = 'SSA';
+                """,
+                (year,),
+            ),
+            EXPECTED_SSA_BENEFIT_TYPES,
+        )
+    
+ 
+    
     print("\nDatabase Integrity")
+
+    passed &= check(
+        "duplicate SSA benefit rows",
+        scalar(
+            cur,
+            """
+            SELECT COUNT(*)
+            FROM (
+                SELECT
+                    report_year,
+                    county_id,
+                    ssa_benefit_type_id,
+                    COUNT(*)
+                FROM ssa.benefit_payments
+                GROUP BY
+                    report_year,
+                    county_id,
+                    ssa_benefit_type_id
+                HAVING COUNT(*) > 1
+            ) duplicates;
+            """,
+        ),
+        0,
+    )
+
     print("-" * 80)
 
     passed &= check(
