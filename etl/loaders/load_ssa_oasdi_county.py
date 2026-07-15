@@ -97,7 +97,8 @@ def get_benefit_type_lookup(cur):
         SELECT
             ssa_benefit_type_id,
             benefit_type_code,
-            benefit_type_name
+            benefit_type_name,
+            federal_program_id
         FROM reference.ssa_benefit_type;
         """
     )
@@ -106,8 +107,14 @@ def get_benefit_type_lookup(cur):
         benefit_type_code: {
             "ssa_benefit_type_id": benefit_type_id,
             "benefit_type_name": benefit_type_name,
+            "federal_program_id": federal_program_id,
         }
-        for benefit_type_id, benefit_type_code, benefit_type_name in cur.fetchall()
+        for (
+            benefit_type_id,
+            benefit_type_code,
+            benefit_type_name,
+            federal_program_id,
+        ) in cur.fetchall()
     }
 
 
@@ -275,6 +282,7 @@ def load_ssa_oasdi_county(report_year, source_file):
                         agency_code,
                         benefit_type,
                         ssa_benefit_type_id,
+                        federal_program_id,
                         beneficiary_count,
                         monthly_benefits_thousands,
                         annual_benefits_thousands,
@@ -283,7 +291,7 @@ def load_ssa_oasdi_county(report_year, source_file):
                     )
                     VALUES (
                         %s, %s, %s, %s, %s, 'SSA',
-                        %s, %s, %s, %s, %s, %s, %s
+                        %s, %s, %s, %s, %s, %s, %s, %s
                     )
                     ON CONFLICT (
                         report_year,
@@ -313,6 +321,7 @@ def load_ssa_oasdi_county(report_year, source_file):
                         county_name,
                         benefit_reference["benefit_type_name"],
                         benefit_reference["ssa_benefit_type_id"],
+                        benefit_reference["federal_program_id"],
                         beneficiary_count,
                         monthly_benefits_thousands,
                         annual_benefits_thousands,
