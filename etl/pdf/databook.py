@@ -25,8 +25,19 @@ TABLE5_SECOND_HALF_KEYS = [
 ]
 
 
+def _normalize_number(value: str) -> str:
+    return (
+        value
+        .replace(",", "")
+        .replace("−", "-")  # Unicode minus sign, U+2212
+        .replace("–", "-")  # En dash, defensive normalization
+        .replace("—", "-")  # Em dash, defensive normalization
+        .strip()
+    )
+
+
 def _to_int(value: str):
-    value = value.replace(",", "").strip()
+    value = _normalize_number(value)
 
     try:
         return int(round(float(value)))
@@ -35,8 +46,12 @@ def _to_int(value: str):
 
 
 def _is_number(token: str) -> bool:
-    token = token.replace(",", "").replace(".", "").replace("-", "")
-    return token.isdigit()
+    token = _normalize_number(token)
+
+    if token.startswith("-"):
+        token = token[1:]
+
+    return token.replace(".", "", 1).isdigit()
 
 
 def find_table_pages(pdf_file: Path, table_number: int) -> List[int]:
