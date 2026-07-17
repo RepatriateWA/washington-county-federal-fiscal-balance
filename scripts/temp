@@ -1,0 +1,11 @@
+python - <<'PY'
+import pandas as pd
+
+df = pd.read_excel(
+    "data/raw/irs_databook/2022/table_5_gross_collections.xlsx",
+    sheet_name=0,
+    header=None
+)
+
+print(df.head(25).to_string(index=False))
+PY
