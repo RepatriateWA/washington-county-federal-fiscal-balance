@@ -1,0 +1,382 @@
+CMS-21 CHIP WORKBOOK INSPECTION
+====================================================================================================
+Workbook: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\chip\cms21\2015\FY 2015 CHIP FMR NET EXPENDITURES.xlsx
+File size: 468,850 bytes
+Modified: 2026-07-20T16:01:22
+Worksheet count: 171
+Requested sheets: 3
+
+
+====================================================================================================
+SHEET: CHIP - Washington
+====================================================================================================
+Total rows: 50
+Total columns: 4
+Nonempty rows: 48
+Nonempty columns: 4
+Used row range: 0 to 49 (zero-based)
+Used column range: 0 to 3 (zero-based)
+
+CELL TYPES
+----------------------------------------------------------------------------------------------------
+blank: 26
+numeric: 123
+text: 51
+
+EXCEL STRUCTURE
+----------------------------------------------------------------------------------------------------
+Merged ranges: 0
+Formula cells: 0
+Hidden rows: []
+Hidden columns: []
+Freeze panes: A8
+
+LIKELY HEADER ROWS
+----------------------------------------------------------------------------------------------------
+Excel row 7 (score=28, keywords=['category', 'computable', 'federal', 'service', 'state', 'state share', 'total']): Service Category | Total Computable | Federal Share | State Share
+Excel row 1 (score=11, keywords=['expenditure', 'expenditures', 'net']): Medicaid Financial Management Report - Net CHIP Expenditures
+Excel row 14 (score=10, keywords=['service']): Nursing Care Services | -289 | -188 | -101
+Excel row 11 (score=7, keywords=[]): Premiums - Over 150%: Cost Sharing Offset | -7121165 | -4630151 | -2491014
+Excel row 20 (score=6, keywords=['service']): Dental Services | 5863730 | 3812633 | 2051097
+
+SEARCH MATCHES
+----------------------------------------------------------------------------------------------------
+Term: Total Computable
+  row=7, column=2, value=Total Computable
+Term: Federal Share
+  row=7, column=3, value=Federal Share
+Term: State Share
+  row=7, column=4, value=State Share
+Term: Net Expenditures
+  No matches.
+
+FIRST 60 ROWS
+----------------------------------------------------------------------------------------------------
+                                                                         0                 1              2            3
+0             Medicaid Financial Management Report - Net CHIP Expenditures               NaN            NaN          NaN
+1                                                                  FY 2015               NaN            NaN          NaN
+2                                                                 National               NaN            NaN          NaN
+3                                                               Washington               NaN            NaN          NaN
+4                                                                      NaN               NaN            NaN          NaN
+5                                                                 FMR CHIP               NaN            NaN          NaN
+6                                                         Service Category  Total Computable  Federal Share  State Share
+7                               Premiums - Up To 150%: Gross Premiums Paid                 0              0            0
+8                               Premiums - Up To 150%: Cost Sharing Offset                 0              0            0
+9                                Premiums - Over 150%: Gross Premiums Paid          32859046       21365054     11493992
+10                               Premiums - Over 150%: Cost Sharing Offset          -7121165       -4630151     -2491014
+11                                                      Inpatient Hospital           3431744        2231354      1200390
+12                                                 Inpatient Mental Health                 0              0            0
+13                                                   Nursing Care Services              -289           -188         -101
+14                                                      Physician/Surgical           3968000        2580078      1387922
+15                                                    Outpatient Hospital            5436117        3534678      1901439
+16                                                Outpatient Mental Health           4523429        2941134      1582295
+17                                                        Prescribed Drugs           1680618        1092809       587809
+18                                                             Drug Rebate                 0              0            0
+19                                                         Dental Services           5863730        3812633      2051097
+20                                                         Vision Services            286775         186461       100314
+21                                                     Other Practitioners            441251         286903       154348
+22                                                         Clinic Services           7275357        4730259      2545098
+23                                                        Therapy Services                 0              0            0
+24                                                 Laboratory/Radiological           1732866        1126719       606147
+25                                                       Medical Equipment            323739         210497       113242
+26                                                         Family Planning             74221          48260        25961
+27                                                               Abortions                 0              0            0
+28                                                      Screening Services            190774         124042        66732
+29                                                             Home Health                 0              0            0
+30                                             Health Services Initiatives                 0              0            0
+31                                                      Home and Community            145217          94420        50797
+32                                                                 Hospice            220700         143501        77199
+33                                                  Medical Transportation            240763         156548        84215
+34                                                         Case Management           -165786        -107755       -58031
+35                                          Translation and Interpretation            770765         578073       192692
+36                                                          Other Services          23466758       15258101      8208657
+37                                                                Outreach                 0              0            0
+38                            Increased Outreach and Enrollment of Indians                 0              0            0
+39  Increase Outreach and Enrollment of children through premium subsidies                 0              0            0
+40                                                          Administration           3900901        2536366      1364535
+41                                                     PERM Administration                 0              0            0
+42                              Citizenship Verification Technology CHIPRA                 0              0            0
+43                                                         CVT Development                 0              0            0
+44                                                           CVT Operation                 0              0            0
+45                                                                 Balance          89545531       58299796     31245735
+46                                                        Less: Collection             -8062          -5240        -2822
+47                                                                   Total          89537469       58294556     31242913
+48                                                                     NaN               NaN            NaN          NaN
+49                         Created On: Thursday, December 8, 2016 10:19 AM               NaN            NaN          NaN
+
+LAST 20 ROWS
+----------------------------------------------------------------------------------------------------
+                                                                         0         1         2         3
+30                                             Health Services Initiatives         0         0         0
+31                                                      Home and Community    145217     94420     50797
+32                                                                 Hospice    220700    143501     77199
+33                                                  Medical Transportation    240763    156548     84215
+34                                                         Case Management   -165786   -107755    -58031
+35                                          Translation and Interpretation    770765    578073    192692
+36                                                          Other Services  23466758  15258101   8208657
+37                                                                Outreach         0         0         0
+38                            Increased Outreach and Enrollment of Indians         0         0         0
+39  Increase Outreach and Enrollment of children through premium subsidies         0         0         0
+40                                                          Administration   3900901   2536366   1364535
+41                                                     PERM Administration         0         0         0
+42                              Citizenship Verification Technology CHIPRA         0         0         0
+43                                                         CVT Development         0         0         0
+44                                                           CVT Operation         0         0         0
+45                                                                 Balance  89545531  58299796  31245735
+46                                                        Less: Collection     -8062     -5240     -2822
+47                                                                   Total  89537469  58294556  31242913
+48                                                                     NaN       NaN       NaN       NaN
+49                         Created On: Thursday, December 8, 2016 10:19 AM       NaN       NaN       NaN
+
+
+====================================================================================================
+SHEET: MCHIP - Washington
+====================================================================================================
+Total rows: 49
+Total columns: 4
+Nonempty rows: 47
+Nonempty columns: 4
+Used row range: 0 to 48 (zero-based)
+Used column range: 0 to 3 (zero-based)
+
+CELL TYPES
+----------------------------------------------------------------------------------------------------
+blank: 26
+numeric: 120
+text: 50
+
+EXCEL STRUCTURE
+----------------------------------------------------------------------------------------------------
+Merged ranges: 0
+Formula cells: 0
+Hidden rows: []
+Hidden columns: []
+Freeze panes: A8
+
+LIKELY HEADER ROWS
+----------------------------------------------------------------------------------------------------
+Excel row 7 (score=28, keywords=['category', 'computable', 'federal', 'service', 'state', 'state share', 'total']): Service Category | Total Computable | Federal Share | State Share
+Excel row 1 (score=11, keywords=['expenditure', 'expenditures', 'net']): Medicaid Financial Management Report - Net CHIP Expenditures
+Excel row 21 (score=7, keywords=[]): C-Drug Rebate - National | -90694 | -58969 | -31725
+Excel row 12 (score=6, keywords=['service']): C-Inpatient Hospital Services - Reg. Payments | 352381 | 229089 | 123292
+Excel row 13 (score=6, keywords=['service']): C-Inpatient Hospital Services - DSH | 0 | 0 | 0
+
+SEARCH MATCHES
+----------------------------------------------------------------------------------------------------
+Term: Total Computable
+  row=7, column=2, value=Total Computable
+Term: Federal Share
+  row=7, column=3, value=Federal Share
+Term: State Share
+  row=7, column=4, value=State Share
+Term: Net Expenditures
+  No matches.
+
+FIRST 60 ROWS
+----------------------------------------------------------------------------------------------------
+                                                                 0                 1              2            3
+0     Medicaid Financial Management Report - Net CHIP Expenditures               NaN            NaN          NaN
+1                                                          FY 2015               NaN            NaN          NaN
+2                                                         National               NaN            NaN          NaN
+3                                                       Washington               NaN            NaN          NaN
+4                                                              NaN               NaN            NaN          NaN
+5                                                       FMR M-CHIP               NaN            NaN          NaN
+6                                                 Service Category  Total Computable  Federal Share  State Share
+7                     C-Premiums: Up To 150% - Gross Premiums Paid          19188413       12475673      6712740
+8                     C-Premiums: Up To 150% - Cost Sharing Offset                 0              0            0
+9                      C-Premiums: Over 150% - Gross Premiums Paid                 0              0            0
+10                     C-Premiums: Over 150% - Cost Sharing Offset                 0              0            0
+11                   C-Inpatient Hospital Services - Reg. Payments            352381         229089       123292
+12                             C-Inpatient Hospital Services - DSH                 0              0            0
+13                        C-Inpatient Mental Health - Reg. Payment            475725         309316       166409
+14                                 C-Inpatient Mental Health - DSH                 0              0            0
+15                                         C-Nursing Care Services                 0              0            0
+16                                            C-Physician/Surgical            467283         303789       163494
+17                                  C-Outpatient Hospital Services            331637         215600       116037
+18                                      C-Outpatient Mental Health                 0              0            0
+19                                              C-Prescribed Drugs            219161         142494        76667
+20                                        C-Drug Rebate - National            -90694         -58969       -31725
+21                                           C-Drug Rebate - State                 0              0            0
+22                                                C-MCO - National                 0              0            0
+23                                 C-MCO - State Sidebar Agreement                 0              0            0
+24                        C-Increased ACA OFFSET - Fee for Service                 0              0            0
+25                             C-Increased ACA OFFSET - MCO - 100%                 0              0            0
+26                                               C-Dental Services           2267073        1473933       793140
+27                                                C-Vision Sevices             54882          35682        19200
+28                                           C-Other Practitioners             12414           8070         4344
+29                                               C-Clinic Services            126471          82209        44262
+30                                              C-Therapy Services                 0              0            0
+31                              C-Laboratory/Radiological Services            157493         102388        55105
+32                                             C-Medical Equipment             -1075           -698         -377
+33                                               C-Family Planning                 0              0            0
+34                                                     C-Abortions                 0              0            0
+35                                            C-Screening Services             48301          31402        16899
+36                                                   C-Home Health            -46133         -29986       -16147
+37                                             C-Medicare Payments                 0              0            0
+38                                            C-Home And Community             25570          16623         8947
+39  C-Home and Community-Based Services - Regular Payment (WAIVER)                 0              0            0
+40                                                       C-Hospice                 0              0            0
+41                                             C-Medical Transport                 0              0            0
+42                                               C-Case Management               101             66           35
+43                                                C-Other Services           4727841        3073571      1654270
+44                                                       C-Balance          28316844       18410252      9906592
+45                                                   C-Collections                 0              0            0
+46                                                     C-Total Net          28316844       18410252      9906592
+47                                                             NaN               NaN            NaN          NaN
+48                 Created On: Thursday, December 8, 2016 10:19 AM               NaN            NaN          NaN
+
+LAST 20 ROWS
+----------------------------------------------------------------------------------------------------
+                                                                 0         1         2        3
+29                                               C-Clinic Services    126471     82209    44262
+30                                              C-Therapy Services         0         0        0
+31                              C-Laboratory/Radiological Services    157493    102388    55105
+32                                             C-Medical Equipment     -1075      -698     -377
+33                                               C-Family Planning         0         0        0
+34                                                     C-Abortions         0         0        0
+35                                            C-Screening Services     48301     31402    16899
+36                                                   C-Home Health    -46133    -29986   -16147
+37                                             C-Medicare Payments         0         0        0
+38                                            C-Home And Community     25570     16623     8947
+39  C-Home and Community-Based Services - Regular Payment (WAIVER)         0         0        0
+40                                                       C-Hospice         0         0        0
+41                                             C-Medical Transport         0         0        0
+42                                               C-Case Management       101        66       35
+43                                                C-Other Services   4727841   3073571  1654270
+44                                                       C-Balance  28316844  18410252  9906592
+45                                                   C-Collections         0         0        0
+46                                                     C-Total Net  28316844  18410252  9906592
+47                                                             NaN       NaN       NaN      NaN
+48                 Created On: Thursday, December 8, 2016 10:19 AM       NaN       NaN      NaN
+
+
+====================================================================================================
+SHEET: MCHIP 20% - Washington
+====================================================================================================
+Total rows: 97
+Total columns: 4
+Nonempty rows: 95
+Nonempty columns: 4
+Used row range: 0 to 96 (zero-based)
+Used column range: 0 to 3 (zero-based)
+
+CELL TYPES
+----------------------------------------------------------------------------------------------------
+blank: 26
+numeric: 264
+text: 98
+
+EXCEL STRUCTURE
+----------------------------------------------------------------------------------------------------
+Merged ranges: 0
+Formula cells: 0
+Hidden rows: []
+Hidden columns: []
+Freeze panes: A8
+
+LIKELY HEADER ROWS
+----------------------------------------------------------------------------------------------------
+Excel row 7 (score=28, keywords=['category', 'computable', 'federal', 'service', 'state', 'state share', 'total']): Service Category | Total Computable | Federal Share | State Share
+Excel row 1 (score=11, keywords=['expenditure', 'expenditures', 'net']): Medicaid Financial Management Report - Net CHIP Expenditures
+Excel row 19 (score=7, keywords=['service']): T-Physician & Surgical Services - Reg. Payments | 0 | 940935 | -940935
+Excel row 23 (score=7, keywords=['service']): T-Outpatient Hospital Services - Reg. Payments | 0 | 543725 | -543725
+Excel row 27 (score=7, keywords=['state']): T-Drug Rebate Offset - State Sidebar Agreement | 0 | -2229 | 2229
+
+SEARCH MATCHES
+----------------------------------------------------------------------------------------------------
+Term: Total Computable
+  row=7, column=2, value=Total Computable
+Term: Federal Share
+  row=7, column=3, value=Federal Share
+Term: State Share
+  row=7, column=4, value=State Share
+Term: Net Expenditures
+  row=95, column=1, value=T-Total Net Expenditures
+
+FIRST 60 ROWS
+----------------------------------------------------------------------------------------------------
+                                                                                                             0                 1              2            3
+0                                                 Medicaid Financial Management Report - Net CHIP Expenditures               NaN            NaN          NaN
+1                                                                                                      FY 2015               NaN            NaN          NaN
+2                                                                                                     National               NaN            NaN          NaN
+3                                                                                                   Washington               NaN            NaN          NaN
+4                                                                                                          NaN               NaN            NaN          NaN
+5                                                                                               FMR M-CHIP 20%               NaN            NaN          NaN
+6                                                                                             Service Category  Total Computable  Federal Share  State Share
+7                                                                         T-Inpatient Hospital - Reg. Payments                 0         852384      -852384
+8                                                                                   T-Inpatient Hospital - DSH                 0              0            0
+9                                                                         T-Inpatient Hospital - Sup. Payments                 0              0            0
+10                                                                         T-Inpatient Hospital - GME Payments                 0              0            0
+11                                                           T-Mental Health Facility Services - Reg. Payments                 0              0            0
+12                                                                              T-Mental Health Facility - DSH                 0              0            0
+13                                                                 T-Nursing Facility Services - Reg. Payments                 0              0            0
+14                                                                 T-Nursing Facility Services - Sup. Payments                 0              0            0
+15                                                                       T-Intermediate Care Facility - Public                 0              0            0
+16                                                                               T-Intermediate Care - Private                 0              0            0
+17  T-Intermediate Care Facility - Individuals with Intellectual Disabilities (ICF/IID): Supplemental Payments                 0              0            0
+18                                                             T-Physician & Surgical Services - Reg. Payments                 0         940935      -940935
+19                                                             T-Physician & Surgical Services - Sup. Payments                 0              0            0
+20                                                 T-Physician & Surgical Services - Evaluation and Management                 0              0            0
+21                                                             T-Physician & Surgical Services - Vaccine codes                 0              0            0
+22                                                              T-Outpatient Hospital Services - Reg. Payments                 0         543725      -543725
+23                                                              T-Outpatient Hospital Services - Sup. Payments                 0              0            0
+24                                                                                          T-Prescribed Drugs                 0         920881      -920881
+25                                                                             T-Drug Rebate Offset - National                 0        -207171       207171
+26                                                              T-Drug Rebate Offset - State Sidebar Agreement                 0          -2229         2229
+27                                                                                  T-MCO - National Agreement                 0        -718635       718635
+28                                                                             T-MCO - State Sidebar Agreement                 0              0            0
+29                                                                    T-Increased ACA OFFSET - Fee for Service                 0              0            0
+30                                                                                T-Increased ACA OFFSET - MCO                 0              0            0
+31                                                                                           T-Dental Services                 0        6714258     -6714258
+32                                                              T-Other Practitioners Services - Reg. Payments                 0         291906      -291906
+33                                                              T-Other Practitioners Services - Sup. Payments                 0              0            0
+34                                                                                           T-Clinic Services                 0          99876       -99876
+35                                                                                   T-Laboratory/Radiological                 0          16629       -16629
+36                                                                                      T-Home Health Services                 0         222487      -222487
+37                                                                                            T-Sterilizations                 0              0            0
+38                                                                                                 T-Abortions                 0              0            0
+39                                                                                           T-EPSDT Screening                 0         112472      -112472
+40                                                                                              T-Rural Health                 0         866201      -866201
+41                                                                                         T-Medicare - Part A                 0              0            0
+42                                                                                         T-Medicare - Part B                 0              0            0
+43                                                                                    T-120% - 134% Of Poverty                 0              0            0
+44                                                                                               T-Coinsurance                 0              0            0
+45                                                                                            T-Medicaid - MCO                 0       30247540    -30247540
+46                                                                  T-Medicaid MCO - Evaluation and Management                 0              0            0
+47                                                                              T-Medicaid MCO - Vaccine codes                 0              0            0
+48                                                                     T-Medicaid MCO - Community First Choice                 0              0            0
+49                            T-Medicaid MCO - Preventive Services Grade A OR B, ACIP Vaccines and their Admin                 0              0            0
+50                                                                            T-Prepaid Ambulatory Health Plan                 0              0            0
+51                                                                      T-MCO PAHP - Evaluation and Management                 0              0            0
+52                                                                                  T-MCO PAHP - Vaccine codes                 0              0            0
+53                                                                         T-MCO PAHP - Community First Choice                 0              0            0
+54                                T-MCO PAHP - Preventive Services Grade A OR B, ACIP Vaccines and their Admin                 0              0            0
+55                                                                             T-Prepaid Inpatient Health Plan                 0        2489886     -2489886
+56                                                                      T-MCO PIHP - Evaluation and Management                 0              0            0
+57                                                                                  T-MCO PIHP - Vaccine codes                 0              0            0
+58                                                                         T-MCO PIHP - Community First Choice                 0              0            0
+59                                T-MCO PIHP - Preventive Services Grade A OR B, ACIP Vaccines and their Admin                 0              0            0
+
+LAST 20 ROWS
+----------------------------------------------------------------------------------------------------
+                                                                    0    1         2          3
+77                                                 T-Physical Therapy    0         0          0
+78                                             T-Occupational Therapy    0         0          0
+79                          T-Services for Speech, Hearing & Language    0         0          0
+80                         T-Prosthetic Devices, Dentures, Eyeglasses    0         0          0
+81                       T-Diagnostic Screening & Preventive Services    0         0          0
+82  T-Preventive Services Grade A OR B, ACIP Vaccines and their Admin    0         0          0
+83                                                   T-Nurse Mid-Wife    0         0          0
+84                                      T-Emergency Hospital Services    0         0          0
+85                                        T-Critical Access Hospitals    0         0          0
+86                                      T-Nurse Practitioner Services    0         0          0
+87                                            T-School Based Services    0    283321    -283321
+88                       T-Rehabilitative Services (non-school-based)    0         0          0
+89                                             T-Private Duty Nursing    0         0          0
+90                                        T-Freestanding Birth Center    0         0          0
+91                                 T-Health Home w Chronic Conditions    0         0          0
+92                                 T-Tobacco Cessation for Preg Women    0         0          0
+93                                              T-Other Care Services    0    565539    -565539
+94                                           T-Total Net Expenditures    0  48597111  -48597111
+95                                                                NaN  NaN       NaN        NaN
+96                    Created On: Thursday, December 8, 2016 10:19 AM  NaN       NaN        NaN
