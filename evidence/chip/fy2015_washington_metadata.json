@@ -1,0 +1,615 @@
+{
+  "workbook": {
+    "workbook_path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\chip\\cms21\\2015\\FY 2015 CHIP FMR NET EXPENDITURES.xlsx",
+    "filename": "FY 2015 CHIP FMR NET EXPENDITURES.xlsx",
+    "extension": ".xlsx",
+    "file_size_bytes": 468850,
+    "modified_at": "2026-07-20T16:01:22",
+    "worksheet_count": 171,
+    "worksheet_names": [
+      "MCHIP - Alabama",
+      "MCHIP - Alaska",
+      "MCHIP - Amer. Samoa",
+      "MCHIP - Arizona",
+      "MCHIP - Arkansas",
+      "MCHIP - California",
+      "MCHIP - Colorado",
+      "MCHIP - Connecticut",
+      "MCHIP - Delaware",
+      "MCHIP - Dist. Of Col.",
+      "MCHIP - Florida",
+      "MCHIP - Georgia",
+      "MCHIP - Guam",
+      "MCHIP - Hawaii",
+      "MCHIP - Idaho",
+      "MCHIP - Illinois",
+      "MCHIP - Indiana",
+      "MCHIP - Iowa",
+      "MCHIP - Kansas",
+      "MCHIP - Kentucky",
+      "MCHIP - Louisiana",
+      "MCHIP - Maine",
+      "MCHIP - Maryland",
+      "MCHIP - Massachusetts",
+      "MCHIP - Michigan",
+      "MCHIP - Minnesota",
+      "MCHIP - Mississippi",
+      "MCHIP - Missouri",
+      "MCHIP - Montana",
+      "MCHIP - N. Mariana Islands",
+      "MCHIP - Nebraska",
+      "MCHIP - Nevada",
+      "MCHIP - New Hampshire",
+      "MCHIP - New Jersey",
+      "MCHIP - New Mexico",
+      "MCHIP - New York",
+      "MCHIP - North Carolina",
+      "MCHIP - North Dakota",
+      "MCHIP - Ohio",
+      "MCHIP - Oklahoma",
+      "MCHIP - Oregon",
+      "MCHIP - Pennsylvania",
+      "MCHIP - Puerto Rico",
+      "MCHIP - Rhode Island",
+      "MCHIP - South Carolina",
+      "MCHIP - South Dakota",
+      "MCHIP - Tennessee",
+      "MCHIP - Texas",
+      "MCHIP - Utah",
+      "MCHIP - Vermont",
+      "MCHIP - Virgin Islands",
+      "MCHIP - Virginia",
+      "MCHIP - Washington",
+      "MCHIP - West Virginia",
+      "MCHIP - Wisconsin",
+      "MCHIP - Wyoming",
+      "MCHIP - National Totals",
+      "MCHIP 20% - Alabama",
+      "MCHIP 20% - Alaska",
+      "MCHIP 20% - Amer. Samoa",
+      "MCHIP 20% - Arizona",
+      "MCHIP 20% - Arkansas",
+      "MCHIP 20% - California",
+      "MCHIP 20% - Colorado",
+      "MCHIP 20% - Connecticut",
+      "MCHIP 20% - Delaware",
+      "MCHIP 20% - Dist. Of Col.",
+      "MCHIP 20% - Florida",
+      "MCHIP 20% - Georgia",
+      "MCHIP 20% - Guam",
+      "MCHIP 20% - Hawaii",
+      "MCHIP 20% - Idaho",
+      "MCHIP 20% - Illinois",
+      "MCHIP 20% - Indiana",
+      "MCHIP 20% - Iowa",
+      "MCHIP 20% - Kansas",
+      "MCHIP 20% - Kentucky",
+      "MCHIP 20% - Louisiana",
+      "MCHIP 20% - Maine",
+      "MCHIP 20% - Maryland",
+      "MCHIP 20% - Massachusetts",
+      "MCHIP 20% - Michigan",
+      "MCHIP 20% - Minnesota",
+      "MCHIP 20% - Mississippi",
+      "MCHIP 20% - Missouri",
+      "MCHIP 20% - Montana",
+      "MCHIP 20% - N. Mariana Islands",
+      "MCHIP 20% - Nebraska",
+      "MCHIP 20% - Nevada",
+      "MCHIP 20% - New Hampshire",
+      "MCHIP 20% - New Jersey",
+      "MCHIP 20% - New Mexico",
+      "MCHIP 20% - New York",
+      "MCHIP 20% - North Carolina",
+      "MCHIP 20% - North Dakota",
+      "MCHIP 20% - Ohio",
+      "MCHIP 20% - Oklahoma",
+      "MCHIP 20% - Oregon",
+      "MCHIP 20% - Pennsylvania",
+      "MCHIP 20% - Puerto Rico",
+      "MCHIP 20% - Rhode Island",
+      "MCHIP 20% - South Carolina",
+      "MCHIP 20% - South Dakota",
+      "MCHIP 20% - Tennessee",
+      "MCHIP 20% - Texas",
+      "MCHIP 20% - Utah",
+      "MCHIP 20% - Vermont",
+      "MCHIP 20% - Virgin Islands",
+      "MCHIP 20% - Virginia",
+      "MCHIP 20% - Washington",
+      "MCHIP 20% - West Virginia",
+      "MCHIP 20% - Wisconsin",
+      "MCHIP 20% - Wyoming",
+      "MCHIP 20% - National Totals",
+      "CHIP - Alabama",
+      "CHIP - Alaska",
+      "CHIP - Amer. Samoa",
+      "CHIP - Arizona",
+      "CHIP - Arkansas",
+      "CHIP - California",
+      "CHIP - Colorado",
+      "CHIP - Connecticut",
+      "CHIP - Delaware",
+      "CHIP - Dist. Of Col.",
+      "CHIP - Florida",
+      "CHIP - Georgia",
+      "CHIP - Guam",
+      "CHIP - Hawaii",
+      "CHIP - Idaho",
+      "CHIP - Illinois",
+      "CHIP - Indiana",
+      "CHIP - Iowa",
+      "CHIP - Kansas",
+      "CHIP - Kentucky",
+      "CHIP - Louisiana",
+      "CHIP - Maine",
+      "CHIP - Maryland",
+      "CHIP - Massachusetts",
+      "CHIP - Michigan",
+      "CHIP - Minnesota",
+      "CHIP - Mississippi",
+      "CHIP - Missouri",
+      "CHIP - Montana",
+      "CHIP - N. Mariana Islands",
+      "CHIP - Nebraska",
+      "CHIP - Nevada",
+      "CHIP - New Hampshire",
+      "CHIP - New Jersey",
+      "CHIP - New Mexico",
+      "CHIP - New York",
+      "CHIP - North Carolina",
+      "CHIP - North Dakota",
+      "CHIP - Ohio",
+      "CHIP - Oklahoma",
+      "CHIP - Oregon",
+      "CHIP - Pennsylvania",
+      "CHIP - Puerto Rico",
+      "CHIP - Rhode Island",
+      "CHIP - South Carolina",
+      "CHIP - South Dakota",
+      "CHIP - Tennessee",
+      "CHIP - Texas",
+      "CHIP - Utah",
+      "CHIP - Vermont",
+      "CHIP - Virgin Islands",
+      "CHIP - Virginia",
+      "CHIP - Washington",
+      "CHIP - West Virginia",
+      "CHIP - Wisconsin",
+      "CHIP - Wyoming",
+      "CHIP - National Totals"
+    ]
+  },
+  "inspected_sheets": [
+    {
+      "sheet_name": "CHIP - Washington",
+      "shape": {
+        "rows": 50,
+        "columns": 4,
+        "nonempty_rows": 48,
+        "nonempty_columns": 4
+      },
+      "used_bounds": {
+        "first_nonempty_row_zero_based": 0,
+        "last_nonempty_row_zero_based": 49,
+        "first_nonempty_column_zero_based": 0,
+        "last_nonempty_column_zero_based": 3
+      },
+      "cell_types": {
+        "blank": 26,
+        "numeric": 123,
+        "text": 51
+      },
+      "likely_header_rows": [
+        {
+          "row_zero_based": 6,
+          "excel_row": 7,
+          "score": 28,
+          "keyword_hits": [
+            "category",
+            "computable",
+            "federal",
+            "service",
+            "state",
+            "state share",
+            "total"
+          ],
+          "values": [
+            "Service Category",
+            "Total Computable",
+            "Federal Share",
+            "State Share"
+          ]
+        },
+        {
+          "row_zero_based": 0,
+          "excel_row": 1,
+          "score": 11,
+          "keyword_hits": [
+            "expenditure",
+            "expenditures",
+            "net"
+          ],
+          "values": [
+            "Medicaid Financial Management Report - Net CHIP Expenditures",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "row_zero_based": 13,
+          "excel_row": 14,
+          "score": 10,
+          "keyword_hits": [
+            "service"
+          ],
+          "values": [
+            "Nursing Care Services",
+            -289,
+            -188,
+            -101
+          ]
+        },
+        {
+          "row_zero_based": 10,
+          "excel_row": 11,
+          "score": 7,
+          "keyword_hits": [],
+          "values": [
+            "Premiums - Over 150%: Cost Sharing Offset",
+            -7121165,
+            -4630151,
+            -2491014
+          ]
+        },
+        {
+          "row_zero_based": 19,
+          "excel_row": 20,
+          "score": 6,
+          "keyword_hits": [
+            "service"
+          ],
+          "values": [
+            "Dental Services",
+            5863730,
+            3812633,
+            2051097
+          ]
+        }
+      ],
+      "search_matches": {
+        "Total Computable": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 1,
+            "excel_column_number": 2,
+            "value": "Total Computable"
+          }
+        ],
+        "Federal Share": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 2,
+            "excel_column_number": 3,
+            "value": "Federal Share"
+          }
+        ],
+        "State Share": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 3,
+            "excel_column_number": 4,
+            "value": "State Share"
+          }
+        ],
+        "Net Expenditures": []
+      },
+      "excel_metadata": {
+        "available": true,
+        "max_row": 50,
+        "max_column": 4,
+        "merged_cell_count": 0,
+        "merged_ranges": [],
+        "formula_cell_count": 0,
+        "formula_cells": [],
+        "hidden_rows": [],
+        "hidden_columns": [],
+        "freeze_panes": "A8"
+      }
+    },
+    {
+      "sheet_name": "MCHIP - Washington",
+      "shape": {
+        "rows": 49,
+        "columns": 4,
+        "nonempty_rows": 47,
+        "nonempty_columns": 4
+      },
+      "used_bounds": {
+        "first_nonempty_row_zero_based": 0,
+        "last_nonempty_row_zero_based": 48,
+        "first_nonempty_column_zero_based": 0,
+        "last_nonempty_column_zero_based": 3
+      },
+      "cell_types": {
+        "blank": 26,
+        "numeric": 120,
+        "text": 50
+      },
+      "likely_header_rows": [
+        {
+          "row_zero_based": 6,
+          "excel_row": 7,
+          "score": 28,
+          "keyword_hits": [
+            "category",
+            "computable",
+            "federal",
+            "service",
+            "state",
+            "state share",
+            "total"
+          ],
+          "values": [
+            "Service Category",
+            "Total Computable",
+            "Federal Share",
+            "State Share"
+          ]
+        },
+        {
+          "row_zero_based": 0,
+          "excel_row": 1,
+          "score": 11,
+          "keyword_hits": [
+            "expenditure",
+            "expenditures",
+            "net"
+          ],
+          "values": [
+            "Medicaid Financial Management Report - Net CHIP Expenditures",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "row_zero_based": 20,
+          "excel_row": 21,
+          "score": 7,
+          "keyword_hits": [],
+          "values": [
+            "C-Drug Rebate - National",
+            -90694,
+            -58969,
+            -31725
+          ]
+        },
+        {
+          "row_zero_based": 11,
+          "excel_row": 12,
+          "score": 6,
+          "keyword_hits": [
+            "service"
+          ],
+          "values": [
+            "C-Inpatient Hospital Services - Reg. Payments",
+            352381,
+            229089,
+            123292
+          ]
+        },
+        {
+          "row_zero_based": 12,
+          "excel_row": 13,
+          "score": 6,
+          "keyword_hits": [
+            "service"
+          ],
+          "values": [
+            "C-Inpatient Hospital Services - DSH",
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "search_matches": {
+        "Total Computable": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 1,
+            "excel_column_number": 2,
+            "value": "Total Computable"
+          }
+        ],
+        "Federal Share": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 2,
+            "excel_column_number": 3,
+            "value": "Federal Share"
+          }
+        ],
+        "State Share": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 3,
+            "excel_column_number": 4,
+            "value": "State Share"
+          }
+        ],
+        "Net Expenditures": []
+      },
+      "excel_metadata": {
+        "available": true,
+        "max_row": 49,
+        "max_column": 4,
+        "merged_cell_count": 0,
+        "merged_ranges": [],
+        "formula_cell_count": 0,
+        "formula_cells": [],
+        "hidden_rows": [],
+        "hidden_columns": [],
+        "freeze_panes": "A8"
+      }
+    },
+    {
+      "sheet_name": "MCHIP 20% - Washington",
+      "shape": {
+        "rows": 97,
+        "columns": 4,
+        "nonempty_rows": 95,
+        "nonempty_columns": 4
+      },
+      "used_bounds": {
+        "first_nonempty_row_zero_based": 0,
+        "last_nonempty_row_zero_based": 96,
+        "first_nonempty_column_zero_based": 0,
+        "last_nonempty_column_zero_based": 3
+      },
+      "cell_types": {
+        "blank": 26,
+        "numeric": 264,
+        "text": 98
+      },
+      "likely_header_rows": [
+        {
+          "row_zero_based": 6,
+          "excel_row": 7,
+          "score": 28,
+          "keyword_hits": [
+            "category",
+            "computable",
+            "federal",
+            "service",
+            "state",
+            "state share",
+            "total"
+          ],
+          "values": [
+            "Service Category",
+            "Total Computable",
+            "Federal Share",
+            "State Share"
+          ]
+        },
+        {
+          "row_zero_based": 0,
+          "excel_row": 1,
+          "score": 11,
+          "keyword_hits": [
+            "expenditure",
+            "expenditures",
+            "net"
+          ],
+          "values": [
+            "Medicaid Financial Management Report - Net CHIP Expenditures",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "row_zero_based": 18,
+          "excel_row": 19,
+          "score": 7,
+          "keyword_hits": [
+            "service"
+          ],
+          "values": [
+            "T-Physician & Surgical Services - Reg. Payments",
+            0,
+            940935,
+            -940935
+          ]
+        },
+        {
+          "row_zero_based": 22,
+          "excel_row": 23,
+          "score": 7,
+          "keyword_hits": [
+            "service"
+          ],
+          "values": [
+            "T-Outpatient Hospital Services - Reg. Payments",
+            0,
+            543725,
+            -543725
+          ]
+        },
+        {
+          "row_zero_based": 26,
+          "excel_row": 27,
+          "score": 7,
+          "keyword_hits": [
+            "state"
+          ],
+          "values": [
+            "T-Drug Rebate Offset - State Sidebar Agreement",
+            0,
+            -2229,
+            2229
+          ]
+        }
+      ],
+      "search_matches": {
+        "Total Computable": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 1,
+            "excel_column_number": 2,
+            "value": "Total Computable"
+          }
+        ],
+        "Federal Share": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 2,
+            "excel_column_number": 3,
+            "value": "Federal Share"
+          }
+        ],
+        "State Share": [
+          {
+            "row_zero_based": 6,
+            "excel_row": 7,
+            "column_zero_based": 3,
+            "excel_column_number": 4,
+            "value": "State Share"
+          }
+        ],
+        "Net Expenditures": [
+          {
+            "row_zero_based": 94,
+            "excel_row": 95,
+            "column_zero_based": 0,
+            "excel_column_number": 1,
+            "value": "T-Total Net Expenditures"
+          }
+        ]
+      },
+      "excel_metadata": {
+        "available": true,
+        "max_row": 97,
+        "max_column": 4,
+        "merged_cell_count": 0,
+        "merged_ranges": [],
+        "formula_cell_count": 0,
+        "formula_cells": [],
+        "hidden_rows": [],
+        "hidden_columns": [],
+        "freeze_panes": "A8"
+      }
+    }
+  ]
+}
