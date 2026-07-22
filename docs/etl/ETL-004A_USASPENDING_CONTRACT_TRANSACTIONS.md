@@ -1,0 +1,6 @@
+Source file:
+data/raw/usaspending/contracts/Boeing Contract_N0001904C3146_TransactionHistory_1
+
+Required headers:
+contract_transaction_unique_key
+contract_award_unique_key
