@@ -1,0 +1,8 @@
+Purpose
+Inputs
+Outputs
+Preconditions
+Algorithm
+Validation
+Error handling
+Performance expectations
