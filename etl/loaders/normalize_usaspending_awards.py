@@ -1,52 +1,47 @@
 """
 ETL-004A.3A — Normalize USAspending Awards.
+
+This loader reads immutable observations from
+procurement.raw_award_transaction and creates or updates one normalized
+procurement.award row per USAspending contract award key.
+
+The USAspending source-field names and basic parsing rules are centralized
+in etl.common.usaspending.
 """
 
 import argparse
-from datetime import date, datetime
 from typing import Any
 
 from etl.common.db import get_connection
+from etl.common.usaspending import (
+    get_optional,
+    get_required,
+    parse_date,
+)
 
 
 def parse_arguments() -> argparse.Namespace:
+    """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
         description="Normalize USAspending awards from raw JSONB."
     )
-    parser.add_argument("--load-batch-id", type=int, default=None)
+    parser.add_argument(
+        "--load-batch-id",
+        type=int,
+        default=None,
+        help=(
+            "Raw procurement load batch to normalize. "
+            "Defaults to the latest completed batch containing raw rows."
+        ),
+    )
     return parser.parse_args()
 
 
-def clean_text(value: Any) -> str | None:
-    if value is None:
-        return None
-    cleaned = str(value).strip()
-    return cleaned or None
-
-
-def parse_date(
-    value: Any,
-    *,
-    field_name: str,
-    source_row_number: int,
-) -> date | None:
-    cleaned = clean_text(value)
-    if cleaned is None:
-        return None
-
-    normalized = cleaned.replace("Z", "+00:00")
-    try:
-        if "T" in normalized or " " in normalized:
-            return datetime.fromisoformat(normalized).date()
-        return date.fromisoformat(normalized[:10])
-    except ValueError as exc:
-        raise ValueError(
-            f"Invalid {field_name} value {cleaned!r} "
-            f"at source row {source_row_number}."
-        ) from exc
-
-
-def get_target_load_batch_id(conn, requested_batch_id: int | None) -> int:
+def get_target_load_batch_id(
+    conn,
+    requested_batch_id: int | None,
+) -> int:
+    """Resolve and validate the raw load batch to normalize."""
     with conn.cursor() as cur:
         if requested_batch_id is not None:
             cur.execute(
@@ -118,10 +113,13 @@ def read_raw_award_rows(
     *,
     load_batch_id: int,
 ) -> list[tuple[int, dict[str, Any]]]:
+    """Read raw observations in deterministic source-row order."""
     with conn.cursor() as cur:
         cur.execute(
             """
-            SELECT source_row_number, raw_record
+            SELECT
+                source_row_number,
+                raw_record
             FROM procurement.raw_award_transaction
             WHERE load_batch_id = %s
             ORDER BY source_row_number, raw_award_transaction_id;
@@ -136,32 +134,54 @@ def read_raw_award_rows(
     ]
 
 
+def parse_optional_date(
+    raw_record: dict[str, Any],
+    field_name: str,
+    *,
+    source_row_number: int,
+):
+    """Read and parse an optional USAspending date with row context."""
+    raw_value = get_optional(raw_record, field_name)
+
+    try:
+        return parse_date(raw_value)
+    except ValueError as exc:
+        raise ValueError(
+            f"Invalid {field_name} at source row "
+            f"{source_row_number}: {raw_value!r}."
+        ) from exc
+
+
 def build_award_records(
     raw_rows: list[tuple[int, dict[str, Any]]],
     *,
     load_batch_id: int,
 ) -> dict[str, dict[str, Any]]:
+    """
+    Derive one normalized award record per USAspending award key.
+
+    Later nonblank descriptive values replace earlier values. The normalized
+    performance start is the earliest observed start date, and the normalized
+    performance end is the latest observed current-end date.
+    """
     awards: dict[str, dict[str, Any]] = {}
 
     for source_row_number, raw_record in raw_rows:
-        generated_id = clean_text(
-            raw_record.get("contract_award_unique_key")
-        )
-
-        if generated_id is None:
+        try:
+            generated_id = get_required(raw_record, "AWARD_KEY")
+        except ValueError as exc:
             raise ValueError(
-                "Missing contract_award_unique_key at source row "
-                f"{source_row_number}."
-            )
+                f"{exc} Source row: {source_row_number}."
+            ) from exc
 
-        start_date = parse_date(
-            raw_record.get("period_of_performance_start_date"),
-            field_name="period_of_performance_start_date",
+        start_date = parse_optional_date(
+            raw_record,
+            "POP_START",
             source_row_number=source_row_number,
         )
-        end_date = parse_date(
-            raw_record.get("period_of_performance_current_end_date"),
-            field_name="period_of_performance_current_end_date",
+        end_date = parse_optional_date(
+            raw_record,
+            "POP_CURRENT_END",
             source_row_number=source_row_number,
         )
 
@@ -181,25 +201,27 @@ def build_award_records(
 
         award = awards[generated_id]
 
-        values = {
-            "piid": clean_text(raw_record.get("award_id_piid")),
-            "parent_award_id": clean_text(
-                raw_record.get("parent_award_id_piid")
+        latest_values = {
+            "piid": get_optional(raw_record, "PIID"),
+            "parent_award_id": get_optional(
+                raw_record,
+                "PARENT_PIID",
             ),
-            "award_type_code": clean_text(
-                raw_record.get("award_type_code")
+            "award_type_code": get_optional(
+                raw_record,
+                "AWARD_TYPE_CODE",
             ),
-            "award_type_description": clean_text(
-                raw_record.get("award_type")
+            "award_type_description": get_optional(
+                raw_record,
+                "AWARD_TYPE",
             ),
-            "award_description": clean_text(
-                raw_record.get(
-                    "prime_award_base_transaction_description"
-                )
+            "award_description": get_optional(
+                raw_record,
+                "AWARD_DESCRIPTION",
             ),
         }
 
-        for field_name, value in values.items():
+        for field_name, value in latest_values.items():
             if value is not None:
                 award[field_name] = value
 
@@ -215,6 +237,21 @@ def build_award_records(
         ):
             award["period_of_performance_end"] = end_date
 
+    for award in awards.values():
+        start_date = award["period_of_performance_start"]
+        end_date = award["period_of_performance_end"]
+
+        if (
+            start_date is not None
+            and end_date is not None
+            and start_date > end_date
+        ):
+            raise ValueError(
+                "Invalid normalized performance-date range for award "
+                f"{award['generated_unique_award_id']!r}: "
+                f"{start_date} > {end_date}."
+            )
+
     return awards
 
 
@@ -223,6 +260,7 @@ def upsert_awards(
     *,
     awards: dict[str, dict[str, Any]],
 ) -> tuple[int, int]:
+    """Insert new awards and update awards already present."""
     sql = """
         INSERT INTO procurement.award (
             generated_unique_award_id,
@@ -248,7 +286,10 @@ def upsert_awards(
         )
         ON CONFLICT (generated_unique_award_id)
         DO UPDATE SET
-            piid = COALESCE(EXCLUDED.piid, procurement.award.piid),
+            piid = COALESCE(
+                EXCLUDED.piid,
+                procurement.award.piid
+            ),
             parent_award_id = COALESCE(
                 EXCLUDED.parent_award_id,
                 procurement.award.parent_award_id
@@ -315,6 +356,7 @@ def upsert_awards(
     with conn.cursor() as cur:
         for generated_id in sorted(awards):
             award = awards[generated_id]
+
             cur.execute(
                 sql,
                 (
@@ -330,7 +372,9 @@ def upsert_awards(
                     award["last_load_batch_id"],
                 ),
             )
+
             inserted = bool(cur.fetchone()[0])
+
             if inserted:
                 inserted_count += 1
             else:
@@ -344,6 +388,10 @@ def validate_awards(
     *,
     expected_award_ids: set[str],
 ) -> None:
+    """Confirm that all derived award identifiers exist after the upsert."""
+    if not expected_award_ids:
+        raise ValueError("No normalized awards were derived.")
+
     with conn.cursor() as cur:
         cur.execute(
             """
@@ -356,13 +404,16 @@ def validate_awards(
         normalized_ids = {row[0] for row in cur.fetchall()}
 
     missing = expected_award_ids - normalized_ids
+
     if missing:
         raise ValueError(
-            "Missing normalized awards: " + ", ".join(sorted(missing))
+            "Missing normalized awards: "
+            + ", ".join(sorted(missing))
         )
 
 
 def main() -> None:
+    """Run ETL-004A.3A."""
     args = parse_arguments()
 
     print("=" * 68)
