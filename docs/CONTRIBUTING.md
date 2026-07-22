@@ -1,0 +1,1 @@
+Before contributing code, ETLs, database changes, or documentation, please read docs/PROJECT_PHILOSOPHY.md. Every contribution should advance the project's commitments to reproducibility, transparency, auditability, and scientific integrity.
