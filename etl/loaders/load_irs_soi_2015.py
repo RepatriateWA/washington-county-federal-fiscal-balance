@@ -2,11 +2,20 @@ from pathlib import Path
 
 import pandas as pd
 
-from etl.db import get_connection
+from etl.common.db import get_connection
 
 TAX_YEAR = 2015
 STATE_ID = 48
-SOURCE_FILE = Path("data/raw/irs/15incywa.xls")
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+
+SOURCE_FILE = (
+    REPOSITORY_ROOT
+    / "data"
+    / "raw"
+    / "irs"
+    / "irs_soi_wa_2015.xls"
+)
 
 
 def to_int(value):
@@ -34,8 +43,9 @@ def get_county_lookup(cur):
     }
 
 
-def reset_irs_tables(cur):
-    cur.execute("DELETE FROM irs.county_income_tax WHERE tax_year = %s;", (TAX_YEAR,))
+def reset_irs_tables(cur) -> None:
+    """Clear IRS tables in foreign-key-safe-order."""
+    cur.execute("DELETE FROM irs.county_income_tax;")    
     cur.execute("DELETE FROM irs.agi_bracket;")
 
 
