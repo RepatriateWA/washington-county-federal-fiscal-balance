@@ -82,6 +82,7 @@ def derive_classifications(
     raw_rows: list[tuple[int, dict[str, Any]]],
 ) -> tuple[dict[str, str], dict[str, str | None]]:
     naics: dict[str, str] = {}
+    naics_codes_seen: set[str] = set()
     psc: dict[str, str | None] = {}
 
     for row_number, record in raw_rows:
@@ -93,33 +94,46 @@ def derive_classifications(
                 raise ValueError(
                     f"Invalid NAICS code {naics_code!r} at source row {row_number}."
                 )
-            if naics_description is None:
-                raise ValueError(
-                    f"NAICS {naics_code!r} has no description at row {row_number}."
-                )
-            existing = naics.get(naics_code)
-            if existing is not None and existing != naics_description:
-                raise ValueError(
-                    f"Conflicting descriptions for NAICS {naics_code!r}."
-                )
-            naics[naics_code] = naics_description
+
+            naics_codes_seen.add(naics_code)
+
+            if naics_description is not None:
+                existing = naics.get(naics_code)
+
+                if existing is not None and existing != naics_description:
+                    raise ValueError(
+                        f"Conflicting descriptions for NAICS {naics_code!r}."
+                    )
+
+                naics[naics_code] = naics_description
 
         psc_code = get_optional(record, "PSC")
         psc_description = get_optional(record, "PSC_DESCRIPTION")
 
         if psc_code is not None:
             existing = psc.get(psc_code)
+
             if (
                 existing is not None
                 and psc_description is not None
                 and existing != psc_description
             ):
-                raise ValueError(f"Conflicting descriptions for PSC {psc_code!r}.")
+                raise ValueError(
+                    f"Conflicting descriptions for PSC {psc_code!r}."
+                )
+
             if psc_code not in psc or psc_description is not None:
                 psc[psc_code] = psc_description
 
-    return naics, psc
+    unresolved_naics = sorted(naics_codes_seen - set(naics))
 
+    if unresolved_naics:
+        raise ValueError(
+            "The following NAICS codes have no description anywhere "
+            f"in the source batch: {', '.join(unresolved_naics)}"
+        )
+
+    return naics, psc
 
 def upsert_naics(conn, rows: dict[str, str]) -> tuple[int, int]:
     sql = """

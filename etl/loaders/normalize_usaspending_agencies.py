@@ -32,6 +32,10 @@ from etl.common.db import get_connection
 COMPLETED_STATUSES = {"COMPLETED", "COMPLETED_WITH_REJECTIONS"}
 VALID_LEVELS = {"AGENCY", "SUBAGENCY"}
 
+PLACEHOLDER_AGENCY_NAMES = {
+    "999": "UNKNOWN / UNSPECIFIED",
+}
+
 
 @dataclass(frozen=True)
 class RawAgencyObservation:
@@ -261,8 +265,11 @@ def add_candidate(
         return
 
     if agency_name is None:
-        raise ValueError(
-            f"Agency code {agency_code!r} is present without an agency name."
+        if agency_code in PLACEHOLDER_AGENCY_NAMES:
+            agency_name = PLACEHOLDER_AGENCY_NAMES[agency_code]
+        else:
+            raise ValueError(
+                f"Agency code {agency_code!r} is present without an agency name."
         )
 
     clean_name = collapse_whitespace(agency_name)
