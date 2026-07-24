@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import sys
 
-from etl.db import get_connection
+from etl.common.db import get_connection
 
 
 EXPECTED_TABLES = {

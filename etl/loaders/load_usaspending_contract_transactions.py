@@ -37,7 +37,7 @@ from etl.common.db import get_connection
 
 SOURCE_RELATIVE_PATH = Path(
     "data/raw/usaspending/contracts/"
-    "Boeing Contract_N0001904C3146_TransactionHistory_1"
+    "Contract_DEAC2701RV14136_TransactionHistory_1.csv"
 )
 
 REQUIRED_HEADERS = {
