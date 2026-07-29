@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from pathlib import Path
 
 from .evidence_package import EvidencePackage
@@ -10,7 +8,10 @@ class EvidenceWriter:
     Creates the directory structure for an EPS-001 Evidence Package.
     """
 
-    def create_package_structure(self, package: EvidencePackage) -> Path:
+    def create_package_structure(
+        self,
+        package: EvidencePackage,
+    ) -> Path:
         package_dir = package.package_directory
 
         directories = [
