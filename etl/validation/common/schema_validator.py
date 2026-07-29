@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from typing import Any, Mapping
 
 from jsonschema import Draft202012Validator
-from jsonschema.exceptions import SchemaError
+from jsonschema.exceptions import SchemaError, ValidationError
 
 
 @dataclass(frozen=True)
@@ -52,7 +52,7 @@ class SchemaValidator:
         )
 
     @staticmethod
-    def _format_error(error: Any) -> str:
+    def _format_error(error: ValidationError) -> str:
         path = ".".join(str(part) for part in error.absolute_path)
         location = path if path else "<root>"
         return f"{location}: {error.message}"

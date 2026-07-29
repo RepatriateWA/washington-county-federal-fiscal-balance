@@ -58,7 +58,10 @@ def main() -> None:
         "artifacts": [],
     }
 
-    missing_result = SchemaValidator.validate(missing_property, SCHEMA)
+    missing_result = SchemaValidator.validate(
+        missing_property,
+        SCHEMA,
+    )
 
     assert missing_result.valid is False
     assert any(
@@ -71,11 +74,15 @@ def main() -> None:
         "artifacts": [],
     }
 
-    type_result = SchemaValidator.validate(wrong_type, SCHEMA)
+    type_result = SchemaValidator.validate(
+        wrong_type,
+        SCHEMA,
+    )
 
     assert type_result.valid is False
     assert any(
-        "package_id:" in error and "is not of type 'string'" in error
+        "package_id:" in error
+        and "is not of type 'string'" in error
         for error in type_result.errors
     )
 
@@ -95,6 +102,11 @@ def main() -> None:
         "Additional properties are not allowed" in error
         for error in additional_result.errors
     )
+
+    empty_result = SchemaValidator.validate({}, SCHEMA)
+
+    assert empty_result.valid is False
+    assert len(empty_result.errors) >= 1
 
     first_run = SchemaValidator.validate(wrong_type, SCHEMA)
     second_run = SchemaValidator.validate(wrong_type, SCHEMA)
