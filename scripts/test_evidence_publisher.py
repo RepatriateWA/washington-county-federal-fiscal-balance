@@ -8,6 +8,9 @@ from types import SimpleNamespace
 from etl.validation.common.certification_builder import (
     CertificationBuilder,
 )
+from etl.validation.common.publication_validator import (
+    PublicationValidator,
+)
 from etl.validation.common.evidence_package import EvidencePackage
 from etl.validation.common.evidence_publisher import EvidencePublisher
 from etl.validation.common.evidence_writer import EvidenceWriter
@@ -93,6 +96,9 @@ def main() -> None:
             ),
             json_writer=JsonWriter(),
             report_writer=ReportWriter(),
+            publication_validator=PublicationValidator(
+                Path.cwd() / "schemas" / "evidence"
+            ),  
         )
 
         package_directory = publisher.publish(
