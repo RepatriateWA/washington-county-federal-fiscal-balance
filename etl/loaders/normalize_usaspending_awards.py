@@ -19,6 +19,10 @@ from etl.common.usaspending import (
     parse_date,
 )
 
+from etl.validation.common.normalization_exception_recorder import (
+    NormalizationExceptionRecorder,
+)
+
 
 def parse_arguments() -> argparse.Namespace:
     """Parse command-line arguments."""
@@ -156,15 +160,24 @@ def build_award_records(
     raw_rows: list[tuple[int, dict[str, Any]]],
     *,
     load_batch_id: int,
-) -> dict[str, dict[str, Any]]:
+) -> tuple[
+    dict[str, dict[str, Any]],
+    list[dict[str, Any]],
+]:
     """
-    Derive one normalized award record per USAspending award key.
+    Derive normalized awards and auditable source-data anomalies.
 
-    Later nonblank descriptive values replace earlier values. The normalized
-    performance start is the earliest observed start date, and the normalized
-    performance end is the latest observed current-end date.
+    Later nonblank descriptive values replace earlier values.
+
+    The normalized performance start is the earliest observed start date.
+    The normalized performance end is the latest valid current-end date.
+
+    A source row whose end date precedes its start date is preserved in the
+    raw layer, excluded from normalized end-date aggregation, and returned
+    as a structured warning.
     """
     awards: dict[str, dict[str, Any]] = {}
+    anomaly_groups: dict[str, dict[str, Any]] = {}
 
     for source_row_number, raw_record in raw_rows:
         try:
@@ -184,6 +197,63 @@ def build_award_records(
             "POP_CURRENT_END",
             source_row_number=source_row_number,
         )
+
+        if (
+            start_date is not None
+            and end_date is not None
+            and start_date > end_date
+        ):
+            anomaly = anomaly_groups.setdefault(
+                generated_id,
+                {
+                    "load_batch_id": load_batch_id,
+                    "entity_type": "award",
+                    "entity_key": generated_id,
+                    "anomaly_code": (
+                        "PERFORMANCE_END_BEFORE_START"
+                    ),
+                    "severity": "WARNING",
+                    "source_row_numbers": [],
+                    "raw_values": {
+                        "observations": [],
+                    },
+                    "normalized_action": {
+                        "period_of_performance_end": None,
+                        "rule": (
+                            "Exclude reversed source end dates "
+                            "from normalized end-date aggregation."
+                        ),
+                    },
+                    "message": (
+                        "USAspending reported one or more "
+                        "performance end dates earlier than "
+                        "their corresponding start dates. "
+                        "The raw values were preserved and the "
+                        "invalid end dates were excluded from "
+                        "normalization."
+                    ),
+                },
+            )
+
+            anomaly["source_row_numbers"].append(
+                source_row_number
+            )
+
+            anomaly["raw_values"]["observations"].append(
+                {
+                    "source_row_number": source_row_number,
+                    "period_of_performance_start": (
+                        start_date.isoformat()
+                    ),
+                    "period_of_performance_current_end": (
+                        end_date.isoformat()
+                    ),
+                }
+            )
+
+            # Preserve the start date but do not normalize an end date
+            # that precedes it.
+            end_date = None
 
         if generated_id not in awards:
             awards[generated_id] = {
@@ -226,14 +296,18 @@ def build_award_records(
                 award[field_name] = value
 
         current_start = award["period_of_performance_start"]
+
         if start_date is not None and (
-            current_start is None or start_date < current_start
+            current_start is None
+            or start_date < current_start
         ):
             award["period_of_performance_start"] = start_date
 
         current_end = award["period_of_performance_end"]
+
         if end_date is not None and (
-            current_end is None or end_date > current_end
+            current_end is None
+            or end_date > current_end
         ):
             award["period_of_performance_end"] = end_date
 
@@ -252,7 +326,12 @@ def build_award_records(
                 f"{start_date} > {end_date}."
             )
 
-    return awards
+    anomalies = [
+        anomaly_groups[key]
+        for key in sorted(anomaly_groups)
+    ]
+
+    return awards, anomalies
 
 
 def upsert_awards(
@@ -382,6 +461,33 @@ def upsert_awards(
 
     return inserted_count, updated_count
 
+def record_normalization_exceptions(
+    conn,
+    *,
+    anomalies: list[dict[str, Any]],
+) -> int:
+    """Persist all structured normalization anomalies."""
+    recorder = NormalizationExceptionRecorder()
+
+    for anomaly in anomalies:
+        recorder.record(
+            conn,
+            load_batch_id=anomaly["load_batch_id"],
+            entity_type=anomaly["entity_type"],
+            entity_key=anomaly["entity_key"],
+            anomaly_code=anomaly["anomaly_code"],
+            severity=anomaly["severity"],
+            source_row_numbers=(
+                anomaly["source_row_numbers"]
+            ),
+            raw_values=anomaly["raw_values"],
+            normalized_action=(
+                anomaly["normalized_action"]
+            ),
+            message=anomaly["message"],
+        )
+
+    return len(anomalies)
 
 def validate_awards(
     conn,
@@ -435,15 +541,25 @@ def main() -> None:
         )
         print(f"Raw observations read: {len(raw_rows):,}")
 
-        awards = build_award_records(
-            raw_rows,
+        awards, anomalies = build_award_records(
+           raw_rows,
             load_batch_id=load_batch_id,
         )
+
         print(f"Distinct awards derived: {len(awards):,}")
+        print(
+            f"Normalization anomalies detected: "
+            f"{len(anomalies):,}"
+        )
 
         inserted_count, updated_count = upsert_awards(
             conn,
             awards=awards,
+        )
+
+        exception_count = record_normalization_exceptions(
+            conn,
+            anomalies=anomalies,
         )
 
         validate_awards(
@@ -455,6 +571,12 @@ def main() -> None:
 
         print(f"Awards inserted: {inserted_count:,}")
         print(f"Awards updated: {updated_count:,}")
+
+        print(
+           f"Normalization exceptions recorded: "
+           f"{exception_count:,}"
+        )
+
         print("Award validation: PASS")
         print()
         print("ETL-004A.3A completed successfully.")
