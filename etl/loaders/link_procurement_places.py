@@ -1,18 +1,24 @@
 """
-ETL-004A.3H — Link award transactions to canonical places.
+ETL-004A.3H - Link normalized procurement transactions to canonical places.
 
-Populates procurement.place_of_performance by joining normalized
-award transactions back to immutable raw USAspending observations and
-resolving each observation to procurement.place.
+This loader:
+
+1. Selects a completed procurement load batch.
+2. Joins normalized award transactions to their immutable raw observations.
+3. Normalizes transaction-level place-of-performance fields.
+4. Constructs the same deterministic place identity key used by
+   procurement.place.
+5. Resolves each transaction to procurement.place through the indexed
+   place_identity_key.
+6. Inserts or updates one procurement.place_of_performance relationship
+   per normalized award transaction.
+7. Reconciles and validates the resulting relationships.
 
 Usage:
     python -m etl.loaders.link_procurement_places
 
-Optional explicit batch:
-    python -m etl.loaders.link_procurement_places --load-batch-id 2
-
-Prerequisite:
-    Migration 113 must have been applied.
+Explicit batch:
+    python -m etl.loaders.link_procurement_places --load-batch-id 5
 """
 
 from __future__ import annotations
@@ -24,11 +30,16 @@ from dataclasses import dataclass
 from etl.common.db import get_connection
 
 
-COMPLETED_STATUSES = {"COMPLETED", "COMPLETED_WITH_REJECTIONS"}
+COMPLETED_STATUSES = {
+    "COMPLETED",
+    "COMPLETED_WITH_REJECTIONS",
+}
 
 
 @dataclass(frozen=True)
 class LinkSummary:
+    """Summary of one place-linking run."""
+
     transactions_examined: int
     inserted: int
     updated: int
@@ -38,18 +49,26 @@ class LinkSummary:
 
 
 def parse_arguments() -> argparse.Namespace:
+    """Parse command-line arguments."""
+
     parser = argparse.ArgumentParser(
-        description="Link procurement transactions to canonical places."
+        description=(
+            "Link normalized USAspending procurement transactions "
+            "to canonical places."
+        )
     )
+
     parser.add_argument(
         "--load-batch-id",
         type=int,
         default=None,
         help=(
-            "Load batch to link. Defaults to the latest completed batch "
-            "containing normalized award transactions."
+            "Normalized procurement load batch to process. "
+            "Defaults to the latest completed batch containing "
+            "normalized transactions."
         ),
     )
+
     return parser.parse_args()
 
 
@@ -57,6 +76,8 @@ def get_target_batch(
     conn,
     requested_batch_id: int | None,
 ) -> tuple[int, str, int]:
+    """Return the target batch ID, source file, and transaction count."""
+
     with conn.cursor() as cur:
         if requested_batch_id is not None:
             cur.execute(
@@ -109,51 +130,90 @@ def get_target_batch(
                 "No completed procurement batch containing normalized "
                 "transactions was found."
             )
-        raise ValueError(f"Load batch {requested_batch_id} does not exist.")
 
-    load_batch_id, source_file, load_status, transaction_count = row
+        raise ValueError(
+            f"Load batch {requested_batch_id} does not exist."
+        )
+
+    (
+        load_batch_id,
+        source_file,
+        load_status,
+        transaction_count,
+    ) = row
 
     if load_status not in COMPLETED_STATUSES:
         raise ValueError(
-            f"Load batch {load_batch_id} has status {load_status!r}; "
-            "a completed batch is required."
+            f"Load batch {load_batch_id} has status "
+            f"{load_status!r}; a completed batch is required."
         )
 
     if int(transaction_count) == 0:
         raise ValueError(
-            f"Load batch {load_batch_id} contains no normalized transactions."
+            f"Load batch {load_batch_id} contains no "
+            "normalized transactions."
         )
 
-    return int(load_batch_id), str(source_file), int(transaction_count)
+    return (
+        int(load_batch_id),
+        str(source_file),
+        int(transaction_count),
+    )
 
 
 def verify_schema(conn) -> None:
+    """Verify the schema additions required by the linker."""
+
+    required_columns = (
+        (
+            "place_of_performance",
+            "place_id",
+            "Apply Migration 113 first.",
+        ),
+        (
+            "place",
+            "place_identity_key",
+            "Apply Migration 118 first.",
+        ),
+    )
+
     with conn.cursor() as cur:
-        cur.execute(
-            """
-            SELECT EXISTS (
-                SELECT 1
-                FROM information_schema.columns
-                WHERE table_schema = 'procurement'
-                  AND table_name = 'place_of_performance'
-                  AND column_name = 'place_id'
-            );
-            """
-        )
-        if not bool(cur.fetchone()[0]):
-            raise ValueError(
-                "procurement.place_of_performance.place_id does not exist. "
-                "Apply Migration 113 first."
+        for table_name, column_name, instruction in required_columns:
+            cur.execute(
+                """
+                SELECT EXISTS (
+                    SELECT 1
+                    FROM information_schema.columns
+                    WHERE table_schema = 'procurement'
+                      AND table_name = %s
+                      AND column_name = %s
+                );
+                """,
+                (
+                    table_name,
+                    column_name,
+                ),
             )
 
+            if not bool(cur.fetchone()[0]):
+                raise ValueError(
+                    f"procurement.{table_name}.{column_name} "
+                    f"does not exist. {instruction}"
+                )
 
-def create_link_candidate_table(conn, load_batch_id: int) -> int:
-    """
-    Create one deterministic place-of-performance candidate per transaction.
 
-    Normalization mirrors ETL-112 so that the canonical identity resolves
-    exactly against procurement.place.
+def create_link_candidate_table(
+    conn,
+    load_batch_id: int,
+) -> int:
     """
+    Create one deterministic place candidate per transaction.
+
+    The normalization rules mirror the canonical-place loader. The
+    length-prefixed identity key must remain identical to the generated
+    procurement.place.place_identity_key expression.
+    """
+
     with conn.cursor() as cur:
         cur.execute(
             """
@@ -164,38 +224,56 @@ def create_link_candidate_table(conn, load_batch_id: int) -> int:
                 SELECT
                     at.award_transaction_id,
 
-                    UPPER(NULLIF(BTRIM(
-                        raw.raw_record ->>
-                        'primary_place_of_performance_country_code'
-                    ), '')) AS country_code,
-
-                    UPPER(NULLIF(BTRIM(
-                        raw.raw_record ->>
-                        'primary_place_of_performance_state_code'
-                    ), '')) AS state_code,
-
-                    NULLIF(BTRIM(
-                        raw.raw_record ->>
-                        'prime_award_transaction_place_of_performance_state_fips_code'
-                    ), '') AS state_fips,
-
-                    NULLIF(BTRIM(
-                        raw.raw_record ->>
-                        'prime_award_transaction_place_of_performance_county_fips_code'
-                    ), '') AS county_fips,
-
-                    UPPER(NULLIF(
-                        REGEXP_REPLACE(
+                    UPPER(
+                        NULLIF(
                             BTRIM(
                                 raw.raw_record ->>
-                                'primary_place_of_performance_city_name'
+                                'primary_place_of_performance_country_code'
                             ),
-                            '\\s+',
-                            ' ',
-                            'g'
+                            ''
+                        )
+                    ) AS country_code,
+
+                    UPPER(
+                        NULLIF(
+                            BTRIM(
+                                raw.raw_record ->>
+                                'primary_place_of_performance_state_code'
+                            ),
+                            ''
+                        )
+                    ) AS state_code,
+
+                    NULLIF(
+                        BTRIM(
+                            raw.raw_record ->>
+                            'prime_award_transaction_place_of_performance_state_fips_code'
                         ),
                         ''
-                    )) AS city_name,
+                    ) AS state_fips,
+
+                    NULLIF(
+                        BTRIM(
+                            raw.raw_record ->>
+                            'prime_award_transaction_place_of_performance_county_fips_code'
+                        ),
+                        ''
+                    ) AS county_fips,
+
+                    UPPER(
+                        NULLIF(
+                            REGEXP_REPLACE(
+                                BTRIM(
+                                    raw.raw_record ->>
+                                    'primary_place_of_performance_city_name'
+                                ),
+                                '\\s+',
+                                ' ',
+                                'g'
+                            ),
+                            ''
+                        )
+                    ) AS city_name,
 
                     NULLIF(
                         REGEXP_REPLACE(
@@ -210,10 +288,15 @@ def create_link_candidate_table(conn, load_batch_id: int) -> int:
                         ''
                     ) AS zip4,
 
-                    UPPER(NULLIF(BTRIM(
-                        raw.raw_record ->>
-                        'prime_award_transaction_place_of_performance_cd_current'
-                    ), '')) AS congressional_district_current
+                    UPPER(
+                        NULLIF(
+                            BTRIM(
+                                raw.raw_record ->>
+                                'prime_award_transaction_place_of_performance_cd_current'
+                            ),
+                            ''
+                        )
+                    ) AS congressional_district_current
 
                 FROM procurement.award_transaction AS at
                 JOIN procurement.raw_award_transaction AS raw
@@ -227,15 +310,25 @@ def create_link_candidate_table(conn, load_batch_id: int) -> int:
 
                     CASE
                         WHEN country_code IN (
-                            'NULL', 'NONE', 'N/A', 'NA', 'NAN'
-                        ) THEN NULL
+                            'NULL',
+                            'NONE',
+                            'N/A',
+                            'NA',
+                            'NAN'
+                        )
+                        THEN NULL
                         ELSE country_code
                     END AS country_code,
 
                     CASE
                         WHEN state_code IN (
-                            'NULL', 'NONE', 'N/A', 'NA', 'NAN'
-                        ) THEN NULL
+                            'NULL',
+                            'NONE',
+                            'N/A',
+                            'NA',
+                            'NAN'
+                        )
+                        THEN NULL
                         ELSE state_code
                     END AS state_code,
 
@@ -253,8 +346,13 @@ def create_link_candidate_table(conn, load_batch_id: int) -> int:
 
                     CASE
                         WHEN city_name IN (
-                            'NULL', 'NONE', 'N/A', 'NA', 'NAN'
-                        ) THEN NULL
+                            'NULL',
+                            'NONE',
+                            'N/A',
+                            'NA',
+                            'NAN'
+                        )
+                        THEN NULL
                         ELSE city_name
                     END AS city_name,
 
@@ -272,36 +370,92 @@ def create_link_candidate_table(conn, load_batch_id: int) -> int:
                     END AS congressional_district_current
 
                 FROM extracted
+            ),
+            keyed AS (
+                SELECT
+                    award_transaction_id,
+                    country_code,
+                    state_code,
+                    state_fips,
+                    county_fips,
+                    city_name,
+                    zip4,
+                    congressional_district_current,
+
+                    COALESCE(
+                        LENGTH(country_code)::TEXT
+                            || ':' || country_code,
+                        '-1:'
+                    )
+                    || '|'
+                    || COALESCE(
+                        LENGTH(state_fips)::TEXT
+                            || ':' || state_fips,
+                        '-1:'
+                    )
+                    || '|'
+                    || COALESCE(
+                        LENGTH(county_fips)::TEXT
+                            || ':' || county_fips,
+                        '-1:'
+                    )
+                    || '|'
+                    || COALESCE(
+                        LENGTH(city_name)::TEXT
+                            || ':' || city_name,
+                        '-1:'
+                    )
+                    || '|'
+                    || COALESCE(
+                        LENGTH(zip4)::TEXT
+                            || ':' || zip4,
+                        '-1:'
+                    ) AS place_identity_key
+
+                FROM cleaned
             )
             SELECT
-                c.award_transaction_id,
+                k.award_transaction_id,
                 p.place_id,
                 sr.state_id,
                 cr.county_id,
-                c.country_code,
-                c.state_code,
-                c.county_fips AS county_code,
-                c.city_name,
-                c.congressional_district_current
+                k.country_code,
+                k.state_code,
+                k.county_fips AS county_code,
+                k.city_name,
+                k.congressional_district_current
                     AS congressional_district,
-                c.zip4 AS zip_code,
+                k.zip4 AS zip_code,
                 CASE
-                    WHEN p.place_id IS NOT NULL THEN 'OBSERVED'
+                    WHEN p.place_id IS NOT NULL
+                    THEN 'OBSERVED'
                     ELSE 'UNRESOLVED'
                 END AS location_scope
-            FROM cleaned AS c
+            FROM keyed AS k
             LEFT JOIN procurement.place AS p
-              ON p.country_code IS NOT DISTINCT FROM c.country_code
-             AND p.state_fips IS NOT DISTINCT FROM c.state_fips
-             AND p.county_fips IS NOT DISTINCT FROM c.county_fips
-             AND p.city_name IS NOT DISTINCT FROM c.city_name
-             AND p.zip4 IS NOT DISTINCT FROM c.zip4
+              ON p.place_identity_key = k.place_identity_key
             LEFT JOIN reference.state_registry AS sr
-              ON sr.state_fips = c.state_fips
+              ON sr.state_fips = k.state_fips
             LEFT JOIN reference.county_registry AS cr
-              ON cr.full_fips = c.county_fips;
+              ON cr.full_fips = k.county_fips;
             """,
             (load_batch_id,),
+        )
+
+        cur.execute(
+            """
+            CREATE UNIQUE INDEX
+                idx_tmp_procurement_place_link_transaction
+            ON tmp_procurement_place_link (
+                award_transaction_id
+            );
+            """
+        )
+
+        cur.execute(
+            """
+            ANALYZE tmp_procurement_place_link;
+            """
         )
 
         cur.execute(
@@ -310,18 +464,22 @@ def create_link_candidate_table(conn, load_batch_id: int) -> int:
             FROM tmp_procurement_place_link;
             """
         )
+
         return int(cur.fetchone()[0])
 
 
 def count_changes(conn) -> tuple[int, int, int]:
+    """Count rows that will be inserted, updated, or unchanged."""
+
     with conn.cursor() as cur:
         cur.execute(
             """
             SELECT COUNT(*)
-            FROM tmp_procurement_place_link AS c
-            LEFT JOIN procurement.place_of_performance AS pop
-              ON pop.award_transaction_id = c.award_transaction_id
-            WHERE pop.place_of_performance_id IS NULL;
+            FROM tmp_procurement_place_link AS candidate
+            LEFT JOIN procurement.place_of_performance AS existing
+              ON existing.award_transaction_id =
+                 candidate.award_transaction_id
+            WHERE existing.place_of_performance_id IS NULL;
             """
         )
         inserted = int(cur.fetchone()[0])
@@ -329,21 +487,32 @@ def count_changes(conn) -> tuple[int, int, int]:
         cur.execute(
             """
             SELECT COUNT(*)
-            FROM tmp_procurement_place_link AS c
-            JOIN procurement.place_of_performance AS pop
-              ON pop.award_transaction_id = c.award_transaction_id
+            FROM tmp_procurement_place_link AS candidate
+            JOIN procurement.place_of_performance AS existing
+              ON existing.award_transaction_id =
+                 candidate.award_transaction_id
             WHERE
-                pop.place_id IS DISTINCT FROM c.place_id
-                OR pop.state_id IS DISTINCT FROM c.state_id
-                OR pop.county_id IS DISTINCT FROM c.county_id
-                OR pop.country_code IS DISTINCT FROM c.country_code
-                OR pop.state_code IS DISTINCT FROM c.state_code
-                OR pop.county_code IS DISTINCT FROM c.county_code
-                OR pop.city_name IS DISTINCT FROM c.city_name
-                OR pop.congressional_district
-                    IS DISTINCT FROM c.congressional_district
-                OR pop.zip_code IS DISTINCT FROM c.zip_code
-                OR pop.location_scope IS DISTINCT FROM c.location_scope;
+                existing.place_id
+                    IS DISTINCT FROM candidate.place_id
+                OR existing.state_id
+                    IS DISTINCT FROM candidate.state_id
+                OR existing.county_id
+                    IS DISTINCT FROM candidate.county_id
+                OR existing.country_code
+                    IS DISTINCT FROM candidate.country_code
+                OR existing.state_code
+                    IS DISTINCT FROM candidate.state_code
+                OR existing.county_code
+                    IS DISTINCT FROM candidate.county_code
+                OR existing.city_name
+                    IS DISTINCT FROM candidate.city_name
+                OR existing.congressional_district
+                    IS DISTINCT FROM
+                       candidate.congressional_district
+                OR existing.zip_code
+                    IS DISTINCT FROM candidate.zip_code
+                OR existing.location_scope
+                    IS DISTINCT FROM candidate.location_scope;
             """
         )
         updated = int(cur.fetchone()[0])
@@ -351,21 +520,32 @@ def count_changes(conn) -> tuple[int, int, int]:
         cur.execute(
             """
             SELECT COUNT(*)
-            FROM tmp_procurement_place_link AS c
-            JOIN procurement.place_of_performance AS pop
-              ON pop.award_transaction_id = c.award_transaction_id
+            FROM tmp_procurement_place_link AS candidate
+            JOIN procurement.place_of_performance AS existing
+              ON existing.award_transaction_id =
+                 candidate.award_transaction_id
             WHERE
-                pop.place_id IS NOT DISTINCT FROM c.place_id
-                AND pop.state_id IS NOT DISTINCT FROM c.state_id
-                AND pop.county_id IS NOT DISTINCT FROM c.county_id
-                AND pop.country_code IS NOT DISTINCT FROM c.country_code
-                AND pop.state_code IS NOT DISTINCT FROM c.state_code
-                AND pop.county_code IS NOT DISTINCT FROM c.county_code
-                AND pop.city_name IS NOT DISTINCT FROM c.city_name
-                AND pop.congressional_district
-                    IS NOT DISTINCT FROM c.congressional_district
-                AND pop.zip_code IS NOT DISTINCT FROM c.zip_code
-                AND pop.location_scope IS NOT DISTINCT FROM c.location_scope;
+                existing.place_id
+                    IS NOT DISTINCT FROM candidate.place_id
+                AND existing.state_id
+                    IS NOT DISTINCT FROM candidate.state_id
+                AND existing.county_id
+                    IS NOT DISTINCT FROM candidate.county_id
+                AND existing.country_code
+                    IS NOT DISTINCT FROM candidate.country_code
+                AND existing.state_code
+                    IS NOT DISTINCT FROM candidate.state_code
+                AND existing.county_code
+                    IS NOT DISTINCT FROM candidate.county_code
+                AND existing.city_name
+                    IS NOT DISTINCT FROM candidate.city_name
+                AND existing.congressional_district
+                    IS NOT DISTINCT FROM
+                       candidate.congressional_district
+                AND existing.zip_code
+                    IS NOT DISTINCT FROM candidate.zip_code
+                AND existing.location_scope
+                    IS NOT DISTINCT FROM candidate.location_scope;
             """
         )
         unchanged = int(cur.fetchone()[0])
@@ -374,6 +554,8 @@ def count_changes(conn) -> tuple[int, int, int]:
 
 
 def apply_links(conn) -> None:
+    """Insert or update transaction-to-place relationships."""
+
     with conn.cursor() as cur:
         cur.execute(
             """
@@ -432,7 +614,8 @@ def apply_links(conn) -> None:
                 OR procurement.place_of_performance.city_name
                     IS DISTINCT FROM EXCLUDED.city_name
                 OR procurement.place_of_performance.congressional_district
-                    IS DISTINCT FROM EXCLUDED.congressional_district
+                    IS DISTINCT FROM
+                       EXCLUDED.congressional_district
                 OR procurement.place_of_performance.zip_code
                     IS DISTINCT FROM EXCLUDED.zip_code
                 OR procurement.place_of_performance.location_scope
@@ -445,6 +628,8 @@ def validate_links(
     conn,
     expected_transactions: int,
 ) -> tuple[int, int]:
+    """Validate completeness and referential integrity."""
+
     with conn.cursor() as cur:
         cur.execute(
             """
@@ -467,10 +652,11 @@ def validate_links(
         cur.execute(
             """
             SELECT COUNT(*)
-            FROM tmp_procurement_place_link AS c
-            LEFT JOIN procurement.place_of_performance AS pop
-              ON pop.award_transaction_id = c.award_transaction_id
-            WHERE pop.place_of_performance_id IS NULL;
+            FROM tmp_procurement_place_link AS candidate
+            LEFT JOIN procurement.place_of_performance AS existing
+              ON existing.award_transaction_id =
+                 candidate.award_transaction_id
+            WHERE existing.place_of_performance_id IS NULL;
             """
         )
         missing_relationships = int(cur.fetchone()[0])
@@ -491,11 +677,11 @@ def validate_links(
         cur.execute(
             """
             SELECT COUNT(*)
-            FROM procurement.place_of_performance AS pop
-            LEFT JOIN procurement.place AS p
-              ON p.place_id = pop.place_id
-            WHERE pop.place_id IS NOT NULL
-              AND p.place_id IS NULL;
+            FROM procurement.place_of_performance AS relationship
+            LEFT JOIN procurement.place AS place
+              ON place.place_id = relationship.place_id
+            WHERE relationship.place_id IS NOT NULL
+              AND place.place_id IS NULL;
             """
         )
         orphan_places = int(cur.fetchone()[0])
@@ -511,29 +697,32 @@ def validate_links(
     if candidate_count != expected_transactions:
         raise ValueError(
             "Transaction/raw join mismatch: "
-            f"expected {expected_transactions}, produced {candidate_count}."
+            f"expected {expected_transactions:,}, "
+            f"produced {candidate_count:,}."
         )
 
     if missing_relationships:
         raise ValueError(
-            f"Transactions missing place relationships: "
-            f"{missing_relationships}"
+            "Transactions missing place relationships: "
+            f"{missing_relationships:,}"
         )
 
     if duplicate_transactions:
         raise ValueError(
-            f"Duplicate transaction relationships found: "
-            f"{duplicate_transactions}"
+            "Duplicate transaction relationships found: "
+            f"{duplicate_transactions:,}"
         )
 
     if orphan_places:
         raise ValueError(
-            f"Orphaned canonical place references found: {orphan_places}"
+            "Orphaned canonical place references found: "
+            f"{orphan_places:,}"
         )
 
     if unresolved:
         raise ValueError(
-            f"Unresolved canonical places found: {unresolved}"
+            "Unresolved canonical places found: "
+            f"{unresolved:,}"
         )
 
     return resolved, unresolved
@@ -543,29 +732,54 @@ def print_summary(
     summary: LinkSummary,
     elapsed_seconds: float,
 ) -> None:
+    """Print the completed-linking summary."""
+
     print()
     print("=" * 68)
     print("ETL-004A.3H SUMMARY")
     print("=" * 68)
-    print(f"Transactions examined . {summary.transactions_examined:,}")
-    print(f"Relationships inserted . {summary.inserted:,}")
-    print(f"Relationships updated . {summary.updated:,}")
-    print(f"Relationships unchanged . {summary.unchanged:,}")
-    print(f"Canonical places resolved . {summary.resolved_places:,}")
-    print(f"Canonical places unresolved . {summary.unresolved_places:,}")
-    print("Duplicate transaction relationships . 0")
-    print("Orphaned canonical place references . 0")
-    print("Validation . PASS")
-    print(f"Elapsed time . {elapsed_seconds:.2f} sec")
+    print(
+        f"Transactions examined ................. "
+        f"{summary.transactions_examined:,}"
+    )
+    print(
+        f"Relationships inserted ................ "
+        f"{summary.inserted:,}"
+    )
+    print(
+        f"Relationships updated ................. "
+        f"{summary.updated:,}"
+    )
+    print(
+        f"Relationships unchanged ............... "
+        f"{summary.unchanged:,}"
+    )
+    print(
+        f"Canonical places resolved ............. "
+        f"{summary.resolved_places:,}"
+    )
+    print(
+        f"Canonical places unresolved ........... "
+        f"{summary.unresolved_places:,}"
+    )
+    print("Duplicate transaction relationships ... 0")
+    print("Orphaned canonical place references ... 0")
+    print("Validation ............................. PASS")
+    print(
+        f"Elapsed time ........................... "
+        f"{elapsed_seconds:.2f} sec"
+    )
     print("=" * 68)
 
 
 def main() -> None:
+    """Run ETL-004A.3H."""
+
     args = parse_arguments()
     started = time.perf_counter()
 
     print("=" * 68)
-    print("ETL-004A.3H — Link Procurement Places")
+    print("ETL-004A.3H - Link Procurement Places")
     print("=" * 68)
 
     conn = get_connection()
@@ -573,27 +787,41 @@ def main() -> None:
     try:
         verify_schema(conn)
 
-        load_batch_id, source_file, transaction_count = get_target_batch(
+        (
+            load_batch_id,
+            source_file,
+            transaction_count,
+        ) = get_target_batch(
             conn,
             args.load_batch_id,
         )
 
         print(f"Target load batch: {load_batch_id}")
         print(f"Source file: {source_file}")
-        print(f"Normalized transactions: {transaction_count:,}")
+        print(
+            f"Normalized transactions: "
+            f"{transaction_count:,}"
+        )
 
         candidate_count = create_link_candidate_table(
             conn,
             load_batch_id,
         )
-        print(f"Place-link candidates: {candidate_count:,}")
+
+        print(
+            f"Place-link candidates: "
+            f"{candidate_count:,}"
+        )
 
         inserted, updated, unchanged = count_changes(conn)
+
         apply_links(conn)
+
         resolved, unresolved = validate_links(
             conn,
             transaction_count,
         )
+
         conn.commit()
 
         print_summary(
@@ -613,9 +841,11 @@ def main() -> None:
 
     except Exception as exc:
         conn.rollback()
+
         print()
         print("ETL-004A.3H failed.")
         print(f"{type(exc).__name__}: {exc}")
+
         raise SystemExit(1) from exc
 
     finally:

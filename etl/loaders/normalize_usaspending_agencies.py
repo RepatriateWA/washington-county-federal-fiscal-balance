@@ -203,12 +203,12 @@ def read_raw_observations(
                 source_row_number,
                 raw_record ->> 'awarding_agency_code',
                 raw_record ->> 'awarding_agency_name',
-                raw_record ->> 'awarding_subagency_code',
-                raw_record ->> 'awarding_subagency_name',
+                raw_record ->> 'awarding_sub_agency_code',
+                raw_record ->> 'awarding_sub_agency_name',
                 raw_record ->> 'funding_agency_code',
                 raw_record ->> 'funding_agency_name',
-                raw_record ->> 'funding_subagency_code',
-                raw_record ->> 'funding_subagency_name'
+                raw_record ->> 'funding_sub_agency_code',
+                raw_record ->> 'funding_sub_agency_name'
             FROM procurement.raw_award_transaction
             WHERE load_batch_id = %s
             ORDER BY

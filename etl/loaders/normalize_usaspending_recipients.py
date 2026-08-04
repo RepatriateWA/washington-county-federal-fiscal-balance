@@ -27,23 +27,51 @@ import argparse
 import re
 import time
 from dataclasses import dataclass, field
+from datetime import date
 from typing import Any, Iterable
+
+from etl.common.usaspending import parse_date
+from etl.validation.common.normalization_exception_recorder import (
+    NormalizationExceptionRecorder,
+)
+from etl.validation.common.recipient_parent_relationship_recorder import (
+    RecipientParentRelationship,
+    RecipientParentRelationshipRecorder,
+)
 
 from etl.common.db import get_connection
 
 
 COMPLETED_STATUSES = {"COMPLETED", "COMPLETED_WITH_REJECTIONS"}
 
-
 @dataclass(frozen=True)
 class RawRecipientObservation:
     source_row_number: int
+    action_date: date | None
     recipient_uei: str | None
     recipient_duns: str | None
     recipient_name: str
     recipient_parent_uei: str | None
     recipient_parent_name: str | None
 
+@dataclass(frozen=True)
+class ParentRelationshipObservation:
+    """One parent relationship observed on one source row."""
+
+    recipient_uei: str
+    parent_uei: str
+    parent_name: str | None
+    action_date: date | None
+    source_row_number: int
+
+@dataclass(frozen=True)
+class RecipientParentResolution:
+    """Canonical and historical parent relationships for a recipient."""
+
+    canonical_parent_uei: str | None
+    canonical_parent_name: str | None
+    relationships: tuple[RecipientParentRelationship, ...]
+    anomaly: dict[str, Any] | None    
 
 @dataclass
 class RecipientCandidate:
@@ -57,24 +85,27 @@ class RecipientCandidate:
 
     def absorb(self, other: "RecipientCandidate") -> None:
         self.recipient_uei = choose_identifier(
-            self.recipient_uei, other.recipient_uei, "UEI"
+            self.recipient_uei,
+            other.recipient_uei,
+            "UEI",
         )
+
         self.recipient_duns = choose_identifier(
-            self.recipient_duns, other.recipient_duns, "DUNS"
+            self.recipient_duns,
+            other.recipient_duns,
+            "DUNS",
         )
+
         if len(other.recipient_name) > len(self.recipient_name):
             self.recipient_name = other.recipient_name
-        self.recipient_name_normalized = normalize_name(self.recipient_name)
-        self.recipient_parent_uei = choose_identifier(
-            self.recipient_parent_uei,
-            other.recipient_parent_uei,
-            "parent UEI",
-        )
-        self.recipient_parent_name = choose_preferred_text(
-            self.recipient_parent_name, other.recipient_parent_name
-        )
-        self.source_rows.update(other.source_rows)
 
+        self.recipient_name_normalized = normalize_name(
+            self.recipient_name
+        )
+
+        # Parent relationships are resolved separately because they can
+        # legitimately change over time.
+        self.source_rows.update(other.source_rows)
 
 @dataclass(frozen=True)
 class ExistingRecipient:
@@ -251,6 +282,7 @@ def read_raw_recipient_observations(
             """
             SELECT
                 source_row_number,
+                raw_record ->> 'action_date',
                 raw_record ->> 'recipient_uei',
                 raw_record ->> 'recipient_duns',
                 raw_record ->> 'recipient_name',
@@ -267,6 +299,7 @@ def read_raw_recipient_observations(
     observations: list[RawRecipientObservation] = []
     for (
         source_row_number,
+        raw_action_date,
         recipient_uei,
         recipient_duns,
         recipient_name,
@@ -279,9 +312,22 @@ def read_raw_recipient_observations(
                 f"Missing recipient_name at source row {source_row_number}."
             )
         parent_name = normalize_null(recipient_parent_name)
+
+        try:
+            action_date = parse_date(
+                normalize_null(raw_action_date)
+            )
+
+        except ValueError as exc:
+            raise ValueError(
+                f"Invalid action_date at source row "
+                f"{source_row_number}: {raw_action_date!r}."
+            ) from exc
+
         observations.append(
             RawRecipientObservation(
                 source_row_number=int(source_row_number),
+                action_date=action_date,
                 recipient_uei=normalize_uei(recipient_uei),
                 recipient_duns=normalize_duns(recipient_duns),
                 recipient_name=collapse_whitespace(clean_name),
@@ -295,6 +341,228 @@ def read_raw_recipient_observations(
         )
     return observations
 
+def build_parent_relationship_observations(
+    observations: Iterable[RawRecipientObservation],
+) -> list[ParentRelationshipObservation]:
+    """Return valid recipient-parent observations from raw rows."""
+    relationships: list[ParentRelationshipObservation] = []
+
+    for observation in observations:
+        if (
+            observation.recipient_uei is None
+            or observation.recipient_parent_uei is None
+        ):
+            continue
+
+        relationships.append(
+            ParentRelationshipObservation(
+                recipient_uei=observation.recipient_uei,
+                parent_uei=observation.recipient_parent_uei,
+                parent_name=observation.recipient_parent_name,
+                action_date=observation.action_date,
+                source_row_number=observation.source_row_number,
+            )
+        )
+
+    return relationships
+
+
+def resolve_parent_relationships(
+    observations: Iterable[ParentRelationshipObservation],
+    *,
+    load_batch_id: int,
+) -> dict[str, RecipientParentResolution]:
+    """
+    Resolve canonical and historical parent relationships by recipient UEI.
+
+    Canonical-selection policy:
+    - latest action date wins;
+    - highest source-row number breaks equal-date ties.
+    """
+    grouped: dict[
+        str,
+        dict[str, list[ParentRelationshipObservation]],
+    ] = {}
+
+    for observation in observations:
+        recipient_group = grouped.setdefault(
+            observation.recipient_uei,
+            {},
+        )
+
+        parent_group = recipient_group.setdefault(
+            observation.parent_uei,
+            [],
+        )
+
+        parent_group.append(observation)
+
+    resolutions: dict[str, RecipientParentResolution] = {}
+
+    for recipient_uei in sorted(grouped):
+        parents = grouped[recipient_uei]
+
+        parent_summaries: list[
+            tuple[
+                RecipientParentRelationship,
+                ParentRelationshipObservation,
+            ]
+        ] = []
+
+        for parent_uei in sorted(parents):
+            values = parents[parent_uei]
+
+            latest_observation = max(
+                values,
+                key=lambda item: (
+                    item.action_date or date.min,
+                    item.source_row_number,
+                ),
+            )
+
+            action_dates = [
+                item.action_date
+                for item in values
+                if item.action_date is not None
+            ]
+
+            source_rows = sorted(
+                item.source_row_number
+                for item in values
+            )
+
+            relationship = RecipientParentRelationship(
+                recipient_uei=recipient_uei,
+                parent_uei=parent_uei,
+                observed_parent_name=(
+                    latest_observation.parent_name
+                ),
+                occurrence_count=len(values),
+                first_action_date=(
+                    min(action_dates)
+                    if action_dates
+                    else None
+                ),
+                last_action_date=(
+                    max(action_dates)
+                    if action_dates
+                    else None
+                ),
+                first_source_row_number=source_rows[0],
+                last_source_row_number=source_rows[-1],
+            )
+
+            parent_summaries.append(
+                (
+                    relationship,
+                    latest_observation,
+                )
+            )
+
+        (
+            canonical_relationship,
+            canonical_observation,
+        ) = max(
+            parent_summaries,
+            key=lambda item: (
+                item[1].action_date or date.min,
+                item[1].source_row_number,
+            ),
+        )
+
+        anomaly: dict[str, Any] | None = None
+
+        if len(parent_summaries) > 1:
+            all_source_rows = sorted(
+                {
+                    observation.source_row_number
+                    for values in parents.values()
+                    for observation in values
+                }
+            )
+
+            observed_relationships = []
+
+            for relationship, _latest in parent_summaries:
+                observed_relationships.append(
+                    {
+                        "parent_uei": relationship.parent_uei,
+                        "observed_parent_name": (
+                            relationship.observed_parent_name
+                        ),
+                        "occurrence_count": (
+                            relationship.occurrence_count
+                        ),
+                        "first_action_date": (
+                            relationship.first_action_date.isoformat()
+                            if relationship.first_action_date
+                            is not None
+                            else None
+                        ),
+                        "last_action_date": (
+                            relationship.last_action_date.isoformat()
+                            if relationship.last_action_date
+                            is not None
+                            else None
+                        ),
+                        "first_source_row_number": (
+                            relationship.first_source_row_number
+                        ),
+                        "last_source_row_number": (
+                            relationship.last_source_row_number
+                        ),
+                    }
+                )
+
+            anomaly = {
+                "load_batch_id": load_batch_id,
+                "entity_type": "recipient",
+                "entity_key": recipient_uei,
+                "anomaly_code": "PARENT_UEI_ALIAS",
+                "severity": "WARNING",
+                "source_row_numbers": all_source_rows,
+                "raw_values": {
+                    "observed_parent_relationships": (
+                        observed_relationships
+                    ),
+                },
+                "normalized_action": {
+                    "canonical_parent_uei": (
+                        canonical_relationship.parent_uei
+                    ),
+                    "canonical_parent_name": (
+                        canonical_relationship.observed_parent_name
+                    ),
+                    "selection_rule": (
+                        "Select the parent relationship from the "
+                        "latest action date, breaking ties with "
+                        "the highest source-row number."
+                    ),
+                },
+                "message": (
+                    "Multiple parent UEIs were observed for "
+                    f"recipient UEI {recipient_uei!r}. All "
+                    "relationships were preserved and the most "
+                    "recent observation was selected as canonical."
+                ),
+            }
+
+        resolutions[recipient_uei] = RecipientParentResolution(
+            canonical_parent_uei=(
+                canonical_relationship.parent_uei
+            ),
+            canonical_parent_name=(
+                canonical_relationship.observed_parent_name
+            ),
+            relationships=tuple(
+                relationship
+                for relationship, _latest
+                in parent_summaries
+            ),
+            anomaly=anomaly,
+        )
+
+    return resolutions
 
 def candidate_from_observation(
     observation: RawRecipientObservation,
@@ -303,12 +571,13 @@ def candidate_from_observation(
         recipient_uei=observation.recipient_uei,
         recipient_duns=observation.recipient_duns,
         recipient_name=observation.recipient_name,
-        recipient_name_normalized=normalize_name(observation.recipient_name),
-        recipient_parent_uei=observation.recipient_parent_uei,
-        recipient_parent_name=observation.recipient_parent_name,
+        recipient_name_normalized=normalize_name(
+            observation.recipient_name
+        ),
+        recipient_parent_uei=None,
+        recipient_parent_name=None,
         source_rows={observation.source_row_number},
     )
-
 
 def consolidate_candidates(
     observations: Iterable[RawRecipientObservation],
@@ -389,7 +658,32 @@ def consolidate_candidates(
         ),
     )
 
+def apply_parent_resolutions(
+    candidates: list[RecipientCandidate],
+    resolutions: dict[str, RecipientParentResolution],
+) -> None:
+    """Attach canonical parent values to recipient candidates."""
+    for candidate in candidates:
+        if candidate.recipient_uei is None:
+            continue
 
+        resolution = resolutions.get(
+            candidate.recipient_uei
+        )
+
+        if resolution is None:
+            candidate.recipient_parent_uei = None
+            candidate.recipient_parent_name = None
+            continue
+
+        candidate.recipient_parent_uei = (
+            resolution.canonical_parent_uei
+        )
+
+        candidate.recipient_parent_name = (
+            resolution.canonical_parent_name
+        )
+        
 def read_existing_recipients(conn) -> list[ExistingRecipient]:
     with conn.cursor() as cur:
         cur.execute(
@@ -739,9 +1033,90 @@ def main() -> None:
         print(f"Raw observations read: {len(observations):,}")
 
         candidates = consolidate_candidates(observations)
+
+        parent_observations = (
+            build_parent_relationship_observations(
+                observations
+            )
+        )
+
+        parent_resolutions = resolve_parent_relationships(
+            parent_observations,
+            load_batch_id=load_batch_id,
+        )
+
+        apply_parent_resolutions(
+            candidates,
+            parent_resolutions,
+        )
+
+        print(
+            "Recipient-parent relationships derived: "
+            f"{len(parent_observations):,}"
+        )
+
+        print(
+            "Recipients with parent history: "
+            f"{len(parent_resolutions):,}"
+        )
+
         print(f"Canonical recipient candidates: {len(candidates):,}")
 
         inserted, updated, unchanged = apply_candidates(conn, candidates)
+
+        relationship_recorder = (
+            RecipientParentRelationshipRecorder()
+        )
+
+        relationships = []
+
+        for resolution in parent_resolutions.values():
+            relationships.extend(
+                resolution.relationships
+            )
+
+        relationship_count = (
+            relationship_recorder.record(
+                conn,
+                load_batch_id=load_batch_id,
+                relationships=relationships,
+            )
+        )
+
+        print(
+            "Recipient-parent relationships recorded: "
+            f"{relationship_count:,}"
+        )
+
+        anomalies = [
+            resolution.anomaly
+            for resolution in parent_resolutions.values()
+            if resolution.anomaly is not None
+        ]
+
+        exception_recorder = NormalizationExceptionRecorder()
+
+        for anomaly in anomalies:
+                exception_recorder.record(
+                conn,
+                load_batch_id=anomaly["load_batch_id"],
+                entity_type=anomaly["entity_type"],
+                entity_key=anomaly["entity_key"],
+                anomaly_code=anomaly["anomaly_code"],
+                severity=anomaly["severity"],
+                source_row_numbers=anomaly["source_row_numbers"],
+                raw_values=anomaly["raw_values"],
+                normalized_action=anomaly["normalized_action"],
+                message=anomaly["message"],
+                )
+
+        exception_count = len(anomalies)
+
+        print(
+            "Normalization exceptions recorded: "
+            f"{exception_count:,}"
+        )
+
         validate_recipient_dimension(conn, observations)
         conn.commit()
 
