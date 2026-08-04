@@ -23,6 +23,13 @@ from typing import Any
 
 from etl.common.db import get_connection
 
+from etl.validation.common.award_recipient_relationship_recorder import (
+    AwardRecipientRelationship,
+    AwardRecipientRelationshipRecorder,
+)
+from etl.validation.common.normalization_exception_recorder import (
+    NormalizationExceptionRecorder,
+)
 
 PLACEHOLDER_AGENCY_CODES = {"999"}
 
@@ -51,6 +58,29 @@ class AwardRelationshipResolution:
     awarding_subagency_id: int | None
     funding_agency_id: int | None
     funding_subagency_id: int | None
+
+
+@dataclass(frozen=True)
+class AwardRecipientObservation:
+    """One award-recipient relationship observed on one transaction."""
+
+    award_id: int
+    generated_unique_award_id: str
+    recipient_uei: str
+    recipient_name: str | None
+    action_date: date | None
+    source_row_number: int
+
+
+@dataclass(frozen=True)
+class AwardRecipientResolution:
+    """Canonical and historical recipients observed for one award."""
+
+    award_id: int
+    generated_unique_award_id: str
+    canonical_recipient_uei: str | None
+    relationships: tuple[AwardRecipientRelationship, ...]
+    anomaly: dict[str, Any] | None    
 
 
 @dataclass
@@ -122,6 +152,9 @@ def get_batch_transaction_sources(
 
             raw.raw_record ->> 'recipient_uei'
                 AS recipient_uei,
+
+            raw.raw_record ->> 'recipient_name'
+                AS recipient_name,    
 
             raw.raw_record ->> 'awarding_agency_code'
                 AS awarding_agency_code,
@@ -204,6 +237,322 @@ def select_latest_value(
 
     return candidates[-1][2]
 
+def build_award_recipient_observations(
+    rows: list[dict[str, Any]],
+) -> list[AwardRecipientObservation]:
+    """Build valid award-recipient observations from transaction rows."""
+
+    observations: list[AwardRecipientObservation] = []
+
+    for row in rows:
+        recipient_uei = clean_text(
+            row.get("recipient_uei")
+        )
+
+        if recipient_uei is None:
+            continue
+
+        recipient_name = clean_text(
+            row.get("recipient_name")
+        )
+
+        observations.append(
+            AwardRecipientObservation(
+                award_id=int(row["award_id"]),
+                generated_unique_award_id=str(
+                    row["generated_unique_award_id"]
+                ),
+                recipient_uei=recipient_uei,
+                recipient_name=recipient_name,
+                action_date=row.get("action_date"),
+                source_row_number=int(
+                    row["source_row_number"]
+                ),
+            )
+        )
+
+    return observations
+
+
+def read_recipient_lookup(
+    cur,
+    recipient_ueis: set[str],
+) -> dict[str, tuple[int, str | None]]:
+    """Resolve recipient UEIs to recipient IDs and canonical names."""
+
+    if not recipient_ueis:
+        return {}
+
+    cur.execute(
+        """
+        SELECT
+            recipient_uei,
+            recipient_id,
+            recipient_name
+        FROM procurement.recipient
+        WHERE recipient_uei = ANY(%s)
+        ORDER BY recipient_uei, recipient_id;
+        """,
+        (sorted(recipient_ueis),),
+    )
+
+    lookup: dict[str, tuple[int, str | None]] = {}
+
+    for recipient_uei, recipient_id, recipient_name in cur.fetchall():
+        if recipient_uei in lookup:
+            raise ValueError(
+                "Multiple normalized recipients matched UEI "
+                f"{recipient_uei!r}."
+            )
+
+        lookup[str(recipient_uei)] = (
+            int(recipient_id),
+            (
+                str(recipient_name)
+                if recipient_name is not None
+                else None
+            ),
+        )
+
+    missing = sorted(recipient_ueis - set(lookup))
+
+    if missing:
+        raise ValueError(
+            "The following recipient UEIs were not found in "
+            "procurement.recipient: "
+            + ", ".join(missing)
+        )
+
+    return lookup
+
+
+def resolve_award_recipients(
+    cur,
+    observations: list[AwardRecipientObservation],
+    *,
+    load_batch_id: int,
+) -> dict[int, AwardRecipientResolution]:
+    """
+    Resolve canonical and historical recipients for each award.
+
+    Canonical policy:
+    - latest action date wins;
+    - highest source-row number breaks equal-date ties;
+    - recipient UEI is the final deterministic tie-breaker.
+    """
+
+    recipient_ueis = {
+        observation.recipient_uei
+        for observation in observations
+    }
+
+    recipient_lookup = read_recipient_lookup(
+        cur,
+        recipient_ueis,
+    )
+
+    grouped: dict[
+        int,
+        dict[str, list[AwardRecipientObservation]],
+    ] = {}
+
+    award_keys: dict[int, str] = {}
+
+    for observation in observations:
+        award_keys[observation.award_id] = (
+            observation.generated_unique_award_id
+        )
+
+        grouped.setdefault(
+            observation.award_id,
+            {},
+        ).setdefault(
+            observation.recipient_uei,
+            [],
+        ).append(observation)
+
+    resolutions: dict[int, AwardRecipientResolution] = {}
+
+    for award_id in sorted(grouped):
+        recipients = grouped[award_id]
+
+        relationship_candidates: list[
+            tuple[
+                AwardRecipientRelationship,
+                AwardRecipientObservation,
+            ]
+        ] = []
+
+        for recipient_uei in sorted(recipients):
+            values = recipients[recipient_uei]
+
+            latest_observation = max(
+                values,
+                key=lambda item: (
+                    item.action_date or date.min,
+                    item.source_row_number,
+                    item.recipient_uei,
+                ),
+            )
+
+            action_dates = [
+                item.action_date
+                for item in values
+                if item.action_date is not None
+            ]
+
+            source_rows = sorted(
+                item.source_row_number
+                for item in values
+            )
+
+            recipient_id, canonical_name = (
+                recipient_lookup[recipient_uei]
+            )
+
+            observed_name = (
+                latest_observation.recipient_name
+                or canonical_name
+            )
+
+            relationship = AwardRecipientRelationship(
+                award_id=award_id,
+                recipient_id=recipient_id,
+                recipient_uei=recipient_uei,
+                observed_recipient_name=observed_name,
+                occurrence_count=len(values),
+                first_action_date=(
+                    min(action_dates)
+                    if action_dates
+                    else None
+                ),
+                last_action_date=(
+                    max(action_dates)
+                    if action_dates
+                    else None
+                ),
+                first_source_row_number=source_rows[0],
+                last_source_row_number=source_rows[-1],
+            )
+
+            relationship_candidates.append(
+                (
+                    relationship,
+                    latest_observation,
+                )
+            )
+
+        (
+            canonical_relationship,
+            canonical_observation,
+        ) = max(
+            relationship_candidates,
+            key=lambda item: (
+                item[1].action_date or date.min,
+                item[1].source_row_number,
+                item[1].recipient_uei,
+            ),
+        )
+
+        anomaly: dict[str, Any] | None = None
+
+        if len(relationship_candidates) > 1:
+            source_rows = sorted(
+                {
+                    observation.source_row_number
+                    for values in recipients.values()
+                    for observation in values
+                }
+            )
+
+            observed_relationships = []
+
+            for relationship, _latest in relationship_candidates:
+                observed_relationships.append(
+                    {
+                        "recipient_id": (
+                            relationship.recipient_id
+                        ),
+                        "recipient_uei": (
+                            relationship.recipient_uei
+                        ),
+                        "observed_recipient_name": (
+                            relationship.observed_recipient_name
+                        ),
+                        "occurrence_count": (
+                            relationship.occurrence_count
+                        ),
+                        "first_action_date": (
+                            relationship.first_action_date.isoformat()
+                            if relationship.first_action_date
+                            is not None
+                            else None
+                        ),
+                        "last_action_date": (
+                            relationship.last_action_date.isoformat()
+                            if relationship.last_action_date
+                            is not None
+                            else None
+                        ),
+                        "first_source_row_number": (
+                            relationship.first_source_row_number
+                        ),
+                        "last_source_row_number": (
+                            relationship.last_source_row_number
+                        ),
+                    }
+                )
+
+            anomaly = {
+                "load_batch_id": load_batch_id,
+                "entity_type": "award",
+                "entity_key": award_keys[award_id],
+                "anomaly_code": "RECIPIENT_UEI_ALIAS",
+                "severity": "WARNING",
+                "source_row_numbers": source_rows,
+                "raw_values": {
+                    "award_id": award_id,
+                    "observed_recipient_relationships": (
+                        observed_relationships
+                    ),
+                },
+                "normalized_action": {
+                    "canonical_recipient_id": (
+                        canonical_relationship.recipient_id
+                    ),
+                    "canonical_recipient_uei": (
+                        canonical_relationship.recipient_uei
+                    ),
+                    "selection_rule": (
+                        "Select the recipient from the latest "
+                        "action date, breaking ties with the "
+                        "highest source-row number and then UEI."
+                    ),
+                },
+                "message": (
+                    "Multiple recipient UEIs were observed for "
+                    f"award {award_keys[award_id]!r}. Every "
+                    "relationship was preserved and the latest "
+                    "observation was selected as canonical."
+                ),
+            }
+
+        resolutions[award_id] = AwardRecipientResolution(
+            award_id=award_id,
+            generated_unique_award_id=award_keys[award_id],
+            canonical_recipient_uei=(
+                canonical_relationship.recipient_uei
+            ),
+            relationships=tuple(
+                relationship
+                for relationship, _latest
+                in relationship_candidates
+            ),
+            anomaly=anomaly,
+        )
+
+    return resolutions
+
 
 def collapse_award_sources(
     rows: list[dict[str, Any]],
@@ -219,19 +568,10 @@ def collapse_award_sources(
     for award_id in sorted(grouped):
         award_rows = grouped[award_id]
 
-        recipient_ueis = {
-            value
-            for row in award_rows
-            if (
-                value := clean_text(row.get("recipient_uei"))
-            ) is not None
-        }
-
-        if len(recipient_ueis) > 1:
-            raise ValueError(
-                f"Award {award_id} has conflicting recipient UEIs: "
-                f"{sorted(recipient_ueis)}"
-            )
+        recipient_uei = select_latest_value(
+            award_rows,
+            field="recipient_uei",
+        )
 
         sources.append(
             AwardRelationshipSource(
@@ -239,11 +579,9 @@ def collapse_award_sources(
                 generated_unique_award_id=str(
                     award_rows[0]["generated_unique_award_id"]
                 ),
-                recipient_uei=(
-                    next(iter(recipient_ueis))
-                    if recipient_ueis
-                    else None
-                ),
+
+                recipient_uei=recipient_uei,
+
                 awarding_agency_code=select_latest_value(
                     award_rows,
                     field="awarding_agency_code",
@@ -606,7 +944,83 @@ def enrich_awards(
         increment_link_metrics(metrics, changed_fields)
 
     return metrics
+def flatten_award_recipient_relationships(
+    resolutions: dict[int, AwardRecipientResolution],
+) -> list[AwardRecipientRelationship]:
+    """Return all relationship summaries in deterministic order."""
 
+    relationships = [
+        relationship
+        for award_id in sorted(resolutions)
+        for relationship in resolutions[award_id].relationships
+    ]
+
+    return sorted(
+        relationships,
+        key=lambda item: (
+            item.award_id,
+            item.recipient_id,
+        ),
+    )
+
+
+def record_award_recipient_relationships(
+    conn,
+    *,
+    load_batch_id: int,
+    resolutions: dict[int, AwardRecipientResolution],
+) -> int:
+    """Persist all observed award-recipient relationships."""
+
+    relationships = flatten_award_recipient_relationships(
+        resolutions
+    )
+
+    recorder = AwardRecipientRelationshipRecorder()
+
+    return recorder.record(
+        conn,
+        load_batch_id=load_batch_id,
+        relationships=relationships,
+    )
+
+
+def record_award_recipient_exceptions(
+    conn,
+    *,
+    resolutions: dict[int, AwardRecipientResolution],
+) -> int:
+    """Persist warnings for awards with multiple observed recipients."""
+
+    anomalies = [
+        resolutions[award_id].anomaly
+        for award_id in sorted(resolutions)
+        if resolutions[award_id].anomaly is not None
+    ]
+
+    recorder = NormalizationExceptionRecorder()
+
+    for anomaly in anomalies:
+        assert anomaly is not None
+
+        recorder.record(
+            conn,
+            load_batch_id=anomaly["load_batch_id"],
+            entity_type=anomaly["entity_type"],
+            entity_key=anomaly["entity_key"],
+            anomaly_code=anomaly["anomaly_code"],
+            severity=anomaly["severity"],
+            source_row_numbers=anomaly[
+                "source_row_numbers"
+            ],
+            raw_values=anomaly["raw_values"],
+            normalized_action=anomaly[
+                "normalized_action"
+            ],
+            message=anomaly["message"],
+        )
+
+    return len(anomalies)
 
 def print_summary(
     *,
@@ -651,12 +1065,43 @@ def main() -> None:
     args = parse_arguments()
     conn = get_connection()
 
+    relationship_count = 0
+    exception_count = 0
+    recipient_resolution_count = 0
+
     try:
         with conn:
             with conn.cursor() as cur:
-                transaction_rows = get_batch_transaction_sources(
-                    cur,
-                    load_batch_id=args.load_batch_id,
+                transaction_rows = (
+                    get_batch_transaction_sources(
+                        cur,
+                        load_batch_id=args.load_batch_id,
+                    )
+                )
+
+                if not transaction_rows:
+                    raise ValueError(
+                        "No transaction relationship sources "
+                        "were found for load batch "
+                        f"{args.load_batch_id}."
+                    )
+
+                recipient_observations = (
+                    build_award_recipient_observations(
+                        transaction_rows
+                    )
+                )
+
+                recipient_resolutions = (
+                    resolve_award_recipients(
+                        cur,
+                        recipient_observations,
+                        load_batch_id=args.load_batch_id,
+                    )
+                )
+
+                recipient_resolution_count = len(
+                    recipient_resolutions
                 )
 
                 sources = collapse_award_sources(
@@ -681,6 +1126,21 @@ def main() -> None:
                     dry_run=args.dry_run,
                 )
 
+                relationship_count = (
+                    record_award_recipient_relationships(
+                        conn,
+                        load_batch_id=args.load_batch_id,
+                        resolutions=recipient_resolutions,
+                    )
+                )
+
+                exception_count = (
+                    record_award_recipient_exceptions(
+                        conn,
+                        resolutions=recipient_resolutions,
+                    )
+                )
+
                 if args.dry_run:
                     conn.rollback()
 
@@ -690,12 +1150,34 @@ def main() -> None:
             dry_run=args.dry_run,
         )
 
+        print()
+        print(
+            "Awards with recipient history ... "
+            f"{recipient_resolution_count:,}"
+        )
+        print(
+            "Award-recipient relationships ... "
+            f"{relationship_count:,}"
+        )
+        print(
+            "Recipient-history warnings ....... "
+            f"{exception_count:,}"
+        )
+
+        print()
+        print(
+            "Award relationship enrichment "
+            f"{'dry run' if args.dry_run else 'completed'} "
+            "successfully."
+        )
+
     except Exception as exc:
         conn.rollback()
 
         print()
         print("Award relationship enrichment failed.")
         print(f"{type(exc).__name__}: {exc}")
+
         raise SystemExit(1) from exc
 
     finally:
