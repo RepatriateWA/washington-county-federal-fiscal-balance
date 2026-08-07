@@ -157,10 +157,197 @@ def check_funding_subagency_completeness(
     )
 
 
+def check_award_recipient_history_references(
+    cur,
+    load_batch_id: int,
+) -> CertificationCheck:
+    cur.execute(
+        """
+        SELECT
+            COUNT(*) AS relationship_count,
+            COUNT(*) FILTER (
+                WHERE aw.award_id IS NULL
+                   OR recipient.recipient_id IS NULL
+            ) AS orphan_count
+        FROM procurement.award_recipient_relationship AS rel
+        LEFT JOIN procurement.award AS aw
+          ON aw.award_id = rel.award_id
+        LEFT JOIN procurement.recipient AS recipient
+          ON recipient.recipient_id = rel.recipient_id
+        WHERE rel.load_batch_id = %s;
+        """,
+        (load_batch_id,),
+    )
+
+    row = cur.fetchone()
+
+    if row is None:
+        raise ValueError(
+            "Award-recipient history query returned no result."
+        )
+
+    relationship_count = int(row[0])
+    orphan_count = int(row[1])
+
+    status = (
+        CheckStatus.PASS
+        if relationship_count > 0 and orphan_count == 0
+        else CheckStatus.FAIL
+    )
+
+    return CertificationCheck(
+        check_code="REL-006",
+        section="RELATIONSHIP COMPLETENESS",
+        label="Award-recipient history resolves",
+        status=status,
+        observed_value=(
+            f"{relationship_count - orphan_count}/"
+            f"{relationship_count}"
+        ),
+        expected_value="all relationships",
+        detail=(
+            None
+            if status == CheckStatus.PASS
+            else (
+                f"{orphan_count} award-recipient history rows "
+                "contain unresolved references."
+            )
+        ),
+        evidence={
+            "relationship_count": relationship_count,
+            "orphan_count": orphan_count,
+        },
+    )
+
+
+def check_recipient_parent_history_references(
+    cur,
+    load_batch_id: int,
+) -> CertificationCheck:
+    cur.execute(
+        """
+        SELECT
+            COUNT(*) AS relationship_count,
+            COUNT(*) FILTER (
+                WHERE recipient.recipient_id IS NULL
+            ) AS unresolved_recipient_count
+        FROM procurement.recipient_parent_relationship AS rel
+        LEFT JOIN procurement.recipient AS recipient
+          ON recipient.recipient_uei = rel.recipient_uei
+        WHERE rel.load_batch_id = %s;
+        """,
+        (load_batch_id,),
+    )
+
+    row = cur.fetchone()
+
+    if row is None:
+        raise ValueError(
+            "Recipient-parent history query returned no result."
+        )
+
+    relationship_count = int(row[0])
+    unresolved_count = int(row[1])
+
+    status = (
+        CheckStatus.PASS
+        if relationship_count > 0 and unresolved_count == 0
+        else CheckStatus.FAIL
+    )
+
+    return CertificationCheck(
+        check_code="REL-007",
+        section="RELATIONSHIP COMPLETENESS",
+        label="Recipient-parent history resolves",
+        status=status,
+        observed_value=(
+            f"{relationship_count - unresolved_count}/"
+            f"{relationship_count}"
+        ),
+        expected_value="all relationships",
+        detail=(
+            None
+            if status == CheckStatus.PASS
+            else (
+                f"{unresolved_count} recipient-parent history rows "
+                "do not resolve to a canonical recipient."
+            )
+        ),
+        evidence={
+            "relationship_count": relationship_count,
+            "unresolved_recipient_count": unresolved_count,
+        },
+    )
+
+
+def check_award_recipient_history_coverage(
+    cur,
+    load_batch_id: int,
+) -> CertificationCheck:
+    cur.execute(
+        """
+        SELECT
+            (
+                SELECT COUNT(DISTINCT txn.award_id)
+                FROM procurement.award_transaction AS txn
+                WHERE txn.load_batch_id = %s
+            ) AS batch_awards,
+            (
+                SELECT COUNT(DISTINCT rel.award_id)
+                FROM procurement.award_recipient_relationship AS rel
+                WHERE rel.load_batch_id = %s
+            ) AS history_awards;
+        """,
+        (
+            load_batch_id,
+            load_batch_id,
+        ),
+    )
+
+    row = cur.fetchone()
+
+    if row is None:
+        raise ValueError(
+            "Award-recipient history coverage query returned no result."
+        )
+
+    batch_awards = int(row[0])
+    history_awards = int(row[1])
+
+    status = (
+        CheckStatus.PASS
+        if batch_awards > 0 and history_awards == batch_awards
+        else CheckStatus.FAIL
+    )
+
+    return CertificationCheck(
+        check_code="REL-008",
+        section="RELATIONSHIP COMPLETENESS",
+        label="Award-recipient history coverage complete",
+        status=status,
+        observed_value=f"{history_awards}/{batch_awards}",
+        expected_value="all batch awards",
+        detail=(
+            None
+            if status == CheckStatus.PASS
+            else (
+                f"{batch_awards - history_awards} awards lack "
+                "award-recipient history rows."
+            )
+        ),
+        evidence={
+            "batch_awards": batch_awards,
+            "history_awards": history_awards,
+        },
+    )
+
 RELATIONSHIP_CHECKS = (
     check_recipient_completeness,
     check_awarding_agency_completeness,
     check_awarding_subagency_completeness,
     check_funding_agency_completeness,
     check_funding_subagency_completeness,
+    check_award_recipient_history_references,
+    check_recipient_parent_history_references,
+    check_award_recipient_history_coverage,
 )

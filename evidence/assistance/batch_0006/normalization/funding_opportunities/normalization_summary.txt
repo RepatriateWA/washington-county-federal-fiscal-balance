@@ -1,0 +1,16 @@
+========================================================================
+ETL-005C.3 — FUNDING OPPORTUNITY NORMALIZATION
+========================================================================
+Load batch ID .................. 6
+Raw observations examined ...... 74,116
+Rows missing opportunity number  57,970
+Distinct funding opportunities . 3,097
+Opportunities inserted ......... 0
+Opportunities updated .......... 0
+Opportunities unchanged ........ 3,097
+Opportunities with conflicts ... 253
+Validation ..................... PASS
+========================================================================
+
+Missing opportunity numbers do not create placeholder dimension rows.
+Canonical selection precedence: occurrence count, latest source row, populated goals text, normalized goals text, exact goals text.

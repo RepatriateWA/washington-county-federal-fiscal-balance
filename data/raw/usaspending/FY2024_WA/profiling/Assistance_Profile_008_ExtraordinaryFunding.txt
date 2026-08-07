@@ -1,0 +1,212 @@
+============================================================================
+ETL-005A.8 — ASSISTANCE EXTRAORDINARY FUNDING PROFILE
+============================================================================
+Source file: data\raw\usaspending\FY2024_WA\original\Assistance_PrimeTransactions_2026-07-30_H01M19S42_1.csv
+Rows examined: 74,116
+Distinct awards: 55,983
+
+IMPORTANT INTERPRETIVE NOTE
+----------------------------------------------------------------------------
+The COVID and IIJA fields are overall-award measures repeated across transaction rows. They must not be summed directly across all transactions.
+This profiler uses maximum observed overall-award values within each award before producing agency or listing totals.
+
+COVID OBLIGATIONS — RAW ROW PROFILE
+----------------------------------------------------------------------------
+Populated rows ................ 3,252
+Blank rows .................... 70,864
+Zero values ................... 217
+Positive values ............... 2,961
+Negative values ............... 74
+Minimum ....................... $-10,982,995.50
+Maximum ....................... $2,215,505,059.29
+Total ......................... $243,544,584,957.74
+
+COVID OUTLAYS — RAW ROW PROFILE
+----------------------------------------------------------------------------
+Populated rows ................ 3,161
+Blank rows .................... 70,955
+Zero values ................... 123
+Positive values ............... 3,038
+Negative values ............... 0
+Minimum ....................... $0.00
+Maximum ....................... $4,429,359,737.24
+Total ......................... $187,878,488,925.81
+
+IIJA OBLIGATIONS — RAW ROW PROFILE
+----------------------------------------------------------------------------
+Populated rows ................ 3,041
+Blank rows .................... 71,075
+Zero values ................... 41
+Positive values ............... 2,988
+Negative values ............... 12
+Minimum ....................... $-2,878,769.50
+Maximum ....................... $1,227,742,066.30
+Total ......................... $12,954,458,533.48
+
+IIJA OUTLAYS — RAW ROW PROFILE
+----------------------------------------------------------------------------
+Populated rows ................ 2,938
+Blank rows .................... 71,178
+Zero values ................... 81
+Positive values ............... 2,857
+Negative values ............... 0
+Minimum ....................... $0.00
+Maximum ....................... $675,114,204.84
+Total ......................... $9,376,995,913.09
+
+DISASTER EMERGENCY FUND CODE PROFILE
+----------------------------------------------------------------------------
+Populated rows ................ 59,514
+Blank rows .................... 14,602
+Distinct raw combinations ..... 147
+
+TOP RAW DEFC COMBINATIONS
+----------------------------------------------------------------------------
+Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression     51,649
+Z: Emergency P.L. 117-58                                     1,880
+V: Non-emergency P.L. 117-2                                    965
+1: Non-emergency P.L. 117-58                                   945
+C: Emergency P.L. 115-123                                      439
+AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression        230
+4: Disaster P.L. 117-103;AAB: Emergency P.L. 117-328;AAD: Disaster P.L. 117-328;AAE: Emergency P.L. 118-15;AAI: Disaster P.L. 118-47;AAK: Emergency P.L. 118-158;AAL: Emergency P.L. 119-4;B: Emergency P.L. 115-72;C: Emergency P.L. 115-123;H: Disaster P.L. 116-93;N: Emergency P.L. 116-136;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;S: Disaster P.L. 116-260;V: Non-emergency P.L. 117-2        225
+Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;V: Non-emergency P.L. 117-2        194
+N: Emergency P.L. 116-136;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;V: Non-emergency P.L. 117-2        184
+M: Emergency P.L. 116-127;N: Emergency P.L. 116-136;P: Emergency P.L. 116-139;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;U: Emergency P.L. 116-260;V: Non-emergency P.L. 117-2        163
+X: Emergency P.L. 117-43                                       162
+N: Emergency P.L. 116-136;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression        156
+AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression        140
+4: Disaster P.L. 117-103;AAB: Emergency P.L. 117-328;AAD: Disaster P.L. 117-328;AAE: Emergency P.L. 118-15;AAI: Disaster P.L. 118-47;AAK: Emergency P.L. 118-158;N: Emergency P.L. 116-136;S: Disaster P.L. 116-260;V: Non-emergency P.L. 117-2        123
+O: Non-emergency P.L. 116-136|Non-emergency P.L. 116-139|Non-emergency P.L. 116-260|Non-emergency P.L. 117-2        108
+N: Emergency P.L. 116-136                                      108
+AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression        104
+Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;Z: Emergency P.L. 117-58         99
+Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;U: Emergency P.L. 116-260;V: Non-emergency P.L. 117-2         89
+L: Emergency P.L. 116-123;N: Emergency P.L. 116-136;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;V: Non-emergency P.L. 117-2         89
+N: Emergency P.L. 116-136;V: Non-emergency P.L. 117-2           80
+1: Non-emergency P.L. 117-58;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression         74
+U: Emergency P.L. 116-260                                       62
+AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42          61
+AAF: Emergency P.L. 118-42                                      57
+
+TOP DERIVED DEFC TOKENS
+----------------------------------------------------------------------------
+Suppression                   54,068
+Designated                    54,058
+Nonemergency/Emergency/Disaster/Wildfire     54,058
+Not                           54,058
+Q:                            54,058
+P.L.                          16,439
+Emergency                      9,481
+Non-emergency                  4,143
+117-58                         3,059
+Disaster                       2,761
+117-2                          2,683
+V:                             2,541
+Z:                             2,025
+116-136                        1,837
+N:                             1,695
+117-328                        1,589
+116-260                        1,402
+1:                             1,034
+AAB:                           1,003
+115-123                          713
+C:                               713
+U:                               656
+117-103                          596
+4:                               593
+S:                               591
+
+AWARD CLASSIFICATION
+----------------------------------------------------------------------------
+DEFC_OTHER_OR_UNRESOLVED                39,531
+ORDINARY_OR_UNCLASSIFIED                12,691
+IIJA                                     2,372
+COVID                                    1,384
+COVID_AND_IIJA                               5
+
+AWARD-LEVEL EXTRAORDINARY FUNDING TOTALS
+----------------------------------------------------------------------------
+COVID obligations .............. $9,668,342,878.99
+COVID outlays .................. $12,284,913,140.27
+IIJA obligations ............... $5,768,579,526.92
+IIJA outlays ................... $3,344,040,503.98
+
+TOP 20 AWARDING AGENCIES BY COVID OBLIGATIONS
+----------------------------------------------------------------------------
+Department of the Treasury                 awards=     50  COVID=   $4,657,263,041.05
+Department of Health and Human Services    awards=  4,649  COVID=   $2,874,903,863.05
+Pension Benefit Guaranty Corporation       awards=      3  COVID=     $913,517,031.18
+Department of Homeland Security            awards=    290  COVID=     $774,508,530.70
+Department of Transportation               awards=  1,614  COVID=     $192,995,146.43
+Department of Commerce                     awards=    269  COVID=      $72,445,092.94
+Department of Housing and Urban Developmen awards=  4,953  COVID=      $53,851,309.67
+Department of the Interior                 awards=    929  COVID=      $45,650,271.88
+Federal Communications Commission          awards=  3,560  COVID=      $37,703,664.43
+Corporation for National and Community Ser awards=     34  COVID=      $10,825,865.70
+Department of Veterans Affairs             awards=  5,785  COVID=       $9,675,821.33
+Department of Education                    awards=  1,405  COVID=       $8,649,199.00
+Department of Agriculture                  awards= 22,500  COVID=       $7,393,050.47
+National Science Foundation                awards=    524  COVID=       $5,264,998.93
+Department of Defense                      awards=    388  COVID=       $3,009,081.50
+Small Business Administration              awards=  2,388  COVID=       $1,979,496.53
+Environmental Protection Agency            awards=    246  COVID=       $1,130,731.00
+Agency for International Development       awards=      9  COVID=         $948,457.00
+National Endowment for the Humanities      awards=     24  COVID=         $551,646.05
+Institute of Museum and Library Services   awards=     57  COVID=         $148,730.06
+
+TOP 20 ASSISTANCE LISTINGS BY COVID OBLIGATIONS
+----------------------------------------------------------------------------
+21.027     CORONAVIRUS STATE AND LOCAL FISCAL R awards=      2  COVID=   $2,434,917,892.82
+21.019     CORONAVIRUS RELIEF FUND              awards=      3  COVID=   $2,169,691,672.74
+93.354     PUBLIC HEALTH EMERGENCY RESPONSE:  C awards=     36  COVID=   $1,289,504,014.35
+93.283     CENTERS FOR DISEASE CONTROL AND PREV awards=     56  COVID=   $1,177,311,256.23
+93.323     EPIDEMIOLOGY AND LABORATORY CAPACITY awards=     11  COVID=   $1,065,419,318.99
+86.001     PENSION PLAN TERMINATION INSURANCE   awards=      3  COVID=     $913,517,031.18
+93.322     CDC PARTNERSHIP: STRENGTHENING PUBLI awards=      1  COVID=     $860,740,217.99
+97.036     DISASTER GRANTS - PUBLIC ASSISTANCE  awards=     21  COVID=     $764,527,922.37
+93.855     ALLERGY AND INFECTIOUS DISEASES RESE awards=    419  COVID=     $706,421,615.47
+93.865     CHILD HEALTH AND HUMAN DEVELOPMENT E awards=    141  COVID=     $518,035,958.78
+93.317     EMERGING INFECTIONS PROGRAMS         awards=      4  COVID=     $238,628,493.00
+93.326     STRENGTHENING PUBLIC HEALTH THROUGH  awards=      7  COVID=     $198,979,787.00
+93.185     IMMUNIZATION RESEARCH, DEMONSTRATION awards=      5  COVID=     $188,476,211.00
+93.268     IMMUNIZATION COOPERATIVE AGREEMENTS  awards=      4  COVID=     $179,064,217.00
+93.778     GRANTS TO STATES FOR MEDICAID        awards=      5  COVID=     $172,078,727.00
+93.575     CHILD CARE AND DEVELOPMENT BLOCK GRA awards=    112  COVID=     $145,666,983.00
+93.224     COMMUNITY HEALTH CENTERS             awards=     55  COVID=     $132,767,070.50
+93.360     BIOMEDICAL ADVANCED RESEARCH AND DEV awards=      5  COVID=     $126,704,165.17
+20.509     FORMULA GRANTS FOR RURAL AREAS AND T awards=     37  COVID=     $100,073,136.00
+93.210     TRIBAL SELF-GOVERNANCE PROGRAM: IHS  awards=     15  COVID=      $89,700,794.00
+
+TOP RECIPIENT STATES BY SOURCE ROW COUNT
+----------------------------------------------------------------------------
+WA                                      71,026
+OR                                         325
+CA                                         278
+FL                                         261
+LA                                         256
+NJ                                         224
+TX                                         215
+GA                                         199
+ID                                         163
+PA                                         153
+MO                                         133
+IL                                         123
+VA                                         104
+CO                                          77
+KY                                          69
+NY                                          68
+TN                                          63
+AZ                                          44
+MD                                          38
+WI                                          33
+
+TOP PERFORMANCE STATES BY SOURCE ROW COUNT
+----------------------------------------------------------------------------
+WASHINGTON                              74,116
+
+PRELIMINARY CLASSIFICATION POLICY
+----------------------------------------------------------------------------
+COVID classification is based first on explicit USAspending COVID overall-award amount fields.
+IIJA classification is based first on explicit USAspending IIJA overall-award amount fields.
+DEFC-only awards remain separately classified until the authoritative meaning of each observed code is documented.
+Text matching is not used as primary evidence in this profile.

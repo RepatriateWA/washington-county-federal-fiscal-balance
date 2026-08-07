@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "package_version": "EPS-001",
+  "evidence_package_id": "PROC-B0005-EPS001",
+  "dataset": "procurement",
+  "batch_id": 5,
+  "status": "CERTIFIED",
+  "created_utc": "2026-08-04T22:12:10Z",
+  "artifacts": []
+}

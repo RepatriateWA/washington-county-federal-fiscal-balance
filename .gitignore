@@ -218,3 +218,9 @@ __marimo__/
 .streamlit/secrets.toml
 .venv/
 .env
+data/raw/usaspending/FY2024_WA/original/Assistance_PrimeAwardSummaries_2026-07-30_H00M59S46_1.csv
+data/raw/usaspending/FY2024_WA/original/Assistance_PrimeTransactions_2026-07-30_H01M19S42_1.csv
+data/raw/usaspending/FY2024_WA/original/Assistance_Subawards_2026-07-30_H01M07S50_1.csv
+data/raw/usaspending/FY2024_WA/original/Contracts_PrimeTransactions_2026-07-30_H01M09S18_1.csv
+data/raw/usaspending/FY2024_WA/original/Contracts_PrimeAwardSummaries_2026-07-30_H00M49S57_1.csv
+data/raw/usaspending/FY2024_WA/original/Contracts_Subawards_2026-07-30_H01M06S48_1.csv
