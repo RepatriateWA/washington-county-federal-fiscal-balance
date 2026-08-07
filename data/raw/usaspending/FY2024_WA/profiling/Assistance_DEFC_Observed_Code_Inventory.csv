@@ -1,0 +1,39 @@
+defc_code,observed_description_count,observed_descriptions,source_row_count,award_count,raw_combination_count,first_action_date,last_action_date
+1,1,Non-emergency P.L. 117-58,1034,806,5,2023-10-16,2024-09-27
+2,1,Emergency P.L. 117-70,2,2,2,2024-04-18,2024-05-16
+4,1,Disaster P.L. 117-103,593,49,44,2023-10-03,2024-09-27
+5,1,Wildfire Suppression P.L. 117-103,3,1,1,2023-10-26,2024-09-16
+6,1,Emergency P.L. 117-128,97,6,6,2023-11-20,2024-09-12
+7,1,Emergency P.L. 117-159,55,27,3,2023-10-04,2024-09-26
+9,1,"DEFC of '9' Indicates that the data for this row is not related to a COVID-19 P.L. (DEFC not one of the following: ['L', 'M', 'N', 'O', 'P', 'U', 'V']), but that the agency has declined to specify which other DEFC (or combination of DEFCs, in the case that the money hasn't been split out like it would be with a specific DEFC value) applies. This code was discontinued on July 13, 2021.",44,22,16,2023-10-03,2024-09-10
+A,1,Emergency P.L. 115-56,53,53,1,2023-10-06,2024-09-25
+AAA,1,Emergency P.L. 117-180,7,3,3,2023-11-08,2024-09-10
+AAB,1,Emergency P.L. 117-328,1003,210,37,2023-10-03,2024-09-24
+AAC,1,Wildfire Suppression P.L. 117-328,1,1,1,2024-07-17,2024-07-17
+AAD,1,Disaster P.L. 117-328,585,41,37,2023-10-03,2024-09-27
+AAE,1,Emergency P.L. 118-15,530,24,22,2023-10-03,2024-09-27
+AAF,1,Emergency P.L. 118-42,452,178,4,2023-11-08,2024-09-20
+AAI,1,Disaster P.L. 118-47,542,34,31,2023-10-03,2024-09-27
+AAJ,1,Emergency P.L. 118-50,10,3,3,2023-11-08,2024-09-20
+AAK,1,Emergency P.L. 118-158,508,22,20,2023-10-03,2024-09-18
+AAL,1,Emergency P.L. 119-4,306,12,11,2023-10-03,2024-09-20
+B,1,Emergency P.L. 115-72,264,2,2,2023-10-03,2024-08-29
+C,1,Emergency P.L. 115-123,713,463,8,2023-10-04,2024-09-29
+E,1,Emergency P.L. 116-20,38,31,2,2023-11-15,2024-09-26
+F,1,Emergency P.L. 116-26,23,4,2,2024-02-07,2024-09-05
+H,1,Disaster P.L. 116-93,350,17,17,2023-10-03,2024-08-29
+L,1,Emergency P.L. 116-123,325,35,10,2023-10-02,2024-09-23
+M,1,Emergency P.L. 116-127,203,44,4,2023-10-04,2024-09-19
+N,1,Emergency P.L. 116-136,1695,309,70,2023-10-02,2024-09-27
+O,1,Non-emergency P.L. 116-136|Non-emergency P.L. 116-139|Non-emergency P.L. 116-260|Non-emergency P.L. 117-2,142,120,3,2023-10-11,2024-09-30
+P,1,Emergency P.L. 116-139,285,49,9,2023-10-04,2024-09-23
+Q,1,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,54058,38895,72,2023-10-01,2024-09-30
+R,1,Emergency P.L. 116-260,7,7,2,2023-12-06,2024-08-22
+S,1,Disaster P.L. 116-260,591,46,42,2023-10-03,2024-09-10
+T,1,Wildfire Suppression P.L. 116-260,6,3,3,2023-10-26,2024-09-16
+U,1,Emergency P.L. 116-260,656,138,18,2023-10-04,2024-09-24
+V,1,Non-emergency P.L. 117-2,2541,1149,45,2023-10-03,2024-09-30
+W,1,Emergency P.L. 117-31,1,1,1,2023-10-19,2023-10-19
+X,1,Emergency P.L. 117-43,223,166,11,2023-10-06,2024-09-30
+Y,1,Disaster P.L. 117-43,100,9,8,2023-10-03,2024-07-24
+Z,1,Emergency P.L. 117-58,2025,1612,9,2023-10-10,2024-09-30

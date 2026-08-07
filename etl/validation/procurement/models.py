@@ -66,6 +66,21 @@ class CertificationSummary:
         )
 
     @property
+    def passed(self) -> int:
+        """Compatibility count used by evidence publication."""
+        return self.passed_count
+
+    @property
+    def failed(self) -> int:
+        """Compatibility count used by evidence publication."""
+        return self.failed_count
+
+    @property
+    def warnings(self) -> int:
+        """Compatibility count used by evidence publication."""
+        return self.warning_count
+
+    @property
     def is_certified(self) -> bool:
         return self.failed_count == 0
 

@@ -1,0 +1,482 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_package_id": "PROC-B0005-EPS001",
+  "dataset": "procurement",
+  "batch_id": 5,
+  "status": "CERTIFIED",
+  "created_utc": "2026-08-04T22:12:10Z",
+  "summary": {
+    "passed": 37,
+    "failed": 0,
+    "warnings": 1,
+    "total": 38
+  },
+  "checks": [
+    {
+      "code": "COUNT-001",
+      "name": "Raw observations exist",
+      "category": "batch_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 120813,
+        "expected_value": "greater than 0"
+      }
+    },
+    {
+      "code": "COUNT-002",
+      "name": "Normalized transactions exist",
+      "category": "batch_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 120813,
+        "expected_value": "greater than 0"
+      }
+    },
+    {
+      "code": "COUNT-003",
+      "name": "Normalized awards represented",
+      "category": "batch_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 111083,
+        "expected_value": "greater than 0"
+      }
+    },
+    {
+      "code": "COUNT-004",
+      "name": "Raw and normalized counts reconcile",
+      "category": "batch_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 120813,
+        "expected_value": 120813
+      }
+    },
+    {
+      "code": "DUP-001",
+      "name": "Raw source-row identifiers are unique",
+      "category": "duplicate_detection",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "DUP-002",
+      "name": "Transaction source-row identifiers are unique",
+      "category": "duplicate_detection",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-001",
+      "name": "Transaction award references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-002",
+      "name": "Award recipient references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-003",
+      "name": "Awarding-agency references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-004",
+      "name": "Awarding-subagency references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-005",
+      "name": "Funding-agency references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-006",
+      "name": "Funding-subagency references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-007",
+      "name": "Place transaction references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-008",
+      "name": "Canonical-place references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-009",
+      "name": "State references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-010",
+      "name": "County references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-011",
+      "name": "NAICS references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FK-012",
+      "name": "PSC references resolve",
+      "category": "referential_integrity",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "REL-001",
+      "name": "Recipient relationships complete",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": "111083/111083 (100.00%)",
+        "expected_value": "100.00%"
+      }
+    },
+    {
+      "code": "REL-002",
+      "name": "Awarding-agency relationships complete",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": "111083/111083 (100.00%)",
+        "expected_value": "100.00%"
+      }
+    },
+    {
+      "code": "REL-003",
+      "name": "Awarding-subagency relationships complete",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": "111083/111083 (100.00%)",
+        "expected_value": "100.00%"
+      }
+    },
+    {
+      "code": "REL-004",
+      "name": "Funding-agency relationships complete",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": "111083/111083 (100.00%)",
+        "expected_value": "100.00%"
+      }
+    },
+    {
+      "code": "REL-005",
+      "name": "Funding-subagency relationships complete",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": "111083/111083 (100.00%)",
+        "expected_value": "100.00%"
+      }
+    },
+    {
+      "code": "REL-006",
+      "name": "Award-recipient history resolves",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "relationship_count": 111089,
+        "orphan_count": 0,
+        "observed_value": "111089/111089",
+        "expected_value": "all relationships"
+      }
+    },
+    {
+      "code": "REL-007",
+      "name": "Recipient-parent history resolves",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "relationship_count": 5031,
+        "unresolved_recipient_count": 0,
+        "observed_value": "5031/5031",
+        "expected_value": "all relationships"
+      }
+    },
+    {
+      "code": "REL-008",
+      "name": "Award-recipient history coverage complete",
+      "category": "relationship_completeness",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "batch_awards": 111083,
+        "history_awards": 111083,
+        "observed_value": "111083/111083",
+        "expected_value": "all batch awards"
+      }
+    },
+    {
+      "code": "PROV-001",
+      "name": "Normalization exception keys are unique",
+      "category": "normalization_provenance",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "PROV-002",
+      "name": "Exception source rows resolve",
+      "category": "normalization_provenance",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "PROV-003",
+      "name": "NAICS aliases reconcile",
+      "category": "normalization_provenance",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "alias_rows": 613,
+        "alias_occurrences": 120811,
+        "source_occurrences": 120811,
+        "observed_value": "120811/120811",
+        "expected_value": "all described source occurrences"
+      }
+    },
+    {
+      "code": "PROV-004",
+      "name": "PSC aliases reconcile",
+      "category": "normalization_provenance",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "alias_rows": 1169,
+        "alias_occurrences": 120813,
+        "source_occurrences": 120813,
+        "observed_value": "120813/120813",
+        "expected_value": "all described source occurrences"
+      }
+    },
+    {
+      "code": "PROV-005",
+      "name": "Award recipient-history warnings",
+      "category": "normalization_provenance",
+      "status": "WARNING",
+      "message": "6 awards contain multiple observed recipient UEIs. The relationships are preserved and canonical recipients were selected deterministically.",
+      "evidence": {
+        "warning_count": 6,
+        "observed_value": 6,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FIN-001",
+      "name": "Batch obligation totals reconcile",
+      "category": "financial_certification",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "paired_rows": 120813,
+        "invalid_raw_rows": 0,
+        "raw_total": "15355300329.56",
+        "normalized_total": "15355300329.56",
+        "difference": "0.00",
+        "observed_value": "$0.00",
+        "expected_value": "$0.00 difference"
+      }
+    },
+    {
+      "code": "FIN-002",
+      "name": "Award obligation totals reconcile",
+      "category": "financial_certification",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "award_count": 111083,
+        "reconciled_awards": 111083,
+        "mismatched_awards": 0,
+        "maximum_absolute_difference": "0.00",
+        "observed_value": "111083/111083 awards",
+        "expected_value": "all awards"
+      }
+    },
+    {
+      "code": "FIN-003",
+      "name": "Transaction obligations reconcile",
+      "category": "financial_certification",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "paired_rows": 120813,
+        "reconciled_rows": 120813,
+        "mismatched_rows": 0,
+        "maximum_absolute_difference": "0.00",
+        "observed_value": "120813/120813 rows",
+        "expected_value": "all transactions"
+      }
+    },
+    {
+      "code": "FIN-004",
+      "name": "Negative obligations preserved",
+      "category": "financial_certification",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "raw_negative_count": 4508,
+        "normalized_negative_count": 4508,
+        "raw_negative_total": "-409556094.36",
+        "normalized_negative_total": "-409556094.36",
+        "observed_value": "4508 rows, $-409,556,094.36",
+        "expected_value": "4508 rows, $-409,556,094.36"
+      }
+    },
+    {
+      "code": "FIN-005",
+      "name": "Zero-dollar transactions preserved",
+      "category": "financial_certification",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "raw_zero_count": 6367,
+        "normalized_zero_count": 6367,
+        "observed_value": 6367,
+        "expected_value": 6367
+      }
+    },
+    {
+      "code": "FIN-006",
+      "name": "Obligation values are valid",
+      "category": "financial_certification",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "raw_null_or_blank": 0,
+        "raw_malformed": 0,
+        "normalized_null": 0,
+        "total_invalid": 0,
+        "observed_value": 0,
+        "expected_value": 0
+      }
+    },
+    {
+      "code": "FIN-007",
+      "name": "Monetary precision preserved",
+      "category": "financial_certification",
+      "status": "PASS",
+      "message": "The certification check passed.",
+      "evidence": {
+        "numeric_precision": 20,
+        "numeric_scale": 2,
+        "raw_overprecision_rows": 0,
+        "observed_value": "NUMERIC(20,2); 0 overprecision rows",
+        "expected_value": "NUMERIC(20,2); 0 overprecision rows"
+      }
+    }
+  ],
+  "versions": {
+    "etl_version": "0.5.0-alpha1",
+    "certification_version": "ETL-114C.1",
+    "evidence_package_version": "EPS-001"
+  },
+  "statistics": {
+    "source_rows": 120813,
+    "certified_rows": 120813
+  }
+}

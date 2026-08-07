@@ -1,0 +1,12 @@
+defc_code,official_description,public_law_reference,funding_family,extraordinary_flag,covid_flag,iija_flag,confidence,classification_source,citation,notes
+L,Emergency P.L. 116-123,P.L. 116-123,COVID,TRUE,TRUE,FALSE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,Coronavirus Preparedness and Response Supplemental Appropriations Act
+M,Emergency P.L. 116-127,P.L. 116-127,COVID,TRUE,TRUE,FALSE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,Families First Coronavirus Response Act
+N,Emergency P.L. 116-136,P.L. 116-136,COVID,TRUE,TRUE,FALSE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,CARES Act emergency-designated funding
+O,"Non-emergency P.L. 116-136|Non-emergency P.L. 116-139|Non-emergency P.L. 116-260|Non-emergency P.L. 117-2","P.L. 116-136|P.L. 116-139|P.L. 116-260|P.L. 117-2",COVID,TRUE,TRUE,FALSE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,Non-emergency-designated COVID covered funds
+P,Emergency P.L. 116-139,P.L. 116-139,COVID,TRUE,TRUE,FALSE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,Paycheck Protection Program and Health Care Enhancement Act
+U,Emergency P.L. 116-260,P.L. 116-260,COVID,TRUE,TRUE,FALSE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,Consolidated Appropriations Act 2021 COVID funding
+V,Non-emergency P.L. 117-2,P.L. 117-2,COVID,TRUE,TRUE,FALSE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,American Rescue Plan Act
+1,Non-emergency P.L. 117-58,P.L. 117-58,IIJA,TRUE,FALSE,TRUE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,Infrastructure Investment and Jobs Act non-emergency funding
+Z,Emergency P.L. 117-58,P.L. 117-58,IIJA,TRUE,FALSE,TRUE,HIGH,USAspending.gov,https://www.usaspending.gov/data/about-the-data-download.pdf,Infrastructure Investment and Jobs Act emergency-designated funding
+Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,,NOT_DESIGNATED,FALSE,FALSE,FALSE,HIGH,Treasury GSDM / USAspending.gov,https://tfx.treasury.gov/taxonomy/term/16131,No disaster emergency or wildfire designation
+9,Unspecified non-COVID DEFC,,UNSPECIFIED_NON_COVID,UNRESOLVED,FALSE,FALSE,HIGH_NON_COVID,USAspending source domain description,https://files.usaspending.gov/docs/Data_Dictionary_Crosswalk.xlsx,Agency declined to identify the applicable non-COVID DEFC; exact family unresolved

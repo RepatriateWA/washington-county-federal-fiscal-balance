@@ -355,6 +355,61 @@ def check_county_references(
     )
 
 
+def check_naics_references(
+    cur,
+    load_batch_id: int,
+) -> CertificationCheck:
+    orphan_count = int(
+        scalar_query(
+            cur,
+            """
+            SELECT COUNT(*)
+            FROM procurement.award_transaction AS txn
+            LEFT JOIN procurement.naics AS naics
+              ON naics.naics_code = txn.naics_code
+            WHERE txn.load_batch_id = %s
+              AND txn.naics_code IS NOT NULL
+              AND naics.naics_code IS NULL;
+            """,
+            (load_batch_id,),
+        )
+    )
+
+    return make_orphan_check(
+        check_code="FK-011",
+        label="NAICS references resolve",
+        orphan_count=orphan_count,
+        detail_label="orphan transaction-to-NAICS references",
+    )
+
+
+def check_psc_references(
+    cur,
+    load_batch_id: int,
+) -> CertificationCheck:
+    orphan_count = int(
+        scalar_query(
+            cur,
+            """
+            SELECT COUNT(*)
+            FROM procurement.award_transaction AS txn
+            LEFT JOIN procurement.psc AS psc
+              ON psc.psc_code = txn.psc_code
+            WHERE txn.load_batch_id = %s
+              AND txn.psc_code IS NOT NULL
+              AND psc.psc_code IS NULL;
+            """,
+            (load_batch_id,),
+        )
+    )
+
+    return make_orphan_check(
+        check_code="FK-012",
+        label="PSC references resolve",
+        orphan_count=orphan_count,
+        detail_label="orphan transaction-to-PSC references",
+    )
+
 REFERENTIAL_CHECKS = (
     check_transaction_award_references,
     check_award_recipient_references,
@@ -366,4 +421,6 @@ REFERENTIAL_CHECKS = (
     check_canonical_place_references,
     check_state_references,
     check_county_references,
+    check_naics_references,
+    check_psc_references,
 )

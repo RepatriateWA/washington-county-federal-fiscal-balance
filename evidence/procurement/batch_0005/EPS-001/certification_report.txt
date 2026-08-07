@@ -1,0 +1,340 @@
+EPS-001 CERTIFICATION REPORT
+========================================================================
+
+Evidence Package ID: PROC-B0005-EPS001
+Dataset:             procurement
+Batch ID:            5
+Created UTC:         2026-08-04T22:12:10Z
+
+CERTIFICATION DECISION
+------------------------------------------------------------------------
+Status:              CERTIFIED
+
+VALIDATION SUMMARY
+------------------------------------------------------------------------
+Passed:              37
+Failed:              0
+Warnings:            1
+Total checks:        38
+
+CHECK RESULTS
+------------------------------------------------------------------------
+
+1. [PASS] COUNT-001 — Raw observations exist
+   Category: batch_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 120813
+      expected value: greater than 0
+
+2. [PASS] COUNT-002 — Normalized transactions exist
+   Category: batch_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 120813
+      expected value: greater than 0
+
+3. [PASS] COUNT-003 — Normalized awards represented
+   Category: batch_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 111083
+      expected value: greater than 0
+
+4. [PASS] COUNT-004 — Raw and normalized counts reconcile
+   Category: batch_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 120813
+      expected value: 120813
+
+5. [PASS] DUP-001 — Raw source-row identifiers are unique
+   Category: duplicate_detection
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+6. [PASS] DUP-002 — Transaction source-row identifiers are unique
+   Category: duplicate_detection
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+7. [PASS] FK-001 — Transaction award references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+8. [PASS] FK-002 — Award recipient references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+9. [PASS] FK-003 — Awarding-agency references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+10. [PASS] FK-004 — Awarding-subagency references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+11. [PASS] FK-005 — Funding-agency references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+12. [PASS] FK-006 — Funding-subagency references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+13. [PASS] FK-007 — Place transaction references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+14. [PASS] FK-008 — Canonical-place references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+15. [PASS] FK-009 — State references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+16. [PASS] FK-010 — County references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+17. [PASS] FK-011 — NAICS references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+18. [PASS] FK-012 — PSC references resolve
+   Category: referential_integrity
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+19. [PASS] REL-001 — Recipient relationships complete
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 111083/111083 (100.00%)
+      expected value: 100.00%
+
+20. [PASS] REL-002 — Awarding-agency relationships complete
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 111083/111083 (100.00%)
+      expected value: 100.00%
+
+21. [PASS] REL-003 — Awarding-subagency relationships complete
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 111083/111083 (100.00%)
+      expected value: 100.00%
+
+22. [PASS] REL-004 — Funding-agency relationships complete
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 111083/111083 (100.00%)
+      expected value: 100.00%
+
+23. [PASS] REL-005 — Funding-subagency relationships complete
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 111083/111083 (100.00%)
+      expected value: 100.00%
+
+24. [PASS] REL-006 — Award-recipient history resolves
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      relationship count: 111089
+      orphan count: 0
+      observed value: 111089/111089
+      expected value: all relationships
+
+25. [PASS] REL-007 — Recipient-parent history resolves
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      relationship count: 5031
+      unresolved recipient count: 0
+      observed value: 5031/5031
+      expected value: all relationships
+
+26. [PASS] REL-008 — Award-recipient history coverage complete
+   Category: relationship_completeness
+   Message:  The certification check passed.
+   Evidence:
+      batch awards: 111083
+      history awards: 111083
+      observed value: 111083/111083
+      expected value: all batch awards
+
+27. [PASS] PROV-001 — Normalization exception keys are unique
+   Category: normalization_provenance
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+28. [PASS] PROV-002 — Exception source rows resolve
+   Category: normalization_provenance
+   Message:  The certification check passed.
+   Evidence:
+      observed value: 0
+      expected value: 0
+
+29. [PASS] PROV-003 — NAICS aliases reconcile
+   Category: normalization_provenance
+   Message:  The certification check passed.
+   Evidence:
+      alias rows: 613
+      alias occurrences: 120811
+      source occurrences: 120811
+      observed value: 120811/120811
+      expected value: all described source occurrences
+
+30. [PASS] PROV-004 — PSC aliases reconcile
+   Category: normalization_provenance
+   Message:  The certification check passed.
+   Evidence:
+      alias rows: 1169
+      alias occurrences: 120813
+      source occurrences: 120813
+      observed value: 120813/120813
+      expected value: all described source occurrences
+
+31. [WARNING] PROV-005 — Award recipient-history warnings
+   Category: normalization_provenance
+   Message:  6 awards contain multiple observed recipient UEIs. The relationships are preserved and canonical recipients were selected deterministically.
+   Evidence:
+      warning count: 6
+      observed value: 6
+      expected value: 0
+
+32. [PASS] FIN-001 — Batch obligation totals reconcile
+   Category: financial_certification
+   Message:  The certification check passed.
+   Evidence:
+      paired rows: 120813
+      invalid raw rows: 0
+      raw total: 15355300329.56
+      normalized total: 15355300329.56
+      difference: 0.00
+      observed value: $0.00
+      expected value: $0.00 difference
+
+33. [PASS] FIN-002 — Award obligation totals reconcile
+   Category: financial_certification
+   Message:  The certification check passed.
+   Evidence:
+      award count: 111083
+      reconciled awards: 111083
+      mismatched awards: 0
+      maximum absolute difference: 0.00
+      observed value: 111083/111083 awards
+      expected value: all awards
+
+34. [PASS] FIN-003 — Transaction obligations reconcile
+   Category: financial_certification
+   Message:  The certification check passed.
+   Evidence:
+      paired rows: 120813
+      reconciled rows: 120813
+      mismatched rows: 0
+      maximum absolute difference: 0.00
+      observed value: 120813/120813 rows
+      expected value: all transactions
+
+35. [PASS] FIN-004 — Negative obligations preserved
+   Category: financial_certification
+   Message:  The certification check passed.
+   Evidence:
+      raw negative count: 4508
+      normalized negative count: 4508
+      raw negative total: -409556094.36
+      normalized negative total: -409556094.36
+      observed value: 4508 rows, $-409,556,094.36
+      expected value: 4508 rows, $-409,556,094.36
+
+36. [PASS] FIN-005 — Zero-dollar transactions preserved
+   Category: financial_certification
+   Message:  The certification check passed.
+   Evidence:
+      raw zero count: 6367
+      normalized zero count: 6367
+      observed value: 6367
+      expected value: 6367
+
+37. [PASS] FIN-006 — Obligation values are valid
+   Category: financial_certification
+   Message:  The certification check passed.
+   Evidence:
+      raw null or blank: 0
+      raw malformed: 0
+      normalized null: 0
+      total invalid: 0
+      observed value: 0
+      expected value: 0
+
+38. [PASS] FIN-007 — Monetary precision preserved
+   Category: financial_certification
+   Message:  The certification check passed.
+   Evidence:
+      numeric precision: 20
+      numeric scale: 2
+      raw overprecision rows: 0
+      observed value: NUMERIC(20,2); 0 overprecision rows
+      expected value: NUMERIC(20,2); 0 overprecision rows
+
+STATISTICS
+------------------------------------------------------------------------
+Source Rows: 120813
+Certified Rows: 120813
+
+VERSIONS
+------------------------------------------------------------------------
+Evidence Package:    EPS-001
+Certification:       ETL-114C.1
+ETL:                 0.5.0-alpha1
+
+========================================================================
+End of certification report.

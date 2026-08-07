@@ -1,0 +1,37 @@
+============================================================================
+ETL-005A — ASSISTANCE AWARD IDENTITY PROFILE
+============================================================================
+Source file: data\raw\usaspending\FY2024_WA\original\Assistance_PrimeTransactions_2026-07-30_H01M19S42_1.csv
+Rows examined: 74,116
+
+IDENTIFIER COVERAGE
+----------------------------------------------------------------------------
+assistance_transaction_unique_key          populated=   74,116  missing=        0  distinct=   74,116
+assistance_award_unique_key                populated=   74,116  missing=        0  distinct=   55,983
+award_id_fain                              populated=   62,640  missing=   11,476  distinct=   44,507
+award_id_uri                               populated=   27,076  missing=   47,040  distinct=   21,054
+sai_number                                 populated=   43,583  missing=   30,533  distinct=       12
+
+DUPLICATE VALUE GROUPS
+----------------------------------------------------------------------------
+assistance_transaction_unique_key                  0
+assistance_award_unique_key                    5,418
+award_id_fain                                  5,418
+award_id_uri                                   2,456
+sai_number                                        10
+
+IDENTIFIER MULTIPLICITY
+----------------------------------------------------------------------------
+assistance_award_unique_key -> award_id_fain                              0 multi-mapping identifiers
+award_id_fain -> assistance_award_unique_key                0 multi-mapping identifiers
+assistance_award_unique_key -> award_id_uri                               0 multi-mapping identifiers
+award_id_uri -> assistance_award_unique_key                0 multi-mapping identifiers
+assistance_award_unique_key -> sai_number                                20 multi-mapping identifiers
+sai_number -> assistance_award_unique_key                9 multi-mapping identifiers
+
+PRELIMINARY ASSESSMENT
+----------------------------------------------------------------------------
+Duplicate transaction-key rows: 0
+Distinct populated award keys: 55,983
+
+Recommendation remains provisional until multi-mapping examples and correction/delete behavior are inspected.

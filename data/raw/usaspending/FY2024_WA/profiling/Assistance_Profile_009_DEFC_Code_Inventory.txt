@@ -1,0 +1,58 @@
+========================================================================================
+ETL-005A.9 — ASSISTANCE DEFC OBSERVED-CODE INVENTORY
+========================================================================================
+Source file: data\raw\usaspending\FY2024_WA\original\Assistance_PrimeTransactions_2026-07-30_H01M19S42_1.csv
+Source rows examined: 74,116
+Rows with DEFC values: 59,514
+Distinct parsed DEFC codes: 38
+Distinct unparsed segments: 0
+
+OBSERVED CODES
+----------------------------------------------------------------------------------------
+1      rows=  1,034  awards=    806  descriptions=  1  Non-emergency P.L. 117-58
+2      rows=      2  awards=      2  descriptions=  1  Emergency P.L. 117-70
+4      rows=    593  awards=     49  descriptions=  1  Disaster P.L. 117-103
+5      rows=      3  awards=      1  descriptions=  1  Wildfire Suppression P.L. 117-103
+6      rows=     97  awards=      6  descriptions=  1  Emergency P.L. 117-128
+7      rows=     55  awards=     27  descriptions=  1  Emergency P.L. 117-159
+9      rows=     44  awards=     22  descriptions=  1  DEFC of '9' Indicates that the data for this row is not related to a COVID-19 P.L. (DEFC not one of the following: ['L', 'M', 'N', 'O', 'P', 'U', 'V']), but that the agency has declined to specify which other DEFC (or combination of DEFCs, in the case that the money hasn't been split out like it would be with a specific DEFC value) applies. This code was discontinued on July 13, 2021.
+A      rows=     53  awards=     53  descriptions=  1  Emergency P.L. 115-56
+AAA    rows=      7  awards=      3  descriptions=  1  Emergency P.L. 117-180
+AAB    rows=  1,003  awards=    210  descriptions=  1  Emergency P.L. 117-328
+AAC    rows=      1  awards=      1  descriptions=  1  Wildfire Suppression P.L. 117-328
+AAD    rows=    585  awards=     41  descriptions=  1  Disaster P.L. 117-328
+AAE    rows=    530  awards=     24  descriptions=  1  Emergency P.L. 118-15
+AAF    rows=    452  awards=    178  descriptions=  1  Emergency P.L. 118-42
+AAI    rows=    542  awards=     34  descriptions=  1  Disaster P.L. 118-47
+AAJ    rows=     10  awards=      3  descriptions=  1  Emergency P.L. 118-50
+AAK    rows=    508  awards=     22  descriptions=  1  Emergency P.L. 118-158
+AAL    rows=    306  awards=     12  descriptions=  1  Emergency P.L. 119-4
+B      rows=    264  awards=      2  descriptions=  1  Emergency P.L. 115-72
+C      rows=    713  awards=    463  descriptions=  1  Emergency P.L. 115-123
+E      rows=     38  awards=     31  descriptions=  1  Emergency P.L. 116-20
+F      rows=     23  awards=      4  descriptions=  1  Emergency P.L. 116-26
+H      rows=    350  awards=     17  descriptions=  1  Disaster P.L. 116-93
+L      rows=    325  awards=     35  descriptions=  1  Emergency P.L. 116-123
+M      rows=    203  awards=     44  descriptions=  1  Emergency P.L. 116-127
+N      rows=  1,695  awards=    309  descriptions=  1  Emergency P.L. 116-136
+O      rows=    142  awards=    120  descriptions=  1  Non-emergency P.L. 116-136|Non-emergency P.L. 116-139|Non-emergency P.L. 116-260|Non-emergency P.L. 117-2
+P      rows=    285  awards=     49  descriptions=  1  Emergency P.L. 116-139
+Q      rows= 54,058  awards= 38,895  descriptions=  1  Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression
+R      rows=      7  awards=      7  descriptions=  1  Emergency P.L. 116-260
+S      rows=    591  awards=     46  descriptions=  1  Disaster P.L. 116-260
+T      rows=      6  awards=      3  descriptions=  1  Wildfire Suppression P.L. 116-260
+U      rows=    656  awards=    138  descriptions=  1  Emergency P.L. 116-260
+V      rows=  2,541  awards=  1,149  descriptions=  1  Non-emergency P.L. 117-2
+W      rows=      1  awards=      1  descriptions=  1  Emergency P.L. 117-31
+X      rows=    223  awards=    166  descriptions=  1  Emergency P.L. 117-43
+Y      rows=    100  awards=      9  descriptions=  1  Disaster P.L. 117-43
+Z      rows=  2,025  awards=  1,612  descriptions=  1  Emergency P.L. 117-58
+
+UNPARSED SEGMENTS
+----------------------------------------------------------------------------------------
+(none)
+
+INTERPRETIVE LIMIT
+----------------------------------------------------------------------------------------
+This inventory records what the source contains. It does not classify any DEFC code as COVID, IIJA, ordinary, disaster, or another funding family.
+Classification requires authoritative federal documentation and a recorded citation.
