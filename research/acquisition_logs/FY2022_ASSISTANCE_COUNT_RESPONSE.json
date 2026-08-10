@@ -1,0 +1,14 @@
+{
+    "calculated_transaction_count":  130341,
+    "maximum_transaction_limit":  500000,
+    "transaction_rows_gt_limit":  false,
+    "calculated_count":  130341,
+    "spending_level":  "transactions",
+    "maximum_limit":  500000,
+    "rows_gt_limit":  false,
+    "messages":  [
+                     "For searches, time period start and end dates are currently limited to an earliest date of 2007-10-01.  For data going back to 2000-10-01, use either the Custom Award Download feature on the website or one of our download or bulk_download API endpoints as listed on https://api.usaspending.gov/docs/endpoints. ",
+                     "\u0027subawards\u0027 will be deprecated in the future. Set â??spending_levelâ?? to â??subawardsâ?? instead. See documentation for more information. ",
+                     "The above fields containing the transaction_* naming convention will be deprecated and replaced with fields without the transaction_*. "
+                 ]
+}
