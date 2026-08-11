@@ -1,0 +1,25 @@
+========================================================================
+ETL-005D.6 — ASSISTANCE EXTRAORDINARY-FUNDING LINKAGE
+========================================================================
+Load batch ID .................. 8
+Raw observations examined ...... 391,015
+Rows with DEFC values .......... 308,344
+Parsed code observations ....... 321,543
+Known relationship rows ........ 321,543
+Unknown code observations ...... 0
+Unparsed segments .............. 0
+Distinct known DEFC codes ...... 30
+Distinct unknown DEFC codes .... 0
+Multiple-code transactions ..... 8,839
+Relationships inserted ......... 1,341
+Relationships updated .......... 0
+Relationships unchanged ........ 320,202
+Duplicate relationships ........ 0
+Orphan transaction links ....... 0
+Orphan reference links ......... 0
+Validation ..................... PASS
+========================================================================
+
+Only DEFC codes represented in the authoritative reference table are linked.
+Unknown parsed codes and malformed source segments remain preserved in evidence for later classification.
+The complete original DEFC source value remains preserved on the normalized transaction and each known relationship.

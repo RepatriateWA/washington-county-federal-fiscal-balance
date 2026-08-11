@@ -1,0 +1,21 @@
+========================================================================
+ETL-005D.5B — ASSISTANCE PLACE NORMALIZATION
+========================================================================
+Load batch ID .................. 8
+Raw observations examined ...... 391,015
+Canonical place identities ..... 2,708
+Geographic fingerprints ........ 2,707
+Source-condition identities .... 1
+Places inserted ................ 1,174
+Places updated ................. 36
+Places unchanged ............... 1,498
+Identity conflicts ............. 0
+Duplicate identity keys ........ 0
+Unresolved county identities ... 0
+Validation ..................... PASS
+========================================================================
+
+Washington state code and state FIPS are derived from the Washington-scoped source extract.
+County FIPS values are derived from the authoritative Washington county registry.
+WASHINGTON_UNSPECIFIED records do not assert statewide geographic scope.
+ZIP values are preserved as source text, including nonstandard source values.
