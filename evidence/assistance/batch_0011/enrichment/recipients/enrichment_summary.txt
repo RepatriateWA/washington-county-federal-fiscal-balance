@@ -1,0 +1,18 @@
+========================================================================
+ETL-005D.2 — ASSISTANCE RECIPIENT RELATIONSHIP ENRICHMENT
+========================================================================
+Load batch ID .................. 11
+Raw observations examined ...... 85,700
+Transaction relationships ...... 85,700
+Award relationships ............ 68,094
+Awards with multiple recipients 192
+Missing transaction recipients . 0
+Orphan transaction recipients .. 0
+Missing award recipients ........ 0
+Orphan award recipients ......... 0
+Validation ..................... PASS
+========================================================================
+
+Transaction recipient relationships preserve the recipient identity observed on each raw source row.
+Award recipient relationships use the latest populated action date, latest source row, and identity key as deterministic selection precedence.
+All observed recipient changes remain preserved in the raw layer and multiplicity evidence artifact.

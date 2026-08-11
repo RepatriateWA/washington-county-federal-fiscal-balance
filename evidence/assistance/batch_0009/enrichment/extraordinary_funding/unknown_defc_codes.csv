@@ -1,0 +1,5 @@
+defc_code,observation_count,transaction_count,distinct_description_count,observed_descriptions,first_source_row_number,last_source_row_number,sample_transaction_unique_key,sample_raw_defc_value
+7,2,2,1,Emergency P.L. 117-159,238364,238365,7526_U4A44255_U4A44255-1412364591_93.110_01,7: Emergency P.L. 117-159;V: Non-emergency P.L. 117-2
+K,1,1,1,Emergency P.L. 116-113,67251,67251,1330_NA21NOS9990118_NA21NOS9990118_000_11.999_000,K: Emergency P.L. 116-113
+R,28,28,1,Emergency P.L. 116-260,243415,252659,7590_2101WALWC5_2101WALWC5-248068180_93.568_0,R: Emergency P.L. 116-260
+W,5,5,1,Emergency P.L. 117-31,243424,243428,7590_2101WARSSS_2101WARSSS-1624550641_93.566_03,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31

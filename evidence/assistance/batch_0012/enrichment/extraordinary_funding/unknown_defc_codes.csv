@@ -1,0 +1,11 @@
+defc_code,observation_count,transaction_count,distinct_description_count,observed_descriptions,first_source_row_number,last_source_row_number,sample_transaction_unique_key,sample_raw_defc_value
+5,1,1,1,Wildfire Suppression P.L. 117-103,26585,26585,1450_A22AC00062_-NONE-_15.035_9,5: Wildfire Suppression P.L. 117-103;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;T: Wildfire Suppression P.L. 116-260
+7,55,55,1,Emergency P.L. 117-159,27210,82727,1550_15PBJA23GG00040BSCI_-NONE-_16.738_00-3,7: Emergency P.L. 117-159
+A,70,70,1,Emergency P.L. 115-56,3098,5313,12D2_12FA00PY88186056_-NONE-_10.171_-NONE-,A: Emergency P.L. 115-56
+AAA,2,2,1,Emergency P.L. 117-180,54362,54363,7590_2301WARCMA_2301WARCMA-1798174216_93.566_05,6: Emergency P.L. 117-128;AAA: Emergency P.L. 117-180;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;X: Emergency P.L. 117-43
+AAF,724,724,1,Emergency P.L. 118-42,57724,71029,8630_CA160090001-25Z_-NONE-_14.195_2024-11-19243240069755,AAF: Emergency P.L. 118-42;AAL: Emergency P.L. 119-4;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression
+AAJ,7,7,1,Emergency P.L. 118-50,43193,54449,7022_EMW-2024-UA-05247_EMW-2024-UA-05247-0_97.008_0,AAJ: Emergency P.L. 118-50
+I,7,7,1,Emergency P.L. 116-94,6329,23918,12D2_12FA00PY89801894PC2873_-NONE-_10.123_-NONE-,I: Emergency P.L. 116-94
+R,1,1,1,Emergency P.L. 116-260,62344,62344,8900_DESC0021480_-NONE-_81.049_0005,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;R: Emergency P.L. 116-260
+T,3,3,1,Wildfire Suppression P.L. 116-260,26585,26587,1450_A22AC00062_-NONE-_15.035_9,5: Wildfire Suppression P.L. 117-103;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;T: Wildfire Suppression P.L. 116-260
+W,1,1,1,Emergency P.L. 117-31,54269,54269,7590_2101WARSSS_2101WARSSS-2181072568_93.566_06,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31

@@ -1,0 +1,10 @@
+defc_code,observation_count,transaction_count,distinct_description_count,observed_descriptions,first_source_row_number,last_source_row_number,sample_transaction_unique_key,sample_raw_defc_value
+2,10,10,1,Emergency P.L. 117-70,69183,69192,7590_2301WARSSS_2301WARSSS-1837061056_93.566_02,2: Emergency P.L. 117-70;6: Emergency P.L. 117-128;AAA: Emergency P.L. 117-180;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;X: Emergency P.L. 117-43
+5,2,2,1,Wildfire Suppression P.L. 117-103,30307,30308,1450_A22AC00062_-NONE-_15.035_4,5: Wildfire Suppression P.L. 117-103;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;T: Wildfire Suppression P.L. 116-260
+7,46,46,1,Emergency P.L. 117-159,30805,85311,1501_15JCOPS22GG04183SCAX_-NONE-_16.710_00,7: Emergency P.L. 117-159
+A,74,74,1,Emergency P.L. 115-56,17978,26705,12D2_12FA00PY83013506_-NONE-_10.171_-NONE-,A: Emergency P.L. 115-56
+AAA,15,15,1,Emergency P.L. 117-180,69178,69192,7590_2301WARCMA_2301WARCMA-2624375661_93.566_03,6: Emergency P.L. 117-128;AAA: Emergency P.L. 117-180;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;X: Emergency P.L. 117-43
+I,1,1,1,Emergency P.L. 116-94,22552,22552,12D2_12FA00PY84280229_-NONE-_10.133_-NONE-,I: Emergency P.L. 116-94
+K,1,1,1,Emergency P.L. 116-113,28951,28951,1330_NA21NOS9990118_NA21NOS9990118_001_11.999_001,K: Emergency P.L. 116-113
+R,10,10,1,Emergency P.L. 116-260,68987,77289,7590_2101WALWC5_2101WALWC5-3646540062_93.499_2,R: Emergency P.L. 116-260
+T,3,3,1,Wildfire Suppression P.L. 116-260,30307,30312,1450_A22AC00062_-NONE-_15.035_4,5: Wildfire Suppression P.L. 117-103;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;T: Wildfire Suppression P.L. 116-260

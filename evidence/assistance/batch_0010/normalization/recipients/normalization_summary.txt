@@ -1,0 +1,23 @@
+========================================================================
+ETL-005D.1 — ASSISTANCE RECIPIENT NORMALIZATION
+========================================================================
+Load batch ID .................. 10
+Raw observations examined ...... 130,341
+Canonical recipient identities . 19,475
+UEI identities ................. 2,826
+Name-fingerprint identities .... 16,647
+Source-condition identities .... 2
+Recipients inserted ............ 7,816
+Recipients updated ............. 61
+Recipients unchanged ........... 11,598
+Identity conflicts ............. 0
+Parent-conflict identities ..... 104
+Duplicate identity keys ........ 0
+Invalid required values ........ 0
+Validation ..................... PASS
+========================================================================
+
+UEI identities use the authoritative source UEI.
+Named recipients without UEIs use deterministic source-derived fingerprints.
+PII-redacted and multiple-recipient values are modeled as source conditions, not asserted legal entities.
+Name-only matching to existing shared recipients is prohibited.
