@@ -1,0 +1,17 @@
+========================================================================
+ETL-005D.5C — ASSISTANCE PLACE RELATIONSHIP ENRICHMENT
+========================================================================
+Load batch ID .................. 11
+Raw observations examined ...... 85,700
+Transaction place relationships 85,700
+Award place selections ......... 68,094
+Awards with place changes ...... 413
+Missing transaction places ..... 0
+Orphan transaction places ...... 0
+Validation ..................... PASS
+========================================================================
+
+Every normalized transaction links to the place identity reconstructed from its immutable raw row.
+Award-level selections are evidence outputs because assistance.award currently has no place-of-performance foreign-key column.
+Award selections use latest action date, latest source row, and place identity key as deterministic precedence.
+Non-postal ZIP source text remains preserved in the raw layer and is null in the normalized place dimension.

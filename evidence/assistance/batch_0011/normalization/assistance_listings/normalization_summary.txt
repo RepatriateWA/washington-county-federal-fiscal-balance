@@ -1,0 +1,16 @@
+========================================================================
+ETL-005C.1 — ASSISTANCE LISTING NORMALIZATION
+========================================================================
+Load batch ID .................. 11
+Raw observations examined ...... 85,700
+Incomplete listing rows ........ 0
+Distinct Assistance Listings ... 1,056
+Listings inserted .............. 29
+Listings updated ............... 33
+Listings unchanged ............. 994
+Listings with title conflicts .. 19
+Validation ..................... PASS
+========================================================================
+
+Canonical selection precedence: occurrence count, latest source row, normalized title, exact title.
+All observed title variants are preserved in the conflict artifact.

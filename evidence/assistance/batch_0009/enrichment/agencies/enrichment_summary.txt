@@ -1,0 +1,19 @@
+========================================================================
+ETL-005D.4C — ASSISTANCE AGENCY RELATIONSHIP ENRICHMENT
+========================================================================
+Load batch ID .................. 9
+Raw observations examined ...... 261,008
+Awarding agencies linked ....... 261,008
+Awarding subagencies linked .... 261,008
+Funding agencies linked ........ 260,614
+Funding subagencies linked ..... 260,614
+Missing funding pairs .......... 394
+Award relationships ............ 228,110
+Awards with agency changes ..... 171
+Orphan transaction agencies .... 0
+Validation ..................... PASS
+========================================================================
+
+Transaction relationships preserve the agency configuration observed on each raw source row.
+Award relationships use latest action date, latest source row, and agency codes as deterministic precedence.
+Missing funding agency pairs remain null and are not replaced with invented placeholder agencies.

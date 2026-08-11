@@ -1,0 +1,13 @@
+DEFC,FirstFY,LastFY,TotalObservations,TotalTransactions,Description,Batches
+2,2022,2023,22,22,Emergency P.L. 117-70,"10,11"
+5,2022,2025,7,7,Wildfire Suppression P.L. 117-103,"10,11,12"
+7,2021,2025,112,112,Emergency P.L. 117-159,"9,10,11,12"
+A,2023,2025,144,144,Emergency P.L. 115-56,"11,12"
+AAA,2023,2025,17,17,Emergency P.L. 117-180,"11,12"
+AAF,2025,2025,724,724,Emergency P.L. 118-42,12
+AAJ,2025,2025,7,7,Emergency P.L. 118-50,12
+I,2022,2025,9,9,Emergency P.L. 116-94,"10,11,12"
+K,2021,2023,3,3,Emergency P.L. 116-113,"9,10,11"
+R,2021,2025,63,63,Emergency P.L. 116-260,"9,10,11,12"
+T,2022,2025,11,11,Wildfire Suppression P.L. 116-260,"10,11,12"
+W,2021,2025,6,6,Emergency P.L. 117-31,"9,12"
