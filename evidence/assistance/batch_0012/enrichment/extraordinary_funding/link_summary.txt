@@ -5,15 +5,15 @@ Load batch ID .................. 12
 Raw observations examined ...... 83,464
 Rows with DEFC values .......... 69,426
 Parsed code observations ....... 78,206
-Known relationship rows ........ 77,335
-Unknown code observations ...... 871
+Known relationship rows ........ 78,206
+Unknown code observations ...... 0
 Unparsed segments .............. 0
-Distinct known DEFC codes ...... 28
-Distinct unknown DEFC codes .... 10
+Distinct known DEFC codes ...... 38
+Distinct unknown DEFC codes .... 0
 Multiple-code transactions ..... 3,177
-Relationships inserted ......... 77,335
+Relationships inserted ......... 871
 Relationships updated .......... 0
-Relationships unchanged ........ 0
+Relationships unchanged ........ 77,335
 Duplicate relationships ........ 0
 Orphan transaction links ....... 0
 Orphan reference links ......... 0

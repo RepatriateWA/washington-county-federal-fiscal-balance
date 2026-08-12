@@ -43701,6 +43701,7 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 67248,532379,1330_NA21NOS4290106_NA21NOS4290106_000_11.429_000,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 67249,532380,1330_NA21NOS4780157_NA21NOS4780157_000_11.478_000,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 67250,532381,1330_NA21NOS9990027_NA21NOS9990027_000_11.999_000,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+67251,532382,1330_NA21NOS9990118_NA21NOS9990118_000_11.999_000,K,Emergency P.L. 116-113,K: Emergency P.L. 116-113,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 67252,532383,1330_NA21NWS4670014_NA21NWS4670014_000_11.467_000,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 67253,532384,1330_NA21OAR0110201_NA21OAR0110201_000_11.011_000,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 67254,532385,1330_NA21OAR0210099_NA21OAR0210099_000_11.021_000,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -224066,7 +224067,9 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 238361,703492,7526_U1Q28742_U1Q28742-973911848_93.969_01,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 238362,703493,7526_U2W33326_U2W33326-3492862961_93.912_00,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 238363,703494,7526_U2W33326_U2W33326-822632050_93.912_01,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+238364,703495,7526_U4A44255_U4A44255-1412364591_93.110_01,7,Emergency P.L. 117-159,7: Emergency P.L. 117-159;V: Non-emergency P.L. 117-2,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 238364,703495,7526_U4A44255_U4A44255-1412364591_93.110_01,V,Non-emergency P.L. 117-2,7: Emergency P.L. 117-159;V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
+238365,703496,7526_U4A44255_U4A44255-2676272118_93.110_00,7,Emergency P.L. 117-159,7: Emergency P.L. 117-159;V: Non-emergency P.L. 117-2,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 238365,703496,7526_U4A44255_U4A44255-2676272118_93.110_00,V,Non-emergency P.L. 117-2,7: Emergency P.L. 117-159;V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 238366,703497,7526_U4D39438_U4D39438-2861886730_93.110_02,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 238367,703498,7526_U4D39438_U4D39438-304256595_93.110_00,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -231735,6 +231738,7 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243412,708543,7590_2101WALIEA_2101WALIEA-2358827712_93.568_2,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243413,708544,7590_2101WALIEA_2101WALIEA-4266438432_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243414,708545,7590_2101WALIEA_2101WALIEA-658853736_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243415,708546,7590_2101WALWC5_2101WALWC5-248068180_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243416,708547,7590_2101WALWC6_2101WALWC6-1298542458_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243417,708548,7590_2101WALWC6_2101WALWC6-3548105647_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243418,708549,7590_2101WALWC6_2101WALWC6-3622637168_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -231744,10 +231748,15 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243422,708553,7590_2101WARCMA_2101WARCMA-3658948615_93.566_01,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243423,708554,7590_2101WARCMA_2101WARCMA-868275378_93.566_03,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243424,708555,7590_2101WARSSS_2101WARSSS-1624550641_93.566_03,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243424,708555,7590_2101WARSSS_2101WARSSS-1624550641_93.566_03,W,Emergency P.L. 117-31,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243425,708556,7590_2101WARSSS_2101WARSSS-1950563516_93.566_00,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243425,708556,7590_2101WARSSS_2101WARSSS-1950563516_93.566_00,W,Emergency P.L. 117-31,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243426,708557,7590_2101WARSSS_2101WARSSS-3143049213_93.566_01,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243426,708557,7590_2101WARSSS_2101WARSSS-3143049213_93.566_01,W,Emergency P.L. 117-31,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243427,708558,7590_2101WARSSS_2101WARSSS-624192365_93.566_04,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243427,708558,7590_2101WARSSS_2101WARSSS-624192365_93.566_04,W,Emergency P.L. 117-31,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243428,708559,7590_2101WARSSS_2101WARSSS-676420922_93.566_02,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243428,708559,7590_2101WARSSS_2101WARSSS-676420922_93.566_02,W,Emergency P.L. 117-31,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;W: Emergency P.L. 117-31,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243429,708560,7590_2101WASAVP_2101WASAVP-1455109760_93.597_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243430,708561,7590_2101WASAVP_2101WASAVP-1980778835_93.597_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243431,708562,7590_2101WASCIC_2101WASCIC-3460425755_93.586_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -231897,6 +231906,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243557,708688,7590_21PEWALIE4_21PEWALIE4-4158996011_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243558,708689,7590_21PEWALIEA_21PEWALIEA-3604673288_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243559,708690,7590_21PEWALIEA_21PEWALIEA-574775008_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243560,708691,7590_21PEWALWC5_21PEWALWC5-2537502378_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243561,708692,7590_21PEWALWC5_21PEWALWC5-3176448904_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243562,708693,7590_21PEWALWC6_21PEWALWC6-1156316185_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243563,708694,7590_21PEWATANF_21PEWATANF-1934589738_93.558_03,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;V: Non-emergency P.L. 117-2,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243563,708694,7590_21PEWATANF_21PEWATANF-1934589738_93.558_03,V,Non-emergency P.L. 117-2,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -231954,6 +231965,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243610,708741,7590_21PIWALIE4_21PIWALIE4-151536586_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243611,708742,7590_21PIWALIEA_21PIWALIEA-1058986355_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243612,708743,7590_21PIWALIEA_21PIWALIEA-2895617503_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243613,708744,7590_21PIWALWC5_21PIWALWC5-1596523308_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243614,708745,7590_21PIWALWC5_21PIWALWC5-3266908283_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243615,708746,7590_21PIWALWC6_21PIWALWC6-3282518454_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243616,708747,7590_21PIWALWC6_21PIWALWC6-4255674564_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243617,708748,7590_21PIWALWC6_21PIWALWC6-4275499082_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -231997,6 +232010,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243650,708781,7590_21PMWALIE4_21PMWALIE4-2207519222_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243651,708782,7590_21PMWALIEA_21PMWALIEA-2968156674_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243652,708783,7590_21PMWALIEA_21PMWALIEA-643065541_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243653,708784,7590_21PMWALWC5_21PMWALWC5-1708031079_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243654,708785,7590_21PMWALWC5_21PMWALWC5-74093857_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243655,708786,7590_21PMWALWC6_21PMWALWC6-954910290_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243656,708787,7590_21POWACWSS_21POWACWSS-1967046340_93.645_2,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243657,708788,7590_21POWACWSS_21POWACWSS-2223230625_93.645_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -232004,6 +232019,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243659,708790,7590_21POWAE5C6_21POWAE5C6-296208836_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243660,708791,7590_21POWALIEA_21POWALIEA-3124667113_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243661,708792,7590_21POWALIEA_21POWALIEA-3426692227_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243662,708793,7590_21POWALWC5_21POWALWC5-277108639_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243663,708794,7590_21POWALWC5_21POWALWC5-3943566008_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243664,708795,7590_21POWALWC6_21POWALWC6-2659627112_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243665,708796,7590_21POWALWC6_21POWALWC6-310984361_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243666,708797,7590_21POWALWC6_21POWALWC6-3826111329_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -232061,6 +232078,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243711,708842,7590_21PRWALIE4_21PRWALIE4-1608253632_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243712,708843,7590_21PRWALIEA_21PRWALIEA-1494252206_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243713,708844,7590_21PRWALIEA_21PRWALIEA-347682211_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243714,708845,7590_21PRWALWC5_21PRWALWC5-1571169265_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243715,708846,7590_21PRWALWC5_21PRWALWC5-532450776_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243716,708847,7590_21PRWALWC6_21PRWALWC6-2176837712_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243717,708848,7590_21PRWALWC6_21PRWALWC6-3121770807_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243718,708849,7590_21PRWALWC6_21PRWALWC6-509348475_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -232088,6 +232107,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243740,708871,7590_21PTWALIE4_21PTWALIE4-1989675291_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243741,708872,7590_21PTWALIEA_21PTWALIEA-3413613106_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243742,708873,7590_21PTWALIEA_21PTWALIEA-3769269108_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243743,708874,7590_21PTWALWC5_21PTWALWC5-3916292769_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243744,708875,7590_21PTWALWC5_21PTWALWC5-992325308_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243745,708876,7590_21PTWALWC6_21PTWALWC6-3790466626_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243746,708877,7590_21PUWAE5C6_21PUWAE5C6-1506033787_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243747,708878,7590_21PUWALIE4_21PUWALIE4-560952725_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -232108,6 +232129,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243762,708893,7590_21PVWAE5C6_21PVWAE5C6-1465415927_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243763,708894,7590_21PVWALIEA_21PVWALIEA-3500471238_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243764,708895,7590_21PVWALIEA_21PVWALIEA-4074492623_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243765,708896,7590_21PVWALWC5_21PVWALWC5-2187780027_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243766,708897,7590_21PVWALWC5_21PVWALWC5-3094970985_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243767,708898,7590_21PVWALWC6_21PVWALWC6-4221011530_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243768,708899,7590_21PXWACCC5_21PXWACCC5-234598370_93.575_0,U,Emergency P.L. 116-260,U: Emergency P.L. 116-260,COVID,TRUE,TRUE,FALSE
 243769,708900,7590_21PXWACCDF_21PXWACCDF-1750755919_93.596_5,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -232151,6 +232174,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243807,708938,7590_21QAWAFOST_21QAWAFOST-3916788028_93.658_2,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243808,708939,7590_21QAWALIEA_21QAWALIEA-1836178974_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243809,708940,7590_21QAWALIEA_21QAWALIEA-671192343_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243810,708941,7590_21QAWALWC5_21QAWALWC5-679444868_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243811,708942,7590_21QAWALWC5_21QAWALWC5-892899936_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243812,708943,7590_21QAWALWC6_21QAWALWC6-1829442240_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243813,708944,7590_21QAWALWC6_21QAWALWC6-2993358159_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243814,708945,7590_21QAWALWC6_21QAWALWC6-858389283_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -232180,6 +232205,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243838,708969,7590_21QEWAE5C6_21QEWAE5C6-1963099089_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243839,708970,7590_21QEWALIEA_21QEWALIEA-1978108259_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243840,708971,7590_21QEWALIEA_21QEWALIEA-4065617724_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243841,708972,7590_21QEWALWC5_21QEWALWC5-1176629642_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243842,708973,7590_21QEWALWC5_21QEWALWC5-2581795713_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243843,708974,7590_21QEWALWC6_21QEWALWC6-2625798069_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243844,708975,7590_21QEWALWC6_21QEWALWC6-2641110207_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243845,708976,7590_21QEWALWC6_21QEWALWC6-4078105430_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -232200,6 +232227,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243860,708991,7590_21QIWAE5C6_21QIWAE5C6-999156717_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243861,708992,7590_21QIWALIEA_21QIWALIEA-3094466744_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243862,708993,7590_21QIWALIEA_21QIWALIEA-94813107_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243863,708994,7590_21QIWALWC5_21QIWALWC5-2637101626_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243864,708995,7590_21QIWALWC5_21QIWALWC5-4029649027_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243865,708996,7590_21QIWALWC6_21QIWALWC6-1837620529_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243866,708997,7590_21QJWACCC5_21QJWACCC5-777233138_93.575_0,U,Emergency P.L. 116-260,U: Emergency P.L. 116-260,COVID,TRUE,TRUE,FALSE
 243867,708998,7590_21QJWACCDF_21QJWACCDF-2964779176_93.596_5,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -232279,6 +232308,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243936,709067,7590_21QOWALIE4_21QOWALIE4-1347128125_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243937,709068,7590_21QOWALIEA_21QOWALIEA-1604885148_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243938,709069,7590_21QOWALIEA_21QOWALIEA-3811928313_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243939,709070,7590_21QOWALWC5_21QOWALWC5-1619276066_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243940,709071,7590_21QOWALWC5_21QOWALWC5-2038350662_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243941,709072,7590_21QOWALWC6_21QOWALWC6-1154742967_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243942,709073,7590_21QOWALWC6_21QOWALWC6-2653123719_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243943,709074,7590_21QOWALWC6_21QOWALWC6-2965629846_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -232287,6 +232318,8 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 243946,709077,7590_21QRWAE5C6_21QRWAE5C6-4250025166_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243947,709078,7590_21QRWALIEA_21QRWALIEA-1041755865_93.568_1,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 243948,709079,7590_21QRWALIEA_21QRWALIEA-1153319229_93.568_0,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
+243949,709080,7590_21QRWALWC5_21QRWALWC5-2467151912_93.568_0,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
+243950,709081,7590_21QRWALWC5_21QRWALWC5-980709182_93.568_1,R,Emergency P.L. 116-260,R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 243951,709082,7590_21QRWALWC6_21QRWALWC6-1807701480_93.568_0,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243952,709083,7590_21QRWALWC6_21QRWALWC6-2827250524_93.568_2,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
 243953,709084,7590_21QRWALWC6_21QRWALWC6-3455793295_93.568_1,V,Non-emergency P.L. 117-2,V: Non-emergency P.L. 117-2,COVID,TRUE,TRUE,FALSE
@@ -237501,7 +237534,9 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 252633,717764,8900_DESC0020378_-NONE-_81.049_0002,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252634,717765,8900_DESC0020439_-NONE-_81.049_0001,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252635,717766,8900_DESC0020540_-NONE-_81.049_0001,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;R: Emergency P.L. 116-260,NOT_DESIGNATED,FALSE,FALSE,FALSE
+252635,717766,8900_DESC0020540_-NONE-_81.049_0001,R,Emergency P.L. 116-260,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 252636,717767,8900_DESC0020544_-NONE-_81.049_0001,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;R: Emergency P.L. 116-260,NOT_DESIGNATED,FALSE,FALSE,FALSE
+252636,717767,8900_DESC0020544_-NONE-_81.049_0001,R,Emergency P.L. 116-260,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 252637,717768,8900_DESC0020787_-NONE-_81.049_0001,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252638,717769,8900_DESC0020798_-NONE-_81.049_0001,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252639,717770,8900_DESC0020798_-NONE-_81.049_0002,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
@@ -237525,6 +237560,7 @@ source_row_number,assistance_transaction_id,assistance_transaction_unique_key,de
 252657,717788,8900_DESC0021464_-NONE-_81.049_-NONE-,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252658,717789,8900_DESC0021470_-NONE-_81.049_-NONE-,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252659,717790,8900_DESC0021480_-NONE-_81.049_-NONE-,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;R: Emergency P.L. 116-260,NOT_DESIGNATED,FALSE,FALSE,FALSE
+252659,717790,8900_DESC0021480_-NONE-_81.049_-NONE-,R,Emergency P.L. 116-260,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;R: Emergency P.L. 116-260,OTHER_EMERGENCY,TRUE,FALSE,FALSE
 252660,717791,8900_DESC0021522_-NONE-_81.049_-NONE-,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252661,717792,8900_DESC0021546_-NONE-_81.049_-NONE-,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE
 252662,717793,8900_DESC0021579_-NONE-_81.049_-NONE-,Q,Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression,NOT_DESIGNATED,FALSE,FALSE,FALSE

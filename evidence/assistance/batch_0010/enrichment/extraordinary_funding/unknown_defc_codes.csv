@@ -1,8 +1,1 @@
 defc_code,observation_count,transaction_count,distinct_description_count,observed_descriptions,first_source_row_number,last_source_row_number,sample_transaction_unique_key,sample_raw_defc_value
-2,12,12,1,Emergency P.L. 117-70,113540,113551,7590_2201WARSSS_2201WARSSS-1503580396_93.566_03,2: Emergency P.L. 117-70;6: Emergency P.L. 117-128;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;X: Emergency P.L. 117-43
-5,4,4,1,Wildfire Suppression P.L. 117-103,50613,50616,1450_A22AC00062_-NONE-_15.035_1,5: Wildfire Suppression P.L. 117-103;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;T: Wildfire Suppression P.L. 116-260
-7,9,9,1,Emergency P.L. 117-159,51088,130214,1550_15PBJA22GG04749MUMU_-NONE-_16.045_00,7: Emergency P.L. 117-159;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression
-I,1,1,1,Emergency P.L. 116-94,35927,35927,12D2_12FA00PY80412676_-NONE-_10.133_-NONE-,I: Emergency P.L. 116-94
-K,1,1,1,Emergency P.L. 116-113,49290,49290,1330_NA22NOS9990134_NA22NOS9990134_000_11.999_000,K: Emergency P.L. 116-113
-R,24,24,1,Emergency P.L. 116-260,113444,122851,7590_2101WALWC5_2101WALWC5-3758575074_93.499_1,R: Emergency P.L. 116-260
-T,5,5,1,Wildfire Suppression P.L. 116-260,50613,50620,1450_A22AC00062_-NONE-_15.035_1,5: Wildfire Suppression P.L. 117-103;AAB: Emergency P.L. 117-328;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression;T: Wildfire Suppression P.L. 116-260
