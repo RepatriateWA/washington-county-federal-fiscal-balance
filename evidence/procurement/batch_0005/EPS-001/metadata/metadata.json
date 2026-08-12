@@ -3,7 +3,7 @@
   "evidence_package_id": "PROC-B0005-EPS001",
   "dataset": "procurement",
   "batch_id": 5,
-  "created_utc": "2026-08-04T22:12:10Z",
+  "created_utc": "2026-08-12T05:11:33Z",
   "versions": {
     "evidence_package_version": "EPS-001",
     "certification_version": "ETL-114C.1",
@@ -17,7 +17,7 @@
     "database": "wcffbp"
   },
   "source": {
-    "git_commit": "14d2ae58f817cc95fb1ac5e969b628d4d3f220ea",
+    "git_commit": "a38507bb24ac388dc13ee68d8c2bfcd83ec822df",
     "git_dirty": true,
     "repository": "washington-county-federal-fiscal-balance",
     "source_files": []
