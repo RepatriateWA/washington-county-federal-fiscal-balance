@@ -1,0 +1,55 @@
+{
+  "endpoint": "https://api.usaspending.gov/api/v2/search/spending_by_transaction/",
+  "expected_count": 110244,
+  "fields": [
+    "internal_id",
+    "generated_internal_id",
+    "Award ID",
+    "Award Type",
+    "Action Date",
+    "Action Type",
+    "Mod",
+    "Transaction Amount",
+    "Transaction Description",
+    "Recipient Name",
+    "Recipient UEI",
+    "recipient_id",
+    "pop_city_name",
+    "pop_state_code",
+    "pop_country_name",
+    "naics_code",
+    "naics_description",
+    "product_or_service_code",
+    "product_or_service_description",
+    "Awarding Agency",
+    "Awarding Sub Agency",
+    "Funding Agency",
+    "Funding Sub Agency",
+    "def_codes"
+  ],
+  "filters": {
+    "award_type_codes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "place_of_performance_locations": [
+      {
+        "country": "USA",
+        "state": "WA"
+      }
+    ],
+    "time_period": [
+      {
+        "end_date": "2020-09-30",
+        "start_date": "2019-10-01"
+      }
+    ]
+  },
+  "fiscal_year": 2020,
+  "important_note": "Stage 1 does not expose the canonical USAspending transaction ID. Stage 2 must resolve transaction identity.",
+  "order": "asc",
+  "page_size": 100,
+  "sort": "Action Date"
+}

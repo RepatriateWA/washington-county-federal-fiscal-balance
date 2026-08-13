@@ -1,0 +1,23 @@
+{
+  "architecture_version": "1.0",
+  "certification_version": "EP-VA-001.1",
+  "control_view": "va.v_washington_county_gdx_control_total",
+  "database_schema": "va",
+  "dataset_code": "VA_GDX_WA_COUNTY",
+  "dataset_name": "VA Geographic Distribution of Expenditures \u2014 Washington County Series",
+  "generated_at_utc": "2026-08-13T04:31:17.956601+00:00",
+  "methodology_break_fiscal_year": 2024,
+  "package_code": "EP-VA-001",
+  "primary_tables": [
+    "va.gdx_load_batch",
+    "va.gdx_expenditure_category",
+    "va.gdx_county_expenditure",
+    "va.gdx_county_metric"
+  ],
+  "repository_root": "D:\\GitHub\\washington-county-federal-fiscal-balance",
+  "schema_regimes": {
+    "FY2015-FY2023": "LEGACY_STATE_SHEETS",
+    "FY2024": "REVISED_DIRECT_INDIRECT"
+  },
+  "source_root": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\va\\gdx"
+}

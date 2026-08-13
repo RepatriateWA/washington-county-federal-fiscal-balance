@@ -1,0 +1,9 @@
+
+
+Algorithm : SHA256
+Hash      : 680368C82591254689F0F3487269C8576DEB27ECC28F89A68EDFFB4F6F9A700D
+Path      : D:\GitHub\washington-county-federal-fiscal-balance\data\raw\usaspending\assistance\FY2020\SubawardsAndPrimeTransactions_2026-08-10_H18M42S29908875.zip
+
+
+
+

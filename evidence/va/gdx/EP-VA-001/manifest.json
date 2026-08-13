@@ -1,0 +1,55 @@
+{
+  "artifact_count": 9,
+  "artifacts": [
+    {
+      "path": "annual_control_totals.csv",
+      "sha256": "A929AF0FBB17A5C10C61C93FDC2DB98BE0E6E80F5676B5741F6B94DF90604256",
+      "size_bytes": 1073
+    },
+    {
+      "path": "certification.json",
+      "sha256": "A34E26EAE0C31A4D6394F6C67E9FE91B63055A7B66D94CF837F2E0D8D61BA22F",
+      "size_bytes": 3431
+    },
+    {
+      "path": "certification_report.txt",
+      "sha256": "F9A718B730ECFC422DFE647DEC7FD1223E7DD10BBACF728D98402EE40B867BA8",
+      "size_bytes": 3837
+    },
+    {
+      "path": "metadata/metadata.json",
+      "sha256": "C5AF521DE51F86B9694B23DEFF100DCCABC3829775C5599593D1FFFD6F5011A6",
+      "size_bytes": 882
+    },
+    {
+      "path": "methodology_note.md",
+      "sha256": "AFBA35C908E45F9570513B2A009419C34C82F5828BB7EE954EB722AA5636E849",
+      "size_bytes": 1130
+    },
+    {
+      "path": "README.md",
+      "sha256": "CA4F5580D38C0E570231B86E7DDA4A855B95C4653494DB37B6C40AB18C90F986",
+      "size_bytes": 1087
+    },
+    {
+      "path": "schema_profile.json",
+      "sha256": "BE16D50C909917383B869C9A1C9FF1C216DAFA73A7896913DBD1A5D295FEA012",
+      "size_bytes": 40547
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "1B5972C158C0E9CB2DF7E483764BF3D8366ECAA393318FAB9A6D0205F54085C2",
+      "size_bytes": 8946
+    },
+    {
+      "path": "validation_results.json",
+      "sha256": "D949675F123131C08DDAD482869064A1522701E10CA030F2C8C154401FDF54B3",
+      "size_bytes": 6632
+    }
+  ],
+  "certification_status": "CERTIFIED",
+  "dataset_code": "VA_GDX_WA_COUNTY",
+  "generated_at_utc": "2026-08-13T04:31:17.956601+00:00",
+  "manifest_version": "1.0",
+  "package_code": "EP-VA-001"
+}
