@@ -1,0 +1,98 @@
+{
+  "certification_version": "EP-VA-001.1",
+  "certified_for": [
+    "source provenance",
+    "raw workbook identity",
+    "county coverage",
+    "schema-regime preservation",
+    "source-unit preservation",
+    "normalization to dollars",
+    "component-to-control reconciliation",
+    "annual Washington GDX control totals"
+  ],
+  "checks": [
+    {
+      "code": "CERT-001",
+      "detail": "return_code=0",
+      "label": "Production VA validator exits successfully",
+      "passed": true
+    },
+    {
+      "code": "CERT-002",
+      "detail": "OVERALL RESULT: PASS",
+      "label": "Production VA validator reports overall PASS",
+      "passed": true
+    },
+    {
+      "code": "CERT-003",
+      "detail": "passed=19, failed=0",
+      "label": "Expected validation suite passes cleanly",
+      "passed": true
+    },
+    {
+      "code": "CERT-004",
+      "detail": "batches=10, years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]",
+      "label": "Exactly ten completed FY2015-FY2024 load batches exist",
+      "passed": true
+    },
+    {
+      "code": "CERT-005",
+      "detail": "{2015: 39, 2016: 39, 2017: 39, 2018: 39, 2019: 39, 2020: 39, 2021: 39, 2022: 39, 2023: 39, 2024: 39}",
+      "label": "All years contain all 39 Washington counties",
+      "passed": true
+    },
+    {
+      "code": "CERT-006",
+      "detail": "expenditures=3237, metrics=702",
+      "label": "Database observation counts match certified design",
+      "passed": true
+    },
+    {
+      "code": "CERT-007",
+      "detail": "FY2015-FY2023=LEGACY_STATE_SHEETS; FY2024=REVISED_DIRECT_INDIRECT",
+      "label": "Two-regime schema architecture is preserved",
+      "passed": true
+    },
+    {
+      "code": "CERT-008",
+      "detail": "years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]",
+      "label": "Acquisition manifest covers FY2015-FY2024",
+      "passed": true
+    },
+    {
+      "code": "CERT-009",
+      "detail": "10/10 source workbooks reconcile",
+      "label": "Raw workbook hashes reconcile across disk, manifest, and database",
+      "passed": true
+    },
+    {
+      "code": "CERT-010",
+      "detail": "{'all_years_have_valid_washington_county_population': True, 'fy2024_requires_separate_mapping': True, 'recommended_loader_strategy': 'Use one legacy loader mapping for FY2015-FY2023 only if single_legacy_etl_mapping_safe is true. Use a distinct FY2024 direct/indirect mapping regardless.', 'single_legacy_etl_mapping_safe': True}",
+      "label": "Schema profile supports production loader design",
+      "passed": true
+    }
+  ],
+  "database_statistics": {
+    "completed_batches": 10,
+    "expenditure_rows": 3237,
+    "metric_rows": 702,
+    "source_blank_component_rows": 56
+  },
+  "dataset_code": "VA_GDX_WA_COUNTY",
+  "dataset_name": "VA Geographic Distribution of Expenditures \u2014 Washington County Series",
+  "fiscal_year_end": 2024,
+  "fiscal_year_start": 2015,
+  "generated_at_utc": "2026-08-13T04:31:17.956601+00:00",
+  "geographic_scope": "Washington State \u2014 39 counties",
+  "not_certified_for": [
+    "additivity with USAspending-derived VA expenditures",
+    "final fiscal-balance inclusion before overlap reconciliation"
+  ],
+  "package_code": "EP-VA-001",
+  "status": "CERTIFIED",
+  "validator": {
+    "checks_failed": 0,
+    "checks_passed": 19,
+    "overall_pass": true
+  }
+}

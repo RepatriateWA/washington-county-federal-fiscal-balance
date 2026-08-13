@@ -1,0 +1,74 @@
+EP-VA-001 — VA GDX FY2015-FY2024 CERTIFICATION REPORT
+========================================================================================
+
+Generated UTC: 2026-08-13T04:31:17.956601+00:00
+Dataset: VA Geographic Distribution of Expenditures — Washington County Series
+Geography: Washington State — 39 counties
+Fiscal years: FY2015-FY2024
+
+CERTIFICATION CHECKS
+----------------------------------------------------------------------------------------
+[PASS] CERT-001   Production VA validator exits successfully
+       return_code=0
+[PASS] CERT-002   Production VA validator reports overall PASS
+       OVERALL RESULT: PASS
+[PASS] CERT-003   Expected validation suite passes cleanly
+       passed=19, failed=0
+[PASS] CERT-004   Exactly ten completed FY2015-FY2024 load batches exist
+       batches=10, years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+[PASS] CERT-005   All years contain all 39 Washington counties
+       {2015: 39, 2016: 39, 2017: 39, 2018: 39, 2019: 39, 2020: 39, 2021: 39, 2022: 39, 2023: 39, 2024: 39}
+[PASS] CERT-006   Database observation counts match certified design
+       expenditures=3237, metrics=702
+[PASS] CERT-007   Two-regime schema architecture is preserved
+       FY2015-FY2023=LEGACY_STATE_SHEETS; FY2024=REVISED_DIRECT_INDIRECT
+[PASS] CERT-008   Acquisition manifest covers FY2015-FY2024
+       years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+[PASS] CERT-009   Raw workbook hashes reconcile across disk, manifest, and database
+       10/10 source workbooks reconcile
+[PASS] CERT-010   Schema profile supports production loader design
+       {'all_years_have_valid_washington_county_population': True, 'fy2024_requires_separate_mapping': True, 'recommended_loader_strategy': 'Use one legacy loader mapping for FY2015-FY2023 only if single_legacy_etl_mapping_safe is true. Use a distinct FY2024 direct/indirect mapping regardless.', 'single_legacy_etl_mapping_safe': True}
+
+DATABASE STATISTICS
+----------------------------------------------------------------------------------------
+Completed load batches ............ 10
+Expenditure observations ......... 3,237
+Metric observations .............. 702
+Source-blank component rows ....... 56
+
+WASHINGTON VA GDX ANNUAL CONTROL TOTALS
+----------------------------------------------------------------------------------------
+FY2015 $4,004,525,573.83
+FY2016 $4,190,746,757.55
+FY2017 $4,317,006,318.73
+FY2018 $4,377,268,316.65
+FY2019 $4,896,346,222.98
+FY2020 $5,296,544,030.00
+FY2021 $5,323,281,703.03
+FY2022 $6,218,866,293.72
+FY2023 $6,526,168,355.17
+FY2024 $6,926,923,691.03
+
+METHODOLOGY REGIMES
+----------------------------------------------------------------------------------------
+FY2015-FY2023  LEGACY_STATE_SHEETS; source expenditures in $000s.
+FY2024         REVISED_DIRECT_INDIRECT; source expenditures in dollars.
+
+SOURCE-BLANK POLICY
+----------------------------------------------------------------------------------------
+Blank component cells are preserved as NULL rather than silently converted to zero.
+All control totals are numeric and component reconciliations pass.
+
+ANALYTICAL LIMITATION
+----------------------------------------------------------------------------------------
+This certification does NOT declare VA GDX additive to USAspending.
+Overlap reconciliation is required before combining the two expenditure domains.
+
+UNDERLYING VALIDATION
+----------------------------------------------------------------------------------------
+Validation checks passed .......... 19
+Validation checks failed .......... 0
+
+========================================================================================
+OVERALL RESULT: CERTIFIED
+========================================================================================

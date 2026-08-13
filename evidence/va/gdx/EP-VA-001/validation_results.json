@@ -1,0 +1,36 @@
+{
+  "captured_at_utc": "2026-08-13T04:31:17.956601+00:00",
+  "check_lines": [
+    "[PASS] BATCH-001  Exactly one completed GDX batch per fiscal year            FY2015-FY2024",
+    "[PASS] BATCH-002  Completed year/source-hash batches are unique              0 duplicates",
+    "[PASS] COUNT-001  Expenditure row counts and 39-county coverage              all years correct",
+    "[PASS] COUNT-002  Metric row counts                                          FY2015-FY2023=78; FY2024=0",
+    "[PASS] DUP-001    County/category/class expenditure observations are unique  0 duplicates",
+    "[PASS] DUP-002    Expenditure source locations are unique                    0 duplicates",
+    "[PASS] CAT-001    Legacy category population is exact                        8 expected categories",
+    "[PASS] CAT-002    FY2024 Direct/Indirect category populations are exact      DIRECT=4; INDIRECT=7",
+    "[PASS] UNIT-001   Source-unit regime is correct by methodology era           legacy=USD_THOUSANDS; FY2024=USD",
+    "[PASS] UNIT-002   Legacy $000 source values normalize correctly to dollars   0 mismatches",
+    "[PASS] UNIT-003   FY2024 dollar source values normalize correctly            0 mismatches",
+    "[PASS] NULL-001   Control-total observations contain numeric amounts         0 null control-total rows",
+    "[PASS] NULL-002   Source-blank component observations are preserved          56 source-blank component rows",
+    "[PASS] FIN-001    Legacy county totals reconcile to component sums           351/351 counties within $0.10",
+    "[PASS] FIN-002    FY2024 Direct totals reconcile to component sums           39/39 counties within $0.10",
+    "[PASS] FIN-003    FY2024 Indirect totals reconcile to component sums         39/39 counties within $0.10",
+    "[PASS] FIN-004    FY2024 Direct/Indirect county populations are complete     {'DIRECT': 39, 'INDIRECT': 39}",
+    "[PASS] VIEW-001   County control-total view has 39 rows for every year       FY2015-FY2024",
+    "[PASS] VIEW-002   Control-total view agrees with normalized source controls  0 mismatches"
+  ],
+  "checks_failed": 0,
+  "checks_passed": 19,
+  "command": [
+    "D:\\GitHub\\washington-county-federal-fiscal-balance\\.venv\\Scripts\\python.exe",
+    "-m",
+    "scripts.validate_va_gdx"
+  ],
+  "overall_pass": true,
+  "package_code": "EP-VA-001",
+  "raw_output": "========================================================================================================\nVA GDX FY2015-FY2024 VALIDATION\n========================================================================================================\n\n--------------------------------------------------------------------------------------------------------\nLOAD / COVERAGE\n--------------------------------------------------------------------------------------------------------\n[PASS] BATCH-001  Exactly one completed GDX batch per fiscal year            FY2015-FY2024\n[PASS] BATCH-002  Completed year/source-hash batches are unique              0 duplicates\n[PASS] COUNT-001  Expenditure row counts and 39-county coverage              all years correct\n[PASS] COUNT-002  Metric row counts                                          FY2015-FY2023=78; FY2024=0\n\n--------------------------------------------------------------------------------------------------------\nUNIQUENESS / CATEGORIES\n--------------------------------------------------------------------------------------------------------\n[PASS] DUP-001    County/category/class expenditure observations are unique  0 duplicates\n[PASS] DUP-002    Expenditure source locations are unique                    0 duplicates\n[PASS] CAT-001    Legacy category population is exact                        8 expected categories\n[PASS] CAT-002    FY2024 Direct/Indirect category populations are exact      DIRECT=4; INDIRECT=7\n\n--------------------------------------------------------------------------------------------------------\nUNITS / NUMERIC INTEGRITY\n--------------------------------------------------------------------------------------------------------\n[PASS] UNIT-001   Source-unit regime is correct by methodology era           legacy=USD_THOUSANDS; FY2024=USD\n[PASS] UNIT-002   Legacy $000 source values normalize correctly to dollars   0 mismatches\n[PASS] UNIT-003   FY2024 dollar source values normalize correctly            0 mismatches\n[PASS] NULL-001   Control-total observations contain numeric amounts         0 null control-total rows\n[PASS] NULL-002   Source-blank component observations are preserved          56 source-blank component rows\n\n--------------------------------------------------------------------------------------------------------\nFINANCIAL RECONCILIATION\n--------------------------------------------------------------------------------------------------------\n[PASS] FIN-001    Legacy county totals reconcile to component sums           351/351 counties within $0.10\n[PASS] FIN-002    FY2024 Direct totals reconcile to component sums           39/39 counties within $0.10\n[PASS] FIN-003    FY2024 Indirect totals reconcile to component sums         39/39 counties within $0.10\n[PASS] FIN-004    FY2024 Direct/Indirect county populations are complete     {'DIRECT': 39, 'INDIRECT': 39}\n\n--------------------------------------------------------------------------------------------------------\nCONTROL VIEW\n--------------------------------------------------------------------------------------------------------\n[PASS] VIEW-001   County control-total view has 39 rows for every year       FY2015-FY2024\n[PASS] VIEW-002   Control-total view agrees with normalized source controls  0 mismatches\n\n--------------------------------------------------------------------------------------------------------\nWASHINGTON VA GDX ANNUAL CONTROL TOTALS\n--------------------------------------------------------------------------------------------------------\nFY2015 $    4,004,525,573.83\nFY2016 $    4,190,746,757.55\nFY2017 $    4,317,006,318.73\nFY2018 $    4,377,268,316.65\nFY2019 $    4,896,346,222.98\nFY2020 $    5,296,544,030.00\nFY2021 $    5,323,281,703.03\nFY2022 $    6,218,866,293.72\nFY2023 $    6,526,168,355.17\nFY2024 $    6,926,923,691.03\n\n========================================================================================================\nChecks passed ..................... 19\nChecks failed ..................... 0\n\nOVERALL RESULT: PASS\n========================================================================================================\n",
+  "return_code": 0,
+  "validator_module": "scripts.validate_va_gdx"
+}
