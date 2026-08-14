@@ -1,0 +1,97 @@
+{
+  "certified_for": [
+    "source-file identity at certification time",
+    "county coverage",
+    "benefit-type coverage",
+    "database population",
+    "reference integrity",
+    "program mapping integrity",
+    "December x 12 annualization integrity",
+    "published TOTAL control integrity",
+    "documented source-rounding reconciliation",
+    "annual Washington control totals"
+  ],
+  "checks": [
+    {
+      "code": "CERT-001",
+      "detail": "return_code=0",
+      "label": "Production SSA validator exits successfully",
+      "passed": true
+    },
+    {
+      "code": "CERT-002",
+      "detail": "OVERALL RESULT: PASS",
+      "label": "Production SSA validator reports overall PASS",
+      "passed": true
+    },
+    {
+      "code": "CERT-003",
+      "detail": "passed=17, failed=0",
+      "label": "Dedicated validation suite passes all 17 checks",
+      "passed": true
+    },
+    {
+      "code": "CERT-004",
+      "detail": "years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]",
+      "label": "Database covers report years 2015-2024",
+      "passed": true
+    },
+    {
+      "code": "CERT-005",
+      "detail": "total=3,510; expected=3,510",
+      "label": "Observation population matches certified design",
+      "passed": true
+    },
+    {
+      "code": "CERT-006",
+      "detail": "10/10 years",
+      "label": "Every year contains 39 counties and 9 benefit types",
+      "passed": true
+    },
+    {
+      "code": "CERT-007",
+      "detail": "actual=390; expected=390",
+      "label": "Published TOTAL control population is complete",
+      "passed": true
+    },
+    {
+      "code": "CERT-008",
+      "detail": "10/10 source workbooks hashed",
+      "label": "Exactly one raw source workbook exists for every year",
+      "passed": true
+    },
+    {
+      "code": "CERT-009",
+      "detail": "10/10 years",
+      "label": "Annual Washington published TOTAL controls are complete",
+      "passed": true
+    },
+    {
+      "code": "CERT-010",
+      "detail": "observed_max=$2,000; bound=\u00b1$5,000",
+      "label": "Observed source rounding remains inside documented bound",
+      "passed": true
+    }
+  ],
+  "database_statistics": {
+    "observations": 3510,
+    "published_total_controls": 390
+  },
+  "dataset_code": "SSA_OASDI_WA_COUNTY",
+  "dataset_name": "SSA OASDI Beneficiaries and Benefit Amounts \u2014 Washington County Series",
+  "generated_at_utc": "2026-08-14T00:52:19.766826+00:00",
+  "geographic_scope": "Washington State \u2014 39 counties",
+  "not_certified_for": [
+    "interpretation of December x 12 as observed FFY cash outlay",
+    "final ledger measure selection for FFY balance-of-payments accounting"
+  ],
+  "package_code": "EP-SSA-OASDI-001",
+  "report_year_end": 2024,
+  "report_year_start": 2015,
+  "status": "CERTIFIED",
+  "validator": {
+    "checks_failed": 0,
+    "checks_passed": 17,
+    "overall_pass": true
+  }
+}

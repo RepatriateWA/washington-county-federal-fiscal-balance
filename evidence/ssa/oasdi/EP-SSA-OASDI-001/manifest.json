@@ -1,0 +1,55 @@
+{
+  "artifact_count": 9,
+  "artifacts": [
+    {
+      "path": "annual_control_totals.csv",
+      "sha256": "7A290C37919B6686336DF97EDE35B6EF6EE56163E9959918AA73CAFAAE2F63CB",
+      "size_bytes": 1394
+    },
+    {
+      "path": "certification.json",
+      "sha256": "9BA850EFA7CC3D4C2F5980BC749D9D9A4841B47A75EC1DAE831AA472AFFB123E",
+      "size_bytes": 2976
+    },
+    {
+      "path": "certification_report.txt",
+      "sha256": "0BF88643E4B69A929DBF45BD5456D8A2D63E8DC8F044C58AFBCA7333E1A34AA3",
+      "size_bytes": 3714
+    },
+    {
+      "path": "metadata/metadata.json",
+      "sha256": "F4BDDA8B111DF4EE2C81AE8BADAE17C1143C49CB38F19CEA1919F852713292E5",
+      "size_bytes": 1852
+    },
+    {
+      "path": "methodology_note.md",
+      "sha256": "E07645D188D2B306F0A6292817AAC18757E2FE561BEDDE4A23B27527C95EA83F",
+      "size_bytes": 1968
+    },
+    {
+      "path": "README.md",
+      "sha256": "B01C33061117F7A3AA2F1864564E05F4113F2A00F931AEA8192B5D0CB9F3869C",
+      "size_bytes": 1023
+    },
+    {
+      "path": "rounding_reconciliation.json",
+      "sha256": "B01F91C4A5FAA544D4303638ED5D7A7132A31E5E0DDD87A308B4093EF9CA9469",
+      "size_bytes": 3181
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "711D014714F276CC3DBBC190224BB03B746328B81C35DDB4F71D0E7D52AFE0FD",
+      "size_bytes": 6154
+    },
+    {
+      "path": "validation_results.json",
+      "sha256": "1749DAF0BDBEAE245167F7A62B239AB34797015F28EF628A6734D8750E9904CD",
+      "size_bytes": 7466
+    }
+  ],
+  "certification_status": "CERTIFIED",
+  "dataset_code": "SSA_OASDI_WA_COUNTY",
+  "generated_at_utc": "2026-08-14T00:52:19.766826+00:00",
+  "manifest_version": "1.0",
+  "package_code": "EP-SSA-OASDI-001"
+}

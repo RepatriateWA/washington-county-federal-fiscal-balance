@@ -1,0 +1,112 @@
+{
+  "files": [
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 95958,
+      "filename": "ssa_oasdi_wa_2015.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2015\\ssa_oasdi_wa_2015.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2015\\ssa_oasdi_wa_2015.xlsx",
+      "report_year": 2015,
+      "sha256": "FBCCED2AF38C14CC79B56CCA2FD588813E3C53A0574B0CF10D9AE2B9B1E83B6C",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 99425,
+      "filename": "ssa_oasdi_wa_2016.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2016\\ssa_oasdi_wa_2016.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2016\\ssa_oasdi_wa_2016.xlsx",
+      "report_year": 2016,
+      "sha256": "C5553F67088AFC669F48DAA1F8ADCBAE8D66D4E8D0B6F490FCF0AE3709DD93F8",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 96507,
+      "filename": "ssa_oasdi_wa_2017.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2017\\ssa_oasdi_wa_2017.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2017\\ssa_oasdi_wa_2017.xlsx",
+      "report_year": 2017,
+      "sha256": "2A72C8368BCC900727601C3F8B6C0747B8D9778D8088109C9B906CA8F8BB1774",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 95950,
+      "filename": "ssa_oasdi_wa_2018.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2018\\ssa_oasdi_wa_2018.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2018\\ssa_oasdi_wa_2018.xlsx",
+      "report_year": 2018,
+      "sha256": "77EBC6C10EF9200A8A105484F121B915EA01DF808D1519AF8E9586BB22215C57",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 98966,
+      "filename": "ssa_oasdi_wa_2019.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2019\\ssa_oasdi_wa_2019.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2019\\ssa_oasdi_wa_2019.xlsx",
+      "report_year": 2019,
+      "sha256": "5F8FCE613E3A69FBC9CFDA24295F35018699CB0E6F6FBD57393852182FCEB21B",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 101748,
+      "filename": "ssa_oasdi_wa_2020.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2020\\ssa_oasdi_wa_2020.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2020\\ssa_oasdi_wa_2020.xlsx",
+      "report_year": 2020,
+      "sha256": "D07098631DCDAFB2440A577A60CE4BC82F63D8298950595BFA41A0E9BF65FBE8",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 96775,
+      "filename": "ssa_oasdi_wa_2021.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2021\\ssa_oasdi_wa_2021.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2021\\ssa_oasdi_wa_2021.xlsx",
+      "report_year": 2021,
+      "sha256": "FD8E1AEB40E8ABF1973E98B51324265DE4ADA19E63C586A6D7ED5B8978E23BEA",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 95957,
+      "filename": "ssa_oasdi_wa_2022.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2022\\ssa_oasdi_wa_2022.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2022\\ssa_oasdi_wa_2022.xlsx",
+      "report_year": 2022,
+      "sha256": "9D9F5832115433EC263A1F3C1520C59A9DDAA4F411FA059A9083B9C14781A1A0",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 95959,
+      "filename": "ssa_oasdi_wa_2023.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2023\\ssa_oasdi_wa_2023.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2023\\ssa_oasdi_wa_2023.xlsx",
+      "report_year": 2023,
+      "sha256": "EB4D2068FFF40CA49C5D8AC0C9745B5BC082783BFBB88E9544F056C30D6CBB1F",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    },
+    {
+      "file_identity_note": "SHA-256 captured at certification time.",
+      "file_size_bytes": 96769,
+      "filename": "ssa_oasdi_wa_2024.xlsx",
+      "path": "D:\\GitHub\\washington-county-federal-fiscal-balance\\data\\raw\\ssa\\oasdi\\2024\\ssa_oasdi_wa_2024.xlsx",
+      "relative_path": "data\\raw\\ssa\\oasdi\\2024\\ssa_oasdi_wa_2024.xlsx",
+      "report_year": 2024,
+      "sha256": "1FF336A1E115E6FB60E6835596BB652A1644F0CE1A0F3DA06C60ABCAFA3ACF87",
+      "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+    }
+  ],
+  "package_code": "EP-SSA-OASDI-001",
+  "provenance_note": "Raw source workbook SHA-256 hashes were captured at certification time. This package does not claim that a prior acquisition-time hash manifest existed.",
+  "report_year_end": 2024,
+  "report_year_start": 2015,
+  "source_agency": "Social Security Administration",
+  "source_file_count": 10,
+  "source_series": "OASDI Beneficiaries by State and County",
+  "source_series_url": "https://www.ssa.gov/policy/docs/statcomps/oasdi_sc/"
+}
