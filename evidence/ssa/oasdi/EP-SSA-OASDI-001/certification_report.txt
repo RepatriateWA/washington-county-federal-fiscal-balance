@@ -1,0 +1,66 @@
+EP-SSA-OASDI-001 — CERTIFICATION REPORT
+================================================================================================
+
+Generated UTC: 2026-08-14T00:52:19.766826+00:00
+Dataset: SSA OASDI Beneficiaries and Benefit Amounts — Washington County Series
+Report years: 2015-2024
+Geography: Washington State — 39 counties
+
+CERTIFICATION CHECKS
+------------------------------------------------------------------------------------------------
+[PASS] CERT-001   Production SSA validator exits successfully
+       return_code=0
+[PASS] CERT-002   Production SSA validator reports overall PASS
+       OVERALL RESULT: PASS
+[PASS] CERT-003   Dedicated validation suite passes all 17 checks
+       passed=17, failed=0
+[PASS] CERT-004   Database covers report years 2015-2024
+       years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+[PASS] CERT-005   Observation population matches certified design
+       total=3,510; expected=3,510
+[PASS] CERT-006   Every year contains 39 counties and 9 benefit types
+       10/10 years
+[PASS] CERT-007   Published TOTAL control population is complete
+       actual=390; expected=390
+[PASS] CERT-008   Exactly one raw source workbook exists for every year
+       10/10 source workbooks hashed
+[PASS] CERT-009   Annual Washington published TOTAL controls are complete
+       10/10 years
+[PASS] CERT-010   Observed source rounding remains inside documented bound
+       observed_max=$2,000; bound=±$5,000
+
+DATABASE STATISTICS
+------------------------------------------------------------------------------------------------
+Normalized observations ........... 3,510
+Published TOTAL controls .......... 390
+
+WASHINGTON ANNUAL PUBLISHED TOTAL CONTROLS
+------------------------------------------------------------------------------------------------
+2015  beneficiaries=1,260,475  December=$1,630,544,000.00  annualized=$19,566,528,000.00
+2016  beneficiaries=1,291,200  December=$1,696,165,000.00  annualized=$20,353,980,000.00
+2017  beneficiaries=1,319,175  December=$1,794,757,000.00  annualized=$21,537,084,000.00
+2018  beneficiaries=1,346,820  December=$1,913,737,000.00  annualized=$22,964,844,000.00
+2019  beneficiaries=1,376,285  December=$2,017,635,000.00  annualized=$24,211,620,000.00
+2020  beneficiaries=1,401,525  December=$2,118,653,000.00  annualized=$25,423,836,000.00
+2021  beneficiaries=1,413,305  December=$2,303,625,000.00  annualized=$27,643,500,000.00
+2022  beneficiaries=1,428,765  December=$2,577,042,000.00  annualized=$30,924,504,000.00
+2023  beneficiaries=1,452,550  December=$2,749,221,000.00  annualized=$32,990,652,000.00
+2024  beneficiaries=1,485,645  December=$2,923,512,000.00  annualized=$35,082,144,000.00
+
+MEASURE NOTE
+------------------------------------------------------------------------------------------------
+Annualized amount = December monthly benefit amount x 12; not observed FFY cash outlay.
+
+ROUNDING NOTE
+------------------------------------------------------------------------------------------------
+SSA monetary values are published in $000s. Component and TOTAL amounts are independently rounded.
+Published TOTAL is the authoritative county monetary control. Validator tolerance: +/- $5,000 monthly, +/- $60,000 annualized.
+
+UNDERLYING VALIDATOR
+------------------------------------------------------------------------------------------------
+Checks passed ..................... 17
+Checks failed ..................... 0
+
+================================================================================================
+OVERALL RESULT: CERTIFIED
+================================================================================================

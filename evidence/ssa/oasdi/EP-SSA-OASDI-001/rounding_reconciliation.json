@@ -1,0 +1,111 @@
+{
+  "annualized_county_tolerance_thousands": "60",
+  "county_maximum_absolute_difference_by_year": [
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2015
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2016
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2017
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2018
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2019
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2020
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2021
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2022
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2023
+    },
+    {
+      "max_abs_monthly_difference_thousands": "2",
+      "report_year": 2024
+    }
+  ],
+  "monthly_county_tolerance_thousands": "5",
+  "package_code": "EP-SSA-OASDI-001",
+  "published_total_is_authoritative_control": true,
+  "source_unit": "USD_THOUSANDS",
+  "state_reporting_vs_published_total": [
+    {
+      "component_reporting_dollars": "19566456000",
+      "difference_dollars": "-72000",
+      "published_total_control_dollars": "19566528000",
+      "report_year": 2015
+    },
+    {
+      "component_reporting_dollars": "20353896000",
+      "difference_dollars": "-84000",
+      "published_total_control_dollars": "20353980000",
+      "report_year": 2016
+    },
+    {
+      "component_reporting_dollars": "21537096000",
+      "difference_dollars": "12000",
+      "published_total_control_dollars": "21537084000",
+      "report_year": 2017
+    },
+    {
+      "component_reporting_dollars": "22964784000",
+      "difference_dollars": "-60000",
+      "published_total_control_dollars": "22964844000",
+      "report_year": 2018
+    },
+    {
+      "component_reporting_dollars": "24211632000",
+      "difference_dollars": "12000",
+      "published_total_control_dollars": "24211620000",
+      "report_year": 2019
+    },
+    {
+      "component_reporting_dollars": "25423704000",
+      "difference_dollars": "-132000",
+      "published_total_control_dollars": "25423836000",
+      "report_year": 2020
+    },
+    {
+      "component_reporting_dollars": "27643404000",
+      "difference_dollars": "-96000",
+      "published_total_control_dollars": "27643500000",
+      "report_year": 2021
+    },
+    {
+      "component_reporting_dollars": "30924420000",
+      "difference_dollars": "-84000",
+      "published_total_control_dollars": "30924504000",
+      "report_year": 2022
+    },
+    {
+      "component_reporting_dollars": "32990628000",
+      "difference_dollars": "-24000",
+      "published_total_control_dollars": "32990652000",
+      "report_year": 2023
+    },
+    {
+      "component_reporting_dollars": "35082120000",
+      "difference_dollars": "-24000",
+      "published_total_control_dollars": "35082144000",
+      "report_year": 2024
+    }
+  ]
+}

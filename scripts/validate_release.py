@@ -1,4 +1,4 @@
-from etl.db import get_connection
+from etl.common.db import get_connection
 
 SOI_YEARS = range(2015, 2023)
 DATABOOK_YEARS = range(2015, 2025)
