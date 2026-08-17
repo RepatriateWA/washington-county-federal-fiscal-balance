@@ -723,11 +723,17 @@ def build_existing_indexes(
 ) -> tuple[
     dict[str, ExistingRecipient],
     dict[str, ExistingRecipient],
-    dict[str, ExistingRecipient],
 ]:
+    """
+    Build identifier-based indexes for existing procurement recipients.
+
+    Canonical recipient names are not globally unique. The shared recipient
+    identity model permits multiple NAME_FINGERPRINT identities to have the
+    same normalized display name, so name-only matching is intentionally
+    prohibited here.
+    """
     uei_index: dict[str, ExistingRecipient] = {}
     duns_index: dict[str, ExistingRecipient] = {}
-    name_only_index: dict[str, ExistingRecipient] = {}
 
     for recipient in existing:
         if recipient.recipient_uei is not None:
@@ -746,27 +752,21 @@ def build_existing_indexes(
                 )
             duns_index[recipient.recipient_duns] = recipient
 
-        if recipient.recipient_uei is None and recipient.recipient_duns is None:
-            normalized_name = (
-                recipient.recipient_name_normalized
-                or normalize_name(recipient.recipient_name)
-            )
-            if normalized_name in name_only_index:
-                raise ValueError(
-                    "Duplicate unidentified recipient name already exists: "
-                    f"{normalized_name}"
-                )
-            name_only_index[normalized_name] = recipient
-
-    return uei_index, duns_index, name_only_index
+    return uei_index, duns_index
 
 
 def resolve_existing_recipient(
     candidate: RecipientCandidate,
     uei_index: dict[str, ExistingRecipient],
     duns_index: dict[str, ExistingRecipient],
-    name_only_index: dict[str, ExistingRecipient],
 ) -> ExistingRecipient | None:
+    """
+    Resolve an existing procurement recipient by stable identifiers only.
+
+    Name-only matching is intentionally prohibited because the shared
+    recipient dimension permits multiple distinct NAME_FINGERPRINT
+    identities with the same normalized display name.
+    """
     matches: dict[int, ExistingRecipient] = {}
 
     if candidate.recipient_uei is not None:
@@ -785,11 +785,10 @@ def resolve_existing_recipient(
             f"UEI={candidate.recipient_uei!r}, "
             f"DUNS={candidate.recipient_duns!r}."
         )
+
     if matches:
         return next(iter(matches.values()))
 
-    if candidate.recipient_uei is None and candidate.recipient_duns is None:
-        return name_only_index.get(candidate.recipient_name_normalized)
     return None
 
 
@@ -819,12 +818,12 @@ def apply_candidates(
     unchanged = 0
 
     existing = read_existing_recipients(conn)
-    uei_index, duns_index, name_only_index = build_existing_indexes(existing)
+    uei_index, duns_index = build_existing_indexes(existing)
 
     with conn.cursor() as cur:
         for candidate in candidates:
             match = resolve_existing_recipient(
-                candidate, uei_index, duns_index, name_only_index
+                candidate, uei_index, duns_index
             )
 
             if match is None:
@@ -865,15 +864,10 @@ def apply_candidates(
                     ),
                     recipient_name=candidate.recipient_name,
                     recipient_name_normalized=candidate.recipient_name_normalized,
-                    recipient_parent_uei=choose_identifier(
-                        match.recipient_parent_uei,
-                        candidate.recipient_parent_uei,
-                        "parent UEI",
-                    ),
-                    recipient_parent_name=choose_preferred_text(
-                        match.recipient_parent_name,
-                        candidate.recipient_parent_name,
-                    ),
+                    # Parent relationships are temporal and are reconciled separately from
+                    # recipient identity using procurement.recipient_parent_relationship.
+                    recipient_parent_uei=match.recipient_parent_uei,
+                    recipient_parent_name=match.recipient_parent_name,
                 )
 
                 if recipient_values_differ(match, merged_candidate):
@@ -903,23 +897,32 @@ def apply_candidates(
                 else:
                     unchanged += 1
 
+            if match is None:
+                refreshed_candidate = candidate
+            else:
+                refreshed_candidate = merged_candidate
+
             refreshed = ExistingRecipient(
                 recipient_id=recipient_id,
-                recipient_uei=candidate.recipient_uei,
-                recipient_duns=candidate.recipient_duns,
-                recipient_name=candidate.recipient_name,
-                recipient_name_normalized=candidate.recipient_name_normalized,
-                recipient_parent_uei=candidate.recipient_parent_uei,
-                recipient_parent_name=candidate.recipient_parent_name,
+                recipient_uei=refreshed_candidate.recipient_uei,
+                recipient_duns=refreshed_candidate.recipient_duns,
+                recipient_name=refreshed_candidate.recipient_name,
+                recipient_name_normalized=(
+                    refreshed_candidate.recipient_name_normalized
+                ),
+                recipient_parent_uei=(
+                    refreshed_candidate.recipient_parent_uei
+                ),
+                recipient_parent_name=(
+                    refreshed_candidate.recipient_parent_name
+                ),
             )
 
             if candidate.recipient_uei is not None:
                 uei_index[candidate.recipient_uei] = refreshed
             if candidate.recipient_duns is not None:
                 duns_index[candidate.recipient_duns] = refreshed
-            if candidate.recipient_uei is None and candidate.recipient_duns is None:
-                name_only_index[candidate.recipient_name_normalized] = refreshed
-
+            
     return inserted, updated, unchanged
 
 
@@ -971,13 +974,13 @@ def validate_recipient_dimension(
         )
 
     existing = read_existing_recipients(conn)
-    uei_index, duns_index, name_only_index = build_existing_indexes(existing)
+    uei_index, duns_index = build_existing_indexes(existing)
     unresolved_rows: list[int] = []
 
     for observation in observations:
         candidate = candidate_from_observation(observation)
         match = resolve_existing_recipient(
-            candidate, uei_index, duns_index, name_only_index
+            candidate, uei_index, duns_index
         )
         if match is None:
             unresolved_rows.append(observation.source_row_number)
@@ -1014,6 +1017,86 @@ def print_summary(summary: LoadSummary, elapsed_seconds: float) -> None:
     print("=" * 68)
 
 
+def synchronize_canonical_parent_relationships(
+    conn,
+    *,
+    recipient_ueis: Iterable[str],
+) -> int:
+    """
+    Recompute canonical recipient-parent values from preserved relationship
+    history.
+
+    Selection policy is load-order invariant:
+    1. latest observed last_action_date wins;
+    2. latest first_action_date breaks an equal last-date tie;
+    3. parent UEI provides a deterministic final tie-break.
+
+    Relationships with dated observations outrank undated observations.
+    """
+    normalized_ueis = sorted(
+        {
+            uei
+            for uei in recipient_ueis
+            if uei is not None
+        }
+    )
+
+    if not normalized_ueis:
+        return 0
+
+    updated = 0
+
+    with conn.cursor() as cur:
+        for recipient_uei in normalized_ueis:
+            cur.execute(
+                """
+                SELECT
+                    parent_uei,
+                    observed_parent_name
+                FROM procurement.recipient_parent_relationship
+                WHERE recipient_uei = %s
+                ORDER BY
+                    last_action_date DESC NULLS LAST,
+                    first_action_date DESC NULLS LAST,
+                    parent_uei ASC
+                LIMIT 1;
+                """,
+                (recipient_uei,),
+            )
+
+            row = cur.fetchone()
+
+            if row is None:
+                continue
+
+            canonical_parent_uei = row[0]
+            canonical_parent_name = row[1]
+
+            cur.execute(
+                """
+                UPDATE procurement.recipient
+                SET
+                    recipient_parent_uei = %s,
+                    recipient_parent_name = %s
+                WHERE recipient_uei = %s
+                  AND (
+                        recipient_parent_uei IS DISTINCT FROM %s
+                     OR recipient_parent_name IS DISTINCT FROM %s
+                  );
+                """,
+                (
+                    canonical_parent_uei,
+                    canonical_parent_name,
+                    recipient_uei,
+                    canonical_parent_uei,
+                    canonical_parent_name,
+                ),
+            )
+
+            updated += cur.rowcount
+
+    return updated
+
 def main() -> None:
     args = parse_arguments()
     started = time.perf_counter()
@@ -1031,6 +1114,25 @@ def main() -> None:
 
         observations = read_raw_recipient_observations(conn, load_batch_id)
         print(f"Raw observations read: {len(observations):,}")
+
+        unidentified_rows = [
+            observation.source_row_number
+            for observation in observations
+            if observation.recipient_uei is None
+            and observation.recipient_duns is None
+        ]
+
+        if unidentified_rows:
+            preview = ", ".join(
+                str(row) for row in unidentified_rows[:10]
+            )
+            raise ValueError(
+                f"{len(unidentified_rows):,} procurement recipient observations "
+                "have neither UEI nor DUNS. Name-only procurement identity "
+                "resolution is intentionally disabled pending migration to the "
+                "shared recipient identity framework. "
+                f"First rows: {preview}"
+            )
 
         candidates = consolidate_candidates(observations)
 
@@ -1088,6 +1190,18 @@ def main() -> None:
             f"{relationship_count:,}"
         )
 
+        canonical_parent_updates = (
+            synchronize_canonical_parent_relationships(
+                conn,
+                recipient_ueis=parent_resolutions.keys(),
+            )
+        )
+
+        print(
+            "Canonical parent relationships synchronized: "
+            f"{canonical_parent_updates:,}"
+        )
+
         anomalies = [
             resolution.anomaly
             for resolution in parent_resolutions.values()
@@ -1097,7 +1211,7 @@ def main() -> None:
         exception_recorder = NormalizationExceptionRecorder()
 
         for anomaly in anomalies:
-                exception_recorder.record(
+            exception_recorder.record(
                 conn,
                 load_batch_id=anomaly["load_batch_id"],
                 entity_type=anomaly["entity_type"],
@@ -1108,7 +1222,7 @@ def main() -> None:
                 raw_values=anomaly["raw_values"],
                 normalized_action=anomaly["normalized_action"],
                 message=anomaly["message"],
-                )
+            )
 
         exception_count = len(anomalies)
 

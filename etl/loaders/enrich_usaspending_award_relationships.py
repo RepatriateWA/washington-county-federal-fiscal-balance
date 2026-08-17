@@ -197,6 +197,79 @@ def get_batch_transaction_sources(
         for row in cur.fetchall()
     ]
 
+def get_global_transaction_sources_for_awards(
+    cur,
+    *,
+    award_ids: list[int],
+) -> list[dict[str, Any]]:
+    """
+    Read all loaded transaction relationship evidence for selected awards.
+
+    The selected load batch determines which awards need reconsideration.
+    Canonical award relationships are then derived from every normalized
+    transaction currently loaded for those awards, making the result
+    independent of fiscal-year load order.
+    """
+    if not award_ids:
+        return []
+
+    cur.execute(
+        """
+        SELECT
+            aw.award_id,
+            aw.generated_unique_award_id,
+            txn.action_date,
+            txn.load_batch_id,
+            txn.source_row_number,
+            raw.record_sha256,
+
+            raw.raw_record ->> 'recipient_uei'
+                AS recipient_uei,
+
+            raw.raw_record ->> 'recipient_name'
+                AS recipient_name,
+
+            raw.raw_record ->> 'awarding_agency_code'
+                AS awarding_agency_code,
+
+            raw.raw_record ->> 'awarding_sub_agency_code'
+                AS awarding_subagency_code,
+
+            raw.raw_record ->> 'funding_agency_code'
+                AS funding_agency_code,
+
+            raw.raw_record ->> 'funding_sub_agency_code'
+                AS funding_subagency_code
+
+        FROM procurement.award_transaction AS txn
+
+        JOIN procurement.award AS aw
+          ON aw.award_id = txn.award_id
+
+        JOIN procurement.raw_award_transaction AS raw
+          ON raw.load_batch_id = txn.load_batch_id
+         AND raw.source_row_number = txn.source_row_number
+
+        WHERE txn.award_id = ANY(%s)
+
+        ORDER BY
+            aw.award_id,
+            txn.action_date,
+            raw.record_sha256;
+        """,
+        (award_ids,),
+    )
+
+    columns = [
+        description[0]
+        for description in cur.description
+    ]
+
+    return [
+        dict(zip(columns, row))
+        for row in cur.fetchall()
+    ]
+
 
 def select_latest_value(
     rows: list[dict[str, Any]],
@@ -204,9 +277,22 @@ def select_latest_value(
     field: str,
     ignored_values: set[str] | None = None,
 ) -> str | None:
+    """
+    Select the latest populated source value deterministically.
+
+    Selection policy:
+    1. populated action dates outrank undated observations;
+    2. latest action date wins;
+    3. exact raw-record SHA-256 is the final deterministic tie-breaker.
+
+    record_sha256 is used rather than source_row_number because source-row
+    numbers are meaningful only within an individual source payload.
+    """
     ignored = ignored_values or set()
 
-    candidates: list[tuple[date | None, int, str]] = []
+    candidates: list[
+        tuple[bool, date, str, str]
+    ] = []
 
     for row in rows:
         value = clean_text(row.get(field))
@@ -216,10 +302,21 @@ def select_latest_value(
 
         action_date = row.get("action_date")
 
+        record_sha256 = clean_text(
+            row.get("record_sha256")
+        )
+
+        if record_sha256 is None:
+            raise ValueError(
+                "Canonical cross-batch relationship resolution "
+                "requires raw record_sha256 provenance."
+            )
+
         candidates.append(
             (
-                action_date,
-                int(row.get("source_row_number") or 0),
+                action_date is not None,
+                action_date or date.min,
+                record_sha256,
                 value,
             )
         )
@@ -229,13 +326,13 @@ def select_latest_value(
 
     candidates.sort(
         key=lambda item: (
-            item[0] is not None,
-            item[0] or date.min,
+            item[0],
             item[1],
+            item[2],
         )
     )
 
-    return candidates[-1][2]
+    return candidates[-1][3]
 
 def build_award_recipient_observations(
     rows: list[dict[str, Any]],
@@ -1104,14 +1201,36 @@ def main() -> None:
                     recipient_resolutions
                 )
 
+                affected_award_ids = sorted(
+                    {
+                        int(row["award_id"])
+                        for row in transaction_rows
+                    }
+                )
+
+                global_transaction_rows = (
+                    get_global_transaction_sources_for_awards(
+                        cur,
+                        award_ids=affected_award_ids,
+                    )
+                )
+
+                if not global_transaction_rows:
+                    raise ValueError(
+                        "No global transaction relationship evidence "
+                        "was found for awards represented in load batch "
+                        f"{args.load_batch_id}."
+                    )
+
                 sources = collapse_award_sources(
-                    transaction_rows
+                    global_transaction_rows
                 )
 
                 if not sources:
                     raise ValueError(
-                        "No award relationships were found for "
-                        f"load batch {args.load_batch_id}."
+                        "No canonical award relationships were derived "
+                        "for awards represented in load batch "
+                        f"{args.load_batch_id}."
                     )
 
                 resolutions = resolve_relationships(
