@@ -224,3 +224,11 @@ data/raw/usaspending/FY2024_WA/original/Assistance_Subawards_2026-07-30_H01M07S5
 data/raw/usaspending/FY2024_WA/original/Contracts_PrimeTransactions_2026-07-30_H01M09S18_1.csv
 data/raw/usaspending/FY2024_WA/original/Contracts_PrimeAwardSummaries_2026-07-30_H00M49S57_1.csv
 data/raw/usaspending/FY2024_WA/original/Contracts_Subawards_2026-07-30_H01M06S48_1.csv
+
+# USAspending procurement raw acquisitions
+data/raw/usaspending/procurement/**/website_download/*.zip
+data/raw/usaspending/procurement/**/website_download/extracted/*.csv
+
+# Temporary ETL diagnostics and dry-run output
+data/working/
+data/raw/usaspending/procurement/**/rejected_acquisitions/*.zip
