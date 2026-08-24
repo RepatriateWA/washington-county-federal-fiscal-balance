@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from etl.db import get_connection
+from etl.common.db import get_connection
 
 
 def run_sql_file(sql_file: Path):

@@ -1,0 +1,25 @@
+{
+  "retrieved_utc": "2026-08-20T06:00:57.225202+00:00",
+  "source_agency": "Office of Management and Budget, Executive Office of the President",
+  "archive": "GovInfo",
+  "publication_title": "Object Class Analysis, Budget of the United States Government, Fiscal Year 2017",
+  "budget_vintage": 2017,
+  "source_record": "https://www.govinfo.gov/app/details/BUDGET-2017-OBJCLASS",
+  "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2017-OBJCLASS/pdf/BUDGET-2017-OBJCLASS.pdf",
+  "local_file": "data\\raw\\omb\\object_class\\FY2017\\BUDGET-2017-OBJCLASS_retrieved_20260820T060057Z.pdf",
+  "sha256": "1b95fb5aa6929a989de9144bb57c0c0252616d7f4fbb7540ed5848ad30a70a78",
+  "file_size_bytes": 2232485,
+  "target_accounting_year": 2016,
+  "target_value_status": "ESTIMATE",
+  "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+  "target_scope": "GOVERNMENT_WIDE",
+  "target_object_classes": [
+    "11.1",
+    "11.3",
+    "11.5",
+    "11.6",
+    "11.7",
+    "11.8"
+  ],
+  "wcffbp_methodology_note": "This artifact is preserved as primary OMB accounting evidence for the FY2017 Budget vintage. WCFFBP will use the government-wide FY2016 estimate object-class observations to investigate the effect of budget vintage on the FY2016 federal wage-obligation control. These estimate values will be compared with the subsequently published FY2016 actual observations preserved from the FY2018 Object Class Analysis. Rockefeller Institute values are not inputs to the WCFFBP derivation and are used only as external reconciliation evidence."
+}
