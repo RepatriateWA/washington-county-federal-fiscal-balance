@@ -1,0 +1,52 @@
+{
+  "generated_utc": "2026-08-20T04:16:59.856323+00:00",
+  "purpose": "WCFFBP federal civilian and military compensation source acquisition",
+  "requests": [
+    {
+      "retrieved_utc": "2026-08-20T04:16:57.387973+00:00",
+      "dataset": "Regional",
+      "table_name": "CAINC6N",
+      "line_code": "910",
+      "geo_fips": "COUNTY",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 0,
+      "file": "data\\raw\\bea\\compensation\\county\\cainc6n_federal_civilian_2015_2024_retrieved_20260820T041657Z.json",
+      "sha256": "6e7cf4aaf845f72866359b03873c02922d5b1823787c46ee35ea5628685682e0"
+    },
+    {
+      "retrieved_utc": "2026-08-20T04:16:57.954964+00:00",
+      "dataset": "Regional",
+      "table_name": "CAINC6N",
+      "line_code": "920",
+      "geo_fips": "COUNTY",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 0,
+      "file": "data\\raw\\bea\\compensation\\county\\cainc6n_military_2015_2024_retrieved_20260820T041657Z.json",
+      "sha256": "5f119690449fb9e2b1c6c89f9a9afdacb8ef70307d02eb59d93532968318d3c4"
+    },
+    {
+      "retrieved_utc": "2026-08-20T04:16:58.598712+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC6N",
+      "line_code": "910",
+      "geo_fips": "53000",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 0,
+      "file": "data\\raw\\bea\\compensation\\state\\sainc6n_federal_civilian_2015_2024_retrieved_20260820T041658Z.json",
+      "sha256": "8fc897c6ec05d55a4efc12b9d95a97eba04b67d8ae1adab253d3c27eb043931e"
+    },
+    {
+      "retrieved_utc": "2026-08-20T04:16:59.290838+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC6N",
+      "line_code": "920",
+      "geo_fips": "53000",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 0,
+      "file": "data\\raw\\bea\\compensation\\state\\sainc6n_military_2015_2024_retrieved_20260820T041659Z.json",
+      "sha256": "d25c850d9e867e5ccbef4f1da17d385e0d895ff384f001c73e144cdebf9c3fb8"
+    }
+  ],
+  "metadata_file": "data\\raw\\bea\\compensation\\documentation\\cainc6n_linecode_metadata_retrieved_20260820T041659Z.json",
+  "metadata_sha256": "dab29de9f6ba1ddae20f86140af248ac720ddc8386f58d68ca50ac5459a267ba"
+}

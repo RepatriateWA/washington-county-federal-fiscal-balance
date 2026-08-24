@@ -1,0 +1,26 @@
+{
+  "retrieved_utc": "2026-08-20T05:43:07.433651+00:00",
+  "source_agency": "Office of Management and Budget, Executive Office of the President",
+  "archive": "GovInfo",
+  "publication_title": "Object Class Analysis, Budget of the United States Government, Fiscal Year 2018",
+  "budget_vintage": 2018,
+  "date_issued": "2017-05-23",
+  "source_record": "https://www.govinfo.gov/app/details/BUDGET-2018-OBJCLASS",
+  "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2018-OBJCLASS/pdf/BUDGET-2018-OBJCLASS.pdf",
+  "local_file": "data\\raw\\omb\\object_class\\FY2018\\BUDGET-2018-OBJCLASS_retrieved_20260820T054307Z.pdf",
+  "sha256": "3163805191b737257c79ff3f27d4256eae54a9af504813d505caac1ef4182ad3",
+  "file_size_bytes": 1214707,
+  "target_accounting_year": 2016,
+  "target_value_status": "ACTUAL",
+  "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+  "target_scope": "GOVERNMENT_WIDE",
+  "target_object_classes": [
+    "11.1",
+    "11.3",
+    "11.5",
+    "11.6",
+    "11.7",
+    "11.8"
+  ],
+  "wcffbp_methodology_note": "This artifact is preserved as primary OMB accounting evidence. WCFFBP will derive FY2016 wage-obligation controls from the government-wide 2016 actual object-class observations before any comparison with Rockefeller Institute published values."
+}

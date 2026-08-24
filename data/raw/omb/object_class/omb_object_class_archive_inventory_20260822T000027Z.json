@@ -1,0 +1,222 @@
+{
+  "generated_utc": "2026-08-22T00:00:27.717283+00:00",
+  "purpose": "WCFFBP archive inventory of preferred OMB Object Class Analysis actual-value vintages for FFY2015-FFY2024 federal wage-obligation controls.",
+  "selection_rule": "For the principal WCFFBP historical accounting series, use the subsequent OMB Object Class Analysis Budget vintage in which the target fiscal year is reported as ACTUAL. Preserve earlier ESTIMATE vintages separately when used for historical-methodology replication.",
+  "derived_wage_rules": {
+    "MILITARY_WAGES": "11.6 + 11.7",
+    "NONMILITARY_WAGES": "11.1 + 11.3 + 11.5 + 11.8",
+    "TOTAL_WAGES": "MILITARY_WAGES + NONMILITARY_WAGES"
+  },
+  "archive": [
+    {
+      "target_fiscal_year": 2015,
+      "budget_vintage": 2017,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2017-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2017-OBJCLASS/pdf/BUDGET-2017-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2017\\BUDGET-2017-OBJCLASS_retrieved_20260820T060057Z.pdf",
+      "sha256": "1b95fb5aa6929a989de9144bb57c0c0252616d7f4fbb7540ed5848ad30a70a78",
+      "file_size_bytes": 2232485,
+      "acquisition_status": "EXISTING"
+    },
+    {
+      "target_fiscal_year": 2016,
+      "budget_vintage": 2018,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2018-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2018-OBJCLASS/pdf/BUDGET-2018-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2018\\BUDGET-2018-OBJCLASS_retrieved_20260820T054307Z.pdf",
+      "sha256": "3163805191b737257c79ff3f27d4256eae54a9af504813d505caac1ef4182ad3",
+      "file_size_bytes": 1214707,
+      "acquisition_status": "EXISTING"
+    },
+    {
+      "target_fiscal_year": 2017,
+      "budget_vintage": 2019,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2019-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2019-OBJCLASS/pdf/BUDGET-2019-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2019\\BUDGET-2019-OBJCLASS_retrieved_20260822T000012Z.pdf",
+      "sha256": "070278eef5ebe7cabd0c80a6dcb6424d95a4b2ac5bb914f8893f22862b85c6a9",
+      "file_size_bytes": 1735709,
+      "acquisition_status": "DOWNLOADED"
+    },
+    {
+      "target_fiscal_year": 2018,
+      "budget_vintage": 2020,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2020-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2020-OBJCLASS/pdf/BUDGET-2020-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2020\\BUDGET-2020-OBJCLASS_retrieved_20260822T000014Z.pdf",
+      "sha256": "d887a0d50b96eb30babe4b6ee01bae0e92bd528ceba5f7cf71810de09b77e706",
+      "file_size_bytes": 1554577,
+      "acquisition_status": "DOWNLOADED"
+    },
+    {
+      "target_fiscal_year": 2019,
+      "budget_vintage": 2021,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2021-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2021-OBJCLASS/pdf/BUDGET-2021-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2021\\BUDGET-2021-OBJCLASS_retrieved_20260822T000016Z.pdf",
+      "sha256": "ce0cdddac55d41e4e25422b8d75e6a6f1ae4d3afb19b5ef3c7ee1d1a377b6200",
+      "file_size_bytes": 2013873,
+      "acquisition_status": "DOWNLOADED"
+    },
+    {
+      "target_fiscal_year": 2020,
+      "budget_vintage": 2022,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2022-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2022-OBJCLASS/pdf/BUDGET-2022-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2022\\BUDGET-2022-OBJCLASS_retrieved_20260822T000018Z.pdf",
+      "sha256": "e7d65d49721b104bcbf08d5993893ce1a78944af68be46fd0ebc43a95a150af7",
+      "file_size_bytes": 1391683,
+      "acquisition_status": "DOWNLOADED"
+    },
+    {
+      "target_fiscal_year": 2021,
+      "budget_vintage": 2023,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2023-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2023-OBJCLASS/pdf/BUDGET-2023-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2023\\BUDGET-2023-OBJCLASS_retrieved_20260822T000020Z.pdf",
+      "sha256": "0fd0f7ce8b2c005eb3b7845188a852f1c645523c45ecd04cc983ad86d1941c94",
+      "file_size_bytes": 1537089,
+      "acquisition_status": "DOWNLOADED"
+    },
+    {
+      "target_fiscal_year": 2022,
+      "budget_vintage": 2024,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2024-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2024-OBJCLASS/pdf/BUDGET-2024-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2024\\BUDGET-2024-OBJCLASS_retrieved_20260822T000021Z.pdf",
+      "sha256": "0bdc065af43004e60146f9794a83625a3423afd88d8c7e56bd284cb649b196e9",
+      "file_size_bytes": 1627729,
+      "acquisition_status": "DOWNLOADED"
+    },
+    {
+      "target_fiscal_year": 2023,
+      "budget_vintage": 2025,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2025-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2025-OBJCLASS/pdf/BUDGET-2025-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2025\\BUDGET-2025-OBJCLASS_retrieved_20260822T000023Z.pdf",
+      "sha256": "d64e330e7d192ba920e3b671b44306d4831553063a8c52c886814f4fe3fb3615",
+      "file_size_bytes": 1224900,
+      "acquisition_status": "DOWNLOADED"
+    },
+    {
+      "target_fiscal_year": 2024,
+      "budget_vintage": 2026,
+      "target_value_status": "ACTUAL",
+      "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+      "scope": "GOVERNMENT_WIDE",
+      "target_object_classes": [
+        "11.1",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ],
+      "source_record": "https://www.govinfo.gov/app/details/BUDGET-2026-OBJCLASS",
+      "source_url": "https://www.govinfo.gov/content/pkg/BUDGET-2026-OBJCLASS/pdf/BUDGET-2026-OBJCLASS.pdf",
+      "local_file": "data\\raw\\omb\\object_class\\FY2026\\BUDGET-2026-OBJCLASS_retrieved_20260822T000025Z.pdf",
+      "sha256": "4270de3babb3ea3f14082610d67c1d76ff2263765bb8616a2b26f011e2e44476",
+      "file_size_bytes": 2462272,
+      "acquisition_status": "DOWNLOADED"
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "BEAAPI": {
+    "Request": {
+      "RequestParam": [
+        {
+          "ParameterName": "USERID",
+          "ParameterValue": "4C05625B-B27C-41B4-88AD-17EAF3401BFA"
+        },
+        {
+          "ParameterName": "METHOD",
+          "ParameterValue": "GETPARAMETERVALUESFILTERED"
+        },
+        {
+          "ParameterName": "DATASETNAME",
+          "ParameterValue": "REGIONAL"
+        },
+        {
+          "ParameterName": "TARGETPARAMETER",
+          "ParameterValue": "LINECODE"
+        },
+        {
+          "ParameterName": "TABLENAME",
+          "ParameterValue": "CAINC6N"
+        },
+        {
+          "ParameterName": "RESULTFORMAT",
+          "ParameterValue": "JSON"
+        }
+      ]
+    },
+    "Results": {
+      "ParamValue": [
+        {
+          "Key": "1",
+          "Desc": "[CAINC6N] Compensation of employees"
+        },
+        {
+          "Key": "100",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Forestry, fishing, and related activities (113-115)"
+        },
+        {
+          "Key": "1000",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Finance and insurance (52)"
+        },
+        {
+          "Key": "1001",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Monetary Authorities-central bank (521)"
+        },
+        {
+          "Key": "1002",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Credit intermediation and related activities (522)"
+        },
+        {
+          "Key": "1003",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Securities, commodity contracts, and other financial investments and related activities (523)"
+        },
+        {
+          "Key": "1004",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Insurance carriers and related activities (524)"
+        },
+        {
+          "Key": "1005",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Funds, trusts, and other financial vehicles (525)"
+        },
+        {
+          "Key": "101",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Forestry and logging (113)"
+        },
+        {
+          "Key": "102",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Fishing, hunting and trapping (114)"
+        },
+        {
+          "Key": "103",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Support activities for agriculture and forestry (115)"
+        },
+        {
+          "Key": "1100",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Real estate and rental and leasing (53)"
+        },
+        {
+          "Key": "1101",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Real estate (531)"
+        },
+        {
+          "Key": "1102",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Rental and leasing services (532)"
+        },
+        {
+          "Key": "1103",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Lessors of nonfinancial intangible assets (except copyrighted works) (533)"
+        },
+        {
+          "Key": "1200",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Professional, scientific, and technical services (54)"
+        },
+        {
+          "Key": "1300",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Management of companies and enterprises (55)"
+        },
+        {
+          "Key": "1400",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Administrative and support and waste management and remediation services (56)"
+        },
+        {
+          "Key": "1401",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Administrative and support services (561)"
+        },
+        {
+          "Key": "1402",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Waste management and remediation services (562)"
+        },
+        {
+          "Key": "1500",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Educational services (61)"
+        },
+        {
+          "Key": "1600",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Health care and social assistance (62)"
+        },
+        {
+          "Key": "1601",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Ambulatory health care services (621)"
+        },
+        {
+          "Key": "1602",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Hospitals (622)"
+        },
+        {
+          "Key": "1603",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Nursing and residential care facilities (623)"
+        },
+        {
+          "Key": "1604",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Social assistance (624)"
+        },
+        {
+          "Key": "1700",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Arts, entertainment, and recreation (71)"
+        },
+        {
+          "Key": "1701",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Performing arts, spectator sports, and related industries (711)"
+        },
+        {
+          "Key": "1702",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Museums, historical sites, and similar institutions (712)"
+        },
+        {
+          "Key": "1703",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Amusement, gambling, and recreation industries (713)"
+        },
+        {
+          "Key": "1800",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Accommodation and food services (72)"
+        },
+        {
+          "Key": "1801",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Accommodation (721)"
+        },
+        {
+          "Key": "1802",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Food services and drinking places (722)"
+        },
+        {
+          "Key": "1900",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Other services (except government and government enterprises) (81)"
+        },
+        {
+          "Key": "1901",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Repair and maintenance (811)"
+        },
+        {
+          "Key": "1902",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Personal and laundry services (812)"
+        },
+        {
+          "Key": "1903",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Religious, grantmaking, civic, professional, and similar organizations (813)"
+        },
+        {
+          "Key": "1904",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Private households (814)"
+        },
+        {
+          "Key": "200",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Mining, quarrying, and oil and gas extraction (21)"
+        },
+        {
+          "Key": "2000",
+          "Desc": "[CAINC6N] Compensation: Government and government enterprises"
+        },
+        {
+          "Key": "2001",
+          "Desc": "[CAINC6N] Govt. and govt. enterprises compensation: Federal civilian"
+        },
+        {
+          "Key": "2002",
+          "Desc": "[CAINC6N] Govt. and govt. enterprises compensation: Military"
+        },
+        {
+          "Key": "201",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Oil and gas extraction (211)"
+        },
+        {
+          "Key": "2010",
+          "Desc": "[CAINC6N] Govt. and govt. enterprises compensation: State and local"
+        },
+        {
+          "Key": "2011",
+          "Desc": "[CAINC6N] Govt. and govt. enterprises compensation: State government"
+        },
+        {
+          "Key": "2012",
+          "Desc": "[CAINC6N] Govt. and govt. enterprises compensation: Local government"
+        },
+        {
+          "Key": "202",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Mining (except oil and gas) (212)"
+        },
+        {
+          "Key": "203",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Support activities for mining (213)"
+        },
+        {
+          "Key": "300",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Utilities (22)"
+        },
+        {
+          "Key": "400",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Construction (23)"
+        },
+        {
+          "Key": "401",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Construction of buildings (236)"
+        },
+        {
+          "Key": "402",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Heavy and civil engineering construction (237)"
+        },
+        {
+          "Key": "403",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Specialty trade contractors (238)"
+        },
+        {
+          "Key": "5",
+          "Desc": "[CAINC6N] Wages and salaries"
+        },
+        {
+          "Key": "500",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Manufacturing (31-33)"
+        },
+        {
+          "Key": "510",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Durable goods manufacturing (321,327-339)"
+        },
+        {
+          "Key": "511",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Wood product manufacturing (321)"
+        },
+        {
+          "Key": "512",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Nonmetallic mineral product manufacturing (327)"
+        },
+        {
+          "Key": "513",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Primary metal manufacturing (331)"
+        },
+        {
+          "Key": "514",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Fabricated metal product manufacturing (332)"
+        },
+        {
+          "Key": "515",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Machinery manufacturing (333)"
+        },
+        {
+          "Key": "516",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Computer and electronic product manufacturing (334)"
+        },
+        {
+          "Key": "517",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Electrical equipment, appliance, and component manufacturing (335)"
+        },
+        {
+          "Key": "518",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Motor vehicles, bodies and trailers, and parts manufacturing (3361-3363)"
+        },
+        {
+          "Key": "519",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Other transportation equipment manufacturing (3364-3466,3369)"
+        },
+        {
+          "Key": "521",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Furniture and related product manufacturing (337)"
+        },
+        {
+          "Key": "522",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Miscellaneous manufacturing (339)"
+        },
+        {
+          "Key": "530",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Nondurable goods manufacturing (311-316,322-326)"
+        },
+        {
+          "Key": "531",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Food manufacturing (311)"
+        },
+        {
+          "Key": "532",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Beverage and tobacco product manufacturing (312)"
+        },
+        {
+          "Key": "533",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Textile mills (313)"
+        },
+        {
+          "Key": "534",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Textile product mills (314)"
+        },
+        {
+          "Key": "535",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Apparel manufacturing (315)"
+        },
+        {
+          "Key": "536",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Leather and allied product manufacturing (316)"
+        },
+        {
+          "Key": "537",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Paper manufacturing (322)"
+        },
+        {
+          "Key": "538",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Printing and related support activities (323)"
+        },
+        {
+          "Key": "539",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Petroleum and coal products manufacturing (324)"
+        },
+        {
+          "Key": "541",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Chemical manufacturing (325)"
+        },
+        {
+          "Key": "542",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Plastics and rubber products manufacturing (326)"
+        },
+        {
+          "Key": "6",
+          "Desc": "[CAINC6N] Supplements to wages and salaries"
+        },
+        {
+          "Key": "600",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Wholesale trade (42)"
+        },
+        {
+          "Key": "7",
+          "Desc": "[CAINC6N] Employer contributions for employee pension and insurance funds"
+        },
+        {
+          "Key": "700",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Retail trade (44-45)"
+        },
+        {
+          "Key": "701",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Motor vehicle and parts dealers (441)"
+        },
+        {
+          "Key": "702",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Furniture and home furnishings stores (442)"
+        },
+        {
+          "Key": "703",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Electronics and appliance stores (443)"
+        },
+        {
+          "Key": "704",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Building material and garden equipment and supplies dealers (444)"
+        },
+        {
+          "Key": "705",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Food and beverage stores (445)"
+        },
+        {
+          "Key": "706",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Health and personal care stores (446)"
+        },
+        {
+          "Key": "707",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Gasoline stations (447)"
+        },
+        {
+          "Key": "708",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Clothing and clothing accessories stores (448)"
+        },
+        {
+          "Key": "709",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Sporting goods, hobby, musical instrument, and book stores (451)"
+        },
+        {
+          "Key": "711",
+          "Desc": "[CAINC6N] Private nonfarm compensation: General merchandise stores (452)"
+        },
+        {
+          "Key": "712",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Miscellaneous store retailers (453)"
+        },
+        {
+          "Key": "713",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Nonstore retailers (454)"
+        },
+        {
+          "Key": "8",
+          "Desc": "[CAINC6N] Employer contributions for government social insurance"
+        },
+        {
+          "Key": "800",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Transportation and warehousing (48-49)"
+        },
+        {
+          "Key": "801",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Air transportation (481)"
+        },
+        {
+          "Key": "802",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Rail transportation (482)"
+        },
+        {
+          "Key": "803",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Water transportation (483)"
+        },
+        {
+          "Key": "804",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Truck transportation (484)"
+        },
+        {
+          "Key": "805",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Transit and ground passenger transportation (485)"
+        },
+        {
+          "Key": "806",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Pipeline transportation (486)"
+        },
+        {
+          "Key": "807",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Scenic and sightseeing transportation (487)"
+        },
+        {
+          "Key": "808",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Support activities for transportation (488)"
+        },
+        {
+          "Key": "809",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Couriers and messengers (492)"
+        },
+        {
+          "Key": "81",
+          "Desc": "[CAINC6N] Farm compensation (111-112)"
+        },
+        {
+          "Key": "811",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Warehousing and storage (493)"
+        },
+        {
+          "Key": "82",
+          "Desc": "[CAINC6N] Nonfarm compensation"
+        },
+        {
+          "Key": "90",
+          "Desc": "[CAINC6N] Private nonfarm compensation (113-814)"
+        },
+        {
+          "Key": "900",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Information (51)"
+        },
+        {
+          "Key": "901",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Publishing industries (except Internet) (511)"
+        },
+        {
+          "Key": "902",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Motion picture and sound recording industries (512)"
+        },
+        {
+          "Key": "903",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Broadcasting (except Internet) (515)"
+        },
+        {
+          "Key": "904",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Internet publishing and broadcasting (516)"
+        },
+        {
+          "Key": "905",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Telecommunications (517)"
+        },
+        {
+          "Key": "906",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Data processing, hosting, and related services (518)"
+        },
+        {
+          "Key": "907",
+          "Desc": "[CAINC6N] Private nonfarm compensation: Other information services (519)"
+        }
+      ]
+    }
+  }
+}

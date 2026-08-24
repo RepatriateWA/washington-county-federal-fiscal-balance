@@ -1,0 +1,35 @@
+{
+  "generated_utc": "2026-08-20T05:11:02.209153+00:00",
+  "purpose": "WCFFBP BEA Washington federal civilian and military wages-and-salaries acquisition",
+  "reference_period_type": "CALENDAR_YEAR",
+  "geography": "WASHINGTON_STATE",
+  "requests": [
+    {
+      "retrieved_utc": "2026-08-20T05:11:01.572943+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC7N",
+      "line_code": "2001",
+      "geo_fips": "53000",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 10,
+      "file": "data\\raw\\bea\\wages\\state\\sainc7n_federal_civilian_wages_2015_2024_retrieved_20260820T051101Z.json",
+      "sha256": "047d0a2b672c37b83ca2daa90edd44d773e99ac023c2c78500ad14fc12b4ebfa"
+    },
+    {
+      "retrieved_utc": "2026-08-20T05:11:02.204201+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC7N",
+      "line_code": "2002",
+      "geo_fips": "53000",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 10,
+      "file": "data\\raw\\bea\\wages\\state\\sainc7n_military_wages_2015_2024_retrieved_20260820T051102Z.json",
+      "sha256": "3eaad282dcca24961bed0ffa6680985d5c243b7f2f7dae8b564d30b2492865df"
+    }
+  ],
+  "line_code_evidence": {
+    "2001": "Govt. and govt. enterprises wages and salaries: Federal civilian",
+    "2002": "Govt. and govt. enterprises wages and salaries: Military"
+  },
+  "methodology_note": "SAINC7N wages and salaries are preserved as BEA calendar-year economic observations. They are not themselves WCFFBP federal fiscal-year accounting controls."
+}
