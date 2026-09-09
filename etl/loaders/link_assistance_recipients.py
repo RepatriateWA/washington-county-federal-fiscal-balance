@@ -372,11 +372,19 @@ def link_transactions(
     load_batch_id: int,
     observations: list[RecipientRelationshipObservation],
 ) -> int:
-    """Populate transaction recipient foreign keys."""
+    """
+    Populate canonical transaction recipient foreign keys.
+
+    Canonical transaction identity is global across load batches.
+    A transaction re-observed in the current batch may have been first
+    inserted by an earlier batch, so linkage must use the stable
+    assistance_transaction_unique_key rather than load_batch_id /
+    source_row_number provenance.
+    """
 
     values = [
         (
-            observation.source_row_number,
+            observation.assistance_transaction_unique_key,
             observation.recipient_id,
         )
         for observation in observations
@@ -390,14 +398,11 @@ def link_transactions(
         FROM (
             VALUES %s
         ) AS source (
-            source_row_number,
+            assistance_transaction_unique_key,
             recipient_id
         )
-        WHERE transaction.load_batch_id = """
-        + str(int(load_batch_id))
-        + """
-          AND transaction.source_row_number
-              = source.source_row_number
+        WHERE transaction.assistance_transaction_unique_key
+              = source.assistance_transaction_unique_key
         """,
         values,
         template="(%s, %s)",
@@ -407,9 +412,13 @@ def link_transactions(
     cur.execute(
         """
         SELECT COUNT(*)
-        FROM assistance.award_transaction
-        WHERE load_batch_id = %s
-          AND recipient_id IS NOT NULL;
+        FROM assistance.award_transaction AS transaction
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        )
+          AND transaction.recipient_id IS NOT NULL;
         """,
         (load_batch_id,),
     )
@@ -485,11 +494,19 @@ def validate_results(
 ) -> dict[str, int]:
     """Validate recipient relationship completeness and integrity."""
 
+    # Canonical transaction identity is global across load batches.
+    # Validate the canonical transactions observed by this raw batch using
+    # the stable transaction key rather than the batch in which each
+    # canonical transaction was first inserted.
     cur.execute(
         """
         SELECT COUNT(*)
-        FROM assistance.award_transaction
-        WHERE load_batch_id = %s;
+        FROM assistance.award_transaction AS transaction
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        );
         """,
         (load_batch_id,),
     )
@@ -501,9 +518,13 @@ def validate_results(
     cur.execute(
         """
         SELECT COUNT(*)
-        FROM assistance.award_transaction
-        WHERE load_batch_id = %s
-          AND recipient_id IS NULL;
+        FROM assistance.award_transaction AS transaction
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        )
+          AND transaction.recipient_id IS NULL;
         """,
         (load_batch_id,),
     )
@@ -519,7 +540,11 @@ def validate_results(
         LEFT JOIN procurement.recipient AS recipient
           ON recipient.recipient_id
              = transaction.recipient_id
-        WHERE transaction.load_batch_id = %s
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        )
           AND recipient.recipient_id IS NULL;
         """,
         (load_batch_id,),
@@ -627,7 +652,6 @@ def validate_results(
         "raw_award_count": raw_award_count,
         **failure_counts,
     }
-
 
 def write_evidence(
     *,

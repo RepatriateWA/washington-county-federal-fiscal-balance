@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import argparse
+import csv
 from dataclasses import dataclass
+from pathlib import Path
 from datetime import date
 
 from psycopg2.extras import execute_values
@@ -215,8 +217,8 @@ def extract_observations(
         FROM assistance.raw_award_transaction AS raw
 
         JOIN assistance.award_transaction AS transaction
-          ON transaction.load_batch_id = raw.load_batch_id
-         AND transaction.source_row_number = raw.source_row_number
+          ON transaction.assistance_transaction_unique_key
+             = raw.assistance_transaction_unique_key
 
         JOIN assistance.award AS award
           ON award.assistance_award_id
@@ -554,6 +556,185 @@ def validate_results(
     }
 
 
+
+def write_parent_resolution_evidence(
+    cur,
+    *,
+    load_batch_id: int,
+) -> dict[str, int | str]:
+    """Write reproducible evidence for unresolved parent observations."""
+
+    evidence_dir = (
+        Path("evidence")
+        / "assistance"
+        / f"batch_{load_batch_id:04d}"
+        / "enrichment"
+        / "recipient_history"
+    )
+    evidence_dir.mkdir(parents=True, exist_ok=True)
+
+    cur.execute(
+        """
+        SELECT
+            COUNT(*) AS parent_observations,
+            COUNT(*) FILTER (
+                WHERE parent_recipient_id IS NOT NULL
+            ) AS resolved_parent_observations,
+            COUNT(*) FILTER (
+                WHERE parent_recipient_id IS NULL
+            ) AS unresolved_parent_observations,
+            COUNT(*) FILTER (
+                WHERE parent_recipient_id IS NULL
+                  AND observed_parent_uei IS NOT NULL
+            ) AS unresolved_with_uei,
+            COUNT(*) FILTER (
+                WHERE parent_recipient_id IS NULL
+                  AND observed_parent_uei IS NULL
+                  AND observed_parent_name IS NOT NULL
+            ) AS unresolved_name_only,
+            COUNT(DISTINCT UPPER(BTRIM(observed_parent_uei))) FILTER (
+                WHERE parent_recipient_id IS NULL
+                  AND observed_parent_uei IS NOT NULL
+            ) AS distinct_unresolved_parent_ueis
+        FROM assistance.recipient_parent_history
+        WHERE load_batch_id = %s;
+        """,
+        (load_batch_id,),
+    )
+
+    (
+        parent_observations,
+        resolved_parent_observations,
+        unresolved_parent_observations,
+        unresolved_with_uei,
+        unresolved_name_only,
+        distinct_unresolved_parent_ueis,
+    ) = (int(value) for value in cur.fetchone())
+
+    if (
+        resolved_parent_observations
+        + unresolved_parent_observations
+        != parent_observations
+    ):
+        raise ValueError(
+            "Parent-resolution reconciliation failed: resolved + unresolved "
+            "does not equal total parent observations."
+        )
+
+    if (
+        unresolved_with_uei
+        + unresolved_name_only
+        != unresolved_parent_observations
+    ):
+        raise ValueError(
+            "Unresolved-parent reconciliation failed: UEI-bearing + "
+            "name-only does not equal unresolved parent observations."
+        )
+
+    cur.execute(
+        """
+        SELECT
+            UPPER(BTRIM(history.observed_parent_uei)) AS parent_uei,
+            MIN(history.observed_parent_name) AS sample_parent_name,
+            COUNT(*) AS observation_count,
+            COUNT(DISTINCT history.child_recipient_id)
+                AS distinct_child_recipients,
+            MIN(history.action_date) AS first_action_date,
+            MAX(history.action_date) AS last_action_date,
+            COUNT(recipient.recipient_id) AS matching_canonical_rows
+        FROM assistance.recipient_parent_history AS history
+        LEFT JOIN procurement.recipient AS recipient
+          ON UPPER(BTRIM(recipient.recipient_uei))
+             = UPPER(BTRIM(history.observed_parent_uei))
+        WHERE history.load_batch_id = %s
+          AND history.parent_recipient_id IS NULL
+          AND history.observed_parent_uei IS NOT NULL
+        GROUP BY UPPER(BTRIM(history.observed_parent_uei))
+        ORDER BY observation_count DESC, parent_uei;
+        """,
+        (load_batch_id,),
+    )
+
+    unresolved_rows = cur.fetchall()
+
+    if len(unresolved_rows) != distinct_unresolved_parent_ueis:
+        raise ValueError(
+            "Distinct unresolved-parent UEI evidence count mismatch: "
+            f"expected={distinct_unresolved_parent_ueis:,}, "
+            f"actual={len(unresolved_rows):,}."
+        )
+
+    unexpected_matches = sum(
+        int(row[6])
+        for row in unresolved_rows
+    )
+
+    if unexpected_matches:
+        raise ValueError(
+            f"{unexpected_matches:,} canonical recipient matches were found "
+            "for parent rows recorded as unresolved."
+        )
+
+    csv_path = evidence_dir / "unresolved_parent_ueis.csv"
+    with csv_path.open(
+        "w",
+        encoding="utf-8",
+        newline="",
+    ) as handle:
+        writer = csv.writer(handle)
+        writer.writerow(
+            [
+                "parent_uei",
+                "sample_parent_name",
+                "observation_count",
+                "distinct_child_recipients",
+                "first_action_date",
+                "last_action_date",
+                "matching_canonical_rows",
+            ]
+        )
+        writer.writerows(unresolved_rows)
+
+    summary_path = evidence_dir / "parent_resolution_summary.txt"
+    summary_path.write_text(
+        "\n".join(
+            [
+                f"load_batch_id={load_batch_id}",
+                f"parent_observations={parent_observations}",
+                (
+                    "resolved_parent_observations="
+                    f"{resolved_parent_observations}"
+                ),
+                (
+                    "unresolved_parent_observations="
+                    f"{unresolved_parent_observations}"
+                ),
+                f"unresolved_with_uei={unresolved_with_uei}",
+                (
+                    "distinct_unresolved_parent_ueis="
+                    f"{distinct_unresolved_parent_ueis}"
+                ),
+                f"unresolved_name_only={unresolved_name_only}",
+                (
+                    "canonical_matches_among_unresolved_ueis="
+                    f"{unexpected_matches}"
+                ),
+                "",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    return {
+        "parent_observations": parent_observations,
+        "resolved_parent_observations": resolved_parent_observations,
+        "unresolved_parent_observations": unresolved_parent_observations,
+        "unresolved_with_uei": unresolved_with_uei,
+        "distinct_unresolved_parent_ueis": distinct_unresolved_parent_ueis,
+        "unresolved_name_only": unresolved_name_only,
+        "evidence_dir": str(evidence_dir),
+    }
+
 def main() -> None:
     args = parse_arguments()
     conn = get_connection()
@@ -601,6 +782,11 @@ def main() -> None:
                 ),
             )
 
+            parent_evidence = write_parent_resolution_evidence(
+                cur,
+                load_batch_id=args.load_batch_id,
+            )
+
         conn.commit()
 
         print()
@@ -620,8 +806,28 @@ def main() -> None:
             f"{validation['parent_history_count']:,}"
         )
         print(
-            "Unresolved parent identities ... "
-            f"{validation['unresolved_parent_count']:,}"
+            "Parent observations ............. "
+            f"{parent_evidence['parent_observations']:,}"
+        )
+        print(
+            "Resolved parent observations .... "
+            f"{parent_evidence['resolved_parent_observations']:,}"
+        )
+        print(
+            "Unresolved parent observations .. "
+            f"{parent_evidence['unresolved_parent_observations']:,}"
+        )
+        print(
+            "  Unresolved with UEI ........... "
+            f"{parent_evidence['unresolved_with_uei']:,}"
+        )
+        print(
+            "  Distinct unresolved UEIs ...... "
+            f"{parent_evidence['distinct_unresolved_parent_ueis']:,}"
+        )
+        print(
+            "  Unresolved name-only .......... "
+            f"{parent_evidence['unresolved_name_only']:,}"
         )
         print(
             "Canonical recipient mismatches . "
@@ -633,6 +839,10 @@ def main() -> None:
         )
         print(
             "Validation ..................... PASS"
+        )
+        print(
+            "Evidence directory ............. "
+            f"{parent_evidence['evidence_dir']}"
         )
         print("=" * 72)
         print()

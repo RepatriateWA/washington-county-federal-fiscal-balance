@@ -147,18 +147,29 @@ def extract_transaction_sources(
     *,
     load_batch_id: int,
 ) -> list[TransactionDefcSource]:
-    """Load normalized transactions and their preserved raw DEFC values."""
+    """
+    Resolve every current-batch raw observation to its globally canonical
+    Assistance transaction and preserve the DEFC value observed in that raw
+    source row.
+    """
 
     cur.execute(
         """
         SELECT
-            source_row_number,
-            assistance_transaction_id,
-            assistance_transaction_unique_key,
-            disaster_emergency_fund_codes_raw
-        FROM assistance.award_transaction
-        WHERE load_batch_id = %s
-        ORDER BY source_row_number;
+            raw.source_row_number,
+            transaction.assistance_transaction_id,
+            raw.assistance_transaction_unique_key,
+            raw.raw_record
+                ->> 'disaster_emergency_fund_codes_for_overall_award'
+
+        FROM assistance.raw_award_transaction AS raw
+
+        JOIN assistance.award_transaction AS transaction
+          ON transaction.assistance_transaction_unique_key
+             = raw.assistance_transaction_unique_key
+
+        WHERE raw.load_batch_id = %s
+        ORDER BY raw.source_row_number;
         """,
         (load_batch_id,),
     )
@@ -167,7 +178,7 @@ def extract_transaction_sources(
 
     if not rows:
         raise ValueError(
-            f"No normalized Assistance transactions found for "
+            f"No raw Assistance observations resolved for "
             f"load batch {load_batch_id}."
         )
 
@@ -180,7 +191,6 @@ def extract_transaction_sources(
         )
         for row in rows
     ]
-
 
 def classify_sources(
     *,
@@ -365,7 +375,11 @@ def load_existing_relationships(
           ON transaction.assistance_transaction_id
              = relationship.assistance_transaction_id
 
-        WHERE transaction.load_batch_id = %s;
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        );
         """,
         (load_batch_id,),
     )
@@ -524,7 +538,11 @@ def validate_database_results(
         JOIN assistance.award_transaction AS transaction
           ON transaction.assistance_transaction_id
              = relationship.assistance_transaction_id
-        WHERE transaction.load_batch_id = %s;
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        );
         """,
         (load_batch_id,),
     )
@@ -544,7 +562,11 @@ def validate_database_results(
             JOIN assistance.award_transaction AS transaction
               ON transaction.assistance_transaction_id
                  = relationship.assistance_transaction_id
-            WHERE transaction.load_batch_id = %s
+            WHERE transaction.assistance_transaction_unique_key IN (
+                SELECT raw.assistance_transaction_unique_key
+                FROM assistance.raw_award_transaction AS raw
+                WHERE raw.load_batch_id = %s
+            )
             GROUP BY
                 relationship.assistance_transaction_id,
                 relationship.extraordinary_funding_code_id

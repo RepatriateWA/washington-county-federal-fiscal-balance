@@ -1,0 +1,15 @@
+========================================================================
+ETL-005C.2 — ASSISTANCE TYPE NORMALIZATION
+========================================================================
+Load batch ID .................. 19
+Raw observations examined ...... 74,171
+Incomplete type rows ........... 0
+Distinct Assistance Types ...... 10
+Types inserted ................. 0
+Types updated .................. 0
+Types unchanged ................ 10
+Types with description conflicts 0
+Validation ..................... PASS
+========================================================================
+
+Canonical selection precedence: occurrence count, latest source row, normalized description, exact description.
