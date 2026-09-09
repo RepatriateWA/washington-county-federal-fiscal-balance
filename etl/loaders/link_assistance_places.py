@@ -581,11 +581,18 @@ def link_transactions(
     load_batch_id: int,
     observations: list[PlaceRelationshipObservation],
 ) -> int:
-    """Populate transaction place-of-performance foreign keys."""
+    """
+    Populate transaction place-of-performance foreign keys.
+
+    Canonical transaction identity is global across load batches. A
+    transaction observed in the current raw batch may have been inserted
+    canonically by an earlier batch, so linkage uses the stable
+    assistance_transaction_unique_key rather than batch-local provenance.
+    """
 
     values = [
         (
-            observation.source_row_number,
+            observation.assistance_transaction_unique_key,
             observation.place_id,
         )
         for observation in observations
@@ -607,14 +614,11 @@ def link_transactions(
         FROM (
             VALUES %s
         ) AS source (
-            source_row_number,
+            assistance_transaction_unique_key,
             place_id
         )
-        WHERE transaction.load_batch_id = """
-        + str(int(load_batch_id))
-        + """
-          AND transaction.source_row_number
-              = source.source_row_number;
+        WHERE transaction.assistance_transaction_unique_key
+              = source.assistance_transaction_unique_key;
         """,
         values,
         template="(%s, %s)",
@@ -624,15 +628,18 @@ def link_transactions(
     cur.execute(
         """
         SELECT COUNT(*)
-        FROM assistance.award_transaction
-        WHERE load_batch_id = %s
-          AND place_of_performance_id IS NOT NULL;
+        FROM assistance.award_transaction AS transaction
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        )
+          AND transaction.place_of_performance_id IS NOT NULL;
         """,
         (load_batch_id,),
     )
 
     return int(cur.fetchone()[0])
-
 
 def validate_results(
     cur,
@@ -652,9 +659,13 @@ def validate_results(
                 WHERE place_of_performance_id IS NULL
             ) AS missing_place_count
 
-        FROM assistance.award_transaction
+        FROM assistance.award_transaction AS transaction
 
-        WHERE load_batch_id = %s;
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        );
         """,
         (load_batch_id,),
     )
@@ -676,7 +687,11 @@ def validate_results(
           ON place.place_id
              = transaction.place_of_performance_id
 
-        WHERE transaction.load_batch_id = %s
+        WHERE transaction.assistance_transaction_unique_key IN (
+            SELECT raw.assistance_transaction_unique_key
+            FROM assistance.raw_award_transaction AS raw
+            WHERE raw.load_batch_id = %s
+        )
           AND place.place_id IS NULL;
         """,
         (load_batch_id,),

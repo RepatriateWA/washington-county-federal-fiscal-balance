@@ -23,6 +23,17 @@ def _raw_numeric(field: str) -> str:
     END
     """
 
+
+def _batch_transaction_scope(alias: str = "t") -> str:
+    """SQL predicate: canonical transaction is observed in the raw batch."""
+    return f"""EXISTS (
+      SELECT 1
+      FROM assistance.raw_award_transaction raw_scope
+      WHERE raw_scope.load_batch_id=%s
+        AND raw_scope.assistance_transaction_unique_key
+            ={alias}.assistance_transaction_unique_key
+    )"""
+
 # ---------------- BATCH COMPLETENESS ----------------
 
 def check_raw_exists(cur, batch):
@@ -31,20 +42,21 @@ def check_raw_exists(cur, batch):
     return CertificationCheck("COUNT-001","BATCH COMPLETENESS","Raw observations exist",_status(n>0),n,"greater than 0")
 
 def check_txn_exists(cur, batch):
-    cur.execute("SELECT COUNT(*) FROM assistance.award_transaction WHERE load_batch_id=%s", (batch,))
+    cur.execute(f"SELECT COUNT(*) FROM assistance.award_transaction t WHERE {_batch_transaction_scope('t')}", (batch,))
     n = int(cur.fetchone()[0])
     return CertificationCheck("COUNT-002","BATCH COMPLETENESS","Normalized transactions exist",_status(n>0),n,"greater than 0")
 
 def check_awards_exist(cur, batch):
-    cur.execute("SELECT COUNT(DISTINCT assistance_award_id) FROM assistance.award_transaction WHERE load_batch_id=%s", (batch,))
+    cur.execute(f"SELECT COUNT(DISTINCT t.assistance_award_id) FROM assistance.award_transaction t WHERE {_batch_transaction_scope('t')}", (batch,))
     n = int(cur.fetchone()[0])
     return CertificationCheck("COUNT-003","BATCH COMPLETENESS","Normalized awards represented",_status(n>0),n,"greater than 0")
 
 def check_counts_reconcile(cur, batch):
-    cur.execute("""
+    cur.execute(f"""
       SELECT
         (SELECT COUNT(*) FROM assistance.raw_award_transaction WHERE load_batch_id=%s),
-        (SELECT COUNT(*) FROM assistance.award_transaction WHERE load_batch_id=%s)
+        (SELECT COUNT(*) FROM assistance.award_transaction t
+         WHERE {_batch_transaction_scope('t')})
     """,(batch,batch))
     raw_n, txn_n = map(int, cur.fetchone())
     ok = raw_n > 0 and raw_n == txn_n
@@ -60,15 +72,21 @@ def check_raw_source_rows_unique(cur,batch):
     return _zero("DUP-001","DUPLICATE DETECTION","Raw source-row identifiers are unique",cur.fetchone()[0],"duplicate raw source-row groups were found")
 
 def check_txn_source_rows_unique(cur,batch):
-    cur.execute("""SELECT COUNT(*) FROM (
-      SELECT source_row_number FROM assistance.award_transaction
-      WHERE load_batch_id=%s GROUP BY source_row_number HAVING COUNT(*)>1) d""",(batch,))
+    cur.execute(f"""SELECT COUNT(*) FROM (
+      SELECT raw.source_row_number
+      FROM assistance.raw_award_transaction raw
+      JOIN assistance.award_transaction t
+        ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
+      WHERE raw.load_batch_id=%s
+      GROUP BY raw.source_row_number HAVING COUNT(*)>1) d""",(batch,))
     return _zero("DUP-002","DUPLICATE DETECTION","Transaction source-row identifiers are unique",cur.fetchone()[0],"duplicate normalized source-row groups were found")
 
 def check_txn_keys_unique(cur,batch):
     cur.execute("""SELECT COUNT(*) FROM (
-      SELECT assistance_transaction_unique_key FROM assistance.award_transaction
-      WHERE load_batch_id=%s GROUP BY assistance_transaction_unique_key HAVING COUNT(*)>1) d""",(batch,))
+      SELECT raw.assistance_transaction_unique_key
+      FROM assistance.raw_award_transaction raw
+      WHERE raw.load_batch_id=%s
+      GROUP BY raw.assistance_transaction_unique_key HAVING COUNT(*)>1) d""",(batch,))
     return _zero("DUP-003","DUPLICATE DETECTION","Assistance transaction keys are unique",cur.fetchone()[0],"duplicate transaction-key groups were found")
 
 # ---------------- REFERENTIAL ----------------
@@ -76,7 +94,7 @@ def check_txn_keys_unique(cur,batch):
 def _fk(cur,batch,code,label,column,table,target):
     cur.execute(f"""SELECT COUNT(*) FROM assistance.award_transaction t
       LEFT JOIN {table} r ON r.{target}=t.{column}
-      WHERE t.load_batch_id=%s AND t.{column} IS NOT NULL AND r.{target} IS NULL""",(batch,))
+      WHERE {_batch_transaction_scope('t')} AND t.{column} IS NOT NULL AND r.{target} IS NULL""",(batch,))
     return _zero(code,"REFERENTIAL INTEGRITY",label,cur.fetchone()[0],"orphan references were found")
 
 def check_fk_award(cur,b): return _fk(cur,b,"FK-001","Transaction award references resolve","assistance_award_id","assistance.award","assistance_award_id")
@@ -107,10 +125,10 @@ def check_fk_parent_history(cur,batch):
     return _zero("FK-012","REFERENTIAL INTEGRITY","Recipient-parent history references resolve",cur.fetchone()[0],"orphan parent-history references were found")
 
 def check_fk_defc(cur,batch):
-    cur.execute("""SELECT COUNT(*) FROM assistance.award_transaction_defc d
+    cur.execute(f"""SELECT COUNT(*) FROM assistance.award_transaction_defc d
       JOIN assistance.award_transaction t ON t.assistance_transaction_id=d.assistance_transaction_id
       LEFT JOIN reference.extraordinary_funding_code e ON e.extraordinary_funding_code_id=d.extraordinary_funding_code_id
-      WHERE t.load_batch_id=%s AND e.extraordinary_funding_code_id IS NULL""",(batch,))
+      WHERE {_batch_transaction_scope('t')} AND e.extraordinary_funding_code_id IS NULL""",(batch,))
     return _zero("FK-013","REFERENTIAL INTEGRITY","DEFC references resolve",cur.fetchone()[0],"orphan DEFC references were found")
 
 # ---------------- SOURCE-CONDITIONED RELATIONSHIPS ----------------
@@ -121,7 +139,7 @@ def _source_conditioned(cur,batch,code,label,fields,column):
       SELECT t.{column} id
       FROM assistance.raw_award_transaction raw
       JOIN assistance.award_transaction t
-        ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
+        ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
       WHERE raw.load_batch_id=%s AND ({pred}))
       SELECT COUNT(*),COUNT(id) FROM p""",(batch,))
     expected,resolved = map(int,cur.fetchone())
@@ -143,20 +161,24 @@ def check_rel_history(cur,batch):
       COUNT(*) FILTER (WHERE t.recipient_id IS NOT NULL),
       COUNT(*) FILTER (WHERE t.recipient_id IS NOT NULL AND EXISTS (
         SELECT 1 FROM assistance.award_recipient_history h
-        WHERE h.load_batch_id=t.load_batch_id
+        WHERE h.load_batch_id=raw.load_batch_id
+          AND h.source_row_number=raw.source_row_number
           AND h.assistance_transaction_id=t.assistance_transaction_id
           AND h.recipient_id=t.recipient_id))
-      FROM assistance.award_transaction t WHERE t.load_batch_id=%s""",(batch,))
+      FROM assistance.raw_award_transaction raw
+      JOIN assistance.award_transaction t
+        ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
+      WHERE raw.load_batch_id=%s""",(batch,))
     expected,covered=map(int,cur.fetchone())
     ok=expected==covered
     return CertificationCheck("REL-008","RELATIONSHIP COMPLETENESS","Award-recipient history coverage complete",_status(ok),f"{covered}/{expected}",expected,
-      None if ok else f"{expected-covered} recipient-bearing transactions lack matching history.")
+      None if ok else f"{expected-covered} recipient-bearing observations lack matching history.")
 
 # ---------------- CLASSIFICATION ----------------
 
 def check_type_codes(cur,batch):
     cur.execute("""SELECT COUNT(*) FROM assistance.raw_award_transaction raw
-      JOIN assistance.award_transaction t ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
+      JOIN assistance.award_transaction t ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
       LEFT JOIN assistance.assistance_type typ ON typ.assistance_type_id=t.assistance_type_id
       WHERE raw.load_batch_id=%s
         AND NULLIF(BTRIM(raw.raw_record->>'assistance_type_code'),'') IS NOT NULL
@@ -165,7 +187,7 @@ def check_type_codes(cur,batch):
 
 def check_listing_numbers(cur,batch):
     cur.execute("""SELECT COUNT(*) FROM assistance.raw_award_transaction raw
-      JOIN assistance.award_transaction t ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
+      JOIN assistance.award_transaction t ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
       LEFT JOIN assistance.assistance_listing l ON l.assistance_listing_id=t.assistance_listing_id
       WHERE raw.load_batch_id=%s
         AND NULLIF(BTRIM(raw.raw_record->>'cfda_number'),'') IS NOT NULL
@@ -176,70 +198,283 @@ def check_listing_numbers(cur,batch):
 
 def check_geo_coverage(cur,batch):
     cur.execute("""SELECT
-      (SELECT COUNT(*) FROM assistance.award_transaction WHERE load_batch_id=%s),
-      (SELECT COUNT(*) FROM analysis.v_assistance_geographic_attribution WHERE load_batch_id=%s)""",(batch,batch))
+      (SELECT COUNT(*)
+         FROM assistance.raw_award_transaction
+        WHERE load_batch_id=%s),
+      (SELECT COUNT(*)
+         FROM analysis.v_assistance_observation_geographic_attribution
+        WHERE observation_load_batch_id=%s)""",(batch,batch))
     total,geo=map(int,cur.fetchone()); ok=total>0 and total==geo
-    return CertificationCheck("GEO-001","GEOGRAPHIC CERTIFICATION","Every transaction receives geographic attribution",_status(ok),f"{geo}/{total}",total)
+    return CertificationCheck(
+      "GEO-001",
+      "GEOGRAPHIC CERTIFICATION",
+      "Every observation receives geographic attribution",
+      _status(ok),
+      f"{geo}/{total}",
+      total)
+
 
 def check_geo_classes(cur,batch):
-    cur.execute("""SELECT COUNT(*) FROM analysis.v_assistance_geographic_attribution
-      WHERE load_batch_id=%s AND geographic_attribution_class NOT IN
-      ('WA_COUNTY','WA_UNSPECIFIED','GEOGRAPHY_CONFLICT','NON_WASHINGTON')""",(batch,))
-    return _zero("GEO-002","GEOGRAPHIC CERTIFICATION","Geographic attribution classes are valid",cur.fetchone()[0],"unsupported attribution classes were found")
+    cur.execute("""SELECT COUNT(*)
+      FROM analysis.v_assistance_observation_geographic_attribution
+      WHERE observation_load_batch_id=%s
+        AND geographic_attribution_class NOT IN
+        ('WA_COUNTY','WA_UNSPECIFIED','GEOGRAPHY_CONFLICT','NON_WASHINGTON')""",
+        (batch,))
+    return _zero(
+      "GEO-002",
+      "GEOGRAPHIC CERTIFICATION",
+      "Geographic attribution classes are valid",
+      cur.fetchone()[0],
+      "unsupported attribution classes were found")
+
 
 def check_wa_county_refs(cur,batch):
-    cur.execute("""SELECT COUNT(*) FROM analysis.v_assistance_geographic_attribution
-      WHERE load_batch_id=%s AND geographic_attribution_class='WA_COUNTY'
-        AND (reference_state_abbreviation IS DISTINCT FROM 'WA' OR reference_county_id IS NULL OR county_full_fips IS NULL)""",(batch,))
-    return _zero("GEO-003","GEOGRAPHIC CERTIFICATION","Washington county references resolve",cur.fetchone()[0],"WA_COUNTY rows lack valid county references")
+    cur.execute("""SELECT COUNT(*)
+      FROM analysis.v_assistance_observation_geographic_attribution
+      WHERE observation_load_batch_id=%s
+        AND geographic_attribution_class='WA_COUNTY'
+        AND (
+          reference_state_abbreviation IS DISTINCT FROM 'WA'
+          OR reference_county_id IS NULL
+          OR county_full_fips IS NULL
+        )""",(batch,))
+    return _zero(
+      "GEO-003",
+      "GEOGRAPHIC CERTIFICATION",
+      "Washington county references resolve",
+      cur.fetchone()[0],
+      "WA_COUNTY observations lack valid county references")
+
 
 def check_wa_counties(cur,batch):
     cur.execute("""SELECT COUNT(DISTINCT reference_county_id)
-      FROM analysis.v_assistance_geographic_attribution
-      WHERE load_batch_id=%s AND geographic_attribution_class='WA_COUNTY'""",(batch,))
+      FROM analysis.v_assistance_observation_geographic_attribution
+      WHERE observation_load_batch_id=%s
+        AND geographic_attribution_class='WA_COUNTY'""",(batch,))
     n=int(cur.fetchone()[0]); ok=n==39
-    return CertificationCheck("GEO-004","GEOGRAPHIC CERTIFICATION","All Washington counties represented",_status(ok,warn=True),n,39,
+    return CertificationCheck(
+      "GEO-004",
+      "GEOGRAPHIC CERTIFICATION",
+      "All Washington counties represented",
+      _status(ok,warn=True),
+      n,
+      39,
       None if ok else "Fewer than 39 Washington counties are represented.")
 
 # ---------------- EXTRAORDINARY FUNDING ----------------
 
-def _numeric_preservation(cur,batch,code,label,raw_field,norm_col):
-    cur.execute(f"""WITH p AS (
-      SELECT {_raw_numeric(raw_field)} raw_value,t.{norm_col} norm_value
-      FROM assistance.raw_award_transaction raw
-      JOIN assistance.award_transaction t ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
-      WHERE raw.load_batch_id=%s)
-      SELECT COUNT(*) FROM p WHERE raw_value IS DISTINCT FROM norm_value""",(batch,))
-    return _zero(code,"EXTRAORDINARY FUNDING",label,cur.fetchone()[0],"raw/normalized value mismatches were found")
+def _revision_numeric(column_expr: str) -> str:
+    return f"""
+    CASE
+      WHEN BTRIM({column_expr}) ~ '^[+-]?[0-9]+([.][0-9]+)?$'
+      THEN BTRIM({column_expr})::numeric
+      ELSE NULL
+    END
+    """
 
-def check_defc_text(cur,batch):
-    cur.execute("""SELECT COUNT(*) FROM assistance.raw_award_transaction raw
-      JOIN assistance.award_transaction t ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
-      WHERE raw.load_batch_id=%s
-        AND NULLIF(BTRIM(raw.raw_record->>'disaster_emergency_fund_codes_for_overall_award'),'')
-            IS DISTINCT FROM NULLIF(BTRIM(t.disaster_emergency_fund_codes_raw),'')""",(batch,))
-    return _zero("EXTRA-001","EXTRAORDINARY FUNDING","Raw DEFC values preserved",cur.fetchone()[0],"raw DEFC strings differ")
 
-def check_covid_ob(cur,b): return _numeric_preservation(cur,b,"EXTRA-002","COVID obligation values preserved","obligated_amount_from_COVID-19_supplementals_for_overall_award","covid_overall_award_obligation")
-def check_covid_out(cur,b): return _numeric_preservation(cur,b,"EXTRA-003","COVID outlay values preserved","outlayed_amount_from_COVID-19_supplementals_for_overall_award","covid_overall_award_outlay")
-def check_iija_ob(cur,b): return _numeric_preservation(cur,b,"EXTRA-004","IIJA obligation values preserved","obligated_amount_from_IIJA_supplemental_for_overall_award","iija_overall_award_obligation")
-def check_iija_out(cur,b): return _numeric_preservation(cur,b,"EXTRA-005","IIJA outlay values preserved","outlayed_amount_from_IIJA_supplemental_for_overall_award","iija_overall_award_outlay")
+def _field_preservation_sql(raw_field: str, norm_col: str, numeric: bool) -> str:
+    if numeric:
+        raw_value = _raw_numeric(raw_field)
+        canonical_value = f"t.{norm_col}"
+        revision_observed = _revision_numeric("r.observed_value_text")
+        revision_canonical = _revision_numeric(
+            "r.canonical_first_seen_value_text"
+        )
+    else:
+        raw_value = (
+            f"NULLIF(BTRIM(raw.raw_record ->> '{raw_field}'), '')"
+        )
+        canonical_value = f"NULLIF(BTRIM(t.{norm_col}), '')"
+        revision_observed = (
+            "NULLIF(BTRIM(r.observed_value_text), '')"
+        )
+        revision_canonical = (
+            "NULLIF(BTRIM(r.canonical_first_seen_value_text), '')"
+        )
+
+    return f"""
+    SELECT
+        raw.raw_assistance_transaction_id,
+
+        CASE
+          /* No source evolution: a revision row must not exist. */
+          WHEN ({raw_value}) IS NOT DISTINCT FROM ({canonical_value})
+          THEN r.award_transaction_revision_id IS NOT NULL
+
+          /* Source evolution: require exact ETL-162 revision evidence. */
+          ELSE NOT (
+              p.field_name IS NOT NULL
+              AND p.policy_version = 'ANALYSIS-162-v1'
+              AND p.field_class IN (
+                  'REVISABLE_ECONOMIC',
+                  'AWARD_SNAPSHOT',
+                  'MUTABLE_AWARD_METADATA',
+                  'PUBLICATION_METADATA'
+              )
+              AND r.award_transaction_revision_id IS NOT NULL
+              AND r.assistance_transaction_id =
+                  t.assistance_transaction_id
+              AND r.revision_class = p.field_class
+              AND r.policy_version = p.policy_version
+              AND ({revision_observed})
+                  IS NOT DISTINCT FROM ({raw_value})
+              AND ({revision_canonical})
+                  IS NOT DISTINCT FROM ({canonical_value})
+          )
+        END AS preservation_failure
+
+    FROM assistance.raw_award_transaction AS raw
+    JOIN assistance.award_transaction AS t
+      ON t.assistance_transaction_unique_key =
+         raw.assistance_transaction_unique_key
+
+    LEFT JOIN assistance.transaction_field_policy AS p
+      ON p.field_name = '{norm_col}'
+
+    LEFT JOIN assistance.award_transaction_revision AS r
+      ON r.raw_assistance_transaction_id =
+         raw.raw_assistance_transaction_id
+     AND r.assistance_transaction_id =
+         t.assistance_transaction_id
+     AND r.field_name = '{norm_col}'
+
+    WHERE raw.load_batch_id = %s
+    """
+
+
+def _numeric_preservation(
+    cur, batch, code, label, raw_field, norm_col
+):
+    sql = _field_preservation_sql(
+        raw_field,
+        norm_col,
+        numeric=True,
+    )
+
+    cur.execute(
+        f"""
+        SELECT COUNT(*)
+        FROM ({sql}) AS x
+        WHERE preservation_failure
+        """,
+        (batch,),
+    )
+
+    return _zero(
+        code,
+        "EXTRAORDINARY FUNDING",
+        label,
+        cur.fetchone()[0],
+        "unaccounted or invalid revision-aware preservation failures were found",
+    )
+
+
+def check_defc_text(cur, batch):
+    sql = _field_preservation_sql(
+        "disaster_emergency_fund_codes_for_overall_award",
+        "disaster_emergency_fund_codes_raw",
+        numeric=False,
+    )
+
+    cur.execute(
+        f"""
+        SELECT COUNT(*)
+        FROM ({sql}) AS x
+        WHERE preservation_failure
+        """,
+        (batch,),
+    )
+
+    return _zero(
+        "EXTRA-001",
+        "EXTRAORDINARY FUNDING",
+        "Raw DEFC values preserved",
+        cur.fetchone()[0],
+        "unaccounted or invalid revision-aware DEFC preservation failures were found",
+    )
+
+
+def check_covid_ob(cur, b):
+    return _numeric_preservation(
+        cur,
+        b,
+        "EXTRA-002",
+        "COVID obligation values preserved",
+        "obligated_amount_from_COVID-19_supplementals_for_overall_award",
+        "covid_overall_award_obligation",
+    )
+
+
+def check_covid_out(cur, b):
+    return _numeric_preservation(
+        cur,
+        b,
+        "EXTRA-003",
+        "COVID outlay values preserved",
+        "outlayed_amount_from_COVID-19_supplementals_for_overall_award",
+        "covid_overall_award_outlay",
+    )
+
+
+def check_iija_ob(cur, b):
+    return _numeric_preservation(
+        cur,
+        b,
+        "EXTRA-004",
+        "IIJA obligation values preserved",
+        "obligated_amount_from_IIJA_supplemental_for_overall_award",
+        "iija_overall_award_obligation",
+    )
+
+
+def check_iija_out(cur, b):
+    return _numeric_preservation(
+        cur,
+        b,
+        "EXTRA-005",
+        "IIJA outlay values preserved",
+        "outlayed_amount_from_IIJA_supplemental_for_overall_award",
+        "iija_overall_award_outlay",
+    )
 
 def check_funding_partition(cur,batch):
     cur.execute("""WITH x AS (
-      SELECT federal_action_obligation,
-      CASE WHEN is_covid THEN 'COVID' WHEN is_iija THEN 'IIJA'
-           WHEN is_extraordinary THEN 'OTHER_EXTRAORDINARY' ELSE 'ORDINARY' END c
-      FROM analysis.v_assistance_geographic_attribution
-      WHERE load_batch_id=%s AND geographic_attribution_class IN ('WA_COUNTY','WA_UNSPECIFIED','GEOGRAPHY_CONFLICT'))
-      SELECT COALESCE(SUM(federal_action_obligation),0),
-             COALESCE(SUM(federal_action_obligation) FILTER (WHERE c='COVID'),0)
-            +COALESCE(SUM(federal_action_obligation) FILTER (WHERE c='IIJA'),0)
-            +COALESCE(SUM(federal_action_obligation) FILTER (WHERE c='OTHER_EXTRAORDINARY'),0)
-            +COALESCE(SUM(federal_action_obligation) FILTER (WHERE c='ORDINARY'),0)
-      FROM x""",(batch,))
-    total,decomp=map(Decimal,cur.fetchone()); diff=decomp-total; ok=diff==0
-    return CertificationCheck("EXTRA-006","EXTRAORDINARY FUNDING","Exclusive funding classes reconcile",_status(ok),f"${diff:,.2f}","$0.00 difference")
+      SELECT
+        federal_action_obligation,
+        CASE
+          WHEN is_covid THEN 'COVID'
+          WHEN is_iija THEN 'IIJA'
+          WHEN is_extraordinary THEN 'OTHER_EXTRAORDINARY'
+          ELSE 'ORDINARY'
+        END c
+      FROM analysis.v_assistance_observation_geographic_attribution
+      WHERE observation_load_batch_id=%s
+        AND geographic_attribution_class IN
+          ('WA_COUNTY','WA_UNSPECIFIED','GEOGRAPHY_CONFLICT')
+    )
+    SELECT
+      COALESCE(SUM(federal_action_obligation),0),
+      COALESCE(SUM(federal_action_obligation)
+        FILTER (WHERE c='COVID'),0)
+      + COALESCE(SUM(federal_action_obligation)
+        FILTER (WHERE c='IIJA'),0)
+      + COALESCE(SUM(federal_action_obligation)
+        FILTER (WHERE c='OTHER_EXTRAORDINARY'),0)
+      + COALESCE(SUM(federal_action_obligation)
+        FILTER (WHERE c='ORDINARY'),0)
+    FROM x""",(batch,))
+    total,decomp=map(Decimal,cur.fetchone())
+    diff=decomp-total
+    ok=diff==0
+    return CertificationCheck(
+      "EXTRA-006",
+      "EXTRAORDINARY FUNDING",
+      "Exclusive funding classes reconcile",
+      _status(ok),
+      f"${diff:,.2f}",
+      "$0.00 difference")
 
 # ---------------- FINANCIAL ----------------
 
@@ -247,7 +482,7 @@ def check_batch_obligations(cur,batch):
     cur.execute(f"""WITH p AS (
       SELECT {_raw_numeric('federal_action_obligation')} r,t.federal_action_obligation n
       FROM assistance.raw_award_transaction raw
-      JOIN assistance.award_transaction t ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
+      JOIN assistance.award_transaction t ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
       WHERE raw.load_batch_id=%s)
       SELECT COUNT(*),COALESCE(SUM(r),0),COALESCE(SUM(n),0) FROM p""",(batch,))
     rows,raw_total,norm_total=cur.fetchone(); diff=Decimal(norm_total)-Decimal(raw_total); ok=int(rows)>0 and diff==0
@@ -257,28 +492,61 @@ def check_txn_obligations(cur,batch):
     cur.execute(f"""SELECT COUNT(*),COUNT(*) FILTER (
       WHERE ({_raw_numeric('federal_action_obligation')}) IS DISTINCT FROM t.federal_action_obligation)
       FROM assistance.raw_award_transaction raw
-      JOIN assistance.award_transaction t ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
+      JOIN assistance.award_transaction t ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
       WHERE raw.load_batch_id=%s""",(batch,))
     total,bad=map(int,cur.fetchone()); ok=bad==0 and total>0
     return CertificationCheck("FIN-002","FINANCIAL CERTIFICATION","Transaction obligations reconcile",_status(ok),f"{total-bad}/{total}",f"{total}/{total}")
 
 def check_negative(cur,batch):
-    cur.execute("""SELECT COUNT(*),COALESCE(SUM(federal_action_obligation),0)
-      FROM assistance.award_transaction WHERE load_batch_id=%s AND federal_action_obligation<0""",(batch,))
+    cur.execute("""SELECT COUNT(*),COALESCE(SUM(t.federal_action_obligation),0)
+      FROM assistance.raw_award_transaction raw
+      JOIN assistance.award_transaction t
+        ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
+      WHERE raw.load_batch_id=%s AND t.federal_action_obligation<0""",(batch,))
     n,amt=cur.fetchone()
     return CertificationCheck("FIN-003","FINANCIAL CERTIFICATION","Negative obligations preserved",CheckStatus.PASS,f"{int(n)} rows, ${Decimal(amt):,.2f}")
 
 def check_zero(cur,batch):
-    cur.execute("""SELECT COUNT(*) FROM assistance.award_transaction
-      WHERE load_batch_id=%s AND federal_action_obligation=0""",(batch,))
+    cur.execute("""SELECT COUNT(*)
+      FROM assistance.raw_award_transaction raw
+      JOIN assistance.award_transaction t
+        ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
+      WHERE raw.load_batch_id=%s AND t.federal_action_obligation=0""",(batch,))
     return CertificationCheck("FIN-004","FINANCIAL CERTIFICATION","Zero-dollar transactions preserved",CheckStatus.PASS,int(cur.fetchone()[0]))
 
-def _fields(cur,batch,code,label,pairs):
-    clauses=" OR ".join([f"({_raw_numeric(r)}) IS DISTINCT FROM t.{n}" for r,n in pairs])
-    cur.execute(f"""SELECT COUNT(*) FROM assistance.raw_award_transaction raw
-      JOIN assistance.award_transaction t ON t.load_batch_id=raw.load_batch_id AND t.source_row_number=raw.source_row_number
-      WHERE raw.load_batch_id=%s AND ({clauses})""",(batch,))
-    return _zero(code,"FINANCIAL CERTIFICATION",label,cur.fetchone()[0],"raw/normalized field mismatches were found")
+def _fields(cur, batch, code, label, pairs):
+    field_queries = []
+
+    for raw_field, norm_col in pairs:
+        field_queries.append(
+            _field_preservation_sql(
+                raw_field,
+                norm_col,
+                numeric=True,
+            )
+        )
+
+    union_sql = "\nUNION ALL\n".join(field_queries)
+    params = tuple(batch for _ in pairs)
+
+    cur.execute(
+        f"""
+        SELECT COUNT(DISTINCT raw_assistance_transaction_id)
+        FROM (
+            {union_sql}
+        ) AS x
+        WHERE preservation_failure
+        """,
+        params,
+    )
+
+    return _zero(
+        code,
+        "FINANCIAL CERTIFICATION",
+        label,
+        cur.fetchone()[0],
+        "observations contain unaccounted or invalid revision-aware financial preservation failures",
+    )
 
 def check_loan_fields(cur,b):
     return _fields(cur,b,"FIN-005","Loan financial fields preserved",(
@@ -296,27 +564,67 @@ def check_nonfed_fields(cur,b):
 
 def check_ledger_count(cur,batch):
     cur.execute("""SELECT
-      (SELECT COUNT(*) FROM assistance.award_transaction WHERE load_batch_id=%s),
-      (SELECT COUNT(*) FROM analysis.v_certified_assistance_ledger WHERE load_batch_id=%s)""",(batch,batch))
-    txn,ledger=map(int,cur.fetchone()); ok=txn>0 and txn==ledger
-    return CertificationCheck("REC-001","ANALYTICAL RECONCILIATION","Certified ledger count reconciles",_status(ok),f"{ledger}/{txn}",txn)
+      (SELECT COUNT(*)
+         FROM assistance.raw_award_transaction
+        WHERE load_batch_id=%s),
+      (SELECT COUNT(*)
+         FROM analysis.v_assistance_transaction_observation_ledger
+        WHERE observation_load_batch_id=%s)""",(batch,batch))
+    observations,ledger=map(int,cur.fetchone())
+    ok=observations>0 and observations==ledger
+    return CertificationCheck(
+      "REC-001",
+      "ANALYTICAL RECONCILIATION",
+      "Observation ledger count reconciles",
+      _status(ok),
+      f"{ledger}/{observations}",
+      observations)
+
 
 def check_geo_partition(cur,batch):
-    cur.execute("""SELECT COUNT(*),COUNT(*) FILTER (WHERE geographic_attribution_class IN
-      ('WA_COUNTY','WA_UNSPECIFIED','GEOGRAPHY_CONFLICT','NON_WASHINGTON'))
-      FROM analysis.v_assistance_geographic_attribution WHERE load_batch_id=%s""",(batch,))
-    total,classified=map(int,cur.fetchone()); ok=total>0 and total==classified
-    return CertificationCheck("REC-002","ANALYTICAL RECONCILIATION","Geographic partition reconciles",_status(ok),f"{classified}/{total}",total)
+    cur.execute("""SELECT
+      COUNT(*),
+      COUNT(*) FILTER (
+        WHERE geographic_attribution_class IN
+          ('WA_COUNTY','WA_UNSPECIFIED',
+           'GEOGRAPHY_CONFLICT','NON_WASHINGTON')
+      )
+      FROM analysis.v_assistance_observation_geographic_attribution
+      WHERE observation_load_batch_id=%s""",(batch,))
+    total,classified=map(int,cur.fetchone())
+    ok=total>0 and total==classified
+    return CertificationCheck(
+      "REC-002",
+      "ANALYTICAL RECONCILIATION",
+      "Observation geographic partition reconciles",
+      _status(ok),
+      f"{classified}/{total}",
+      total)
+
 
 def check_wa_partition(cur,batch):
-    cur.execute("""SELECT COALESCE(SUM(federal_action_obligation),0),
-      COALESCE(SUM(federal_action_obligation) FILTER (WHERE geographic_attribution_class='WA_COUNTY'),0)
-     +COALESCE(SUM(federal_action_obligation) FILTER (WHERE geographic_attribution_class='WA_UNSPECIFIED'),0)
-     +COALESCE(SUM(federal_action_obligation) FILTER (WHERE geographic_attribution_class='GEOGRAPHY_CONFLICT'),0)
-      FROM analysis.v_assistance_geographic_attribution
-      WHERE load_batch_id=%s AND geographic_attribution_class IN ('WA_COUNTY','WA_UNSPECIFIED','GEOGRAPHY_CONFLICT')""",(batch,))
-    total,parts=map(Decimal,cur.fetchone()); diff=parts-total; ok=diff==0
-    return CertificationCheck("REC-003","ANALYTICAL RECONCILIATION","Washington obligation partition reconciles",_status(ok),f"${diff:,.2f}","$0.00 difference")
+    cur.execute("""SELECT
+      COALESCE(SUM(federal_action_obligation),0),
+      COALESCE(SUM(federal_action_obligation)
+        FILTER (WHERE geographic_attribution_class='WA_COUNTY'),0)
+      + COALESCE(SUM(federal_action_obligation)
+        FILTER (WHERE geographic_attribution_class='WA_UNSPECIFIED'),0)
+      + COALESCE(SUM(federal_action_obligation)
+        FILTER (WHERE geographic_attribution_class='GEOGRAPHY_CONFLICT'),0)
+      FROM analysis.v_assistance_observation_geographic_attribution
+      WHERE observation_load_batch_id=%s
+        AND geographic_attribution_class IN
+          ('WA_COUNTY','WA_UNSPECIFIED','GEOGRAPHY_CONFLICT')""",(batch,))
+    total,parts=map(Decimal,cur.fetchone())
+    diff=parts-total
+    ok=diff==0
+    return CertificationCheck(
+      "REC-003",
+      "ANALYTICAL RECONCILIATION",
+      "Washington observation obligation partition reconciles",
+      _status(ok),
+      f"${diff:,.2f}",
+      "$0.00 difference")
 
 CHECKS = (
     check_raw_exists, check_txn_exists, check_awards_exist, check_counts_reconcile,

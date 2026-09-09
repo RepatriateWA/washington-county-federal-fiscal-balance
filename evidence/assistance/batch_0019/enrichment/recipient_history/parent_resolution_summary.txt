@@ -1,0 +1,8 @@
+load_batch_id=19
+parent_observations=16043
+resolved_parent_observations=6569
+unresolved_parent_observations=9474
+unresolved_with_uei=5606
+distinct_unresolved_parent_ueis=197
+unresolved_name_only=3868
+canonical_matches_among_unresolved_ueis=0
