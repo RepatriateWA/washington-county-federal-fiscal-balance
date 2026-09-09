@@ -163,8 +163,7 @@ def check_rel_history(cur,batch):
         SELECT 1 FROM assistance.award_recipient_history h
         WHERE h.load_batch_id=raw.load_batch_id
           AND h.source_row_number=raw.source_row_number
-          AND h.assistance_transaction_id=t.assistance_transaction_id
-          AND h.recipient_id=t.recipient_id))
+          AND h.assistance_transaction_id=t.assistance_transaction_id))
       FROM assistance.raw_award_transaction raw
       JOIN assistance.award_transaction t
         ON t.assistance_transaction_unique_key=raw.assistance_transaction_unique_key
