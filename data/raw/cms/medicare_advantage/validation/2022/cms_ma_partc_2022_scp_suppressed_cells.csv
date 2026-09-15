@@ -1,0 +1,9 @@
+year,month,county,plan_type,ssa_code,fips_code,source_value,analytical_lower,analytical_central,analytical_upper,method
+2022,2,Garfield,HMO/HMOPOS,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
+2022,3,Garfield,HMO/HMOPOS,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
+2022,4,Garfield,Local PPO,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
+2022,5,Garfield,HMO/HMOPOS,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
+2022,8,Garfield,HMO/HMOPOS,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
+2022,9,Garfield,HMO/HMOPOS,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
+2022,10,Garfield,HMO/HMOPOS,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
+2022,11,Garfield,HMO/HMOPOS,50110,53023,.,0.0,5.0,10.0,WCFFBP conservative SCP suppression bound
