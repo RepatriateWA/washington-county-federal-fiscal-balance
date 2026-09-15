@@ -1,0 +1,65 @@
+============================================================================================================
+CMS MEDICARE ADVANTAGE CY2022 WASHINGTON PART C PAYMENT RECONSTRUCTION v0.2
+============================================================================================================
+
+Method:
+  Published CPSC enrollment is linked to the CMS 2022 county payment PUF.
+  PMPM = (standardized A/B PMPM x risk score) + rebate PMPM.
+  SCP provides the HMO/HMOPOS + Local PPO aggregate enrollment control.
+  SCP '.' cells remain suppressed and are modeled at 0 / 5 / 10 enrollees.
+  The value 5 is a sensitivity midpoint, not a recovered CMS enrollment value.
+
+MONTHLY RESULTS
+------------------------------------------------------------------------------------------------------------
+Month    CPSC Enroll   SCP Published   SCP Supp   SCP Central   Residual Central   Central Payment
+2022-01       591,037         596,173          0       596,173              5,136   $   585,081,854.59
+2022-02       601,008         606,148          1       606,153              5,145   $   594,609,272.97
+2022-03       602,607         607,651          1       607,656              5,049   $   596,329,996.57
+2022-04       604,562         609,520          1       609,525              4,963   $   598,553,757.37
+2022-05       606,777         611,737          1       611,742              4,965   $   601,307,485.73
+2022-06       609,064         613,897          0       613,897              4,833   $   603,853,148.74
+2022-07       611,438         616,305          0       616,305              4,867   $   606,602,303.70
+2022-08       614,473         619,433          1       619,438              4,965   $   609,982,722.38
+2022-09       616,556         621,441          1       621,446              4,890   $   612,254,110.64
+2022-10       619,411         624,297          1       624,302              4,891   $   615,414,553.93
+2022-11       620,854         625,872          1       625,877              5,023   $   617,325,227.26
+2022-12       622,228         627,117          0       627,117              4,889   $   618,533,530.47
+
+CY2022 RECONSTRUCTION
+------------------------------------------------------------------------------------------------------------
+CPSC published member-months:       7,320,015
+SCP published member-months:        7,379,591
+SCP suppressed target cells:        8
+SCP member-month bounds:            7,379,591 / 7,379,631 / 7,379,671
+CPSC residual member-month bounds:  59,576 / 59,616 / 59,656
+CPSC annual central coverage:       99.192155%
+
+Published-enrollment payment:       $7,201,202,611.74
+Suppression-corrected lower:        $7,241,106,325.80
+Suppression-corrected central:      $7,259,847,964.35
+Suppression-corrected upper:        $7,384,621,098.48
+
+Central annual PMPM:                $983.77
+Combined uncertainty width:         $143,514,772.67
+Combined uncertainty as % central:  1.976829%
+
+Months passing reconstruction:      12/12
+
+SCP SUPPRESSION OBSERVATIONS
+------------------------------------------------------------------------------------------------------------
+2022-02: Garfield / HMO/HMOPOS / source='.' / analytical bound=0/5/10
+2022-03: Garfield / HMO/HMOPOS / source='.' / analytical bound=0/5/10
+2022-04: Garfield / Local PPO / source='.' / analytical bound=0/5/10
+2022-05: Garfield / HMO/HMOPOS / source='.' / analytical bound=0/5/10
+2022-08: Garfield / HMO/HMOPOS / source='.' / analytical bound=0/5/10
+2022-09: Garfield / HMO/HMOPOS / source='.' / analytical bound=0/5/10
+2022-10: Garfield / HMO/HMOPOS / source='.' / analytical bound=0/5/10
+2022-11: Garfield / HMO/HMOPOS / source='.' / analytical bound=0/5/10
+
+============================================================================================================
+STATUS: CY2022 CMS MA PART C ANNUAL RECONSTRUCTION PASS
+
+This is a historical methodological replication using CMS source data.
+SCP suppressed cells are explicitly bounded and are not treated as observed zeros.
+This does NOT establish complete Medicare state-ledger readiness, complete Medicare coverage, or FFY accounting.
+============================================================================================================

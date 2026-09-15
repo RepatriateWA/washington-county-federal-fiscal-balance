@@ -1,0 +1,63 @@
+================================================================================================
+CMS MEDICARE ADVANTAGE CY2022 WASHINGTON SOURCE VALIDATION
+================================================================================================
+
+Months passing: 12/12
+
+MONTHLY ENROLLMENT RECONCILIATION
+------------------------------------------------------------------------------------------------
+Month    Status   CPSC Published   SCP Published   Residual   Coverage %   Suppressed Rows
+2022-01   PASS             591037        596173       5136    99.138505             28989
+2022-02   PASS             601008        606148       5140    99.152022             28967
+2022-03   PASS             602607        607651       5044    99.169918             28883
+2022-04   PASS             604562        609520       4958    99.186573             28804
+2022-05   PASS             606777        611737       4960    99.189194             28846
+2022-06   PASS             609064        613897       4833    99.212734             28779
+2022-07   PASS             611438        616305       4867    99.210294             28791
+2022-08   PASS             614473        619433       4960    99.199268             28856
+2022-09   PASS             616556        621441       4885    99.213924             28831
+2022-10   PASS             619411        624297       4886     99.21736             28825
+2022-11   PASS             620854        625872       5018    99.198239             28881
+2022-12   PASS             622228        627117       4889    99.220401             28818
+
+CPSC CONTRACT-INFO JOIN
+------------------------------------------------------------------------------------------------
+2022-01: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-02: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-03: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-04: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-05: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-06: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-07: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-08: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-09: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-10: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-11: duplicate keys=0; unresolved WA rows=0; target counties=39
+2022-12: duplicate keys=0; unresolved WA rows=0; target counties=39
+
+SNP LINKAGE
+------------------------------------------------------------------------------------------------
+2022-01: non-EGHP CPSC SNP plans=138; resolved=138; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-02: non-EGHP CPSC SNP plans=142; resolved=142; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-03: non-EGHP CPSC SNP plans=139; resolved=139; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-04: non-EGHP CPSC SNP plans=140; resolved=140; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-05: non-EGHP CPSC SNP plans=137; resolved=137; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-06: non-EGHP CPSC SNP plans=133; resolved=133; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-07: non-EGHP CPSC SNP plans=139; resolved=139; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-08: non-EGHP CPSC SNP plans=135; resolved=135; unresolved=0; ambiguous=0; CMS Under-11 rows=0
+2022-09: non-EGHP CPSC SNP plans=145; resolved=145; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-10: non-EGHP CPSC SNP plans=164; resolved=164; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-11: non-EGHP CPSC SNP plans=154; resolved=154; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+2022-12: non-EGHP CPSC SNP plans=148; resolved=148; unresolved=0; ambiguous=0; CMS Under-11 rows=3
+
+FAILURES
+------------------------------------------------------------------------------------------------
+None
+
+================================================================================================
+STATUS: CY2022 CMS MA WASHINGTON SOURCE VALIDATION PASS
+
+All 12 months support the Washington source-level enrollment, contract-info, suppression-observation, and SNP-linkage architecture.
+
+This does NOT yet constitute Medicare Advantage payment validation or final-ledger certification.
+================================================================================================
