@@ -1,0 +1,53 @@
+================================================================================
+CMS MEDICARE ADVANTAGE PART C — FULL SOURCE DISCOVERY SUMMARY
+================================================================================
+
+REQUIRED SOURCE UNIVERSE
+Monthly reconstruction window: October 2014 through September 2024
+Plan Payment years: CY2014-CY2024
+Monthly source slots: 360
+Annual Plan Payment slots: 11
+Total required source slots: 371
+
+LOCAL ACQUISITION STATUS
+PRESENT:     45
+NOT_PRESENT: 326
+
+OFFICIAL CMS DISCOVERY STATUS
+AVAILABLE_OFFICIAL: 371
+LANDING_ONLY:       0
+NOT_LOCATED:        0
+REQUIRES_REVIEW:    0
+
+DISCOVERY BY SOURCE FAMILY
+CPSC         required=120  available=120  landing_only=  0  not_located=  0  review=  0
+SCC_SCP      required=120  available=120  landing_only=  0  not_located=  0  review=  0
+SNP          required=120  available=120  landing_only=  0  not_located=  0  review=  0
+PLAN_PAYMENT required= 11  available= 11  landing_only=  0  not_located=  0  review=  0
+
+MANIFEST INVARIANTS
+PASS: manifest rows = 371; expected 371
+PASS: monthly rows = 360; expected 360
+PASS: annual rows = 11; expected 11
+PASS: CPSC rows = 120; expected 120
+PASS: CPSC unique periods = 120; expected 120
+PASS: SCC_SCP rows = 120; expected 120
+PASS: SCC_SCP unique periods = 120; expected 120
+PASS: SNP rows = 120; expected 120
+PASS: SNP unique periods = 120; expected 120
+PASS: Plan Payment unique years = 11; expected 11
+PASS: every required source slot has a discovery status
+PASS: no duplicate required-source identities
+
+RESULT: ALL MANIFEST INVARIANTS PASS
+
+INTERPRETATION
+AVAILABLE_OFFICIAL means an official CMS landing page resolved and the source-family availability criterion was satisfied.
+For monthly CPSC, SCC/SCP, and SNP sources, this requires at least one linked binary artifact.
+For annual Plan Payment sources, this additionally requires at least one binary artifact semantically identifiable as Plan Payment/payment data for the requested year.
+LANDING_ONLY means an official CMS landing page resolved but no binary artifact link was extracted.
+NOT_LOCATED means this discovery pass did not locate a period-specific official CMS landing link.
+REQUIRES_REVIEW means an official CMS URL was identified but the HTTP/discovery result requires investigation.
+PRESENT and NOT_PRESENT describe local repository acquisition status and are independent of official CMS availability.
+Artifact links are preserved as discovered. This script does not select the authoritative dataset artifact for acquisition.
+No source dataset was downloaded and no database write was performed.
