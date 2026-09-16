@@ -1,0 +1,58 @@
+==============================================================================
+OCTOBER 2014 — WASHINGTON MEDICARE ADVANTAGE PART C RECONSTRUCTION
+==============================================================================
+
+SCOPE
+HMO/HMOPOS + Local PPO only; October 2014; Washington State
+
+PUBLISHED CPSC ENROLLMENT
+Published enrollment:              337,886
+Published payment reconstruction:  $245,848,633.80
+Published weighted PMPM:           $727.61
+
+SCC/CPSC SUPPRESSION RECONCILIATION
+SCC published subtotal:            339,206
+CPSC published subtotal:           337,886
+SCC minus CPSC residual:           +1,320
+
+RESIDUAL BY PRODUCT
+HMO        residual=+652  weighted PMPM=$739.49  range=$498.27–$2,099.23
+LOCAL PPO  residual=+668  weighted PMPM=$671.76  range=$443.52–$1,069.83
+
+SUPPRESSION-CORRECTED PAYMENT RANGE
+Lower:                             $246,469,777.00
+Central:                           $246,779,519.02
+Upper:                             $247,931,978.08
+Central effective PMPM:            $727.52
+Uncertainty width:                 $1,462,201.08
+Uncertainty / central:             0.592513%
+
+SUPPRESSED CPSC OBSERVATIONS
+Suppressed rows:                   14,496
+With published payment cell:       13,181
+Without published payment cell:    1,315
+
+INVARIANTS
+PASS: CPSC published enrollment reproduces prior result — 337,886
+PASS: SCC published enrollment reproduces prior result — 339,206
+PASS: SCC-CPSC residual reproduces prior result — +1,320
+PASS: All published CPSC enrollment has a payment cell — 0 unlinked rows
+PASS: All SNP CPSC rows have resolved subtype — 0 unresolved rows
+PASS: Payment keys are unique — 0 duplicates
+PASS: Residual product components reconcile — +1,320
+PASS: Lower <= central — $246,469,777.00 <= $246,779,519.02
+PASS: Central <= upper — $246,779,519.02 <= $247,931,978.08
+PASS: Published payment <= lower corrected payment — $245,848,633.80 <= $246,469,777.00
+PASS: Suppressed CPSC rows remain excluded from published count — 15,023 = 527 + 14,496
+
+RESULT: 11/11 reconstruction checks PASS
+
+METHODOLOGICAL NOTES
+1. No suppressed CPSC source value is converted into an enrollment count.
+2. The SCC-CPSC residual is not treated as a second additive beneficiary population.
+3. The residual is a suppression-reconciliation quantity arising from two CMS enrollment representations.
+4. Residual payment uncertainty uses published WA product-level PMPM bounds and weighted central PMPM.
+5. No missing county or SNP payment cell is fabricated.
+6. Suppressed observation row counts are not interpreted as beneficiary counts.
+7. This is a methodological reconstruction, not an independent CMS statewide expenditure control.
+8. This result does not establish complete Medicare or state-ledger readiness.
