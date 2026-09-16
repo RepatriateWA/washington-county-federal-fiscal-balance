@@ -1,0 +1,50 @@
+================================================================================
+CMS MEDICARE ADVANTAGE PART C — REQUIRED SOURCE INVENTORY
+================================================================================
+
+SCOPE
+Required reconstruction window: October 2014 through September 2024
+Required monthly periods: 120
+Required monthly source families: CPSC, SCC/SCP, SNP
+Required monthly source slots: 360
+Required annual Plan Payment years: 11 (CY2014-CY2024)
+
+MONTHLY LOCAL INVENTORY
+CPSC     required=120  present= 14  missing=106
+SCC_SCP  required=120  present= 14  missing=106
+SNP      required=120  present= 14  missing=106
+
+PLAN PAYMENT LOCAL INVENTORY
+Required years: 11
+Present years:  3
+Missing years:  8
+
+PRESENT MONTHLY PERIODS
+CPSC    : 2014-10, 2022-01, 2022-02, 2022-03, 2022-04, 2022-05, 2022-06, 2022-07, 2022-08, 2022-09, 2022-10, 2022-11, 2022-12, 2024-01
+SCC_SCP : 2014-10, 2022-01, 2022-02, 2022-03, 2022-04, 2022-05, 2022-06, 2022-07, 2022-08, 2022-09, 2022-10, 2022-11, 2022-12, 2024-01
+SNP     : 2014-10, 2022-01, 2022-02, 2022-03, 2022-04, 2022-05, 2022-06, 2022-07, 2022-08, 2022-09, 2022-10, 2022-11, 2022-12, 2024-01
+
+PRESENT PLAN PAYMENT YEARS
+2014, 2022, 2024
+
+ZIP INTEGRITY EXCEPTIONS
+NONE
+
+DUPLICATE/MULTIPLE-ZIP FOLDERS
+NONE
+
+REQUIRED-SLOT ACCOUNTING
+Monthly source slots required: 360
+Monthly source slots present:  42
+Monthly source slots missing:  318
+Annual payment slots required: 11
+Annual payment slots present:  3
+Annual payment slots missing:  8
+
+STATUS INTERPRETATION
+PRESENT means a ZIP artifact exists in the expected local repository location.
+NOT_PRESENT means the required artifact is not currently found locally.
+NOT_PRESENT does NOT mean CMS does not publish or retain the source.
+CMS availability and official source discovery are separate subsequent validation steps.
+
+This inventory performs no network access, downloads, or database writes.
