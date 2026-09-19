@@ -183,6 +183,28 @@ def classify_href(
 # MONTHLY LANDING-PAGE DISCOVERY
 # ============================================================================
 
+def monthly_index_candidate_matches_source_family(
+    source_type: str,
+    haystack: str,
+) -> bool:
+    """
+    Require source-family identity when an official CMS index exposes more
+    than one product for the same reporting period.
+
+    The Contract/Plan/State/County index contains an anomalous duplicate for
+    2021-06: both "Enrollment by Contract" and "Monthly Enrollment by CPSC".
+    A period-only match can therefore resolve to the wrong CMS product.
+
+    CPSC slots must explicitly identify the CPSC product family.  The other
+    monthly families retain their existing authoritative-index behavior; their
+    indexes are already family-specific and have historical naming variation.
+    """
+    if source_type == "CPSC":
+        return "cpsc" in haystack.lower()
+
+    return True
+
+
 def find_period_link(
     html: str,
     base_url: str,
@@ -242,6 +264,12 @@ def find_period_link(
         )
 
         if not (year_match and month_match):
+            continue
+
+        if not monthly_index_candidate_matches_source_family(
+            source_type,
+            haystack,
+        ):
             continue
 
         candidates.append(
@@ -1360,7 +1388,8 @@ def main() -> None:
     )
     lines.append(
         "For monthly CPSC, SCC/SCP, and SNP sources, this requires at "
-        "least one linked binary artifact."
+        "least one linked binary artifact; CPSC period links must also "
+        "explicitly identify the CPSC product family."
     )
     lines.append(
         "For annual Plan Payment sources, this additionally requires at "

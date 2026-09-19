@@ -43,7 +43,7 @@ RESULT: ALL MANIFEST INVARIANTS PASS
 
 INTERPRETATION
 AVAILABLE_OFFICIAL means an official CMS landing page resolved and the source-family availability criterion was satisfied.
-For monthly CPSC, SCC/SCP, and SNP sources, this requires at least one linked binary artifact.
+For monthly CPSC, SCC/SCP, and SNP sources, this requires at least one linked binary artifact; CPSC period links must also explicitly identify the CPSC product family.
 For annual Plan Payment sources, this additionally requires at least one binary artifact semantically identifiable as Plan Payment/payment data for the requested year.
 LANDING_ONLY means an official CMS landing page resolved but no binary artifact link was extracted.
 NOT_LOCATED means this discovery pass did not locate a period-specific official CMS landing link.
