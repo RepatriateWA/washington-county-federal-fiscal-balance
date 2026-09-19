@@ -121,37 +121,62 @@ def normalize(text: str) -> str:
     return " ".join(str(text).split())
 
 
-def classify_href(href: str) -> str:
+def classify_href(
+    href: str,
+    link_text: str = "",
+) -> str:
     """
-    Classify linked binary artifacts by URL suffix.
+    Classify linked binary artifacts.
+
+    Prefer the URL suffix when present.  For legacy CMS download links
+    whose href is extensionless, allow the visible link text to establish
+    the artifact type.
 
     Query strings and fragments are removed before suffix testing.
     CMS may append a numeric revision suffix to file URLs, for example
     ".zip-0"; these are treated as the underlying binary type.
     """
-    lower = href.lower().split("?", 1)[0].split("#", 1)[0]
 
-    # CMS sometimes appends a numeric revision suffix to a file path,
-    # e.g. "2022-plan-payment.zip-0".  Remove only such a terminal
-    # numeric suffix before testing the actual file extension.
-    lower = re.sub(
-        r"(\.(?:zip|xlsx|xls|csv|pdf))-\d+$",
-        r"\1",
-        lower,
+    def classify_value(value: str) -> str:
+        lower = (
+            value.lower()
+            .split("?", 1)[0]
+            .split("#", 1)[0]
+            .strip()
+        )
+
+        # CMS sometimes appends a numeric revision suffix to a file path,
+        # e.g. "2022-plan-payment.zip-0".
+        lower = re.sub(
+            r"(\.(?:zip|xlsx|xls|csv|pdf))-\d+$",
+            r"\1",
+            lower,
+        )
+
+        if lower.endswith(".zip"):
+            return "ZIP"
+        if lower.endswith(".xlsx"):
+            return "XLSX"
+        if lower.endswith(".xls"):
+            return "XLS"
+        if lower.endswith(".csv"):
+            return "CSV"
+        if lower.endswith(".pdf"):
+            return "PDF"
+
+        return "OTHER"
+
+    # Normal/current CMS form: classify from URL.
+    artifact_type = classify_value(href)
+
+    if artifact_type != "OTHER":
+        return artifact_type
+
+    # Legacy CMS form: the href may be extensionless while the
+    # authoritative visible download label contains the filename.
+    return classify_value(
+        normalize(link_text)
     )
-
-    if lower.endswith(".zip"):
-        return "ZIP"
-    if lower.endswith(".xlsx"):
-        return "XLSX"
-    if lower.endswith(".xls"):
-        return "XLS"
-    if lower.endswith(".csv"):
-        return "CSV"
-    if lower.endswith(".pdf"):
-        return "PDF"
-
-    return "OTHER"
 
 
 # ============================================================================
@@ -262,7 +287,10 @@ def discover_download_links(
             anchor["href"],
         )
 
-        artifact_type = classify_href(href)
+        artifact_type = classify_href(
+            href,
+            text,
+        )
 
         if artifact_type == "OTHER":
             continue
