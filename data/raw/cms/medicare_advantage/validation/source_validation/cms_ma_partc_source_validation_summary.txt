@@ -1,0 +1,46 @@
+================================================================================
+CMS MEDICARE ADVANTAGE PART C SOURCE ARCHIVE VALIDATION
+================================================================================
+
+Validation universe: canonical acquisition-manifest artifacts only.
+Noncanonical ZIPs present elsewhere on disk are outside this validation universe.
+This validator is read-only with respect to CMS source artifacts and performs no database writes.
+
+SOURCE UNIVERSE
+--------------------------------------------------------------------------------
+Expected canonical artifacts : 371
+Manifest rows                : 371
+Validation result rows       : 371
+
+CPSC           expected 120 | observed 120
+SCC_SCP        expected 120 | observed 120
+SNP            expected 120 | observed 120
+PLAN_PAYMENT   expected  11 | observed  11
+
+VALIDATION STATUS
+--------------------------------------------------------------------------------
+PASS    : 371
+REVIEW  :   0
+FAIL    :   0
+
+INTEGRITY
+--------------------------------------------------------------------------------
+File exists                   : 371/371
+Byte count matches            : 371/371
+SHA-256 matches               : 371/371
+ZIP integrity passes          : 371/371
+Source-family semantics pass  : 371/371
+
+STRUCTURAL FAMILIES
+--------------------------------------------------------------------------------
+Distinct schema families: 371
+CPSC          : 120 schema families
+SCC_SCP       : 120 schema families
+SNP           : 120 schema families
+PLAN_PAYMENT  :  11 schema families
+
+INTERPRETATION
+--------------------------------------------------------------------------------
+RESULT: PASS — all 371 canonical CMS Medicare Advantage Part C source artifacts passed archive-level provenance, integrity, structural, and source-family semantic validation.
+
+Archive-level PASS does not establish economic reconstruction, payment completeness, statewide Medicare ledger readiness, or final fiscal-balance inclusion. Those are subsequent validation layers.
