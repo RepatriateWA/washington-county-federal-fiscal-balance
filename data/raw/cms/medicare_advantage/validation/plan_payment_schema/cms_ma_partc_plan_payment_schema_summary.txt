@@ -1,0 +1,56 @@
+================================================================================
+CMS MEDICARE ADVANTAGE PART C PLAN PAYMENT SCHEMA VALIDATION
+================================================================================
+
+SCOPE
+--------------------------------------------------------------------------------
+Payment years: CY2014 through CY2024 inclusive.
+Source: canonical CMS Plan Payment Part C county-level workbooks.
+Validation is read-only with respect to CMS source artifacts and performs no database writes.
+
+SOURCE UNIVERSE
+--------------------------------------------------------------------------------
+Expected payment years : 11
+Validation result rows : 11
+
+VALIDATION STATUS
+--------------------------------------------------------------------------------
+PASS    : 11
+FAIL    :  0
+
+NORMALIZED CONTRACT
+--------------------------------------------------------------------------------
+  county_code
+  state_abbreviation
+  county_name
+  plan_type
+  snp_plan_type
+  average_part_c_risk_score
+  average_ab_pmpm_payment
+  average_rebate_pmpm_payment
+
+YEAR-BY-YEAR WASHINGTON CONTENT
+--------------------------------------------------------------------------------
+CY2014: PASS | WA rows=108 | counties=38 | plan types=4 | SNP types=2 | risk numeric=108
+CY2015: PASS | WA rows=105 | counties=38 | plan types=3 | SNP types=2 | risk numeric=105
+CY2016: PASS | WA rows=96 | counties=38 | plan types=3 | SNP types=2 | risk numeric=96
+CY2017: PASS | WA rows=98 | counties=38 | plan types=2 | SNP types=2 | risk numeric=98
+CY2018: PASS | WA rows=101 | counties=38 | plan types=3 | SNP types=2 | risk numeric=101
+CY2019: PASS | WA rows=105 | counties=38 | plan types=2 | SNP types=2 | risk numeric=105
+CY2020: PASS | WA rows=108 | counties=39 | plan types=2 | SNP types=2 | risk numeric=108
+CY2021: PASS | WA rows=116 | counties=39 | plan types=2 | SNP types=2 | risk numeric=116
+CY2022: PASS | WA rows=130 | counties=39 | plan types=2 | SNP types=2 | risk numeric=130
+CY2023: PASS | WA rows=162 | counties=39 | plan types=2 | SNP types=2 | risk numeric=162
+CY2024: PASS | WA rows=169 | counties=39 | plan types=2 | SNP types=3 | risk numeric=169
+
+EXPLICIT SOURCE-FORMAT VARIATIONS
+--------------------------------------------------------------------------------
+CY2014: Average Part Risk Score -> average_part_c_risk_score
+CY2017: Average A/B PM/PM Payment -> average_ab_pmpm_payment
+CY2024: A/B PMPM precedes risk score physically; header-based normalization used
+
+INTERPRETATION
+--------------------------------------------------------------------------------
+RESULT: PASS — all 11 canonical CMS Medicare Advantage Part C county Plan Payment sources map deterministically to one eight-field WCFFBP normalized semantic contract.
+
+A Plan Payment schema PASS establishes deterministic structural interpretability of the annual payment source and Washington content. It does not establish monthly enrollment linkage, payment completeness, reconstructed expenditures, Medicare state-ledger readiness, or final fiscal-balance inclusion.
