@@ -1,0 +1,49 @@
+================================================================================
+CMS MEDICARE ADVANTAGE PART C NORMALIZED MONTHLY SCHEMA VALIDATION
+================================================================================
+
+SCOPE
+--------------------------------------------------------------------------------
+Period: October 2014 through September 2024 inclusive.
+Sources: canonical CPSC, SCC/SCP, and SNP monthly artifacts.
+Plan Payment annual artifacts are outside this validation layer.
+Validation is read-only with respect to CMS source artifacts and performs no database writes.
+
+SOURCE UNIVERSE
+--------------------------------------------------------------------------------
+Expected monthly artifacts : 360
+Validation result rows     : 360
+CPSC       expected 120 | observed 120
+SCC_SCP    expected 120 | observed 120
+SNP        expected 120 | observed 120
+
+VALIDATION STATUS
+--------------------------------------------------------------------------------
+PASS    : 360
+FAIL    :   0
+
+NORMALIZED CONTRACTS
+--------------------------------------------------------------------------------
+CPSC CONTRACT_INFO  : 12 logical fields
+CPSC ENROLLMENT_INFO:  7 logical fields
+SCC/SCP PRIMARY     :  9 logical fields
+SNP                 : 14-field normalized semantic contract
+  2014-10 through 2022-06: 12 source-supplied fields + 2 structural NULL fields
+  2022-07 through 2024-09: 14 source-supplied logical fields
+
+SNP HEADER ROW DISTRIBUTION
+--------------------------------------------------------------------------------
+Physical header row  1:  15 months
+Physical header row 17:  93 months
+Physical header row 25:  12 months
+
+EXPLICIT SOURCE-FORMAT EXCEPTIONS
+--------------------------------------------------------------------------------
+SCC_SCP 2018-10: Primary CSV only; explicitly named alternative artifact is noncanonical ancillary packaging.
+SNP 2023-04: Verified 2023-04 duplicate Applicable Integrated Plan in 1,335/1,335 data rows; physical column 15 blank; duplicate collapsed to one logical field.
+
+INTERPRETATION
+--------------------------------------------------------------------------------
+RESULT: PASS — all 360 canonical monthly CMS Medicare Advantage Part C source artifacts map deterministically to the defined WCFFBP normalized logical contracts.
+
+A normalized-schema PASS establishes deterministic structural interpretability. It does not establish economic linkage, payment completeness, Medicare state-ledger readiness, or final fiscal-balance inclusion.
