@@ -1,0 +1,61 @@
+========================================================================================================================
+CMS MEDICARE TRUSTEES SOURCE-DETERMINED VINTAGE REVISION PROFILE v0.4
+========================================================================================================================
+
+READ-ONLY: measures post-source-determination revisions; selects no preferred vintage.
+
+Natural series key:
+  table_id + observation_year + accounting_scope + plan_type_normalized + component_normalized + unit + basis
+
+Raw control rows read                         : 6,454
+Certified vintage boundaries loaded           : 12
+Source-determined numeric observations         : 1,661
+Source-determined nonnumeric/source-missing    : 0
+Distinct natural series                        : 263
+Series eligible for revision analysis          : 263
+Adjacent vintage revision steps                : 1,398
+Series stable after first source-determined    : 57
+Series revised after first source-determined   : 206
+Duplicate natural series-vintage rows          : 0
+Errors                                         : 0
+
+CONTROL-YEAR / TABLE SUMMARY
+------------------------------------------------------------------------------------------------------------------------
+CY2015 IV.C2: series=5 multi-vintage=5 revised=2 latest-source-determined-vintage=2025 latest-revision-vintage=2024
+CY2015 IV.C3: series=24 multi-vintage=21 revised=16 latest-source-determined-vintage=2025 latest-revision-vintage=2025
+CY2016 IV.C2: series=5 multi-vintage=5 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2025
+CY2016 IV.C3: series=21 multi-vintage=21 revised=14 latest-source-determined-vintage=2026 latest-revision-vintage=2025
+CY2017 IV.C2: series=5 multi-vintage=5 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2017 IV.C3: series=21 multi-vintage=21 revised=15 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2018 IV.C2: series=5 multi-vintage=5 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2018 IV.C3: series=21 multi-vintage=21 revised=16 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2019 IV.C2: series=5 multi-vintage=5 revised=4 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2019 IV.C3: series=21 multi-vintage=21 revised=20 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2020 IV.C2: series=5 multi-vintage=5 revised=4 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2020 IV.C3: series=21 multi-vintage=21 revised=20 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2021 IV.C2: series=5 multi-vintage=5 revised=4 latest-source-determined-vintage=2026 latest-revision-vintage=2024
+CY2021 IV.C3: series=21 multi-vintage=21 revised=20 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2022 IV.C2: series=5 multi-vintage=5 revised=3 latest-source-determined-vintage=2026 latest-revision-vintage=2024
+CY2022 IV.C3: series=21 multi-vintage=21 revised=20 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2023 IV.C2: series=5 multi-vintage=5 revised=4 latest-source-determined-vintage=2026 latest-revision-vintage=2025
+CY2023 IV.C3: series=21 multi-vintage=21 revised=20 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2024 IV.C2: series=5 multi-vintage=5 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2024 IV.C3: series=21 multi-vintage=21 revised=16 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  Certified boundary vintages loaded
+PASS  Numeric source-determined observations recognized
+PASS  Both IV.C2 and IV.C3 represented
+PASS  CY2015-CY2024 represented
+PASS  No duplicate natural series-vintage keys
+PASS  No profiler errors
+
+OVERALL PROFILER STATUS: PASS
+
+INTERPRETATION
+PASS means the validated source dimensions uniquely identify series-vintage observations
+and post-source-determination revision behavior was measured successfully.
+PASS does NOT select a preferred Trustees vintage or authorize WA reconciliation/ledger inclusion.
+preferred_vintage = UNASSIGNED
+selection_policy = UNASSIGNED

@@ -1,0 +1,65 @@
+========================================================================================================================
+CMS MEDICARE TRUSTEES PREFERRED-VINTAGE CERTIFICATION v0.1
+========================================================================================================================
+
+READ-ONLY CERTIFICATION GATE
+
+Selection policy:
+  latest PUBLISHED numeric observation independently certified
+  source-determined for the control year, by natural series.
+
+Certified vintage boundaries loaded          : 12
+Numeric focus observations examined          : 1,661
+Natural series eligible for selection        : 263
+Preferred control observations selected      : 263
+Selection audit rows                         : 1,661
+Certification errors                         : 0
+
+EMPIRICAL SELECTED VINTAGES BY CONTROL YEAR / TABLE
+------------------------------------------------------------------------------------------------------------------------
+CY2015 IV.C2: series=5 selected-vintage(s)=2025 single-vintage=YES
+CY2015 IV.C3: series=24 selected-vintage(s)=2016;2025 single-vintage=NO
+CY2016 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2016 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2017 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2017 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2018 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2018 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2019 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2019 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2020 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2020 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2021 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2021 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2022 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2022 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2023 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2023 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+CY2024 IV.C2: series=5 selected-vintage(s)=2026 single-vintage=YES
+CY2024 IV.C3: series=21 selected-vintage(s)=2026 single-vintage=YES
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  Certified boundary vintages loaded
+PASS  No duplicate certification vintage rows
+PASS  Numeric focus observations recognized
+PASS  At least one eligible natural series selected
+PASS  CY2015-CY2024 represented
+PASS  Both IV.C2 and IV.C3 represented
+PASS  Exactly one selected observation per natural series
+PASS  Every selection equals its series latest eligible vintage
+PASS  No certification errors
+
+OVERALL CERTIFICATION STATUS: PASS
+
+INTERPRETATION
+PASS means the preferred Trustees control observations were selected
+deterministically from published, independently source-certified observations.
+No year-to-vintage mapping was hard-coded.
+PASS closes the Trustees preferred-vintage selection gate.
+PASS does NOT perform Washington reconciliation or authorize ledger inclusion.
+
+NEXT GATE
+Washington-vs-Trustees Medicare Part C reconciliation.
+
+Output directory: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\preferred_vintage_certification_v0_1

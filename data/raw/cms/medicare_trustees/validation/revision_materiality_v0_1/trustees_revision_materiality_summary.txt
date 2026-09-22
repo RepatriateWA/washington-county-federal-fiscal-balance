@@ -1,0 +1,69 @@
+========================================================================================================================
+CMS MEDICARE TRUSTEES REVISION MATERIALITY + LATEST-VINTAGE ELIGIBILITY PROFILE v0.1
+========================================================================================================================
+
+READ-ONLY FINAL TRUSTEES-METHODOLOGY PROFILER
+preferred_vintage = UNASSIGNED
+selection_policy = UNASSIGNED
+
+Source-determined series analyzed             : 263
+Series revised after first source-determined  : 206
+Series unchanged after first source-determined: 57
+Series changed in latest observed vintage     : 122
+Series with a 2026 source-determined obs      : 234
+Series without a 2026 observation             : 29
+2026 certified source-determined through year : 2025
+Profiler errors                               : 0
+
+TABLE / COMPONENT MATERIALITY
+------------------------------------------------------------------------------------------------------------------------
+IV.C2 ALL_COMPONENTS: series=50 revised=29 changed-latest=10 median-|net %|=0.2404193468222491 p90-|net %|=1.613904407200493 max-|net %|=4.462809917355377
+IV.C2 BID: series=10 revised=10 changed-latest=5 median-|net %|=0.8852144580544026 p90-|net %|=1.4021887824897286 max-|net %|=2.92487684729064
+IV.C2 CASH_BASIS: series=10 revised=0 changed-latest=0 median-|net %|=0.0 p90-|net %|=0.0 max-|net %|=0.0
+IV.C2 PART_A_PERCENT: series=10 revised=4 changed-latest=0 median-|net %|=0.0 p90-|net %|=0.24330900243309345 max-|net %|=1.1627906976744187
+IV.C2 REBATE: series=10 revised=5 changed-latest=0 median-|net %|=0.4385964912280686 p90-|net %|=3.691275167785239 max-|net %|=4.462809917355377
+IV.C2 TOTAL: series=10 revised=10 changed-latest=5 median-|net %|=0.7446296107687864 p90-|net %|=1.613904407200493 max-|net %|=2.438348573011902
+IV.C3 ALL_COMPONENTS: series=213 revised=177 changed-latest=112 median-|net %|=0.9185217203371515 p90-|net %|=3.9923954372623576 max-|net %|=45.53314121037464
+IV.C3 BID_BASED: series=71 revised=70 changed-latest=53 median-|net %|=1.0204081632653061 p90-|net %|=3.2639545884578998 max-|net %|=5.929745407669997
+IV.C3 REBATE: series=71 revised=37 changed-latest=7 median-|net %|=0.18450184501845018 p90-|net %|=8.27250608272506 max-|net %|=45.53314121037464
+IV.C3 TOTAL: series=71 revised=70 changed-latest=52 median-|net %|=0.9444048467569494 p90-|net %|=2.597264356804513 max-|net %|=5.929745407669997
+
+2026 ELIGIBILITY / PRESENCE BY CONTROL YEAR AND TABLE
+------------------------------------------------------------------------------------------------------------------------
+CY2015 IV.C2: series=5 2026-present=0 2026-missing=5 source-status-covers-year=YES
+CY2015 IV.C3: series=24 2026-present=0 2026-missing=24 source-status-covers-year=YES
+CY2016 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2016 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2017 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2017 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2018 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2018 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2019 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2019 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2020 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2020 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2021 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2021 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2022 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2022 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2023 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2023 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+CY2024 IV.C2: series=5 2026-present=5 2026-missing=0 source-status-covers-year=YES
+CY2024 IV.C3: series=21 2026-present=21 2026-missing=0 source-status-covers-year=YES
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  v0.4 observations loaded
+PASS  v0.4 series summary loaded
+PASS  2026 certification row present
+PASS  2026 certification is SOURCE_RESOLVED
+PASS  2026 source-determined boundary covers CY2024
+PASS  Both IV.C2 and IV.C3 represented
+PASS  CY2015-CY2024 represented
+PASS  No profiler errors
+
+OVERALL PROFILER STATUS: PASS
+
+PASS measures revision materiality and latest-vintage eligibility only.
+It does NOT establish a preferred-vintage policy or authorize WA reconciliation/ledger inclusion.
+Next gate: explicit preferred-vintage policy decision, then Washington-vs-Trustees reconciliation.
