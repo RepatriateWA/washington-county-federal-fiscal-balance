@@ -1,0 +1,36 @@
+================================================================================
+CMS MEDICARE ADVANTAGE PART C — CY2015 SOURCE DISCOVERY SUMMARY
+================================================================================
+
+SCOPE
+CY2015 only
+Monthly source families: CPSC, SCC/SCP, SNP
+Annual source family: Plan Payment
+
+EXPECTED SOURCE SLOTS
+CPSC:        12
+SCC/SCP:     12
+SNP:         12
+Plan Payment: 1
+Total:       37
+
+DISCOVERY RESULTS
+AVAILABLE_OFFICIAL: 37
+LANDING_ONLY:       0
+NOT_LOCATED:        0
+REQUIRES_REVIEW:    0
+
+INVARIANTS
+PASS: manifest rows = 37; expected 37
+PASS: CPSC has 12 monthly rows
+PASS: SCC/SCP has 12 monthly rows
+PASS: SNP has 12 monthly rows
+PASS: Plan Payment has one annual row
+
+INTERPRETATION
+AVAILABLE_OFFICIAL means an official CMS landing page resolved and at least one linked binary artifact was discovered.
+LANDING_ONLY means the official CMS landing page resolved but no binary artifact link was extracted.
+NOT_LOCATED means this discovery pass did not locate a period-specific official CMS landing link.
+REQUIRES_REVIEW means an official CMS URL was identified but the HTTP/discovery result requires manual investigation.
+
+No source dataset was downloaded and no database write was performed by this discovery script.

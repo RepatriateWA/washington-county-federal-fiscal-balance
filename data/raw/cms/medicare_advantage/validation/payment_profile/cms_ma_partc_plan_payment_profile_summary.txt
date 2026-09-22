@@ -1,0 +1,88 @@
+========================================================================================
+CMS MEDICARE ADVANTAGE PART C — PLAN PAYMENT SOURCE PROFILE v0.2
+========================================================================================
+
+Scope: annual CMS Plan Payment ZIP packages, CY2014-CY2024.
+Purpose: structurally profile the Part C county-level and plan-level workbooks
+before any payment reconstruction.
+No payment amount is reconstructed; no enrollment is imputed; no CMS source
+artifact or database object is modified.
+
+Required years                         : 11
+Manifest Plan Payment rows             : 11
+Successfully profiled years            : 11
+Recognized Part C workbooks            : 22
+Expected Part C workbooks              : 22
+Years with documentation PDF           : 11
+ZIP members inventoried                : 66
+Sheets profiled                        : 36
+Columns profiled                       : 165
+Candidate semantic fields              : 165
+Cross-year schema fields               : 18
+Profile/read errors                    : 0
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------
+PASS  Required Plan Payment source rows: 11/11
+PASS  Missing required years: NONE
+PASS  Duplicate required years: NONE
+PASS  Recognized Part C workbooks: 22/22
+PASS  Years with exactly two required Part C workbooks: 11/11
+PASS  Successfully profiled years: 11/11
+PASS  Years with Plan Payment documentation PDF: 11/11
+PASS  Read/profile errors: 0
+
+OVERALL STATUS: PASS
+
+PART C WORKBOOK PRESENCE BY YEAR
+----------------------------------------------------------------------------------------
+CY2014: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2015: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2016: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2017: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2018: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2019: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2020: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2021: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2022: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2023: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+CY2024: COUNTY_LEVEL=1; PLAN_LEVEL=1; DOCUMENTATION_PDF=1
+
+INTERPRETATION
+----------------------------------------------------------------------------------------
+PASS establishes that the 11 acquired annual Plan Payment ZIP packages contain
+exactly one recognized Part C county-level workbook and one recognized Part C
+plan-level workbook per year, that those workbooks can be read and structurally
+profiled under a deterministic read-only procedure, and that annual Plan Payment
+documentation PDFs are present.
+
+Candidate-field classification is lexical/diagnostic only. It does not establish
+that a field is an actual CMS payment, a PMPM rate, a benchmark, a rebate, a
+risk-adjusted amount, or an additive component.
+
+This profile does not establish payment reconstruction, complete Medicare Advantage
+Part C expenditures, county allocation, Medicare state-ledger readiness, or final
+fiscal-balance inclusion.
+
+NEXT EVIDENTIARY STEP
+----------------------------------------------------------------------------------------
+Review the cross-year schema and candidate-field outputs separately for COUNTY_LEVEL
+and PLAN_LEVEL. Then use the preserved CMS Plan Payment Data Element documentation
+to establish the exact meaning, units, grain, and additive/non-additive status of
+every field needed for reconstruction before performing any multiplication.
+
+GOVERNING RULE
+----------------------------------------------------------------------------------------
+Never reconstruct a Medicare dollar until we can state exactly what each
+multiplicand means.
+
+OUTPUTS
+----------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_file_profile.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_member_inventory.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_sheet_profile.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_column_profile.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_candidate_fields.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_cross_year_schema.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_profile_errors.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_profile\cms_ma_partc_plan_payment_profile_summary.txt

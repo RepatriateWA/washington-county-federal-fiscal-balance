@@ -1,0 +1,34 @@
+payment_year,canonical_field,concept,definition_found,match_count,pages,match_types,matched_aliases
+2014,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,1,1,ALIAS:Average AB PM/PM Payment,Average AB PM/PM Payment
+2014,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2014,Average Part C Risk Score,PART_C_RISK_SCORE,True,1,1,KEYWORD_COOCCURRENCE,
+2015,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2015,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2015,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2016,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2016,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2016,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2017,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2017,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2017,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2018,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2018,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2018,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2019,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:AB PM/PM Payment|KEYWORD_COOCCURRENCE,AB PM/PM Payment
+2019,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Rebate PM/PM Payment,Rebate PM/PM Payment
+2019,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2020,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2020,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2020,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2021,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2021,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2021,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2022,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2022,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2022,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2023,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2023,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2023,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,
+2024,Average A/B PM/PM Payment,AB_PMPM_PAYMENT,True,2,1|2,ALIAS:Average AB PM/PM Payment|KEYWORD_COOCCURRENCE,Average AB PM/PM Payment
+2024,Average Rebate PM/PM Payment,REBATE_PMPM_PAYMENT,True,1,1,ALIAS:Average Rebate PM/PM Payment,Average Rebate PM/PM Payment
+2024,Average Part C Risk Score,PART_C_RISK_SCORE,True,2,1|2,KEYWORD_COOCCURRENCE,

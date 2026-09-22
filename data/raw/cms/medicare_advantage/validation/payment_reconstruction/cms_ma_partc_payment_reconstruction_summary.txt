@@ -1,0 +1,72 @@
+============================================================================================
+CMS MEDICARE ADVANTAGE PART C PAYMENT RECONSTRUCTION VALIDATION v0.1
+============================================================================================
+
+Scope: Washington HMO/HMOPOS + Local PPO; January 2015 through September 2024.
+CY2014 is excluded by explicit methodological boundary; October-December 2024 are outside the validated monthly source universe.
+CMS-documented CY2015-CY2024 reconstruction: risk-adjusted A/B PMPM = standardized A/B PMPM × average risk score; Part C PMPM = risk-adjusted A/B PMPM + rebate PMPM.
+No suppressed enrollment is imputed. Source-payment-cell absence is preserved as an accounted source limitation.
+
+Required periods                         : 117
+Periods processed                        : 117
+Published target member-months          : 12,104,643
+Reconstructed member-months             : 12,104,528
+Source payment-cell unavailable         : 115
+Nonnumeric linked payment inputs        : 0
+Accounted published member-months       : 12,104,643
+Unexplained member-months               : 0
+
+Reconstruction enrollment coverage      : 99.999050%
+Published-enrollment accounting coverage: 100.000000%
+
+Risk-adjusted A/B dollars               : $10,045,498,613.35
+Rebate dollars                          : $893,069,777.31
+Reconstructed Part C dollars            : $10,938,568,390.66
+Dollar component identity difference    : $0.000002
+
+Duplicate contract keys                 : 0
+Unresolved contract rows                : 0
+Ambiguous SNP contract/plan keys        : 0
+Unresolved SNP rows                     : 0
+Duplicate payment keys                  : 0
+
+VALIDATION CHECKS
+--------------------------------------------------------------------------------------------
+PASS  Required reconstruction periods processed: 117/117
+PASS  Calendar-year month coverage: {2015: 12, 2016: 12, 2017: 12, 2018: 12, 2019: 12, 2020: 12, 2021: 12, 2022: 12, 2023: 12, 2024: 9}
+PASS  Duplicate contract keys: 0
+PASS  Unresolved contract rows: 0
+PASS  Ambiguous SNP contract/plan keys: 0
+PASS  Unresolved SNP rows: 0
+PASS  Duplicate payment keys: 0
+PASS  Nonnumeric linked payment inputs: 0 member-months
+PASS  Unexpected exception types: NONE
+PASS  Published enrollment accounting identity: 0
+PASS  Dollar component accounting identity: $0.000002
+
+OVERALL STATUS: PASS
+
+CALENDAR-YEAR RECONSTRUCTION
+--------------------------------------------------------------------------------------------
+CY2015: months=12; member-months=696,788; reconstructed=696,788; source-unavailable=0; Part C=$462,367,306.16; COMPLETE_CALENDAR_YEAR
+CY2016: months=12; member-months=588,233; reconstructed=588,233; source-unavailable=0; Part C=$407,115,829.40; COMPLETE_CALENDAR_YEAR
+CY2017: months=12; member-months=639,088; reconstructed=639,088; source-unavailable=0; Part C=$511,896,462.72; COMPLETE_CALENDAR_YEAR
+CY2018: months=12; member-months=688,102; reconstructed=688,102; source-unavailable=0; Part C=$583,459,404.08; COMPLETE_CALENDAR_YEAR
+CY2019: months=12; member-months=736,236; reconstructed=736,167; source-unavailable=69; Part C=$667,292,194.24; COMPLETE_CALENDAR_YEAR
+CY2020: months=12; member-months=803,561; reconstructed=803,561; source-unavailable=0; Part C=$744,985,918.14; COMPLETE_CALENDAR_YEAR
+CY2021: months=12; member-months=1,368,168; reconstructed=1,368,122; source-unavailable=46; Part C=$1,184,658,670.34; COMPLETE_CALENDAR_YEAR
+CY2022: months=12; member-months=1,821,310; reconstructed=1,821,310; source-unavailable=0; Part C=$1,675,504,785.49; COMPLETE_CALENDAR_YEAR
+CY2023: months=12; member-months=2,386,324; reconstructed=2,386,324; source-unavailable=0; Part C=$2,335,935,446.64; COMPLETE_CALENDAR_YEAR
+CY2024: months=9; member-months=2,376,833; reconstructed=2,376,833; source-unavailable=0; Part C=$2,365,352,373.45; PARTIAL_JAN_SEP
+
+OUTPUTS
+--------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_reconstruction\cms_ma_partc_payment_reconstruction_cells.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_reconstruction\cms_ma_partc_payment_reconstruction_monthly.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_reconstruction\cms_ma_partc_payment_reconstruction_calendar_year.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_reconstruction\cms_ma_partc_payment_reconstruction_exceptions.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_reconstruction\cms_ma_partc_payment_reconstruction_summary.txt
+
+Interpretation: PASS establishes deterministic reconstruction of Part C dollars for directly supported published enrollment cells within the stated January 2015-September 2024 scope. It does not yet establish reconciliation to an independent CMS/state control, complete Medicare Advantage expenditures, database/ledger readiness, or final fiscal-balance inclusion.
+
+Read-only validation: no CMS source artifacts modified; no database writes; no suppressed enrollment values imputed; no unavailable payment cell assigned a fabricated PMPM.
