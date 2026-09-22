@@ -1,0 +1,51 @@
+========================================================================================================================
+CMS MEDICARE TRUSTEES 2021-2022 PRIVATE HEALTH PLANS STATUS-STRUCTURE DIAGNOSTIC
+========================================================================================================================
+
+READ-ONLY: no boundary/status/preferred-vintage assignment, inference, imputation, reconciliation, or DB writes.
+
+Selected Private Health Plans / IV.C neighborhood pages : 169
+Status/structure term evidence rows                      : 985
+IV.C table inventory rows                                : 14
+Read errors                                               : 0
+
+VINTAGE DIAGNOSTICS
+------------------------------------------------------------------------------------------------------------------------
+2021: pages=88 tables=7 HistoricalData=YES IntermediateEstimates=YES Incurred=YES CalendarYear=YES
+  page 162 Table IV.C1: historical=False intermediate=False incurred=False calendar_year=False
+  page 163 Table IV.C1: historical=False intermediate=False incurred=False calendar_year=False
+  page 164 table IV.C1: historical=False intermediate=False incurred=False calendar_year=False
+  page 167 Table IV.C2: historical=False intermediate=False incurred=True calendar_year=False
+  page 167 Table IV.C2: historical=False intermediate=False incurred=True calendar_year=False
+  page 167 Table IV.C3: historical=False intermediate=False incurred=True calendar_year=False
+  page 168 Table IV.C3: historical=False intermediate=False incurred=True calendar_year=False
+2022: pages=81 tables=7 HistoricalData=YES IntermediateEstimates=YES Incurred=YES CalendarYear=YES
+  page 162 Table IV.C1: historical=False intermediate=False incurred=False calendar_year=False
+  page 163 Table IV.C1: historical=False intermediate=False incurred=False calendar_year=False
+  page 164 table IV.C1: historical=False intermediate=False incurred=False calendar_year=False
+  page 167 Table IV.C2: historical=False intermediate=False incurred=True calendar_year=False
+  page 167 Table IV.C2: historical=False intermediate=False incurred=True calendar_year=False
+  page 167 Table IV.C3: historical=False intermediate=False incurred=True calendar_year=False
+  page 168 Table IV.C3: historical=False intermediate=False incurred=True calendar_year=False
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  Both preserved reports present
+PASS  Private Health Plans / IV.C neighborhood pages captured
+PASS  Status/structure vocabulary inventoried
+PASS  IV.C tables inventoried
+PASS  Read errors
+
+OVERALL DIAGNOSTIC STATUS: PASS
+
+INTERPRETATION
+PASS means the diagnostic successfully exposed source-local 2021-2022 structure.
+It does NOT mean a historical/estimate boundary has been established.
+Any subsequent boundary must be supported by explicit source structure reviewed from these outputs.
+
+OUTPUTS
+------------------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_structure_2021_2022\trustees_2021_2022_private_plan_pages.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_structure_2021_2022\trustees_2021_2022_status_term_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_structure_2021_2022\trustees_2021_2022_ivc_table_inventory.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_structure_2021_2022\trustees_2021_2022_status_structure_errors.csv
