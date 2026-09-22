@@ -55,8 +55,33 @@ REQUESTS = [
         "geo_fips":
             "53000",
     },
-]
+    {
+        "name":
+            "sainc7n_federal_civilian_wages_all_states_2015_2024",
 
+        "table":
+            "SAINC7N",
+
+        "line_code":
+        "2001",
+
+        "geo_fips":
+            "STATE",
+    },
+    {
+        "name":
+            "sainc7n_military_wages_all_states_2015_2024",
+
+        "table":
+            "SAINC7N",
+
+        "line_code":
+            "2002",
+
+        "geo_fips":
+            "STATE",
+    },
+]
 
 def sha256_file(path: Path) -> str:
 
@@ -322,23 +347,37 @@ def main() -> None:
     # Hard acquisition controls
     # ------------------------------------------------------------------------
 
-    if len(
-        manifest_rows
-    ) != 2:
+    expected_acquisitions = len(REQUESTS)
+
+    if len(manifest_rows) != expected_acquisitions:
 
         raise RuntimeError(
-            "Expected two successful "
-            "SAINC7N acquisitions."
+            f"Expected {expected_acquisitions} successful "
+            f"SAINC7N acquisitions; got "
+            f"{len(manifest_rows)}."
         )
 
     for item in manifest_rows:
 
-        if item["row_count"] != 10:
+        if item["geo_fips"] == "53000":
+            expected_rows = 10
+
+        elif item["geo_fips"] == "STATE":
+            expected_rows = 600
+
+        else:
+            raise RuntimeError(
+                "Unexpected GeoFips acquisition scope: "
+                f"{item['geo_fips']}"
+            )
+
+        if item["row_count"] != expected_rows:
 
             raise RuntimeError(
-                "Expected 10 annual observations "
+                f"Expected {expected_rows} observations "
                 f"for {item['table_name']}-"
-                f"{item['line_code']}; "
+                f"{item['line_code']} "
+                f"GeoFips={item['geo_fips']}; "
                 f"received {item['row_count']}."
             )
 
@@ -374,7 +413,7 @@ def main() -> None:
             "CALENDAR_YEAR",
 
         "geography":
-            "WASHINGTON_STATE",
+            "WASHINGTON_STATE_AND_ALL_STATE_EQUIVALENT_GEOGRAPHIES",
 
         "requests":
             manifest_rows,
@@ -428,7 +467,7 @@ def main() -> None:
     )
 
     print(
-        "Expected observations: 20"
+        "Expected observations: 1220"
     )
 
 

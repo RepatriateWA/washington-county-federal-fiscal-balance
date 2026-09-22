@@ -1,0 +1,111 @@
+========================================================================================================
+CMS MEDICARE TRUSTEES PRIVATE HEALTH PLANS STRUCTURAL PROFILE v0.2
+========================================================================================================
+
+Trustees vintages expected                    : 12
+Annual reports present                        : 12
+Expanded packages present                     : 12
+Expanded-package members inventoried          : 568
+Spreadsheet sheets profiled                   : 552
+PDF artifacts profiled                        : 12
+Text/row/page surfaces collected              : 72282
+Table-presence evidence rows                  : 125
+Structural evidence rows                      : 730
+Profile/read errors                           : 0
+
+TABLE EVIDENCE COUNTS
+--------------------------------------------------------------------------------------------------------
+IV.C2    presence=    77  PLAN=    97  COMPONENT=   163  STATUS=   132
+IV.C3    presence=    40  PLAN=   193  COMPONENT=    59  STATUS=    46
+IV.C4    presence=     8  PLAN=    10  COMPONENT=    14  STATUS=    16
+
+LOCAL CCP STRUCTURE BY TRUSTEES VINTAGE
+--------------------------------------------------------------------------------------------------------
+2015: LocalCCP=YES  HMO=NO  PPO=NO  RegionalPPO=YES  LOCAL_CCP_HMO=NOT_ESTABLISHED  LOCAL_CCP_PPO=NOT_ESTABLISHED
+2016: LocalCCP=YES  HMO=NO  PPO=NO  RegionalPPO=YES  LOCAL_CCP_HMO=NOT_ESTABLISHED  LOCAL_CCP_PPO=NOT_ESTABLISHED
+2017: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2018: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2019: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2020: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2021: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2022: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2023: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2024: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2025: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+2026: LocalCCP=YES  HMO=YES  PPO=YES  RegionalPPO=YES  LOCAL_CCP_HMO=STRUCTURALLY_SUPPORTED  LOCAL_CCP_PPO=STRUCTURALLY_SUPPORTED
+
+STRUCTURAL COVERAGE
+--------------------------------------------------------------------------------------------------------
+2015 IV.C2: found=YES  plans=[OTHER;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2015 IV.C3: found=YES  plans=[LOCAL_CCP;OTHER;PFFS;REGIONAL_PPO;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE;TOTAL_EXPENDITURES]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2015 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2016 IV.C2: found=YES  plans=[OTHER;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2016 IV.C3: found=YES  plans=[LOCAL_CCP;OTHER;PFFS;REGIONAL_PPO;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE;TOTAL_EXPENDITURES]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2016 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2017 IV.C2: found=YES  plans=[OTHER;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2017 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2017 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2018 IV.C2: found=YES  plans=[OTHER;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2018 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE;REBATE_EXPENDITURES]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2018 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2019 IV.C2: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2019 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2019 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2020 IV.C2: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2020 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2020 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2021 IV.C2: found=YES  plans=[OTHER;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2021 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE;REBATE_EXPENDITURES;TOTAL_EXPENDITURES]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2021 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2022 IV.C2: found=YES  plans=[OTHER;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2022 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE;REBATE_EXPENDITURES;TOTAL_EXPENDITURES]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2022 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2023 IV.C2: found=YES  plans=[OTHER;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2023 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2023 IV.C4: found=NO  plans=[]  components=[]  status=[]  target-years=[]
+2024 IV.C2: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2024 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2024 IV.C4: found=YES  plans=[OTHER;SNP;TOTAL]  components=[BENCHMARK_PMPM;BID_TO_BENCHMARK_RATIO;FFS_USPCC_PMPM;REBATE_TO_BID_RATIO]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2025 IV.C2: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2025 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2025 IV.C4: found=YES  plans=[OTHER;SNP;TOTAL]  components=[AVERAGE_FINAL_RISK_SCORES;BENCHMARK_PMPM;BID_TO_BENCHMARK_RATIO;FFS_USPCC_PMPM;REBATE_TO_BID_RATIO]  status=[ACTUAL;ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2026 IV.C2: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[BID;CASH_BASIS;INCURRED_BASIS;PART_A_PERCENT;REBATE;TOTAL]  status=[ESTIMATE;HISTORICAL;PROJECTED]  target-years=[2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2026 IV.C3: found=YES  plans=[HMO;LOCAL_CCP;OTHER;PFFS;PPO;REGIONAL_PPO;SNP;TOTAL]  components=[PART_A_PLUS_B;PER_ENROLLEE]  status=[ESTIMATE;PROJECTED]  target-years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2026 IV.C4: found=YES  plans=[OTHER;SNP;TOTAL]  components=[AVERAGE_FINAL_RISK_SCORES;BENCHMARK_PMPM;BID_TO_BENCHMARK_RATIO;FFS_USPCC_PMPM;REBATE_TO_BID_RATIO]  status=[ACTUAL;ESTIMATE;PROJECTED]  target-years=[2016;2017;2018;2019;2020;2021;2022;2023;2024]
+
+VALIDATION CHECKS
+--------------------------------------------------------------------------------------------------------
+PASS  Annual report source universe 2015-2026 present
+PASS  Expanded-package source universe 2015-2026 present
+PASS  Table IV.C2 structurally located in every vintage
+PASS  Table IV.C3 structurally located in every vintage
+FAIL  Table IV.C4 structurally located in every vintage
+FAIL  IV.C3 Local CCP -> HMO structure supported in every vintage
+FAIL  IV.C3 Local CCP -> PPO structure supported in every vintage
+FAIL  IV.C3 Local PPO distinguishable from Regional PPO in every vintage
+PASS  IV.C2 core accounting components found in every vintage
+FAIL  IV.C3 bid/rebate per-enrollee structure found in every vintage
+FAIL  IV.C4 PMPM/risk-score factor structure found in every vintage
+PASS  Profile/read errors
+
+OVERALL STRUCTURAL PROFILE STATUS: FAIL
+
+IMPORTANT:
+A PASS establishes only that the preserved Trustees source universe contains a structurally
+traceable IV.C2 / IV.C3 / IV.C4 control framework and that Local CCP HMO/PPO can be kept
+distinct from Regional PPO. It does NOT establish comparability of any dollar observation.
+
+This script extracts no Trustees payment observations into a control dataset and assigns no
+individual observation as actual, historical, estimated, or projected. Those remain later gates.
+
+OUTPUTS
+--------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_table_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_table_presence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_table_contexts.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_local_ccp_structure.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_structural_coverage.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_members.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_sheets.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_pdfs.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_errors.csv

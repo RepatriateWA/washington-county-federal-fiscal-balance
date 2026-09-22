@@ -166,20 +166,21 @@ def validate_classification(cursor, load_batch_id: int) -> ValidationResult:
         FROM chip.cms21_expenditure
         WHERE load_batch_id = %s
           AND (
+                is_additive_expenditure
+                IS DISTINCT FROM
+                (
+                    is_control_total = TRUE
+                    AND is_financing_adjustment = FALSE
+                )
+                OR
                 (
                     worksheet_type IN ('CHIP', 'MCHIP')
-                    AND (
-                        is_additive_expenditure IS NOT TRUE
-                        OR is_financing_adjustment IS NOT FALSE
-                    )
+                    AND is_financing_adjustment IS NOT FALSE
                 )
                 OR
                 (
                     worksheet_type = 'MCHIP_20_PERCENT'
-                    AND (
-                        is_additive_expenditure IS NOT FALSE
-                        OR is_financing_adjustment IS NOT TRUE
-                    )
+                    AND is_financing_adjustment IS NOT TRUE
                 )
           );
         """,
