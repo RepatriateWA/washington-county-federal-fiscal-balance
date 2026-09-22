@@ -1,0 +1,56 @@
+========================================================================================================================
+CMS MEDICARE TRUSTEES PRIVATE HEALTH PLANS HISTORICAL/ESTIMATE BOUNDARY PROFILER v0.3
+========================================================================================================================
+
+BOUNDARY
+Literal source table/header partition with adjacent table-year sequences only.
+
+Trustees vintages expected                   : 12
+Annual reports present                       : 12
+Header-partition evidence rows               : 27
+Vintages with explicit contiguous boundary   : 10
+Vintages unresolved                          : 2
+  conflicting boundary pairs                 : 0
+  noncontiguous single boundary              : 0
+Resolved historical-through source lags      : 1
+Profile/read errors                          : 0
+
+VINTAGE-BY-VINTAGE RESOLUTION
+------------------------------------------------------------------------------------------------------------------------
+2015: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2014  estimate-from=2015  surviving=2  pairs=2014->2015
+2016: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2015  estimate-from=2016  surviving=2  pairs=2015->2016
+2017: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2016  estimate-from=2017  surviving=2  pairs=2016->2017
+2018: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2017  estimate-from=2018  surviving=2  pairs=2017->2018
+2019: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2018  estimate-from=2019  surviving=2  pairs=2018->2019
+2020: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2019  estimate-from=2020  surviving=2  pairs=2019->2020
+2021: UNRESOLVED_NO_EXPLICIT_HEADER_BOUNDARY  historical-through=?  estimate-from=?  surviving=0  pairs=none
+2022: UNRESOLVED_NO_EXPLICIT_HEADER_BOUNDARY  historical-through=?  estimate-from=?  surviving=0  pairs=none
+2023: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2022  estimate-from=2023  surviving=2  pairs=2022->2023
+2024: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2023  estimate-from=2024  surviving=2  pairs=2023->2024
+2025: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2024  estimate-from=2025  surviving=2  pairs=2024->2025
+2026: EXPLICIT_SOURCE_HEADER_BOUNDARY  historical-through=2025  estimate-from=2026  surviving=2  pairs=2025->2026
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  Annual reports 2015-2026 present
+PASS  Literal Private Health Plans historical/estimate evidence preserved
+PASS  At least one explicit contiguous source header boundary established
+PASS  Conflicting boundary pairs remain unresolved
+PASS  Noncontiguous single boundaries remain unresolved
+PASS  No observation-status or preferred-vintage assignments made
+PASS  Profile/read errors
+
+OVERALL PROFILER STATUS: PASS
+
+INTERPRETATION
+PASS means the v0.3 adjacent-table-sequence correction behaved conservatively.
+Resolved boundaries are source-derived from literal Historical data / Intermediate estimates partitions.
+The reported source lag is diagnostic only and was not used to infer any boundary.
+Unresolved vintages remain unresolved and require a separate evidence investigation.
+No observation-status or preferred-vintage policy is authorized by this script alone.
+
+OUTPUTS
+------------------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_3\trustees_private_health_plans_header_boundary_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_3\trustees_private_health_plans_header_boundary_resolution.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_3\trustees_private_health_plans_header_boundary_errors.csv

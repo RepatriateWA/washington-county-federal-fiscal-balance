@@ -1,0 +1,53 @@
+======================================================================================================================
+CMS MEDICARE TRUSTEES HISTORICAL-vs-ESTIMATE BOUNDARY PROFILER v0.1
+======================================================================================================================
+
+BOUNDARY
+Independent source evidence only. Missing/conflicting evidence remains unresolved.
+
+Trustees vintages expected                   : 12
+Annual reports present                       : 12
+Historical/estimate evidence rows            : 2,704
+Vintages with explicit boundary pair         : 0
+Vintages with partial boundary evidence      : 0
+Vintages unresolved                          : 12
+  of which conflicting                       : 12
+Profile/read errors                          : 0
+
+VINTAGE-BY-VINTAGE RESOLUTION
+----------------------------------------------------------------------------------------------------------------------
+2015: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=2014  estimate-from=?  evidence=12
+2016: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=2015  estimate-from=?  evidence=12
+2017: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=2016  estimate-from=?  evidence=18
+2018: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=2017  estimate-from=?  evidence=17
+2019: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=2018  estimate-from=?  evidence=9
+2020: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=2019  estimate-from=?  evidence=10
+2021: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=?  estimate-from=?  evidence=4
+2022: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=?  estimate-from=?  evidence=3
+2023: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=?  estimate-from=?  evidence=11
+2024: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=?  estimate-from=?  evidence=11
+2025: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=?  estimate-from=?  evidence=12
+2026: UNRESOLVED_CONFLICTING_SOURCE_BOUNDARIES  historical-through=2025  estimate-from=?  evidence=11
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------------------------
+PASS  Annual reports 2015-2026 present
+PASS  Historical/estimate evidence surfaces preserved
+FAIL  At least one source-supported boundary or partial boundary found
+FAIL  Conflicting evidence is not force-resolved
+PASS  No observation-status assignments made
+PASS  Profile/read errors
+
+OVERALL PROFILER STATUS: FAIL
+
+INTERPRETATION
+PASS means the historical-vs-estimate evidence channel was profiled conservatively.
+It does not require every vintage to resolve and does not authorize a status policy.
+The next step is to compare these results with the independent incurred-boundary evidence
+and the previously validated longitudinal revision evidence before adopting any rule.
+
+OUTPUTS
+----------------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_1\trustees_historical_estimate_local_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_1\trustees_historical_estimate_boundary_resolution.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_1\trustees_historical_estimate_boundary_errors.csv

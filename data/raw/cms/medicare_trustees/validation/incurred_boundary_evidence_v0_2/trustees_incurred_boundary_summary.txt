@@ -1,0 +1,54 @@
+====================================================================================================================
+CMS MEDICARE TRUSTEES INCURRED-BOUNDARY EVIDENCE EXTRACTOR v0.2
+====================================================================================================================
+
+BOUNDARY
+Strict local source association only. Missing/conflicting evidence remains UNRESOLVED.
+
+Trustees vintages expected                   : 12
+Annual reports present                       : 12
+Local incurred evidence rows                 : 325
+Private-plan status-label evidence rows      : 1,475
+Vintages with explicit resolved boundary     : 3
+Vintages unresolved                          : 9
+  of which conflicting explicit boundaries   : 0
+Profile/read errors                          : 0
+
+VINTAGE-BY-VINTAGE RESOLUTION
+--------------------------------------------------------------------------------------------------------------------
+2015: RESOLVED  incurred-through=2014  first-post-boundary=2015  source-lag=1  surviving-evidence=1
+2016: RESOLVED  incurred-through=2015  first-post-boundary=2016  source-lag=1  surviving-evidence=1
+2017: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2018: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2019: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2020: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2021: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2022: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2023: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2024: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2025: UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY  surviving-years=none  surviving-evidence=0
+2026: RESOLVED  incurred-through=2025  first-post-boundary=2026  source-lag=1  surviving-evidence=1
+
+VALIDATION CHECKS
+--------------------------------------------------------------------------------------------------------------------
+PASS  Annual reports 2015-2026 present
+PASS  Local incurred-basis evidence surfaces preserved
+PASS  At least one explicit source boundary resolved
+PASS  All conflicting boundaries remain unresolved
+PASS  No methodological decisions assigned
+PASS  Profile/read errors
+
+OVERALL EVIDENCE-EXTRACTION STATUS: PASS
+
+INTERPRETATION
+PASS means v0.2 enforced local grammatical/source association and preserved uncertainty.
+It does not mean every vintage has a resolved boundary.
+A resolved boundary is source-derived; an unresolved boundary is not filled by report-year arithmetic.
+No observation-status or preferred-vintage policy is authorized by this script alone.
+
+OUTPUTS
+--------------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_2\trustees_incurred_boundary_local_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_2\trustees_incurred_boundary_resolution.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_2\trustees_private_plan_status_label_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_2\trustees_incurred_boundary_errors.csv

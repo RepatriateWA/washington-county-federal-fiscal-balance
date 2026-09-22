@@ -1,0 +1,46 @@
+==============================================================================================================
+CMS MEDICARE TRUSTEES STATUS / VINTAGE-EVOLUTION PROFILER v0.1
+==============================================================================================================
+
+BOUNDARY
+Evidence profiling only. No observation-status assignment and no preferred-vintage selection.
+
+Validated raw focus observations          : 3,000
+Vintage-evolution rows                    : 3,000
+Distinct longitudinal series              : 370
+Year-vintage coverage rows                : 150
+Status-source evidence contexts           : 292
+Profile/read errors                       : 0
+
+STATUS VOCABULARY CONTEXT COUNTS
+--------------------------------------------------------------------------------------------------------------
+IV.C2   ACTUAL=0  HISTORICAL=0  ESTIMATE=16  PROJECTED=9  FORECAST=2  INCURRED=111  CASH=64
+IV.C3   ACTUAL=0  HISTORICAL=0  ESTIMATE=12  PROJECTED=1  FORECAST=0  INCURRED=55  CASH=22
+
+VALIDATION CHECKS
+--------------------------------------------------------------------------------------------------------------
+PASS  Validated raw v0.2 control file readable
+PASS  Annual reports 2015-2026 present
+PASS  IV.C2 focus observations represented
+PASS  IV.C3 focus observations represented
+PASS  Every evolution row remains status-unassigned
+PASS  Every evolution row remains preferred-vintage-unassigned
+PASS  Source-status evidence collected for IV.C2
+PASS  Source-status evidence collected for IV.C3
+PASS  Profile/read errors
+
+OVERALL PROFILER STATUS: PASS
+
+INTERPRETATION
+A PASS means the validated Trustees observations have been organized longitudinally and
+source text relevant to historical/actual/estimate/projected terminology has been preserved.
+It does NOT establish the status of any individual numeric observation and does NOT choose
+a preferred Trustees vintage. Those are the next evidence-based methodological decisions.
+
+OUTPUTS
+--------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_vintage_evolution_v0_1\trustees_control_vintage_evolution.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_vintage_evolution_v0_1\trustees_control_series_summary.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_vintage_evolution_v0_1\trustees_control_year_vintage_matrix.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_vintage_evolution_v0_1\trustees_status_source_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_vintage_evolution_v0_1\trustees_status_profiler_errors.csv

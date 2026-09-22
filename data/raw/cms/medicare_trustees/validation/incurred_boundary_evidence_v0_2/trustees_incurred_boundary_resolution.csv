@@ -1,0 +1,13 @@
+﻿trustees_vintage,boundary_resolution_status,explicit_incurred_through_year,implied_first_post_boundary_year,surviving_candidate_count,distinct_surviving_boundary_years,source_file,source_sha256,source_page,association_type,boundary_match_text,evidence_unit,methodological_decision,preferred_vintage
+2015,EXPLICIT_SOURCE_BOUNDARY,2014,2015,1,2014,data\raw\cms\medicare_trustees\reports\medicare_trustees_2015.pdf,efc3bba1161ec2eed11ccd07a27d07a7871d10a7a71f39be5b026863b72b23c2,160,UNIT_PLUS_NEXT,determined on an incurred basis for calendar years 2006- 2014,"Annual per capita benchmarks, bids, and rebates were determined on an incurred basis for calendar years 2006- 2014 for each coverage category. These amounts include adjustments processed after the payment due date for retroactive enrollment and risk score updates.",UNASSIGNED,UNASSIGNED
+2016,EXPLICIT_SOURCE_BOUNDARY,2015,2016,1,2015,data\raw\cms\medicare_trustees\reports\medicare_trustees_2016.pdf,9cda2a4bc1a88a035578665191b44d3dca243da9cc8c8be67f322f70a4e5e87c,163,UNIT_PLUS_NEXT,determined on an incurred basis for calendar years 2006 -2015,"Annual per capita benchmarks, bids, and rebates were determined on an incurred basis for calendar years 2006 -2015 for each coverage category. These amounts include adjustments processed after the payment due date for retroactive enrollment and risk score updates.",UNASSIGNED,UNASSIGNED
+2017,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2018,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2019,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2020,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2021,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2022,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2023,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2024,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2025,UNRESOLVED_NO_EXPLICIT_LOCAL_BOUNDARY,,,0,,,,,,,,UNASSIGNED,UNASSIGNED
+2026,EXPLICIT_SOURCE_BOUNDARY,2025,2026,1,2025,data\raw\cms\medicare_trustees\reports\medicare_trustees_2026.pdf,ffa56b9137006872300b0346149eae1613d09a172b6ba118aad48e66dfc48fa8,167,UNIT_PLUS_NEXT,determined on an incurred basis for calendar years 2007 –2025,"Annual per capita benchmarks, bids, and rebates were determined on an incurred basis for calendar years 2007 –2025 for each coverage category. These amounts include adjustments processed after the payment due date for retroactive enrollment and risk score updates.",UNASSIGNED,UNASSIGNED

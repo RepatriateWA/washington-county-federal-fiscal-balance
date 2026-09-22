@@ -1,0 +1,51 @@
+================================================================================================================
+CMS MEDICARE TRUSTEES INCURRED-BOUNDARY EVIDENCE EXTRACTOR v0.1
+================================================================================================================
+
+BOUNDARY
+Source-evidence extraction only. No observation status or preferred vintage is assigned.
+
+Trustees vintages expected                   : 12
+Annual reports present                       : 12
+Incurred-basis contexts                      : 663
+Vintages with explicit boundary candidate    : 12
+Vintages without explicit boundary candidate : 0
+Vintages with conflicting candidates         : 9
+Profile/read errors                          : 0
+
+VINTAGE-BY-VINTAGE EXPLICIT SOURCE CANDIDATES
+----------------------------------------------------------------------------------------------------------------
+2015: incurred-through=2014  first-post-boundary=2015  lag=1  candidates=6  consistency=CONSISTENT
+2016: incurred-through=2015  first-post-boundary=2016  lag=1  candidates=9  consistency=CONFLICTING
+2017: incurred-through=2026  first-post-boundary=2027  lag=-9  candidates=2  consistency=CONSISTENT
+2018: incurred-through=2017  first-post-boundary=2018  lag=1  candidates=7  consistency=CONSISTENT
+2019: incurred-through=2017  first-post-boundary=2018  lag=2  candidates=9  consistency=CONFLICTING
+2020: incurred-through=2017  first-post-boundary=2018  lag=3  candidates=9  consistency=CONFLICTING
+2021: incurred-through=2018  first-post-boundary=2019  lag=3  candidates=9  consistency=CONFLICTING
+2022: incurred-through=2018  first-post-boundary=2019  lag=4  candidates=9  consistency=CONFLICTING
+2023: incurred-through=2017  first-post-boundary=2018  lag=6  candidates=9  consistency=CONFLICTING
+2024: incurred-through=2018  first-post-boundary=2019  lag=6  candidates=8  consistency=CONFLICTING
+2025: incurred-through=2018  first-post-boundary=2019  lag=7  candidates=8  consistency=CONFLICTING
+2026: incurred-through=2025  first-post-boundary=2026  lag=1  candidates=8  consistency=CONFLICTING
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------------------
+PASS  Annual reports 2015-2026 present
+PASS  Incurred-basis source contexts extracted
+PASS  At least one explicit boundary candidate established
+FAIL  No conflicting explicit boundary years within a vintage
+PASS  Every candidate remains methodological-decision-unassigned
+PASS  Profile/read errors
+
+OVERALL EVIDENCE-EXTRACTION STATUS: FAIL
+
+INTERPRETATION
+A PASS means explicit incurred-basis source evidence was preserved without imposing a status rule.
+Missing annual boundaries remain evidence gaps; they are not filled by assuming vintage minus one.
+The candidate table is therefore an evidentiary input to the next methodological decision, not policy itself.
+
+OUTPUTS
+----------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_1\trustees_incurred_boundary_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_1\trustees_incurred_boundary_candidates.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_1\trustees_incurred_boundary_errors.csv

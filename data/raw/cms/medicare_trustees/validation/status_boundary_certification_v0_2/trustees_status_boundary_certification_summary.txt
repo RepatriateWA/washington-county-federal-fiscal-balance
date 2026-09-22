@@ -1,0 +1,54 @@
+========================================================================================================================
+CMS MEDICARE TRUSTEES PRIVATE HEALTH PLANS STATUS-BOUNDARY CERTIFICATION v0.2
+========================================================================================================================
+
+CERTIFICATION SCOPE
+Source-resolved boundary evidence only. No preferred-vintage or ledger policy is assigned.
+
+Trustees vintages expected                 : 12
+Trustees vintages certified                : 12
+Header-partition channel certifications    : 10
+Methodology-prose channel certifications   : 2
+Unresolved/conflicting vintages            : 0
+Errors                                     : 0
+
+VINTAGE-BY-VINTAGE CERTIFICATION
+------------------------------------------------------------------------------------------------------------------------
+2015: SOURCE_RESOLVED  source-determined-through=2014  estimate-from=2015  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2016: SOURCE_RESOLVED  source-determined-through=2015  estimate-from=2016  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2017: SOURCE_RESOLVED  source-determined-through=2016  estimate-from=2017  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2018: SOURCE_RESOLVED  source-determined-through=2017  estimate-from=2018  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2019: SOURCE_RESOLVED  source-determined-through=2018  estimate-from=2019  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2020: SOURCE_RESOLVED  source-determined-through=2019  estimate-from=2020  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2021: SOURCE_RESOLVED  source-determined-through=2020  estimate-from=2021  identity=YES  evidence=INCURRED_AND_ESTIMATED_METHODOLOGY_PROSE
+2022: SOURCE_RESOLVED  source-determined-through=2021  estimate-from=2022  identity=YES  evidence=INCURRED_AND_ESTIMATED_METHODOLOGY_PROSE
+2023: SOURCE_RESOLVED  source-determined-through=2022  estimate-from=2023  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2024: SOURCE_RESOLVED  source-determined-through=2023  estimate-from=2024  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2025: SOURCE_RESOLVED  source-determined-through=2024  estimate-from=2025  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+2026: SOURCE_RESOLVED  source-determined-through=2025  estimate-from=2026  identity=YES  evidence=HISTORICAL_INTERMEDIATE_HEADER_PARTITION
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  All 12 Trustees vintages represented
+PASS  All 12 boundaries independently source-resolved
+PASS  No conflicting/unresolved certified vintages
+PASS  Historical/Intermediate header channel represented
+PASS  2021/2022 methodology-prose channel represented
+PASS  All source-resolved boundaries are contiguous
+PASS  No observation-status assignments made
+PASS  No preferred-vintage assignments made
+PASS  Read/certification errors
+
+OVERALL CERTIFICATION STATUS: PASS
+
+INTERPRETATION
+PASS means all 12 report vintages have independently source-supported boundaries.
+The contiguous relationship is validated after extraction and is never used to generate a boundary.
+The term ACTUAL is deliberately not assigned.
+Observation status and preferred vintage remain UNASSIGNED pending the next policy gate.
+
+OUTPUTS
+------------------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_boundary_certification_v0_2\trustees_status_boundary_source_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_boundary_certification_v0_2\trustees_status_boundary_certification.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\status_boundary_certification_v0_2\trustees_status_boundary_certification_errors.csv
