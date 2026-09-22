@@ -1,0 +1,76 @@
+====================================================================================================
+CMS MEDICARE TRUSTEES PRIVATE HEALTH PLANS SEMANTIC PROFILE v0.1
+====================================================================================================
+
+Trustees vintages expected                 : 12
+Annual reports present                     : 12
+Expanded packages present                  : 12
+Expanded-package members inventoried       : 568
+Spreadsheet sheets profiled                : 552
+PDF artifacts profiled                     : 12
+Semantic/status hits recorded              : 14419
+Profile/read errors                        : 0
+
+SEMANTIC HIT COUNTS
+----------------------------------------------------------------------------------------------------
+ENROLLMENT                                  2,712
+HMO                                            54
+OTHER                                       1,856
+PART_C                                        583
+PER_CAPITA                                    443
+PFFS                                           63
+PRIVATE_HEALTH_PLANS                          466
+REBATE_EXPENDITURES                           229
+REGIONAL_PPO                                   42
+SNP                                            91
+STATUS_ACTUAL                               1,043
+STATUS_ESTIMATE                             2,779
+STATUS_HISTORICAL                           1,251
+STATUS_PRELIMINARY                             51
+STATUS_PROJECTED                            2,256
+TOTAL_EXPENDITURES                            500
+
+CORE COVERAGE BY TRUSTEES VINTAGE
+----------------------------------------------------------------------------------------------------
+2015: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2016: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2017: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2018: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2019: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2020: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2021: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2022: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2023: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2024: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2025: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+2026: PrivatePlans=FOUND  HMO=FOUND  LocalPPO=NOT_FOUND  Rebate=FOUND  TotalExp=FOUND  PerCapita=FOUND  Years=[2015;2016;2017;2018;2019;2020;2021;2022;2023;2024]
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------
+PASS  Annual report source universe 2015-2026 present
+PASS  Expanded-package source universe 2015-2026 present
+PASS  Private Health Plans terminology found in every vintage
+PASS  HMO terminology found in every vintage
+FAIL  Local PPO terminology found in every vintage
+PASS  Rebate expenditure terminology found in every vintage
+PASS  Profile/read errors
+
+OVERALL SEMANTIC PROFILE STATUS: FAIL
+
+IMPORTANT:
+This profile records terminology and source structure only. Year tokens indicate that a year
+appears near relevant terminology; they do NOT prove that a numeric observation was extracted.
+Likewise, actual/historical/estimate/projected words are recorded as evidence but are NOT yet
+assigned to individual observations.
+
+No Trustees payment value has been extracted by this script.
+
+OUTPUTS
+----------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_profile\cms_medicare_trustees_private_plans_hits.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_profile\cms_medicare_trustees_private_plans_members.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_profile\cms_medicare_trustees_private_plans_sheets.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_profile\cms_medicare_trustees_private_plans_pdfs.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_profile\cms_medicare_trustees_private_plans_errors.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_profile\cms_medicare_trustees_private_plans_vintage_year_matrix.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_profile\cms_medicare_trustees_private_plans_coverage.csv

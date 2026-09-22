@@ -67,8 +67,37 @@ REQUESTS = [
         "geo_fips": "53000",
         "output_dir": STATE_DIR,
     },
+    {
+        "name": "sainc6n_federal_civilian_all_states_2015_2024",
+        "table": "SAINC6N",
+        "line_code": "2001",
+        "geo_fips": "STATE",
+        "output_dir": STATE_DIR,
+    },
+    {
+        "name": "sainc6n_military_all_states_2015_2024",
+        "table": "SAINC6N",
+        "line_code": "2002",
+        "geo_fips": "STATE",
+        "output_dir": STATE_DIR,
+    },
+    {
+        "name": "cainc6n_federal_civilian_2014",
+        "table": "CAINC6N",
+        "line_code": "2001",
+        "geo_fips": "WA",
+        "years": "2014",
+        "output_dir": COUNTY_DIR,
+    },
+    {
+        "name": "cainc6n_military_2014",
+        "table": "CAINC6N",
+        "line_code": "2002",
+        "geo_fips": "WA",
+        "years": "2014",
+        "output_dir": COUNTY_DIR,
+    },
 ]
-
 
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
@@ -218,7 +247,10 @@ def acquire_data(
             "datasetname": "Regional",
             "TableName": request_spec["table"],
             "LineCode": request_spec["line_code"],
-            "Year": YEARS,
+            "Year": request_spec.get(
+                "years",
+                YEARS,
+            ),
             "GeoFips": request_spec["geo_fips"],
             "ResultFormat": "JSON",
         }
@@ -287,7 +319,10 @@ def acquire_data(
                     request_spec["geo_fips"],
 
                 "years":
-                    YEARS,
+                    request_spec.get(
+                        "years",
+                        YEARS,
+                    ),
 
                 "row_count":
                     len(data_rows),
@@ -352,9 +387,11 @@ def validate_manifest(
     manifest_rows: list[dict],
 ) -> None:
 
-    if len(manifest_rows) != 4:
+    expected_acquisitions = len(REQUESTS)
+
+    if len(manifest_rows) != expected_acquisitions:
         raise RuntimeError(
-            "Expected four successful BEA "
+            f"Expected {expected_acquisitions} successful BEA "
             f"data acquisitions; got "
             f"{len(manifest_rows)}."
         )

@@ -1,0 +1,52 @@
+============================================================================================================
+CMS MEDICARE TRUSTEES PRIVATE HEALTH PLANS RAW CONTROL EXTRACTOR v0.2
+============================================================================================================
+
+BOUNDARY
+No preferred-vintage selection, observation-status assignment, reconciliation, imputation, or DB writes.
+
+Trustees vintages expected                  : 12
+Annual reports present                      : 12
+Tables structurally captured                : 27
+Raw observations extracted                  : 6,454
+Identity checks                             : 1,852
+Identity failures                           : 0
+Unparsed extracted tokens                   : 0
+IV.C2 boundary-contamination rows           : 0
+Extraction/read errors                      : 0
+
+OBSERVATIONS BY TABLE
+------------------------------------------------------------------------------------------------------------
+IV.C2   rows=  1,252  numeric=  1,252  source-missing=      0
+IV.C3   rows=  4,902  numeric=  4,820  source-missing=     82
+IV.C4   rows=    300  numeric=    300  source-missing=      0
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------
+PASS  Annual report source universe 2015-2026 present
+PASS  IV.C2 found in every Trustees vintage
+PASS  IV.C3 found in every Trustees vintage
+PASS  IV.C4 absent before 2024 as structurally established
+PASS  IV.C4 present 2024-2026
+PASS  2015-2016 IV.C3 preserves combined LCCP
+PASS  2017-2026 IV.C3 preserves separate Local CCP HMO/PPO
+PASS  IV.C3 bid/rebate/total components extracted every vintage
+PASS  No unparsed numeric tokens in extracted rows
+PASS  IV.C2 extraction terminates before IV.C3
+PASS  Published arithmetic identity checks
+PASS  Extraction/read errors
+
+OVERALL RAW EXTRACTION STATUS: PASS
+
+INTERPRETATION
+A PASS means only that raw Trustees observations were extracted with source provenance and
+the expected versioned table structures were preserved. It does NOT choose a preferred
+Trustees vintage, classify observations as actual/projected, establish Washington comparability,
+or authorize any WCFFBP ledger inclusion.
+
+OUTPUTS
+------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_controls_raw_v0_2\cms_medicare_trustees_private_plan_controls_raw.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_controls_raw_v0_2\cms_medicare_trustees_private_plan_controls_inventory.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_controls_raw_v0_2\cms_medicare_trustees_private_plan_controls_identity_checks.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\private_health_plans_controls_raw_v0_2\cms_medicare_trustees_private_plan_controls_errors.csv

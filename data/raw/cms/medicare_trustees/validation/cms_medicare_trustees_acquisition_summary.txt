@@ -1,0 +1,42 @@
+================================================================================================
+CMS MEDICARE TRUSTEES SOURCE ACQUISITION v0.2
+================================================================================================
+
+Required annual report years        : 12
+Annual reports acquired             : 12
+Expanded-table packages discovered  : 12
+Expanded-table years                : 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026
+ZIP members inventoried             : 568
+Acquisition/type errors             : 0
+
+REPORT YEARS ACQUIRED
+------------------------------------------------------------------------------------------------
+2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026
+
+DISCOVERY GAPS
+------------------------------------------------------------------------------------------------
+NONE
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------
+PASS  All four official CMS discovery pages readable
+PASS  All required annual reports CY2015-CY2026 discovered
+PASS  All required expanded packages CY2015-CY2026 discovered
+PASS  All discovered artifacts acquired and type-validated
+
+OVERALL ACQUISITION STATUS: PASS
+
+IMPORTANT:
+For this source universe, both the annual Trustees Report PDF and the official
+Expanded/Supplementary Tables package are required for every CY2015-CY2026 vintage.
+
+A PASS establishes source discovery, preservation, hashing, and file-type validation only.
+It does NOT establish which observations are actual versus projected, which Private Health
+Plans values are definitionally comparable to WCFFBP, or successful reconciliation.
+
+OUTPUTS
+------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\cms_medicare_trustees_discovery_manifest.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\cms_medicare_trustees_discovery_pages.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\cms_medicare_trustees_acquisition_manifest.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\cms_medicare_trustees_zip_inventory.csv
