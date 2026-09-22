@@ -1,0 +1,47 @@
+========================================================================================
+CMS MEDICARE ADVANTAGE PART C MONTHLY DIMENSIONAL LINKAGE VALIDATION
+========================================================================================
+
+Scope: Washington HMO/HMOPOS + Local PPO; October 2014 through September 2024.
+Source-payment-cell absence is preserved as an accounted source-dimensional limitation.
+No suppressed enrollment values are imputed and no payment amounts are reconstructed here.
+
+Required periods                         : 120
+Periods processed                        : 120
+Published target member-months          : 12,282,865
+Direct payment-cell links               : 12,282,750
+Source payment-cell unavailable         : 115
+Accounted published member-months       : 12,282,865
+Unexplained member-months               : 0
+
+Direct published-enrollment linkage     : 99.999064%
+Published-enrollment accounting coverage: 100.000000%
+
+Duplicate contract keys                 : 0
+Unresolved contract rows                : 0
+Ambiguous SNP contract/plan keys        : 0
+Unresolved SNP rows                     : 0
+Duplicate payment keys                  : 0
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------
+PASS  Required periods processed: 120/120
+PASS  Duplicate contract keys: 0
+PASS  Unresolved contract rows: 0
+PASS  Ambiguous SNP contract/plan keys: 0
+PASS  Unresolved SNP rows: 0
+PASS  Duplicate payment keys: 0
+PASS  Unexpected exception types: NONE
+PASS  Published enrollment accounting identity: 0
+
+OVERALL STATUS: PASS
+
+OUTPUTS
+----------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\monthly_linkage\cms_ma_partc_monthly_linkage_validation.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\monthly_linkage\cms_ma_partc_monthly_linkage_exceptions.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\monthly_linkage\cms_ma_partc_monthly_linkage_summary.txt
+
+Interpretation: PASS establishes deterministic dimensional linkage/accounting of published target enrollment within this validation scope. It does not establish payment reconstruction, complete Medicare Advantage Part C expenditures, Medicare state-ledger readiness, or final fiscal-balance inclusion.
+
+Read-only validation: no CMS source artifacts modified; no database writes; no payment reconstruction; no suppressed enrollment values imputed.

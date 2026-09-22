@@ -1,0 +1,19 @@
+workbook_role,normalized_column_name,observed_column_names,sheets,candidate_categories,first_year,last_year,year_count,CY2014,CY2015,CY2016,CY2017,CY2018,CY2019,CY2020,CY2021,CY2022,CY2023,CY2024
+COUNTY_LEVEL,average_a_b_pm_pm_payment,Average A/B PM/PM Payment,2017,PART_AB|PAYMENT,2017,2017,1,0,0,0,1,0,0,0,0,0,0,0
+COUNTY_LEVEL,average_ab_pm_pm_payment,Average AB PM/PM Payment,2016 | result.html | result.srx,PAYMENT,2014,2024,10,1,1,1,0,1,1,1,1,1,1,1
+COUNTY_LEVEL,average_part_c_risk_score,Average Part C Risk Score,2016 | 2017 | result.html | result.srx,PART_AB|RISK,2015,2024,10,0,1,1,1,1,1,1,1,1,1,1
+COUNTY_LEVEL,average_part_risk_score,Average Part Risk Score,result.srx,RISK,2014,2014,1,1,0,0,0,0,0,0,0,0,0,0
+COUNTY_LEVEL,average_rebate_pm_pm_payment,Average Rebate PM/PM Payment,2016 | 2017 | result.html | result.srx,PAYMENT|REBATE,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+COUNTY_LEVEL,county_code,County Code,2016 | 2017 | result.html | result.srx,GEOGRAPHY,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+COUNTY_LEVEL,county_name,County Name,2016 | 2017 | result.html | result.srx,GEOGRAPHY,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+COUNTY_LEVEL,plan_type,Plan Type,2016 | 2017 | result.html | result.srx,IDENTIFIER,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+COUNTY_LEVEL,snp_plan_type,SNP Plan Type,2016 | 2017 | result.html | result.srx,IDENTIFIER,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+COUNTY_LEVEL,state_abbreviation,State Abbreviation,2016 | 2017 | result.html | result.srx,GEOGRAPHY,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+PLAN_LEVEL,average_a_b_pm_pm_payment,Average A/B PM/PM Payment,2016 | 2017 | result.html | result.srx,PART_AB|PAYMENT,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+PLAN_LEVEL,average_part_c_risk_score,Average Part C Risk Score,2016 | 2017 | result.html | result.srx,PART_AB|RISK,2015,2024,10,0,1,1,1,1,1,1,1,1,1,1
+PLAN_LEVEL,average_part_risk_score,Average Part Risk Score,result.srx,RISK,2014,2014,1,1,0,0,0,0,0,0,0,0,0,0
+PLAN_LEVEL,average_rebate_pm_pm_payment,Average Rebate PM/PM Payment,2016 | 2017 | result.html | result.srx,PAYMENT|REBATE,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+PLAN_LEVEL,contract_name,Contract Name,2016 | 2017 | result.html | result.srx,IDENTIFIER,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+PLAN_LEVEL,contract_number,Contract Number,2016 | 2017 | result.html | result.srx,IDENTIFIER,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+PLAN_LEVEL,plan_benefit_package,Plan Benefit Package,2016 | 2017 | result.html | result.srx,IDENTIFIER,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1
+PLAN_LEVEL,plan_type,Plan Type,2016 | 2017 | result.html | result.srx,IDENTIFIER,2014,2024,11,1,1,1,1,1,1,1,1,1,1,1

@@ -1,0 +1,75 @@
+============================================================================================
+CMS MEDICARE ADVANTAGE PART C — PLAN PAYMENT SEMANTIC DOCUMENTATION PROFILE v0.1
+============================================================================================
+
+Scope: annual CMS Plan Payment Data Element documentation, CY2014-CY2024.
+Purpose: preserve and surface CMS's own wording for the three Part C measures
+needed for semantic adjudication before any payment reconstruction.
+
+Required years                              : 11
+Manifest Plan Payment rows                  : 11
+Documentation PDFs profiled                 : 11
+Documentation PDFs with extractable text    : 11
+Target year-field observations expected     : 33
+Target year-field lexical coverage found    : 33
+Evidence rows                               : 53
+Page rows                                   : 22
+Profile/read errors                         : 0
+
+VALIDATION CHECKS
+--------------------------------------------------------------------------------------------
+PASS  Required Plan Payment source rows: 11/11
+PASS  Missing required years: NONE
+PASS  Duplicate required years: NONE
+PASS  Years with exactly one documentation PDF: 11/11
+PASS  Documentation PDFs with extractable text: 11/11
+PASS  PDF/page extraction errors: 0
+
+OVERALL STATUS: PASS
+
+TARGET COVERAGE BY YEAR
+--------------------------------------------------------------------------------------------
+CY2014: AB_PMPM_PAYMENT=FOUND[1]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1]
+CY2015: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2016: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2017: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2018: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2019: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2020: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2021: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2022: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2023: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+CY2024: AB_PMPM_PAYMENT=FOUND[1|2]; REBATE_PMPM_PAYMENT=FOUND[1]; PART_C_RISK_SCORE=FOUND[1|2]
+
+INTERPRETATION
+--------------------------------------------------------------------------------------------
+PASS establishes only that the 11 annual CMS Plan Payment documentation PDFs were
+located, fingerprinted, and text-extracted under a deterministic read-only procedure.
+Target coverage is lexical evidence discovery, not semantic proof.
+
+A FOUND result does not establish that A/B payment is pre- or post-risk adjustment,
+that rebate is additive, or that any field should be multiplied by enrollment.
+A NOT_FOUND result is not a source failure; it means terminology or PDF structure
+requires broader/manual review.
+
+NEXT EVIDENTIARY STEP
+--------------------------------------------------------------------------------------------
+Review cms_ma_partc_plan_payment_semantic_evidence.csv, beginning with CY2014,
+CY2019, and CY2024. Adjudicate CMS wording for definition, units, dimensional grain,
+risk-adjustment status, and additive/non-additive mathematical role. Then verify
+whether the same semantics hold across all intervening years.
+
+GOVERNING RULE
+--------------------------------------------------------------------------------------------
+Never reconstruct a Medicare dollar until we can state exactly what each
+multiplicand means.
+
+OUTPUTS
+--------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_semantics\cms_ma_partc_plan_payment_documentation_inventory.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_semantics\cms_ma_partc_plan_payment_documentation_pages.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_semantics\cms_ma_partc_plan_payment_semantic_evidence.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_semantics\cms_ma_partc_plan_payment_semantic_coverage.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_semantics\cms_ma_partc_plan_payment_semantic_stability.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_semantics\cms_ma_partc_plan_payment_semantic_errors.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\payment_semantics\cms_ma_partc_plan_payment_semantic_summary.txt
