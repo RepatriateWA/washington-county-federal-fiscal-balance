@@ -1,0 +1,62 @@
+========================================================================================================================
+CMS MEDICARE TRUSTEES SOURCE-DETERMINED VINTAGE REVISION PROFILE v0.2
+========================================================================================================================
+
+READ-ONLY: measures post-source-determination revisions; selects no preferred vintage.
+
+Raw control rows read                         : 6,454
+Certified vintage boundaries loaded           : 12
+Source-determined numeric observations         : 1,661
+Distinct source-determined series              : 40
+Adjacent vintage revision steps                : 1,621
+Series stable after first source-determined    : 16
+Series revised after first source-determined   : 24
+Duplicate series-vintage keys                  : 1,405
+Errors                                         : 0
+
+CONTROL-YEAR / TABLE SUMMARY
+------------------------------------------------------------------------------------------------------------------------
+CY2015 IV.C2: series=3 multi-vintage=3 revised=1 latest-source-determined-vintage=2025 latest-revision-vintage=2025
+CY2015 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2025 latest-revision-vintage=2025
+CY2016 IV.C2: series=3 multi-vintage=3 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2016 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2017 IV.C2: series=3 multi-vintage=3 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2017 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2018 IV.C2: series=3 multi-vintage=3 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2018 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2019 IV.C2: series=3 multi-vintage=3 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2019 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2020 IV.C2: series=3 multi-vintage=3 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2020 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2021 IV.C2: series=3 multi-vintage=3 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2021 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2022 IV.C2: series=3 multi-vintage=3 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2022 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2023 IV.C2: series=3 multi-vintage=3 revised=2 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2023 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2024 IV.C2: series=3 multi-vintage=3 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+CY2024 IV.C3: series=1 multi-vintage=1 revised=1 latest-source-determined-vintage=2026 latest-revision-vintage=2026
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  Certified boundary vintages loaded
+PASS  Numeric source-determined observations recognized
+PASS  Both IV.C2 and IV.C3 represented
+PASS  CY2015-CY2024 represented
+FAIL  No duplicate series-vintage keys
+PASS  No profiler errors
+
+OVERALL PROFILER STATUS: FAIL
+
+INTERPRETATION
+PASS means the profiler successfully measured revisions among already source-determined observations.
+PASS does NOT select a preferred Trustees vintage or authorize reconciliation/ledger inclusion.
+A revision is measured exactly from the validated extracted numeric values; no tolerance is used to hide changes.
+
+OUTPUTS
+------------------------------------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\source_determined_revision_profile_v0_2\trustees_source_determined_observations.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\source_determined_revision_profile_v0_2\trustees_source_determined_revision_steps.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\source_determined_revision_profile_v0_2\trustees_source_determined_series_summary.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\source_determined_revision_profile_v0_2\trustees_source_determined_control_year_summary.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_trustees\validation\source_determined_revision_profile_v0_2\trustees_source_determined_revision_profile_errors.csv
