@@ -1,0 +1,43 @@
+========================================================================================================================
+CMS MA PART C — WASHINGTON vs MEDICARE TRUSTEES IV.C3 RECONCILIATION v0.2
+========================================================================================================================
+
+READ-ONLY DIAGNOSTIC RECONCILIATION
+
+WA calendar-year rows read                    : 10
+WA years normalized                           : 0
+Preferred IV.C3 control rows                  : 213
+Reconciliation comparison rows                : 0
+Source-resolution errors                      : 0
+
+COMPARISON RESULTS
+------------------------------------------------------------------------------------------------------------------------
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  WA validated calendar-year reconstruction loaded
+PASS  Preferred Trustees controls loaded
+FAIL  WA CY2015-CY2024 recognized
+PASS  IV.C3 preferred controls recognized
+FAIL  Reconciliation rows produced
+FAIL  CY2015-CY2024 represented in reconciliation
+FAIL  Trustees BID + REBATE = TOTAL within published precision
+FAIL  CY2024 explicitly marked PARTIAL_JAN_SEP
+PASS  No source-resolution errors
+
+OVERALL RECONCILIATION PROFILER STATUS: FAIL
+
+INTERPRETATION
+PASS means the validated WA reconstruction and certified Trustees IV.C3 controls
+were joined successfully and compared on an annual-per-enrollee scale.
+PASS does NOT require WA to equal national Trustees values.
+PASS does NOT establish complete CY2024, final reconciliation certification,
+or ledger authorization.
+
+IMPORTANT v0.1 LIMITATION
+The validated WA calendar-year reconstruction is aggregate HMO/HMOPOS + Local PPO.
+For CY2017+, Trustees HMO and PPO controls are therefore shown separately rather
+than combined with invented weights. A later reconciliation step may use actual
+WA plan-type member-month weights if available from validated reconstruction cells.
+
+Output directory: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\trustees_ivc3_reconciliation_v0_2

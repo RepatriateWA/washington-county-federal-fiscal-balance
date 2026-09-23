@@ -1,0 +1,36 @@
+================================================================================================================
+CMS MA PART C — CY2022 PLAN-TYPE BOUNDARY DIAGNOSTIC v0.1
+================================================================================================================
+
+READ-ONLY DIAGNOSTIC
+
+Months processed                         : 12
+HMO member-months                       : 0
+Local PPO member-months                 : 1,821,310
+HMO + Local PPO member-months           : 1,821,310
+Unresolved contract-plan member-months  : 0
+Duplicate contract-plan keys            : 0
+
+DEDICATED CY2022 CONTROLS
+----------------------------------------------------------------------------------------------------------------
+HMO                                      : 5,498,705
+Local PPO                                : 1,821,310
+Combined                                 : 7,320,015
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------------------
+PASS  All 12 CY2022 CPSC months processed: 12/12
+PASS  No diagnostic execution/source errors: 0
+PASS  No duplicate contract-plan keys: 0
+PASS  No unresolved WA contract-plan member-months: 0
+FAIL  HMO member-months reproduce dedicated CY2022 control: observed=0; control=5,498,705; diff=-5,498,705
+PASS  Local PPO member-months reproduce dedicated CY2022 control: observed=1,821,310; control=1,821,310; diff=0
+FAIL  Combined HMO + Local PPO member-months reproduce control: observed=1,821,310; control=7,320,015; diff=-5,498,705
+
+OVERALL CY2022 PLAN-TYPE BOUNDARY DIAGNOSTIC STATUS: FAIL
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------
+FAIL is informative. The detailed monthly, plan-type, and unresolved outputs identify whether HMO is lost or misclassified at the CPSC contract-dimension boundary. Do not weaken controls or modify source data merely to obtain PASS.
+
+Output directory: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\cy2022_plan_type_boundary_diagnostic_v0_1

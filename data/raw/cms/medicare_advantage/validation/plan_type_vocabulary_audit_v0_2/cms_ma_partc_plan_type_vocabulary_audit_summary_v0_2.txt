@@ -1,0 +1,49 @@
+================================================================================================================
+CMS MA PART C — RAW CPSC PLAN-TYPE VOCABULARY AUDIT v0.2
+================================================================================================================
+
+Scope                                  : 2014-10 through 2024-09
+Required months                        : 120
+Months processed                       : 120
+Distinct raw/canonical vocabulary rows : 10
+Unresolved numeric WA member-months    : 0
+Duplicate contract-plan keys           : 0
+
+AUDIT CHECKS
+----------------------------------------------------------------------------------------------------------------
+PASS  All required months processed: 120/120
+PASS  No execution/source-resolution errors: 0
+PASS  No duplicate contract-plan keys: 0
+PASS  No unresolved numeric WA member-months: 0
+PASS  Raw HMO/HMOPOS vocabulary observed: 47,068,269 member-months; 120 months represented
+
+PLAN-TYPE VOCABULARY
+----------------------------------------------------------------------------------------------------------------
+'Medicare Prescription Drug Plan' -> 'MEDICARE PRESCRIPTION DRUG PLAN' | target=NO | 2014-10..2024-09 | months=120 | member-months=54,073,521 | suppressed rows=1,444,377
+'HMO/HMOPOS' -> 'HMO/HMOPOS' | target=NO | 2014-10..2024-09 | months=120 | member-months=47,068,269 | suppressed rows=798,865
+'Local PPO' -> 'LOCAL PPO' | target=YES | 2014-10..2024-09 | months=120 | member-months=12,282,865 | suppressed rows=1,761,885
+'National PACE' -> 'NATIONAL PACE' | target=NO | 2014-10..2024-09 | months=120 | member-months=96,083 | suppressed rows=3,681
+'Employer/Union Only Direct Contract PDP' -> 'EMPLOYER/UNION ONLY DIRECT CONTRACT PDP' | target=NO | 2014-10..2024-09 | months=120 | member-months=67,770 | suppressed rows=17,833
+'PFFS' -> 'PFFS' | target=NO | 2014-10..2024-09 | months=115 | member-months=29,817 | suppressed rows=15,012
+'1876 Cost' -> '1876 COST' | target=NO | 2014-10..2024-09 | months=120 | member-months=0 | suppressed rows=1,899
+'MSA' -> 'MSA' | target=NO | 2014-10..2024-09 | months=69 | member-months=0 | suppressed rows=13,078
+'Medicare-Medicaid Plan HMO/HMOPOS' -> 'MEDICARE MEDICAID PLAN HMO/HMOPOS' | target=NO | 2014-10..2024-09 | months=120 | member-months=0 | suppressed rows=5,811
+'Regional PPO' -> 'REGIONAL PPO' | target=NO | 2014-10..2024-09 | months=120 | member-months=0 | suppressed rows=3,459
+
+HMO/PPO-LIKE LABELS EXCLUDED BY CURRENT TARGET FILTER
+----------------------------------------------------------------------------------------------------------------
+'HMO/HMOPOS' -> 'HMO/HMOPOS' | 2014-10..2024-09 | months=120 | member-months=47,068,269
+'Medicare-Medicaid Plan HMO/HMOPOS' -> 'MEDICARE MEDICAID PLAN HMO/HMOPOS' | 2014-10..2024-09 | months=120 | member-months=0
+'Regional PPO' -> 'REGIONAL PPO' | 2014-10..2024-09 | months=120 | member-months=0
+
+AUDIT STATUS
+----------------------------------------------------------------------------------------------------------------
+PASS — full requested source universe inventoried successfully.
+
+IMPORTANT
+----------------------------------------------------------------------------------------------------------------
+PASS here does NOT certify the current production target filter. It certifies that the requested vocabulary audit completed and quantified the source terminology. Excluded HMO/PPO-like labels are expected evidence for the defect investigation.
+
+Detailed monthly output : D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\plan_type_vocabulary_audit_v0_2\cms_ma_partc_plan_type_vocabulary_monthly_v0_2.csv
+Vocabulary summary       : D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\plan_type_vocabulary_audit_v0_2\cms_ma_partc_plan_type_vocabulary_summary_v0_2.csv
+Unresolved rows          : D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\plan_type_vocabulary_audit_v0_2\cms_ma_partc_plan_type_unresolved_v0_2.csv

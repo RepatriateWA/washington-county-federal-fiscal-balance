@@ -1,0 +1,60 @@
+========================================================================================================================
+CMS MA PART C — WASHINGTON vs MEDICARE TRUSTEES IV.C3 RECONCILIATION v0.3
+========================================================================================================================
+
+READ-ONLY DIAGNOSTIC RECONCILIATION
+
+WA calendar-year rows read                    : 10
+WA years normalized                           : 10
+Preferred IV.C3 control rows                  : 213
+Reconciliation comparison rows                : 17
+Source-resolution errors                      : 1
+
+COMPARISON RESULTS
+------------------------------------------------------------------------------------------------------------------------
+CY2015 LOCAL_CCP_COMBINED [COMPLETE]: WA total annual/enrollee=7,962.83; Trustees=9,528.00; diff=-16.43%
+CY2017 LOCAL_CCP_HMO [COMPLETE]: WA total annual/enrollee=9,611.76; Trustees=10,209.00; diff=-5.85%
+CY2017 LOCAL_CCP_PPO [COMPLETE]: WA total annual/enrollee=9,611.76; Trustees=9,903.00; diff=-2.94%
+CY2018 LOCAL_CCP_HMO [COMPLETE]: WA total annual/enrollee=10,175.11; Trustees=10,602.00; diff=-4.03%
+CY2018 LOCAL_CCP_PPO [COMPLETE]: WA total annual/enrollee=10,175.11; Trustees=10,324.00; diff=-1.44%
+CY2019 LOCAL_CCP_HMO [COMPLETE]: WA total annual/enrollee=10,877.30; Trustees=11,330.00; diff=-4.00%
+CY2019 LOCAL_CCP_PPO [COMPLETE]: WA total annual/enrollee=10,877.30; Trustees=10,787.00; diff=0.84%
+CY2020 LOCAL_CCP_HMO [COMPLETE]: WA total annual/enrollee=11,125.27; Trustees=11,988.00; diff=-7.20%
+CY2020 LOCAL_CCP_PPO [COMPLETE]: WA total annual/enrollee=11,125.27; Trustees=11,371.00; diff=-2.16%
+CY2021 LOCAL_CCP_HMO [COMPLETE]: WA total annual/enrollee=10,390.82; Trustees=12,134.00; diff=-14.37%
+CY2021 LOCAL_CCP_PPO [COMPLETE]: WA total annual/enrollee=10,390.82; Trustees=11,297.00; diff=-8.02%
+CY2022 LOCAL_CCP_HMO [COMPLETE]: WA total annual/enrollee=11,039.34; Trustees=12,834.00; diff=-13.98%
+CY2022 LOCAL_CCP_PPO [COMPLETE]: WA total annual/enrollee=11,039.34; Trustees=11,913.00; diff=-7.33%
+CY2023 LOCAL_CCP_HMO [COMPLETE]: WA total annual/enrollee=11,746.61; Trustees=13,602.00; diff=-13.64%
+CY2023 LOCAL_CCP_PPO [COMPLETE]: WA total annual/enrollee=11,746.61; Trustees=12,557.00; diff=-6.45%
+CY2024 LOCAL_CCP_HMO [PARTIAL_JAN_SEP]: WA total annual/enrollee=11,942.04; Trustees=13,602.00; diff=-12.20%
+CY2024 LOCAL_CCP_PPO [PARTIAL_JAN_SEP]: WA total annual/enrollee=11,942.04; Trustees=12,792.00; diff=-6.64%
+
+VALIDATION CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS  WA validated calendar-year reconstruction loaded
+PASS  Preferred Trustees controls loaded
+PASS  WA CY2015-CY2024 recognized
+PASS  IV.C3 preferred controls recognized
+PASS  Reconciliation rows produced
+FAIL  CY2015-CY2024 represented in reconciliation
+PASS  Trustees BID + REBATE = TOTAL within published precision
+PASS  CY2024 explicitly marked PARTIAL_JAN_SEP
+FAIL  No source-resolution errors
+
+OVERALL RECONCILIATION PROFILER STATUS: FAIL
+
+INTERPRETATION
+PASS means the validated WA reconstruction and certified Trustees IV.C3 controls
+were joined successfully and compared on an annual-per-enrollee scale.
+PASS does NOT require WA to equal national Trustees values.
+PASS does NOT establish complete CY2024, final reconciliation certification,
+or ledger authorization.
+
+IMPORTANT v0.3 LIMITATION
+The validated WA calendar-year reconstruction is aggregate HMO/HMOPOS + Local PPO.
+For CY2017+, Trustees HMO and PPO controls are therefore shown separately rather
+than combined with invented weights. A later reconciliation step may use actual
+WA plan-type member-month weights if available from validated reconstruction cells.
+
+Output directory: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\trustees_ivc3_reconciliation_v0_3

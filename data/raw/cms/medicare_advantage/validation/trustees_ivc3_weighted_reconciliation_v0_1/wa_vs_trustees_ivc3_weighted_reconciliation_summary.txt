@@ -1,0 +1,55 @@
+============================================================================================================================
+CMS MA PART C — WA-MEMBER-MONTH-WEIGHTED TRUSTEES IV.C3 RECONCILIATION v0.2
+============================================================================================================================
+
+READ-ONLY DIAGNOSTIC RECONCILIATION
+
+WA cell rows read                             : 93,574
+WA annual rows read                           : 10
+Weighted/combined comparison years            : 10
+Source-resolution errors                      : 0
+
+YEAR RESULTS
+----------------------------------------------------------------------------------------------------------------------------
+CY2015 [COMPLETE_CALENDAR_YEAR]: HMO wt=83.4212%; PPO wt=16.5788%; WA total=8,673.46; Trustees comparator=9,528.00; diff=-8.97% | A/B=-4.72% | Rebate=-55.91%
+CY2016 [COMPLETE_CALENDAR_YEAR]: HMO wt=86.5266%; PPO wt=13.4734%; WA total=8,969.91; Trustees comparator=9,953.10; diff=-9.88% | A/B=-4.81% | Rebate=-54.72%
+CY2017 [COMPLETE_CALENDAR_YEAR]: HMO wt=86.2317%; PPO wt=13.7683%; WA total=9,510.79; Trustees comparator=10,166.87; diff=-6.45% | A/B=-2.06% | Rebate=-46.50%
+CY2018 [COMPLETE_CALENDAR_YEAR]: HMO wt=86.3053%; PPO wt=13.6947%; WA total=9,882.36; Trustees comparator=10,563.93; diff=-6.45% | A/B=-2.58% | Rebate=-40.99%
+CY2019 [COMPLETE_CALENDAR_YEAR]: HMO wt=86.5683%; PPO wt=13.4317%; WA total=10,567.18; Trustees comparator=11,257.07; diff=-6.13% | A/B=-2.60% | Rebate=-35.44%
+CY2020 [COMPLETE_CALENDAR_YEAR]: HMO wt=86.6840%; PPO wt=13.3160%; WA total=11,056.17; Trustees comparator=11,905.84; diff=-7.14% | A/B=-4.87% | Rebate=-24.42%
+CY2021 [COMPLETE_CALENDAR_YEAR]: HMO wt=79.6008%; PPO wt=20.3992%; WA total=11,044.75; Trustees comparator=11,963.26; diff=-7.68% | A/B=-6.81% | Rebate=-13.73%
+CY2022 [COMPLETE_CALENDAR_YEAR]: HMO wt=75.1188%; PPO wt=24.8812%; WA total=11,805.23; Trustees comparator=12,604.84; diff=-6.34% | A/B=-6.10% | Rebate=-7.93%
+CY2023 [COMPLETE_CALENDAR_YEAR]: HMO wt=70.1461%; PPO wt=29.8539%; WA total=12,771.96; Trustees comparator=13,290.03; diff=-3.90% | A/B=-4.28% | Rebate=-1.79%
+CY2024 [PARTIAL_JAN_SEP]: HMO wt=63.7886%; PPO wt=36.2114%; WA total=12,746.19; Trustees comparator=13,308.69; diff=-4.23% | A/B=-3.23% | Rebate=-10.13%
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------------------------------
+PASS  Validated WA cells loaded
+PASS  Validated WA annual reconstruction loaded
+PASS  Certified preferred Trustees controls loaded
+PASS  Only expected WA plan types observed
+PASS  CY2015-CY2024 represented
+PASS  WA HMO + PPO weights sum to 1
+PASS  Cell member-month totals reproduce annual reconstruction
+PASS  Cell A/B dollars reproduce annual reconstruction
+PASS  Cell rebate dollars reproduce annual reconstruction
+PASS  Cell total Part C dollars reproduce annual reconstruction
+PASS  Trustees BID + REBATE = TOTAL within published precision
+PASS  CY2024 remains partial
+PASS  No source-resolution errors
+
+OVERALL WEIGHTED RECONCILIATION PROFILER STATUS: PASS
+
+INTERPRETATION
+PASS establishes that actual WA plan-type member-month weights were derived
+from the validated reconstruction cells and applied to certified Trustees
+IV.C3 HMO/PPO controls without invented weights.
+
+The percentage differences remain reconciliation evidence, not pass/fail
+thresholds. Washington and national Trustees populations need not be equal.
+
+CY2015 retains the certified combined Local CCP comparator.
+CY2024 remains partial until Oct-Dec 2024 are acquired and reconstructed.
+This script does not authorize database or final-ledger inclusion.
+
+Output directory: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_advantage\validation\trustees_ivc3_weighted_reconciliation_v0_1
