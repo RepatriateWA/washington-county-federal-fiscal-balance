@@ -1,0 +1,45 @@
+CMS MEDICARE PART D LANDSCAPE STRUCTURAL PROFILE v0.1
+========================================================================
+Generated UTC: 2026-09-23T20:44:43.753285+00:00
+Archive: data\raw\cms\medicare_partd\landscape\cy2006-cy2025-landscape-files.zip
+Archive SHA-256: 3f034779fe00ddd3b7ad18de890ef7a98a69053fd9c3787e79aa8e631649a390
+
+BOUNDARY
+------------------------------------------------------------------------
+Structural profiling only. No Part D status semantics are assigned here.
+No imputation, reconstruction, database writes, or ledger inclusion.
+
+INVENTORY
+------------------------------------------------------------------------
+Archive members: 16
+Profiled target-year tabular schemas: 0
+Candidate semantic fields: 0
+Profile errors: 0
+
+TARGET-YEAR COVERAGE
+------------------------------------------------------------------------
+CY2015: 0 profiled tabular member/sheet(s)
+CY2016: 0 profiled tabular member/sheet(s)
+CY2017: 0 profiled tabular member/sheet(s)
+CY2018: 0 profiled tabular member/sheet(s)
+CY2019: 0 profiled tabular member/sheet(s)
+CY2020: 0 profiled tabular member/sheet(s)
+CY2021: 0 profiled tabular member/sheet(s)
+CY2022: 0 profiled tabular member/sheet(s)
+CY2023: 0 profiled tabular member/sheet(s)
+CY2024: 0 profiled tabular member/sheet(s)
+
+CHECKS
+------------------------------------------------------------------------
+archive ZIP integrity: PASS
+all CY2015-CY2024 have >=1 profiled tabular member: FAIL
+no target-member profile errors: PASS
+candidate Contract/Plan/PBP/Part-D-like fields observed: FAIL
+
+ERRORS
+------------------------------------------------------------------------
+None
+
+OVERALL
+------------------------------------------------------------------------
+OVERALL: FAIL

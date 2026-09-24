@@ -1,0 +1,57 @@
+CMS MEDICARE PART D LANDSCAPE STRUCTURAL PROFILE v0.4
+============================================================================
+Generated UTC: 2026-09-23T21:07:56.027264+00:00
+Archive: data\raw\cms\medicare_partd\landscape\cy2006-cy2025-landscape-files.zip
+Archive SHA-256: 3f034779fe00ddd3b7ad18de890ef7a98a69053fd9c3787e79aa8e631649a390
+
+BOUNDARY
+----------------------------------------------------------------------------
+Recursive structural profiling only. Coverage year is assigned from the
+leaf name of each annual outer CMS package, then inherited by descendants.
+Legacy malformed embedded newlines, if encountered, are normalized only for parsing.
+No Part D status semantics, imputation, payment propagation, reconstruction,
+database writes, or ledger inclusion.
+
+INVENTORY
+----------------------------------------------------------------------------
+Outer file members: 16
+Recursive descendant members in target packages: 221
+Profiled tabular schemas/sheets: 125
+Candidate semantic fields: 195
+Legacy embedded-newline fallbacks: 0
+Errors: 0
+
+TARGET-YEAR COVERAGE
+----------------------------------------------------------------------------
+CY2015: annual packages=1, profiled tabular schemas/sheets=12
+CY2016: annual packages=1, profiled tabular schemas/sheets=13
+CY2017: annual packages=1, profiled tabular schemas/sheets=13
+CY2018: annual packages=1, profiled tabular schemas/sheets=13
+CY2019: annual packages=1, profiled tabular schemas/sheets=13
+CY2020: annual packages=1, profiled tabular schemas/sheets=13
+CY2021: annual packages=1, profiled tabular schemas/sheets=13
+CY2022: annual packages=1, profiled tabular schemas/sheets=13
+CY2023: annual packages=1, profiled tabular schemas/sheets=13
+CY2024: annual packages=1, profiled tabular schemas/sheets=9
+
+CHECKS
+----------------------------------------------------------------------------
+outer archive ZIP integrity: PASS
+exactly one annual outer package for each CY2015-CY2024: PASS
+all CY2015-CY2024 reach >=1 tabular schema/sheet: PASS
+no recursive/profile errors: PASS
+candidate Contract/Plan/PBP/Part-D-like fields observed: PASS
+
+ERRORS
+----------------------------------------------------------------------------
+None
+
+INTERPRETIVE BOUNDARY
+----------------------------------------------------------------------------
+A PASS certifies only that the official CMS annual Landscape packages
+for CY2015-CY2024 are deterministically identified and recursively readable.
+The candidate fields must be reviewed before a Part D status rule is defined.
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: PASS

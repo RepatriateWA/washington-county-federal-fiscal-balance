@@ -1,0 +1,6 @@
+check,status,detail
+All 10 PartDPlans years resolved,PASS,10/10
+All 117 required CPSC months resolved,PASS,117/117
+Exact-match enrollment accounting identity,PASS,difference=0
+Total numeric enrollment accounting identity,PASS,difference=0
+No processing/source errors,PASS,errors=0

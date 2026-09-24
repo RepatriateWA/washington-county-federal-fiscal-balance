@@ -1,0 +1,55 @@
+CMS MEDICARE PART D CPSC ENROLLMENT LINKAGE PROFILE v0.3
+========================================================================
+Generated UTC: 2026-09-23T05:47:13.455340+00:00
+Scope: Washington, Jan 2015-Sep 2024 (117 months)
+
+BOUNDARY
+------------------------------------------------------------------------
+Memory-safe read-only diagnostic profile.
+CPSC is broader than the Part D payment universe.
+NO_PARTD_PAYMENT_MATCH is not automatically a linkage failure.
+No payment reconstruction, imputation, database writes, or ledger inclusion.
+RDS remains out of scope.
+
+SOURCE INDEX
+------------------------------------------------------------------------
+Candidate files scanned once: 376
+CPSC-like members admitted by header: 121
+Required months: 117
+Parsed months: 117
+
+ENROLLMENT ACCOUNTING
+------------------------------------------------------------------------
+WA numeric enrollment across monthly county rows: 111,380,906
+PARTD_PAYMENT_MATCH numeric enrollment: 106,176,965
+NO_PARTD_PAYMENT_MATCH numeric enrollment: 5,203,941
+PARTD_PAYMENT_MATCH suppressed/nonnumeric rows: 1,438,490
+NO_PARTD_PAYMENT_MATCH suppressed/nonnumeric rows: 2,540,406
+Numeric accounting difference: 0
+
+OTHER DIAGNOSTICS
+------------------------------------------------------------------------
+Payment-plan/month rows without observed WA CPSC match: 402,386
+Duplicate annual Part D payment keys: 0
+Warnings: 0
+Errors: 0
+
+CHECKS
+------------------------------------------------------------------------
+All 117 months resolved and parsed: PASS
+Numeric enrollment accounting identity: PASS
+No duplicate annual Part D payment keys: PASS
+
+MEMORY DISCIPLINE
+------------------------------------------------------------------------
+Source index retains metadata only.
+Each selected monthly source is streamed and released before the next month.
+NO_PARTD_PAYMENT_MATCH detail is aggregated by month/contract/PBP/type.
+
+WARNINGS
+------------------------------------------------------------------------
+None
+
+ERRORS
+------------------------------------------------------------------------
+None

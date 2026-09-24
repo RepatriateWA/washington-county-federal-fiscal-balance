@@ -1,0 +1,49 @@
+CMS MEDICARE PART D PBP BENEFITS STRUCTURAL/SEMANTIC PROFILE v0.2
+============================================================================
+Generated UTC: 2026-09-23T21:55:22.164853+00:00
+Source root: data\raw\cms\medicare_partd\pbp_benefits
+
+BOUNDARY
+----------------------------------------------------------------------------
+Profiles preserved official CMS PBP Benefits packages only.
+Delimited-text parser ceiling raised to 10,000,000 bytes solely to admit
+large CMS free-text fields; source values are not truncated or normalized.
+Does not consume the unmatched member-month control and does not classify
+Part D status. No sibling-PBP/other-year propagation, payment propagation,
+imputation, reconstruction, DB writes, or ledger inclusion.
+
+YEAR SUMMARY
+----------------------------------------------------------------------------
+CY2015: ZIP members=90, tables=45, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2016: ZIP members=94, tables=47, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2017: ZIP members=130, tables=66, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2018: ZIP members=130, tables=66, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2019: ZIP members=130, tables=66, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2020: ZIP members=136, tables=69, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2021: ZIP members=136, tables=69, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2022: ZIP members=144, tables=73, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2023: ZIP members=144, tables=73, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+CY2024: ZIP members=164, tables=83, Contract+PBP tables=3, with strong Part-D fields=1, with any Part-D candidate=1
+
+CHECKS
+----------------------------------------------------------------------------
+exactly one preserved PBP Benefits ZIP for every CY2015-CY2024: PASS
+all years contain readable tabular data: PASS
+all years expose Contract + PBP together in at least one table: PASS
+all years expose Contract + PBP with at least one Part-D candidate field: PASS
+no structural/semantic profile errors: PASS
+
+ERRORS
+----------------------------------------------------------------------------
+None
+
+INTERPRETIVE BOUNDARY
+----------------------------------------------------------------------------
+A PASS means the preserved PBP Benefits packages expose reproducible
+same-year plan-level structure suitable for designing a later status rule.
+It does not establish that any candidate field/value means Part D present
+or absent. That semantic decision requires inspection of the captured values.
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: PASS

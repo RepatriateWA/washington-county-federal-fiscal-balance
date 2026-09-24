@@ -1,0 +1,4 @@
+scope,error
+PartDPlans CY2023,Expected exactly one PartDPlans.xlsx; found 0: []
+PartDPlans CY2024,Expected exactly one PartDPlans.xlsx; found 0: []
+PartDPlans CY2025,CY2025: no Plan Payment ZIP found

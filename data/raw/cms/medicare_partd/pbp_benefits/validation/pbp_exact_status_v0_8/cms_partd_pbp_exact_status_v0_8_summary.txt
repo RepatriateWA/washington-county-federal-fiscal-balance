@@ -1,0 +1,27 @@
+CMS MEDICARE PART D PBP EXACT STATUS VALIDATION v0.8
+
+Predecessor: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_partd\pbp_benefits\validation\pbp_benefits_status_validation_v0_7\cms_partd_pbp_status_detail.csv
+Frozen semantic rule: 1=Part D YES; 2=Part D NO
+Exact same-year Contract+PBP only.
+
+CONTROL
+Relationships: 240
+Member-months: 5,197,132
+
+CLASSIFICATION
+PARTD_YES: 3 relationships | 1,472 member-months | 0.028323%
+PARTD_NO: 237 relationships | 5,195,660 member-months | 99.971677%
+STATUS_UNRESOLVED: 0 relationships | 0 member-months | 0.000000%
+STATUS_CONFLICT: 0 relationships | 0 member-months | 0.000000%
+
+CHECKS
+[PASS] Predecessor relationship control — 240 == 240
+[PASS] Predecessor member-month control — 5,197,132 == 5,197,132
+[PASS] Relationship classification identity — 240 == 240
+[PASS] Member-month classification identity — 5,197,132 == 5,197,132
+[PASS] No source/profile errors — errors=0
+[PASS] Only frozen source codes used for affirmative/negative status — YES/NO require exact certified code 1/2
+
+OVERALL: PASS
+
+Boundary: A PARTD_YES classification establishes benefit status only. It does not authorize borrowing or assigning a sibling-PBP payment and does not authorize ledger inclusion.

@@ -1,0 +1,55 @@
+CMS MEDICARE PART D LANDSCAPE STRUCTURAL PROFILE v0.2
+============================================================================
+Generated UTC: 2026-09-23T20:49:16.245106+00:00
+Archive: data\raw\cms\medicare_partd\landscape\cy2006-cy2025-landscape-files.zip
+Archive SHA-256: 3f034779fe00ddd3b7ad18de890ef7a98a69053fd9c3787e79aa8e631649a390
+
+BOUNDARY
+----------------------------------------------------------------------------
+Structural profiling only. CMS target years are nested ZIPs.
+No Part D status semantics are assigned here.
+No imputation, payment propagation, reconstruction, DB writes, or ledger inclusion.
+
+INVENTORY
+----------------------------------------------------------------------------
+Outer file members: 16
+Nested file members in target years: 62
+Profiled target-year tabular schemas/sheets: 9
+Candidate semantic fields: 79
+Profile errors: 0
+
+TARGET-YEAR COVERAGE
+----------------------------------------------------------------------------
+CY2015: nested ZIPs=0, profiled tabular member/sheets=0
+CY2016: nested ZIPs=0, profiled tabular member/sheets=0
+CY2017: nested ZIPs=0, profiled tabular member/sheets=0
+CY2018: nested ZIPs=0, profiled tabular member/sheets=0
+CY2019: nested ZIPs=0, profiled tabular member/sheets=0
+CY2020: nested ZIPs=0, profiled tabular member/sheets=0
+CY2021: nested ZIPs=9, profiled tabular member/sheets=0
+CY2022: nested ZIPs=3, profiled tabular member/sheets=9
+CY2023: nested ZIPs=0, profiled tabular member/sheets=0
+CY2024: nested ZIPs=0, profiled tabular member/sheets=0
+
+CHECKS
+----------------------------------------------------------------------------
+outer archive ZIP integrity: PASS
+exactly one target nested ZIP found for each CY2015-CY2024: FAIL
+all CY2015-CY2024 have >=1 profiled tabular member/sheet: FAIL
+no target nested/profile errors: PASS
+candidate Contract/Plan/PBP/Part-D-like fields observed: PASS
+
+ERRORS
+----------------------------------------------------------------------------
+None
+
+INTERPRETIVE BOUNDARY
+----------------------------------------------------------------------------
+A structural PASS means the preserved CMS Landscape archive can be read
+across CY2015-CY2024 and exposes candidate plan-level fields. It does NOT
+establish which rows or fields prove Part D coverage. That requires the
+next semantic-status gate.
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: FAIL

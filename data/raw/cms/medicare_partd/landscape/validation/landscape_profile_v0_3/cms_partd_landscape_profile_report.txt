@@ -1,0 +1,60 @@
+CMS MEDICARE PART D LANDSCAPE STRUCTURAL PROFILE v0.3
+============================================================================
+Generated UTC: 2026-09-23T20:56:56.283370+00:00
+Archive: data\raw\cms\medicare_partd\landscape\cy2006-cy2025-landscape-files.zip
+Archive SHA-256: 3f034779fe00ddd3b7ad18de890ef7a98a69053fd9c3787e79aa8e631649a390
+
+BOUNDARY
+----------------------------------------------------------------------------
+Recursive structural profiling only. Coverage year is assigned from the
+leaf name of each annual outer CMS package, then inherited by descendants.
+No Part D status semantics, imputation, payment propagation, reconstruction,
+database writes, or ledger inclusion.
+
+INVENTORY
+----------------------------------------------------------------------------
+Outer file members: 16
+Recursive descendant members in target packages: 221
+Profiled tabular schemas/sheets: 119
+Candidate semantic fields: 190
+Errors: 6
+
+TARGET-YEAR COVERAGE
+----------------------------------------------------------------------------
+CY2015: annual packages=1, profiled tabular schemas/sheets=6
+CY2016: annual packages=1, profiled tabular schemas/sheets=13
+CY2017: annual packages=1, profiled tabular schemas/sheets=13
+CY2018: annual packages=1, profiled tabular schemas/sheets=13
+CY2019: annual packages=1, profiled tabular schemas/sheets=13
+CY2020: annual packages=1, profiled tabular schemas/sheets=13
+CY2021: annual packages=1, profiled tabular schemas/sheets=13
+CY2022: annual packages=1, profiled tabular schemas/sheets=13
+CY2023: annual packages=1, profiled tabular schemas/sheets=13
+CY2024: annual packages=1, profiled tabular schemas/sheets=9
+
+CHECKS
+----------------------------------------------------------------------------
+outer archive ZIP integrity: PASS
+exactly one annual outer package for each CY2015-CY2024: PASS
+all CY2015-CY2024 reach >=1 tabular schema/sheet: PASS
+no recursive/profile errors: FAIL
+candidate Contract/Plan/PBP/Part-D-like fields observed: PASS
+
+ERRORS
+----------------------------------------------------------------------------
+CY2015 | CY2006-CY2025_Landscape_Files/CY2013-CY2021_Landscape_and_Plan_and_Premium_for_Medicare_Plans_Offering_Part_D/2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip | 2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip -> 2015 Landscape Source Files (v 3 18 15).zip -> 2015 MA Landscape Source FIles (v 3 18 15).zip | 2015LandscapeSource file MA_NtoW 03182015.csv | Error: new-line character seen in unquoted field - do you need to open the file with newline=''?
+CY2015 | CY2006-CY2025_Landscape_Files/CY2013-CY2021_Landscape_and_Plan_and_Premium_for_Medicare_Plans_Offering_Part_D/2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip | 2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip -> 2015 Landscape Source Files (v 3 18 15).zip -> 2015 PDP Landscape Source FIles (v 10 15 14).zip | 2015LandscapeSource file PDP 10142014.csv | Error: new-line character seen in unquoted field - do you need to open the file with newline=''?
+CY2015 | CY2006-CY2025_Landscape_Files/CY2013-CY2021_Landscape_and_Plan_and_Premium_for_Medicare_Plans_Offering_Part_D/2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip | 2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip -> 2015 Landscape Source Files (v 3 18 15).zip -> 2015 SNP Landscape Source FIles (v 11 04 14).zip | 2015LandscapeSource file SNP 11042014.csv | Error: new-line character seen in unquoted field - do you need to open the file with newline=''?
+CY2015 | CY2006-CY2025_Landscape_Files/CY2013-CY2021_Landscape_and_Plan_and_Premium_for_Medicare_Plans_Offering_Part_D/2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip | 2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip -> 2015 Plan and Premium Information for Medicare Plans Offering Part D Coverage (v2018).zip | 508_AlabamatoMontana 03182015.csv | Error: new-line character seen in unquoted field - do you need to open the file with newline=''?
+CY2015 | CY2006-CY2025_Landscape_Files/CY2013-CY2021_Landscape_and_Plan_and_Premium_for_Medicare_Plans_Offering_Part_D/2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip | 2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip -> 2015 Plan and Premium Information for Medicare Plans Offering Part D Coverage (v2018).zip | 508_ImportantNotes 03182015.csv | Error: new-line character seen in unquoted field - do you need to open the file with newline=''?
+CY2015 | CY2006-CY2025_Landscape_Files/CY2013-CY2021_Landscape_and_Plan_and_Premium_for_Medicare_Plans_Offering_Part_D/2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip | 2015 Landscape and Plan and Premium Files For Medicare Plans Offering Part D Coverage.zip -> 2015 Plan and Premium Information for Medicare Plans Offering Part D Coverage (v2018).zip | 508_Sanctioned 03182015.csv | Error: new-line character seen in unquoted field - do you need to open the file with newline=''?
+
+INTERPRETIVE BOUNDARY
+----------------------------------------------------------------------------
+A PASS certifies only that the official CMS annual Landscape packages
+for CY2015-CY2024 are deterministically identified and recursively readable.
+The candidate fields must be reviewed before a Part D status rule is defined.
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: FAIL

@@ -1,0 +1,11 @@
+scope,message
+PartDPlans CY2015,"CY2015: nonnumeric required payment input for E0654-801: [32.56, 0.88, None, None]"
+PartDPlans CY2016,"CY2016: nonnumeric required payment input for E0654-801: [27.19, 0.912, None, None]"
+PartDPlans CY2017,"CY2017: nonnumeric required payment input for E0654-801: [20.919707763169356, 0.8873088835780124, 26.493968362353478, None]"
+PartDPlans CY2018,"CY2018: nonnumeric required payment input for E0654-801: [17.760982883690094, 0.8749395751908522, 31.813420024107828, None]"
+PartDPlans CY2019,"CY2019: nonnumeric required payment input for E0654-801: [13.43236046780909, 0.8767311098435955, 36.089704602083586, None]"
+PartDPlans CY2020,"CY2020: nonnumeric required payment input for E0654-801: [9.54, 0.86, 40.76, None]"
+PartDPlans CY2021,"CY2021: nonnumeric required payment input for E0654-801: [2.3514006183649547, 0.8118326777769301, 48.514596026801215, None]"
+PartDPlans CY2022,"CY2022: nonnumeric required payment input for E0654-801: [-3.45, 0.801, 65.67, None]"
+PartDPlans CY2023,"CY2023: nonnumeric required payment input for E3014-801: [-10.76, 0.72, 67.54, None]"
+PartDPlans CY2024,"CY2024: nonnumeric required payment input for E3014-801: [17.192761500846757, 0.7339946223920852, 71.06197709363018, None]"

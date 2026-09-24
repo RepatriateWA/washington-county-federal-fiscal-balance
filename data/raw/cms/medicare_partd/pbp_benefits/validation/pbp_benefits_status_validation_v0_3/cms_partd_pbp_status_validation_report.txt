@@ -1,0 +1,59 @@
+CMS MEDICARE PART D PBP BENEFITS EXACT-STATUS VALIDATION v0.3
+============================================================================
+Generated UTC: 2026-09-23T22:14:46.645174+00:00
+
+BOUNDARY
+----------------------------------------------------------------------------
+Exact same-year (CY, Contract, PBP) evidence only.
+Canonical relationship PBP field: unmatched_cpsc_pbp (schema alias only).
+pbp_mrx.txt delimiter is discovered from source bytes; comma is not assumed.
+Positive evidence requires exact presence in CMS pbp_mrx.txt with populated
+mrx_benefit_type and/or mrx_partd_network_loc. Absence is NOT negative evidence.
+No sibling-PBP or other-year propagation. No payment propagation, imputation,
+reconstruction, DB writes, or ledger inclusion.
+
+CONTROL
+----------------------------------------------------------------------------
+Original SAME_CONTRACT_OTHER_PBP member-months: 5,203,895
+Prior Landscape PARTD_INDICATED excluded: 66
+PBP Benefits validation target: 5,203,829
+Post-Landscape relationships classified: 241
+
+CLASSIFICATION
+----------------------------------------------------------------------------
+PBP_PARTD_EVIDENCE: 0 relationships | 0 member-months | 0.000000%
+PBP_PRESENT_NO_POSITIVE_PARTD_EVIDENCE: 0 relationships | 0 member-months | 0.000000%
+PBP_STATUS_UNRESOLVED: 241 relationships | 5,203,829 member-months | 100.000000%
+
+ACCOUNTING
+----------------------------------------------------------------------------
+5,203,829 = 0 + 0 + 5,203,829
+Difference: 0
+
+CHECKS
+----------------------------------------------------------------------------
+canonical relationship control equals 5,203,895: PASS
+Landscape positive exclusion equals 66 member-months: PASS
+PBP validation target equals 5,203,829 member-months: PASS
+classification accounting identity is exact: PASS
+all 241 post-Landscape relationships classified: PASS
+all ten pbp_mrx.txt sources resolved: FAIL
+no conflicting duplicate exact keys in pbp_mrx.txt: PASS
+no source/profile errors: FAIL
+
+ERRORS
+----------------------------------------------------------------------------
+CY2015: RuntimeError: CY2015: no Contract+PBP header in pbp_mrx.txt
+CY2016: RuntimeError: CY2016: no Contract+PBP header in pbp_mrx.txt
+CY2017: RuntimeError: CY2017: no Contract+PBP header in pbp_mrx.txt
+CY2018: RuntimeError: CY2018: no Contract+PBP header in pbp_mrx.txt
+CY2019: RuntimeError: CY2019: no Contract+PBP header in pbp_mrx.txt
+CY2020: RuntimeError: CY2020: no Contract+PBP header in pbp_mrx.txt
+CY2021: RuntimeError: CY2021: no Contract+PBP header in pbp_mrx.txt
+CY2022: RuntimeError: CY2022: no Contract+PBP header in pbp_mrx.txt
+CY2023: RuntimeError: CY2023: no Contract+PBP header in pbp_mrx.txt
+CY2024: RuntimeError: CY2024: no Contract+PBP header in pbp_mrx.txt
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: FAIL

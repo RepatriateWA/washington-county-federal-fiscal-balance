@@ -1,0 +1,11 @@
+year,coverage,numeric_wa_enrollment,exact_payment_match_enrollment,exact_match_complete_inputs_enrollment,exact_match_missing_inputs_enrollment,no_exact_payment_match_enrollment,suppressed_or_nonnumeric_rows,exact_match_accounting_difference,numeric_accounting_difference
+2015,JAN-DEC,0,0,0,0,0,33,0,0
+2016,JAN-DEC,0,0,0,0,0,2,0,0
+2017,JAN-DEC,0,0,0,0,0,0,0,0
+2018,JAN-DEC,0,0,0,0,0,0,0,0
+2019,JAN-DEC,0,0,0,0,0,0,0,0
+2020,JAN-DEC,0,0,0,0,0,0,0,0
+2021,JAN-DEC,0,0,0,0,0,0,0,0
+2022,JAN-DEC,0,0,0,0,0,0,0,0
+2023,JAN-DEC,0,0,0,0,0,3,0,0
+2024,JAN-SEP,0,0,0,0,0,0,0,0

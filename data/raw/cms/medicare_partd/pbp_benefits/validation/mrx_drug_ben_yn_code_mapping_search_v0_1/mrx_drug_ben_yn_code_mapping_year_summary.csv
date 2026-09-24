@@ -1,0 +1,11 @@
+year,source_zip,sha256,members,text_members_searched,members_with_field_reference,members_with_candidate_mapping_syntax
+2015,data\raw\cms\medicare_partd\pbp_benefits\2015\pbp-benefits-2015.zip,5bbfc9c84de06383531cfe658b555ffd1655cc0a223c599a70af99253988bb9a,90,89,3,4
+2016,data\raw\cms\medicare_partd\pbp_benefits\2016\pbp-benefits-2016.zip,0e1cddfc766a4e27ca55b9f7cc8498acd6444d84abdf747be0cb94fbe1a56939,94,93,3,4
+2017,data\raw\cms\medicare_partd\pbp_benefits\2017\pbp-benefits-2017.zip,f616a71c3689f46634b803578bb462f2b31ddfa674e0d95b4f97158aab1c79e8,130,129,3,7
+2018,data\raw\cms\medicare_partd\pbp_benefits\2018\pbp-benefits-2018-q4.zip,2c97ffa7e1c81e41034b1c233d323731eca2f601b6ff177a7fa919d39dc9922b,130,129,3,7
+2019,data\raw\cms\medicare_partd\pbp_benefits\2019\pbp-benefits-2019-q4.zip,ed9614e64f40e15c3a22f79d2005f443c5ef3ca3dee4f7908e54868a84970b71,130,129,3,8
+2020,data\raw\cms\medicare_partd\pbp_benefits\2020\pbp-benefits-2020-quarter-4.zip,435b40948a0f5c4a1fe4072a2ca06636d4225f7c268a76c0071b17e3280ce2b7,136,135,3,8
+2021,data\raw\cms\medicare_partd\pbp_benefits\2021\pbp-benefits-2021-updated-08022021.zip,1a6d7b1526457b5cdf8a5a1e228002b8ff447b971bdeea16bdb7e02de5cd35d9,136,135,3,8
+2022,data\raw\cms\medicare_partd\pbp_benefits\2022\pbp-benefits-2022-updated-07012022.zip,b4d48831b17651abca544186c3d2402776def135027ea4caffc5770746116a0a,144,143,3,10
+2023,data\raw\cms\medicare_partd\pbp_benefits\2023\pbp-benefits-2023-quarter-4.zip,3c67c51a92be948f0e78411bf9dc38665958294431f399e3d74cf78059264d68,144,143,3,10
+2024,data\raw\cms\medicare_partd\pbp_benefits\2024\pbp-benefits-2024-quarter-4.zip,c7b937da7cbea2e17395bdc09fea688a10ef79c51fc71e8c1f9bc2495fb945b4,164,163,3,11

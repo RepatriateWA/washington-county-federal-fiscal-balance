@@ -1,0 +1,39 @@
+CMS MEDICARE PART D mrx_drug_ben_yn SEMANTIC CONTINUITY v0.1
+Generated UTC: 2026-09-23T23:34:39.994550+00:00
+
+BOUNDARY
+Blind semantic/structural continuity test only.
+No disputed Contract+PBP population is read or classified.
+No status/payment propagation, imputation, reconstruction, DB write, or ledger inclusion.
+
+YEAR RESULTS
+CY2015: PASS | records=5,205 | 1=4,567 | 2=638 | blank=0 | other=0 | field=True | sas_label=True
+CY2016: PASS | records=5,097 | 1=4,497 | 2=600 | blank=0 | other=0 | field=True | sas_label=True
+CY2017: PASS | records=5,011 | 1=4,432 | 2=579 | blank=0 | other=0 | field=True | sas_label=True
+CY2018: PASS | records=5,486 | 1=4,897 | 2=589 | blank=0 | other=0 | field=True | sas_label=True
+CY2019: PASS | records=6,434 | 1=5,725 | 2=709 | blank=0 | other=0 | field=True | sas_label=True
+CY2020: PASS | records=7,299 | 1=6,485 | 2=814 | blank=0 | other=0 | field=True | sas_label=True
+CY2021: PASS | records=7,973 | 1=7,051 | 2=922 | blank=0 | other=0 | field=True | sas_label=True
+CY2022: PASS | records=8,346 | 1=7,317 | 2=1,029 | blank=0 | other=0 | field=True | sas_label=True
+CY2023: PASS | records=8,835 | 1=7,723 | 2=1,112 | blank=0 | other=0 | field=True | sas_label=True
+CY2024: PASS | records=8,718 | 1=7,660 | 2=1,058 | blank=0 | other=0 | field=True | sas_label=True
+CY2025: PASS | records=8,326 | 1=7,286 | 2=1,040 | blank=0 | other=0 | field=True | sas_label=True
+
+CY2025 DOCUMENTARY ANCHOR
+PASS=True
+mapping={'1': 'yes', '2': 'no'}; question_evidence=True; evidence_rows=2
+
+CHECKS
+[PASS] All 11 coverage years resolved and structurally PASS — 11/11 years PASS
+[PASS] Exact field mrx_drug_ben_yn present every year — 11/11
+[PASS] SAS label 'MRx Drug Benefit YN' present every year — 11/11
+[PASS] Observed nonblank vocabulary confined to {1,2} every year — other-value records=0
+[PASS] Both codes 1 and 2 observed every year — 11/11
+[PASS] CY2025 preserved ZIP SHA-256 matches documentary anchor — 7ca2d3bb30b01ba7e8143c6eea38e1dc5434ff782f5742ab6c640e9b45f6b2d3
+[PASS] CY2025 dictionary directly maps 1=Yes and 2=No and defines Part D question — mapping={'1': 'yes', '2': 'no'}; question_evidence=True; evidence_rows=2
+[PASS] No source/profile errors — errors=0
+
+OVERALL: PASS
+
+INTERPRETATION
+The CMS PBP Benefits field mrx_drug_ben_yn is structurally and semantically continuous across CY2015-CY2025 under the tested criteria. CY2025 provides direct CMS dictionary documentation that code 1 means Yes and code 2 means No for the question asking whether the plan offers a Medicare Prescription Drug (Part D) benefit. This validator establishes the semantic rule only; it does not apply that rule to disputed plans.

@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-09-23T22:44:12.321125+00:00",
+  "boundary": "Source-value profiling only. Numeric/code values are not decoded. The disputed 241 relationships are not loaded or classified.",
+  "total_records": 68404,
+  "total_populated": 68404,
+  "total_blank": 0,
+  "aggregate_values": {
+    "1": 60354,
+    "2": 8050
+  },
+  "checks": {
+    "all_ten_years_profiled": true,
+    "no_source_profile_errors": true,
+    "all_profiled_years_have_records": true,
+    "record_accounting_exact": true
+  },
+  "errors": [],
+  "overall": "PASS"
+}

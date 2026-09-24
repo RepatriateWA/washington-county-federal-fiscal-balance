@@ -1,0 +1,80 @@
+CMS MEDICARE PART D PAYMENT RECONSTRUCTION v0.2
+==============================================================================
+Generated UTC: 2026-09-24T01:36:50.646154+00:00
+Scope: Washington, Jan 2015-Sep 2024 (117 months)
+
+BOUNDARY
+------------------------------------------------------------------------------
+Exact same-year Contract+PBP payment matches only.
+No blank-to-zero conversion or imputation.
+No sibling-PBP propagation or adjacent-year carry-forward.
+No database writes or ledger inclusion.
+PartDReconciliation is CONTROL_ONLY; RDS remains separate/out of scope.
+
+SOURCE / ENROLLMENT ACCOUNTING
+------------------------------------------------------------------------------
+Candidate files scanned once: 376
+Required CPSC months parsed: 117/117
+PartDPlans years resolved: 10/10
+WA numeric enrollment: 111,380,906
+Exact PartDPlans match: 106,176,965
+Reconstructed exact-match enrollment: 106,176,965
+Exact-match unusable payment-input enrollment: 0
+No exact PartDPlans match: 5,203,941
+Suppressed/non-numeric rows: 3,978,896
+Numeric accounting difference: 0
+Exact-match reconstruction difference: 0
+
+PAYMENT RECONSTRUCTION
+------------------------------------------------------------------------------
+Risk-adjusted Direct Subsidy dollars: $1,612,650,482.37
+Reinsurance dollars:                 $7,560,787,957.08
+LICS dollars:                        $4,227,431,852.49
+Total reconstructed Part D dollars:  $13,400,870,291.95
+Dollar component identity difference: -1E-29
+
+ANNUAL TOTALS
+------------------------------------------------------------------------------
+CY2015 JAN-DEC: enrollment=8,761,320 | Direct Subsidy RA=$295,488,709.00 | Reinsurance=$427,611,963.04 | LICS=$314,255,860.20 | Total=$1,037,356,532.24
+CY2016 JAN-DEC: enrollment=9,217,033 | Direct Subsidy RA=$279,341,469.84 | Reinsurance=$578,517,737.28 | LICS=$345,186,111.24 | Total=$1,203,045,318.36
+CY2017 JAN-DEC: enrollment=9,664,792 | Direct Subsidy RA=$223,831,802.75 | Reinsurance=$702,090,023.79 | LICS=$365,199,000.15 | Total=$1,291,120,826.69
+CY2018 JAN-DEC: enrollment=10,108,773 | Direct Subsidy RA=$199,255,752.15 | Reinsurance=$717,943,651.83 | LICS=$362,154,156.41 | Total=$1,279,353,560.40
+CY2019 JAN-DEC: enrollment=10,596,762 | Direct Subsidy RA=$160,946,555.60 | Reinsurance=$741,482,918.14 | LICS=$384,766,936.30 | Total=$1,287,196,410.05
+CY2020 JAN-DEC: enrollment=11,082,613 | Direct Subsidy RA=$123,106,846.27 | Reinsurance=$740,542,079.12 | LICS=$425,706,464.38 | Total=$1,289,355,389.77
+CY2021 JAN-DEC: enrollment=11,564,872 | Direct Subsidy RA=$55,971,913.60 | Reinsurance=$844,829,253.84 | LICS=$465,877,259.31 | Total=$1,366,678,426.75
+CY2022 JAN-DEC: enrollment=12,157,272 | Direct Subsidy RA=$19,583,708.76 | Reinsurance=$973,109,198.76 | LICS=$541,787,898.63 | Total=$1,534,480,806.15
+CY2023 JAN-DEC: enrollment=12,663,946 | Direct Subsidy RA=$1,116,310.71 | Reinsurance=$1,025,661,554.25 | LICS=$608,277,065.39 | Total=$1,635,054,930.35
+CY2024 JAN-SEP: enrollment=10,359,582 | Direct Subsidy RA=$254,007,413.68 | Reinsurance=$808,999,577.02 | LICS=$414,221,100.48 | Total=$1,477,228,091.18
+
+CHECKS
+------------------------------------------------------------------------------
+[PASS] All 117 required CPSC months resolved and parsed — 117/117
+[PASS] All 10 PartDPlans years resolved — 10/10
+[PASS] Certified WA numeric CPSC enrollment regression control — 111,380,906 == 111,380,906
+[PASS] Certified exact PartDPlans match regression control — 106,176,965 == 106,176,965
+[PASS] Certified no-exact-payment-match regression control — 5,203,941 == 5,203,941
+[PASS] All WA exact-match numeric enrollment reconstructed — reconstructed=106,176,965; unusable=0
+[PASS] Numeric enrollment accounting identity — difference=0
+[PASS] Exact-match reconstruction accounting identity — difference=0
+[FAIL] Dollar component identity — difference=-1E-29
+[PASS] No duplicate annual Part D payment keys — duplicates=0
+[PASS] No processing/source errors — errors=0
+
+NATIONAL MISSING/NONNUMERIC PAYMENT INPUTS
+------------------------------------------------------------------------------
+PartDPlans records with unusable required inputs nationally: 0
+These do not invalidate reconstruction unless they intersect WA exact-match numeric enrollment.
+WA exact-match numeric enrollment exposed to unusable inputs: 0
+
+WARNINGS
+------------------------------------------------------------------------------
+None
+
+ERRORS
+------------------------------------------------------------------------------
+None
+
+OVERALL: FAIL
+
+NOTE:
+This reconstruction does not assign dollars to no-exact-payment-match enrollment. Separately certified affirmative Part D / source-payment-unavailable exceptions remain NULL/unavailable, not zero.

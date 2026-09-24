@@ -1,0 +1,4 @@
+check,status,detail
+All CY2015-CY2024 PartDPlans sources resolved,PASS,10/10
+All resolved plan rows yield four field observations,PASS,"193,820 == 48,455 * 4"
+No source/profile errors,PASS,errors=0
