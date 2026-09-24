@@ -1,0 +1,12 @@
+check,status,detail
+Required month count is 117,PASS,117 == 117
+All required CPSC months resolved,FAIL,0/117
+All CY2015-CY2024 PartDPlans sources resolved,FAIL,0/10
+Certified unavailable relationship control loaded,PASS,3/3
+Certified unavailable member-month control loaded,PASS,"1,472/1,472"
+Observed unavailable keys are certified exceptions only,PASS,0 observed keys
+Observed unavailable enrollment does not exceed certified controls,PASS,0 observed
+Numeric enrollment accounting identity,PASS,difference=0
+No other numeric no-payment-match enrollment remains,PASS,0
+Dollar component identity,PASS,difference=$0.000000
+No source/profile errors,FAIL,errors=10

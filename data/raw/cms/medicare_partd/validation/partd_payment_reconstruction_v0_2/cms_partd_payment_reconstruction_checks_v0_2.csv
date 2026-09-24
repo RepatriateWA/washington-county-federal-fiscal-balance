@@ -1,0 +1,12 @@
+﻿check,status,detail
+All 117 required CPSC months resolved and parsed,PASS,117/117
+All 10 PartDPlans years resolved,PASS,10/10
+Certified WA numeric CPSC enrollment regression control,PASS,"111,380,906 == 111,380,906"
+Certified exact PartDPlans match regression control,PASS,"106,176,965 == 106,176,965"
+Certified no-exact-payment-match regression control,PASS,"5,203,941 == 5,203,941"
+All WA exact-match numeric enrollment reconstructed,PASS,"reconstructed=106,176,965; unusable=0"
+Numeric enrollment accounting identity,PASS,difference=0
+Exact-match reconstruction accounting identity,PASS,difference=0
+Dollar component identity,FAIL,difference=-1E-29
+No duplicate annual Part D payment keys,PASS,duplicates=0
+No processing/source errors,PASS,errors=0

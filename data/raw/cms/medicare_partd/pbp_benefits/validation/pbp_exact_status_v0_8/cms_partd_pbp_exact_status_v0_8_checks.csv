@@ -1,0 +1,7 @@
+check,status,detail
+Predecessor relationship control,PASS,240 == 240
+Predecessor member-month control,PASS,"5,197,132 == 5,197,132"
+Relationship classification identity,PASS,240 == 240
+Member-month classification identity,PASS,"5,197,132 == 5,197,132"
+No source/profile errors,PASS,errors=0
+Only frozen source codes used for affirmative/negative status,PASS,YES/NO require exact certified code 1/2

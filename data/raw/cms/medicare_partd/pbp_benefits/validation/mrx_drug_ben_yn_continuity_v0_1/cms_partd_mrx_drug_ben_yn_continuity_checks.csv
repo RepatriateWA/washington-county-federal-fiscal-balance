@@ -1,0 +1,9 @@
+check,status,detail
+All 11 coverage years resolved and structurally PASS,PASS,11/11 years PASS
+Exact field mrx_drug_ben_yn present every year,PASS,11/11
+SAS label 'MRx Drug Benefit YN' present every year,PASS,11/11
+"Observed nonblank vocabulary confined to {1,2} every year",PASS,other-value records=0
+Both codes 1 and 2 observed every year,PASS,11/11
+CY2025 preserved ZIP SHA-256 matches documentary anchor,PASS,7ca2d3bb30b01ba7e8143c6eea38e1dc5434ff782f5742ab6c640e9b45f6b2d3
+CY2025 dictionary directly maps 1=Yes and 2=No and defines Part D question,PASS,"mapping={'1': 'yes', '2': 'no'}; question_evidence=True; evidence_rows=2"
+No source/profile errors,PASS,errors=0

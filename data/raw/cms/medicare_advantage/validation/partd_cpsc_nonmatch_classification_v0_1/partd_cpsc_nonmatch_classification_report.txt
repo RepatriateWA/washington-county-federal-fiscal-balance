@@ -1,0 +1,49 @@
+CMS MEDICARE PART D CPSC NONMATCH CLASSIFICATION VALIDATOR v0.1
+============================================================================
+Generated UTC: 2026-09-23T20:09:58.535886+00:00
+Scope: v0.3 NO_PARTD_PAYMENT_MATCH numeric enrollment
+
+BOUNDARY
+----------------------------------------------------------------------------
+Read-only diagnostic classification.
+No monthly CPSC reread; no imputation; no payment reconstruction.
+No database writes or ledger inclusion.
+
+CONTROL
+----------------------------------------------------------------------------
+Expected v0.3 control: 5,203,941
+Input numeric enrollment: 5,203,941
+Classified numeric enrollment: 5,203,941
+Accounting difference: 0
+
+CLASSIFICATION TOTALS
+----------------------------------------------------------------------------
+SAME_CONTRACT_OTHER_PBP: 5,203,895 (99.9991%)
+ADJACENT_YEAR_PARTD_MATCH: 46 (0.0009%)
+
+CHECKS
+----------------------------------------------------------------------------
+v0.3 control total equals 5,203,941: PASS
+classification accounting identity: PASS
+year accounting identity: PASS
+plan-type accounting identity: PASS
+organization-type accounting identity: PASS
+Contract+PBP accounting identity: PASS
+all annual accounting differences zero: PASS
+no duplicate annual Part D payment keys: PASS
+no source/profile errors: PASS
+
+ERRORS
+----------------------------------------------------------------------------
+None
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: PASS
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------
+PASS certifies classification/accounting mechanics only.
+It does not prove every nonmatch is outside Part D.
+PERSISTENT_UNRESOLVED and OTHER_REVIEW_REQUIRED remain review populations.
+No observation is force-linked to a payment record.

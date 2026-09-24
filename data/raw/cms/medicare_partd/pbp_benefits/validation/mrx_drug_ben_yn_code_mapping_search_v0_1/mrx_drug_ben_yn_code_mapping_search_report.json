@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-09-23T22:58:36.989088+00:00",
+  "boundary": "Evidence discovery only; no code mapping is assumed or applied.",
+  "field_reference_hits": 90,
+  "candidate_mapping_hits": 78,
+  "candidate_mapping_hits_near_field": 10,
+  "candidate_inventory_rows": 176,
+  "checks": {
+    "all_ten_years_searched": true,
+    "no_source_search_errors": true,
+    "all_source_zips_have_members": true,
+    "field_reference_found": true
+  },
+  "errors": [],
+  "overall": "PASS"
+}

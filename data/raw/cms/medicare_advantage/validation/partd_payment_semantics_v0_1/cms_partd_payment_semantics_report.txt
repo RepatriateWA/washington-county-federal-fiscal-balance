@@ -1,0 +1,62 @@
+CMS MEDICARE PART D PAYMENT SEMANTICS VALIDATOR
+========================================================================
+Generated UTC: 2026-09-23T03:16:46.173829+00:00
+Scope: CY2015-CY2024
+
+BOUNDARY
+------------------------------------------------------------------------
+Read-only semantic/structural certification.
+No enrollment multiplication, Washington allocation, database writes,
+imputation, or ledger inclusion.
+RDS remains separate/out of scope.
+
+CERTIFIED SEMANTIC MODEL
+------------------------------------------------------------------------
+DirectSubsidy_RA_PMPM = DirectSubsidy_STD_PMPM * PartD_RiskScore
+Candidate PartD_PMPM = DirectSubsidy_RA_PMPM + Reinsurance_PMPM + LICS_PMPM
+Separate Part D Plan Reconciliation workbook = CONTROL_ONLY
+Reconciliation Amount is NOT added to the Part D Plans PMPM reconstruction.
+
+DOCUMENTATION EVIDENCE BOUNDARY
+------------------------------------------------------------------------
+CY2015-CY2022: DIRECT_DOCUMENTATION
+CY2023-CY2024: SCHEMA_AND_DEFINITION_CONTINUITY
+The latter classification is deliberately weaker and is not silently
+promoted to direct-documentation status.
+
+COUNTS
+------------------------------------------------------------------------
+Required years: 10
+Resolved source years: 10
+Field evidence rows: 80
+Semantic policy rows: 50
+Errors: 0
+
+YEAR CHECKS
+------------------------------------------------------------------------
+2015: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2016: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2017: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2018: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2019: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2020: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2021: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2022: PASS | source=PASS | fields=PASS | evidence=DIRECT_DOCUMENTATION
+2023: PASS | source=PASS | fields=PASS | evidence=SCHEMA_AND_DEFINITION_CONTINUITY
+2024: PASS | source=PASS | fields=PASS | evidence=SCHEMA_AND_DEFINITION_CONTINUITY
+
+ERRORS
+------------------------------------------------------------------------
+None
+
+OVERALL
+------------------------------------------------------------------------
+OVERALL: PASS
+
+INTERPRETATION
+------------------------------------------------------------------------
+A PASS certifies the required Part D Plans field universe and records the
+source-supported semantic policy and its documentation boundary. It does
+not certify Washington enrollment linkage, reconstructed dollars, county
+allocation, overlap with other Medicare sources, RDS additivity, or final
+ledger eligibility.

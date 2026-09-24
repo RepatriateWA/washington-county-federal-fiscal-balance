@@ -1,0 +1,93 @@
+CMS MEDICARE PART D CPSC ENROLLMENT LINKAGE PROFILE
+========================================================================
+Generated UTC: 2026-09-23T04:28:56.940915+00:00
+Scope: Washington, Jan 2015-Sep 2024 (117 months)
+
+BOUNDARY
+------------------------------------------------------------------------
+Read-only enrollment/linkage profiling.
+No payment reconstruction, imputation, database writes, or ledger inclusion.
+RDS remains out of scope.
+
+COUNTS
+------------------------------------------------------------------------
+Required months: 117
+Parsed months: 66
+WA numeric enrollment across monthly county rows: 57,730,440
+Directly linked numeric enrollment: 54,740,475
+Unlinked numeric enrollment: 2,989,965
+Linked suppressed/nonnumeric rows: 766,677
+Unlinked suppressed/nonnumeric rows: 1,138,668
+Numeric enrollment accounting difference: 0
+Payment-plan/month rows without observed WA linked enrollment: 188,950
+Duplicate annual Part D payment keys: 0
+Errors: 51
+
+CHECKS
+------------------------------------------------------------------------
+All 117 months parsed: FAIL
+Numeric enrollment accounting identity: PASS
+No duplicate Part D payment keys: PASS
+No source/profile errors: FAIL
+
+INTERPRETATION
+------------------------------------------------------------------------
+This is a PROFILE, not a reconstruction certification.
+Unlinked enrollment is evidence to investigate, not a reason to broaden
+the linkage or impute payment fields.
+A clean source profile authorizes detailed linkage validation next; it
+does not authorize payment multiplication or ledger inclusion.
+
+ERRORS
+------------------------------------------------------------------------
+2019-12: no parseable CPSC source found
+2020-01: no parseable CPSC source found
+2020-02: no parseable CPSC source found
+2020-03: no parseable CPSC source found
+2020-04: no parseable CPSC source found
+2020-06: no parseable CPSC source found
+2020-07: no parseable CPSC source found
+2020-08: no parseable CPSC source found
+2020-09: no parseable CPSC source found
+2020-10: no parseable CPSC source found
+2020-11: no parseable CPSC source found
+2020-12: no parseable CPSC source found
+2021-01: no parseable CPSC source found
+2021-02: no parseable CPSC source found
+2021-03: no parseable CPSC source found
+2021-04: no parseable CPSC source found
+2021-06: no parseable CPSC source found
+2021-07: no parseable CPSC source found
+2021-08: no parseable CPSC source found
+2021-09: no parseable CPSC source found
+2021-10: no parseable CPSC source found
+2021-11: no parseable CPSC source found
+2021-12: no parseable CPSC source found
+2022-01: no parseable CPSC source found
+2022-02: no parseable CPSC source found
+2022-03: no parseable CPSC source found
+2022-04: no parseable CPSC source found
+2022-06: no parseable CPSC source found
+2022-07: no parseable CPSC source found
+2022-08: no parseable CPSC source found
+2022-09: no parseable CPSC source found
+2022-10: no parseable CPSC source found
+2022-11: no parseable CPSC source found
+2022-12: no parseable CPSC source found
+2023-01: no parseable CPSC source found
+2023-02: no parseable CPSC source found
+2023-03: no parseable CPSC source found
+2023-04: no parseable CPSC source found
+2023-06: no parseable CPSC source found
+2023-08: no parseable CPSC source found
+2023-09: no parseable CPSC source found
+2023-10: no parseable CPSC source found
+2023-11: no parseable CPSC source found
+2023-12: no parseable CPSC source found
+2024-02: no parseable CPSC source found
+2024-03: no parseable CPSC source found
+2024-04: no parseable CPSC source found
+2024-06: no parseable CPSC source found
+2024-07: no parseable CPSC source found
+2024-08: no parseable CPSC source found
+2024-09: no parseable CPSC source found

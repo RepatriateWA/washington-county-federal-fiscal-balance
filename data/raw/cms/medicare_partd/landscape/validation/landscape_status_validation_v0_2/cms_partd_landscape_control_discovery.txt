@@ -1,0 +1,12 @@
+Selected input: data\raw\cms\medicare_advantage\validation\partd_contract_pbp_relationship_v0_1\partd_contract_pbp_relationship.csv
+Year column: year
+Contract column: contract
+PBP column: unmatched_cpsc_pbp
+Member-month column: numeric_enrollment
+Input rows used: 242
+
+partd_affected_contract_payment_pbp_detail.csv: missing required columns
+partd_affected_contract_year_summary.csv: rows=183; relationships=183; total=5203895
+partd_contract_pbp_relationship.csv: rows=242; relationships=242; total=5203895
+partd_payment_duplicate_keys.csv: missing required columns
+partd_payment_source_manifest.csv: missing required columns

@@ -1,0 +1,52 @@
+CMS MEDICARE PART D CONTRACT/PBP RELATIONSHIP PROFILE v0.1
+============================================================================
+Generated UTC: 2026-09-23T20:16:08.871665+00:00
+Scope: SAME_CONTRACT_OTHER_PBP population from nonmatch classifier v0.1
+
+BOUNDARY
+----------------------------------------------------------------------------
+Read-only descriptive relationship profiling.
+No payment propagation to unmatched PBPs.
+No reconstruction, imputation, database writes, or ledger inclusion.
+
+CONTROL
+----------------------------------------------------------------------------
+Expected member-month control: 5,203,895
+Input member-months: 5,203,895
+Relationship member-months: 5,203,895
+Accounting difference: 0
+
+RELATIONSHIP COUNTS
+----------------------------------------------------------------------------
+Distinct unmatched Contract+PBP+year relationships: 242
+Affected contract-years: 183
+Member-months whose exact Contract+PBP appears in another CY2015-CY2024 PartDPlans year: 4,433,336
+Member-months with no exact Contract+PBP in any other target year: 770,559
+Matched-vocabulary coexistence evidence available: NO
+
+CHECKS
+----------------------------------------------------------------------------
+SAME_CONTRACT_OTHER_PBP control equals 5,203,895: PASS
+relationship accounting identity: PASS
+contract-year accounting identity: PASS
+every target contract has >=1 same-year PartDPlans PBP: PASS
+no duplicate annual Part D payment keys: PASS
+no source/profile errors: PASS
+
+WARNINGS
+----------------------------------------------------------------------------
+None
+
+ERRORS
+----------------------------------------------------------------------------
+None
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: PASS
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------
+PASS certifies source resolution and relationship accounting only.
+It does not authorize applying one PBP's payment values to another PBP.
+Identical payment vectors are descriptive evidence, not a propagation rule.

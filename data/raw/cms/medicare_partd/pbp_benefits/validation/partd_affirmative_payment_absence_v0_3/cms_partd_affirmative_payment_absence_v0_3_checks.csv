@@ -1,0 +1,6 @@
+check,status,detail
+v0.8 affirmative relationship control,PASS,3 == 3
+v0.8 affirmative member-month control,PASS,"1,472 == 1,472"
+All targets retain exact same-year certified MRx code 1,PASS,3/3
+All required target-year PartDPlans sources resolved,PASS,1/1
+No duplicate/ambiguous exact same-year payment keys encountered,PASS,checked during required same-year PartDPlans load

@@ -1,0 +1,11 @@
+﻿payment_year,source_status,contract_rows,contract_identity_pass,contract_identity_fail,contract_nonnumeric_or_missing,contract_total_status,parent_total_status,overall_identity_status
+2015,PASS,788,788,0,0,PASS,NOT_RUN,FAIL
+2016,PASS,740,740,0,0,PASS,NOT_RUN,FAIL
+2017,PASS,708,708,0,0,PASS,NOT_RUN,FAIL
+2018,PASS,732,732,0,0,PASS,NOT_RUN,FAIL
+2019,PASS,767,767,0,0,PASS,NOT_RUN,FAIL
+2020,PASS,846,846,0,0,PASS,NOT_RUN,FAIL
+2021,PASS,924,923,1,0,PASS,NOT_RUN,FAIL
+2022,PASS,960,958,2,0,PASS,NOT_RUN,FAIL
+2023,PASS,988,986,2,0,FAIL,NOT_RUN,FAIL
+2024,PASS,987,987,0,0,PASS,NOT_RUN,FAIL

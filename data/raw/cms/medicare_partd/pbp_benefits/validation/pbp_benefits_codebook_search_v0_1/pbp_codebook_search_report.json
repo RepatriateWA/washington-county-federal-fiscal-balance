@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-09-23T22:49:55.125309+00:00",
+  "boundary": "Evidence discovery only; no code decoding by assumption and no disputed-plan classification.",
+  "hit_count": 2348,
+  "exact_field_hits": 50,
+  "exact_field_hits_outside_pbp_mrx": 40,
+  "candidate_inventory_rows": 176,
+  "checks": {
+    "all_ten_years_searched": true,
+    "no_source_search_errors": true,
+    "all_source_zips_have_members": true
+  },
+  "errors": [],
+  "overall": "PASS"
+}

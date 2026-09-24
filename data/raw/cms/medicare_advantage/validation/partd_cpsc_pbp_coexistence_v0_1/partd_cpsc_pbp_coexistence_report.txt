@@ -1,0 +1,60 @@
+CMS MEDICARE PART D CPSC PBP COEXISTENCE VALIDATOR v0.1
+============================================================================
+Generated UTC: 2026-09-23T20:31:33.648660+00:00
+Scope: SAME_CONTRACT_OTHER_PBP numeric enrollment
+
+BOUNDARY
+----------------------------------------------------------------------------
+Memory-safe targeted read-only CPSC rescan.
+Same-contract/same-month coexistence evidence only.
+No payment propagation, imputation, reconstruction, DB writes, or ledger inclusion.
+
+SOURCE INDEX
+----------------------------------------------------------------------------
+Candidate files scanned: 774
+CPSC-like members admitted by header: 121
+Required months: 117
+Resolved months: 117
+
+CONTROL
+----------------------------------------------------------------------------
+Expected target member-months: 5,203,895
+Input target member-months: 5,203,895
+Rescanned target member-months: 5,203,895
+Rescan difference: 0
+
+COEXISTENCE CATEGORIES
+----------------------------------------------------------------------------
+COEXISTS_WITH_MATCHED_PARTD_PBP: 5,140,697 (98.7856%)
+ONLY_NUMERIC_WA_PBP_OBSERVED_FOR_CONTRACT_MONTH: 63,198 (1.2144%)
+
+CHECKS
+----------------------------------------------------------------------------
+target control equals 5,203,895: PASS
+all 117 months resolved: PASS
+all 117 months streamed: PASS
+target CPSC rescan reproduces control: PASS
+coexistence category accounting identity: PASS
+every detail control equals rescan: PASS
+no duplicate annual Part D payment keys: PASS
+no source/profile errors: PASS
+
+WARNINGS
+----------------------------------------------------------------------------
+None
+
+ERRORS
+----------------------------------------------------------------------------
+None
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: PASS
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------
+COEXISTS_WITH_MATCHED_PARTD_PBP means a different PBP under the same
+contract/month had numeric Washington CPSC enrollment and existed in
+that year's PartDPlans payment file.
+It does NOT establish that the unmatched PBP itself carried Part D.
+No payment value may be transferred between PBPs from this result alone.

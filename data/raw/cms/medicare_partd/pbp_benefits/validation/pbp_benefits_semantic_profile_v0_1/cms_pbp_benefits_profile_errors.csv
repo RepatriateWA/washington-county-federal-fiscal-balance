@@ -1,0 +1,3 @@
+﻿year,source,error
+2024,data\raw\cms\medicare_partd\pbp_benefits\2024\pbp-benefits-2024-quarter-4.zip -> pbp_b10_amb_trans.txt,Error: field larger than field limit (131072)
+2024,data\raw\cms\medicare_partd\pbp_benefits\2024\pbp-benefits-2024-quarter-4.zip -> pbp_b16_dental.txt,Error: field larger than field limit (131072)

@@ -1,0 +1,33 @@
+CMS MEDICARE PART D PLAN PAYMENT STRUCTURAL PROFILE
+====================================================================
+Generated UTC: 2026-09-23T02:25:23.571454+00:00
+Scope: CY2015-CY2024
+
+BOUNDARY
+--------------------------------------------------------------------
+Read-only structural profiling only.
+Part D Plans and Part D Reconciliation are profiled separately.
+RDS is inventoried only and remains analytically separate.
+No reconstruction, imputation, database writes, or ledger inclusion.
+
+COUNTS
+--------------------------------------------------------------------
+Required years: 10
+Selected ZIP years: 10
+Part D Plans years profiled: 10
+Part D Reconciliation years profiled: 10
+Sheet rows: 46
+Column rows: 230
+Errors: 0
+
+CHECKS
+--------------------------------------------------------------------
+Unique canonical ZIP every year: PASS
+Part D Plans every year: PASS
+Part D Reconciliation every year: PASS
+No structural/profile errors: PASS
+
+OVERALL: PASS
+
+A PASS certifies source presence and structural profiling only; it does not
+establish payment semantics, additivity, an accounting equation, or ledger eligibility.

@@ -1,0 +1,286 @@
+﻿year,file_category,member_name,sheet_name,row_count,contract_fields,plan_pbp_fields,explicit_partd_fields,plan_type_context_fields,has_contract,has_plan_pbp,has_explicit_partd
+2015,MA_LANDSCAPE,2015LandscapeSource file MA_AtoM 03182015.csv,,15744,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2015,MA_LANDSCAPE,2015LandscapeSource file MA_NtoW 03182015.csv,,17695,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2015,MA_LANDSCAPE,2015LandscapeSource file MA_sanctioned 03182015.csv,,300,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2015,MMP_LANDSCAPE,2015LandscapeSource file MMP 03182015.csv,,834,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2015,PDP_LANDSCAPE,2015LandscapeSource file PDP 10142014.csv,,1451,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2015,PDP_LANDSCAPE,2015LandscapeSource file PDP sanctioned 10142014.csv,,56,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2015,SNP_LANDSCAPE,2015LandscapeSource file SNP 11042014.csv,,8766,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2015,SNP_LANDSCAPE,2015LandscapeSource file SNP sanctioned 11042014.csv,,1,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2015,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 03182015.csv,,16662,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2015,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 03182015.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Yes"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $2,960).",,NO,NO,YES
+2015,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 03182015.csv,,20104,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2015,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 03182015.csv,,363,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2016,MA_LANDSCAPE,2016LandscapeSource file MA_AtoM 04222016.csv,,16096,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2016,MA_LANDSCAPE,2016LandscapeSource file MA_NtoW 04222016.csv,,18122,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2016,MA_LANDSCAPE,2016LandscapeSource file MA_Sanctioned 04222016.csv,,712,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2016,MMP_LANDSCAPE,2016LandscapeSource file MMP 04222016.csv,,672,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2016,MMP_LANDSCAPE,2016LandscapeSource file MMP Sanctioned 04222016.csv,,6,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2016,PDP_LANDSCAPE,2016LandscapeSource file PDP 04222016.csv,,1242,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2016,PDP_LANDSCAPE,2016LandscapeSource file PDP sanctioned 04222016.csv,,102,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2016,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 04222016.csv,,17046,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2016,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 04222016.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Yes"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $2,960).",,NO,NO,YES
+2016,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 04222016.csv,,20396,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2016,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 04222016.csv,,934,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2016,SNP_LANDSCAPE,2016LandscapeSource file SNP 04222016.csv,,8406,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2016,SNP_LANDSCAPE,2016LandscapeSource file SNP sanctioned 04222016.csv,,295,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2017,MA_LANDSCAPE,2017LandscapeSource file MA_AtoM 10182016.csv,,16827,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2017,MA_LANDSCAPE,2017LandscapeSource file MA_NtoW 10182016.csv,,17675,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2017,MA_LANDSCAPE,2017LandscapeSource file MA_Sanctioned 10182016.csv,,699,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2017,MMP_LANDSCAPE,2017LandscapeSource file MMP 10182016.csv,,645,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2017,MMP_LANDSCAPE,2017LandscapeSource file MMP Sanctioned 10182016.csv,,6,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2017,PDP_LANDSCAPE,2017LandscapeSource file PDP 10182016.csv,,1029,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2017,PDP_LANDSCAPE,2017LandscapeSource file PDP Sanctioned 10182016.csv,,102,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2017,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 10182016.csv,,17653,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2017,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 10182016.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Yes"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $3,700).",,NO,NO,YES
+2017,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 10182016.csv,,20213,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2017,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 10182016.csv,,921,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2017,SNP_LANDSCAPE,2017LandscapeSource file SNP 10182016.csv,,8908,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2017,SNP_LANDSCAPE,2017LandscapeSource file SNP Sanctioned 10182016.csv,,295,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2018,MA_LANDSCAPE,2018LandscapeSource file MA_AtoM 10142017.csv,,18289,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2018,MA_LANDSCAPE,2018LandscapeSource file MA_NtoW 10142017.csv,,19820,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2018,MA_LANDSCAPE,2018LandscapeSource file MA_Sanctioned 10142017.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2018,MMP_LANDSCAPE,2018LandscapeSource file MMP 10142017.csv,,364,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2018,MMP_LANDSCAPE,2018LandscapeSource file MMP Sanctioned 10142017.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2018,PDP_LANDSCAPE,2018LandscapeSource file PDP 10142017.csv,,1185,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2018,PDP_LANDSCAPE,2018LandscapeSource file PDP Sanctioned 10142017.csv,,2,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2018,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 09222017.csv,,19371,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2018,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 09222017.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Yes"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $3,750).",,NO,NO,YES
+2018,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 09222017.csv,,23055,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2018,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 09222017.csv,,2,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2018,SNP_LANDSCAPE,2018LandscapeSource file SNP 10142017.csv,,11268,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2018,SNP_LANDSCAPE,2018LandscapeSource file SNP Sanctioned 10142017.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2019,MA_LANDSCAPE,2019LandscapeSource file MA_AtoM 10122018.csv,,20395,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2019,MA_LANDSCAPE,2019LandscapeSource file MA_NtoW 10122018.csv,,23404,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2019,MA_LANDSCAPE,2019LandscapeSource file MA_Sanctioned 10122018.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2019,MMP_LANDSCAPE,2019LandscapeSource file MMP 10122018.csv,,342,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2019,MMP_LANDSCAPE,2019LandscapeSource file MMP Sanctioned 10122018.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2019,PDP_LANDSCAPE,2019LandscapeSource file PDP 10122018.csv,,1369,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2019,PDP_LANDSCAPE,2019LandscapeSource file PDP Sanctioned 10122018.csv,,2,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2019,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 10012018.csv,,22229,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2019,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 10012018.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Yes"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $3,820).",,NO,NO,YES
+2019,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 10012018.csv,,27120,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2019,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 10012018.csv,,2,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2019,SNP_LANDSCAPE,2019LandscapeSource file SNP 10122018.csv,,13027,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2019,SNP_LANDSCAPE,2019LandscapeSource file SNP Sanctioned 10122018.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2020,MA_LANDSCAPE,2020LandscapeSource file MA_AtoM 10152019.csv,,24668,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2020,MA_LANDSCAPE,2020LandscapeSource file MA_NtoW 10152019.csv,,27103,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2020,MA_LANDSCAPE,2020LandscapeSource file MA_Sanctioned 10152019.csv,,10,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2020,MMP_LANDSCAPE,2020LandscapeSource file MMP 10152019.csv,,319,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2020,MMP_LANDSCAPE,2020LandscapeSource file MMP Sanctioned 10152019.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2020,PDP_LANDSCAPE,2020LandscapeSource file PDP 10152019.csv,,1433,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2020,PDP_LANDSCAPE,2020LandscapeSource file PDP Sanctioned 10152019.csv,,0,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2020,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 09032019.csv,,27047,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2020,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 09032019.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Y"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $4,020).",,NO,NO,YES
+2020,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 09032019.csv,,31002,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2020,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 09032019.csv,,296,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2020,SNP_LANDSCAPE,2020LandscapeSource file SNP 10152019.csv,,15918,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2020,SNP_LANDSCAPE,2020LandscapeSource file SNP Sanctioned 10152019.csv,,282,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2021,MA_LANDSCAPE,2021LandscapeSource file MA_AtoM 10152020.csv,,31340,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2021,MA_LANDSCAPE,2021LandscapeSource file MA_NtoW 10152020.csv,,33292,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2021,MA_LANDSCAPE,2021LandscapeSource file MA_Sanctioned 10152020.csv,,33,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2021,MMP_LANDSCAPE,2021LandscapeSource file MMP 10152020.csv,,323,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2021,MMP_LANDSCAPE,2021LandscapeSource file MMP Sanctioned 10152020.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2021,PDP_LANDSCAPE,2021LandscapeSource file PDP 10152020.csv,,1490,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2021,PDP_LANDSCAPE,2021LandscapeSource file PDP Sanctioned 10152020.csv,,0,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2021,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 09082020.csv,,33215,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium 4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2021,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 09082020.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Y"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $4,130).",,NO,NO,YES
+2021,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 09082020.csv,,37197,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2021,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 09082020.csv,,4,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2021,SNP_LANDSCAPE,2021LandscapeSource file SNP 10152020.csv,,20343,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2021,SNP_LANDSCAPE,2021LandscapeSource file SNP Sanctioned 10152020.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2022,MA_LANDSCAPE,2022LandscapeSource file MA_AtoM 10262021.csv,,38311,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2022,MA_LANDSCAPE,2022LandscapeSource file MA_NtoW 10262021.csv,,40213,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2022,MA_LANDSCAPE,2022LandscapeSource file MA_Sanctioned 10262021.csv,,364,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2022,MMP_LANDSCAPE,2022LandscapeSource file MMP 10262021.csv,,798,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2022,MMP_LANDSCAPE,2022LandscapeSource file MMP_Sanctioned 10262021.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2022,PDP_LANDSCAPE,2022LandscapeSource file PDP 10262021.csv,,1153,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2022,PDP_LANDSCAPE,2022LandscapeSource file PDP_Sanctioned 10262021.csv,,0,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2022,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana10262021.csv,,41310,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium 4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2022,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 10262021.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Y"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $4,430).",,NO,NO,YES
+2022,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 10262021.csv,,43728,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2022,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 10262021.csv,,840,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2022,SNP_LANDSCAPE,2022LandscapeSource file SNP 10262021.csv,,25043,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2022,SNP_LANDSCAPE,2022LandscapeSource file SNP_Sanctioned 10212021.csv,,347,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2023,OTHER,2023LandscapeSource file MA Sanction 10142022.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2023,MA_LANDSCAPE,2023LandscapeSource file MA_AtoM 10142022.csv,,46334,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2023,MA_LANDSCAPE,2023LandscapeSource file MA_NtoW 10142022.csv,,47040,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",Type of Medicare Health Plan,YES,YES,YES
+2023,MMP_LANDSCAPE,2023LandscapeSource file MMP 10142022.csv,,797,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2023,MMP_LANDSCAPE,2023LandscapeSource file MMP Sanction 10142022.csv,,0,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug Benefit Type Detail",,YES,YES,YES
+2023,PDP_LANDSCAPE,2023LandscapeSource file PDP 10142022.csv,,1222,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2023,PDP_LANDSCAPE,2023LandscapeSource file PDP Sanction 10142022.csv,,0,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap,,YES,YES,YES
+2023,PLAN_PREMIUM_PARTD_PRODUCT,508_AlabamatoMontana 10142022.csv,,52117,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium 4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance  6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2023,PLAN_PREMIUM_PARTD_PRODUCT,508_ImportantNotes 10142022.csv,,0,,,"Increased Initial Coverage Limit:  The Increased Initial Coverage Limit column specifies (with a ""Y"" for ""Yes"") any plans that have increased the initial coverage limit applicable to Part D drugs (from the standard $4,660).",,NO,NO,YES
+2023,PLAN_PREMIUM_PARTD_PRODUCT,508_NebraskatoWyoming 10142022.csv,,53000,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2023,PLAN_PREMIUM_PARTD_PRODUCT,508_Sanctioned 10142022.csv,,295,Contract ID,Plan ID,Part D Basic Premium Below Regional Benchmark? | National PDP | Part D Basic Premium3 | Part D Supplemental Premium4 | Part D Total Premium5 | Part D Premium Obligation with Full Premium Assistance6 | Part D Premium Obligation with 75% Premium Assistance | Part D Premium Obligation with 50% Premium Assistance | Part D Premium Obligation with 25% Premium Assistance | Part D Drug Deductible,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2023,SNP_LANDSCAPE,2023LandscapeSource file SNP 10142022.csv,,32486,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2023,SNP_LANDSCAPE,2023LandscapeSource file SNP Sanction 10142022.csv,,295,Contract ID,Plan ID,"Annual Drug Deductible | Drug 
+Benefit 
+Type | Drug 
+Benefit 
+Type",Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2024,MA_LANDSCAPE,CY2024_Landscape_Files_Final_20240723/csv version/CY2024_Landscape_MA_20240723.csv,,95152,Contract ID,Plan ID,Annual Drug Deductible | Drug Benefit Type | Drug Benefit Type Detail,Type of Medicare Health Plan,YES,YES,YES
+2024,MMP_LANDSCAPE,CY2024_Landscape_Files_Final_20240723/csv version/CY2024_Landscape_MMP_20240628.csv,,805,Contract ID,Plan ID,Drug Benefit Type | Drug Benefit Type Detail | Annual Drug Deductible,Type of Medicare Health Plan,YES,YES,YES
+2024,PDP_LANDSCAPE,CY2024_Landscape_Files_Final_20240723/csv version/CY2024_Landscape_PDP_20240628.csv,,1031,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap | 2024 Star Rating Part D,,YES,YES,YES
+2024,SNP_LANDSCAPE,CY2024_Landscape_Files_Final_20240723/csv version/CY2024_Landscape_SNP_20240710.csv,,39560,Contract ID,Plan ID,Drug Benefit Type | Drug Benefit Type Detail | Annual Drug Deductible,Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2024,PLAN_PREMIUM_PARTD_PRODUCT,CY2024_Landscape_Files_Final_20240723/csv version/CY2024_Plan_Premium_Report_20240723.csv,,116168,Contract ID,Plan ID,National PDP | Part D Basic Premium Below Regional Benchmark? | Part D Basic Premium | Part D Supplemental Premium | Part D Total Premium | Part D Premium Obligation with Full Premium Assistance | Part D Drug Deductible | 2024 Star Rating Part D,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES
+2024,MA_LANDSCAPE,CY2024_Landscape_Files_Final_20240723/csv version/sanctioned plans/CY2024_Landscape_MA_sanctioned_20240628.csv,,394,Contract ID,Plan ID,Annual Drug Deductible | Drug Benefit Type | Drug Benefit Type Detail,Type of Medicare Health Plan,YES,YES,YES
+2024,PDP_LANDSCAPE,CY2024_Landscape_Files_Final_20240723/csv version/sanctioned plans/CY2024_Landscape_PDP_sanctioned_20240628.csv,,50,Contract ID,Plan ID,Monthly Drug Premium | Annual Drug Deductible | Additional Drug Coverage Offered in the Gap | 2024 Star Rating Part D,,YES,YES,YES
+2024,SNP_LANDSCAPE,CY2024_Landscape_Files_Final_20240723/csv version/sanctioned plans/CY2024_Landscape_SNP_sanctioned_20240628.csv,,193,Contract ID,Plan ID,Drug Benefit Type | Drug Benefit Type Detail | Annual Drug Deductible,Type of Medicare Health Plan | Special Needs Plan Type,YES,YES,YES
+2024,PLAN_PREMIUM_PARTD_PRODUCT,CY2024_Landscape_Files_Final_20240723/csv version/sanctioned plans/CY2024_Plan_Premium_Report_sanctioned_20240628.csv,,566,Contract ID,Plan ID,National PDP | Part D Basic Premium Below Regional Benchmark? | Part D Basic Premium | Part D Supplemental Premium | Part D Total Premium | Part D Premium Obligation with Full Premium Assistance | Part D Drug Deductible | 2024 Star Rating Part D,Organization Type | Plan Type | Special Needs Plan | Special Needs Plan Type,YES,YES,YES

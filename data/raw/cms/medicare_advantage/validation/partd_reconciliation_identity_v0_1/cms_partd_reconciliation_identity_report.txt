@@ -1,0 +1,65 @@
+CMS MEDICARE PART D RECONCILIATION IDENTITY VALIDATOR
+========================================================================
+Generated UTC: 2026-09-23T02:53:30.209015+00:00
+Scope: CY2015-CY2024
+
+BOUNDARY
+------------------------------------------------------------------------
+Read-only validation only.
+No imputation, database writes, reconstruction, or ledger inclusion.
+RDS is outside scope.
+Contract-vs-Parent-Organization differences are measured, not erased.
+
+TESTED IDENTITY
+------------------------------------------------------------------------
+Reconciliation Amount = LICS + Reinsurance + Risk Sharing
+Absolute identity tolerance: $0.02
+(cent-level tolerance only for floating-point/display effects)
+
+COUNTS
+------------------------------------------------------------------------
+Required years: 10
+Source years resolved: 10
+Contract detail rows tested: 8440
+Contract identity PASS rows: 8435
+Contract identity FAIL rows: 5
+Contract nonnumeric/missing rows: 0
+Published totals rows tested: 10
+
+YEAR CHECKS
+------------------------------------------------------------------------
+2015: FAIL | contract rows=788 pass=788 fail=0 missing=0 | contract total=PASS | parent total=NOT_RUN
+2016: FAIL | contract rows=740 pass=740 fail=0 missing=0 | contract total=PASS | parent total=NOT_RUN
+2017: FAIL | contract rows=708 pass=708 fail=0 missing=0 | contract total=PASS | parent total=NOT_RUN
+2018: FAIL | contract rows=732 pass=732 fail=0 missing=0 | contract total=PASS | parent total=NOT_RUN
+2019: FAIL | contract rows=767 pass=767 fail=0 missing=0 | contract total=PASS | parent total=NOT_RUN
+2020: FAIL | contract rows=846 pass=846 fail=0 missing=0 | contract total=PASS | parent total=NOT_RUN
+2021: FAIL | contract rows=924 pass=923 fail=1 missing=0 | contract total=PASS | parent total=NOT_RUN
+2022: FAIL | contract rows=960 pass=958 fail=2 missing=0 | contract total=PASS | parent total=NOT_RUN
+2023: FAIL | contract rows=988 pass=986 fail=2 missing=0 | contract total=FAIL | parent total=NOT_RUN
+2024: FAIL | contract rows=987 pass=987 fail=0 missing=0 | contract total=PASS | parent total=NOT_RUN
+
+ERRORS
+------------------------------------------------------------------------
+2015 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2016 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2017 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2018 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2019 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2020 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2021 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2022 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2023 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+2024 PARENT_ORGANIZATION: Could not locate header containing ['CONTRACT', 'LICS', 'RECONCILIATION_AMOUNT', 'REINSURANCE', 'RISK_SHARING'] in sheet 'Parent Organization'
+
+OVERALL
+------------------------------------------------------------------------
+OVERALL: FAIL
+
+INTERPRETATION
+------------------------------------------------------------------------
+A PASS certifies only the arithmetic identity in the published Part D
+reconciliation workbook across the tested source universe. It does NOT
+establish that Reconciliation Amount is additive to Part D Plans payment
+fields, does NOT establish a Washington expenditure total, and does NOT
+authorize ledger inclusion.

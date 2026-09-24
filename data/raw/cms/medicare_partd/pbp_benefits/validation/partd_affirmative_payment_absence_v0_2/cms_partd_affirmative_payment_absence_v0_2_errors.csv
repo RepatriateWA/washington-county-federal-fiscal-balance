@@ -1,0 +1,4 @@
+scope,error
+REQUIRED PartDPlans CY2024,CY2024: no Contract+PBP PartDPlans sheet resolved
+SUPPLEMENTARY PartDPlans CY2023,CY2023: no Contract+PBP PartDPlans sheet resolved
+SUPPLEMENTARY PartDPlans CY2025,CY2025: no Plan Payment ZIP found
