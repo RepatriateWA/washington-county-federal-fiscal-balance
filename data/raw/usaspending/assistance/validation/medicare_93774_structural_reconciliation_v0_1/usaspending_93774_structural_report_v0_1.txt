@@ -1,0 +1,113 @@
+USASPENDING ASSISTANCE LISTING 93.774
+TRANSACTION-LEVEL STRUCTURAL RECONCILIATION v0.1
+==============================================================================
+Generated UTC: 2026-09-24T02:07:04.676689+00:00
+
+PURPOSE
+------------------------------------------------------------------------------
+Determine what the normalized 93.774 transaction structure represents
+before any Medicare additivity or county-allocation decision.
+
+BOUNDARY
+------------------------------------------------------------------------------
+READ ONLY. No database writes. No ledger inclusion.
+No assumption of additivity or overlap.
+No beneficiary-incidence inference from place of performance.
+Federal action obligation is the transaction-flow control measure.
+Overall-award obligation/outlay fields are award-state observations only;
+they are not summed as independent transaction flows.
+
+CORE TRANSACTION CONTROLS
+------------------------------------------------------------------------------
+Transaction rows: 139
+Net federal action obligation: $3,484,701,356.34
+Distinct transaction unique keys: 139
+Duplicate-key excess rows: 0
+Distinct structural award identities: 139
+Distinct places: 4
+Recipient names observed: 1
+Recipient is exclusively MULTIPLE RECIPIENTS: True
+
+STRUCTURAL SIGNALS
+------------------------------------------------------------------------------
+Awards observed in >1 place: 0
+Awards observed in >1 fiscal year: 0
+Repeated total-obligated award-state observations: 0
+Repeated total-outlay award-state observations: 0
+
+ANNUAL TRANSACTION STRUCTURE
+------------------------------------------------------------------------------
+FY2020: rows=15 | awards=15 | places=3 | positive=$477,749,268.04 | negative=$0.00 | net=$477,749,268.04
+FY2021: rows=19 | awards=19 | places=3 | positive=$524,937,064.18 | negative=$0.00 | net=$524,937,064.18
+FY2022: rows=28 | awards=28 | places=4 | positive=$647,392,362.92 | negative=$0.00 | net=$647,392,362.92
+FY2023: rows=27 | awards=27 | places=3 | positive=$686,085,908.06 | negative=$0.00 | net=$686,085,908.06
+FY2024: rows=27 | awards=27 | places=3 | positive=$660,427,366.76 | negative=$0.00 | net=$660,427,366.76
+FY2025: rows=23 | awards=23 | places=4 | positive=$491,055,439.78 | negative=$-2,946,053.40 | net=$488,109,386.38
+
+TOP AWARD STRUCTURES
+------------------------------------------------------------------------------
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20233-09-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2023 | places=1 | recipients=1 | net=$107,573,983.51
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20243-08-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2024 | places=1 | recipients=1 | net=$90,340,653.33
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20234-12-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2023 | places=1 | recipients=1 | net=$89,835,616.73
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20202-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2020 | places=1 | recipients=1 | net=$85,298,466.17
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20244-11-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2024 | places=1 | recipients=1 | net=$83,555,830.73
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20232-06-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2023 | places=1 | recipients=1 | net=$83,301,733.27
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20251-02-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2025 | places=1 | recipients=1 | net=$81,029,320.82
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20201-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2020 | places=1 | recipients=1 | net=$77,470,151.30
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20224-12-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2022 | places=1 | recipients=1 | net=$75,942,096.59
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20223-07-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2022 | places=1 | recipients=1 | net=$71,583,139.80
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20214-10-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2021 | places=1 | recipients=1 | net=$69,733,546.81
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20253-08-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2025 | places=1 | recipients=1 | net=$67,177,470.32
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20204-10-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2020 | places=1 | recipients=1 | net=$66,737,203.52
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20213-07-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2021 | places=1 | recipients=1 | net=$62,028,755.64
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20254-11-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2025 | places=1 | recipients=1 | net=$60,486,284.60
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20252-04-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2025 | places=1 | recipients=1 | net=$60,295,581.09
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20211-01-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2021 | places=1 | recipients=1 | net=$60,288,798.75
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20244-10-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2024 | places=1 | recipients=1 | net=$54,921,318.61
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20224-10-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2022 | places=1 | recipients=1 | net=$48,900,304.70
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20241-02-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2024 | places=1 | recipients=1 | net=$48,414,763.18
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20223-09-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2022 | places=1 | recipients=1 | net=$48,036,859.53
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20213-09-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2021 | places=1 | recipients=1 | net=$46,147,493.33
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20234-11-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2023 | places=1 | recipients=1 | net=$44,625,754.67
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20241-03-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2024 | places=1 | recipients=1 | net=$44,549,494.14
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20232-04-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2023 | places=1 | recipients=1 | net=$42,324,324.63
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20232-05-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2023 | places=1 | recipients=1 | net=$42,235,574.40
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20233-08-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2023 | places=1 | recipients=1 | net=$42,198,990.14
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20251-01-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2025 | places=1 | recipients=1 | net=$41,473,880.46
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20242-04-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2024 | places=1 | recipients=1 | net=$41,078,407.22
+ASSISTANCE_AWARD_UNIQUE_KEY=ASST_AGG_7530-20242-05-06-93774-WA-033-90-X-7530-75AGCF-7530-75AGCA-NON_075 | rows=1 | FY=2024 | places=1 | recipients=1 | net=$40,686,591.92
+
+PLACE STRUCTURE
+------------------------------------------------------------------------------
+WA|King County|53033|USA | rows=53 | awards=53 | recipients=1 | FY=2020;2021;2022;2023;2024;2025 | net=$2,661,308,797.22
+WA|Snohomish County|53061|USA | rows=51 | awards=51 | recipients=1 | FY=2020;2021;2022;2023;2024;2025 | net=$748,172,756.87
+WA|Thurston County|53067|USA | rows=4 | awards=4 | recipients=1 | FY=2020;2021;2022;2025 | net=$64,182,085.93
+WA|Pierce County|53053|USA | rows=31 | awards=31 | recipients=1 | FY=2022;2023;2024;2025 | net=$11,037,716.32
+
+CHECKS
+------------------------------------------------------------------------------
+[PASS] At least one normalized 93.774 transaction exists — rows=139
+[PASS] No duplicate normalized transaction unique keys — duplicate_key_excess_rows=0
+[PASS] Annual transaction-flow identity — detail=3484701356.34; annual=3484701356.34; diff=0.00
+[PASS] Award transaction-flow identity — detail=3484701356.34; award=3484701356.34; diff=0.00
+[PASS] Place transaction-flow identity — detail=3484701356.34; place=3484701356.34; diff=0.00
+[PASS] Award-place transaction-flow identity — detail=3484701356.34; award_place=3484701356.34; diff=0.00
+[PASS] All annual sign identities balance — all annual net = positive + negative
+[PASS] Read-only structural reconciliation completed without processing errors — errors=0
+
+WARNINGS
+------------------------------------------------------------------------------
+None
+
+ERRORS
+------------------------------------------------------------------------------
+None
+
+OVERALL: PASS
+
+INTERPRETATION BOUNDARY
+------------------------------------------------------------------------------
+PASS certifies transaction/award/place structural accounting only.
+It does NOT establish ADDITIVE, OVERLAPPING, CONTROL_ONLY, or county
+allocation status. Those decisions require interpretation of the observed
+structure against the CMS-native Medicare accounting streams.

@@ -1,0 +1,7 @@
+﻿fiscal_year,transaction_rows,federal_action_obligation,rows_with_total_outlay,sum_total_outlayed_amount_for_overall_award,rows_with_total_obligated_amount,sum_total_obligated_amount,distinct_recipients,distinct_pop_places,distinct_awarding_agencies,distinct_funding_agencies,distinct_assistance_types
+2020,15,477749268.04,0,0,15,477749268.04,1,3,1,1,1
+2021,19,524937064.18,0,0,19,524937064.18,1,3,1,1,1
+2022,28,647392362.92,28,647392362.92,28,647392362.92,1,4,1,1,1
+2023,27,686085908.06,27,686085908.06,27,686085908.06,1,3,1,1,1
+2024,27,660427366.76,27,660427366.76,27,660427366.76,1,3,1,1,1
+2025,23,488109386.38,23,488109386.38,23,488109386.38,1,4,1,1,1

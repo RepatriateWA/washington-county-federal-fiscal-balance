@@ -1,0 +1,9 @@
+﻿check,status,detail
+At least one normalized 93.774 transaction exists,PASS,rows=139
+No duplicate normalized transaction unique keys,PASS,duplicate_key_excess_rows=0
+Annual transaction-flow identity,PASS,detail=3484701356.34; annual=3484701356.34; diff=0.00
+Award transaction-flow identity,PASS,detail=3484701356.34; award=3484701356.34; diff=0.00
+Place transaction-flow identity,PASS,detail=3484701356.34; place=3484701356.34; diff=0.00
+Award-place transaction-flow identity,PASS,detail=3484701356.34; award_place=3484701356.34; diff=0.00
+All annual sign identities balance,PASS,all annual net = positive + negative
+Read-only structural reconciliation completed without processing errors,PASS,errors=0

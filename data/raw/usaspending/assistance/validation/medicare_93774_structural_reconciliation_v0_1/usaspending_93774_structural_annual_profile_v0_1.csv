@@ -1,0 +1,7 @@
+﻿fiscal_year,transaction_rows,distinct_awards,distinct_places,distinct_recipients,positive_rows,negative_rows,zero_rows,positive_obligation,negative_obligation,net_federal_action_obligation,sign_identity_difference
+2020,15,15,3,1,15,0,0,477749268.04,0,477749268.04,0.00
+2021,19,19,3,1,19,0,0,524937064.18,0,524937064.18,0.00
+2022,28,28,4,1,28,0,0,647392362.92,0,647392362.92,0.00
+2023,27,27,3,1,27,0,0,686085908.06,0,686085908.06,0.00
+2024,27,27,3,1,27,0,0,660427366.76,0,660427366.76,0.00
+2025,23,23,4,1,19,4,0,491055439.78,-2946053.40,488109386.38,0.00

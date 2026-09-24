@@ -1,0 +1,5 @@
+﻿place_of_performance_id,state,county,county_fips,country,fiscal_years,transaction_rows,federal_action_obligation
+3389,WA,King County,53033,USA,2020;2021;2022;2023;2024;2025,53,2661308797.22
+4428,WA,Snohomish County,53061,USA,2020;2021;2022;2023;2024;2025,51,748172756.87
+4723,WA,Thurston County,53067,USA,2020;2021;2022;2025,4,64182085.93
+4185,WA,Pierce County,53053,USA,2022;2023;2024;2025,31,11037716.32

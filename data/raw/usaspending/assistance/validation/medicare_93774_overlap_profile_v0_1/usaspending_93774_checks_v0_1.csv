@@ -1,0 +1,6 @@
+﻿check,status,detail
+Normalized listing 93.774 exists,PASS,listing_rows=1
+At least one normalized 93.774 transaction exists,PASS,transaction_rows=139
+Annual federal-action-obligation identity,PASS,detail=3484701356.34; annual=3484701356.34; diff=0.00
+No duplicate normalized assistance transaction unique keys within 93.774,PASS,duplicate_key_excess_rows=0
+Read-only profiler completed without processing errors,PASS,errors=0
