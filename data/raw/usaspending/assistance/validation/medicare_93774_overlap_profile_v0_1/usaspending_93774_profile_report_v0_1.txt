@@ -1,0 +1,84 @@
+USASPENDING ASSISTANCE LISTING 93.774 RECONCILIATION PROFILE v0.1
+==============================================================================
+Generated UTC: 2026-09-24T01:59:35.303738+00:00
+
+PURPOSE
+------------------------------------------------------------------------------
+Measure the normalized USAspending representation of Medicare
+Supplementary Medical Insurance before any overlap/additivity decision.
+
+BOUNDARY
+------------------------------------------------------------------------------
+Read-only. No database writes. No ledger inclusion.
+No assumption that 93.774 is additive.
+No assumption that 93.774 is overlapping.
+Federal action obligation is the transaction-flow control measure.
+Overall-award outlay/obligated fields are profiled but NOT summed as
+independent transaction flows without first establishing their semantics.
+
+CORE RESULTS
+------------------------------------------------------------------------------
+Listing rows: 1
+Normalized 93.774 transaction rows: 139
+Load batches represented: 6 (6, 8, 9, 10, 11, 12)
+Federal action obligation total: 3484701356.34
+Distinct transaction unique keys: 139
+Duplicate-key excess rows: 0
+
+ANNUAL FEDERAL ACTION OBLIGATION
+------------------------------------------------------------------------------
+FY2020: rows=15 | obligation=477749268.04 | recipients=1 | POP places=3
+FY2021: rows=19 | obligation=524937064.18 | recipients=1 | POP places=3
+FY2022: rows=28 | obligation=647392362.92 | recipients=1 | POP places=4
+FY2023: rows=27 | obligation=686085908.06 | recipients=1 | POP places=3
+FY2024: rows=27 | obligation=660427366.76 | recipients=1 | POP places=3
+FY2025: rows=23 | obligation=488109386.38 | recipients=1 | POP places=4
+
+TOP RECIPIENT STRUCTURE
+------------------------------------------------------------------------------
+MULTIPLE RECIPIENTS | rows=139 | obligation=3484701356.34 | FY=2020;2021;2022;2023;2024;2025
+
+TOP PLACE-OF-PERFORMANCE STRUCTURE
+------------------------------------------------------------------------------
+WA / King County / 53033 | rows=53 | obligation=2661308797.22 | FY=2020;2021;2022;2023;2024;2025
+WA / Snohomish County / 53061 | rows=51 | obligation=748172756.87 | FY=2020;2021;2022;2023;2024;2025
+WA / Thurston County / 53067 | rows=4 | obligation=64182085.93 | FY=2020;2021;2022;2025
+WA / Pierce County / 53053 | rows=31 | obligation=11037716.32 | FY=2022;2023;2024;2025
+
+TOP AGENCY STRUCTURE
+------------------------------------------------------------------------------
+Awarding=Department of Health and Human Services | Funding=Department of Health and Human Services | rows=139 | obligation=3484701356.34
+
+TOP TYPE STRUCTURE
+------------------------------------------------------------------------------
+Type=06 DIRECT PAYMENT FOR SPECIFIED USE, AS A SUBSIDY OR OTHER NON-REIMBURSABLE DIRECT FINANCIAL AID (C) | Action=E | Record=1 | rows=135 | obligation=3273540195.90
+Type=06 DIRECT PAYMENT FOR SPECIFIED USE, AS A SUBSIDY OR OTHER NON-REIMBURSABLE DIRECT FINANCIAL AID (C) | Action=[NULL] | Record=1 | rows=4 | obligation=211161160.44
+
+TOP TRANSACTION DESCRIPTIONS
+------------------------------------------------------------------------------
+MEDICARE SUPPLEMENTARY MEDICAL INSURANCE | rows=139 | obligation=3484701356.34 | FY=2020;2021;2022;2023;2024;2025
+
+CHECKS
+------------------------------------------------------------------------------
+[PASS] Normalized listing 93.774 exists — listing_rows=1
+[PASS] At least one normalized 93.774 transaction exists — transaction_rows=139
+[PASS] Annual federal-action-obligation identity — detail=3484701356.34; annual=3484701356.34; diff=0.00
+[PASS] No duplicate normalized assistance transaction unique keys within 93.774 — duplicate_key_excess_rows=0
+[PASS] Read-only profiler completed without processing errors — errors=0
+
+WARNINGS
+------------------------------------------------------------------------------
+None
+
+ERRORS
+------------------------------------------------------------------------------
+None
+
+OVERALL: PASS
+
+INTERPRETATION BOUNDARY
+------------------------------------------------------------------------------
+PASS certifies source/profile accounting only. It does NOT establish
+that Assistance Listing 93.774 is additive, overlapping, or suitable
+for county allocation. That decision requires comparison to the CMS-
+native Medicare accounting streams after this empirical profile.
