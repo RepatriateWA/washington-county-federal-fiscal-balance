@@ -1,0 +1,79 @@
+======================================================================================================================
+CMS MSSP <-> ORIGINAL MEDICARE / FFS ECONOMIC OVERLAP CERTIFICATION v0.1
+======================================================================================================================
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------------------------
+Economic-overlap certification only.
+No Washington payment-dollar incidence is certified.
+No county incidence is certified.
+No cash/FFY timing is certified.
+No principal-ledger inclusion occurs.
+Negative EarnSaveLoss is not classified as negative federal spending.
+
+SOURCE AUTHENTICATION
+----------------------------------------------------------------------------------------------------------------------
+Original Medicare Methods Paper SHA-256: 94666A9FC128F8CB469A55B3D2494368EBFF66F314CD88ED2440C6AE4BE3087F
+Original Medicare documentation ZIP SHA-256: 17D5BFE2F9388E5BF03552AE8BB97A312B6FFDB9581C434F8FDE5AF0F188BA57
+MSSP documentation ZIP SHA-256: 054E06866C7EB4D1EF1A02580B02FBB4639999C9B2ED93AFC4FD593CDA1B8703
+
+ECONOMIC EVIDENCE CHAIN
+----------------------------------------------------------------------------------------------------------------------
+1. TOT_MDCR_PYMT_AMT represents actual Original Medicare payment.
+2. The Geographic Variation PUF is grounded in the FFS claims universe.
+3. CMS explicitly identifies certain ACO/PBP payments as split payments already contained in actual FFS payment.
+4. MSSP assigned-beneficiary expenditures are Medicare Parts A/B FFS expenditures grounded in claims.
+5. GenSaveLoss is generated savings measured from benchmark minus expenditures.
+6. EarnSaveLoss is the ACO share of savings after performance-payment adjustments.
+7. Therefore positive EarnSaveLoss is economically distinct from the underlying FFS claim expenditure and from the contained ACO/PBP split-payment mechanism.
+
+CHECKS
+----------------------------------------------------------------------------------------------------------------------
+PASS | SOURCE-01 | Required artifact exists: Geographic Variation Public Use File Methods Paper.pdf | data\raw\cms\medicare_geographic_variation\documentation\Geographic Variation Public Use File Methods Paper.pdf
+PASS | SOURCE-02 | Required artifact exists: Medicare Geographic Variation - by National, State & County.zip | data\raw\cms\medicare_geographic_variation\documentation\Medicare Geographic Variation - by National, State & County.zip
+PASS | SOURCE-03 | Required artifact exists: Performance Year Financial and Quality Results - Documentation.zip | data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+PASS | SOURCE-04 | Required artifact exists: cms_original_medicare_geographic_variation_dictionary_text_v0_1.txt | data\raw\cms\medicare_geographic_variation\documentation\validation\original_medicare_containment_evidence_v0_1\cms_original_medicare_geographic_variation_dictionary_text_v0_1.txt
+PASS | SOURCE-05 | Required artifact exists: cms_original_medicare_geographic_variation_methods_text_v0_1.txt | data\raw\cms\medicare_geographic_variation\documentation\validation\original_medicare_containment_evidence_v0_1\cms_original_medicare_geographic_variation_methods_text_v0_1.txt
+PASS | SOURCE-06 | Required artifact exists: cms_mssp_settlement_vs_ffs_containment_evidence_v0_1.txt | data\raw\cms\medicare_aco\mssp_performance_results\validation\settlement_vs_ffs_containment_evidence_v0_1\cms_mssp_settlement_vs_ffs_containment_evidence_v0_1.txt
+PASS | HASH-01 | Original Medicare Methods Paper SHA-256 matches frozen source | 94666A9FC128F8CB469A55B3D2494368EBFF66F314CD88ED2440C6AE4BE3087F
+PASS | HASH-02 | Original Medicare documentation ZIP SHA-256 matches frozen source | 17D5BFE2F9388E5BF03552AE8BB97A312B6FFDB9581C434F8FDE5AF0F188BA57
+PASS | HASH-03 | MSSP documentation ZIP SHA-256 matches frozen source | 054E06866C7EB4D1EF1A02580B02FBB4639999C9B2ED93AFC4FD593CDA1B8703
+PASS | FFS-01 | TOT_MDCR_PYMT_AMT is documented as Total Actual Medicare Payment for Original Medicare | Requires field identifier, Total Actual Medicare Payment, and Original Medicare language.
+PASS | FFS-02 | Original Medicare Geographic Variation PUF is grounded in the FFS claims universe | Requires 100 percent Medicare claims, FFS terminology, and CCW terminology.
+PASS | FFS-03 | CMS identifies ACO/PBP split payments as redistribution of an underlying claim payment rather than new spending | Requires split-payment terminology, no-change-in-total-spending language, and ACO/PBP distribution language.
+PASS | FFS-04 | CMS states that applicable ACO/PBP split-payment amounts are included in actual FFS payment | Requires actual-payment sum, provider-payment, and ACO/PBP language.
+PASS | MSSP-01 | EarnSaveLoss is documented as an earned shared-savings performance-payment amount | Requires EarnSaveLoss, earned shared savings, performance payment, sharing rate, sequestration, and payment limit.
+PASS | MSSP-02 | GenSaveLoss is documented as benchmark-minus-expenditures before final sharing/payment adjustments | Requires GenSaveLoss, benchmark-minus-expenditures, and pre-sharing adjustment semantics.
+PASS | MSSP-03 | MSSP settlement calculation uses Medicare Parts A/B FFS expenditures for assigned beneficiaries | Requires explicit Medicare Parts A and B FFS expenditure and assigned-beneficiary language.
+PASS | MSSP-04 | MSSP expenditure measures are explicitly grounded in underlying Medicare claims | Requires claim-type-code and performance-year expenditure evidence.
+PASS | MSSP-05 | MSSP documentation independently identifies a financial-reconciliation / settlement stage | Advance/AIM/AIP evidence is used only as corroboration of settlement-stage mechanics.
+PASS | ECON-01 | Positive MSSP EarnSaveLoss is economically distinguishable from FFS claim expenditure already represented in TOT_MDCR_PYMT_AMT | Certification requires the complete affirmative evidence chain: FFS claim containment + split-payment containment + MSSP benchmark/expenditure/performance-payment settlement.
+PASS | BOUNDARY-01 | Documentation contains owed/shared-loss semantics, preventing automatic treatment of negative EarnSaveLoss as negative federal expenditure | Negative observations remain a separate settlement concept.
+
+CERTIFIED DISPOSITION
+----------------------------------------------------------------------------------------------------------------------
+Positive MSSP EarnSaveLoss expenditure existence: OBSERVED
+Economic relationship to Original Medicare / FFS: ADDITIVE_DISTINCT
+Economic additivity: ADDITIVE_IN_PRINCIPLE
+Washington payment-dollar incidence: UNRESOLVED
+County payment-dollar incidence: UNRESOLVED
+Cash / FFY timing: UNRESOLVED
+Negative EarnSaveLoss: SEPARATE_SETTLEMENT_CONCEPT
+Principal ledger: WITHHOLD_UNRESOLVED
+
+======================================================================================================================
+OVERALL CMS MSSP <-> ORIGINAL MEDICARE / FFS ECONOMIC OVERLAP CERTIFICATION v0.1: PASS
+======================================================================================================================
+
+ACCOUNTING RULE
+----------------------------------------------------------------------------------------------------------------------
+No federal expenditure source is additive by default.
+Positive EarnSaveLoss receives ADDITIVE_IN_PRINCIPLE status only because affirmative CMS evidence establishes an economically distinct settlement-stage performance payment.
+Economic additivity does not establish geographic allocatability.
+WITHHOLD_UNRESOLVED is not zero.
+
+EVIDENCE WRITTEN
+----------------------------------------------------------------------------------------------------------------------
+data\raw\cms\medicare_aco\validation\mssp_ffs_economic_overlap_v0_1\cms_mssp_ffs_economic_overlap_checks_v0_1.csv
+data\raw\cms\medicare_aco\validation\mssp_ffs_economic_overlap_v0_1\cms_mssp_ffs_economic_overlap_disposition_v0_1.csv
+data\raw\cms\medicare_aco\validation\mssp_ffs_economic_overlap_v0_1\cms_mssp_ffs_economic_overlap_certification_report_v0_1.txt

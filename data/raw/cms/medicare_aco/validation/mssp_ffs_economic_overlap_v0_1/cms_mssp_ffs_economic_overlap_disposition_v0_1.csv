@@ -1,0 +1,11 @@
+dimension,status,detail
+payment_stream,OBSERVED,Positive MSSP EarnSaveLoss observations.
+economic_relationship_to_original_medicare_ffs,ADDITIVE_DISTINCT,Positive EarnSaveLoss is evaluated against TOT_MDCR_PYMT_AMT and the FFS claims universe.
+relationship_to_ffs_claim_expenditure,NOT_CONTAINED_AS_UNDERLYING_FFS_CLAIM_EXPENDITURE,EarnSaveLoss is a performance-payment settlement derived after comparison of assigned-beneficiary FFS expenditures with the benchmark.
+relationship_to_aco_pbp_split_payment,ECONOMICALLY_DISTINCT,ACO/PBP split payments are contained within actual FFS payment; EarnSaveLoss is separately defined as earned shared savings/performance payment.
+economic_additivity,ADDITIVE_IN_PRINCIPLE,Economic additivity only. This does not establish geographic incidence or ledger inclusion.
+washington_payment_dollar_incidence,UNRESOLVED,ACO organizational connection is not payment-dollar incidence.
+washington_county_payment_dollar_incidence,UNRESOLVED,No county allocation is certified by this validator.
+cash_ffy_timing,UNRESOLVED,Performance year is not assumed to equal cash-payment FFY.
+negative_earnsaveloss,SEPARATE_SETTLEMENT_CONCEPT,Negative EarnSaveLoss is not automatically treated as negative federal expenditure.
+principal_ledger,WITHHOLD_UNRESOLVED,Withheld pending independent geographic-incidence and timing reconciliation.
