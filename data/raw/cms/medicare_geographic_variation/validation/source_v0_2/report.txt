@@ -1,0 +1,103 @@
+============================================================================================================
+CMS ORIGINAL MEDICARE GEOGRAPHIC VARIATION SOURCE CERTIFICATION v0.2
+============================================================================================================
+Read-only certification. No DB writes, allocation, Trustees scaling, accounting-additivity decision, or ledger treatment.
+
+Source: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_geographic_variation\2014-2024 Original Medicare Geographic Variation Public Use File.csv
+Bytes: 57,865,948
+SHA256: 10C8304012DA34DA3ECFE4CAF4548927095F693383814D0E79CE6711B6806FAD
+Columns: 246
+Observed years: 2014-2024
+
+GEOGRAPHIC RULE
+------------------------------------------------------------------------------------------------------------
+Washington county observations are selected only from the canonical 39 Washington county FIPS codes.
+CMS 53000 WA-UNKNOWN is retained as provenance but excluded from canonical county sums.
+
+WASHINGTON ALL-AGE GEOGRAPHY
+------------------------------------------------------------------------------------------------------------
+2015: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2016: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2017: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2018: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2019: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2020: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2021: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2022: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2023: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+2024: state=1; canonical_counties=39; distinct_county_fips=39; WA-UNKNOWN=1; other_53xxx=0
+
+TOTAL PAYMENT RECONCILIATION — 39 CANONICAL COUNTIES TO WASHINGTON STATE CONTROL
+------------------------------------------------------------------------------------------------------------
+
+2015
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=6285843586     county_sum=6285843210     delta=-376     missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=5668235910     county_sum=5668235482     delta=-428     missing=0
+
+2016
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=6601670501     county_sum=6601669769     delta=-732     missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=5894000982     county_sum=5894000236     delta=-746     missing=0
+
+2017
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=6864299528     county_sum=6864298783     delta=-745     missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=6161567094     county_sum=6161566359     delta=-735     missing=0
+
+2018
+  TOT_MDCR_PYMT_AMT              exact=PASS material=PASS state=7073449110     county_sum=7073449110     delta=0        missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=6404561784     county_sum=6404561786     delta=2        missing=0
+
+2019
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=7238789219     county_sum=7238789220     delta=1        missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=6506935349     county_sum=6506935351     delta=2        missing=0
+
+2020
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=6699487748     county_sum=6699487750     delta=2        missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=5980347538     county_sum=5980347534     delta=-4       missing=0
+
+2021
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=7105195582     county_sum=7105195585     delta=3        missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=6277728804     county_sum=6277728802     delta=-2       missing=0
+
+2022
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=7105695324     county_sum=7105695326     delta=2        missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=6305799887     county_sum=6305799886     delta=-1       missing=0
+
+2023
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=7158354677     county_sum=7158354678     delta=1        missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=6454532231     county_sum=6454532232     delta=1        missing=0
+
+2024
+  TOT_MDCR_PYMT_AMT              exact=FAIL material=PASS state=7249333762     county_sum=7249333743     delta=-19      missing=0
+  TOT_MDCR_STDZD_PYMT_AMT        exact=FAIL material=PASS state=6472435041     county_sum=6472435023     delta=-18      missing=0
+
+SERVICE-COMPONENT SUPPRESSION DIAGNOSTIC
+------------------------------------------------------------------------------------------------------------
+Component rows below are diagnostic. Missing/suppressed county observations are not converted to zero.
+2015: IRF_MDCR_PYMT_AMT missing=6; LTCH_MDCR_PYMT_AMT missing=22; HH_MDCR_PYMT_AMT missing=1; HOSPC_MDCR_PYMT_AMT missing=1
+2016: IRF_MDCR_PYMT_AMT missing=3; LTCH_MDCR_PYMT_AMT missing=24; HOSPC_MDCR_PYMT_AMT missing=1
+2017: IRF_MDCR_PYMT_AMT missing=4; LTCH_MDCR_PYMT_AMT missing=20; HOSPC_MDCR_PYMT_AMT missing=1
+2018: IRF_MDCR_PYMT_AMT missing=8; LTCH_MDCR_PYMT_AMT missing=25; HOSPC_MDCR_PYMT_AMT missing=1
+2019: IRF_MDCR_PYMT_AMT missing=7; LTCH_MDCR_PYMT_AMT missing=25; HOSPC_MDCR_PYMT_AMT missing=1
+2020: IRF_MDCR_PYMT_AMT missing=9; LTCH_MDCR_PYMT_AMT missing=24
+2021: IRF_MDCR_PYMT_AMT missing=7; LTCH_MDCR_PYMT_AMT missing=30
+2022: IRF_MDCR_PYMT_AMT missing=9; LTCH_MDCR_PYMT_AMT missing=29
+2023: IRF_MDCR_PYMT_AMT missing=8; LTCH_MDCR_PYMT_AMT missing=25; HOSPC_MDCR_PYMT_AMT missing=1
+2024: IRF_MDCR_PYMT_AMT missing=6; LTCH_MDCR_PYMT_AMT missing=23; HOSPC_MDCR_PYMT_AMT missing=1
+
+CHECK SUMMARY
+------------------------------------------------------------------------------------------------------------
+Checks: 93
+PASS:   93
+FAIL:   0
+
+INTERPRETIVE BOUNDARY
+------------------------------------------------------------------------------------------------------------
+* v0.1 is preserved as provenance; v0.2 corrects its over-broad 53xxx county-selection rule.
+* CMS 53000 WA-UNKNOWN is not treated as a Washington county and is not silently allocated.
+* Actual TOT_MDCR_PYMT_AMT remains distinct from standardized TOT_MDCR_STDZD_PYMT_AMT.
+* Material reconciliation does not overwrite the published Washington state control or force residuals to zero.
+* Service-component suppression is retained explicitly; incomplete component sums are not treated as complete county totals.
+* BENES_MA_CNT does not authorize treating Original Medicare payment fields as Medicare Advantage payments.
+* No county allocation model, Trustees scaling, accounting-additivity decision, or ledger value is created.
+
+OVERALL SOURCE CERTIFICATION v0.2: PASS

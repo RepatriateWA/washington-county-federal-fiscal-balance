@@ -1,0 +1,94 @@
+check,status,detail
+source_year_min,PASS,observed=2014 expected=2014
+source_year_max,PASS,observed=2024 expected=2024
+study_years_present,PASS,expected=2015-2024
+2015_wa_state_all_unique,PASS,rows=1
+2015_canonical_county_count,PASS,rows=39 expected=39
+2015_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2015_wa_unknown_unique,PASS,rows=1 expected=1
+2015_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2015_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2015_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=6285843586 county_sum=6285843210 delta=-376 relative=5.981695135358399928216094813E-8
+2015_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2015_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=5668235910 county_sum=5668235482 delta=-428 relative=7.550850155070557040382604682E-8
+2016_wa_state_all_unique,PASS,rows=1
+2016_canonical_county_count,PASS,rows=39 expected=39
+2016_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2016_wa_unknown_unique,PASS,rows=1 expected=1
+2016_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2016_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2016_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=6601670501 county_sum=6601669769 delta=-732 relative=1.108810262325450768509962627E-7
+2016_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2016_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=5894000982 county_sum=5894000236 delta=-746 relative=1.265693715149095982963648580E-7
+2017_wa_state_all_unique,PASS,rows=1
+2017_canonical_county_count,PASS,rows=39 expected=39
+2017_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2017_wa_unknown_unique,PASS,rows=1 expected=1
+2017_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2017_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2017_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=6864299528 county_sum=6864298783 delta=-745 relative=1.085325599445490864075242609E-7
+2017_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2017_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=6161567094 county_sum=6161566359 delta=-735 relative=1.192878351865594405552049646E-7
+2018_wa_state_all_unique,PASS,rows=1
+2018_canonical_county_count,PASS,rows=39 expected=39
+2018_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2018_wa_unknown_unique,PASS,rows=1 expected=1
+2018_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2018_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2018_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=7073449110 county_sum=7073449110 delta=0 relative=0
+2018_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2018_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=6404561784 county_sum=6404561786 delta=2 relative=3.122774152942733169829625302E-10
+2019_wa_state_all_unique,PASS,rows=1
+2019_canonical_county_count,PASS,rows=39 expected=39
+2019_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2019_wa_unknown_unique,PASS,rows=1 expected=1
+2019_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2019_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2019_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=7238789219 county_sum=7238789220 delta=1 relative=1.381446495741652012868203394E-10
+2019_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2019_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=6506935349 county_sum=6506935351 delta=2 relative=3.073643570636312464766737304E-10
+2020_wa_state_all_unique,PASS,rows=1
+2020_canonical_county_count,PASS,rows=39 expected=39
+2020_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2020_wa_unknown_unique,PASS,rows=1 expected=1
+2020_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2020_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2020_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=6699487748 county_sum=6699487750 delta=2 relative=2.985302869756065415525557283E-10
+2020_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2020_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=5980347538 county_sum=5980347534 delta=-4 relative=6.688574492675244921526833179E-10
+2021_wa_state_all_unique,PASS,rows=1
+2021_canonical_county_count,PASS,rows=39 expected=39
+2021_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2021_wa_unknown_unique,PASS,rows=1 expected=1
+2021_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2021_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2021_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=7105195582 county_sum=7105195585 delta=3 relative=4.222262378814838372453404478E-10
+2021_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2021_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=6277728804 county_sum=6277728802 delta=-2 relative=3.185865561324748172412450712E-10
+2022_wa_state_all_unique,PASS,rows=1
+2022_canonical_county_count,PASS,rows=39 expected=39
+2022_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2022_wa_unknown_unique,PASS,rows=1 expected=1
+2022_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2022_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2022_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=7105695324 county_sum=7105695326 delta=2 relative=2.814643618682685866310020247E-10
+2022_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2022_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=6305799887 county_sum=6305799886 delta=-1 relative=1.585841634558676885586363042E-10
+2023_wa_state_all_unique,PASS,rows=1
+2023_canonical_county_count,PASS,rows=39 expected=39
+2023_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2023_wa_unknown_unique,PASS,rows=1 expected=1
+2023_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2023_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2023_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=7158354677 county_sum=7158354678 delta=1 relative=1.396969059402754709299800178E-10
+2023_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2023_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=6454532231 county_sum=6454532232 delta=1 relative=1.549298948725011022413779004E-10
+2024_wa_state_all_unique,PASS,rows=1
+2024_canonical_county_count,PASS,rows=39 expected=39
+2024_canonical_county_fips_complete,PASS,distinct=39 expected=39
+2024_wa_unknown_unique,PASS,rows=1 expected=1
+2024_no_other_53xxx_county_geographies,PASS,rows=0 expected=0
+2024_TOT_MDCR_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2024_TOT_MDCR_PYMT_AMT_material_reconciliation,PASS,state=7249333762 county_sum=7249333743 delta=-19 relative=2.620930505310068519921458680E-9
+2024_TOT_MDCR_STDZD_PYMT_AMT_39_counties_numeric,PASS,numeric=39 missing=0
+2024_TOT_MDCR_STDZD_PYMT_AMT_material_reconciliation,PASS,state=6472435041 county_sum=6472435023 delta=-18 relative=2.781024434540941420627847441E-9
