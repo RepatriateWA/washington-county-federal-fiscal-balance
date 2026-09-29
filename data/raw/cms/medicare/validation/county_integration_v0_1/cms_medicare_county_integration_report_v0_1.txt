@@ -1,0 +1,77 @@
+CMS MEDICARE COUNTY INTEGRATION CERTIFICATION v0.1
+====================================================================================================
+
+READ-ONLY DOWNSTREAM INTEGRATION
+
+No reconstruction, imputation, scaling, extrapolation, CY-to-FFY conversion, database write, or final-ledger authorization.
+
+CORE ACCOUNTING IDENTITY
+----------------------------------------------------------------------------------------------------
+CORE MEDICARE = ORIGINAL MEDICARE/FFS + PART C + PART D
+
+TIMING
+----------------------------------------------------------------------------------------------------
+Original Medicare YEAR: certified CALENDAR_YEAR.
+Part C and Part D: certified calendar-month reconstructions.
+CY2015-CY2023: common complete calendar-year time window.
+CY2024: Original Medicare complete calendar year; Part C and Part D January-September only.
+
+COUNTY VALUE POLICY
+----------------------------------------------------------------------------------------------------
+Original Medicare: direct CMS actual county payment dollars.
+Part C: reconstructed county dollars; absent county-years caused by published source limitations are not treated as zero.
+Part D: reconstructed county dollars; PARTIAL_DOLLAR_COVERAGE remains explicit.
+
+ANNUAL RECONCILIATION
+----------------------------------------------------------------------------------------------------
+2015  OM=$6,285,843,210.00  C=$3,037,797,455.49  D=$1,037,356,532.24  CORE=NA  C unavailable counties=1  COMPLETE_CALENDAR_YEAR_WINDOW
+2016  OM=$6,601,669,769.00  C=$3,263,473,885.15  D=$1,203,045,318.36  CORE=NA  C unavailable counties=2  COMPLETE_CALENDAR_YEAR_WINDOW
+2017  OM=$6,864,298,783.00  C=$3,678,884,735.22  D=$1,291,120,826.69  CORE=NA  C unavailable counties=2  COMPLETE_CALENDAR_YEAR_WINDOW
+2018  OM=$7,073,449,110.00  C=$4,137,899,152.31  D=$1,279,353,560.40  CORE=NA  C unavailable counties=1  COMPLETE_CALENDAR_YEAR_WINDOW
+2019  OM=$7,238,789,220.00  C=$4,826,406,523.72  D=$1,287,196,410.05  CORE=NA  C unavailable counties=1  COMPLETE_CALENDAR_YEAR_WINDOW
+2020  OM=$6,699,487,750.00  C=$5,559,896,920.84  D=$1,289,355,389.77  CORE=NA  C unavailable counties=3  COMPLETE_CALENDAR_YEAR_WINDOW
+2021  OM=$7,105,195,585.00  C=$6,172,848,703.71  D=$1,366,678,426.75  CORE=NA  C unavailable counties=2  COMPLETE_CALENDAR_YEAR_WINDOW
+2022  OM=$7,105,695,326.00  C=$7,201,202,611.74  D=$1,534,480,806.15  CORE=NA  C unavailable counties=2  COMPLETE_CALENDAR_YEAR_WINDOW
+2023  OM=$7,158,354,678.00  C=$8,507,541,548.41  D=$1,635,054,930.35  CORE=$17,300,951,156.76  C unavailable counties=0  COMPLETE_CALENDAR_YEAR_WINDOW
+2024  OM=$7,249,333,743.00  C=$6,971,920,613.64  D=$1,477,228,091.18  CORE=$15,698,482,447.83  C unavailable counties=0  OM_COMPLETE_CY;PARTC_PARTD_JAN_SEP_ONLY
+
+OUTSIDE-CORE MEDICARE STREAMS
+----------------------------------------------------------------------------------------------------
+MSSP EarnSaveLoss: EXCLUDE_DUPLICATE
+RDS: WITHHOLD_UNRESOLVED
+Washington MFFS: WITHHOLD_UNRESOLVED
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------
+PASS  OM_ROW_COUNT: Original Medicare source has exactly 390 county-year rows [rows=390]
+PASS  OM_UNIQUE_KEYS: Original Medicare county-year keys are unique [unique_keys=390; rows=390]
+PASS  OM_YEAR_UNIVERSE: Original Medicare contains source years 2015-2024 [years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]]
+PASS  OM_CANONICAL_COUNTIES: Original Medicare contains exactly the 39 canonical WA counties [distinct_fips=39; missing=[]; extra=[]]
+PASS  OM_COUNTY_NAMES: Original Medicare county names match canonical FIPS names [none]
+PASS  OM_IDENTITY_CROSSCHECK: Original Medicare direct county payment values exactly match the frozen v0.2 identity artifact [source_keys=390; identity_keys=390; value_mismatches=0]
+PASS  OM_CALENDAR_YEAR_TIMING: Original Medicare annual timing is certified as CALENDAR_YEAR [timing_statuses=['CERTIFIED_CALENDAR_YEAR']; timing_bases=['CALENDAR_YEAR']]
+PASS  PARTC_NO_NONCANONICAL_FIPS: Part C contains no non-canonical Washington county FIPS [extra_fips=[]]
+PASS  PARTC_COUNTY_NAMES: Part C county names match canonical FIPS names where present [none]
+PASS  PARTC_ABSENCE_PRESERVED: Part C absent county-years are detectable and are not silently converted to zero [absent_county_years=14]
+PASS  PARTD_COMPLETE_COUNTY_YEAR_KEYS: Part D county reconstruction contains all 39 canonical county keys for every source year [observed_keys=390; expected_keys=390; missing=0; extra=0]
+PASS  PARTD_COUNTY_NAMES: Part D county names match canonical FIPS names [none]
+PASS  PARTD_PARTIAL_COVERAGE_PRESERVED: Part D remains explicitly PARTIAL_DOLLAR_COVERAGE [coverage_statuses=['PARTIAL_DOLLAR_COVERAGE']]
+PASS  ACCOUNTING_BOUNDARY_PRESERVED: Certified Medicare core and outside-core stream dispositions remain present [none]
+PASS  INTEGRATION_ROW_COUNT: Canonical Medicare integration contains exactly 390 rows [rows=390]
+PASS  INTEGRATION_CANONICAL_KEYS: Integration contains exactly 39 canonical counties for each year 2015-2024 [observed_keys=390; expected_keys=390]
+PASS  OM_ANNUAL_RECONCILIATION: Original Medicare 39-county sums materially reconcile to certified WA annual controls [all years within <=$1,000 OR <=1 ppm]
+PASS  PARTC_COMPLETE_YEAR_RECONCILIATION: Part C county sums reconcile to statewide controls when all 39 county values are available [all fully populated years reconcile within $0.01]
+PASS  PARTC_LIMITATION_EXPLICIT: Years with unavailable Part C county values remain explicitly identified rather than forced to zero [2015:unavailable=1:delta=-0.00000003932; 2016:unavailable=2:delta=0.00000007637; 2017:unavailable=2:delta=0.0000000839; 2018:unavailable=1:delta=-0.00000009772; 2019:unavailable=1:delta=0.00000009957; 2020:unavailable=3:delta=-0.00000006946; 2021:unavailable=2:delta=-0.00000099572; 2022:unavailable=2:delta=0.0000000459]
+PASS  PARTD_ANNUAL_RECONCILIATION: Part D county sums reconcile to certified annual reconstruction controls [all years within $0.01]
+PASS  CY2024_PARTIAL_WINDOW_PRESERVED: CY2024 explicitly preserves complete OM but Jan-Sep-only Part C and Part D [rows_2024=39]
+PASS  CORE_ARITHMETIC_IDENTITY: Every populated county core value equals OM + Part C + Part D [populated_core_rows=376; failures=0]
+
+CERTIFICATION RESULT
+----------------------------------------------------------------------------------------------------
+CMS-MEDICARE-COUNTY-INTEGRATION-v0.1 — PASS
+
+MEDICARE COUNTY INTEGRATION: CERTIFIED
+CY2015-CY2023: COMMON CALENDAR-YEAR ACCOUNTING WINDOW
+PART D: PARTIAL_DOLLAR_COVERAGE
+CY2024: ANNUAL CORE TOTAL INCOMPLETE (PART C/PART D JAN-SEP ONLY)
+FINAL FEDERAL-INFLOW LEDGER INCLUSION: NOT YET AUTHORIZED

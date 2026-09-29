@@ -1,0 +1,23 @@
+check_id,description,status,detail
+OM_ROW_COUNT,Original Medicare source has exactly 390 county-year rows,PASS,rows=390
+OM_UNIQUE_KEYS,Original Medicare county-year keys are unique,PASS,unique_keys=390; rows=390
+OM_YEAR_UNIVERSE,Original Medicare contains source years 2015-2024,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]"
+OM_CANONICAL_COUNTIES,Original Medicare contains exactly the 39 canonical WA counties,PASS,distinct_fips=39; missing=[]; extra=[]
+OM_COUNTY_NAMES,Original Medicare county names match canonical FIPS names,PASS,none
+OM_IDENTITY_CROSSCHECK,Original Medicare direct county payment values exactly match the frozen v0.2 identity artifact,PASS,source_keys=390; identity_keys=390; value_mismatches=0
+OM_CALENDAR_YEAR_TIMING,Original Medicare annual timing is certified as CALENDAR_YEAR,PASS,timing_statuses=['CERTIFIED_CALENDAR_YEAR']; timing_bases=['CALENDAR_YEAR']
+PARTC_NO_NONCANONICAL_FIPS,Part C contains no non-canonical Washington county FIPS,PASS,extra_fips=[]
+PARTC_COUNTY_NAMES,Part C county names match canonical FIPS names where present,PASS,none
+PARTC_ABSENCE_PRESERVED,Part C absent county-years are detectable and are not silently converted to zero,PASS,absent_county_years=14
+PARTD_COMPLETE_COUNTY_YEAR_KEYS,Part D county reconstruction contains all 39 canonical county keys for every source year,PASS,observed_keys=390; expected_keys=390; missing=0; extra=0
+PARTD_COUNTY_NAMES,Part D county names match canonical FIPS names,PASS,none
+PARTD_PARTIAL_COVERAGE_PRESERVED,Part D remains explicitly PARTIAL_DOLLAR_COVERAGE,PASS,coverage_statuses=['PARTIAL_DOLLAR_COVERAGE']
+ACCOUNTING_BOUNDARY_PRESERVED,Certified Medicare core and outside-core stream dispositions remain present,PASS,none
+INTEGRATION_ROW_COUNT,Canonical Medicare integration contains exactly 390 rows,PASS,rows=390
+INTEGRATION_CANONICAL_KEYS,Integration contains exactly 39 canonical counties for each year 2015-2024,PASS,observed_keys=390; expected_keys=390
+OM_ANNUAL_RECONCILIATION,Original Medicare 39-county sums materially reconcile to certified WA annual controls,PASS,"all years within <=$1,000 OR <=1 ppm"
+PARTC_COMPLETE_YEAR_RECONCILIATION,Part C county sums reconcile to statewide controls when all 39 county values are available,PASS,all fully populated years reconcile within $0.01
+PARTC_LIMITATION_EXPLICIT,Years with unavailable Part C county values remain explicitly identified rather than forced to zero,PASS,2015:unavailable=1:delta=-0.00000003932; 2016:unavailable=2:delta=0.00000007637; 2017:unavailable=2:delta=0.0000000839; 2018:unavailable=1:delta=-0.00000009772; 2019:unavailable=1:delta=0.00000009957; 2020:unavailable=3:delta=-0.00000006946; 2021:unavailable=2:delta=-0.00000099572; 2022:unavailable=2:delta=0.0000000459
+PARTD_ANNUAL_RECONCILIATION,Part D county sums reconcile to certified annual reconstruction controls,PASS,all years within $0.01
+CY2024_PARTIAL_WINDOW_PRESERVED,CY2024 explicitly preserves complete OM but Jan-Sep-only Part C and Part D,PASS,rows_2024=39
+CORE_ARITHMETIC_IDENTITY,Every populated county core value equals OM + Part C + Part D,PASS,populated_core_rows=376; failures=0
