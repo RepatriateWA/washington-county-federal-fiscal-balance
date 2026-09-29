@@ -1,0 +1,10 @@
+check,status,observed
+Payment years exactly CY2015-CY2024,PASS,"[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]"
+All reconstructed cells use canonical WA county FIPS,PASS,NONE
+All 39 canonical WA counties observed,PASS,39/39
+County name agrees with canonical FIPS,PASS,0 mismatched rows
+Calendar-year period coverage matches v0.2 boundary,PASS,"{2015: 12, 2016: 12, 2017: 12, 2018: 12, 2019: 12, 2020: 12, 2021: 12, 2022: 12, 2023: 12, 2024: 9}"
+Cell dollar component identity,PASS,max abs difference=$0.000000007
+Annual controls reconcile one-to-one,PASS,"{'both': 10, 'left_only': 0, 'right_only': 0}"
+County Part C sums reconcile to certified annual v0.2 controls,PASS,max abs difference=$0.000000000
+All 39 counties represented in each payment year,FAIL,"{2015: 38, 2016: 37, 2017: 37, 2018: 38, 2019: 38, 2020: 36, 2021: 37, 2022: 37, 2023: 39, 2024: 39}"

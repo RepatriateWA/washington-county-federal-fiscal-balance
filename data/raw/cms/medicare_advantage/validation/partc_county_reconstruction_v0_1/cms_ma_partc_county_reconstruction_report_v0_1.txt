@@ -1,0 +1,24 @@
+====================================================================================================
+CMS MEDICARE ADVANTAGE PART C COUNTY RECONSTRUCTION CERTIFICATION v0.1
+====================================================================================================
+
+Boundary: downstream certification of certified v0.2 cells; no PMPM reconstruction or imputation.
+Dollar status: RECONSTRUCTED, not directly observed CMS county expenditure.
+CY2015-CY2023 COMPLETE within certified HMO/HMOPOS + Local PPO scope; CY2024 PARTIAL_JAN_SEP.
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | Payment years exactly CY2015-CY2024 | [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+PASS | All reconstructed cells use canonical WA county FIPS | NONE
+PASS | All 39 canonical WA counties observed | 39/39
+PASS | County name agrees with canonical FIPS | 0 mismatched rows
+PASS | Calendar-year period coverage matches v0.2 boundary | {2015: 12, 2016: 12, 2017: 12, 2018: 12, 2019: 12, 2020: 12, 2021: 12, 2022: 12, 2023: 12, 2024: 9}
+PASS | Cell dollar component identity | max abs difference=$0.000000007
+PASS | Annual controls reconcile one-to-one | {'both': 10, 'left_only': 0, 'right_only': 0}
+PASS | County Part C sums reconcile to certified annual v0.2 controls | max abs difference=$0.000000000
+FAIL | All 39 counties represented in each payment year | {2015: 38, 2016: 37, 2017: 37, 2018: 38, 2019: 38, 2020: 36, 2021: 37, 2022: 37, 2023: 39, 2024: 39}
+
+OVERALL COUNTY RECONSTRUCTION CERTIFICATION: FAIL
+
+PASS certifies canonical WA county geography and reconciliation of county sums to certified v0.2 annual controls.
+It does not expand the upstream reconstruction scope or authorize final ledger inclusion.
