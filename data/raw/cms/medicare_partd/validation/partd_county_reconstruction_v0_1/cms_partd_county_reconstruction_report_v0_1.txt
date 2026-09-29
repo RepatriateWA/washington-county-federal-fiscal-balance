@@ -1,0 +1,57 @@
+CMS MEDICARE PART D COUNTY RECONSTRUCTION CERTIFICATION v0.1
+==============================================================================
+
+READ-ONLY downstream certification of frozen Part D reconstruction v0.3.
+No PMPM reconstruction, imputation, source modification, DB writes, or ledger inclusion.
+
+BOUNDARY
+------------------------------------------------------------------------------
+Dollar status       : RECONSTRUCTED
+Geography basis     : DIRECT_CPSC_COUNTY_OF_RESIDENCE
+Payment match basis : EXACT_SAME_YEAR_CONTRACT_PBP
+Coverage status     : PARTIAL_DOLLAR_COVERAGE
+CY2015-CY2023       : JAN-DEC source window
+CY2024              : JAN-SEP source window
+
+IMPORTANT:
+No-exact-payment-match enrollment receives no reconstructed dollars.
+Suppressed/non-numeric enrollment is not imputed.
+An absent county-year is NOT interpreted as zero.
+
+SUMMARY
+------------------------------------------------------------------------------
+Detail rows                              : 220,840
+Distinct canonical WA counties          : 39
+Blank county rows                        : 0
+Unknown county labels                    : 0
+Reconstructed enrollment member-months  : 106,176,965
+Reconstructed Part D dollars             : $13,400,870,291.95
+Absent county-years in reconstructed set : 0
+Maximum detail arithmetic difference     : 0
+Maximum monthly reconciliation difference: 6E-31
+Maximum annual reconciliation difference : 2.9E-29
+
+CHECKS
+------------------------------------------------------------------------------
+PASS | Annual controls exactly CY2015-CY2024 | years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+PASS | Monthly control periods exactly Jan 2015-Sep 2024 | periods=117 expected=117
+PASS | Exactly 39 canonical Washington counties observed | observed=39; missing=[]; extra=[]
+PASS | No blank or unrecognized county geography | blank_rows=0; unknown_counties=[]
+PASS | Detail periods stay within certified Jan 2015-Sep 2024 universe | detail_periods=117
+PASS | All reconstructed detail arithmetic identities preserved | detail_rows=220,840; failures=0; max_abs_difference=0
+PASS | County sums reconcile to every frozen v0.3 monthly control | failures=0; max_enrollment_difference=0; max_component_or_total_dollar_difference=6E-31
+PASS | County sums reconcile to every frozen v0.3 annual control | failures=0; max_enrollment_difference=0; max_component_or_total_dollar_difference=2.9E-29
+PASS | Statewide reconstructed total preserved | county_sum=$13,400,870,291.95; annual_control_sum=$13,400,870,291.95; difference=-1E-29
+PASS | County-year absence inventory produced without zero imputation | absent_county_years=0
+PASS | Certified source window is 12 months CY2015-CY2023 and Jan-Sep CY2024 | CY2015=12m(JAN-DEC); CY2016=12m(JAN-DEC); CY2017=12m(JAN-DEC); CY2018=12m(JAN-DEC); CY2019=12m(JAN-DEC); CY2020=12m(JAN-DEC); CY2021=12m(JAN-DEC); CY2022=12m(JAN-DEC); CY2023=12m(JAN-DEC); CY2024=9m(JAN-SEP)
+
+CERTIFICATION
+------------------------------------------------------------------------------
+CMS-PARTD-COUNTY-CERT-v0.1 — PASS / PARTIAL-DOLLAR COVERAGE
+
+Interpretation:
+County geography is taken directly from the Washington CPSC enrollment
+record used by the frozen v0.3 reconstruction. County dollars are an
+aggregation of already-reconstructed exact-match Contract+PBP dollars;
+they are not a post hoc beneficiary-share allocation. This certification
+does not expand v0.3 dollar coverage and does not authorize ledger inclusion.

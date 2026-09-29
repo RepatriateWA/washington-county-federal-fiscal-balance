@@ -1,0 +1,12 @@
+check,status,evidence
+Annual controls exactly CY2015-CY2024,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]"
+Monthly control periods exactly Jan 2015-Sep 2024,PASS,periods=117 expected=117
+Exactly 39 canonical Washington counties observed,PASS,observed=39; missing=[]; extra=[]
+No blank or unrecognized county geography,PASS,blank_rows=0; unknown_counties=[]
+Detail periods stay within certified Jan 2015-Sep 2024 universe,PASS,detail_periods=117
+All reconstructed detail arithmetic identities preserved,PASS,"detail_rows=220,840; failures=0; max_abs_difference=0"
+County sums reconcile to every frozen v0.3 monthly control,PASS,failures=0; max_enrollment_difference=0; max_component_or_total_dollar_difference=6E-31
+County sums reconcile to every frozen v0.3 annual control,PASS,failures=0; max_enrollment_difference=0; max_component_or_total_dollar_difference=2.9E-29
+Statewide reconstructed total preserved,PASS,"county_sum=$13,400,870,291.95; annual_control_sum=$13,400,870,291.95; difference=-1E-29"
+County-year absence inventory produced without zero imputation,PASS,absent_county_years=0
+Certified source window is 12 months CY2015-CY2023 and Jan-Sep CY2024,PASS,CY2015=12m(JAN-DEC); CY2016=12m(JAN-DEC); CY2017=12m(JAN-DEC); CY2018=12m(JAN-DEC); CY2019=12m(JAN-DEC); CY2020=12m(JAN-DEC); CY2021=12m(JAN-DEC); CY2022=12m(JAN-DEC); CY2023=12m(JAN-DEC); CY2024=9m(JAN-SEP)
