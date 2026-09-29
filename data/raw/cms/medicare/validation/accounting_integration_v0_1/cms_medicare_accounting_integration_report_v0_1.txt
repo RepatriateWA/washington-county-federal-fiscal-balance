@@ -1,0 +1,57 @@
+CMS MEDICARE ACCOUNTING INTEGRATION PROFILE v0.1
+====================================================================================================
+
+READ-ONLY ACCOUNTING INTEGRATION PROFILE
+
+No source modification, imputation, extrapolation, scaling, FFY conversion, DB writes, or ledger inclusion.
+
+PRINCIPAL STREAMS
+----------------------------------------------------------------------------------------------------
+Original Medicare / FFS : actual FFS payments
+Part C                  : certified reconstructed dollars
+Part D                  : certified reconstructed dollars; PARTIAL_DOLLAR_COVERAGE
+
+ANNUAL WASHINGTON PROFILE
+----------------------------------------------------------------------------------------------------
+2015  OM=$6,285,843,210.00  PartC=$3,037,797,455.49  PartD=$1,037,356,532.24  CORE=$10,360,997,197.72  COMPLETE_CALENDAR_YEAR_WINDOW
+2016  OM=$6,601,669,769.00  PartC=$3,263,473,885.15  PartD=$1,203,045,318.36  CORE=$11,068,188,972.52  COMPLETE_CALENDAR_YEAR_WINDOW
+2017  OM=$6,864,298,783.00  PartC=$3,678,884,735.22  PartD=$1,291,120,826.69  CORE=$11,834,304,344.91  COMPLETE_CALENDAR_YEAR_WINDOW
+2018  OM=$7,073,449,110.00  PartC=$4,137,899,152.31  PartD=$1,279,353,560.40  CORE=$12,490,701,822.71  COMPLETE_CALENDAR_YEAR_WINDOW
+2019  OM=$7,238,789,220.00  PartC=$4,826,406,523.72  PartD=$1,287,196,410.05  CORE=$13,352,392,153.77  COMPLETE_CALENDAR_YEAR_WINDOW
+2020  OM=$6,699,487,750.00  PartC=$5,559,896,920.84  PartD=$1,289,355,389.77  CORE=$13,548,740,060.62  COMPLETE_CALENDAR_YEAR_WINDOW
+2021  OM=$7,105,195,585.00  PartC=$6,172,848,703.71  PartD=$1,366,678,426.75  CORE=$14,644,722,715.46  COMPLETE_CALENDAR_YEAR_WINDOW
+2022  OM=$7,105,695,326.00  PartC=$7,201,202,611.74  PartD=$1,534,480,806.15  CORE=$15,841,378,743.88  COMPLETE_CALENDAR_YEAR_WINDOW
+2023  OM=$7,158,354,678.00  PartC=$8,507,541,548.41  PartD=$1,635,054,930.35  CORE=$17,300,951,156.76  COMPLETE_CALENDAR_YEAR_WINDOW
+2024  OM=$7,249,333,743.00  PartC=$6,971,920,613.64  PartD=$1,477,228,091.18  CORE=$15,698,482,447.83  MIXED_2024_PARTIAL_PARTC_PARTD
+
+TRUSTEES CONTROL INVENTORY
+----------------------------------------------------------------------------------------------------
+Certified preferred-vintage study-year rows: 263
+Comparability status: UNRESOLVED
+No Trustees difference or scaling factor is calculated in v0.1.
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------
+PASS  OM_YEAR_UNIVERSE: Original Medicare annual rows exactly cover 2015-2024 [years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]]
+PASS  PARTC_YEAR_UNIVERSE: Part C annual rows exactly cover 2015-2024 [years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]]
+PASS  PARTD_YEAR_UNIVERSE: Part D annual rows exactly cover 2015-2024 [years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]]
+PASS  OM_39_COUNTIES: Original Medicare reports 39 county rows in every study year [expected_county_rows=39]
+PASS  PARTC_2015_2023_COMPLETE: Part C CY2015-CY2023 are complete 12-month calendar years [expected=COMPLETE_CALENDAR_YEAR and 12 months]
+PASS  PARTC_2024_PARTIAL: Part C CY2024 contains Jan-Sep only [months_processed=9; year_completeness=PARTIAL_JAN_SEP]
+PASS  TRUSTEES_ROWS_PRESENT: Certified Trustees preferred-vintage rows exist for study years [study_year_rows=263]
+PASS  TRUSTEES_COMPARISON_WITHHELD: v0.1 performs no forced Trustees reconciliation [all Trustees rows retained as UNRESOLVED for comparability]
+PASS  NO_2024_EXTRAPOLATION: CY2024 Part C and Part D are not extrapolated to 12 months [source values are consumed exactly as certified]
+PASS  NO_FFY_CONVERSION: No calendar-year to federal-fiscal-year conversion is performed [source year labels preserved]
+PASS  NO_LEDGER_AUTHORIZATION: Integration profile does not authorize ledger inclusion [all annual integration rows remain NOT_YET_AUTHORIZED]
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------
+The three principal Washington Medicare streams are assembled without changing their certified source values.
+The resulting core Medicare sum is an accounting-integration candidate, not yet a certified final ledger value.
+Trustees controls are retained separately because accounting scope, component, basis, and timing comparability must be established before reconciliation.
+CY2024 must not be interpreted as a complete three-stream annual total because Part C and Part D contain Jan-Sep only.
+Part D remains partial-dollar coverage in every year represented by the frozen reconstruction.
+
+CERTIFICATION RESULT
+----------------------------------------------------------------------------------------------------
+CMS-MEDICARE-ACCOUNTING-INTEGRATION-PROFILE-v0.1 — PASS / INTEGRATION PROFILE ONLY

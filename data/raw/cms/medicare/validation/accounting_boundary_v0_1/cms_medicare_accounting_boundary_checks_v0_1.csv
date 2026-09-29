@@ -1,0 +1,13 @@
+check_id,description,status,detail
+INTEGRATION_YEAR_UNIVERSE,Integration profile exactly covers CY2015-CY2024,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]"
+INTEGRATION_UNIQUE_YEARS,Integration profile has one row per year,PASS,rows=10 distinct_years=10
+CORE_ARITHMETIC_IDENTITY,OM + Part C + Part D reproduces the reported core Medicare sum,PASS,max_abs_difference=$0.00
+ADDITIVITY_CORE_STREAMS_PRESENT,"Frozen additivity matrix identifies OM/FFS, Part C, and Part D",PASS,om_or_ffs=True; partc=True; partd=True
+ADDITIVITY_CHECKS_NO_FAIL,Frozen payment-stream additivity checks contain no FAIL result,PASS,rows=9; FAIL_token_present=False
+ADDITIVITY_DISPOSITION_PRESENT,Frozen overlap matrix contains an additive disposition,PASS,ADDITIVE_token_present=True
+RDS_SEPARATE_STREAM_EVIDENCE,"Frozen RDS matrix establishes RDS as economically additive to OM/FFS, Part C, and Part D",PASS,"pair_count=3; counterparts=['MEDICARE_PART_C', 'MEDICARE_PART_D', 'ORIGINAL_MEDICARE_FFS']; all_payment_stream_overlap_NO=True; all_classification_ADDITIVE=True"
+MFFS_SEPARATE_STREAM_EVIDENCE,Frozen MFFS artifact supports separate/additive-in-principle treatment,PASS,expected additive-in-principle or equivalent economic-overlap disposition
+CORE_2015_2023_FULL_YEAR_WINDOW,CY2015-CY2023 have complete calendar-year time windows,PASS,expected COMPLETE_CALENDAR_YEAR_WINDOW
+PARTD_PARTIAL_COVERAGE_PRESERVED,Part D partial-dollar coverage is preserved in every integration year,PASS,expected PARTIAL_DOLLAR_COVERAGE for all rows
+CY2024_PARTIAL_PRESERVED,CY2024 remains incomplete because Part C and Part D are Jan-Sep,PASS,expected MIXED_2024_PARTIAL_PARTC_PARTD and Part C months=9
+PRIOR_LEDGER_STATUS_PRESERVED,Input integration profile had not authorized ledger inclusion,PASS,expected NOT_YET_AUTHORIZED for every input row

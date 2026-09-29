@@ -1,0 +1,12 @@
+check_id,description,status,detail
+OM_YEAR_UNIVERSE,Original Medicare annual rows exactly cover 2015-2024,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]"
+PARTC_YEAR_UNIVERSE,Part C annual rows exactly cover 2015-2024,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]"
+PARTD_YEAR_UNIVERSE,Part D annual rows exactly cover 2015-2024,PASS,"years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]"
+OM_39_COUNTIES,Original Medicare reports 39 county rows in every study year,PASS,expected_county_rows=39
+PARTC_2015_2023_COMPLETE,Part C CY2015-CY2023 are complete 12-month calendar years,PASS,expected=COMPLETE_CALENDAR_YEAR and 12 months
+PARTC_2024_PARTIAL,Part C CY2024 contains Jan-Sep only,PASS,months_processed=9; year_completeness=PARTIAL_JAN_SEP
+TRUSTEES_ROWS_PRESENT,Certified Trustees preferred-vintage rows exist for study years,PASS,study_year_rows=263
+TRUSTEES_COMPARISON_WITHHELD,v0.1 performs no forced Trustees reconciliation,PASS,all Trustees rows retained as UNRESOLVED for comparability
+NO_2024_EXTRAPOLATION,CY2024 Part C and Part D are not extrapolated to 12 months,PASS,source values are consumed exactly as certified
+NO_FFY_CONVERSION,No calendar-year to federal-fiscal-year conversion is performed,PASS,source year labels preserved
+NO_LEDGER_AUTHORIZATION,Integration profile does not authorize ledger inclusion,PASS,all annual integration rows remain NOT_YET_AUTHORIZED

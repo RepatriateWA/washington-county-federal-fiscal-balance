@@ -1,0 +1,65 @@
+CMS MEDICARE ACCOUNTING BOUNDARY CERTIFICATION v0.1
+====================================================================================================
+
+READ-ONLY CERTIFICATION
+
+No reconstruction, imputation, extrapolation, scaling, CY-to-FFY conversion, DB writes, or final-ledger inclusion.
+
+CORE ACCOUNTING IDENTITY
+----------------------------------------------------------------------------------------------------
+CORE_MEDICARE = ORIGINAL_MEDICARE_FFS + PART_C + PART_D
+
+ANNUAL ACCOUNTING BOUNDARY
+----------------------------------------------------------------------------------------------------
+2015  CORE=$10,360,997,197.72  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2016  CORE=$11,068,188,972.52  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2017  CORE=$11,834,304,344.91  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2018  CORE=$12,490,701,822.71  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2019  CORE=$13,352,392,153.77  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2020  CORE=$13,548,740,060.62  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2021  CORE=$14,644,722,715.46  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2022  CORE=$15,841,378,743.88  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2023  CORE=$17,300,951,156.76  CORE_ACCOUNTING_BOUNDARY_CERTIFIED  FULL_YEAR_WINDOW_PARTD_PARTIAL_DOLLAR_COVERAGE
+2024  CORE=$15,698,482,447.83  ACCOUNTING_STRUCTURE_CERTIFIED_ANNUAL_TOTAL_INCOMPLETE  PARTC_PARTD_JAN_SEP_ONLY;PARTD_PARTIAL_DOLLAR_COVERAGE
+
+STREAM DISPOSITIONS
+----------------------------------------------------------------------------------------------------
+ORIGINAL_MEDICARE_FFS    INCLUDE_IN_CORE ADDITIVE_CORE_STREAM
+PART_C                   INCLUDE_IN_CORE ADDITIVE_CORE_STREAM
+PART_D                   INCLUDE_IN_CORE ADDITIVE_CORE_STREAM
+MSSP_EARNSAVELOSS        OUTSIDE_CORE    EXCLUDE_DUPLICATE
+RDS                      OUTSIDE_CORE    WITHHOLD_UNRESOLVED
+WASHINGTON_MFFS          OUTSIDE_CORE    WITHHOLD_UNRESOLVED
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------
+PASS  INTEGRATION_YEAR_UNIVERSE: Integration profile exactly covers CY2015-CY2024 [years=[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]]
+PASS  INTEGRATION_UNIQUE_YEARS: Integration profile has one row per year [rows=10 distinct_years=10]
+PASS  CORE_ARITHMETIC_IDENTITY: OM + Part C + Part D reproduces the reported core Medicare sum [max_abs_difference=$0.00]
+PASS  ADDITIVITY_CORE_STREAMS_PRESENT: Frozen additivity matrix identifies OM/FFS, Part C, and Part D [om_or_ffs=True; partc=True; partd=True]
+PASS  ADDITIVITY_CHECKS_NO_FAIL: Frozen payment-stream additivity checks contain no FAIL result [rows=9; FAIL_token_present=False]
+PASS  ADDITIVITY_DISPOSITION_PRESENT: Frozen overlap matrix contains an additive disposition [ADDITIVE_token_present=True]
+PASS  RDS_SEPARATE_STREAM_EVIDENCE: Frozen RDS matrix establishes RDS as economically additive to OM/FFS, Part C, and Part D [pair_count=3; counterparts=['MEDICARE_PART_C', 'MEDICARE_PART_D', 'ORIGINAL_MEDICARE_FFS']; all_payment_stream_overlap_NO=True; all_classification_ADDITIVE=True]
+PASS  MFFS_SEPARATE_STREAM_EVIDENCE: Frozen MFFS artifact supports separate/additive-in-principle treatment [expected additive-in-principle or equivalent economic-overlap disposition]
+PASS  CORE_2015_2023_FULL_YEAR_WINDOW: CY2015-CY2023 have complete calendar-year time windows [expected COMPLETE_CALENDAR_YEAR_WINDOW]
+PASS  PARTD_PARTIAL_COVERAGE_PRESERVED: Part D partial-dollar coverage is preserved in every integration year [expected PARTIAL_DOLLAR_COVERAGE for all rows]
+PASS  CY2024_PARTIAL_PRESERVED: CY2024 remains incomplete because Part C and Part D are Jan-Sep [expected MIXED_2024_PARTIAL_PARTC_PARTD and Part C months=9]
+PASS  PRIOR_LEDGER_STATUS_PRESERVED: Input integration profile had not authorized ledger inclusion [expected NOT_YET_AUTHORIZED for every input row]
+
+ACCOUNTING INTERPRETATION
+----------------------------------------------------------------------------------------------------
+Original Medicare/FFS, Part C, and Part D are certified as additive payment streams within the defined core Medicare accounting boundary.
+Beneficiary overlap does not imply payment-dollar overlap.
+The core boundary is not asserted to contain every Medicare-related federal expenditure.
+MSSP EarnSaveLoss is excluded as duplicate under the separately certified overlap policy.
+RDS and Washington MFFS are additive in principle but remain withheld because their Washington/county dollar incidence or annual timing is unresolved.
+Trustees evidence is diagnostic accounting evidence and is not used to scale or force-balance Washington reconstructed dollars.
+CY2015-CY2023 have complete calendar-year time windows, but Part D retains PARTIAL_DOLLAR_COVERAGE.
+CY2024 is not a complete annual core Medicare dollar total because Part C and Part D contain Jan-Sep only.
+
+CERTIFICATION RESULT
+----------------------------------------------------------------------------------------------------
+CMS-MEDICARE-ACCOUNTING-BOUNDARY-v0.1 — PASS
+
+CORE MEDICARE ACCOUNTING BOUNDARY: CERTIFIED
+FINAL FEDERAL-INFLOW LEDGER INCLUSION: NOT YET AUTHORIZED
