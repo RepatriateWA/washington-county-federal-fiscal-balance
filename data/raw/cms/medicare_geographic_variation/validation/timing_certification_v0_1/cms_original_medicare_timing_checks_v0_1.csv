@@ -1,0 +1,6 @@
+check_id,description,status,detail
+DICTIONARY_YEAR_FIELD,CMS data dictionary identifies YEAR as the source year field,PASS,Expected extracted dictionary evidence equivalent to Term Name=Year; Variable Name=YEAR; Definition=Year
+METHODS_CALENDAR_YEAR_STATEMENT,CMS Methods Paper explicitly states that the FFS GV PUF covers calendar years,PASS,"Expected phrase containing ""covers calendar years"""
+METHODS_CALENDAR_YEAR_POPULATION,CMS Methods Paper applies calendar-year terminology to the FFS GV PUF study population,PASS,"Expected phrase containing ""during the calendar year"""
+TIMING_BASIS_RESOLUTION,Source annual-period convention resolves to CALENDAR_YEAR,PASS,resolved_timing_basis=CALENDAR_YEAR
+METHODS_VINTAGE_BOUNDARY,Preserved Methods Paper is recognized as directly documenting the PUF through 2022,PASS,Later 2023-2024 observations inherit the documented PUF annual-period convention; they are not individually documented by the preserved May 2024 Methods Paper

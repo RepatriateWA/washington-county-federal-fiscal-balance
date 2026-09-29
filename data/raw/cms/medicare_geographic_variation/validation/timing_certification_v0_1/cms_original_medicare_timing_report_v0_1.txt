@@ -1,0 +1,45 @@
+CMS ORIGINAL MEDICARE GEOGRAPHIC VARIATION TIMING CERTIFICATION v0.1
+====================================================================================================
+
+READ-ONLY DOCUMENTARY CERTIFICATION
+
+No payment reconstruction, dollar modification, CY-to-FFY conversion, database write, extrapolation, or ledger inclusion.
+
+QUESTION
+----------------------------------------------------------------------------------------------------
+What annual period does the CMS Original Medicare Geographic Variation PUF YEAR variable represent?
+
+DOCUMENTARY EVIDENCE
+----------------------------------------------------------------------------------------------------
+Dictionary: YEAR is defined as Year.
+Methods Paper: the FFS GV PUF explicitly covers calendar years.
+Methods Paper: study-population descriptions independently use calendar-year terminology.
+
+VINTAGE BOUNDARY
+----------------------------------------------------------------------------------------------------
+The preserved May 2024 Methods Paper directly documents the PUF through calendar year 2022.
+The current WCFFBP source extends through 2024. This certification applies the documented dataset annual-period convention to those later observations; it does not claim that the preserved Methods Paper individually documents CY2023 or CY2024.
+
+VALIDATION CHECKS
+----------------------------------------------------------------------------------------------------
+PASS  DICTIONARY_YEAR_FIELD: CMS data dictionary identifies YEAR as the source year field [Expected extracted dictionary evidence equivalent to Term Name=Year; Variable Name=YEAR; Definition=Year]
+PASS  METHODS_CALENDAR_YEAR_STATEMENT: CMS Methods Paper explicitly states that the FFS GV PUF covers calendar years [Expected phrase containing "covers calendar years"]
+PASS  METHODS_CALENDAR_YEAR_POPULATION: CMS Methods Paper applies calendar-year terminology to the FFS GV PUF study population [Expected phrase containing "during the calendar year"]
+PASS  TIMING_BASIS_RESOLUTION: Source annual-period convention resolves to CALENDAR_YEAR [resolved_timing_basis=CALENDAR_YEAR]
+PASS  METHODS_VINTAGE_BOUNDARY: Preserved Methods Paper is recognized as directly documenting the PUF through 2022 [Later 2023-2024 observations inherit the documented PUF annual-period convention; they are not individually documented by the preserved May 2024 Methods Paper]
+
+TIMING INTERPRETATION
+----------------------------------------------------------------------------------------------------
+CMS Original Medicare Geographic Variation YEAR is certified as CALENDAR_YEAR.
+
+Accordingly, the WCFFBP Original Medicare annual observations may be aligned by calendar year with the certified Part C and Part D calendar-month reconstructions.
+
+No conversion from calendar year to federal fiscal year is performed or authorized by this certification.
+
+CERTIFICATION RESULT
+----------------------------------------------------------------------------------------------------
+CMS-OM-GV-TIMING-CERT-v0.1 — PASS
+
+ORIGINAL MEDICARE YEAR BASIS: CERTIFIED_CALENDAR_YEAR
+MEDICARE CORE TEMPORAL ALIGNMENT: SUPPORTED FOR COMMON CALENDAR-YEAR ACCOUNTING
+FINAL FEDERAL-INFLOW LEDGER INCLUSION: NOT AUTHORIZED BY THIS CERTIFICATION
