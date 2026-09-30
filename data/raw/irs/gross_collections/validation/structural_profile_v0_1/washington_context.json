@@ -1,0 +1,2982 @@
+[
+  {
+    "fiscal_year": 2015,
+    "source_file": "irs_data_book_2015_table_1_5_gross_collections_by_type_and_state.xls",
+    "source_sha256": "5B76BA940766B9E1D11F84E70AD2BCB279437A5C9D9B638BBBE14B4693534DE2",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          140981150,
+          14649198,
+          121379888,
+          106063345,
+          13817331,
+          568581,
+          27115,
+          903516,
+          458442,
+          26753,
+          4466869
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          33942286,
+          3330908,
+          25554628,
+          18930641,
+          5766006,
+          72354,
+          2986,
+          782641,
+          147767,
+          5193,
+          4903789
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          31219148,
+          1989938,
+          28153829,
+          22221724,
+          5630003,
+          79540,
+          39353,
+          183210,
+          77043,
+          22434,
+          975904
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          136108810,
+          16095757,
+          115272208,
+          94451811,
+          18909565,
+          302499,
+          72876,
+          1535457,
+          805603,
+          69714,
+          3865528
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          14373318,
+          3527526,
+          10672687,
+          8891464,
+          1530086,
+          33981,
+          14,
+          217141,
+          61478,
+          4297,
+          107330
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          24086257,
+          1731619,
+          21934428,
+          16698335,
+          5006654,
+          64444,
+          1634,
+          163361,
+          99829,
+          1617,
+          318765
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          7732138,
+          552853,
+          7118323,
+          3945697,
+          2085524,
+          12337,
+          1372,
+          1073393,
+          13905,
+          672,
+          46385
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          62708662,
+          7004232,
+          54104159,
+          45471936,
+          8169341,
+          190507,
+          2567,
+          269808,
+          106739,
+          17561,
+          1475970
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          279904425,
+          32083819,
+          226945577,
+          165876063,
+          55270390,
+          577172,
+          1156475,
+          4065477,
+          1167572,
+          115516,
+          19591942
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          20178718,
+          1312427,
+          18109139,
+          13899642,
+          3961368,
+          56298,
+          5225,
+          186606,
+          34006,
+          6836,
+          716310
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          4495280,
+          359193,
+          4097342,
+          3110771,
+          936599,
+          9406,
+          2493,
+          38074,
+          9567,
+          17,
+          29161
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          80242853,
+          11776145,
+          67798667,
+          52692491,
+          13734747,
+          165538,
+          787547,
+          418344,
+          391048,
+          18837,
+          258156
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          73334437,
+          6289483,
+          65551576,
+          50681106,
+          14182281,
+          194339,
+          10875,
+          482975,
+          160935,
+          86854,
+          1245589
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          7374299,
+          349649,
+          6892438,
+          5294254,
+          1537854,
+          17133,
+          731,
+          42466,
+          51035,
+          119,
+          81058
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          51748831,
+          5724903,
+          45199884,
+          36351304,
+          8003093,
+          141664,
+          3197,
+          700626,
+          223190,
+          19817,
+          581036
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          5284146,
+          208550,
+          4855460,
+          2576916,
+          2051428,
+          8417,
+          869,
+          217830,
+          117277,
+          14929,
+          87930
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2016,
+    "source_file": "irs_data_book_2016_table_1_5_gross_collections_by_type_and_state.xls",
+    "source_sha256": "5AF414D4ABAF62CBAAE80B759E4C5768ABF14039FF259E7F0AD04691608D2AF2",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          141113704,
+          11673464,
+          124675836,
+          109550088,
+          13687372,
+          603229,
+          26027,
+          809122,
+          378960,
+          49334,
+          4336110
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          27953499,
+          1379289,
+          22768650,
+          17148147,
+          4909320,
+          62704,
+          3093,
+          645387,
+          164977,
+          2436,
+          3638146
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          31955480,
+          1074218,
+          29749545,
+          23513596,
+          6012017,
+          79658,
+          896,
+          143378,
+          208511,
+          4482,
+          918724
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          135924018,
+          14231262,
+          117342049,
+          96124083,
+          19689517,
+          281420,
+          71571,
+          1175458,
+          989300,
+          115724,
+          3245683
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          14607467,
+          3462554,
+          10897975,
+          9249999,
+          1472705,
+          32874,
+          13,
+          142383,
+          141988,
+          5849,
+          99102
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          25486880,
+          1708414,
+          23241146,
+          17736666,
+          5282486,
+          60166,
+          2131,
+          159697,
+          191829,
+          20101,
+          325389
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          7779688,
+          434630,
+          7268145,
+          4112939,
+          1904921,
+          12269,
+          1353,
+          1236661,
+          26058,
+          454,
+          50403
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          65002725,
+          6940458,
+          56406412,
+          47695227,
+          8275048,
+          183128,
+          2746,
+          250264,
+          202347,
+          10402,
+          1443107
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          261128693,
+          19021716,
+          218950277,
+          164916329,
+          49325367,
+          538422,
+          1086661,
+          3083500,
+          1318116,
+          140191,
+          21698393
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          21129551,
+          1252583,
+          19194605,
+          14902351,
+          4088522,
+          58005,
+          4959,
+          140769,
+          24277,
+          2959,
+          655127
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          4460846,
+          200000,
+          4202276,
+          3258578,
+          884050,
+          9318,
+          2611,
+          47720,
+          25538,
+          1425,
+          31607
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          83616961,
+          12845576,
+          70011653,
+          54977133,
+          13866471,
+          167504,
+          697856,
+          302689,
+          482079,
+          47281,
+          230371
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          77083460,
+          5250717,
+          70468914,
+          54423061,
+          15394250,
+          203925,
+          10689,
+          436989,
+          250966,
+          83066,
+          1029797
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          6915238,
+          220567,
+          6620799,
+          5240263,
+          1332957,
+          15886,
+          781,
+          30912,
+          19786,
+          2448,
+          51637
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          52468187,
+          4749321,
+          46893577,
+          37780323,
+          8295559,
+          134762,
+          2389,
+          680544,
+          252294,
+          25519,
+          547476
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          4475631,
+          152712,
+          4173281,
+          2437497,
+          1573784,
+          7407,
+          840,
+          153753,
+          44414,
+          35535,
+          69689
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2017,
+    "source_file": "irs_data_book_2017_table_1_5_gross_collections_by_type_and_state.xls",
+    "source_sha256": "CEE8C7BB0D0F98801A97CD9B198F7794E66320232175710F4222B6EC112E8EFC",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          142086312,
+          11086446,
+          126293181,
+          112011681,
+          13306644,
+          284098,
+          27202,
+          663556,
+          406488,
+          64266,
+          4235931
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          27113120,
+          846993,
+          22482322,
+          17467248,
+          4476852,
+          62538,
+          3152,
+          472532,
+          114133,
+          26504,
+          3643168
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          32345824,
+          1139779,
+          30750109,
+          24170516,
+          6363850,
+          80324,
+          1872,
+          133547,
+          168463,
+          20012,
+          267461
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          139797047,
+          15041827,
+          122021841,
+          101762867,
+          18613180,
+          283310,
+          73906,
+          1288578,
+          589047,
+          123468,
+          2020864
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          14917462,
+          3456216,
+          11293955,
+          9654478,
+          1458183,
+          32279,
+          13,
+          149002,
+          148389,
+          5177,
+          13725
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          26636069,
+          1953433,
+          24284628,
+          18627448,
+          5449256,
+          65053,
+          2031,
+          140840,
+          87793,
+          11276,
+          298939
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          7872916,
+          538298,
+          7268084,
+          4311164,
+          1705199,
+          12258,
+          1104,
+          1238359,
+          29093,
+          5373,
+          32068
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          69069233,
+          6894252,
+          60650500,
+          51332500,
+          8885917,
+          182612,
+          2702,
+          246769,
+          147142,
+          11079,
+          1366260
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          270955237,
+          22939596,
+          225236761,
+          173182702,
+          47255637,
+          571550,
+          1144044,
+          3082828,
+          1314270,
+          123822,
+          21340788
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          22485663,
+          1302787,
+          20465881,
+          15823950,
+          4439734,
+          60544,
+          4303,
+          137350,
+          68814,
+          9674,
+          638507
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          4422942,
+          242481,
+          4151408,
+          3264675,
+          854479,
+          8858,
+          3063,
+          20333,
+          8612,
+          1455,
+          18986
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          87183756,
+          14023486,
+          72647063,
+          57709018,
+          13759285,
+          160328,
+          694589,
+          323843,
+          345515,
+          17305,
+          150387
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          85875647,
+          6985812,
+          77323289,
+          60415398,
+          16263484,
+          222352,
+          10735,
+          411320,
+          295297,
+          60149,
+          1211100
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          6980482,
+          243825,
+          6641350,
+          5343609,
+          1259795,
+          14861,
+          876,
+          22209,
+          41525,
+          2895,
+          50887
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          53089052,
+          4886946,
+          47480079,
+          38573493,
+          8167326,
+          129287,
+          2497,
+          607476,
+          188723,
+          20483,
+          512821
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          4393700,
+          100890,
+          4007776,
+          2430317,
+          1398198,
+          7438,
+          784,
+          171039,
+          205750,
+          23831,
+          55453
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2018,
+    "source_file": "irs_data_book_2018_table_1_5_gross_collections_by_type_and_state.xls",
+    "source_sha256": "CCF8162B2E155A411BE3064E324071C73A1640B7AD1A8520AB580953127F1F19",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          140891209,
+          9303929,
+          126652169,
+          110948859,
+          14506737,
+          280643,
+          28178,
+          887752,
+          423737,
+          5697,
+          4505676
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          27908169,
+          1010159,
+          23067396,
+          17460908,
+          4991873,
+          65936,
+          3517,
+          545163,
+          92400,
+          2693,
+          3735522
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          33802142,
+          998183,
+          32097454,
+          24815679,
+          7024399,
+          89265,
+          1927,
+          166184,
+          242264,
+          9644,
+          454598
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          136268950,
+          9046083,
+          123628377,
+          101020850,
+          20671697,
+          293605,
+          77795,
+          1564430,
+          690843,
+          23755,
+          2879892
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          14725607,
+          3024743,
+          11557850,
+          9670110,
+          1638200,
+          33717,
+          15,
+          215808,
+          83278,
+          4822,
+          54914
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          28552567,
+          1405691,
+          26683279,
+          20396037,
+          6046798,
+          64800,
+          2007,
+          173637,
+          137256,
+          5060,
+          321282
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          8200403,
+          296888,
+          7819278,
+          4468367,
+          1718201,
+          12356,
+          1609,
+          1618745,
+          30267,
+          356,
+          53615
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          68888235,
+          5365333,
+          61502290,
+          51410226,
+          9545324,
+          192445,
+          2603,
+          351693,
+          313703,
+          19105,
+          1687804
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          280048364,
+          15756288,
+          240169156,
+          178016216,
+          56433977,
+          598532,
+          1161931,
+          3958501,
+          1395067,
+          135733,
+          22592120
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          23401402,
+          992792,
+          21637433,
+          16573611,
+          4850884,
+          63736,
+          4052,
+          145151,
+          79508,
+          6195,
+          685474
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          4417527,
+          81587,
+          4286720,
+          3210332,
+          1023301,
+          8858,
+          3427,
+          40802,
+          17669,
+          118,
+          31433
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          84844999,
+          9696347,
+          74465304,
+          57863682,
+          15288132,
+          169867,
+          737110,
+          406513,
+          469094,
+          10213,
+          204043
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          90404108,
+          4944899,
+          83778554,
+          64959436,
+          18020229,
+          261798,
+          11404,
+          525688,
+          274931,
+          31639,
+          1374084
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          6911139,
+          201692,
+          6624968,
+          5226091,
+          1352209,
+          14283,
+          817,
+          31569,
+          24387,
+          154,
+          59937
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          51992826,
+          3275928,
+          47765785,
+          38359100,
+          8465774,
+          131822,
+          2573,
+          806516,
+          250253,
+          10549,
+          690310
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          4930650,
+          78787,
+          4486179,
+          2348215,
+          1825826,
+          7507,
+          794,
+          303836,
+          307343,
+          3985,
+          54356
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2019,
+    "source_file": "irs_data_book_2019_table_1_5_gross_collections_by_type_and_state.xlsx",
+    "source_sha256": "4DE8F135EF74874C9AEFA24E50D5529B957959031B57ECF97D731CA37D626577",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          144704811,
+          9458745,
+          130490389,
+          114549867,
+          14758617,
+          261441.41,
+          29366,
+          891097,
+          197241,
+          54380,
+          4504056
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          29133375,
+          1659832,
+          23676853,
+          18248870,
+          4887573,
+          62556,
+          3347,
+          474508,
+          98896,
+          3939,
+          3693854
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          35041125,
+          1361731.01,
+          32523662,
+          25108632,
+          7148396,
+          71837,
+          2420,
+          192378,
+          93669,
+          22709,
+          1039354
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          141973579,
+          11302691,
+          127018609,
+          103715218,
+          21285041,
+          263098,
+          82775,
+          1672476.35,
+          482266,
+          28262,
+          3141750
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          14325645,
+          2407033,
+          11778588,
+          9940957,
+          1633244,
+          27903,
+          7,
+          176478,
+          51013,
+          1340,
+          87671
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          27885047,
+          1268721,
+          26088772,
+          19569499,
+          6283425,
+          61898,
+          2143,
+          171807.37,
+          124511,
+          5311,
+          397731
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          8029363,
+          187711,
+          7787418,
+          4690703,
+          1794063.75,
+          12786,
+          1581.31,
+          1288284,
+          10120,
+          214,
+          43899
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          69769299,
+          4682812,
+          63270862,
+          52581420,
+          10001825,
+          176696,
+          2933,
+          507988,
+          53434,
+          21026,
+          1741165
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          292330171,
+          18470193,
+          249429935,
+          187311391,
+          56314415,
+          544537,
+          1190778,
+          4068815,
+          1620965,
+          148057,
+          22661021
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          24335082,
+          890527,
+          22727184,
+          17611625,
+          4892467,
+          59905,
+          4330,
+          158858,
+          37687,
+          1319,
+          678365
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          4505097,
+          146603,
+          4328705.5,
+          3259085,
+          1008660,
+          8658,
+          3203,
+          49099,
+          9393,
+          446,
+          19951
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          83574427,
+          6968807,
+          76143051,
+          58818709,
+          15979499,
+          155578.85,
+          736221,
+          453043,
+          255976,
+          17439,
+          189155
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          100609767,
+          9877503,
+          88564816,
+          69714987,
+          18070877,
+          196226,
+          12385,
+          570341,
+          511924.37,
+          101340,
+          1554184
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          7039939,
+          187042.45,
+          6740010,
+          5364221,
+          1319274,
+          14512,
+          841.815,
+          41161,
+          57782,
+          3,
+          55102.68
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          52872510,
+          3525739,
+          48510116,
+          39099606,
+          8487779,
+          121556,
+          2402.855,
+          798771,
+          126292,
+          9922,
+          700442
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          4743997,
+          106419,
+          4393033,
+          2373696,
+          1682110.44,
+          7449,
+          810,
+          328967,
+          159924,
+          32878,
+          51742
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2020,
+    "source_file": "irs_data_book_2020_table_1_5_gross_collections_by_type_and_state.xlsx",
+    "source_sha256": "B0D169E99266313BF94801FEEFB97313D5F0F71B837A2C3638B8743B452EA618",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          144308916,
+          8660468,
+          129481120,
+          114217749,
+          14276447,
+          235458,
+          25273,
+          726192,
+          233175,
+          9272,
+          5924881
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          26747378,
+          918356,
+          22391274,
+          17515798,
+          4274023.46,
+          60206,
+          3555,
+          537692,
+          56420,
+          1676,
+          3379652
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          35257459,
+          1242212,
+          33267786,
+          25960550,
+          7004598,
+          71863,
+          16293,
+          214482,
+          258200,
+          15595,
+          473666
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          140452053,
+          13764117,
+          122561211,
+          101505974,
+          19691403,
+          257446,
+          76045,
+          1030343,
+          571363,
+          4042,
+          3551320
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          13767341,
+          2487556,
+          11188954,
+          9198483,
+          1682901.6,
+          25975,
+          10,
+          281584,
+          40170,
+          1386,
+          49275
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          27504298,
+          981044,
+          26029631,
+          19131916,
+          6696109,
+          65892,
+          2026,
+          133689,
+          107657,
+          13532,
+          372435
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          8052555,
+          161289,
+          7806560,
+          4541160,
+          1642514,
+          12334,
+          1520,
+          1609032,
+          32395,
+          237,
+          52074
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          67146127,
+          4545077,
+          60835009,
+          50218595,
+          9867450,
+          169375.91,
+          2255,
+          577333,
+          105739,
+          12851,
+          1647452
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          275485613,
+          14508511,
+          242548320,
+          184848354,
+          52856273,
+          536530,
+          918096,
+          3389067,
+          1023884,
+          113036,
+          17291862
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          25137865,
+          1100445,
+          23392523,
+          17672680,
+          5538890,
+          60537,
+          4386,
+          116031,
+          29915,
+          5069,
+          609912
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          4475626,
+          121707,
+          4291821,
+          3230604,
+          996445,
+          8471,
+          3173,
+          53129,
+          32539.57,
+          5,
+          29552
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          84894551,
+          7497805,
+          76860224,
+          59557542,
+          16117830,
+          162666,
+          513376,
+          508810,
+          308272,
+          22067,
+          206183
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          101041925,
+          7771455,
+          91388620,
+          71879802,
+          18715770,
+          209293,
+          13375.06,
+          570380,
+          823083,
+          35343,
+          1023424
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          6768452,
+          206362,
+          6480602,
+          5223232,
+          1215841,
+          13475,
+          728,
+          27326,
+          36695,
+          0,
+          44792
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          50340637,
+          2939262,
+          46461749,
+          37273921,
+          8532090,
+          117667,
+          2865.56,
+          535206,
+          280527,
+          12950,
+          646149
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          4859765,
+          123756,
+          4423171,
+          2371588,
+          1649903,
+          7638.25,
+          699,
+          393343,
+          134014,
+          100911,
+          77913
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2021,
+    "source_file": "irs_data_book_2021_table_1_5_gross_collections_by_type_and_state.xlsx",
+    "source_sha256": "CC846D137A9E83A957779C45077D7F9C5EEF8F4F49910542645CBE49AC2ECF3A",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          163091560,
+          15279818,
+          140836335,
+          121513224,
+          17819899,
+          236864,
+          25630,
+          1240718,
+          539625,
+          73226,
+          6362557
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          28563746,
+          999036,
+          23986618,
+          18150968,
+          4800417,
+          62781,
+          3083,
+          969369,
+          134158,
+          14907,
+          3429027
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          40067022,
+          2390821,
+          37031079,
+          28167959,
+          8546726,
+          69248,
+          2636,
+          244510,
+          163501,
+          62857,
+          418764
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          154308909,
+          15473529,
+          135405433,
+          107610300,
+          25389980,
+          255163,
+          72808,
+          2077182,
+          918963,
+          71260,
+          2439724
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          16491561,
+          3807910,
+          12550328,
+          10272657,
+          2068800,
+          27949,
+          22,
+          180900,
+          22445,
+          6776,
+          104101
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          31110135,
+          1524268,
+          29139683,
+          20659148,
+          8193445,
+          51198,
+          2012,
+          233880,
+          118896,
+          8728,
+          318561
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          11525074,
+          305260,
+          11098890,
+          5558579,
+          2285640,
+          14926,
+          721,
+          3239024,
+          50781,
+          18678,
+          51466
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          82362552,
+          8873150,
+          71574197,
+          57381302,
+          13405006,
+          176021,
+          2355,
+          609513,
+          286707,
+          18736,
+          1609762
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          312071886,
+          27143965,
+          265528807,
+          195608052,
+          63921566,
+          513398,
+          1004275,
+          4481516,
+          1996227,
+          259352,
+          17143535
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          31536915,
+          1587041,
+          29258588,
+          21301494,
+          7647818,
+          64866,
+          3687,
+          240724,
+          50303,
+          4498,
+          636485
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          5001910,
+          200988,
+          4754993,
+          3498300,
+          1174403,
+          8824,
+          3009,
+          70457,
+          15678,
+          4747,
+          25504
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          108067359,
+          15945150,
+          91460782,
+          70120960,
+          20044052,
+          160275,
+          501865,
+          633629,
+          452704,
+          67436,
+          141288
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          119862452,
+          12672565,
+          105826738,
+          81227528,
+          23620739,
+          235691,
+          14823,
+          727956,
+          235308,
+          93732,
+          1034107
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          7143579,
+          246126,
+          6835618,
+          5370363,
+          1407132,
+          13512,
+          723,
+          43888,
+          14096,
+          1764,
+          45975
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          61583211,
+          6451803,
+          54221067,
+          42029599,
+          10682741,
+          120521,
+          2796,
+          1385410,
+          230742,
+          69369,
+          610229
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          6089795,
+          177625,
+          5670216,
+          2467247,
+          2596619,
+          7543,
+          625,
+          598182,
+          121708,
+          40857,
+          79390
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2022,
+    "source_file": "irs_data_book_2022_table_1_5_gross_collections_by_type_and_state.xlsx",
+    "source_sha256": "9507858DF2C62C7B1FADDB5D62D4F08CA405AE7DC9205ADBCFBE71567E373E87",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          188043966,
+          17397203,
+          163381481,
+          136421682,
+          24792886,
+          259089,
+          27974,
+          1879849,
+          558515,
+          118227,
+          6588541
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          38771318,
+          5363994,
+          29541533,
+          20832629,
+          7225713,
+          68199,
+          3405,
+          1411587,
+          153094,
+          1572,
+          3711124
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          44049284,
+          2382726,
+          41125806,
+          29026453,
+          11505118,
+          78405,
+          2001,
+          513829,
+          166215,
+          9994,
+          364543
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          177413459,
+          16044579,
+          158071127,
+          119241324,
+          35547147,
+          277739,
+          74513,
+          2930404,
+          681533,
+          76869,
+          2539351
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          19811786,
+          3528704,
+          16218508,
+          13277020,
+          2708099,
+          32832,
+          3,
+          200554,
+          38169,
+          3805,
+          22599
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          38791108,
+          2079497,
+          36189014,
+          23543132,
+          12038903,
+          67217,
+          2008,
+          537755,
+          175669,
+          25578,
+          321349
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          13497584,
+          397462,
+          12989737,
+          5829764,
+          3108186,
+          13738,
+          1302,
+          4036747,
+          71477,
+          207,
+          38701
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          95387866,
+          7997498,
+          84876166,
+          65556645,
+          18124557,
+          204171,
+          2619,
+          988174,
+          385927,
+          15153,
+          2113122
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          400867645,
+          36394970,
+          340961422,
+          235878672,
+          94398717,
+          582736,
+          1278060,
+          8823237,
+          2108978,
+          349218,
+          21053057
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          38068716,
+          1643452,
+          35753534,
+          24284593,
+          10912561,
+          72650,
+          2685,
+          481045,
+          53517,
+          3351,
+          614861
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          5803277,
+          189861,
+          5582596,
+          3799430,
+          1661858,
+          8624,
+          4120,
+          108565,
+          6499,
+          1612,
+          22710
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          117509328,
+          14105898,
+          102494115,
+          74387846,
+          26817650,
+          174613,
+          7374,
+          1106632,
+          645516,
+          62049,
+          201750
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          148466475,
+          15737862,
+          129877136,
+          96386231,
+          32111707,
+          262680,
+          12484,
+          1104035,
+          788263,
+          356465,
+          1706749
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          8434626,
+          352395,
+          8036912,
+          5930258,
+          2027862,
+          14784,
+          910,
+          63098,
+          3674,
+          364,
+          41281
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          70395861,
+          5362597,
+          64100072,
+          48173101,
+          14358520,
+          134381,
+          2506,
+          1431565,
+          267184,
+          29741,
+          636268
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          7954734,
+          215087,
+          7397773,
+          2698070,
+          3504077,
+          8800,
+          635,
+          1186192,
+          117300,
+          187600,
+          36973
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2023,
+    "source_file": "irs_data_book_2023_table_1_5_gross_collections_by_type_and_state.xlsx",
+    "source_sha256": "A0A6971AE8B150CD7F0EED2F4AE8D8563A7B4F236435789E19F56CF93764BADF",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          186359863,
+          15204923,
+          163513367,
+          141382766,
+          20729249,
+          281341,
+          32287,
+          1087723,
+          820982,
+          56582,
+          6764009
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          38169020,
+          4149182,
+          29970692,
+          21908174,
+          6884358,
+          69883,
+          3274,
+          1105004,
+          158870,
+          46029,
+          3844248
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          40995246,
+          2405956,
+          37616069,
+          27942762,
+          9202495,
+          100699,
+          3359,
+          366754,
+          296261,
+          42146,
+          634813
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          174389169,
+          17753552,
+          153200549,
+          122555797,
+          28342788,
+          313939,
+          81745,
+          1906280,
+          849854,
+          52920,
+          2532293
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          18849983,
+          2898126,
+          15749394,
+          13387873,
+          2212738,
+          35950,
+          2,
+          112832,
+          177463,
+          3942,
+          21057
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          37713126,
+          1611643,
+          35667886,
+          25089509,
+          10251982,
+          69543,
+          2204,
+          254648,
+          113822,
+          17799,
+          301976
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          11040423,
+          378564,
+          10524221,
+          5966561,
+          2781623,
+          14485,
+          1122,
+          1760430,
+          83842,
+          8999,
+          44797
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          95563141,
+          7774087,
+          85235092,
+          67743607,
+          16386418,
+          205110,
+          2747,
+          897210,
+          273766,
+          8907,
+          2271289
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          413010962,
+          33595913,
+          346764665,
+          246146892,
+          90002883,
+          643660,
+          1421889,
+          8549341,
+          9026040,
+          151027,
+          23473316
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          36992129,
+          1945410,
+          34488884,
+          25812118,
+          8400282,
+          76357,
+          2853,
+          197274,
+          120718,
+          569,
+          436549
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          5660731,
+          338538,
+          5265805,
+          3822046,
+          1389327,
+          9216,
+          3478,
+          41739,
+          31873,
+          516,
+          24000
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          113990703,
+          11803919,
+          101504478,
+          78743858,
+          21955942,
+          184361,
+          8090,
+          612227,
+          425476,
+          72081,
+          184748
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          155442049,
+          24098896,
+          128590512,
+          104017189,
+          23606278,
+          264686,
+          14968,
+          687391,
+          475667,
+          291624,
+          1985351
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          8616231,
+          352894,
+          8191625,
+          6221429,
+          1904025,
+          14507,
+          980,
+          50684,
+          26692,
+          187,
+          44833
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          69401060,
+          5687185,
+          62663138,
+          49235434,
+          11995070,
+          131971,
+          2223,
+          1298440,
+          323932,
+          10542,
+          716264
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          7234493,
+          253500,
+          6837789,
+          2854473,
+          3058807,
+          8912,
+          639,
+          914957,
+          90889,
+          4983,
+          47332
+        ]
+      }
+    ]
+  },
+  {
+    "fiscal_year": 2024,
+    "source_file": "irs_data_book_2024_table_1_5_gross_collections_by_type_and_state.xlsx",
+    "source_sha256": "4081CC0115E44257D628E683BF797DF07513A0EC659654C4B93235A5B80373D7",
+    "sheet_name": "Table 5",
+    "washington_zero_based_row_index": 53,
+    "washington_excel_like_row_number": 54,
+    "context_rows": [
+      {
+        "zero_based_row_index": 41,
+        "excel_like_row_number": 42,
+        "values": [
+          "Ohio",
+          207340271,
+          18271798,
+          181448480,
+          158335715,
+          21384238,
+          276573,
+          31888,
+          1420067,
+          540112,
+          67154,
+          7012727
+        ]
+      },
+      {
+        "zero_based_row_index": 42,
+        "excel_like_row_number": 43,
+        "values": [
+          "Oklahoma",
+          39273941,
+          4167769,
+          31059278,
+          22868344,
+          7144520,
+          70579,
+          3364,
+          972471,
+          177494,
+          9347,
+          3860053
+        ]
+      },
+      {
+        "zero_based_row_index": 43,
+        "excel_like_row_number": 44,
+        "values": [
+          "Oregon",
+          41976824,
+          2634258,
+          38787346,
+          28999747,
+          9520696,
+          57513,
+          3147,
+          206243,
+          367314,
+          14573,
+          173333
+        ]
+      },
+      {
+        "zero_based_row_index": 44,
+        "excel_like_row_number": 45,
+        "values": [
+          "Pennsylvania",
+          179329991,
+          17960332,
+          158041380,
+          126019924,
+          29704273,
+          290066,
+          89997,
+          1937120,
+          852017,
+          86012,
+          2390250
+        ]
+      },
+      {
+        "zero_based_row_index": 45,
+        "excel_like_row_number": 46,
+        "values": [
+          "Rhode Island",
+          18933872,
+          2544213,
+          16334751,
+          13680706,
+          2510718,
+          35181,
+          0,
+          108146,
+          29062,
+          6450,
+          19397
+        ]
+      },
+      {
+        "zero_based_row_index": 46,
+        "excel_like_row_number": 47,
+        "values": [
+          "South Carolina",
+          39877104,
+          1706150,
+          37684195,
+          25854814,
+          11445219,
+          69673,
+          1999,
+          312490,
+          194342,
+          5092,
+          287326
+        ]
+      },
+      {
+        "zero_based_row_index": 47,
+        "excel_like_row_number": 48,
+        "values": [
+          "South Dakota",
+          12770286,
+          341392,
+          12348693,
+          6438623,
+          2921766,
+          14143,
+          1685,
+          2972475,
+          28068,
+          6744,
+          45388
+        ]
+      },
+      {
+        "zero_based_row_index": 48,
+        "excel_like_row_number": 49,
+        "values": [
+          "Tennessee",
+          100928664,
+          8481506,
+          89798314,
+          69190650,
+          19428088,
+          211184,
+          2607,
+          965785,
+          458231,
+          7607,
+          2183006
+        ]
+      },
+      {
+        "zero_based_row_index": 49,
+        "excel_like_row_number": 50,
+        "values": [
+          "Texas",
+          417434723,
+          30703191,
+          361705477,
+          266237864,
+          86471408,
+          639941,
+          1253070,
+          7103194,
+          1945021,
+          164503,
+          22916532
+        ]
+      },
+      {
+        "zero_based_row_index": 50,
+        "excel_like_row_number": 51,
+        "values": [
+          "Utah",
+          38295614,
+          1874470,
+          35938699,
+          27017942,
+          8648759,
+          84756,
+          2875,
+          184367,
+          98055,
+          2342,
+          382049
+        ]
+      },
+      {
+        "zero_based_row_index": 51,
+        "excel_like_row_number": 52,
+        "values": [
+          "Vermont",
+          6048626,
+          409883,
+          5597685,
+          3976134,
+          1552315,
+          9690,
+          3182,
+          56364,
+          16270,
+          25,
+          24763
+        ]
+      },
+      {
+        "zero_based_row_index": 52,
+        "excel_like_row_number": 53,
+        "values": [
+          "Virginia",
+          122266290,
+          13964484,
+          107493007,
+          82838493,
+          23727758,
+          187996,
+          8272,
+          730488,
+          565096,
+          14595,
+          229107
+        ]
+      },
+      {
+        "zero_based_row_index": 53,
+        "excel_like_row_number": 54,
+        "values": [
+          "Washington",
+          161329983,
+          23158631,
+          135728710,
+          110784866,
+          23896552,
+          281578,
+          16625,
+          749088,
+          260952,
+          154148,
+          2027542
+        ]
+      },
+      {
+        "zero_based_row_index": 54,
+        "excel_like_row_number": 55,
+        "values": [
+          "West Virginia",
+          8694057,
+          281894,
+          8351751,
+          6486250,
+          1787490,
+          14179,
+          894,
+          62939,
+          13374,
+          3,
+          47035
+        ]
+      },
+      {
+        "zero_based_row_index": 55,
+        "excel_like_row_number": 56,
+        "values": [
+          "Wisconsin",
+          71776847,
+          5671812,
+          65215376,
+          50602006,
+          12973623,
+          132695,
+          4796,
+          1502256,
+          134903,
+          63702,
+          691054
+        ]
+      },
+      {
+        "zero_based_row_index": 56,
+        "excel_like_row_number": 57,
+        "values": [
+          "Wyoming",
+          7669217,
+          205279,
+          7195177,
+          3025619,
+          3223982,
+          9454,
+          575,
+          935546,
+          210811,
+          7162,
+          50789
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+========================================================================================================
+IRS GROSS COLLECTIONS SEMANTIC CERTIFICATION v0.1
+========================================================================================================
+
+Certification ID : IRS-GROSS-COLLECTIONS-SEMANTICS-v0.1
+Fiscal years     : 2015-2024
+Database writes  : NONE
+Incidence model  : NONE
+Ledger authority : NONE
+
+========================================================================================================
+ANNUAL VALIDATION
+========================================================================================================
+
+FY2015: nested=EXACT_PASS | top-level=EXACT_PASS | reporting=PASS | reporting difference=$0.00
+FY2016: nested=EXACT_PASS | top-level=EXACT_PASS | reporting=PASS | reporting difference=$0.00
+FY2017: nested=EXACT_PASS | top-level=EXACT_PASS | reporting=PASS | reporting difference=$0.00
+FY2018: nested=PUBLICATION_PRECISION_PASS | top-level=PUBLICATION_PRECISION_PASS | reporting=PASS | reporting difference=$0.00
+FY2019: nested=EXACT_PASS | top-level=PUBLICATION_PRECISION_PASS | reporting=PASS | reporting difference=$0.00
+FY2020: nested=PUBLICATION_PRECISION_PASS | top-level=EXACT_PASS | reporting=PASS | reporting difference=$0.00
+FY2021: nested=PUBLICATION_PRECISION_PASS | top-level=PUBLICATION_PRECISION_PASS | reporting=PASS | reporting difference=$0.00
+FY2022: nested=PUBLICATION_PRECISION_PASS | top-level=EXACT_PASS | reporting=PASS | reporting difference=$0.00
+FY2023: nested=EXACT_PASS | top-level=PUBLICATION_PRECISION_PASS | reporting=PASS | reporting difference=$0.00
+FY2024: nested=PUBLICATION_PRECISION_PASS | top-level=EXACT_PASS | reporting=PASS | reporting difference=$0.00
+
+========================================================================================================
+CERTIFICATION RESULT
+========================================================================================================
+
+Nested IRS component reconciliation 2015-2024 : PASS
+Top-level IRS reconciliation 2015-2024      : PASS
+Existing WCFFBP control reconciliation : PASS
+
+FINAL RESULT: PASS
+
+PASS certifies source semantics, arithmetic, units, and reproduction of the existing Washington gross-collections control only.
+PASS does NOT certify economic tax incidence, refund treatment, Rockefeller methodology, or final federal-receipts ledger inclusion.

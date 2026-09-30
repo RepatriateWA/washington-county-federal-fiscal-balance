@@ -1,0 +1,22 @@
+{
+  "certification_id": "IRS-GROSS-COLLECTIONS-SEMANTICS-v0.1",
+  "source_table": "IRS Data Book Table 1-5 / Table 5",
+  "source_units": "thousands of dollars",
+  "semantic_map": {
+    "-1": "total_internal_revenue_collections",
+    "-2": "business_income_taxes",
+    "-3": "individual_income_employment_estate_trust_total",
+    "-4": "individual_income_tax_withheld_and_fica",
+    "-5": "individual_income_tax_payments_and_seca",
+    "-6": "unemployment_insurance_tax",
+    "-7": "railroad_retirement_tax",
+    "-8": "estate_and_trust_income_tax",
+    "-9": "estate_tax",
+    "-10": "gift_tax",
+    "-11": "excise_taxes"
+  },
+  "nested_identity": "-3 = -4 + -5 + -6 + -7 + -8",
+  "top_level_identity": "-1 = -2 + -3 + -9 + -10 + -11",
+  "accounting_authorization": "NONE",
+  "economic_incidence_allocation": "NONE"
+}
