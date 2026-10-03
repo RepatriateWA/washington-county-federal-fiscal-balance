@@ -280,3 +280,25 @@ data/raw/cms/medicare_trustees/expanded_tables/*.zip
 
 # USAspending reproducible bulk assistance downloads
 data/raw/usaspending/assistance/FY2024/All_PrimeTransactions_*.zip
+
+# CMS authoritative source payloads retained locally but reacquirable upstream
+
+# MSSP assigned-beneficiary county source PUFs
+data/raw/cms/medicare_aco/mssp_assigned_beneficiaries_by_county/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_*.csv
+
+# Medicare Geographic Variation source archive
+data/raw/cms/medicare_geographic_variation/documentation/Medicare Geographic Variation - by National, State & County.zip
+
+# Washington Medicare-Medicaid Financial Alignment source reports
+data/raw/cms/medicare_mffs/washington/actuarial_reports/**/*.pdf
+data/raw/cms/medicare_mffs/washington/evaluation_reports/**/*.pdf
+
+# Medicare RDS / Part D enrollment source archives
+data/raw/cms/medicare_rds/program_statistics_partd_enrollment/**/*.zip
+
+# Medicare Trustees source reports
+data/raw/cms/medicare_trustees/reports/*.pdf
+
+# State Health Expenditures source/documentation archives
+data/raw/cms/state_health_expenditures/residence/documentation/*.zip
+data/raw/cms/state_health_expenditures/residence/source/*.zip
