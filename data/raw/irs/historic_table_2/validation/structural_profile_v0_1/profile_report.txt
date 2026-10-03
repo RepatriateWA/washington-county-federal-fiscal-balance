@@ -1,0 +1,64 @@
+============================================================================================
+IRS HISTORIC TABLE 2 STRUCTURAL PROFILE v0.1 — ETL-172B-2
+============================================================================================
+
+Tax years: 2015-2023
+
+TY2015: 583 rows | 129 columns | 53 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2016: 583 rows | 145 columns | 53 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2017: 583 rows | 151 columns | 53 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2018: 594 rows | 151 columns | 54 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2019: 594 rows | 150 columns | 54 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2020: 594 rows | 163 columns | 54 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2021: 594 rows | 165 columns | 54 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2022: 594 rows | 163 columns | 54 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+TY2023: 594 rows | 165 columns | 54 state codes | 11 WA rows
+  A06500: PRESENT
+  A85530: PRESENT
+  A85300: PRESENT
+
+--------------------------------------------------------------------------------------------
+TARGET VARIABLE COVERAGE
+--------------------------------------------------------------------------------------------
+
+All three Rockefeller-relevant variables present in every year: YES
+
+No liability calculation performed.
+No Washington allocation share calculated.
+No FY/TY mapping performed.
+No TY2024 extrapolation performed.
+No database writes performed.
+
+PROFILE RESULT: STRUCTURALLY COMPLETE

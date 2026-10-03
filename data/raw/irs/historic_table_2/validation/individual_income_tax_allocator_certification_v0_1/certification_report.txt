@@ -1,0 +1,48 @@
+====================================================================================================
+IRS SOI INDIVIDUAL-INCOME-TAX ALLOCATOR CERTIFICATION - ETL-172G-2A/2B
+====================================================================================================
+
+Tax-year allocator certification only. No FFY-to-TY mapping, OMB allocation, Rockefeller dollar reconstruction, forced IRS gross-collections reconciliation, DB writes, or receipts-ledger inclusion.
+
+METHOD
+----------------------------------------------------------------------------------------------------
+Liability = A06500 + A85530 + A85300
+WA share  = WA liability / source-provided US liability
+Rows      = STATE in {US, WA}, AGI_STUB = 0
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Expected observations : 9
+Actual observations   : 9
+Coverage              : PASS
+Uniqueness            : PASS
+US total-row selection: PASS
+WA total-row selection: PASS
+Liability arithmetic  : PASS
+Share arithmetic      : PASS
+Source hash coverage  : PASS
+
+WASHINGTON INDIVIDUAL-INCOME-TAX LIABILITY SHARES
+----------------------------------------------------------------------------------------------------
+TY            WA LIABILITY          US LIABILITY        WA SHARE          WA %
+----------------------------------------------------------------------------------------------------
+2015            38,986,859         1,473,864,432    0.0264521337     2.645213%
+2016            42,044,268         1,466,373,330    0.0286722809     2.867228%
+2017            46,171,293         1,623,956,360    0.0284313631     2.843136%
+2018            45,285,842         1,557,599,615    0.0290741225     2.907412%
+2019            48,731,629         1,597,154,448    0.0305115320     3.051153%
+2020            54,836,509         1,740,997,617    0.0314971764     3.149718%
+2021            72,290,468         2,298,267,411    0.0314543328     3.145433%
+2022            63,213,257         2,160,557,924    0.0292578395     2.925784%
+2023            65,626,992         2,169,468,454    0.0302502633     3.025026%
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+Each observation is a contemporaneous IRS tax-year Washington liability share.
+No tax-year share has yet been assigned to a federal fiscal year.
+The source-provided US row is the denominator; state rows are not summed.
+No TY2024 value is fabricated or extrapolated.
+These shares have not yet been applied to OMB national Individual Income Taxes receipts.
+Final receipts-ledger inclusion is not authorized.
+
+ETL-172G-2A/2B RESULT: PASS

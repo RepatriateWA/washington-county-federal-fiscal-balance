@@ -1,0 +1,100 @@
+============================================================================================================
+HUD VMS HAP TOTAL vs USASPENDING AL 14.871 COMMON-PERIOD RECONCILIATION
+ETL-174B-5Y-2D-2
+============================================================================================================
+
+Mode : READ ONLY
+Scope: Washington
+FFY2023 = Oct 2022 through Sep 2023
+FFY2024 = Oct 2023 through Sep 2024
+
+IMPORTANT: A difference is not treated as an error. HUD VMS HAP Total and USAspending federal_action_obligation represent different accounting stages.
+
+INPUT CONTROL
+------------------------------------------------------------------------------------------------------------
+USAspending monthly source : data\raw\hud\vms\validation\usaspending_14871_monthly_obligations\profile_14871_monthly_20261002T045538Z.csv
+HUD VMS source             : data\raw\hud\vms\quarterly
+Target paired months       : 24
+
+VMS WORKBOOK TARGET-ROW CONTROL
+------------------------------------------------------------------------------------------------------------
+Oct-Dec2022VMS.xlsx                 WA target rows=84
+VMSAPR-JUN2023.xlsx                 WA target rows=84
+VMSJan-Mar2023.xlsx                 WA target rows=84
+VMSJul-Sep2023.xlsx                 WA target rows=84
+VMSOct-Dec2023.xlsx                 WA target rows=84
+JAN-MAR_2024_VMS.xlsx               WA target rows=84
+VMSApr-Jun2024.xlsx                 WA target rows=84
+VMSJul-Sep2024.xlsx                 WA target rows=84
+
+MONTHLY RECONCILIATION
+------------------------------------------------------------------------------------------------------------
+2022-10-01 | FY2023 | PHAs=28 | HAP=$54,804,942.00 | USA+=$133,794,431.00 | USA-=$-3,193.00 | USA net=$133,791,238.00 | net-HAP=$78,986,296.00
+2022-11-01 | FY2023 | PHAs=28 | HAP=$54,918,794.00 | USA+=$953,260.00 | USA-=$-63,188.00 | USA net=$890,072.00 | net-HAP=$-54,028,722.00
+2022-12-01 | FY2023 | PHAs=28 | HAP=$55,482,102.00 | USA+=$137,213,466.00 | USA-=$-9,254.00 | USA net=$137,204,212.00 | net-HAP=$81,722,110.00
+2023-01-01 | FY2023 | PHAs=28 | HAP=$56,406,116.00 | USA+=$7,746,313.00 | USA-=$-3,196.00 | USA net=$7,743,117.00 | net-HAP=$-48,662,999.00
+2023-02-01 | FY2023 | PHAs=28 | HAP=$56,696,330.00 | USA+=$76,030,711.00 | USA-=$-3,173.00 | USA net=$76,027,538.00 | net-HAP=$19,331,208.00
+2023-03-01 | FY2023 | PHAs=28 | HAP=$57,041,355.00 | USA+=$150,114,578.00 | USA-=$-3,174.00 | USA net=$150,111,404.00 | net-HAP=$93,070,049.00
+2023-04-01 | FY2023 | PHAs=28 | HAP=$57,929,304.00 | USA+=$31,014,480.00 | USA-=$-2,282,875.00 | USA net=$28,731,605.00 | net-HAP=$-29,197,699.00
+2023-05-01 | FY2023 | PHAs=28 | HAP=$57,862,877.00 | USA+=$424,122,166.00 | USA-=$-226,506.26 | USA net=$423,895,659.74 | net-HAP=$366,032,782.74
+2023-06-01 | FY2023 | PHAs=28 | HAP=$58,303,644.00 | USA+=$2,142,086.00 | USA-=$-3,167.00 | USA net=$2,138,919.00 | net-HAP=$-56,164,725.00
+2023-07-01 | FY2023 | PHAs=28 | HAP=$58,983,753.00 | USA+=$8,814,369.00 | USA-=$-189,206.00 | USA net=$8,625,163.00 | net-HAP=$-50,358,590.00
+2023-08-01 | FY2023 | PHAs=28 | HAP=$59,552,298.00 | USA+=$5,288,686.00 | USA-=$-3,167.00 | USA net=$5,285,519.00 | net-HAP=$-54,266,779.00
+2023-09-01 | FY2023 | PHAs=28 | HAP=$60,621,898.00 | USA+=$16,369,964.00 | USA-=$-3,167.00 | USA net=$16,366,797.00 | net-HAP=$-44,255,101.00
+2023-10-01 | FY2024 | PHAs=28 | HAP=$62,573,495.00 | USA+=$121,339,726.00 | USA-=$-6,334.00 | USA net=$121,333,392.00 | net-HAP=$58,759,897.00
+2023-11-01 | FY2024 | PHAs=28 | HAP=$62,838,504.00 | USA+=$12,532,062.00 | USA-=$0.00 | USA net=$12,532,062.00 | net-HAP=$-50,306,442.00
+2023-12-01 | FY2024 | PHAs=28 | HAP=$62,738,250.00 | USA+=$165,792,365.00 | USA-=$-68,756,468.00 | USA net=$97,035,897.00 | net-HAP=$34,297,647.00
+2024-01-01 | FY2024 | PHAs=28 | HAP=$63,466,197.00 | USA+=$75,190,728.00 | USA-=$-1,800,455.00 | USA net=$73,390,273.00 | net-HAP=$9,924,076.00
+2024-02-01 | FY2024 | PHAs=28 | HAP=$64,220,488.00 | USA+=$88,609,700.00 | USA-=$-205,007.40 | USA net=$88,404,692.60 | net-HAP=$24,184,204.60
+2024-03-01 | FY2024 | PHAs=28 | HAP=$64,743,566.00 | USA+=$72,217,725.00 | USA-=$-125,639.83 | USA net=$72,092,085.17 | net-HAP=$7,348,519.17
+2024-04-01 | FY2024 | PHAs=28 | HAP=$66,066,097.00 | USA+=$74,355,684.00 | USA-=$0.00 | USA net=$74,355,684.00 | net-HAP=$8,289,587.00
+2024-05-01 | FY2024 | PHAs=28 | HAP=$66,153,103.00 | USA+=$262,118,676.00 | USA-=$0.00 | USA net=$262,118,676.00 | net-HAP=$195,965,573.00
+2024-06-01 | FY2024 | PHAs=28 | HAP=$65,353,737.00 | USA+=$46,351,785.00 | USA-=$-128,057.86 | USA net=$46,223,727.14 | net-HAP=$-19,130,009.86
+2024-07-01 | FY2024 | PHAs=28 | HAP=$67,270,802.00 | USA+=$76,700,421.00 | USA-=$0.00 | USA net=$76,700,421.00 | net-HAP=$9,429,619.00
+2024-08-01 | FY2024 | PHAs=28 | HAP=$68,165,233.00 | USA+=$77,759,491.00 | USA-=$-6,473.00 | USA net=$77,753,018.00 | net-HAP=$9,587,785.00
+2024-09-01 | FY2024 | PHAs=28 | HAP=$68,413,561.00 | USA+=$5,015,296.00 | USA-=$-2.00 | USA net=$5,015,294.00 | net-HAP=$-63,398,267.00
+
+FISCAL-YEAR RECONCILIATION
+------------------------------------------------------------------------------------------------------------
+FFY2023
+    Months                         : 12
+    HUD VMS HAP Total              : $688,603,413.00
+    USAspending positive obligation: $993,604,510.00
+    USAspending negative obligation: $-2,793,266.26
+    USAspending net obligation     : $990,811,243.74
+    Net obligation - HAP Total     : $302,207,830.74
+    Net obligation / HAP Total     : 143.8871%
+    HAP Total / net obligation     : 69.4990%
+
+FFY2024
+    Months                         : 12
+    HUD VMS HAP Total              : $782,003,033.00
+    USAspending positive obligation: $1,077,983,659.00
+    USAspending negative obligation: $-71,028,437.09
+    USAspending net obligation     : $1,006,955,221.91
+    Net obligation - HAP Total     : $224,952,188.91
+    Net obligation / HAP Total     : 128.7662%
+    HAP Total / net obligation     : 77.6602%
+
+POPULATION / COMPLETENESS CONTROL
+------------------------------------------------------------------------------------------------------------
+Paired month observations : 24
+Distinct monthly PHA counts: 28
+Common-period completeness : PASS
+
+INTERPRETIVE BOUNDARY
+------------------------------------------------------------------------------------------------------------
+This test measures the relationship between HUD-reported HAP expenditure/use and USAspending transaction obligations.
+Equality is not expected or required for PASS.
+A positive or negative residual is not classified as error, overlap, omission, or timing difference without additional evidence.
+
+METHODOLOGICAL STOP
+------------------------------------------------------------------------------------------------------------
+No accounting-source selection was made.
+No obligation/expenditure equivalence was assumed.
+No Vms2/EHV values were added.
+No county allocation was performed.
+No database writes occurred.
+No ledger decision was made.
+
+RESULT: PASS — FFY2023 AND FFY2024 COMMON-PERIOD RECONCILIATION COMPLETED

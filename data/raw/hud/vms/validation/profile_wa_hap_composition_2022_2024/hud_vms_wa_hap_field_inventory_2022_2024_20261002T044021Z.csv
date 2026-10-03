@@ -1,0 +1,51 @@
+normalized_header,raw_headers,categories,candidate_sum_group,workbook_occurrences,numeric_count,positive_count,zero_count,negative_count,sum,minimum,maximum
+all_other_vouchers_hap,All Other Vouchers HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,781,227,0,544552966.0,0.0,4598321.0
+dhap_to_hcv_voucher_hap,DHAP to HCV Voucher HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,1,1007,0,2102.0,0.0,2102.0
+dhap_to_hcv_vouchers_leased,DHAP to HCV Vouchers Leased,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,1,1007,0,1.0,0.0,1.0
+emergency_transfer_vouchers_for_vawa_hap,Emergency Transfer Vouchers for VAWA - HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,0,1008,0,0.0,0.0,0.0
+family_unification_2008_forward_mtw_hap,Family Unification 2008/Forward - MTW (HAP),UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,165,843,0,39639601.0,0.0,549698.0
+family_unification_non_mtw_hap,Family Unification - Non MTW (HAP),UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,201,807,0,7158147.0,0.0,97305.0
+family_unification_pre2008_mtw_hap,Family Unification Pre2008 - MTW (HAP),UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,91,917,0,8911336.0,0.0,259265.0
+foster_youth_to_independence_hap,Foster Youth To Independence - HAP,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,285,723,0,4612881.0,0.0,118990.0
+hap_total,HAP Total,HUD_TOTAL,HUD_TOTAL,12,1008,1008,0,0,2153261927.0,77745.0,17598865.0
+hcv_all_voucher_hap_expenses_after_the_first_of_the_month,HCV - All Voucher HAP Expenses after the First of the Month,TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,916,92,0,9837807.0,0.0,125610.0
+hcv_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month,HCV - New Vouchers Issued but not under HAP contract as of the last day of the month,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,963,45,0,102063.0,0.0,1109.0
+hcv_number_of_vouchers_under_lease_hap_contract_on_the_last_day_of_the_month,HCV - Number of Vouchers Under Lease (HAP Contract) on the last day of the month,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,1008,0,0,2066592.0,154.0,11644.0
+homeownership_hap,Homeownership HAP,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,503,505,0,3569229.0,0.0,23214.0
+hope_vi_hap,HOPE VI HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,74,934,0,4774017.0,0.0,84845.0
+housing_stability_vouchers_hap_expenses,Housing Stability Vouchers - HAP Expenses,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,50,958,0,191395.0,0.0,11202.0
+housing_stability_vouchers_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month,Housing Stability Vouchers - Number of New Vouchers Issued but not Under HAP Contract as of the last day of the month,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,37,971,0,167.0,0.0,36.0
+interest_or_other_income_earned_this_month_from_the_investment_of_hap_funds_and_net_restricted_assets,Interest or other income earned this month from the investment of HAP funds and Net Restricted Assets,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,313,695,0,626355.0,0.0,68680.0
+litigation_hap,Litigation HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,0,1008,0,0.0,0.0,0.0
+mainstream_hap,Mainstream - HAP,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,540,468,0,106260342.0,0.0,1349532.0
+mainstream_hap_expenses_after_the_first_of_the_month,Mainstream - HAP Expenses After the First of the Month,SPECIAL_PURPOSE | TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,250,758,0,731378.0,0.0,28395.0
+mainstream_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month,Mainstream - Number of New Vouchers Issued but not Under HAP Contract as of the Last Day of the Month,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,308,700,0,5021.0,0.0,78.0
+mobility_demonstration_hap,Mobility Demonstration - HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,0,1008,0,0.0,0.0,0.0
+moving_to_work_hap,Moving To Work HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,227,781,0,1039046477.0,0.0,11587435.0
+mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month,MTW - Emergency Transfer Vouchers for VAWA HAP Expenses After the First of the Month,TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,1,1007,0,1.0,0.0,1.0
+mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month,MTW - Family Unification 2008/Forward HAP expenses after the First of the Month,TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,102,906,0,260864.0,0.0,14400.0
+mtw_family_unification_pre_2008_hap_after_the_first_of_the_month,MTW - Family Unification pre-2008 HAP After the First of the Month,TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,28,980,0,36333.0,0.0,7817.0
+mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month,MTW - Foster Youth To Independence HAP Expenses After the First of the Month,SPECIAL_PURPOSE | TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,61,947,0,106087.0,0.0,10362.0
+mtw_hcv_administrative_expenses_using_hap,MTW - HCV Administrative Expenses Using HAP,ADMIN,EXCLUDED_DIAGNOSTIC,12,1008,105,903,0,35298559.0,0.0,4378573.0
+mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month,MTW - Housing Stability Voucher HAP Expenses After the First of the Month,SPECIAL_PURPOSE | TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,0,1008,0,0.0,0.0,0.0
+mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month,MTW - Moblity Demonstration HAP Expenses After the First of the Month,TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,0,1008,0,0.0,0.0,0.0
+mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month,MTW - Non-Elderly Disabled 2008/Forward HAP Expenses after the First of the Month,TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,39,969,0,60236.0,0.0,4818.0
+mtw_one_year_mainstream_hap_after_the_first_of_the_month,MTW - One year Mainstream HAP After the First of the Month,SPECIAL_PURPOSE | TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,67,941,0,221702.0,0.0,16672.0
+mtw_vash_hap_expenses_after_the_first_of_the_month,MTW - VASH HAP Expenses after the First of the Month,SPECIAL_PURPOSE | TIMING_SUBSET,EXCLUDED_DIAGNOSTIC,12,1008,124,884,0,369353.0,0.0,14808.0
+non_elderly_disabled_2008_forward_mtw_hap,Non Elderly Disabled 2008 Forward - MTW (HAP),UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,132,876,0,19245897.0,0.0,282196.0
+non_elderly_disabled_non_mtw_hap,Non Elderly Disabled - Non-MTW (HAP),UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,421,587,0,56095693.0,0.0,479877.0
+number_of_pbvs_under_ahap_and_not_under_hap,Number of PBVs under AHAP and not under HAP,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,317,691,0,16650.0,0.0,313.0
+number_of_pbvs_under_hap_and_leased,Number of PBVs under HAP and leased,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,851,157,0,542124.0,0.0,5001.0
+number_of_pbvs_under_hap_and_not_leased,Number of PBVs under HAP and not leased,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,710,298,0,53472.0,0.0,2649.0
+number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense,Number of PBVs under HAP and not leased with vacancy payment and associated vacancy HAP expense,UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,133,875,0,3630.0,0.0,154.0
+number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense_hap,Number of PBVs under HAP and not leased with vacancy payment and associated vacancy HAP expense(HAP),UNCLASSIFIED_HAP,PRIMARY_CANDIDATE,12,1008,130,878,0,2307149.0,0.0,108191.0
+one_year_mainstream_mtw_hap,One Year Mainstream - MTW (HAP),SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,131,877,0,71844116.0,0.0,1652154.0
+portable_hap_costs_billed_and_unpaid_90_days_or_older,Portable HAP Costs Billed and Unpaid - 90 Days or older,BALANCE_OR_RECEIVABLE | PORTABILITY,EXCLUDED_DIAGNOSTIC,12,1008,216,792,0,35038066.0,0.0,1564693.0
+portable_voucher_paid_hap,Portable Voucher Paid HAP,PORTABILITY | PORT_OUT_OR_PAID,EXCLUDED_DIAGNOSTIC,12,1008,935,73,0,62094125.0,0.0,646361.0
+project_based_vouchers_total_hap_expenses,Project Based Vouchers - Total HAP Expenses,PROGRAM_SUBSET,PRIMARY_CANDIDATE,12,1008,833,175,0,432829764.0,0.0,5149891.0
+rental_assistance_demonstration_1_public_housing_conversion_hap,Rental Assistance Demonstration 1- Public Housing Conversion - HAP,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,360,648,0,37430295.0,0.0,553567.0
+rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap,"Rental Assistance Demonstration 2 - Mod Rehab, Rent Supp, RAP Conversion - HAP",SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,144,864,0,14627053.0,0.0,400652.0
+rental_assistance_demonstration_3_prac_conversion_hap,Rental Assistance Demonstration 3 - PRAC Conversion - HAP,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,31,977,0,9062434.0,0.0,348851.0
+tenant_protection_hap,Tenant Protection HAP,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,762,246,0,102631461.0,0.0,1230081.0
+total_hap_for_portable_units_administered,Total HAP for Portable Units Administered,ADMIN | PORTABILITY | PORT_IN,EXCLUDED_DIAGNOSTIC,12,1008,584,424,0,225574573.0,0.0,4441800.0
+veterans_affair_supported_housing_vash_hap,Veterans Affair Supported Housing (VASH) HAP,SPECIAL_PURPOSE,PRIMARY_CANDIDATE,12,1008,765,243,0,109638651.0,0.0,1158657.0

@@ -1,0 +1,147 @@
+{
+  "checkpoint": "ETL-174B-5Y-2D-1",
+  "generated_utc": "2026-10-02T04:55:38.477552+00:00",
+  "cfda_number": "14.871",
+  "fiscal_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "program_identity": [
+    {
+      "assistance_listing_id": 255,
+      "cfda_number": "14.871",
+      "cfda_title": "SECTION 8 HOUSING CHOICE VOUCHERS"
+    }
+  ],
+  "five_year_control": {
+    "transaction_count": 5248,
+    "award_count": 5088,
+    "recipient_count": 30,
+    "first_action_date": "2019-10-25",
+    "last_action_date": "2024-09-20",
+    "net_obligation": "4308080637.65",
+    "positive_obligation": "4418592387.00",
+    "negative_obligation": "-110511749.35",
+    "null_obligation_count": 0,
+    "null_action_date_count": 0,
+    "null_fiscal_year_count": 0
+  },
+  "monthly_annual_validation": [
+    {
+      "fiscal_year": 2020,
+      "transaction_count_match": true,
+      "positive_match": true,
+      "negative_match": true,
+      "net_match": true,
+      "monthly_net": "722577370.00",
+      "annual_net": "722577370.00"
+    },
+    {
+      "fiscal_year": 2021,
+      "transaction_count_match": true,
+      "positive_match": true,
+      "negative_match": true,
+      "net_match": true,
+      "monthly_net": "785519054.00",
+      "annual_net": "785519054.00"
+    },
+    {
+      "fiscal_year": 2022,
+      "transaction_count_match": true,
+      "positive_match": true,
+      "negative_match": true,
+      "net_match": true,
+      "monthly_net": "802217748.00",
+      "annual_net": "802217748.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "transaction_count_match": true,
+      "positive_match": true,
+      "negative_match": true,
+      "net_match": true,
+      "monthly_net": "990811243.74",
+      "annual_net": "990811243.74"
+    },
+    {
+      "fiscal_year": 2024,
+      "transaction_count_match": true,
+      "positive_match": true,
+      "negative_match": true,
+      "net_match": true,
+      "monthly_net": "1006955221.91",
+      "annual_net": "1006955221.91"
+    }
+  ],
+  "defc_profile": [
+    {
+      "extraordinary_funding_code_id": 14,
+      "raw_defc_value": "AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42",
+      "observed_description": "Emergency P.L. 117-328",
+      "transaction_count": 61
+    },
+    {
+      "extraordinary_funding_code_id": 36,
+      "raw_defc_value": "AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42",
+      "observed_description": "Emergency P.L. 118-42",
+      "transaction_count": 61
+    },
+    {
+      "extraordinary_funding_code_id": 14,
+      "raw_defc_value": "AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "observed_description": "Emergency P.L. 117-328",
+      "transaction_count": 2
+    },
+    {
+      "extraordinary_funding_code_id": 36,
+      "raw_defc_value": "AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "observed_description": "Emergency P.L. 118-42",
+      "transaction_count": 2
+    },
+    {
+      "extraordinary_funding_code_id": 10,
+      "raw_defc_value": "AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "observed_description": "Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "transaction_count": 2
+    },
+    {
+      "extraordinary_funding_code_id": 36,
+      "raw_defc_value": "AAF: Emergency P.L. 118-42",
+      "observed_description": "Emergency P.L. 118-42",
+      "transaction_count": 57
+    },
+    {
+      "extraordinary_funding_code_id": 36,
+      "raw_defc_value": "AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "observed_description": "Emergency P.L. 118-42",
+      "transaction_count": 4
+    },
+    {
+      "extraordinary_funding_code_id": 10,
+      "raw_defc_value": "AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "observed_description": "Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "transaction_count": 4
+    },
+    {
+      "extraordinary_funding_code_id": 3,
+      "raw_defc_value": "N: Emergency P.L. 116-136",
+      "observed_description": "Emergency P.L. 116-136",
+      "transaction_count": 88
+    },
+    {
+      "extraordinary_funding_code_id": 10,
+      "raw_defc_value": "Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "observed_description": "Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression",
+      "transaction_count": 3779
+    },
+    {
+      "extraordinary_funding_code_id": 7,
+      "raw_defc_value": "V: Non-emergency P.L. 117-2",
+      "observed_description": "Non-emergency P.L. 117-2",
+      "transaction_count": 709
+    }
+  ]
+}

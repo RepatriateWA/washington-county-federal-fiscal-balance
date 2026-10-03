@@ -1,0 +1,366 @@
+{
+  "checkpoint": "ETL-174B-5Y-2D-3",
+  "generated_utc": "2026-10-02T05:01:47.491373+00:00",
+  "input": "data\\raw\\hud\\vms\\validation\\reconcile_vms_hap_vs_usaspending_14871\\reconcile_vms_hap_vs_14871_20261002T045825Z.csv",
+  "paired_months": 24,
+  "annual_controls": [
+    {
+      "fiscal_year": 2023,
+      "month_count": 12,
+      "hap_total": "688603413",
+      "positive_obligation": "993604510.00",
+      "negative_obligation": "-2793266.26",
+      "net_obligation": "990811243.74",
+      "residual": "302207830.74"
+    },
+    {
+      "fiscal_year": 2024,
+      "month_count": 12,
+      "hap_total": "782003033",
+      "positive_obligation": "1077983659.00",
+      "negative_obligation": "-71028437.09",
+      "net_obligation": "1006955221.91",
+      "residual": "224952188.91"
+    }
+  ],
+  "lag_profile": [
+    {
+      "lag_months": -6,
+      "pair_count": 18,
+      "correlation": -0.05818893831027788
+    },
+    {
+      "lag_months": -5,
+      "pair_count": 19,
+      "correlation": -0.1318038315543937
+    },
+    {
+      "lag_months": -4,
+      "pair_count": 20,
+      "correlation": -0.08634320795456994
+    },
+    {
+      "lag_months": -3,
+      "pair_count": 21,
+      "correlation": -0.013662467415014253
+    },
+    {
+      "lag_months": -2,
+      "pair_count": 22,
+      "correlation": -0.06697188611383077
+    },
+    {
+      "lag_months": -1,
+      "pair_count": 23,
+      "correlation": 0.015411146226254994
+    },
+    {
+      "lag_months": 0,
+      "pair_count": 24,
+      "correlation": -0.04436231513812962
+    },
+    {
+      "lag_months": 1,
+      "pair_count": 23,
+      "correlation": -0.024464802527463272
+    },
+    {
+      "lag_months": 2,
+      "pair_count": 22,
+      "correlation": -0.01121000406953675
+    },
+    {
+      "lag_months": 3,
+      "pair_count": 21,
+      "correlation": -0.006738123249162864
+    },
+    {
+      "lag_months": 4,
+      "pair_count": 20,
+      "correlation": 0.047297248397313515
+    },
+    {
+      "lag_months": 5,
+      "pair_count": 19,
+      "correlation": -0.05167003557658842
+    },
+    {
+      "lag_months": 6,
+      "pair_count": 18,
+      "correlation": -0.05336210862786565
+    }
+  ],
+  "monthly_rows": [
+    {
+      "fiscal_year": 2023,
+      "action_month": "2022-10-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "54804942",
+      "transaction_count": 63,
+      "positive_obligation": "133794431.00",
+      "negative_obligation": "-3193.00",
+      "net_obligation": "133791238.00",
+      "residual": "78986296.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2022-11-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "54918794",
+      "transaction_count": 46,
+      "positive_obligation": "953260.00",
+      "negative_obligation": "-63188.00",
+      "net_obligation": "890072.00",
+      "residual": "-54028722.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2022-12-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "55482102",
+      "transaction_count": 80,
+      "positive_obligation": "137213466.00",
+      "negative_obligation": "-9254.00",
+      "net_obligation": "137204212.00",
+      "residual": "81722110.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-01-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "56406116",
+      "transaction_count": 280,
+      "positive_obligation": "7746313.00",
+      "negative_obligation": "-3196.00",
+      "net_obligation": "7743117.00",
+      "residual": "-48662999.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-02-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "56696330",
+      "transaction_count": 107,
+      "positive_obligation": "76030711.00",
+      "negative_obligation": "-3173.00",
+      "net_obligation": "76027538.00",
+      "residual": "19331208.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-03-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "57041355",
+      "transaction_count": 123,
+      "positive_obligation": "150114578.00",
+      "negative_obligation": "-3174.00",
+      "net_obligation": "150111404.00",
+      "residual": "93070049.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-04-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "57929304",
+      "transaction_count": 79,
+      "positive_obligation": "31014480.00",
+      "negative_obligation": "-2282875.00",
+      "net_obligation": "28731605.00",
+      "residual": "-29197699.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-05-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "57862877",
+      "transaction_count": 145,
+      "positive_obligation": "424122166.00",
+      "negative_obligation": "-226506.26",
+      "net_obligation": "423895659.74",
+      "residual": "366032782.74"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-06-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "58303644",
+      "transaction_count": 49,
+      "positive_obligation": "2142086.00",
+      "negative_obligation": "-3167.00",
+      "net_obligation": "2138919.00",
+      "residual": "-56164725.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-07-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "58983753",
+      "transaction_count": 18,
+      "positive_obligation": "8814369.00",
+      "negative_obligation": "-189206.00",
+      "net_obligation": "8625163.00",
+      "residual": "-50358590.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-08-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "59552298",
+      "transaction_count": 53,
+      "positive_obligation": "5288686.00",
+      "negative_obligation": "-3167.00",
+      "net_obligation": "5285519.00",
+      "residual": "-54266779.00"
+    },
+    {
+      "fiscal_year": 2023,
+      "action_month": "2023-09-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "60621898",
+      "transaction_count": 89,
+      "positive_obligation": "16369964.00",
+      "negative_obligation": "-3167.00",
+      "net_obligation": "16366797.00",
+      "residual": "-44255101.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2023-10-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "62573495",
+      "transaction_count": 59,
+      "positive_obligation": "121339726.00",
+      "negative_obligation": "-6334.00",
+      "net_obligation": "121333392.00",
+      "residual": "58759897.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2023-11-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "62838504",
+      "transaction_count": 51,
+      "positive_obligation": "12532062.00",
+      "negative_obligation": "0",
+      "net_obligation": "12532062.00",
+      "residual": "-50306442.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2023-12-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "62738250",
+      "transaction_count": 179,
+      "positive_obligation": "165792365.00",
+      "negative_obligation": "-68756468.00",
+      "net_obligation": "97035897.00",
+      "residual": "34297647.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-01-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "63466197",
+      "transaction_count": 338,
+      "positive_obligation": "75190728.00",
+      "negative_obligation": "-1800455.00",
+      "net_obligation": "73390273.00",
+      "residual": "9924076.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-02-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "64220488",
+      "transaction_count": 137,
+      "positive_obligation": "88609700.00",
+      "negative_obligation": "-205007.40",
+      "net_obligation": "88404692.60",
+      "residual": "24184204.60"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-03-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "64743566",
+      "transaction_count": 39,
+      "positive_obligation": "72217725.00",
+      "negative_obligation": "-125639.83",
+      "net_obligation": "72092085.17",
+      "residual": "7348519.17"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-04-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "66066097",
+      "transaction_count": 68,
+      "positive_obligation": "74355684.00",
+      "negative_obligation": "0",
+      "net_obligation": "74355684.00",
+      "residual": "8289587.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-05-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "66153103",
+      "transaction_count": 72,
+      "positive_obligation": "262118676.00",
+      "negative_obligation": "0",
+      "net_obligation": "262118676.00",
+      "residual": "195965573.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-06-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "65353737",
+      "transaction_count": 53,
+      "positive_obligation": "46351785.00",
+      "negative_obligation": "-128057.86",
+      "net_obligation": "46223727.14",
+      "residual": "-19130009.86"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-07-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "67270802",
+      "transaction_count": 116,
+      "positive_obligation": "76700421.00",
+      "negative_obligation": "0",
+      "net_obligation": "76700421.00",
+      "residual": "9429619.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-08-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "68165233",
+      "transaction_count": 50,
+      "positive_obligation": "77759491.00",
+      "negative_obligation": "-6473.00",
+      "net_obligation": "77753018.00",
+      "residual": "9587785.00"
+    },
+    {
+      "fiscal_year": 2024,
+      "action_month": "2024-09-01",
+      "vms_pha_count": 28,
+      "vms_hap_total": "68413561",
+      "transaction_count": 17,
+      "positive_obligation": "5015296.00",
+      "negative_obligation": "-2.00",
+      "net_obligation": "5015294.00",
+      "residual": "-63398267.00"
+    }
+  ],
+  "methodological_stop": {
+    "accounting_source_selected": false,
+    "residual_classified": false,
+    "county_allocation_performed": false,
+    "database_writes": false,
+    "ledger_decision": false
+  }
+}

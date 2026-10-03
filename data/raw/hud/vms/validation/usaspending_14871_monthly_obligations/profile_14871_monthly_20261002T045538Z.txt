@@ -1,0 +1,131 @@
+====================================================================================================
+USASPENDING AL 14.871 MONTHLY OBLIGATION PROFILE
+ETL-174B-5Y-2D-1
+====================================================================================================
+
+READ ONLY. NO HUD VMS reconciliation or accounting decision.
+
+PROGRAM IDENTITY
+----------------------------------------------------------------------------------------------------
+assistance_listing_id=255 | CFDA=14.871 | SECTION 8 HOUSING CHOICE VOUCHERS
+
+FIVE-YEAR TRANSACTION CONTROL
+----------------------------------------------------------------------------------------------------
+Transactions             : 5,248
+Awards                   : 5,088
+Recipients               : 30
+First action date         : 2019-10-25
+Last action date          : 2024-09-20
+Positive obligations      : $4,418,592,387.00
+Negative obligations      : $-110,511,749.35
+Net obligations           : $4,308,080,637.65
+NULL obligation rows      : 0
+NULL action dates         : 0
+NULL fiscal years         : 0
+
+ANNUAL CONTROLS
+----------------------------------------------------------------------------------------------------
+FY2020: tx=920 awards=893 recipients=30 positive=$745,516,463.00 negative=$-22,939,093.00 net=$722,577,370.00
+FY2021: tx=826 awards=809 recipients=30 positive=$788,516,163.00 negative=$-2,997,109.00 net=$785,519,054.00
+FY2022: tx=1,191 awards=1,178 recipients=30 positive=$812,971,592.00 negative=$-10,753,844.00 net=$802,217,748.00
+FY2023: tx=1,132 awards=1,109 recipients=30 positive=$993,604,510.00 negative=$-2,793,266.26 net=$990,811,243.74
+FY2024: tx=1,179 awards=1,128 recipients=30 positive=$1,077,983,659.00 negative=$-71,028,437.09 net=$1,006,955,221.91
+
+MONTHLY -> ANNUAL RECONCILIATION
+----------------------------------------------------------------------------------------------------
+FY2020: transactions=PASS | positive=PASS | negative=PASS | net=PASS | monthly=$722,577,370.00 | annual=$722,577,370.00
+FY2021: transactions=PASS | positive=PASS | negative=PASS | net=PASS | monthly=$785,519,054.00 | annual=$785,519,054.00
+FY2022: transactions=PASS | positive=PASS | negative=PASS | net=PASS | monthly=$802,217,748.00 | annual=$802,217,748.00
+FY2023: transactions=PASS | positive=PASS | negative=PASS | net=PASS | monthly=$990,811,243.74 | annual=$990,811,243.74
+FY2024: transactions=PASS | positive=PASS | negative=PASS | net=PASS | monthly=$1,006,955,221.91 | annual=$1,006,955,221.91
+
+MONTHLY SERIES
+----------------------------------------------------------------------------------------------------
+2019-10-01 | FY2020 | tx=72 | awards=64 | recipients=27 | positive=$121,059,602.00 | negative=$-20,531,337.00 | net=$100,528,265.00
+2019-11-01 | FY2020 | tx=86 | awards=83 | recipients=27 | positive=$85,668,635.00 | negative=$-1,140.00 | net=$85,667,495.00
+2019-12-01 | FY2020 | tx=105 | awards=104 | recipients=30 | positive=$57,229,998.00 | negative=$-1,140.00 | net=$57,228,858.00
+2020-01-01 | FY2020 | tx=178 | awards=178 | recipients=27 | positive=$28,450,908.00 | negative=$-1,140.00 | net=$28,449,768.00
+2020-02-01 | FY2020 | tx=85 | awards=85 | recipients=27 | positive=$110,101,601.00 | negative=$-45,172.00 | net=$110,056,429.00
+2020-03-01 | FY2020 | tx=22 | awards=22 | recipients=11 | positive=$3,144,613.00 | negative=$-1,132.00 | net=$3,143,481.00
+2020-04-01 | FY2020 | tx=170 | awards=170 | recipients=27 | positive=$299,838,948.00 | negative=$-1,132.00 | net=$299,837,816.00
+2020-05-01 | FY2020 | tx=55 | awards=55 | recipients=27 | positive=$10,092,010.00 | negative=$-1,153.00 | net=$10,090,857.00
+2020-06-01 | FY2020 | tx=12 | awards=12 | recipients=5 | positive=$1,398,715.00 | negative=$-1,153.00 | net=$1,397,562.00
+2020-07-01 | FY2020 | tx=35 | awards=31 | recipients=25 | positive=$2,883,363.00 | negative=$-2,352,288.00 | net=$531,075.00
+2020-08-01 | FY2020 | tx=42 | awards=42 | recipients=27 | positive=$15,257,958.00 | negative=$-1,153.00 | net=$15,256,805.00
+2020-09-01 | FY2020 | tx=58 | awards=58 | recipients=29 | positive=$10,390,112.00 | negative=$-1,153.00 | net=$10,388,959.00
+2020-10-01 | FY2021 | tx=60 | awards=60 | recipients=27 | positive=$114,694,856.00 | negative=$0.00 | net=$114,694,856.00
+2020-11-01 | FY2021 | tx=34 | awards=32 | recipients=19 | positive=$2,609,699.00 | negative=$-2,302.00 | net=$2,607,397.00
+2020-12-01 | FY2021 | tx=73 | awards=72 | recipients=27 | positive=$117,507,568.00 | negative=$-1,151.00 | net=$117,506,417.00
+2021-01-01 | FY2021 | tx=24 | awards=24 | recipients=14 | positive=$5,911,626.00 | negative=$-1,151.00 | net=$5,910,475.00
+2021-02-01 | FY2021 | tx=246 | awards=245 | recipients=28 | positive=$62,624,243.00 | negative=$-14,322.00 | net=$62,609,921.00
+2021-03-01 | FY2021 | tx=68 | awards=66 | recipients=27 | positive=$119,508,622.00 | negative=$-2,569,169.00 | net=$116,939,453.00
+2021-04-01 | FY2021 | tx=87 | awards=87 | recipients=27 | positive=$259,503,467.00 | negative=$-8,579.00 | net=$259,494,888.00
+2021-05-01 | FY2021 | tx=58 | awards=58 | recipients=27 | positive=$59,305,025.00 | negative=$0.00 | net=$59,305,025.00
+2021-06-01 | FY2021 | tx=101 | awards=101 | recipients=24 | positive=$40,706,079.00 | negative=$-1,174.00 | net=$40,704,905.00
+2021-07-01 | FY2021 | tx=11 | awards=11 | recipients=9 | positive=$403,895.00 | negative=$-1,174.00 | net=$402,721.00
+2021-08-01 | FY2021 | tx=8 | awards=8 | recipients=5 | positive=$1,117,510.00 | negative=$-396,913.00 | net=$720,597.00
+2021-09-01 | FY2021 | tx=56 | awards=56 | recipients=29 | positive=$4,623,573.00 | negative=$-1,174.00 | net=$4,622,399.00
+2021-10-01 | FY2022 | tx=60 | awards=60 | recipients=27 | positive=$62,243,141.00 | negative=$0.00 | net=$62,243,141.00
+2021-11-01 | FY2022 | tx=155 | awards=154 | recipients=27 | positive=$169,070,076.00 | negative=$0.00 | net=$169,070,076.00
+2021-12-01 | FY2022 | tx=19 | awards=18 | recipients=13 | positive=$3,867,724.00 | negative=$0.00 | net=$3,867,724.00
+2022-01-01 | FY2022 | tx=284 | awards=284 | recipients=27 | positive=$73,696,110.00 | negative=$-1,360.00 | net=$73,694,750.00
+2022-02-01 | FY2022 | tx=80 | awards=80 | recipients=24 | positive=$8,474,602.00 | negative=$-1,360.00 | net=$8,473,242.00
+2022-03-01 | FY2022 | tx=165 | awards=165 | recipients=27 | positive=$71,171,420.00 | negative=$0.00 | net=$71,171,420.00
+2022-04-01 | FY2022 | tx=92 | awards=92 | recipients=27 | positive=$67,117,624.00 | negative=$0.00 | net=$67,117,624.00
+2022-05-01 | FY2022 | tx=128 | awards=128 | recipients=27 | positive=$273,759,511.00 | negative=$0.00 | net=$273,759,511.00
+2022-06-01 | FY2022 | tx=90 | awards=88 | recipients=27 | positive=$76,479,400.00 | negative=$-10,742,557.00 | net=$65,736,843.00
+2022-07-01 | FY2022 | tx=7 | awards=7 | recipients=4 | positive=$10,712.00 | negative=$-2,857.00 | net=$7,855.00
+2022-08-01 | FY2022 | tx=13 | awards=13 | recipients=10 | positive=$642,068.00 | negative=$-2,855.00 | net=$639,213.00
+2022-09-01 | FY2022 | tx=98 | awards=97 | recipients=30 | positive=$6,439,204.00 | negative=$-2,855.00 | net=$6,436,349.00
+2022-10-01 | FY2023 | tx=63 | awards=62 | recipients=27 | positive=$133,794,431.00 | negative=$-3,193.00 | net=$133,791,238.00
+2022-11-01 | FY2023 | tx=46 | awards=46 | recipients=27 | positive=$953,260.00 | negative=$-63,188.00 | net=$890,072.00
+2022-12-01 | FY2023 | tx=80 | awards=79 | recipients=27 | positive=$137,213,466.00 | negative=$-9,254.00 | net=$137,204,212.00
+2023-01-01 | FY2023 | tx=280 | awards=277 | recipients=27 | positive=$7,746,313.00 | negative=$-3,196.00 | net=$7,743,117.00
+2023-02-01 | FY2023 | tx=107 | awards=106 | recipients=27 | positive=$76,030,711.00 | negative=$-3,173.00 | net=$76,027,538.00
+2023-03-01 | FY2023 | tx=123 | awards=122 | recipients=27 | positive=$150,114,578.00 | negative=$-3,174.00 | net=$150,111,404.00
+2023-04-01 | FY2023 | tx=79 | awards=79 | recipients=24 | positive=$31,014,480.00 | negative=$-2,282,875.00 | net=$28,731,605.00
+2023-05-01 | FY2023 | tx=145 | awards=142 | recipients=29 | positive=$424,122,166.00 | negative=$-226,506.26 | net=$423,895,659.74
+2023-06-01 | FY2023 | tx=49 | awards=49 | recipients=23 | positive=$2,142,086.00 | negative=$-3,167.00 | net=$2,138,919.00
+2023-07-01 | FY2023 | tx=18 | awards=18 | recipients=9 | positive=$8,814,369.00 | negative=$-189,206.00 | net=$8,625,163.00
+2023-08-01 | FY2023 | tx=53 | awards=53 | recipients=27 | positive=$5,288,686.00 | negative=$-3,167.00 | net=$5,285,519.00
+2023-09-01 | FY2023 | tx=89 | awards=89 | recipients=30 | positive=$16,369,964.00 | negative=$-3,167.00 | net=$16,366,797.00
+2023-10-01 | FY2024 | tx=59 | awards=58 | recipients=27 | positive=$121,339,726.00 | negative=$-6,334.00 | net=$121,333,392.00
+2023-11-01 | FY2024 | tx=51 | awards=51 | recipients=21 | positive=$12,532,062.00 | negative=$0.00 | net=$12,532,062.00
+2023-12-01 | FY2024 | tx=179 | awards=148 | recipients=27 | positive=$165,792,365.00 | negative=$-68,756,468.00 | net=$97,035,897.00
+2024-01-01 | FY2024 | tx=338 | awards=333 | recipients=27 | positive=$75,190,728.00 | negative=$-1,800,455.00 | net=$73,390,273.00
+2024-02-01 | FY2024 | tx=137 | awards=135 | recipients=28 | positive=$88,609,700.00 | negative=$-205,007.40 | net=$88,404,692.60
+2024-03-01 | FY2024 | tx=39 | awards=39 | recipients=28 | positive=$72,217,725.00 | negative=$-125,639.83 | net=$72,092,085.17
+2024-04-01 | FY2024 | tx=68 | awards=68 | recipients=27 | positive=$74,355,684.00 | negative=$0.00 | net=$74,355,684.00
+2024-05-01 | FY2024 | tx=72 | awards=72 | recipients=27 | positive=$262,118,676.00 | negative=$0.00 | net=$262,118,676.00
+2024-06-01 | FY2024 | tx=53 | awards=53 | recipients=23 | positive=$46,351,785.00 | negative=$-128,057.86 | net=$46,223,727.14
+2024-07-01 | FY2024 | tx=116 | awards=116 | recipients=27 | positive=$76,700,421.00 | negative=$0.00 | net=$76,700,421.00
+2024-08-01 | FY2024 | tx=50 | awards=49 | recipients=27 | positive=$77,759,491.00 | negative=$-6,473.00 | net=$77,753,018.00
+2024-09-01 | FY2024 | tx=17 | awards=15 | recipients=11 | positive=$5,015,296.00 | negative=$-2.00 | net=$5,015,294.00
+
+DEFC DIAGNOSTIC
+----------------------------------------------------------------------------------------------------
+DEFC presence is diagnostic only. No DEFC code is classified as COVID or extraordinary by this profiler.
+
+Transactions carrying >=1 DEFC : 4,700
+Net obligation on DEFC tx      : $3,923,006,341.65
+
+id=14 | raw='AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42' | transactions=61 | description='Emergency P.L. 117-328'
+id=36 | raw='AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42' | transactions=61 | description='Emergency P.L. 118-42'
+id=14 | raw='AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression' | transactions=2 | description='Emergency P.L. 117-328'
+id=36 | raw='AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression' | transactions=2 | description='Emergency P.L. 118-42'
+id=10 | raw='AAB: Emergency P.L. 117-328;AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression' | transactions=2 | description='Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression'
+id=36 | raw='AAF: Emergency P.L. 118-42' | transactions=57 | description='Emergency P.L. 118-42'
+id=36 | raw='AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression' | transactions=4 | description='Emergency P.L. 118-42'
+id=10 | raw='AAF: Emergency P.L. 118-42;Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression' | transactions=4 | description='Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression'
+id=3 | raw='N: Emergency P.L. 116-136' | transactions=88 | description='Emergency P.L. 116-136'
+id=10 | raw='Q: Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression' | transactions=3,779 | description='Not Designated Nonemergency/Emergency/Disaster/Wildfire Suppression'
+id=7 | raw='V: Non-emergency P.L. 117-2' | transactions=709 | description='Non-emergency P.L. 117-2'
+
+METHODOLOGICAL STOP
+----------------------------------------------------------------------------------------------------
+No HUD VMS comparison was performed.
+No obligation/expenditure equivalence was assumed.
+No DEFC-to-COVID classification was imposed.
+No county allocation was performed.
+No database writes occurred.
+No ledger decision was made.

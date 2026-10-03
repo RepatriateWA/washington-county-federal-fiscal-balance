@@ -1,0 +1,1040 @@
+====================================================================================================
+HUD VMS WASHINGTON HAP TOTAL COMPOSITION TEST
+ETL-174B-5Y-2C
+====================================================================================================
+
+READ-ONLY empirical composition test. No candidate sum below is an accounting conclusion.
+
+POPULATION CONTROL
+----------------------------------------------------------------------------------------------------
+Workbooks processed              : 12
+Washington PHA-month observations: 1,008
+Distinct Washington PHAs         : 28
+Distinct submission months       : 36
+Duplicate PHA-month keys         : 0
+Distinct HAP-labelled fields     : 50
+
+====================================================================================================
+WORKBOOK HAP FIELD INVENTORY
+====================================================================================================
+
+Oct-Dec2022VMS.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSAPR-JUN2022.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSJAN-MAR2022.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSJUL-SEP2022.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSAPR-JUN2023.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSJan-Mar2023.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSJul-Sep2023.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSOct-Dec2023.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+JAN-MAR_2024_VMS.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSApr-Jun2024.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSJul-Sep2024.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+VMSOct-Dec2024.xlsx
+    WA rows          : 84
+    HAP fields       : 50
+    invalid months   : 0
+
+====================================================================================================
+CONSOLIDATED HAP FIELD INVENTORY
+====================================================================================================
+
+all_other_vouchers_hap
+    raw header(s)      : All Other Vouchers HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 781
+    zero               : 227
+    negative           : 0
+    sum                : $544,552,966.00
+
+dhap_to_hcv_voucher_hap
+    raw header(s)      : DHAP to HCV Voucher HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 1
+    zero               : 1,007
+    negative           : 0
+    sum                : $2,102.00
+
+dhap_to_hcv_vouchers_leased
+    raw header(s)      : DHAP to HCV Vouchers Leased
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 1
+    zero               : 1,007
+    negative           : 0
+    sum                : $1.00
+
+emergency_transfer_vouchers_for_vawa_hap
+    raw header(s)      : Emergency Transfer Vouchers for VAWA - HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 0
+    zero               : 1,008
+    negative           : 0
+    sum                : $0.00
+
+family_unification_2008_forward_mtw_hap
+    raw header(s)      : Family Unification 2008/Forward - MTW (HAP)
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 165
+    zero               : 843
+    negative           : 0
+    sum                : $39,639,601.00
+
+family_unification_non_mtw_hap
+    raw header(s)      : Family Unification - Non MTW (HAP)
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 201
+    zero               : 807
+    negative           : 0
+    sum                : $7,158,147.00
+
+family_unification_pre2008_mtw_hap
+    raw header(s)      : Family Unification Pre2008 - MTW (HAP)
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 91
+    zero               : 917
+    negative           : 0
+    sum                : $8,911,336.00
+
+foster_youth_to_independence_hap
+    raw header(s)      : Foster Youth To Independence - HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 285
+    zero               : 723
+    negative           : 0
+    sum                : $4,612,881.00
+
+hap_total
+    raw header(s)      : HAP Total
+    categories         : HUD_TOTAL
+    candidate group    : HUD_TOTAL
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 1,008
+    zero               : 0
+    negative           : 0
+    sum                : $2,153,261,927.00
+
+hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : HCV - All Voucher HAP Expenses after the First of the Month
+    categories         : TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 916
+    zero               : 92
+    negative           : 0
+    sum                : $9,837,807.00
+
+hcv_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    raw header(s)      : HCV - New Vouchers Issued but not under HAP contract as of the last day of the month
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 963
+    zero               : 45
+    negative           : 0
+    sum                : $102,063.00
+
+hcv_number_of_vouchers_under_lease_hap_contract_on_the_last_day_of_the_month
+    raw header(s)      : HCV - Number of Vouchers Under Lease (HAP Contract) on the last day of the month
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 1,008
+    zero               : 0
+    negative           : 0
+    sum                : $2,066,592.00
+
+homeownership_hap
+    raw header(s)      : Homeownership HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 503
+    zero               : 505
+    negative           : 0
+    sum                : $3,569,229.00
+
+hope_vi_hap
+    raw header(s)      : HOPE VI HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 74
+    zero               : 934
+    negative           : 0
+    sum                : $4,774,017.00
+
+housing_stability_vouchers_hap_expenses
+    raw header(s)      : Housing Stability Vouchers - HAP Expenses
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 50
+    zero               : 958
+    negative           : 0
+    sum                : $191,395.00
+
+housing_stability_vouchers_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    raw header(s)      : Housing Stability Vouchers - Number of New Vouchers Issued but not Under HAP Contract as of the last day of the month
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 37
+    zero               : 971
+    negative           : 0
+    sum                : $167.00
+
+interest_or_other_income_earned_this_month_from_the_investment_of_hap_funds_and_net_restricted_assets
+    raw header(s)      : Interest or other income earned this month from the investment of HAP funds and Net Restricted Assets
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 313
+    zero               : 695
+    negative           : 0
+    sum                : $626,355.00
+
+litigation_hap
+    raw header(s)      : Litigation HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 0
+    zero               : 1,008
+    negative           : 0
+    sum                : $0.00
+
+mainstream_hap
+    raw header(s)      : Mainstream - HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 540
+    zero               : 468
+    negative           : 0
+    sum                : $106,260,342.00
+
+mainstream_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : Mainstream - HAP Expenses After the First of the Month
+    categories         : SPECIAL_PURPOSE, TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 250
+    zero               : 758
+    negative           : 0
+    sum                : $731,378.00
+
+mainstream_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    raw header(s)      : Mainstream - Number of New Vouchers Issued but not Under HAP Contract as of the Last Day of the Month
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 308
+    zero               : 700
+    negative           : 0
+    sum                : $5,021.00
+
+mobility_demonstration_hap
+    raw header(s)      : Mobility Demonstration - HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 0
+    zero               : 1,008
+    negative           : 0
+    sum                : $0.00
+
+moving_to_work_hap
+    raw header(s)      : Moving To Work HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 227
+    zero               : 781
+    negative           : 0
+    sum                : $1,039,046,477.00
+
+mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : MTW - Emergency Transfer Vouchers for VAWA HAP Expenses After the First of the Month
+    categories         : TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 1
+    zero               : 1,007
+    negative           : 0
+    sum                : $1.00
+
+mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : MTW - Family Unification 2008/Forward HAP expenses after the First of the Month
+    categories         : TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 102
+    zero               : 906
+    negative           : 0
+    sum                : $260,864.00
+
+mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+    raw header(s)      : MTW - Family Unification pre-2008 HAP After the First of the Month
+    categories         : TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 28
+    zero               : 980
+    negative           : 0
+    sum                : $36,333.00
+
+mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : MTW - Foster Youth To Independence HAP Expenses After the First of the Month
+    categories         : SPECIAL_PURPOSE, TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 61
+    zero               : 947
+    negative           : 0
+    sum                : $106,087.00
+
+mtw_hcv_administrative_expenses_using_hap
+    raw header(s)      : MTW - HCV Administrative Expenses Using HAP
+    categories         : ADMIN
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 105
+    zero               : 903
+    negative           : 0
+    sum                : $35,298,559.00
+
+mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : MTW - Housing Stability Voucher HAP Expenses After the First of the Month
+    categories         : SPECIAL_PURPOSE, TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 0
+    zero               : 1,008
+    negative           : 0
+    sum                : $0.00
+
+mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : MTW - Moblity Demonstration HAP Expenses After the First of the Month
+    categories         : TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 0
+    zero               : 1,008
+    negative           : 0
+    sum                : $0.00
+
+mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : MTW - Non-Elderly Disabled 2008/Forward HAP Expenses after the First of the Month
+    categories         : TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 39
+    zero               : 969
+    negative           : 0
+    sum                : $60,236.00
+
+mtw_one_year_mainstream_hap_after_the_first_of_the_month
+    raw header(s)      : MTW - One year Mainstream HAP After the First of the Month
+    categories         : SPECIAL_PURPOSE, TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 67
+    zero               : 941
+    negative           : 0
+    sum                : $221,702.00
+
+mtw_vash_hap_expenses_after_the_first_of_the_month
+    raw header(s)      : MTW - VASH HAP Expenses after the First of the Month
+    categories         : SPECIAL_PURPOSE, TIMING_SUBSET
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 124
+    zero               : 884
+    negative           : 0
+    sum                : $369,353.00
+
+non_elderly_disabled_2008_forward_mtw_hap
+    raw header(s)      : Non Elderly Disabled 2008 Forward - MTW (HAP)
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 132
+    zero               : 876
+    negative           : 0
+    sum                : $19,245,897.00
+
+non_elderly_disabled_non_mtw_hap
+    raw header(s)      : Non Elderly Disabled - Non-MTW (HAP)
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 421
+    zero               : 587
+    negative           : 0
+    sum                : $56,095,693.00
+
+number_of_pbvs_under_ahap_and_not_under_hap
+    raw header(s)      : Number of PBVs under AHAP and not under HAP
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 317
+    zero               : 691
+    negative           : 0
+    sum                : $16,650.00
+
+number_of_pbvs_under_hap_and_leased
+    raw header(s)      : Number of PBVs under HAP and leased
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 851
+    zero               : 157
+    negative           : 0
+    sum                : $542,124.00
+
+number_of_pbvs_under_hap_and_not_leased
+    raw header(s)      : Number of PBVs under HAP and not leased
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 710
+    zero               : 298
+    negative           : 0
+    sum                : $53,472.00
+
+number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense
+    raw header(s)      : Number of PBVs under HAP and not leased with vacancy payment and associated vacancy HAP expense
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 133
+    zero               : 875
+    negative           : 0
+    sum                : $3,630.00
+
+number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense_hap
+    raw header(s)      : Number of PBVs under HAP and not leased with vacancy payment and associated vacancy HAP expense(HAP)
+    categories         : UNCLASSIFIED_HAP
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 130
+    zero               : 878
+    negative           : 0
+    sum                : $2,307,149.00
+
+one_year_mainstream_mtw_hap
+    raw header(s)      : One Year Mainstream - MTW (HAP)
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 131
+    zero               : 877
+    negative           : 0
+    sum                : $71,844,116.00
+
+portable_hap_costs_billed_and_unpaid_90_days_or_older
+    raw header(s)      : Portable HAP Costs Billed and Unpaid - 90 Days or older
+    categories         : BALANCE_OR_RECEIVABLE, PORTABILITY
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 216
+    zero               : 792
+    negative           : 0
+    sum                : $35,038,066.00
+
+portable_voucher_paid_hap
+    raw header(s)      : Portable Voucher Paid HAP
+    categories         : PORTABILITY, PORT_OUT_OR_PAID
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 935
+    zero               : 73
+    negative           : 0
+    sum                : $62,094,125.00
+
+project_based_vouchers_total_hap_expenses
+    raw header(s)      : Project Based Vouchers - Total HAP Expenses
+    categories         : PROGRAM_SUBSET
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 833
+    zero               : 175
+    negative           : 0
+    sum                : $432,829,764.00
+
+rental_assistance_demonstration_1_public_housing_conversion_hap
+    raw header(s)      : Rental Assistance Demonstration 1- Public Housing Conversion - HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 360
+    zero               : 648
+    negative           : 0
+    sum                : $37,430,295.00
+
+rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+    raw header(s)      : Rental Assistance Demonstration 2 - Mod Rehab, Rent Supp, RAP Conversion - HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 144
+    zero               : 864
+    negative           : 0
+    sum                : $14,627,053.00
+
+rental_assistance_demonstration_3_prac_conversion_hap
+    raw header(s)      : Rental Assistance Demonstration 3 - PRAC Conversion - HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 31
+    zero               : 977
+    negative           : 0
+    sum                : $9,062,434.00
+
+tenant_protection_hap
+    raw header(s)      : Tenant Protection HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 762
+    zero               : 246
+    negative           : 0
+    sum                : $102,631,461.00
+
+total_hap_for_portable_units_administered
+    raw header(s)      : Total HAP for Portable Units Administered
+    categories         : ADMIN, PORTABILITY, PORT_IN
+    candidate group    : EXCLUDED_DIAGNOSTIC
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 584
+    zero               : 424
+    negative           : 0
+    sum                : $225,574,573.00
+
+veterans_affair_supported_housing_vash_hap
+    raw header(s)      : Veterans Affair Supported Housing (VASH) HAP
+    categories         : SPECIAL_PURPOSE
+    candidate group    : PRIMARY_CANDIDATE
+    workbook occurrence: 12
+    numeric            : 1,008
+    positive           : 765
+    zero               : 243
+    negative           : 0
+    sum                : $109,638,651.00
+
+====================================================================================================
+PRIMARY CANDIDATE FIELDS
+====================================================================================================
+
+    all_other_vouchers_hap
+    dhap_to_hcv_voucher_hap
+    dhap_to_hcv_vouchers_leased
+    emergency_transfer_vouchers_for_vawa_hap
+    family_unification_2008_forward_mtw_hap
+    family_unification_non_mtw_hap
+    family_unification_pre2008_mtw_hap
+    foster_youth_to_independence_hap
+    hcv_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    hcv_number_of_vouchers_under_lease_hap_contract_on_the_last_day_of_the_month
+    homeownership_hap
+    hope_vi_hap
+    housing_stability_vouchers_hap_expenses
+    housing_stability_vouchers_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    interest_or_other_income_earned_this_month_from_the_investment_of_hap_funds_and_net_restricted_assets
+    litigation_hap
+    mainstream_hap
+    mainstream_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    mobility_demonstration_hap
+    moving_to_work_hap
+    non_elderly_disabled_2008_forward_mtw_hap
+    non_elderly_disabled_non_mtw_hap
+    number_of_pbvs_under_ahap_and_not_under_hap
+    number_of_pbvs_under_hap_and_leased
+    number_of_pbvs_under_hap_and_not_leased
+    number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense
+    number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense_hap
+    one_year_mainstream_mtw_hap
+    project_based_vouchers_total_hap_expenses
+    rental_assistance_demonstration_1_public_housing_conversion_hap
+    rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+    rental_assistance_demonstration_3_prac_conversion_hap
+    tenant_protection_hap
+    veterans_affair_supported_housing_vash_hap
+
+====================================================================================================
+EXCLUDED DIAGNOSTIC FIELDS
+====================================================================================================
+
+    hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+    mainstream_hap_expenses_after_the_first_of_the_month
+    mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+    mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+    mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+    mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+    mtw_hcv_administrative_expenses_using_hap
+    mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+    mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+    mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+    mtw_one_year_mainstream_hap_after_the_first_of_the_month
+    mtw_vash_hap_expenses_after_the_first_of_the_month
+    portable_hap_costs_billed_and_unpaid_90_days_or_older
+    portable_voucher_paid_hap
+    total_hap_for_portable_units_administered
+
+====================================================================================================
+CANDIDATE-SUM EQUALITY TESTS
+====================================================================================================
+
+PRIMARY CANDIDATE SUM
+----------------------------------------------------------------------------------------------------
+Tested observations        : 1,008
+Exact within $0.01         : 0
+Near within $1.00          : 0
+Exact rate                 : 0.0000%
+Signed residual sum        : $-464,585,154.00
+Absolute residual sum      : $486,855,576.00
+Minimum residual           : $-5,507,501.00
+Maximum residual           : $351,017.00
+
+ALL OTHER HAP-LABELLED FIELDS
+----------------------------------------------------------------------------------------------------
+Tested observations        : 1,008
+Exact within $0.01         : 0
+Near within $1.00          : 0
+Exact rate                 : 0.0000%
+Signed residual sum        : $-834,214,238.00
+Absolute residual sum      : $834,603,662.00
+Minimum residual           : $-9,045,634.00
+Maximum residual           : $9,296.00
+
+====================================================================================================
+PRIMARY-RESIDUAL FIELD ASSOCIATION
+====================================================================================================
+
+Fields ranked by whether adding/subtracting one field reduces the absolute PRIMARY residual.
+This is clue generation, not automatic formula selection.
+
+project_based_vouchers_total_hap_expenses
+    tested                     : 1,008
+    improvement if added       : $-422,593,392.00
+    improvement if subtracted  : $402,529,786.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mainstream_hap
+    tested                     : 1,008
+    improvement if added       : $-104,243,314.00
+    improvement if subtracted  : $99,362,418.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+total_hap_for_portable_units_administered
+    tested                     : 1,008
+    improvement if added       : $-222,639,303.00
+    improvement if subtracted  : $96,346,513.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+tenant_protection_hap
+    tested                     : 1,008
+    improvement if added       : $-96,016,321.00
+    improvement if subtracted  : $86,461,079.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+veterans_affair_supported_housing_vash_hap
+    tested                     : 1,008
+    improvement if added       : $-95,229,077.00
+    improvement if subtracted  : $79,989,101.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+one_year_mainstream_mtw_hap
+    tested                     : 1,008
+    improvement if added       : $-71,844,116.00
+    improvement if subtracted  : $67,952,276.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+family_unification_2008_forward_mtw_hap
+    tested                     : 1,008
+    improvement if added       : $-39,639,601.00
+    improvement if subtracted  : $38,879,365.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_hcv_administrative_expenses_using_hap
+    tested                     : 1,008
+    improvement if added       : $-35,298,559.00
+    improvement if subtracted  : $34,857,751.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+rental_assistance_demonstration_1_public_housing_conversion_hap
+    tested                     : 1,008
+    improvement if added       : $-36,641,737.00
+    improvement if subtracted  : $32,420,697.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+portable_voucher_paid_hap
+    tested                     : 1,008
+    improvement if added       : $-41,052,383.00
+    improvement if subtracted  : $27,452,375.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+non_elderly_disabled_2008_forward_mtw_hap
+    tested                     : 1,008
+    improvement if added       : $-19,015,299.00
+    improvement if subtracted  : $18,331,361.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+non_elderly_disabled_non_mtw_hap
+    tested                     : 1,008
+    improvement if added       : $-42,718,457.00
+    improvement if subtracted  : $17,352,207.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+    tested                     : 1,008
+    improvement if added       : $-14,581,255.00
+    improvement if subtracted  : $14,175,071.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+rental_assistance_demonstration_3_prac_conversion_hap
+    tested                     : 1,008
+    improvement if added       : $-9,062,434.00
+    improvement if subtracted  : $9,062,434.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+family_unification_pre2008_mtw_hap
+    tested                     : 1,008
+    improvement if added       : $-8,911,336.00
+    improvement if subtracted  : $8,911,336.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-6,419,783.00
+    improvement if subtracted  : $6,293,449.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+portable_hap_costs_billed_and_unpaid_90_days_or_older
+    tested                     : 1,008
+    improvement if added       : $-28,525,662.00
+    improvement if subtracted  : $6,030,562.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+family_unification_non_mtw_hap
+    tested                     : 1,008
+    improvement if added       : $-5,649,107.00
+    improvement if subtracted  : $5,545,827.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+foster_youth_to_independence_hap
+    tested                     : 1,008
+    improvement if added       : $-4,606,461.00
+    improvement if subtracted  : $4,606,461.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+hope_vi_hap
+    tested                     : 1,008
+    improvement if added       : $-4,465,041.00
+    improvement if subtracted  : $4,465,041.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense_hap
+    tested                     : 1,008
+    improvement if added       : $-2,301,593.00
+    improvement if subtracted  : $2,301,593.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+hcv_number_of_vouchers_under_lease_hap_contract_on_the_last_day_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-1,617,324.00
+    improvement if subtracted  : $1,617,218.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+homeownership_hap
+    tested                     : 1,008
+    improvement if added       : $-1,284,125.00
+    improvement if subtracted  : $1,027,643.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mainstream_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-731,378.00
+    improvement if subtracted  : $731,378.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+interest_or_other_income_earned_this_month_from_the_investment_of_hap_funds_and_net_restricted_assets
+    tested                     : 1,008
+    improvement if added       : $-597,597.00
+    improvement if subtracted  : $597,597.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+number_of_pbvs_under_hap_and_leased
+    tested                     : 1,008
+    improvement if added       : $-503,086.00
+    improvement if subtracted  : $503,086.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_vash_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-369,353.00
+    improvement if subtracted  : $369,353.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-260,864.00
+    improvement if subtracted  : $260,864.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_one_year_mainstream_hap_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-221,702.00
+    improvement if subtracted  : $221,702.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+housing_stability_vouchers_hap_expenses
+    tested                     : 1,008
+    improvement if added       : $-172,425.00
+    improvement if subtracted  : $162,509.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-106,087.00
+    improvement if subtracted  : $106,087.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+hcv_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-81,055.00
+    improvement if subtracted  : $81,055.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-60,236.00
+    improvement if subtracted  : $60,236.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+number_of_pbvs_under_hap_and_not_leased
+    tested                     : 1,008
+    improvement if added       : $-49,526.00
+    improvement if subtracted  : $49,526.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-36,333.00
+    improvement if subtracted  : $36,333.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+number_of_pbvs_under_ahap_and_not_under_hap
+    tested                     : 1,008
+    improvement if added       : $-14,994.00
+    improvement if subtracted  : $14,994.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mainstream_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-5,007.00
+    improvement if subtracted  : $5,007.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+number_of_pbvs_under_hap_and_not_leased_with_vacancy_payment_and_associated_vacancy_hap_expense
+    tested                     : 1,008
+    improvement if added       : $-3,552.00
+    improvement if subtracted  : $3,552.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+dhap_to_hcv_voucher_hap
+    tested                     : 1,008
+    improvement if added       : $-2,102.00
+    improvement if subtracted  : $2,102.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+housing_stability_vouchers_number_of_new_vouchers_issued_but_not_under_hap_contract_as_of_the_last_day_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-155.00
+    improvement if subtracted  : $155.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+dhap_to_hcv_vouchers_leased
+    tested                     : 1,008
+    improvement if added       : $-1.00
+    improvement if subtracted  : $1.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $-1.00
+    improvement if subtracted  : $1.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+emergency_transfer_vouchers_for_vawa_hap
+    tested                     : 1,008
+    improvement if added       : $0.00
+    improvement if subtracted  : $0.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+litigation_hap
+    tested                     : 1,008
+    improvement if added       : $0.00
+    improvement if subtracted  : $0.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mobility_demonstration_hap
+    tested                     : 1,008
+    improvement if added       : $0.00
+    improvement if subtracted  : $0.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $0.00
+    improvement if subtracted  : $0.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+    tested                     : 1,008
+    improvement if added       : $0.00
+    improvement if subtracted  : $0.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+moving_to_work_hap
+    tested                     : 1,008
+    improvement if added       : $-1,038,815,879.00
+    improvement if subtracted  : $-269,514,581.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+all_other_vouchers_hap
+    tested                     : 1,008
+    improvement if added       : $-522,513,142.00
+    improvement if subtracted  : $-362,824,662.00
+    exact observations if added: 0
+    exact if subtracted        : 0
+
+====================================================================================================
+HAP TOTAL ANNUAL CONTROL — DIAGNOSTIC ONLY
+====================================================================================================
+
+CY2022    $635,707,561.00
+CY2023    $711,547,824.00
+CY2024    $806,006,542.00
+
+====================================================================================================
+METHODOLOGICAL STOP
+====================================================================================================
+
+No candidate formula has been automatically certified.
+HAP Total remains a diagnostic HUD-reported measure.
+No Vms2 / Emergency Housing Voucher values were added.
+No USAspending reconciliation was performed.
+No county allocation was performed.
+No database writes occurred.
+No ledger decision was made.

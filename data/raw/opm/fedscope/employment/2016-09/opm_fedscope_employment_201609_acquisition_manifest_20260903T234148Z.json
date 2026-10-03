@@ -1,0 +1,24 @@
+{
+  "dataset": "OPM FedScope Employment Cube",
+  "snapshot": "September 2016",
+  "datecode": "201609",
+  "retrieved_utc": "2026-09-03T23:41:48.649534+00:00",
+  "source_agency": "U.S. Office of Personnel Management",
+  "purpose": "WCFFBP civilian federal wage allocation methodology research",
+  "files": [
+    {
+      "role": "documentation",
+      "source_url": "https://www.opm.gov/data/datasets/Files/490/fac44a8f-dc3d-403d-8ddc-2d457c1f91a2.pdf",
+      "local_path": "data\\raw\\opm\\fedscope\\employment\\2016-09\\opm_fedscope_employment_201609_documentation_retrieved_20260903T234148Z.pdf",
+      "size_bytes": 262436,
+      "sha256": "92331055fa329f1ec0a5a4448d5006ce26edc625ae8006efc787aa4d4d756b00"
+    },
+    {
+      "role": "raw_data",
+      "source_url": "https://www.opm.gov/data/datasets/Files/490/ae0351fd-58d1-47d5-b1aa-2ca3bf977d30.zip",
+      "local_path": "data\\raw\\opm\\fedscope\\employment\\2016-09\\opm_fedscope_employment_201609_raw_data_retrieved_20260903T234148Z.zip",
+      "size_bytes": 22078008,
+      "sha256": "e03d964e9cbc5e3a59c0be3eb8ebeefc4dd9985001ffdc562be92e280d8ab8d1"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+====================================================================================================
+IRS GROSS COLLECTIONS / ECONOMIC-INCIDENCE DIAGNOSTIC BRIDGE - ETL-172G-4
+====================================================================================================
+
+Diagnostic comparison only. The compared series are not concept-equivalent and are not additive.
+
+INPUT CERTIFICATION
+----------------------------------------------------------------------------------------------------
+G3 input SHA256           : A2E841BAF74455CABBF47B193ED1447EC37FC96A7EC2DC2DA157F90A367A2185
+IRS semantic input SHA256 : 3ECF50C7E21DC9BF9FC2F8F76ADA27704A2ADB852D6FFB1B7883399B72573A8B
+IRS control input SHA256  : 86B26F93320AE77BCFD1B166E640C5BC8A5E8E45B6DB51EE19C7AAAB8E8F35C6
+
+COMPARISON DESIGN
+----------------------------------------------------------------------------------------------------
+WCFFBP series : Economic-incidence allocation of national Individual Income Taxes receipts.
+IRS total     : Administrative gross collections attributed to Washington.
+IRS narrower  : Individual income + employment + estate/trust income tax combined category.
+No IRS Table 5 field in this certified extract isolates individual income tax from employment taxes.
+Differences and ratios below are DIAGNOSTIC_ONLY.
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Expected observations           : 10
+Actual observations             : 10
+Year coverage                   : PASS
+Year uniqueness                 : PASS
+IRS control cross-check         : PASS
+Difference arithmetic           : PASS
+Ratio arithmetic                : PASS
+Diagnostic-only boundary        : PASS
+Concept-equivalence boundary    : PASS
+Nonadditivity boundary          : PASS
+
+DIAGNOSTIC BRIDGE
+----------------------------------------------------------------------------------------------------
+FFY           WCFFBP IIT         IRS TOTAL   IIT/TOTAL      IRS COMBINED    IIT/COMB
+----------------------------------------------------------------------------------------------------
+2015      40,757,500,498    73,334,437,000    55.5776%    65,551,576,000    62.1762%
+2016      44,329,496,669    77,083,460,000    57.5084%    70,468,914,000    62.9065%
+2017      45,123,985,072    85,875,647,000    52.5457%    77,323,289,000    58.3576%
+2018      48,947,390,032    90,404,108,000    54.1429%    83,778,554,000    58.4247%
+2019      52,414,448,774   100,609,767,000    52.0968%    88,564,816,000    59.1820%
+2020      50,668,342,229   101,041,925,000    50.1459%    91,388,620,000    55.4427%
+2021      64,304,514,519   119,862,452,000    53.6486%   105,826,738,000    60.7640%
+2022      77,010,905,244   148,466,475,000    51.8709%   129,877,136,000    59.2952%
+2023      65,839,123,363   155,442,049,000    42.3561%   128,590,512,000    51.2006%
+2024      73,389,165,584   161,329,983,000    45.4901%   135,728,710,000    54.0705%
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+The WCFFBP individual-income-tax series and IRS gross-collections series measure different concepts.
+A positive or negative difference is not an error, residual, unexplained amount, or reconciliation gap.
+The IRS combined category contains employment taxes and estate/trust income tax in addition to individual income tax.
+The IRS total additionally contains business income taxes, estate tax, gift tax, excise taxes, and other components represented in the certified Table 5 structure.
+ETL-171 and ETL-172G-3 must not be added together.
+This bridge is intended to become more informative as additional ETL-172 receipt categories are reconstructed.
+Final receipts-ledger inclusion remains unauthorized.
+
+ETL-172G-4 RESULT: PASS

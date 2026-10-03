@@ -1,0 +1,775 @@
+{
+  "checkpoint": "ETL-174B-5Y-2C.1",
+  "generated_utc": "2026-10-02T04:44:19.015959+00:00",
+  "mode": "READ_ONLY_OFFICIAL_FORMULA_REPLICATION",
+  "hud_documented_components": [
+    "RAD 1 HAP",
+    "RAD 2 HAP",
+    "RAD 3 HAP",
+    "Litigation HAP",
+    "Homeownership HAP",
+    "Moving to Work HAP",
+    "One Year Mainstream MTW HAP",
+    "Family Unification Non MTW HAP",
+    "Family Unification Pre-2008 MTW HAP",
+    "Family Unification 2008 Forward MTW HAP",
+    "Non-Elderly Disabled Non-MTW HAP",
+    "Non-Elderly Disabled 2008 Forward MTW HAP",
+    "Portable Voucher HAP",
+    "HOPE VI HAP",
+    "Tenant Protection HAP",
+    "VASH HAP",
+    "Housing Stability Vouchers HAP",
+    "Foster Youth to Independence HAP",
+    "Mobility Demonstration HAP",
+    "Emergency Transfer Vouchers for VAWA HAP",
+    "DHAP to HCV Vouchers HAP",
+    "All Other Vouchers HAP",
+    "MTW FUP 2008 Forward After First HAP",
+    "MTW FUP Pre-2008 After First HAP",
+    "MTW NED 2008 Forward After First HAP",
+    "MTW VASH After First HAP",
+    "MTW One Year Mainstream After First HAP",
+    "MTW FYI After First HAP",
+    "MTW Mobility Demonstration After First HAP",
+    "MTW Housing Stability After First HAP",
+    "MTW VAWA After First HAP",
+    "HCV FSS Escrow Deposits",
+    "All Voucher HAP After First of Month"
+  ],
+  "workbook_metadata": [
+    {
+      "source_workbook": "Oct-Dec2022VMS.xlsx",
+      "header_count": 128,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSAPR-JUN2022.xlsx",
+      "header_count": 128,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSJAN-MAR2022.xlsx",
+      "header_count": 128,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSJUL-SEP2022.xlsx",
+      "header_count": 128,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSAPR-JUN2023.xlsx",
+      "header_count": 128,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSJan-Mar2023.xlsx",
+      "header_count": 128,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSJul-Sep2023.xlsx",
+      "header_count": 128,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSOct-Dec2023.xlsx",
+      "header_count": 132,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "JAN-MAR_2024_VMS.xlsx",
+      "header_count": 132,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSApr-Jun2024.xlsx",
+      "header_count": 132,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSJul-Sep2024.xlsx",
+      "header_count": 132,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    },
+    {
+      "source_workbook": "VMSOct-Dec2024.xlsx",
+      "header_count": 132,
+      "formula_component_count": 33,
+      "mapped_component_count": 28,
+      "formula_mapping": {
+        "Litigation HAP": "litigation_hap",
+        "Homeownership HAP": "homeownership_hap",
+        "Moving to Work HAP": "moving_to_work_hap",
+        "One Year Mainstream MTW HAP": "one_year_mainstream_mtw_hap",
+        "Family Unification Non MTW HAP": "family_unification_non_mtw_hap",
+        "Family Unification Pre-2008 MTW HAP": "family_unification_pre2008_mtw_hap",
+        "Family Unification 2008 Forward MTW HAP": "family_unification_2008_forward_mtw_hap",
+        "Non-Elderly Disabled Non-MTW HAP": "non_elderly_disabled_non_mtw_hap",
+        "Non-Elderly Disabled 2008 Forward MTW HAP": "non_elderly_disabled_2008_forward_mtw_hap",
+        "Portable Voucher HAP": "portable_voucher_paid_hap",
+        "HOPE VI HAP": "hope_vi_hap",
+        "Tenant Protection HAP": "tenant_protection_hap",
+        "VASH HAP": "veterans_affair_supported_housing_vash_hap",
+        "Housing Stability Vouchers HAP": "housing_stability_vouchers_hap_expenses",
+        "Foster Youth to Independence HAP": "foster_youth_to_independence_hap",
+        "Mobility Demonstration HAP": "mobility_demonstration_hap",
+        "Emergency Transfer Vouchers for VAWA HAP": "emergency_transfer_vouchers_for_vawa_hap",
+        "All Other Vouchers HAP": "all_other_vouchers_hap",
+        "MTW FUP 2008 Forward After First HAP": "mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW FUP Pre-2008 After First HAP": "mtw_family_unification_pre_2008_hap_after_the_first_of_the_month",
+        "MTW NED 2008 Forward After First HAP": "mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month",
+        "MTW VASH After First HAP": "mtw_vash_hap_expenses_after_the_first_of_the_month",
+        "MTW One Year Mainstream After First HAP": "mtw_one_year_mainstream_hap_after_the_first_of_the_month",
+        "MTW FYI After First HAP": "mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month",
+        "MTW Housing Stability After First HAP": "mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month",
+        "MTW VAWA After First HAP": "mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month",
+        "HCV FSS Escrow Deposits": "hcv_fss_escrow_deposits",
+        "All Voucher HAP After First of Month": "hcv_all_voucher_hap_expenses_after_the_first_of_the_month"
+      },
+      "missing_formula_components": {
+        "RAD 1 HAP": [
+          "rental_assistance_demonstration_1_hap",
+          "rad_1_hap",
+          "rad1_hap"
+        ],
+        "RAD 2 HAP": [
+          "rental_assistance_demonstration_2_hap",
+          "rad_2_hap",
+          "rad2_hap"
+        ],
+        "RAD 3 HAP": [
+          "rental_assistance_demonstration_3_hap",
+          "rad_3_hap",
+          "rad3_hap"
+        ],
+        "DHAP to HCV Vouchers HAP": [
+          "dhap_to_hcv_vouchers_hap",
+          "dhap_to_hcv_hap"
+        ],
+        "MTW Mobility Demonstration After First HAP": [
+          "mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month",
+          "mtw_mobility_demonstration_hap_after_the_first_of_the_month"
+        ]
+      }
+    }
+  ],
+  "analysis": null
+}

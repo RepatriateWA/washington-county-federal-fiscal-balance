@@ -1,0 +1,343 @@
+====================================================================================================
+HUD VMS WASHINGTON HAP SEMANTIC PROFILE
+ETL-174B-5Y-2B
+====================================================================================================
+
+READ-ONLY diagnostic profile. Calculated totals below are exploratory controls, not ledger values.
+
+CONTROL SUMMARY
+----------------------------------------------------------------------------------------------------
+Workbooks expected                   : 12
+Workbooks processed                  : 12
+Washington Vms1 observations         : 1,008
+Distinct Washington PHA codes        : 28
+Distinct submission months           : 36
+Expected submission months           : 36
+Duplicate PHA-month keys             : 0
+Missing HAP Total observations       : 0
+
+====================================================================================================
+WORKBOOK EXTRACTION CONTROL
+====================================================================================================
+
+Oct-Dec2022VMS.xlsx
+    source rows after header : 6,470
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSAPR-JUN2022.xlsx
+    source rows after header : 6,474
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSJAN-MAR2022.xlsx
+    source rows after header : 6,474
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSJUL-SEP2022.xlsx
+    source rows after header : 6,472
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSAPR-JUN2023.xlsx
+    source rows after header : 6,454
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSJan-Mar2023.xlsx
+    source rows after header : 6,456
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSJul-Sep2023.xlsx
+    source rows after header : 6,452
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSOct-Dec2023.xlsx
+    source rows after header : 6,448
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+JAN-MAR_2024_VMS.xlsx
+    source rows after header : 6,434
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSApr-Jun2024.xlsx
+    source rows after header : 6,432
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSJul-Sep2024.xlsx
+    source rows after header : 6,431
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+VMSOct-Dec2024.xlsx
+    source rows after header : 6,430
+    Washington rows          : 84
+    invalid month rows        : 0
+    missing diagnostics      : NONE
+
+====================================================================================================
+MONTH COVERAGE
+====================================================================================================
+
+CY2022: 12 months
+    2022-01  PHA observations=28
+    2022-02  PHA observations=28
+    2022-03  PHA observations=28
+    2022-04  PHA observations=28
+    2022-05  PHA observations=28
+    2022-06  PHA observations=28
+    2022-07  PHA observations=28
+    2022-08  PHA observations=28
+    2022-09  PHA observations=28
+    2022-10  PHA observations=28
+    2022-11  PHA observations=28
+    2022-12  PHA observations=28
+CY2023: 12 months
+    2023-01  PHA observations=28
+    2023-02  PHA observations=28
+    2023-03  PHA observations=28
+    2023-04  PHA observations=28
+    2023-05  PHA observations=28
+    2023-06  PHA observations=28
+    2023-07  PHA observations=28
+    2023-08  PHA observations=28
+    2023-09  PHA observations=28
+    2023-10  PHA observations=28
+    2023-11  PHA observations=28
+    2023-12  PHA observations=28
+CY2024: 12 months
+    2024-01  PHA observations=28
+    2024-02  PHA observations=28
+    2024-03  PHA observations=28
+    2024-04  PHA observations=28
+    2024-05  PHA observations=28
+    2024-06  PHA observations=28
+    2024-07  PHA observations=28
+    2024-08  PHA observations=28
+    2024-09  PHA observations=28
+    2024-10  PHA observations=28
+    2024-11  PHA observations=28
+    2024-12  PHA observations=28
+
+====================================================================================================
+WASHINGTON PHA INVENTORY
+====================================================================================================
+
+WA001    Seattle Housing Authority
+WA002    HA OF KING COUNTY
+WA003    Housing Authority of the City of Bremerton
+WA004    Peninsula Housing Authority
+WA005    HA City of Tacoma
+WA006    Housing Authority of the City of Everett
+WA007    Housing Authority City of Longview
+WA008    Housing Authority of the City of Vancouver
+WA011    HA City of Renton
+WA012    Duplicated Record | HA City of Kennewick
+WA013    Columbia Gorge Housing Authority
+WA014    Duplicated Record | HA Of Grant County
+WA017    HA Of Asotin County
+WA018    Duplicated Record | HA Of Grays Harbor County
+WA020    HA City of Kelso
+WA021    HA City of Pasco and Franklin County
+WA024    HA Of Island County
+WA025    Housing Authority City of Bellingham
+WA036    Kitsap County Consolidated Housing Auth
+WA039    Housing Authority of Snohomish County
+WA042    Duplicated Record | HA City of Yakima
+WA049    HA Of Thurston County
+WA054    HA Of Pierce County
+WA055    HA City of Spokane
+WA057    HA City of Walla Walla
+WA061    Housing Authority of Skagit County
+WA064    HA Of Chelan Co and the City of Wenatchee
+WA071    Housing Authority of Okanogan County
+
+====================================================================================================
+PHA-MONTH UNIQUENESS
+====================================================================================================
+
+PASS: no duplicate PHA Code x Submission Month keys.
+
+====================================================================================================
+HAP TOTAL FIELD PROFILE
+====================================================================================================
+
+Numeric observations : 1,008
+Positive             : 1,008
+Zero                 : 0
+Negative             : 0
+Minimum              : $77,745.00
+Maximum              : $17,598,865.00
+
+====================================================================================================
+WASHINGTON MONTHLY HAP TOTAL — DIAGNOSTIC ONLY
+====================================================================================================
+
+2022-01    $51,746,993.00
+2022-02    $51,776,537.00
+2022-03    $51,233,708.00
+2022-04    $51,955,077.00
+2022-05    $52,205,914.00
+2022-06    $52,453,864.00
+2022-07    $52,753,218.00
+2022-08    $53,300,864.00
+2022-09    $53,075,548.00
+2022-10    $54,804,942.00
+2022-11    $54,918,794.00
+2022-12    $55,482,102.00
+2023-01    $56,406,116.00
+2023-02    $56,696,330.00
+2023-03    $57,041,355.00
+2023-04    $57,929,304.00
+2023-05    $57,862,877.00
+2023-06    $58,303,644.00
+2023-07    $58,983,753.00
+2023-08    $59,552,298.00
+2023-09    $60,621,898.00
+2023-10    $62,573,495.00
+2023-11    $62,838,504.00
+2023-12    $62,738,250.00
+2024-01    $63,466,197.00
+2024-02    $64,220,488.00
+2024-03    $64,743,566.00
+2024-04    $66,066,097.00
+2024-05    $66,153,103.00
+2024-06    $65,353,737.00
+2024-07    $67,270,802.00
+2024-08    $68,165,233.00
+2024-09    $68,413,561.00
+2024-10    $70,188,575.00
+2024-11    $70,849,358.00
+2024-12    $71,115,825.00
+
+====================================================================================================
+WASHINGTON ANNUAL HAP TOTAL — DIAGNOSTIC ONLY
+====================================================================================================
+
+CY2022    $635,707,561.00
+CY2023    $711,547,824.00
+CY2024    $806,006,542.00
+
+====================================================================================================
+MONTH-TO-MONTH HAP BEHAVIOR
+====================================================================================================
+
+2022-01 -> 2022-02    $51,746,993.00 -> $51,776,537.00    change=$29,544.00    pct=+0.0571%
+2022-02 -> 2022-03    $51,776,537.00 -> $51,233,708.00    change=$-542,829.00    pct=-1.0484%
+2022-03 -> 2022-04    $51,233,708.00 -> $51,955,077.00    change=$721,369.00    pct=+1.4080%
+2022-04 -> 2022-05    $51,955,077.00 -> $52,205,914.00    change=$250,837.00    pct=+0.4828%
+2022-05 -> 2022-06    $52,205,914.00 -> $52,453,864.00    change=$247,950.00    pct=+0.4749%
+2022-06 -> 2022-07    $52,453,864.00 -> $52,753,218.00    change=$299,354.00    pct=+0.5707%
+2022-07 -> 2022-08    $52,753,218.00 -> $53,300,864.00    change=$547,646.00    pct=+1.0381%
+2022-08 -> 2022-09    $53,300,864.00 -> $53,075,548.00    change=$-225,316.00    pct=-0.4227%
+2022-09 -> 2022-10    $53,075,548.00 -> $54,804,942.00    change=$1,729,394.00    pct=+3.2584%
+2022-10 -> 2022-11    $54,804,942.00 -> $54,918,794.00    change=$113,852.00    pct=+0.2077%
+2022-11 -> 2022-12    $54,918,794.00 -> $55,482,102.00    change=$563,308.00    pct=+1.0257%
+2022-12 -> 2023-01    $55,482,102.00 -> $56,406,116.00    change=$924,014.00    pct=+1.6654%
+2023-01 -> 2023-02    $56,406,116.00 -> $56,696,330.00    change=$290,214.00    pct=+0.5145%
+2023-02 -> 2023-03    $56,696,330.00 -> $57,041,355.00    change=$345,025.00    pct=+0.6085%
+2023-03 -> 2023-04    $57,041,355.00 -> $57,929,304.00    change=$887,949.00    pct=+1.5567%
+2023-04 -> 2023-05    $57,929,304.00 -> $57,862,877.00    change=$-66,427.00    pct=-0.1147%
+2023-05 -> 2023-06    $57,862,877.00 -> $58,303,644.00    change=$440,767.00    pct=+0.7617%
+2023-06 -> 2023-07    $58,303,644.00 -> $58,983,753.00    change=$680,109.00    pct=+1.1665%
+2023-07 -> 2023-08    $58,983,753.00 -> $59,552,298.00    change=$568,545.00    pct=+0.9639%
+2023-08 -> 2023-09    $59,552,298.00 -> $60,621,898.00    change=$1,069,600.00    pct=+1.7961%
+2023-09 -> 2023-10    $60,621,898.00 -> $62,573,495.00    change=$1,951,597.00    pct=+3.2193%
+2023-10 -> 2023-11    $62,573,495.00 -> $62,838,504.00    change=$265,009.00    pct=+0.4235%
+2023-11 -> 2023-12    $62,838,504.00 -> $62,738,250.00    change=$-100,254.00    pct=-0.1595%
+2023-12 -> 2024-01    $62,738,250.00 -> $63,466,197.00    change=$727,947.00    pct=+1.1603%
+2024-01 -> 2024-02    $63,466,197.00 -> $64,220,488.00    change=$754,291.00    pct=+1.1885%
+2024-02 -> 2024-03    $64,220,488.00 -> $64,743,566.00    change=$523,078.00    pct=+0.8145%
+2024-03 -> 2024-04    $64,743,566.00 -> $66,066,097.00    change=$1,322,531.00    pct=+2.0427%
+2024-04 -> 2024-05    $66,066,097.00 -> $66,153,103.00    change=$87,006.00    pct=+0.1317%
+2024-05 -> 2024-06    $66,153,103.00 -> $65,353,737.00    change=$-799,366.00    pct=-1.2084%
+2024-06 -> 2024-07    $65,353,737.00 -> $67,270,802.00    change=$1,917,065.00    pct=+2.9334%
+2024-07 -> 2024-08    $67,270,802.00 -> $68,165,233.00    change=$894,431.00    pct=+1.3296%
+2024-08 -> 2024-09    $68,165,233.00 -> $68,413,561.00    change=$248,328.00    pct=+0.3643%
+2024-09 -> 2024-10    $68,413,561.00 -> $70,188,575.00    change=$1,775,014.00    pct=+2.5945%
+2024-10 -> 2024-11    $70,188,575.00 -> $70,849,358.00    change=$660,783.00    pct=+0.9414%
+2024-11 -> 2024-12    $70,849,358.00 -> $71,115,825.00    change=$266,467.00    pct=+0.3761%
+
+====================================================================================================
+DIAGNOSTIC FIELD AVAILABILITY
+====================================================================================================
+
+portable_voucher_paid_hap
+    numeric  : 1,008
+    positive : 935
+    zero     : 73
+    negative : 0
+total_hap_for_portable_units_administered
+    numeric  : 1,008
+    positive : 584
+    zero     : 424
+    negative : 0
+mainstream_hap
+    numeric  : 1,008
+    positive : 540
+    zero     : 468
+    negative : 0
+hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+    numeric  : 1,008
+    positive : 916
+    zero     : 92
+    negative : 0
+project_based_vouchers_total_hap_expenses
+    numeric  : 1,008
+    positive : 833
+    zero     : 175
+    negative : 0
+veterans_affair_supported_housing_vash_hap
+    numeric  : 1,008
+    positive : 765
+    zero     : 243
+    negative : 0
+homeownership_hap
+    numeric  : 1,008
+    positive : 503
+    zero     : 505
+    negative : 0
+tenant_protection_hap
+    numeric  : 1,008
+    positive : 762
+    zero     : 246
+    negative : 0
+foster_youth_to_independence_hap
+    numeric  : 1,008
+    positive : 285
+    zero     : 723
+    negative : 0
+housing_stability_vouchers_hap_expenses
+    numeric  : 1,008
+    positive : 50
+    zero     : 958
+    negative : 0
+
+====================================================================================================
+METHODOLOGICAL STOP
+====================================================================================================
+
+HAP Total has NOT been certified as the WCFFBP accounting control.
+Annual diagnostic sums are NOT ledger values.
+Diagnostic HAP fields have NOT been assumed additive.
+Vms2 / Emergency Housing Voucher values have NOT been added.
+No USAspending reconciliation has been performed.
+No county allocation has been performed.
+No database writes occurred.

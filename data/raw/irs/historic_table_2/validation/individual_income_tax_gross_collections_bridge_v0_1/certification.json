@@ -1,0 +1,53 @@
+{
+  "etl_step": "ETL-172G-4",
+  "result": "PASS",
+  "artifact_type": "DIAGNOSTIC_MEASUREMENT_BRIDGE",
+  "inputs": {
+    "g3": {
+      "path": "data\\raw\\irs\\historic_table_2\\validation\\washington_individual_income_tax_receipts_v0_1\\washington_individual_income_tax_receipts.csv",
+      "bytes": 5438,
+      "sha256": "A2E841BAF74455CABBF47B193ED1447EC37FC96A7EC2DC2DA157F90A367A2185"
+    },
+    "irs_semantic": {
+      "path": "data\\raw\\irs\\gross_collections\\validation\\semantic_certification_v0_1\\washington_semantic_extract.csv",
+      "bytes": 5421,
+      "sha256": "3ECF50C7E21DC9BF9FC2F8F76ADA27704A2ADB852D6FFB1B7883399B72573A8B"
+    },
+    "irs_reconciliation": {
+      "path": "data\\raw\\irs\\gross_collections\\validation\\semantic_certification_v0_1\\washington_reconciliation.csv",
+      "bytes": 487,
+      "sha256": "86B26F93320AE77BCFD1B166E640C5BC8A5E8E45B6DB51EE19C7AAAB8E8F35C6"
+    }
+  },
+  "comparison_design": {
+    "wcffbp_series": "Economic-incidence allocation of national Individual Income Taxes receipts",
+    "irs_total_series": "Administrative Washington gross collections",
+    "irs_narrower_series": "Individual income + employment + estate/trust income tax combined",
+    "concept_equivalent": false,
+    "additive": false,
+    "comparison_status": "DIAGNOSTIC_ONLY"
+  },
+  "certification": {
+    "expected_observations": 10,
+    "actual_observations": 10,
+    "year_coverage": "PASS",
+    "year_uniqueness": "PASS",
+    "irs_control_cross_check": "PASS",
+    "difference_arithmetic": "PASS",
+    "ratio_arithmetic": "PASS",
+    "diagnostic_only_boundary": "PASS",
+    "concept_equivalence_boundary": "PASS",
+    "nonadditivity_boundary": "PASS"
+  },
+  "interpretation_boundary": {
+    "difference_is_error": false,
+    "difference_is_residual": false,
+    "difference_is_unexplained_amount": false,
+    "forced_reconciliation": false,
+    "employment_tax_subtraction": false,
+    "corporate_income_tax_allocation": false,
+    "rockefeller_vintage_replication": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

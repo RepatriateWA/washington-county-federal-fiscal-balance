@@ -1,0 +1,56 @@
+====================================================================================================
+WASHINGTON INDIVIDUAL-INCOME-TAX RECEIPTS ALLOCATION - ETL-172G-3
+====================================================================================================
+
+WCFFBP principal historical reconstruction. Not a Rockefeller-vintage replication.
+
+INPUT CERTIFICATION
+----------------------------------------------------------------------------------------------------
+OMB input : data\raw\omb\historical_tables\FY2027\validation\individual_income_tax_receipt_controls_v0_1\national_individual_income_tax_receipt_controls.csv
+OMB SHA256: 09D25C2C79D31452E298A0617BFFED2804D31CDE4AB311C805922FB4242018D0
+IRS input : data\raw\irs\historic_table_2\validation\individual_income_tax_allocator_certification_v0_1\washington_individual_income_tax_allocator.csv
+IRS SHA256: 8E59CF62B926CA4D135500594C1657289FF315D3D2C9420547AEC2A1FAF4AC81
+
+METHOD
+----------------------------------------------------------------------------------------------------
+WA receipts = OMB national Individual Income Taxes receipts * WA IRS SOI liability share
+Liability allocator = A06500 + A85530 + A85300
+FFY2015-FFY2023 use the corresponding finalized tax-year share.
+FFY2024 uses TY2023 as the latest certified available share.
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Expected observations          : 10
+Actual observations            : 10
+Fiscal-year coverage           : PASS
+Fiscal-year uniqueness         : PASS
+FFY-to-TY mapping              : PASS
+Allocation arithmetic          : PASS
+FFY2024 TY2023 carry-forward   : PASS
+Rockefeller replication boundary: PASS
+
+WASHINGTON INDIVIDUAL-INCOME-TAX RECEIPTS
+----------------------------------------------------------------------------------------------------
+FFY   TY                NATIONAL      WA SHARE         WA RECEIPTS                        METHOD
+----------------------------------------------------------------------------------------------------
+2015  2015     1,540,802,000,000   2.64521337%      40,757,500,498   CONTEMPORANEOUS_FINAL_SHARE
+2016  2016     1,546,075,000,000   2.86722809%      44,329,496,669   CONTEMPORANEOUS_FINAL_SHARE
+2017  2017     1,587,120,000,000   2.84313631%      45,123,985,072   CONTEMPORANEOUS_FINAL_SHARE
+2018  2018     1,683,538,000,000   2.90741225%      48,947,390,032   CONTEMPORANEOUS_FINAL_SHARE
+2019  2019     1,717,857,000,000   3.05115320%      52,414,448,774   CONTEMPORANEOUS_FINAL_SHARE
+2020  2020     1,608,663,000,000   3.14971764%      50,668,342,229   CONTEMPORANEOUS_FINAL_SHARE
+2021  2021     2,044,377,000,000   3.14543328%      64,304,514,519   CONTEMPORANEOUS_FINAL_SHARE
+2022  2022     2,632,146,000,000   2.92578395%      77,010,905,244   CONTEMPORANEOUS_FINAL_SHARE
+2023  2023     2,176,481,000,000   3.02502633%      65,839,123,363   CONTEMPORANEOUS_FINAL_SHARE
+2024  2023     2,426,067,000,000   3.02502633%      73,389,165,584        LATEST_AVAILABLE_SHARE
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+These values estimate Washington's share of national federal Individual Income Taxes receipts using IRS SOI tax-liability shares.
+They are an economic-incidence allocation series, not IRS administrative collections recorded in Washington.
+They must therefore be compared with, not added to, the ETL-171 IRS gross-collections benchmark.
+This series does not reproduce the information set of a particular Rockefeller report vintage.
+No corporate-income-tax receipts are included.
+Final receipts-ledger inclusion remains unauthorized pending broader ETL-172 receipts reconciliation.
+
+ETL-172G-3 RESULT: PASS

@@ -1,0 +1,10 @@
+tax_year,source_path,row_count,column_count,state_column,agi_stub_column,distinct_state_codes,distinct_agi_stubs,washington_rows,A06500_present,A85530_present,A85300_present
+2015,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2015.csv,583,129,STATE,AGI_STUB,53,11,11,True,True,True
+2016,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2016.csv,583,145,STATE,AGI_STUB,53,11,11,True,True,True
+2017,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2017.csv,583,151,STATE,AGI_STUB,53,11,11,True,True,True
+2018,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2018.csv,594,151,STATE,AGI_STUB,54,11,11,True,True,True
+2019,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2019.csv,594,150,STATE,AGI_STUB,54,11,11,True,True,True
+2020,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2020.csv,594,163,STATE,AGI_STUB,54,11,11,True,True,True
+2021,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2021.csv,594,165,STATE,AGI_STUB,54,11,11,True,True,True
+2022,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2022.csv,594,163,STATE,AGI_STUB,54,11,11,True,True,True
+2023,data/raw/irs/historic_table_2/source/irs_historic_table_2_state_data_ty2023.csv,594,165,STATE,AGI_STUB,54,11,11,True,True,True

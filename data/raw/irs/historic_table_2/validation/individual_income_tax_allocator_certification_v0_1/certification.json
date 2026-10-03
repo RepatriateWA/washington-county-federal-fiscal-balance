@@ -1,0 +1,43 @@
+{
+  "etl_step": "ETL-172G-2A/2B",
+  "result": "PASS",
+  "method": {
+    "liability_formula": "A06500 + A85530 + A85300",
+    "share_formula": "WA liability / source-provided US liability",
+    "geography_column": "STATE",
+    "agi_stub_column": "AGI_STUB",
+    "total_agi_stub": 0,
+    "us_geography": "US",
+    "wa_geography": "WA"
+  },
+  "tax_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "certification": {
+    "expected_observations": 9,
+    "actual_observations": 9,
+    "coverage": "PASS",
+    "uniqueness": "PASS",
+    "us_total_row_selection": "PASS",
+    "wa_total_row_selection": "PASS",
+    "liability_arithmetic": "PASS",
+    "share_arithmetic": "PASS",
+    "source_hash_coverage": "PASS"
+  },
+  "interpretation_boundary": {
+    "ffy_to_tax_year_mapping": false,
+    "omb_controls_applied": false,
+    "rockefeller_reconstruction": false,
+    "forced_irs_gross_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

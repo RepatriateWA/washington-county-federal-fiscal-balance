@@ -1,0 +1,83 @@
+{
+  "etl_step": "ETL-172G-3",
+  "result": "PASS",
+  "series": "WASHINGTON_INDIVIDUAL_INCOME_TAX_RECEIPTS",
+  "accounting_role": "FEDERAL_RECEIPTS_OUTFLOW",
+  "reconstruction_type": "WCFFBP_PRINCIPAL_HISTORICAL",
+  "rockefeller_replication": false,
+  "inputs": {
+    "omb": {
+      "path": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\individual_income_tax_receipt_controls_v0_1\\national_individual_income_tax_receipt_controls.csv",
+      "bytes": 1852,
+      "sha256": "09D25C2C79D31452E298A0617BFFED2804D31CDE4AB311C805922FB4242018D0"
+    },
+    "irs": {
+      "path": "data\\raw\\irs\\historic_table_2\\validation\\individual_income_tax_allocator_certification_v0_1\\washington_individual_income_tax_allocator.csv",
+      "bytes": 3917,
+      "sha256": "8E59CF62B926CA4D135500594C1657289FF315D3D2C9420547AEC2A1FAF4AC81"
+    }
+  },
+  "method": {
+    "formula": "OMB national Individual Income Taxes * Washington IRS SOI liability share",
+    "liability_formula": "A06500 + A85530 + A85300",
+    "mapping": {
+      "2015": {
+        "tax_year": 2015,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2016": {
+        "tax_year": 2016,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2017": {
+        "tax_year": 2017,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2018": {
+        "tax_year": 2018,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2019": {
+        "tax_year": 2019,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2020": {
+        "tax_year": 2020,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2021": {
+        "tax_year": 2021,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2022": {
+        "tax_year": 2022,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2023": {
+        "tax_year": 2023,
+        "allocation_method": "CONTEMPORANEOUS_FINAL_SHARE"
+      },
+      "2024": {
+        "tax_year": 2023,
+        "allocation_method": "LATEST_AVAILABLE_SHARE"
+      }
+    }
+  },
+  "certification": {
+    "expected_observations": 10,
+    "actual_observations": 10,
+    "fiscal_year_coverage": "PASS",
+    "fiscal_year_uniqueness": "PASS",
+    "mapping_certification": "PASS",
+    "allocation_arithmetic": "PASS",
+    "fy2024_carry_forward": "PASS",
+    "rockefeller_replication_boundary": "PASS"
+  },
+  "interpretation_boundary": {
+    "irs_gross_collections_additive": false,
+    "corporate_income_tax_included": false,
+    "rockefeller_vintage_replication": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

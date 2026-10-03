@@ -1,0 +1,711 @@
+====================================================================================================
+HUD VMS WASHINGTON HAP TOTAL OFFICIAL-FORMULA REPLICATION
+ETL-174B-5Y-2C.1
+====================================================================================================
+
+Official-definition replication test. No heuristic or fuzzy field matching.
+
+HUD FORMULA CONTROL
+----------------------------------------------------------------------------------------------------
+Documented formula components : 33
+
+ 1. RAD 1 HAP
+ 2. RAD 2 HAP
+ 3. RAD 3 HAP
+ 4. Litigation HAP
+ 5. Homeownership HAP
+ 6. Moving to Work HAP
+ 7. One Year Mainstream MTW HAP
+ 8. Family Unification Non MTW HAP
+ 9. Family Unification Pre-2008 MTW HAP
+10. Family Unification 2008 Forward MTW HAP
+11. Non-Elderly Disabled Non-MTW HAP
+12. Non-Elderly Disabled 2008 Forward MTW HAP
+13. Portable Voucher HAP
+14. HOPE VI HAP
+15. Tenant Protection HAP
+16. VASH HAP
+17. Housing Stability Vouchers HAP
+18. Foster Youth to Independence HAP
+19. Mobility Demonstration HAP
+20. Emergency Transfer Vouchers for VAWA HAP
+21. DHAP to HCV Vouchers HAP
+22. All Other Vouchers HAP
+23. MTW FUP 2008 Forward After First HAP
+24. MTW FUP Pre-2008 After First HAP
+25. MTW NED 2008 Forward After First HAP
+26. MTW VASH After First HAP
+27. MTW One Year Mainstream After First HAP
+28. MTW FYI After First HAP
+29. MTW Mobility Demonstration After First HAP
+30. MTW Housing Stability After First HAP
+31. MTW VAWA After First HAP
+32. HCV FSS Escrow Deposits
+33. All Voucher HAP After First of Month
+
+====================================================================================================
+WORKBOOK FIELD MAPPING
+====================================================================================================
+
+Oct-Dec2022VMS.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSAPR-JUN2022.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSJAN-MAR2022.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSJUL-SEP2022.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSAPR-JUN2023.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSJan-Mar2023.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSJul-Sep2023.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSOct-Dec2023.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+JAN-MAR_2024_VMS.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSApr-Jun2024.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSJul-Sep2024.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+VMSOct-Dec2024.xlsx
+    mapped components : 33/33
+    RESULT            : MAPPING COMPLETE
+        RAD 1 HAP -> rental_assistance_demonstration_1_public_housing_conversion_hap
+        RAD 2 HAP -> rental_assistance_demonstration_2_mod_rehab_rent_supp_rap_conversion_hap
+        RAD 3 HAP -> rental_assistance_demonstration_3_prac_conversion_hap
+        Litigation HAP -> litigation_hap
+        Homeownership HAP -> homeownership_hap
+        Moving to Work HAP -> moving_to_work_hap
+        One Year Mainstream MTW HAP -> one_year_mainstream_mtw_hap
+        Family Unification Non MTW HAP -> family_unification_non_mtw_hap
+        Family Unification Pre-2008 MTW HAP -> family_unification_pre2008_mtw_hap
+        Family Unification 2008 Forward MTW HAP -> family_unification_2008_forward_mtw_hap
+        Non-Elderly Disabled Non-MTW HAP -> non_elderly_disabled_non_mtw_hap
+        Non-Elderly Disabled 2008 Forward MTW HAP -> non_elderly_disabled_2008_forward_mtw_hap
+        Portable Voucher HAP -> portable_voucher_paid_hap
+        HOPE VI HAP -> hope_vi_hap
+        Tenant Protection HAP -> tenant_protection_hap
+        VASH HAP -> veterans_affair_supported_housing_vash_hap
+        Housing Stability Vouchers HAP -> housing_stability_vouchers_hap_expenses
+        Foster Youth to Independence HAP -> foster_youth_to_independence_hap
+        Mobility Demonstration HAP -> mobility_demonstration_hap
+        Emergency Transfer Vouchers for VAWA HAP -> emergency_transfer_vouchers_for_vawa_hap
+        DHAP to HCV Vouchers HAP -> dhap_to_hcv_voucher_hap
+        All Other Vouchers HAP -> all_other_vouchers_hap
+        MTW FUP 2008 Forward After First HAP -> mtw_family_unification_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW FUP Pre-2008 After First HAP -> mtw_family_unification_pre_2008_hap_after_the_first_of_the_month
+        MTW NED 2008 Forward After First HAP -> mtw_non_elderly_disabled_2008_forward_hap_expenses_after_the_first_of_the_month
+        MTW VASH After First HAP -> mtw_vash_hap_expenses_after_the_first_of_the_month
+        MTW One Year Mainstream After First HAP -> mtw_one_year_mainstream_hap_after_the_first_of_the_month
+        MTW FYI After First HAP -> mtw_foster_youth_to_independence_hap_expenses_after_the_first_of_the_month
+        MTW Mobility Demonstration After First HAP -> mtw_moblity_demonstration_hap_expenses_after_the_first_of_the_month
+        MTW Housing Stability After First HAP -> mtw_housing_stability_voucher_hap_expenses_after_the_first_of_the_month
+        MTW VAWA After First HAP -> mtw_emergency_transfer_vouchers_for_vawa_hap_expenses_after_the_first_of_the_month
+        HCV FSS Escrow Deposits -> hcv_fss_escrow_deposits
+        All Voucher HAP After First of Month -> hcv_all_voucher_hap_expenses_after_the_first_of_the_month
+
+====================================================================================================
+POPULATION CONTROL
+====================================================================================================
+
+PHA-month observations : 1,008
+Distinct WA PHAs        : 28
+Distinct months         : 36
+Duplicate keys          : 0
+
+====================================================================================================
+OFFICIAL FORMULA REPLICATION
+====================================================================================================
+
+Exact within $0.01      : 1,008/1,008
+Near within $1.00       : 1,008/1,008
+Exact rate              : 100.000000%
+Signed residual sum     : $0.00
+Absolute residual sum   : $0.00
+Minimum residual        : $0.00
+Maximum residual        : $0.00
+
+====================================================================================================
+ANNUAL REPLICATION CONTROL
+====================================================================================================
+
+CY2022
+    HUD HAP Total        : $635,707,561.00
+    Reconstructed        : $635,707,561.00
+    Difference           : $0.00
+CY2023
+    HUD HAP Total        : $711,547,824.00
+    Reconstructed        : $711,547,824.00
+    Difference           : $0.00
+CY2024
+    HUD HAP Total        : $806,006,542.00
+    Reconstructed        : $806,006,542.00
+    Difference           : $0.00
+
+====================================================================================================
+OFFICIAL COMPONENT TOTALS
+====================================================================================================
+
+RAD 1 HAP
+    non-null observations : 1,008
+    positive observations : 360
+    three-year sum         : $37,430,295.00
+
+RAD 2 HAP
+    non-null observations : 1,008
+    positive observations : 144
+    three-year sum         : $14,627,053.00
+
+RAD 3 HAP
+    non-null observations : 1,008
+    positive observations : 31
+    three-year sum         : $9,062,434.00
+
+Litigation HAP
+    non-null observations : 1,008
+    positive observations : 0
+    three-year sum         : $0.00
+
+Homeownership HAP
+    non-null observations : 1,008
+    positive observations : 503
+    three-year sum         : $3,569,229.00
+
+Moving to Work HAP
+    non-null observations : 1,008
+    positive observations : 227
+    three-year sum         : $1,039,046,477.00
+
+One Year Mainstream MTW HAP
+    non-null observations : 1,008
+    positive observations : 131
+    three-year sum         : $71,844,116.00
+
+Family Unification Non MTW HAP
+    non-null observations : 1,008
+    positive observations : 201
+    three-year sum         : $7,158,147.00
+
+Family Unification Pre-2008 MTW HAP
+    non-null observations : 1,008
+    positive observations : 91
+    three-year sum         : $8,911,336.00
+
+Family Unification 2008 Forward MTW HAP
+    non-null observations : 1,008
+    positive observations : 165
+    three-year sum         : $39,639,601.00
+
+Non-Elderly Disabled Non-MTW HAP
+    non-null observations : 1,008
+    positive observations : 421
+    three-year sum         : $56,095,693.00
+
+Non-Elderly Disabled 2008 Forward MTW HAP
+    non-null observations : 1,008
+    positive observations : 132
+    three-year sum         : $19,245,897.00
+
+Portable Voucher HAP
+    non-null observations : 1,008
+    positive observations : 935
+    three-year sum         : $62,094,125.00
+
+HOPE VI HAP
+    non-null observations : 1,008
+    positive observations : 74
+    three-year sum         : $4,774,017.00
+
+Tenant Protection HAP
+    non-null observations : 1,008
+    positive observations : 762
+    three-year sum         : $102,631,461.00
+
+VASH HAP
+    non-null observations : 1,008
+    positive observations : 765
+    three-year sum         : $109,638,651.00
+
+Housing Stability Vouchers HAP
+    non-null observations : 1,008
+    positive observations : 50
+    three-year sum         : $191,395.00
+
+Foster Youth to Independence HAP
+    non-null observations : 1,008
+    positive observations : 285
+    three-year sum         : $4,612,881.00
+
+Mobility Demonstration HAP
+    non-null observations : 1,008
+    positive observations : 0
+    three-year sum         : $0.00
+
+Emergency Transfer Vouchers for VAWA HAP
+    non-null observations : 1,008
+    positive observations : 0
+    three-year sum         : $0.00
+
+DHAP to HCV Vouchers HAP
+    non-null observations : 1,008
+    positive observations : 1
+    three-year sum         : $2,102.00
+
+All Other Vouchers HAP
+    non-null observations : 1,008
+    positive observations : 781
+    three-year sum         : $544,552,966.00
+
+MTW FUP 2008 Forward After First HAP
+    non-null observations : 1,008
+    positive observations : 102
+    three-year sum         : $260,864.00
+
+MTW FUP Pre-2008 After First HAP
+    non-null observations : 1,008
+    positive observations : 28
+    three-year sum         : $36,333.00
+
+MTW NED 2008 Forward After First HAP
+    non-null observations : 1,008
+    positive observations : 39
+    three-year sum         : $60,236.00
+
+MTW VASH After First HAP
+    non-null observations : 1,008
+    positive observations : 124
+    three-year sum         : $369,353.00
+
+MTW One Year Mainstream After First HAP
+    non-null observations : 1,008
+    positive observations : 67
+    three-year sum         : $221,702.00
+
+MTW FYI After First HAP
+    non-null observations : 1,008
+    positive observations : 61
+    three-year sum         : $106,087.00
+
+MTW Mobility Demonstration After First HAP
+    non-null observations : 1,008
+    positive observations : 0
+    three-year sum         : $0.00
+
+MTW Housing Stability After First HAP
+    non-null observations : 1,008
+    positive observations : 0
+    three-year sum         : $0.00
+
+MTW VAWA After First HAP
+    non-null observations : 1,008
+    positive observations : 1
+    three-year sum         : $1.00
+
+HCV FSS Escrow Deposits
+    non-null observations : 1,008
+    positive observations : 675
+    three-year sum         : $7,241,668.00
+
+All Voucher HAP After First of Month
+    non-null observations : 1,008
+    positive observations : 916
+    three-year sum         : $9,837,807.00
+
+====================================================================================================
+METHODOLOGICAL STOP
+====================================================================================================
+
+This test evaluates replication of HUD's documented HAP Total calculation.
+It does not by itself certify HAP Total as the WCFFBP accounting source.
+No USAspending reconciliation was performed.
+No Vms2/EHV values were added.
+No county allocation was performed.
+No database writes occurred.
+No ledger decision was made.

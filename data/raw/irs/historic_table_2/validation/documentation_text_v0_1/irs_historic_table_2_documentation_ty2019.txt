@@ -1,0 +1,909 @@
+State Data
+Tax Year 2019 Documentation Guide
+
+Contents
+
+A. Overview
+B. Nature of Changes
+C. Population Definitions and Tax Return Addresses
+D. Disclosure Protection Procedures
+E. File Characteristics
+F. Selected Income and Tax Items
+G. Endnotes
+
+A. Overview
+
+The Statistics of Income (SOI) Division’s State data is tabulated using individual income tax returns (Forms 1040) filed with the Internal Revenue Service (IRS) during the 12-month period, January 1, 2020 to December 31, 2020. In addition, Tax Year 2019 paper returns were included up until mid-July of 2021 because of processing delays due to the COVID-19 pandemic. While the bulk of returns filed during this 12-month period are primarily for Tax Year 2019, the IRS received a limited number of returns for tax years before 2019. These prior-year returns are used as a proxy for returns that are typically filed beyond the 12-month period and have been included within the state data. [1]
+
+B. Nature of Changes
+
+The following changes have been made to the Tax Year 2019 state data:
+
+The number of dependents field and the health care individual responsibility payment have been removed.
+
+IRAs, pensions, and annuities (A01750), which were previously separate fields and combined in tax year 2018, have been separated back into two fields: IRA distributions (A01400) and pensions and annuities (A01700). 
+
+Due to the COVID-19 pandemic, delays in processing Tax Year 2019 returns occurred because of the temporary closing of submission processing centers. Because of this, delayed Tax Year 2019 paper returns that were processed up until mid-July of 2021 were included within the data. In addition, returns filed for the purpose of receiving an Economic Impact Payment, due to COVID-19, were excluded from the data.
+
+
+C. Population Definitions and Tax Return Addresses
+
+State totals may not be comparable to State totals published elsewhere by SOI.[2] 
+
+State data are based on population data that was filed and processed by the IRS during the 2020 calendar year. In addition, tax year 2019 paper returns were included up until mid-July of 2021 because of processing delays due to the COVID-19 pandemic.
+
+Data do not represent the full U.S. population because many individuals are not required to file an individual income tax return.
+
+The address shown on the tax return may differ from the taxpayer’s actual residence.
+
+Returns filed for the purpose of receiving an Economic Impact Payment, due to COVID-19, were excluded from the data.
+
+
+D. Disclosure Protection Procedures
+
+SOI did not attempt to correct any State codes on the returns; however, it did take the following precautions to avoid disclosing information about specific taxpayers:
+
+Income and tax items with less than 10 returns for a particular AGI class were combined with another AGI class within the same state. AGI classes that have combined are notated with a double asterisk (**).  
+
+All number of returns have been rounded to the nearest 10.
+
+ F. File Characteristics
+
+The state data are available in three formats:  
+
+Individual state, Puerto Rico, other areas, and U.S. Excel files—19in##xx.xlsx (## = 01-54;xx = AL-WY, PR, OA, US)
+A gross state, Puerto Rico, other areas, and U.S. Excel file—19in55cm.xlsx
+A comma separated file (.csv) with AGI classes—19in55cmagi.csv
+
+For all the files, the money amounts are reported in thousands of dollars.
+
+F. Selected Income and Tax Items
+
+Variable Name
+	Description
+	Value/Line Reference
+	
+	Type
+	
+	STATE
+	The state associated with the return
+	Two-digit state abbreviation code
+	
+	Char
+	
+	AGI_STUB
+	Size of adjusted gross income
+	0 = No AGI Stub
+1 = ‘Under $1’
+2 = '$1 under $10,000'3 = '$10,000 under $25,000'4 = '$25,000 under $50,000'5 = '$50,000 under $75,000'6 = '$75,000 under $100,000'7 = '$100,000 under $200,000'
+8 = ‘$200,000 under $500,000’
+9 = ‘$500,000 under $1,000,000’
+10 = ‘$1,000,000 or more’
+	
+	Num
+	
+	N1
+	Number of returns [3]
+	
+	
+	Num
+	
+	MARS1
+	Number of single returns
+	Filing status is single
+	
+	Num
+	
+	MARS2
+	Number of joint returns
+	Filing status is married filing jointly
+	
+	Num
+	
+	MARS4
+	Number of head of household returns
+	Filing status is head of household
+	
+	Num
+	
+	ELF
+	Number of electronically filed returns
+	
+	
+	Num
+	
+	CREP
+	Number of computer prepared paper returns
+	
+	
+	Num
+	
+	PREP
+	Number of returns with paid preparer's signature
+	
+	
+	Num
+	
+	DIR_DEP
+	Number of returns with direct deposit
+	
+	
+	Num
+	
+	N2
+	Number of individuals [4]
+	
+	
+	Num
+	
+	TOTAL_VITA
+	Total number of volunteer prepared returns [5]
+	
+	
+	Num
+	
+	VITA
+	Number of volunteer income tax assistance (VITA) prepared returns [5]
+	
+	
+	Num
+	
+	MVITA
+	Number of military volunteer prepared returns [5]
+	
+	
+	Num
+	
+	TCE
+	Number of tax counseling for the elderly (TCE) prepared returns [5]
+	
+	
+	Num
+	
+	VITA_EIC
+
+	Number of volunteer prepared returns with Earned Income Credit
+	
+	
+	Num
+	
+	RAC
+	Number of refund anticipation check returns [6]
+	
+	
+	Num
+	
+	ELDERLY
+	Number of elderly returns [7]
+	
+	
+	Num
+	
+	A00100
+	Adjust gross income (AGI) [8]
+	1040:8b
+	
+	Num
+	
+	N02650
+	Number of returns with total income
+	1040:7b
+	
+	Num
+	
+	A02650
+	Total income amount
+	1040:7b
+	
+	Num
+	
+	N00200
+	Number of returns with salaries and wages
+	1040:1
+	
+	Num
+	
+	A00200
+	Salaries and wages amount
+	1040:1
+	
+	Num
+	
+	
+	
+	
+	
+	
+	
+	
+N00300
+	Number of returns with taxable interest
+	1040:2b
+	
+	Num
+	
+	A00300
+	Taxable interest amount
+	1040:2b
+	
+	Num
+	
+	N00600
+	Number of returns with ordinary dividends 
+	1040:3b
+	
+	Num
+	
+	A00600
+	Ordinary dividends amount
+	1040:3b
+	
+	Num
+	
+	
+N00650
+	Number of returns with qualified dividends
+	1040:3a
+	Num
+	
+	A00650
+	Qualified dividends amount [9]
+	1040:3a
+	Num
+	
+	N00700
+	Number of returns with state and local income tax refunds
+	Schedule 1:1
+	Num
+	
+	A00700
+	State and local income tax refunds amount
+	Schedule 1:1
+	Num
+	
+	N00900
+	Number of returns with business or professional net income (less loss)
+	Schedule 1:3
+	Num
+	
+	A00900
+	Business or professional net income (less loss) amount
+	Schedule 1:3
+	Num
+	
+	N01000
+	Number of returns with net capital gain (less loss)
+	1040: 6
+	Num
+	
+	A01000
+	Net capital gain (less loss) amount
+	1040: 6
+	Num
+	
+	N01400
+	Number of returns with taxable individual retirement arrangements distributions
+	1040:4b
+	Num
+	
+	A01400
+	Taxable individual retirement arrangements distributions amount
+	1040:4b
+	 Num
+	
+	N01700
+	Number of returns with taxable pensions and annuities
+	1040:4d
+	 Num
+	
+	A01700
+	Taxable pensions and annuities amount
+	1040:4d
+	 Num
+	
+	SCHF
+	Number of farm returns
+	Schedule 1:6
+	Num
+	
+	N02300
+	Number of returns with unemployment compensation
+	Schedule 1:7
+	Num
+	
+	A02300
+	Unemployment compensation amount [10]
+	Schedule 1:7
+	Num
+	
+	N02500
+	Number of returns with taxable Social Security benefits
+	1040:5b
+	Num
+	
+	A02500
+	Taxable Social Security benefits amount
+	1040:5b
+	Num
+	
+	N26270
+	Number of returns with partnership/S-corp net income (less loss)
+	Schedule E:32
+	Num
+
+	
+	A26270
+	Partnership/S-corp net income (less loss) amount
+	Schedule E:32
+	Num
+	
+	N02900
+	Number of returns with total statutory adjustments
+	Schedule 1:22
+	Num
+	
+	A02900
+	Total statutory adjustments amount
+	Schedule 1:22
+	Num
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+N03220
+	Number of returns with educator expenses
+	Schedule 1:10
+	Num
+	
+	A03220
+	Educator expenses amount
+	Schedule 1:10
+	Num
+	
+	N03300
+	Number of returns with self-employment retirement plans
+	Schedule 1:15
+	Num
+	
+	A03300
+	Self-employment retirement plans amount
+	Schedule 1:15
+	Num
+	
+	
+N03270
+	Number of returns with self-employment health insurance deduction
+	Schedule 1:16
+	Num
+	
+	A03270
+	Self-employment health insurance deduction amount
+	Schedule 1:16
+	Num
+	
+	N03150
+	Number of returns with IRA payments
+	Schedule 1:19
+	Num
+	
+	A03150
+	IRA payments amount
+	Schedule 1:19
+	Num
+	
+	N03210
+	Number of returns with student loan interest deduction
+	Schedule 1:20
+	Num
+	
+	A03210
+	Student loan interest deduction amount
+	Schedule 1:20
+	Num
+	
+	  N04450
+	Number of returns with total standard deduction
+	  1040:9
+	 Num
+	
+	  A04450
+	Total standard deduction amount
+	  1040:9
+	 Num
+	
+	  N04100
+	Number of returns with basic standard deduction
+	  1040:9
+	 Num
+	
+	  A04100
+	Basic standard deduction amount
+	  1040:9
+	 Num
+	
+	  N04200
+	Number of returns with additional standard deduction
+	  1040:9
+	 Num
+	
+	  A04200
+	Additional standard deduction amount
+	  1040:9
+	 Num
+	
+	N04470
+	Number of returns with itemized deductions
+	1040:9
+	Num
+	
+	A04470
+	Total itemized deductions amount
+	1040:9
+	Num
+	
+	N17000
+	Number of returns with Total medical and dental expense deduction
+	Schedule A:4
+
+	Num
+	
+	A17000
+	Total medical and dental expense deduction amount
+	Schedule A:4
+	Num
+	
+	N18425
+	Number of returns with State and local income taxes
+	Schedule A:5a
+	Num
+	
+	A18425
+	State and local income taxes amount
+	Schedule A:5a
+	Num
+	
+	N18450
+	Number of returns with State and local general sales tax
+	Schedule A:5a
+	Num
+	
+	A18450
+	State and local general sales tax amount
+	Schedule A:5a
+	Num
+	
+	N18500
+	Number of returns with real estate taxes
+	Schedule A:5b
+	Num
+	
+	A18500
+	Real estate taxes amount
+	Schedule A:5b
+	Num
+	
+	N18800
+	Number of returns with Personal property taxes
+	Schedule A:5c
+	Num
+	
+	A18800
+	Personal property taxes amount
+	Schedule A:5c
+	Num
+	
+	  N18460
+	Number of returns with Limited state and local taxes
+	  Schedule A:5e
+	 Num
+	
+	  A18460
+	Limited state and local taxes
+	  Schedule A:5e
+	 Num
+	
+	
+N18300
+	Number of returns with taxes paid
+	Schedule A:7
+	Num
+	
+	A18300
+	Taxes paid amount
+	Schedule A:7
+	Num
+	
+	N19300
+	Number of returns with mortgage interest paid
+	Schedule A:8a
+	Num
+	
+	A19300
+	Mortgage interest paid amount
+	Schedule A:8a
+	Num
+	
+	N19500
+	Number of returns with Home mortgage from personal seller
+	Schedule A:8b
+	Num
+	
+	A19500
+	Home mortgage from personal seller amount
+	Schedule A:8b
+	Num
+	
+	N19530
+	Number of returns with Deductible points
+	Schedule A:8c
+	Num
+	
+	A19530
+	Deductible points amount
+	Schedule A:8c
+	Num
+	
+	N19570
+	Number of returns with Investment interest paid
+	Schedule A:9
+	Num
+	
+	A19570
+	Investment interest paid amount
+	Schedule A:9
+	Num
+	
+	N19700
+	Number of returns with Total charitable contributions
+	Schedule A:14
+	Num
+	
+	A19700
+	Total charitable contributions amount
+	Schedule A:14
+	Num
+	
+	N20950
+	Number of returns with Other non-limited miscellaneous deductions
+	Schedule A:16
+	Num
+	
+	A20950
+	Other non-limited miscellaneous deductions amount
+	Schedule A:16
+	Num
+	
+	N04475
+	Number of returns with Qualified business income deduction
+	1040:10
+	Num
+	
+	A04475
+	Qualified business income deduction amount
+	1040:10
+	Num
+	
+	N04800
+	Number of returns with taxable income
+	1040:11b
+	Num
+	
+	A04800
+	Taxable income amount
+	1040:11b
+	Num
+	
+	N05800
+	Number of returns with income tax before credits
+	1040:12b
+	Num
+	
+	A05800
+	Income tax before credits amount
+	1040:12b
+	Num
+	
+	N09600
+	Number of returns with alternative minimum tax 
+	Schedule 2:1
+	Num
+	
+	A09600
+	Alternative minimum tax amount
+	Schedule 2:1
+	Num
+	
+	N05780
+	Number of returns with excess advance premium tax credit repayment
+	Schedule 2:2
+	Num
+	
+	A05780
+	Excess advance premium tax credit repayment amount
+	Schedule 2:2
+	Num
+	
+	N07100
+	Number of returns with total tax credits [11]
+	1040:13b
+	Num
+	
+	A07100
+	Total tax credits amount
+	1040:13b
+	Num
+	
+	N07300
+	Number of returns with foreign tax credit
+	Schedule 3:1
+	Num
+	
+	A07300
+	Foreign tax credit amount
+	Schedule 3:1
+	Num
+	
+	N07180
+	Number of returns with child and dependent care credit
+	Schedule 3:2
+	Num
+	
+	A07180
+	Child and dependent care credit amount
+	Schedule 3:2
+	Num
+	
+	N07230
+	Number of returns with nonrefundable education credit
+	Schedule 3:3
+	Num
+	
+	A07230
+	Nonrefundable education credit amount
+	Schedule 3:3
+	Num
+	
+	N07240
+	Number of returns with retirement savings contribution credit
+	Schedule 3:4
+	Num
+	
+	A07240
+	Retirement savings contribution credit amount
+	Schedule 3:4
+	Num
+	
+	N07225
+	Number of returns with child and other dependent tax credit
+	1040:13a
+	Num
+	
+	A07225
+	Child and other dependent tax credit amount
+	1040:13a
+	Num
+	
+	N07260
+	Number of returns with residential energy tax credit
+	Schedule 3:5
+	Num
+	
+	A07260
+	Residential energy tax credit amount
+	Schedule 3:5
+	Num
+	
+	N09400
+	Number of returns with self-employment tax
+	Schedule 2:4
+	Num
+	
+	A09400
+	Self-employment tax amount
+	Schedule 2:4
+	Num
+	
+	N85770
+	Number of returns with total premium tax credit
+	8962:24
+	Num
+	
+	A85770
+	Total premium tax credit amount
+	8962:24
+	Num
+	
+	N85775
+	Number of returns with advance premium tax credit
+	8962:25
+	Num
+	
+	A85775
+	Advance premium tax credit amount 
+	8962:25
+	Num
+	
+	N10600
+	Number of returns with total tax payments
+	1040:19
+	Num
+	
+	A10600
+	Total tax payments amount
+	1040:19
+	Num
+	
+	N59660
+	Number of returns with earned income credit
+	1040:18a
+	Num
+	
+	A59660
+	Earned income credit amount [12]  
+	1040:18a
+	Num
+	
+	N59720
+	Number of returns with excess earned income credit
+	1040:18a
+	Num
+	
+	A59720
+	Excess earned income credit (refundable) amount [13]  
+	1040:18a
+	Num
+	
+	N11070
+	Number of returns with additional child tax credit
+	1040:18b
+	Num
+	
+	A11070
+	Additional child tax credit amount
+	1040:18b
+	Num
+	
+	N10960
+	Number of returns with refundable education credit [14]
+	1040:18c
+	Num
+	
+	A10960
+	Refundable education credit amount
+	1040:18c
+	Num
+	
+	N11560
+	Number of returns with net premium tax credit
+	Schedule 3:9
+	Num
+	
+	A11560
+	Net premium tax credit amount
+	Schedule 3:9
+	Num
+	
+	N06500
+	Number of returns with income tax after credits
+	1040:14
+	Num
+	
+	A06500
+	Income tax after credits amount   
+	1040:14
+	Num
+	
+	N10300
+	Number of returns with tax liability
+	1040:16
+	Num
+	
+	A10300
+	Total tax liability amount [15]  
+	1040:16
+	Num
+	
+	N85530
+	Number of returns with additional Medicare tax
+	8959:24
+	Num
+	
+	A85530
+	Additional Medicare tax
+	8959:24
+	Num
+	
+	N85300
+	Number of returns with net investment income tax
+	8960:17
+	Num
+	
+	A85300
+	Net investment income tax
+	8960:17
+	Num
+	
+	N11901
+	Number of returns with tax due at time of filing
+	1040:23
+	Num
+	
+	A11901
+	Tax due at time of filing amount [16]  
+	1040:23
+	Num
+	
+	N11900
+	Number of returns with total overpayments
+	1040:20
+	Num
+	
+	A11900
+	Total overpayments amount
+	1040:20
+	Num
+	
+	N11902
+	Number of returns with overpayments refunded
+	1040:21a
+	Num
+	
+	A11902
+	Overpayments refunded amount [17]  
+	1040:21a
+	Num
+	
+	N12000
+	Number of returns with credit to next year’s estimated tax
+	1040:22
+	Num
+	
+	A12000
+	Credited to next year’s estimated tax amount
+	1040:22
+	Num
+	
+	G. Endnotes:
+
+[1] The use of prior-year returns as a proxy for returns that are filed beyond the current processing year is consistent with SOI’s national, state, county, and ZIP code tabulations. A description of SOI’s sample, which is used as an input for the geographic data, and the use of prior-year returns, can be found at https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-returns-publication-1304-complete-report#_sec2. 
+
+[2] The income and tax items included within Historic Table 2 (State data) reflect the most complete and accurate totals by State. Due to various disclosure protection procedures, State totals included in SOI’s ZIP Code and county data may not be comparable to those from Table 2. Users should take note of these differences when comparing the different State totals. For other individual income tax tabulations at the State level, see ZIP code tables posted to Tax Stats at http://www.irs.gov/uac/SOI-Tax-Stats-Individual-Income-Tax-Statistics-ZIP-Code-Data-(SOI) or county tables at http://www.irs.gov/uac/SOI-Tax-Stats-County-Data. 
+
+[3] "Number," here, and elsewhere represents number of returns, unless otherwise specified. The number of returns have been rounded to the nearest ten.
+
+[4] Beginning in 2018, personal exemption deductions were suspended for the primary, secondary, and dependent taxpayers. However, the data used to create the “Number of individuals”—filing status, dependent status indicator, and identifying dependent information—are still available on the Form 1040. This field is based on these data.
+
+[5] The "Number of volunteer prepared returns" shows counts of returns prepared by IRS-certified volunteers to taxpayers with limited income, persons with disabilities, limited English speaking taxpayers, current and former members of the military, and taxpayers who are 60 years of age and older.
+
+[6] These data do not distinguish between refund anticipation loans and refund advances.
+
+[7] Includes primary taxpayers 60 years of age and older.
+
+[8] Less deficit.
+
+[9] “Qualified dividends” are ordinary dividends received in tax years beginning after 2002 that meet certain conditions and receive preferential tax rates.
+	
+[10] Includes the Alaskan permanent fund, reported by residents of Alaska on Forms 1040A and 1040EZ's.  
+This fund only applies to statistics in the totals, and the state of Alaska.
+
+[11] “Total tax credits" represent the summation of taxpayer reported credit items made up in the calculation of the total credits line of Form 1040. It does not include the "earned income credit" and "refundable education credit," which are shown separately below in the table.
+
+[12] Earned income credit includes both the refundable and non-refundable portions. The non-refundable portion could reduce income tax and certain related taxes to zero. The earned income credit amounts in excess of total tax liability, or amounts when there was no tax liability at all, were refundable. See footnote 13 below for explanation of the refundable portion of the earned income credit.
+
+[13] The refundable portion of the earned income credit equals total income tax minus the earned income credit. If the result is negative, this amount is considered the refundable portion. No other refundable credits were taken into account for this calculation.
+
+[14] The "refundable education credit" can partially or totally offset tax liability as well as be totally refundable.
+
+[15] “Total tax liability” differs from “Income tax”, in that “Total tax liability” includes the taxes from recapture of certain prior-year credits, tax applicable to individual retirement arrangements (IRA's), social security taxes on self-employment income and on certain tip income, advanced earned income payments, household employment taxes, and certain other taxes listed in the Form 1040 instructions.
+
+[16] Reflects payments to or withholdings made to "Total tax liability". This is the amount the tax filer owes when the income tax return is filed.
+
+[17] The amount of overpayments the tax filer requested to have refunded.

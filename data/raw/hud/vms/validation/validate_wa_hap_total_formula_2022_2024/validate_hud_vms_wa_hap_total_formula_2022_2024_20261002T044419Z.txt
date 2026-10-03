@@ -1,0 +1,225 @@
+====================================================================================================
+HUD VMS WASHINGTON HAP TOTAL OFFICIAL-FORMULA REPLICATION
+ETL-174B-5Y-2C.1
+====================================================================================================
+
+Official-definition replication test. No heuristic or fuzzy field matching.
+
+HUD FORMULA CONTROL
+----------------------------------------------------------------------------------------------------
+Documented formula components : 33
+
+ 1. RAD 1 HAP
+ 2. RAD 2 HAP
+ 3. RAD 3 HAP
+ 4. Litigation HAP
+ 5. Homeownership HAP
+ 6. Moving to Work HAP
+ 7. One Year Mainstream MTW HAP
+ 8. Family Unification Non MTW HAP
+ 9. Family Unification Pre-2008 MTW HAP
+10. Family Unification 2008 Forward MTW HAP
+11. Non-Elderly Disabled Non-MTW HAP
+12. Non-Elderly Disabled 2008 Forward MTW HAP
+13. Portable Voucher HAP
+14. HOPE VI HAP
+15. Tenant Protection HAP
+16. VASH HAP
+17. Housing Stability Vouchers HAP
+18. Foster Youth to Independence HAP
+19. Mobility Demonstration HAP
+20. Emergency Transfer Vouchers for VAWA HAP
+21. DHAP to HCV Vouchers HAP
+22. All Other Vouchers HAP
+23. MTW FUP 2008 Forward After First HAP
+24. MTW FUP Pre-2008 After First HAP
+25. MTW NED 2008 Forward After First HAP
+26. MTW VASH After First HAP
+27. MTW One Year Mainstream After First HAP
+28. MTW FYI After First HAP
+29. MTW Mobility Demonstration After First HAP
+30. MTW Housing Stability After First HAP
+31. MTW VAWA After First HAP
+32. HCV FSS Escrow Deposits
+33. All Voucher HAP After First of Month
+
+====================================================================================================
+WORKBOOK FIELD MAPPING
+====================================================================================================
+
+Oct-Dec2022VMS.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSAPR-JUN2022.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSJAN-MAR2022.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSJUL-SEP2022.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSAPR-JUN2023.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSJan-Mar2023.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSJul-Sep2023.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSOct-Dec2023.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+JAN-MAR_2024_VMS.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSApr-Jun2024.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSJul-Sep2024.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+VMSOct-Dec2024.xlsx
+    mapped components : 28/33
+    RESULT            : HOLD — UNMAPPED OFFICIAL COMPONENTS
+        RAD 1 HAP
+            aliases tried: rental_assistance_demonstration_1_hap | rad_1_hap | rad1_hap
+        RAD 2 HAP
+            aliases tried: rental_assistance_demonstration_2_hap | rad_2_hap | rad2_hap
+        RAD 3 HAP
+            aliases tried: rental_assistance_demonstration_3_hap | rad_3_hap | rad3_hap
+        DHAP to HCV Vouchers HAP
+            aliases tried: dhap_to_hcv_vouchers_hap | dhap_to_hcv_hap
+        MTW Mobility Demonstration After First HAP
+            aliases tried: mtw_mobility_demonstration_hap_expenses_after_the_first_of_the_month | mtw_mobility_demonstration_hap_after_the_first_of_the_month
+
+====================================================================================================
+RESULT
+====================================================================================================
+
+HOLD — OFFICIAL HUD FORMULA COULD NOT BE MAPPED COMPLETELY.
+
+No partial formula was calculated.
+Review actual workbook headers before adding aliases.
