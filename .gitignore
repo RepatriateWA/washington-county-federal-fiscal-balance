@@ -277,3 +277,6 @@ data/raw/cms/medicare_advantage/enrollment_controls/**/*.zip
 data/raw/cms/medicare_advantage/plan_payment/**/*.zip
 data/raw/cms/medicare_advantage/snp/**/*.zip
 data/raw/cms/medicare_trustees/expanded_tables/*.zip
+
+# USAspending reproducible bulk assistance downloads
+data/raw/usaspending/assistance/FY2024/All_PrimeTransactions_*.zip
