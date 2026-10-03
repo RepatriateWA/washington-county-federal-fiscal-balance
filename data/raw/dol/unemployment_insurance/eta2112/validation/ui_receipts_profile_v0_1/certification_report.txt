@@ -1,0 +1,47 @@
+========================================================================================
+ETL-172J-4A DOL ETA-2112 UI RECEIPT ALLOCATOR PROFILE v0.1
+========================================================================================
+
+Overall status       : PASS
+Source               : data\raw\dol\unemployment_insurance\eta2112\source\ar2112.csv
+Source bytes         : 23,334,558
+SHA256               : 777869F74882A4160E5AFCE3ADC671C21C557FE6C27F9FD7FE50FABAFF169A86
+Rows                 : 30,288
+Distinct state codes : 53
+Distinct dates       : 572
+Date range           : 1979-01-31 through 2026-08-31
+
+CERTIFICATION CHECKS
+----------------------------------------------------------------------------------------
+source_exists                                        PASS
+required_columns_present                             PASS
+study_years_present                                  PASS
+wa_has_12_months_each_study_fy                       PASS
+wa_c10_nonnull_12_months_each_study_fy               PASS
+state_date_keys_unique                               PASS
+wa_allocator_denominator_nonzero                     PASS
+no_database_write                                    PASS
+no_receipt_allocation                                PASS
+no_final_ledger_authorization                        PASS
+
+WASHINGTON / NATIONAL c10 PROFILE
+----------------------------------------------------------------------------------------
+FFY   MONTHS   WA c10              US STATE-SUM c10      WA SHARE
+----------------------------------------------------------------------------------------
+2015   12         1,333,767,831.61    41,911,777,127.76    3.182322%
+2016   12         1,202,531,077.76    39,603,916,311.77    3.036394%
+2017   12         1,115,846,283.66    37,105,741,355.89    3.007207%
+2018   12         1,004,651,267.56    35,243,113,901.15    2.850631%
+2019   12         1,003,908,862.10    33,712,137,876.64    2.977885%
+2020   12           855,830,057.11    32,051,300,233.40    2.670188%
+2021   12         1,449,573,121.35    37,038,435,755.55    3.913700%
+2022   12         2,141,334,713.49    42,599,953,921.97    5.026613%
+2023   12         1,666,526,100.75    37,911,519,193.87    4.395830%
+2024   12         1,906,099,029.74    37,086,957,124.67    5.139540%
+
+BOUNDARIES
+----------------------------------------------------------------------------------------
+No receipt allocation.
+No OMB control multiplication.
+No PostgreSQL writes.
+No final-ledger authorization.

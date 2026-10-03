@@ -1,0 +1,595 @@
+{
+  "created_utc": "2026-09-07T21:35:34.833022+00:00",
+  "endpoint": "https://api.usaspending.gov/api/v2/bulk_download/awards/",
+  "payload": {
+    "file_format": "csv",
+    "filters": {
+      "agencies": [
+        {
+          "name": "Access Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Administrative Conference of the U.S.",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Advisory Council on Historic Preservation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "African Development Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Agency for International Development",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "American Battle Monuments Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Appalachian Regional Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Armed Forces Retirement Home",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Barry Goldwater Scholarship and Excellence In Education Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Commission for the Preservation of America's Heritage Abroad",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Commission of Fine Arts",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Commission on Civil Rights",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Committee for Purchase from People Who Are Blind or Severely Disabled",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Commodity Futures Trading Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Consumer Financial Protection Bureau",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Consumer Product Safety Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Corporation for National and Community Service",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Corps of Engineers - Civil Works",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Council of the Inspectors General on Integrity and Efficiency",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Court Services and Offender Supervision Agency",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Defense Nuclear Facilities Safety Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Delta Regional Authority",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Denali Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Agriculture",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Commerce",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Defense",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Education",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Energy",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Health and Human Services",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Homeland Security",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Housing and Urban Development",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Justice",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Labor",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of State",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Transportation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of Veterans Affairs",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of the Interior",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Department of the Treasury",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "District of Columbia Courts",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Election Assistance Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Environmental Protection Agency",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Equal Employment Opportunity Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Executive Office of the President",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Export-Import Bank of the United States",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Farm Credit System Insurance Corporation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Communications Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Deposit Insurance Corporation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Election Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Financial Institutions Examination Council",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Housing Finance Agency",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Labor Relations Authority",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Maritime Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Mediation and Conciliation Service",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Mine Safety and Health Review Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Federal Trade Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "General Services Administration",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Government Accountability Office",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Gulf Coast Ecosystem Restoration Council",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Harry S Truman Scholarship Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Institute of Museum and Library Services",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Inter-American Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "International Trade Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "James Madison Memorial Fellowship Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Japan-United States Friendship Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "John F. Kennedy Center for the Performing Arts",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Library of Congress",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Marine Mammal Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Merit Systems Protection Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Millennium Challenge Corporation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Morris K. Udall and Stewart L. Udall Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Aeronautics and Space Administration",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Archives and Records Administration",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Capital Planning Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Council on Disability",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Credit Union Administration",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Endowment for the Arts",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Endowment for the Humanities",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Gallery of Art",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Labor Relations Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Mediation Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Science Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "National Transportation Safety Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Northern Border Regional Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Nuclear Regulatory Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Nuclear Waste Technical Review Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Occupational Safety and Health Review Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Office of Government Ethics",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Office of Personnel Management",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Office of Special Counsel",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Overseas Private Investment Corporation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Peace Corps",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Pension Benefit Guaranty Corporation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Privacy and Civil Liberties Oversight Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Public Buildings Reform Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Railroad Retirement Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Securities and Exchange Commission",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Selective Service System",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Small Business Administration",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Smithsonian Institution",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Social Security Administration",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Surface Transportation Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "The Judicial Branch",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "U.S. Agency for Global Media",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "U.S. Interagency Council on Homelessness",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "U.S. International Development Finance Corporation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "U.S. Postal Service",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "United States Chemical Safety Board",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "United States Court of Appeals for Veterans Claims",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "United States Institute of Peace",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "United States Trade and Development Agency",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Vietnam Education Foundation",
+          "tier": "toptier",
+          "type": "awarding"
+        },
+        {
+          "name": "Woodrow Wilson International Center for Scholars",
+          "tier": "toptier",
+          "type": "awarding"
+        }
+      ],
+      "date_range": {
+        "end_date": "2024-09-30",
+        "start_date": "2023-10-01"
+      },
+      "date_type": "action_date",
+      "place_of_performance_locations": [
+        {
+          "country": "USA",
+          "state": "WA"
+        }
+      ],
+      "prime_award_types": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "-1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "etl_stage": "ETL-172J-4A",
+  "title": "DOL ETA-2112 unemployment-insurance receipt allocator profile",
+  "overall_status": "PASS",
+  "source": {
+    "path": "data\\raw\\dol\\unemployment_insurance\\eta2112\\source\\ar2112.csv",
+    "bytes": 23334558,
+    "sha256": "777869F74882A4160E5AFCE3ADC671C21C557FE6C27F9FD7FE50FABAFF169A86",
+    "minimum_report_date": "1979-01-31",
+    "maximum_report_date": "2026-08-31",
+    "row_count": 30288,
+    "distinct_state_codes": 53,
+    "distinct_report_dates": 572
+  },
+  "methodology": {
+    "rockefeller_allocator_variable": "c10",
+    "rockefeller_variable_description": "net unemployment insurance contributions",
+    "working_time_aggregation": "monthly rptdate observations summed October through September into federal fiscal years",
+    "washington_geography": "st == WA",
+    "national_denominator": "sum of c10 across all state-code records within each federal fiscal year",
+    "allocation_performed": false
+  },
+  "checks": {
+    "source_exists": "PASS",
+    "required_columns_present": "PASS",
+    "study_years_present": "PASS",
+    "wa_has_12_months_each_study_fy": "PASS",
+    "wa_c10_nonnull_12_months_each_study_fy": "PASS",
+    "state_date_keys_unique": "PASS",
+    "wa_allocator_denominator_nonzero": "PASS",
+    "no_database_write": "PASS",
+    "no_receipt_allocation": "PASS",
+    "no_final_ledger_authorization": "PASS"
+  },
+  "duplicate_state_date_keys": 0,
+  "boundaries": [
+    "Source profiling only.",
+    "No OMB national receipt control multiplied by allocator share.",
+    "No Washington UI receipt amount certified.",
+    "No PostgreSQL writes.",
+    "No final-ledger authorization."
+  ]
+}

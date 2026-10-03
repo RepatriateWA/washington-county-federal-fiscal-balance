@@ -1,0 +1,185 @@
+==============================================================================================================
+SSA RECEIPTS ALLOCATOR CERTIFICATION v0.1 - ETL-172E-5
+==============================================================================================================
+
+Purpose: certify Washington and All-areas SSA OASDI and Medicare HI allocator inputs.
+
+No federal Budget receipt dollars are allocated.
+No Rockefeller replication is performed.
+No FY2024 extrapolation or carry-forward is performed.
+No database writes are performed.
+
+2015 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02605362940188677646225669268
+  contribution share   : 0.02605362974505512173445171677
+  contribution - earn. : 0.00000000034316834527219502409
+  arithmetic           : PASS
+
+2015 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02480075640024540418655091038
+  contribution share   : 0.02480075652418869122099878064
+  contribution - earn. : 0.00000000012394328703444787026
+  arithmetic           : PASS
+  limitation           : SOURCE_KNOWN_LIMITATION: SSA documented a methodological flaw affecting 2015 state-level Medicare HI self-employed estimates and total columns.
+
+2016 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02662003564147174842327048074
+  contribution share   : 0.02662003587412142104792201163
+  contribution - earn. : 0.00000000023264967262465153089
+  arithmetic           : PASS
+
+2016 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02578238793599549003969601046
+  contribution share   : 0.02578238737466233297760199126
+  contribution - earn. : -0.00000000056133315706209401920
+  arithmetic           : PASS
+
+2017 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02720267741712735265602500234
+  contribution share   : 0.02720267695690102390322983507
+  contribution - earn. : -0.00000000046022632875279516727
+  arithmetic           : PASS
+
+2017 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02642198225621214250113971550
+  contribution share   : 0.02642198234452322581619226548
+  contribution - earn. : 0.00000000008831108331505254998
+  arithmetic           : PASS
+
+2018 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02765286834789458050861593577
+  contribution share   : 0.02765286844039155198437888316
+  contribution - earn. : 0.00000000009249697147576294739
+  arithmetic           : PASS
+
+2018 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02741912966656945202805813454
+  contribution share   : 0.02741913033048482129135032071
+  contribution - earn. : 0.00000000066391536926329218617
+  arithmetic           : PASS
+
+2019 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02824392301275350890073784187
+  contribution share   : 0.02824392334964583944580046975
+  contribution - earn. : 0.00000000033689233054506262788
+  arithmetic           : PASS
+
+2019 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02821122479331894167371987249
+  contribution share   : 0.02821122348535881039637115309
+  contribution - earn. : -0.00000000130796013127734871940
+  arithmetic           : PASS
+
+2020 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02857212268776606201764144241
+  contribution share   : 0.02857212258056087765491285239
+  contribution - earn. : -0.00000000010720518436272859002
+  arithmetic           : PASS
+
+2020 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02863692845868404956720675855
+  contribution share   : 0.02863692702042297533462352944
+  contribution - earn. : -0.00000000143826107423258322911
+  arithmetic           : PASS
+
+2021 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02865825355835038709668637240
+  contribution share   : 0.02865825332191847524373206075
+  contribution - earn. : -0.00000000023643191185295431165
+  arithmetic           : PASS
+
+2021 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02948765570484132750250341627
+  contribution share   : 0.02948765719562069484284582400
+  contribution - earn. : 0.00000000149077936734034240773
+  arithmetic           : PASS
+
+2022 OASDI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02840122831877117611118123410
+  contribution share   : 0.02840122833654077700372981701
+  contribution - earn. : 0.00000000001776960089254858291
+  arithmetic           : PASS
+
+2022 MEDICARE_HI
+  source unit          : THOUSANDS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02847650679168236841361374743
+  contribution share   : 0.02847650628868277436267491178
+  contribution - earn. : -0.00000000050299959405093883565
+  arithmetic           : PASS
+
+2023 OASDI
+  source unit          : MILLIONS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02835357189755189871462181212
+  contribution share   : 0.02835333142628109239668107338
+  contribution - earn. : -0.00000024047127080631794073874
+  arithmetic           : PASS
+
+2023 MEDICARE_HI
+  source unit          : MILLIONS_OF_DOLLARS
+  All areas row        : 4
+  Washington row       : 148
+  earnings share       : 0.02914573602881471557259272825
+  contribution share   : 0.02914697340698137919252889927
+  contribution - earn. : 0.00000123737816666361993617102
+  arithmetic           : PASS
+
+==============================================================================================================
+CERTIFICATION SUMMARY
+==============================================================================================================
+Expected records : 18
+Extracted records: 18
+Failures         : 0
+
+FINAL RESULT: PASS
+
+PASS certifies source semantics, units, Washington/All-areas extraction, component arithmetic, and candidate allocation shares only.
+PASS does NOT select the Rockefeller allocator, allocate federal Budget receipts, establish fiscal-year mapping, carry an allocator into 2024, or authorize ledger inclusion.
