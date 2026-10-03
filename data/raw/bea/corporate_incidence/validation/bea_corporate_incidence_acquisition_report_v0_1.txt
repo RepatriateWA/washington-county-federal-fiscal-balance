@@ -1,0 +1,69 @@
+====================================================================================================
+BEA CORPORATE-INCOME-TAX INCIDENCE ALLOCATOR ACQUISITION - ETL-172H-2B
+====================================================================================================
+
+SOURCE
+----------------------------------------------------------------------------------------------------
+Dataset     : Regional
+Table       : SAINC4
+GeoFIPS     : STATE
+Years       : 2015-2024
+
+CERTIFIED SERIES
+----------------------------------------------------------------------------------------------------
+SAINC4-46    Dividends, interest, and rent
+  role             : CAPITAL_COMPONENT
+  observations     : 600
+  geographies      : 60
+  units            : Millions of dollars
+  UNIT_MULT        : 6
+  year coverage    : PASS
+  US geography     : PASS
+  Washington       : PASS
+  required values  : PASS
+  SHA256           : BC115F4D7D0CB733DD501069E9E8EE1964434B8E7F0F94F3EC5DA1FE63F44800
+
+SAINC4-70    Proprietors' income
+  role             : CAPITAL_COMPONENT
+  observations     : 600
+  geographies      : 60
+  units            : Millions of dollars
+  UNIT_MULT        : 6
+  year coverage    : PASS
+  US geography     : PASS
+  Washington       : PASS
+  required values  : PASS
+  SHA256           : 53A34615A580D8D8964668098FA52098EF2A274D1871A38C125B4EA1BFD0C690
+
+SAINC4-50    Wages and salaries
+  role             : LABOR_COMPONENT
+  observations     : 600
+  geographies      : 60
+  units            : Millions of dollars
+  UNIT_MULT        : 6
+  year coverage    : PASS
+  US geography     : PASS
+  Washington       : PASS
+  required values  : PASS
+  SHA256           : FAC3A8DB29B130FC0BD47732B324729B19D07A679D6B3AE652082591889D346E
+
+ALLOCATOR DEFINITION
+----------------------------------------------------------------------------------------------------
+Capital numerator/denominator components:
+  SAINC4-46 Dividends, interest, and rent
+  + SAINC4-70 Proprietors' income
+
+Labor component:
+  SAINC4-50 Wages and salaries
+
+United States denominator will use the source-provided GeoFips 00000 observation.
+Washington numerator will use GeoFips 53000.
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+No capital aggregate or Washington/US shares are calculated in ETL-172H-2B.
+The Rockefeller 75/25 corporate-incidence weighting is not applied.
+No OMB corporate-income-tax receipts are allocated.
+Final ledger inclusion remains unauthorized.
+
+ETL-172H-2B RESULT: PASS

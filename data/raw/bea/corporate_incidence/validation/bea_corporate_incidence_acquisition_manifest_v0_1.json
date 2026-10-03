@@ -1,0 +1,173 @@
+{
+  "etl_step": "ETL-172H-2B",
+  "result": "PASS",
+  "retrieved_utc": "20261001T041524Z",
+  "api": {
+    "dataset_name": "Regional",
+    "table_name": "SAINC4",
+    "geo_fips_request": "STATE",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "api_key_persisted": false
+  },
+  "allocator_source_definition": {
+    "capital_component_1": {
+      "line_code": "46",
+      "description": "Dividends, interest, and rent"
+    },
+    "capital_component_2": {
+      "line_code": "70",
+      "description": "Proprietors' income"
+    },
+    "labor_component": {
+      "line_code": "50",
+      "description": "Wages and salaries"
+    },
+    "capital_formula": "SAINC4 line 46 + SAINC4 line 70",
+    "labor_formula": "SAINC4 line 50",
+    "us_denominator_source": "BEA source-provided United States observation GeoFips 00000",
+    "washington_geography": "BEA GeoFips 53000"
+  },
+  "series": [
+    {
+      "line_code": "46",
+      "bea_code": "SAINC4-46",
+      "description": "Dividends, interest, and rent",
+      "role": "CAPITAL_COMPONENT",
+      "source_file": "data\\raw\\bea\\corporate_incidence\\source\\sainc4_dividends_interest_rent_2015_2024_retrieved_20261001T041524Z.json",
+      "source_bytes": 176350,
+      "source_sha256": "BC115F4D7D0CB733DD501069E9E8EE1964434B8E7F0F94F3EC5DA1FE63F44800",
+      "certification": {
+        "line_code": "46",
+        "bea_code": "SAINC4-46",
+        "description": "Dividends, interest, and rent",
+        "role": "CAPITAL_COMPONENT",
+        "observation_count": 600,
+        "distinct_geography_count": 60,
+        "year_coverage": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "unit": "Millions of dollars",
+        "unit_mult": "6",
+        "series_code_status": "PASS",
+        "unit_status": "PASS",
+        "unit_mult_status": "PASS",
+        "year_coverage_status": "PASS",
+        "us_geography_status": "PASS",
+        "washington_geography_status": "PASS",
+        "us_year_uniqueness_status": "PASS",
+        "washington_year_uniqueness_status": "PASS",
+        "required_numeric_values_status": "PASS"
+      }
+    },
+    {
+      "line_code": "70",
+      "bea_code": "SAINC4-70",
+      "description": "Proprietors' income",
+      "role": "CAPITAL_COMPONENT",
+      "source_file": "data\\raw\\bea\\corporate_incidence\\source\\sainc4_proprietors_income_2015_2024_retrieved_20261001T041524Z.json",
+      "source_bytes": 176153,
+      "source_sha256": "53A34615A580D8D8964668098FA52098EF2A274D1871A38C125B4EA1BFD0C690",
+      "certification": {
+        "line_code": "70",
+        "bea_code": "SAINC4-70",
+        "description": "Proprietors' income",
+        "role": "CAPITAL_COMPONENT",
+        "observation_count": 600,
+        "distinct_geography_count": 60,
+        "year_coverage": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "unit": "Millions of dollars",
+        "unit_mult": "6",
+        "series_code_status": "PASS",
+        "unit_status": "PASS",
+        "unit_mult_status": "PASS",
+        "year_coverage_status": "PASS",
+        "us_geography_status": "PASS",
+        "washington_geography_status": "PASS",
+        "us_year_uniqueness_status": "PASS",
+        "washington_year_uniqueness_status": "PASS",
+        "required_numeric_values_status": "PASS"
+      }
+    },
+    {
+      "line_code": "50",
+      "bea_code": "SAINC4-50",
+      "description": "Wages and salaries",
+      "role": "LABOR_COMPONENT",
+      "source_file": "data\\raw\\bea\\corporate_incidence\\source\\sainc4_wages_salaries_2015_2024_retrieved_20261001T041524Z.json",
+      "source_bytes": 161004,
+      "source_sha256": "FAC3A8DB29B130FC0BD47732B324729B19D07A679D6B3AE652082591889D346E",
+      "certification": {
+        "line_code": "50",
+        "bea_code": "SAINC4-50",
+        "description": "Wages and salaries",
+        "role": "LABOR_COMPONENT",
+        "observation_count": 600,
+        "distinct_geography_count": 60,
+        "year_coverage": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "unit": "Millions of dollars",
+        "unit_mult": "6",
+        "series_code_status": "PASS",
+        "unit_status": "PASS",
+        "unit_mult_status": "PASS",
+        "year_coverage_status": "PASS",
+        "us_geography_status": "PASS",
+        "washington_geography_status": "PASS",
+        "us_year_uniqueness_status": "PASS",
+        "washington_year_uniqueness_status": "PASS",
+        "required_numeric_values_status": "PASS"
+      }
+    }
+  ],
+  "methodological_boundaries": {
+    "capital_income_constructed": false,
+    "washington_us_shares_calculated": false,
+    "corporate_incidence_75_25_applied": false,
+    "omb_corporate_receipts_allocated": false,
+    "rockefeller_target_matching": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

@@ -1,0 +1,5496 @@
+{
+  "BEAAPI": {
+    "Request": {
+      "RequestParam": [
+        {
+          "ParameterName": "USERID",
+          "ParameterValue": "4C05625B-B27C-41B4-88AD-17EAF3401BFA"
+        },
+        {
+          "ParameterName": "METHOD",
+          "ParameterValue": "GETDATA"
+        },
+        {
+          "ParameterName": "DATASETNAME",
+          "ParameterValue": "REGIONAL"
+        },
+        {
+          "ParameterName": "TABLENAME",
+          "ParameterValue": "SAINC7N"
+        },
+        {
+          "ParameterName": "LINECODE",
+          "ParameterValue": "2001"
+        },
+        {
+          "ParameterName": "YEAR",
+          "ParameterValue": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024"
+        },
+        {
+          "ParameterName": "GEOFIPS",
+          "ParameterValue": "STATE"
+        },
+        {
+          "ParameterName": "RESULTFORMAT",
+          "ParameterValue": "JSON"
+        }
+      ]
+    },
+    "Results": {
+      "Statistic": "Govt. and govt. enterprises wages and salaries: Federal civilian",
+      "UnitOfMeasure": "Thousands of dollars",
+      "PublicTable": "SAINC7N Wages and salaries by NAICS industry",
+      "UTCProductionTime": "2026-09-14T00:01:37.493",
+      "NoteRef": " ",
+      "Dimensions": [
+        {
+          "Name": "Code",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "GeoFips",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "GeoName",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "TimePeriod",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "DataValue",
+          "DataType": "numeric",
+          "IsValue": "1"
+        },
+        {
+          "Name": "CL_UNIT",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "UNIT_MULT",
+          "DataType": "numeric",
+          "IsValue": "0"
+        }
+      ],
+      "Data": [
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "220379000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "313481000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "293888000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "272421000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "263704000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "256451000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "244353000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "240008000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "231354000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "00000",
+          "GeoName": "United States",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "224767000"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4276248"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4220008"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5898746"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5561591"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5072055"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4947524"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4838867"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4602397"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4443661"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "01000",
+          "GeoName": "Alabama",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4360787"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1158265"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1548890"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1445381"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1349945"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1313518"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1283699"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1244328"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1225090"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1202415"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "02000",
+          "GeoName": "Alaska",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1179455"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4047660"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4001350"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5942013"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5432878"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4996075"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4858137"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4777802"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4460463"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4369373"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "04000",
+          "GeoName": "Arizona",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4153454"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1346164"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1925401"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1799765"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1621688"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1563775"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1530500"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1449007"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1430315"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1374014"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "05000",
+          "GeoName": "Arkansas",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1347530"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "19763170"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "19380280"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "26909381"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "25437188"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23742510"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23028904"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "22782327"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21488206"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21152425"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "06000",
+          "GeoName": "California",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20312140"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4071415"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6026288"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5601982"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5108636"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4919495"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4795738"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4562457"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4467494"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4279404"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "08000",
+          "GeoName": "Colorado",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4196519"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1316458"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1322896"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1761996"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1679047"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1567308"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1511385"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1489155"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1409410"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1405346"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "09000",
+          "GeoName": "Connecticut",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1353062"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "395557"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "633714"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "565318"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "507525"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "473674"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "456832"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "427660"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "423215"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "413018"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "10000",
+          "GeoName": "Delaware",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "388905"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21788410"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21055894"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "26988515"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "25726275"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24773779"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24773918"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23968918"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23231116"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23185121"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "11000",
+          "GeoName": "District of Columbia",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "22327994"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9971882"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "15533664"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "14297084"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12983542"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12441146"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11868894"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11249696"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10991812"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10676763"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "12000",
+          "GeoName": "Florida",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10114788"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7495120"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7275349"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10662009"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9957487"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9258209"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9043339"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8687006"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8199041"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8022706"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "13000",
+          "GeoName": "Georgia",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7733240"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2481677"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3477197"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3302683"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3077078"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2984460"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2892643"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2786454"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2691453"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2604498"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "15000",
+          "GeoName": "Hawaii",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2536554"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "850723"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "823366"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1319977"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1190109"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1075158"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1025931"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "976491"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "943537"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "926506"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "16000",
+          "GeoName": "Idaho",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "882158"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6066924"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7977362"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7573008"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7027123"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6775855"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6639164"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6351548"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6371941"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6175588"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "17000",
+          "GeoName": "Illinois",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6059234"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3620882"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3402655"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3188392"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3046268"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3041483"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2874680"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2798960"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2679574"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2606495"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "18000",
+          "GeoName": "Indiana",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2574269"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1097331"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1526994"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1443567"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1317974"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1263805"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1238419"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1183147"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1172959"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1127548"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "19000",
+          "GeoName": "Iowa",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1095002"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1652258"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1640349"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2360679"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2221851"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2011737"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1906454"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1872114"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1799752"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1750125"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "20000",
+          "GeoName": "Kansas",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1687727"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2330564"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3098146"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2958210"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2684049"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2612744"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2541341"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2452151"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2428337"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2390871"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "21000",
+          "GeoName": "Kentucky",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2376804"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2143250"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2060627"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2885929"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2755929"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2565303"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2511781"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2482587"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2360802"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2323034"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "22000",
+          "GeoName": "Louisiana",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2218863"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1043299"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1693647"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1559721"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1416626"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1351873"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1314145"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1240340"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1191365"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1138062"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "23000",
+          "GeoName": "Maine",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1092075"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "17421213"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "16855683"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "25170058"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23763920"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "22015461"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20974159"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20058143"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "19070737"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "18460386"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "24000",
+          "GeoName": "Maryland",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "17867512"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3636314"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4821779"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4564880"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4268863"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4128490"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4047477"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3892310"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3855085"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3737807"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "25000",
+          "GeoName": "Massachusetts",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3655821"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3900601"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3867755"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5422440"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5075170"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4650120"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4475299"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4373564"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4163463"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4115311"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "26000",
+          "GeoName": "Michigan",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3986993"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2211599"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3194764"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3005860"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2822940"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2615932"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2546609"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2446493"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2414667"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2310412"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "27000",
+          "GeoName": "Minnesota",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2257394"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1703443"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1690794"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2378903"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2238244"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2039970"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1978249"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1937316"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1844287"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1794265"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "28000",
+          "GeoName": "Mississippi",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1755778"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3886237"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5394173"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5056437"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4722433"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4650192"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4494829"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4260352"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4192308"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4039838"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "29000",
+          "GeoName": "Missouri",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3937097"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "893096"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "856296"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1327444"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1208824"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1071661"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1023926"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1000863"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "944003"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "942858"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "30000",
+          "GeoName": "Montana",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "908952"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1096572"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1527120"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1447305"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1329381"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1296633"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1259025"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1207135"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1192351"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1150543"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "31000",
+          "GeoName": "Nebraska",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1114580"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1300095"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1271080"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2138128"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1947305"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1767795"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1648532"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1599453"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1463550"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1423364"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "32000",
+          "GeoName": "Nevada",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1350691"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "580966"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "933633"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "848408"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "765833"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "701683"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "676082"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "651204"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "635778"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "596236"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "33000",
+          "GeoName": "New Hampshire",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "587465"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3885253"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3902995"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5074388"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4841313"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4506170"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4362525"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4287788"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4106660"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4085409"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "34000",
+          "GeoName": "New Jersey",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3977533"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2115825"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2913149"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2758037"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2570100"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2487377"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2439560"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2292723"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2257746"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2201221"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "35000",
+          "GeoName": "New Mexico",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2161030"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8831210"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8829428"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11298615"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10634659"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10047637"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9815106"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9789402"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9439082"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9385725"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "36000",
+          "GeoName": "New York",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9031277"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4749153"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7399138"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6786113"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6191048"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5949247"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5759892"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5422946"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5240452"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5047434"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "37000",
+          "GeoName": "North Carolina",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4868485"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "597647"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "581093"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "788071"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "743940"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "695902"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "673017"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "659717"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "633262"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "630376"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "38000",
+          "GeoName": "North Dakota",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "611199"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5721803"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8163537"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7662380"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7062870"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6789728"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6586654"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6318951"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6202962"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5962991"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "39000",
+          "GeoName": "Ohio",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5792616"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3287865"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3198741"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4677742"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4415230"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4044561"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3893666"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3726977"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3611794"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3520385"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "40000",
+          "GeoName": "Oklahoma",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3400577"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1983180"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2907151"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2650051"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2466954"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2414160"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2345036"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2212417"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2208142"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2126888"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "41000",
+          "GeoName": "Oregon",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2053919"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7069068"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7004475"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9687941"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9208572"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8530087"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8204087"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8022652"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7650680"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7518438"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "42000",
+          "GeoName": "Pennsylvania",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7269654"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "838275"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1220175"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1150406"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1059528"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1018842"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "986068"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "948009"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "929075"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "912401"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "44000",
+          "GeoName": "Rhode Island",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "855461"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2244354"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2203665"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3443454"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3158165"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2878018"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2766642"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2679985"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2513955"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2424189"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "45000",
+          "GeoName": "South Carolina",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2314473"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "692385"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1004978"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "943774"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "863074"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "835929"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "814204"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "766755"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "757077"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "735529"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "46000",
+          "GeoName": "South Dakota",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "714088"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3834368"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3818861"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5926586"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5351946"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4755182"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4521220"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4337297"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4101976"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4037134"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "47000",
+          "GeoName": "Tennessee",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3892375"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "14695020"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21949039"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20246609"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "18680078"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "18122454"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "17550113"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "16521309"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "16241001"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "15503725"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "48000",
+          "GeoName": "Texas",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "14990490"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2423371"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2346293"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3583030"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3319380"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3077126"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2968002"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2862540"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2694616"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2605983"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "49000",
+          "GeoName": "Utah",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2515570"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "486698"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "702156"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "648345"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "606919"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "580985"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "573851"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "562282"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "553391"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "523608"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "50000",
+          "GeoName": "Vermont",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "505570"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "17858016"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "17487379"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24638351"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23283289"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21632147"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20839366"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20254804"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "19552587"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "19116174"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "51000",
+          "GeoName": "Virginia",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "18431010"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5461916"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8021716"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7490375"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6914801"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6754100"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6595153"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6310604"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6141691"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5921061"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5637294"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1732731"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1692849"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2602432"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2403296"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2190126"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2135884"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2043684"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1906716"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1871507"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "54000",
+          "GeoName": "West Virginia",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1795939"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1837744"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2656643"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2468314"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2258601"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2161374"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2114020"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2005521"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1969901"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1891734"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "55000",
+          "GeoName": "Wisconsin",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1850939"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "475762"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "460460"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "722836"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "655724"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "590902"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "563208"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "550117"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "520429"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "513631"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "56000",
+          "GeoName": "Wyoming",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "491859"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7908448"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11133386"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10450807"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9685077"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9293258"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9086778"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8703555"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8570040"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8261176"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "91000",
+          "GeoName": "New England",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8012850"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "59384059"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "58044032"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "78853231"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "74740057"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "70380659"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "68603469"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "66583735"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "63925935"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "63058294"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "92000",
+          "GeoName": "Mideast",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "60886988"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20068495"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "27840864"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "26181527"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24187106"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "23248524"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "22754885"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21714163"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21459075"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20696880"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "93000",
+          "GeoName": "Great Lakes",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20209885"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11368066"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11205566"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "15796779"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "14862734"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "13763441"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "13241962"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12884917"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12296896"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12109863"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "94000",
+          "GeoName": "Plains",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11662796"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "58847295"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "86392759"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "80551119"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "73871337"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "71310917"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "68962173"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "65655561"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "64123586"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "61991547"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "95000",
+          "GeoName": "Southeast",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "59995137"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24487045"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24010936"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "35481943"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "32852754"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "30290814"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "29361634"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "28494452"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "26886289"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "26388505"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "96000",
+          "GeoName": "Southwest",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "25258977"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11976019"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10923483"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10500562"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10185749"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9665042"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9456472"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9077943"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8839471"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8557830"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "97000",
+          "GeoName": "Rocky Mountain",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12979575"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "32470487"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "31736398"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "45002463"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "42272983"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "39319083"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "38143674"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "37498311"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "35505559"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "34842165"
+        },
+        {
+          "Code": "SAINC7N-2001",
+          "GeoFips": "98000",
+          "GeoName": "Far West",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33517693"
+        }
+      ],
+      "Notes": [
+        {
+          "NoteRef": "Note.",
+          "NoteText": "All dollar estimates are in thousands of current dollars (not adjusted for inflation). Statistics presented in thousands of dollars do not indicate more precision than statistics presented in millions of dollars."
+        },
+        {
+          "NoteRef": " ",
+          "NoteText": "Last updated: April 9, 2026-- new statistics for 2025."
+        }
+      ]
+    }
+  }
+}

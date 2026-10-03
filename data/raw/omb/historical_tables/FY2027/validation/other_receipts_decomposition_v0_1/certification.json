@@ -1,0 +1,73 @@
+{
+  "etl_step": "ETL-172I-4",
+  "result": "PASS",
+  "artifact_type": "OMB_OTHER_RECEIPTS_DECOMPOSITION",
+  "source": {
+    "file": "data\\raw\\omb\\historical_tables\\FY2027\\source\\BUDGET-2027-TAB-3-5.xlsx",
+    "sha256": "CF8F04A41F4A86515A1E3FBA6D544147D1AF8025BD451FEA809BD8D6968003FB",
+    "sheet": "Table",
+    "title": "Table 2.5 - COMPOSITION OF \"OTHER RECEIPTS\":  1940-2031",
+    "units": "millions of dollars"
+  },
+  "upstream": {
+    "etl_172i_1_file": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\federal_receipts_universe_v0_1\\national_federal_receipts_universe.csv",
+    "etl_172i_1_sha256": "9F76F34692D6A12E19F1BCF762538C546671900134064E5D7980448F7744D89C"
+  },
+  "target_fiscal_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "leaf_components": [
+    "ESTATE_AND_GIFT_TAXES",
+    "CUSTOMS_DUTIES_AND_FEES",
+    "FEDERAL_RESERVE_DEPOSITS",
+    "MISCELLANEOUS_ALL_OTHER"
+  ],
+  "memorandum_components": [
+    "MEMO_TRUST_FUND_CUSTOMS_DUTIES_AND_FEES",
+    "MEMO_TRUST_FUND_ALL_OTHER"
+  ],
+  "certification": {
+    "expected_annual_observations": 10,
+    "actual_annual_observations": 10,
+    "expected_detail_observations": 60,
+    "actual_detail_observations": 60,
+    "fiscal_year_coverage": "PASS",
+    "fiscal_year_uniqueness": "PASS",
+    "source_file_signature": "PASS",
+    "source_sheet_contract": "PASS",
+    "source_title_contract": "PASS",
+    "source_units_contract": "PASS",
+    "source_header_contract": "PASS",
+    "miscellaneous_receipts_identity": "PASS",
+    "other_receipts_component_identity": "PASS",
+    "table_2_5_to_table_2_1_reconciliation": "PASS",
+    "million_to_dollar_conversion": "PASS",
+    "memorandum_preservation": "PASS",
+    "memorandum_nonadditivity": "PASS",
+    "allocation_classification_boundary": "PASS",
+    "rockefeller_methodology_boundary": "PASS",
+    "irs_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "washington_allocation_performed": false,
+    "allocation_classification_performed": false,
+    "federal_reserve_incidence_decision": false,
+    "miscellaneous_all_other_incidence_decision": false,
+    "rockefeller_replication": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false,
+    "memorandum_columns_are_additive": false
+  }
+}

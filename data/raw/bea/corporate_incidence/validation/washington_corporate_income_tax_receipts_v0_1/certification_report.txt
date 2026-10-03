@@ -1,0 +1,73 @@
+====================================================================================================
+WASHINGTON CORPORATE-INCOME-TAX RECEIPTS - ETL-172H-4
+====================================================================================================
+
+Economic-incidence reconstruction using 75-percent capital / 25-percent labor.
+
+UPSTREAM PROVENANCE
+----------------------------------------------------------------------------------------------------
+H-1 national controls SHA256 : C2B18A92708F5AD171FE4561A98D1CF6EB45CDC5879C35D180DAC789C094859B
+H-1 certification SHA256     : 747DB844E331523D2E05F970064363DA4772EC0C7DBAD408806089AE3EBE4320
+H-3 allocator shares SHA256  : B7B1031894F4B87242B54578F1AC44D58D8AD03B75575E92CA2FA34EBCD01BC6
+H-3 certification SHA256     : 568F1698F563651B82F21D04C5A9CA8DEB7C8F6042F495943F25D81126AE5F70
+
+METHOD
+----------------------------------------------------------------------------------------------------
+Combined WA corporate incidence share = 0.75 * WA capital share + 0.25 * WA labor share.
+WA corporate-income-tax receipts = OMB national corporate-income-tax receipts * combined WA incidence share.
+
+Timing convention: FFY t national receipt control uses finalized CY t BEA allocator.
+Timing label: CONTEMPORANEOUS_FINAL_ALLOCATOR.
+This is a WCFFBP principal historical reconstruction convention, not a Rockefeller-vintage timing claim.
+
+WASHINGTON CORPORATE-INCOME-TAX RECEIPTS
+----------------------------------------------------------------------------------------------------
+FFY                  NATIONAL     CAP SHARE     LAB SHARE      COMBINED           WA RECEIPTS
+----------------------------------------------------------------------------------------------------
+2015          343,797,000,000     2.610773%     2.441666%     2.568496%         8,830,412,882
+2016          299,571,000,000     2.666022%     2.518274%     2.629085%         7,875,975,677
+2017          297,048,000,000     2.680468%     2.579017%     2.655105%         7,886,936,699
+2018          204,733,000,000     2.629241%     2.668532%     2.639064%         5,403,034,501
+2019          230,245,000,000     2.723194%     2.726182%     2.723941%         6,271,737,701
+2020          211,845,000,000     2.749276%     2.803311%     2.762785%         5,852,821,070
+2021          371,831,000,000     2.662310%     2.833161%     2.705023%        10,058,112,986
+2022          424,865,000,000     2.698235%     2.801840%     2.724136%        11,573,900,422
+2023          419,584,000,000     2.660601%     2.866694%     2.712124%        11,379,639,288
+2024          529,867,000,000     2.635131%     2.898396%     2.700947%        14,311,426,867
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+expected_observations                       : 10
+actual_observations                         : 10
+fiscal_year_coverage                        : PASS
+fiscal_year_uniqueness                      : PASS
+allocator_year_mapping                      : PASS
+capital_weight                              : PASS
+labor_weight                                : PASS
+weight_sum                                  : PASS
+capital_weighted_share_arithmetic           : PASS
+labor_weighted_share_arithmetic             : PASS
+combined_share_arithmetic                   : PASS
+washington_receipt_arithmetic               : PASS
+national_period_basis                       : PASS
+allocator_period_basis                      : PASS
+timing_convention                           : PASS
+accounting_concept                          : PASS
+rockefeller_replication_boundary            : PASS
+irs_reconciliation_boundary                 : PASS
+ledger_boundary                             : PASS
+
+ACCOUNTING INTERPRETATION
+----------------------------------------------------------------------------------------------------
+The Washington values are economic-incidence estimates, not observed corporate tax collections from Washington entities.
+The 75/25 capital/labor split is an explicit incidence assumption.
+The underlying BEA capital and labor shares remain separately preserved so alternative incidence weights can be evaluated later.
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+No forced reconciliation to IRS Washington gross collections is performed.
+No Rockefeller target matching or historical-vintage replication is performed.
+No database writes are performed.
+Final ledger inclusion remains unauthorized by this certification step.
+
+ETL-172H-4 RESULT: PASS

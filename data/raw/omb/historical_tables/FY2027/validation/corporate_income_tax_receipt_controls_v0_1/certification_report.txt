@@ -1,0 +1,62 @@
+====================================================================================================
+OMB NATIONAL CORPORATE-INCOME-TAX RECEIPT CONTROLS - ETL-172H-1
+====================================================================================================
+
+National federal receipt controls only. No Washington corporate-tax incidence allocation is performed.
+
+SOURCE CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Source : data\raw\omb\historical_tables\FY2027\source\BUDGET-2027-TAB-3-1.xlsx
+SHA256 : 1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3
+Bytes  : 12,393
+Sheet  : Table
+Title  : Table 2.1 - RECEIPTS BY SOURCE: 1934 - 2031
+Units  : (in millions of dollars)
+Series : Corporation Income Taxes (1)
+
+METHOD
+----------------------------------------------------------------------------------------------------
+Extract OMB Historical Table 2.1 Corporation Income Taxes for FFY2015-FFY2024.
+Source values are millions of dollars; multiply by 1,000,000 for dollars.
+FFY2015-FFY2024 are before the workbook's first explicit estimate year, 2026.
+No Washington allocation or corporate-incidence assumption is applied in ETL-172H-1.
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Expected observations             : 10
+Actual observations               : 10
+Fiscal-year coverage              : PASS
+Fiscal-year uniqueness            : PASS
+Source-cell uniqueness            : PASS
+Source-value certification        : PASS
+Unit conversion                   : PASS
+Actual/estimate boundary          : PASS
+Washington allocation boundary    : PASS
+Corporate-incidence boundary      : PASS
+Rockefeller replication boundary  : PASS
+Ledger boundary                   : PASS
+
+NATIONAL CORPORATE-INCOME-TAX RECEIPTS
+----------------------------------------------------------------------------------------------------
+FFY               MILLIONS                     DOLLARS                  STATUS
+----------------------------------------------------------------------------------------------------
+2015               343,797             343,797,000,000       HISTORICAL_ACTUAL
+2016               299,571             299,571,000,000       HISTORICAL_ACTUAL
+2017               297,048             297,048,000,000       HISTORICAL_ACTUAL
+2018               204,733             204,733,000,000       HISTORICAL_ACTUAL
+2019               230,245             230,245,000,000       HISTORICAL_ACTUAL
+2020               211,845             211,845,000,000       HISTORICAL_ACTUAL
+2021               371,831             371,831,000,000       HISTORICAL_ACTUAL
+2022               424,865             424,865,000,000       HISTORICAL_ACTUAL
+2023               419,584             419,584,000,000       HISTORICAL_ACTUAL
+2024               529,867             529,867,000,000       HISTORICAL_ACTUAL
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+These values are national federal corporate income-tax receipt controls.
+They are not Washington corporate-tax payments or Washington corporate-tax incidence estimates.
+The Rockefeller 75-percent capital / 25-percent labor incidence assumption is not applied here.
+No BEA allocator is used in ETL-172H-1.
+Final receipts-ledger inclusion remains unauthorized.
+
+ETL-172H-1 RESULT: PASS

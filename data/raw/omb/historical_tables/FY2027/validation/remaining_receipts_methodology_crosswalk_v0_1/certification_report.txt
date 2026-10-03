@@ -1,0 +1,57 @@
+==============================================================================================================================
+REMAINING FEDERAL RECEIPTS METHODOLOGY CROSSWALK - ETL-172I-5
+==============================================================================================================================
+
+ANNUAL REMAINING-RECEIPTS WORK QUEUE
+------------------------------------------------------------------------------------------------------------------------------
+FFY        I3 REMAIN    DOC METHOD    METHOD REV    UNRESOLVED   UNALLOCABLE    ACTIONABLE   UNALLOC %
+------------------------------------------------------------------------------------------------------------------------------
+2015         360,730       115,768        62,439             0       182,523       178,207      50.60%
+2016         365,327       114,358        60,095             0       190,874       174,453      52.25%
+2017         325,468       116,064        45,876             0       163,528       161,940      50.24%
+2018         326,230       123,541        49,723             0       152,966       173,264      46.89%
+2019         323,387       116,300        50,524             0       156,563       166,824      48.41%
+2020         343,450        98,733        58,420             0       186,297       157,153      54.24%
+2021         383,762       112,553        56,808             0       214,401       169,361      55.87%
+2022         435,208       132,187        66,498             0       236,523       198,685      54.35%
+2023         293,366       123,005        49,404             0       120,957       172,409      41.23%
+2024         317,211       147,254        47,975             0       121,982       195,229      38.45%
+
+METHODOLOGY CROSSWALK
+------------------------------------------------------------------------------------------------------------------------------
+OASI_FEDERAL_FUNDS                   WITHHOLD_UNRESOLVED            
+RAILROAD_RETIREMENT                  ALLOCATOR_METHOD_DOCUMENTED    IRS Gross Collections, Table 5
+UNEMPLOYMENT_INSURANCE               METHOD_CHANGE_REVIEW           US DOL Unemployment Insurance Financial Transaction Summary; method/source varies by Rockefeller vintage
+OTHER_RETIREMENT                     ALLOCATOR_METHOD_DOCUMENTED    Census Population
+TRANSPORTATION_TRUST_FUND            ALLOCATOR_METHOD_DOCUMENTED    FHWA payments into the FHTF Highway Account
+TOBACCO                              ALLOCATOR_METHOD_DOCUMENTED    Census Population
+AIRPORT_AND_AIRWAY                   ALLOCATOR_METHOD_DOCUMENTED    Census Population
+HEALTH_INSURANCE_PROVIDERS           METHOD_CHANGE_REVIEW           Oliver Wyman Analysis; vintage-specific applicability
+ALCOHOL                              ALLOCATOR_METHOD_DOCUMENTED    NIAAA alcohol consumption
+OTHER_EXCISES                        ALLOCATOR_METHOD_DOCUMENTED    Census Population
+ESTATE_AND_GIFT_TAXES                ALLOCATOR_METHOD_DOCUMENTED    IRS Gross Collections, Table 5
+CUSTOMS_DUTIES_AND_FEES              INTENTIONALLY_UNALLOCABLE      Unallocable receipts
+FEDERAL_RESERVE_DEPOSITS             INTENTIONALLY_UNALLOCABLE      Unallocable receipts
+MISCELLANEOUS_ALL_OTHER              INTENTIONALLY_UNALLOCABLE      Unallocable receipts
+
+CERTIFICATION
+------------------------------------------------------------------------------------------------------------------------------
+crosswalk_component_count                                     : 14
+crosswalk_component_uniqueness                                : PASS
+classification_vocabulary                                     : PASS
+fiscal_year_coverage                                          : PASS
+i3_remaining_universe_reconciliation                          : PASS
+intentionally_unallocable_preserved_in_national_universe      : PASS
+washington_allocation_boundary                                : PASS
+rockefeller_evidence_boundary                                 : PASS
+irs_gross_collections_boundary                                : PASS
+database_write_boundary                                       : PASS
+ledger_boundary                                               : PASS
+
+INTERPRETATION
+------------------------------------------------------------------------------------------------------------------------------
+Actionable unfinished receipts are national receipt dollars whose Washington allocation still requires source acquisition, method review, or resolution.
+Intentionally unallocable receipts remain part of the national federal receipts universe but are not assigned to Washington under the documented Rockefeller allocation architecture.
+ETL-172I-5 performs no Washington allocation and authorizes no final ledger inclusion.
+
+ETL-172I-5 RESULT: PASS

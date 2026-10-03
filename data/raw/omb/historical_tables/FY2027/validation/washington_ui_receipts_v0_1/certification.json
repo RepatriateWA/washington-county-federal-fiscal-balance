@@ -1,0 +1,55 @@
+{
+  "etl_stage": "ETL-172J-4B",
+  "title": "Washington unemployment-insurance receipt allocation",
+  "overall_status": "PASS",
+  "source_integrity": {
+    "eta2112_path": "data\\raw\\dol\\unemployment_insurance\\eta2112\\source\\ar2112.csv",
+    "eta2112_sha256": "777869F74882A4160E5AFCE3ADC671C21C557FE6C27F9FD7FE50FABAFF169A86",
+    "expected_eta2112_sha256": "777869F74882A4160E5AFCE3ADC671C21C557FE6C27F9FD7FE50FABAFF169A86",
+    "sha256_status": "PASS"
+  },
+  "accounting_method": {
+    "national_control": "OMB Historical Table 2.4 Unemployment Insurance",
+    "allocator": "DOL ETA-2112 c10",
+    "allocator_semantics": "net unemployment insurance contributions",
+    "allocator_time_basis": "monthly flows summed October through September",
+    "washington_numerator": "Washington ETA-2112 c10",
+    "allocator_denominator": "ETA-2112 c10 summed across 50 states and District of Columbia",
+    "excluded_source_geographies": [
+      "PR",
+      "VI"
+    ],
+    "formula": "OMB national UI receipts * WA c10 / 50-state-plus-DC c10",
+    "denominator_is_not_national_accounting_control": true,
+    "forced_omb_eta2112_reconciliation": false
+  },
+  "checks": {
+    "eta2112_source_sha256": "PASS",
+    "j4a_upstream_certification": "PASS",
+    "eta2112_source_geography": "PASS",
+    "wcffbp_state_dc_denominator_geography": "PASS",
+    "washington_12_month_coverage": "PASS",
+    "allocator_denominator_nonzero": "PASS",
+    "omb_ui_control_coverage": "PASS",
+    "j3_work_queue_coverage": "PASS",
+    "ui_control_not_greater_than_j3_queue": "PASS",
+    "washington_allocation_identity": "PASS",
+    "j3_work_queue_reduction": "PASS",
+    "post_j4b_actionable_queue_nonnegative": "PASS",
+    "territories_explicitly_excluded": "PASS",
+    "omb_eta2112_forced_reconciliation_boundary": "PASS",
+    "irs_forced_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "final_ledger_boundary": "PASS"
+  },
+  "boundaries": [
+    "DOL ETA-2112 is used only as a geographic allocator.",
+    "OMB remains the national accounting control.",
+    "Puerto Rico and Virgin Islands are preserved in source data but excluded from the WCFFBP 50-state-plus-DC denominator.",
+    "No forced reconciliation between ETA-2112 c10 and OMB UI receipts.",
+    "Health Insurance Providers tax is not resolved in ETL-172J-4B.",
+    "No IRS gross-collections forced reconciliation.",
+    "No PostgreSQL writes.",
+    "No final-ledger authorization."
+  ]
+}

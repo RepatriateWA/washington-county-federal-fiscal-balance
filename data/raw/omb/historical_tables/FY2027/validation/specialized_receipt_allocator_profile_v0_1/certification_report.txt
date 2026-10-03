@@ -1,0 +1,51 @@
+========================================================================================================================
+SPECIALIZED RECEIPT ALLOCATOR SOURCE PROFILE - ETL-172J-3B
+========================================================================================================================
+
+FHWA source semantics:
+FE-221B Payments 2024 contains estimated state-attributable payments into the Highway Account of the Federal Highway Trust Fund for FFY2015-FFY2024.
+The source explicitly excludes specified transfers to other trust funds/accounts and the General Fund.
+
+NIAAA source semantics:
+Geography 53 is Washington; geography 99 is United States; beverage code 4 is All beverages.
+Principal J-3B allocator measure is gallons of ethanol (absolute alcohol), not the separate time-varying-ABV-derived ethanol field.
+Calendar-year observations are available through 2023. No 2024 carry-forward decision is made in J-3B.
+
+CERTIFICATION
+------------------------------------------------------------------------------------------------------------------------
+fhwa_expected_sheet                                                   : PASS
+fhwa_title_semantics                                                  : PASS
+fhwa_period_semantics                                                 : PASS
+fhwa_units_semantics                                                  : PASS
+fhwa_payment_heading                                                  : PASS
+fhwa_year_coverage                                                    : PASS
+fhwa_washington_row                                                   : PASS
+fhwa_total_row                                                        : PASS
+fhwa_grand_total_row                                                  : PASS
+fhwa_total_grand_total_identity                                       : PASS
+fhwa_share_calculation                                                : PASS
+fhwa_highway_account_scope_note                                       : PASS
+fhwa_state_estimation_note                                            : PASS
+niaaa_header_year_semantics                                           : PASS
+niaaa_washington_geography_semantics                                  : PASS
+niaaa_us_geography_semantics                                          : PASS
+niaaa_all_beverages_semantics                                         : PASS
+niaaa_ethanol_semantics                                               : PASS
+niaaa_records_parsed                                                  : PASS
+niaaa_record_uniqueness                                               : PASS
+niaaa_2015_2023_coverage                                              : PASS
+niaaa_share_calculation                                               : PASS
+niaaa_2024_source_gap                                                 : PASS
+niaaa_all_beverage_identity                                           : PASS
+database_write_boundary                                               : PASS
+final_ledger_boundary                                                 : PASS
+
+BOUNDARIES
+------------------------------------------------------------------------------------------------------------------------
+No OMB receipt controls allocated.
+No NIAAA 2023-to-2024 carry-forward performed.
+No final Transportation Trust Fund scope decision made.
+No PostgreSQL writes.
+No final-ledger authorization.
+
+ETL-172J-3B RESULT: PASS

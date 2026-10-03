@@ -1,0 +1,46 @@
+{
+  "etl": "ETL-172J-3B",
+  "purpose": "Profile and certify FHWA and NIAAA allocator sources.",
+  "fhwa": {
+    "file": "data\\raw\\fhwa\\highway_trust_fund\\source\\fhwa_highway_statistics_2024_fe221b.xlsx",
+    "sha256": "BBAEEE2EFBEB6EBF6651107DF331633D4EC09420E3B3659F5E66C2541455DB66",
+    "sheet_names": [
+      "Payments 2024",
+      "Allocations 2024"
+    ],
+    "profiled_sheet": "Payments 2024",
+    "rows": 82,
+    "columns": 13,
+    "title": "COMPARISON OF FEDERAL HIGHWAY TRUST FUND HIGHWAY ACCOUNT RECEIPTS ATTRIBUTABLE TO",
+    "period": "FISCAL YEARS 2015-2024",
+    "units": "(THOUSANDS OF DOLLARS)",
+    "heading": "Payments Into the Highway Trust Fund",
+    "washington_row": 63,
+    "total_row": 67,
+    "grand_total_row": 73,
+    "scope_interpretation": "Highway Account payments attributable to highway users; not a generic measure of every Transportation Trust Fund receipt."
+  },
+  "niaaa": {
+    "file": "data\\raw\\niaaa\\alcohol_consumption\\source\\pcyr1970-2023.txt",
+    "sha256": "95D667C4717AEAB5B0D8FEA6D70C526B1F1D2A99AA83E9625B45B10096379A67",
+    "pdf_file": "data\\raw\\niaaa\\alcohol_consumption\\source\\niaaa_surveillance_report_122.pdf",
+    "pdf_sha256": "71F1E8531F2DE32138F99D20B239EC78215A23B50070294FBB80671507BC222A",
+    "record_count": 12096,
+    "minimum_year": 1970,
+    "maximum_year": 2023,
+    "washington_geography_id": 53,
+    "united_states_geography_id": 99,
+    "all_beverages_code": 4,
+    "principal_allocator_measure": "Gallons of ethanol (absolute alcohol)",
+    "principal_allocator_measure_columns": "22-30",
+    "time_varying_abv_measure": "Preserved as separate source field; not used by J-3B.",
+    "ffy2024_status": "SOURCE_YEAR_UNAVAILABLE_NO_CARRY_FORWARD_DECISION_IN_J3B"
+  },
+  "boundaries": {
+    "omb_receipts_allocated": false,
+    "niaaa_2023_carried_to_2024": false,
+    "transportation_scope_decision": false,
+    "database_writes": false,
+    "final_ledger_authorization": false
+  }
+}

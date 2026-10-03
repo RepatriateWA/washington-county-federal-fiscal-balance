@@ -1,0 +1,52 @@
+======================================================================================================================
+FEDERAL RECEIPTS RECONSTRUCTION COVERAGE - ETL-172I-3
+======================================================================================================================
+
+UPSTREAM PROVENANCE
+----------------------------------------------------------------------------------------------------------------------
+ETL-172I-1 universe         : 9F76F34692D6A12E19F1BCF762538C546671900134064E5D7980448F7744D89C
+ETL-172I-2 annual           : 02146B1A060D03E37005807170DA693301C9C82BFE0DC2B167F4180AAA0B7756
+ETL-172I-2 detail           : 9E96B0B7F91F8E902B40861E2BAB290655F876A351EC3FB38F4063686B56321F
+ETL-172F-2 controls         : 7EDB32670227A444F9BDE8859B3D034247011CFF000B3B688024D2E0ADA43960
+
+ANNUAL RECONSTRUCTION COVERAGE
+----------------------------------------------------------------------------------------------------------------------
+FFY            TOTAL       COVERED     REMAINING     COVER %    SOCIAL REM      EXCISE       OTHER
+----------------------------------------------------------------------------------------------------------------------
+2015       3,249,890     2,889,160       360,730    88.9002%        60,696      98,279     201,755
+2016       3,267,965     2,902,638       365,327    88.8210%        58,073      95,026     212,228
+2017       3,316,184     2,990,716       325,468    90.1855%        55,349      83,823     186,296
+2018       3,329,907     3,003,677       326,230    90.2030%        55,295      94,986     175,949
+2019       3,463,364     3,139,977       323,387    90.6626%        51,238      98,914     173,235
+2020       3,421,164     3,077,714       343,450    89.9610%        52,749      86,780     203,921
+2021       4,047,111     3,663,349       383,762    90.5176%        66,947      75,274     241,541
+2022       4,897,339     4,462,131       435,208    91.1134%        78,407      87,728     269,073
+2023       4,440,948     4,147,582       293,366    93.3941%        62,939      75,802     154,625
+2024       4,919,884     4,602,673       317,211    93.5525%        62,187     101,426     153,598
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------------------------
+expected_annual_observations                        : 10
+actual_annual_observations                          : 10
+fiscal_year_coverage                                : PASS
+fiscal_year_uniqueness                              : PASS
+i1_i2_social_control_reconciliation                 : PASS
+i1_i2_excise_control_reconciliation                 : PASS
+f2_oasi_di_hi_control_use                           : PASS
+social_residual_identity                            : PASS
+social_residual_component_proof                     : PASS
+total_receipts_coverage_identity                    : PASS
+coverage_percentage_arithmetic                      : PASS
+coverage_interpretation_boundary                    : PASS
+washington_allocation_boundary                      : PASS
+rockefeller_replication_boundary                    : PASS
+irs_reconciliation_boundary                         : PASS
+database_write_boundary                             : PASS
+ledger_boundary                                     : PASS
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------------
+Coverage percentage measures the share of the national federal-receipts universe represented by categories for which WCFFBP already has a certified Washington allocation methodology.
+It is not the percentage of Washington tax collections directly observed, and it is not a completeness claim for the final Washington outflow ledger.
+
+ETL-172I-3 RESULT: PASS

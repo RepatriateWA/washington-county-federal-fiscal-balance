@@ -1,0 +1,56 @@
+====================================================================================================
+OMB NATIONAL INDIVIDUAL-INCOME-TAX RECEIPT CONTROLS - ETL-172G-1C
+====================================================================================================
+
+National control extraction and certification only. No Washington allocation, IRS SOI state-share application, Rockefeller reconstruction, DB writes, or receipts-ledger inclusion.
+
+SOURCE CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Source : data\raw\omb\historical_tables\FY2027\source\BUDGET-2027-TAB-3-1.xlsx
+Bytes  : 12,393
+SHA256 : 1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3
+Hash   : PASS
+
+SEMANTIC CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Sheet                  : Table
+Title                  : Table 2.1 - RECEIPTS BY SOURCE: 1934 - 2031
+Units                  : (in millions of dollars)
+Series                 : Individual Income Taxes
+Series header          : B3
+Target fiscal years    : 2015-2024
+First explicit estimate: 2026
+
+EXTRACTION CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Expected observations : 10
+Actual observations   : 10
+Coverage              : PASS
+Year uniqueness       : PASS
+Source-cell uniqueness: PASS
+
+NATIONAL INDIVIDUAL-INCOME-TAX CONTROLS
+----------------------------------------------------------------------------------------------------
+FY    CELL                 SOURCE $M                 DOLLARS
+----------------------------------------------------------------------------------------------------
+2015  B87              1,540,802.000       1,540,802,000,000
+2016  B88              1,546,075.000       1,546,075,000,000
+2017  B89              1,587,120.000       1,587,120,000,000
+2018  B90              1,683,538.000       1,683,538,000,000
+2019  B91              1,717,857.000       1,717,857,000,000
+2020  B92              1,608,663.000       1,608,663,000,000
+2021  B93              2,044,377.000       2,044,377,000,000
+2022  B94              2,632,146.000       2,632,146,000,000
+2023  B95              2,176,481.000       2,176,481,000,000
+2024  B96              2,426,067.000       2,426,067,000,000
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+These values are national federal Individual Income Taxes receipts controls from OMB Historical Table 2.1.
+FY2015-FY2024 are on the historical side of the workbook's explicit FY2026 estimate boundary.
+This step does not determine Washington's share of those receipts.
+It does not apply IRS SOI tax-liability variables A06500, A85530, or A85300.
+It does not force reconciliation to IRS state gross collections.
+It does not authorize final receipts-ledger inclusion.
+
+ETL-172G-1C RESULT: PASS

@@ -1,0 +1,456 @@
+{
+  "BEAAPI": {
+    "Request": {
+      "RequestParam": [
+        {
+          "ParameterName": "USERID",
+          "ParameterValue": "4C05625B-B27C-41B4-88AD-17EAF3401BFA"
+        },
+        {
+          "ParameterName": "METHOD",
+          "ParameterValue": "GETDATA"
+        },
+        {
+          "ParameterName": "DATASETNAME",
+          "ParameterValue": "REGIONAL"
+        },
+        {
+          "ParameterName": "TABLENAME",
+          "ParameterValue": "CAINC6N"
+        },
+        {
+          "ParameterName": "LINECODE",
+          "ParameterValue": "2002"
+        },
+        {
+          "ParameterName": "YEAR",
+          "ParameterValue": "2014"
+        },
+        {
+          "ParameterName": "GEOFIPS",
+          "ParameterValue": "WA"
+        },
+        {
+          "ParameterName": "RESULTFORMAT",
+          "ParameterValue": "JSON"
+        }
+      ]
+    },
+    "Results": {
+      "Statistic": "Govt. and govt. enterprises compensation: Military",
+      "UnitOfMeasure": "Thousands of dollars",
+      "PublicTable": "CAINC6N Compensation of employees by NAICS industry",
+      "UTCProductionTime": "2026-09-14T01:46:19.207",
+      "NoteRef": " ",
+      "Dimensions": [
+        {
+          "Name": "Code",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "GeoFips",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "GeoName",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "TimePeriod",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "DataValue",
+          "DataType": "numeric",
+          "IsValue": "1"
+        },
+        {
+          "Name": "CL_UNIT",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "UNIT_MULT",
+          "DataType": "numeric",
+          "IsValue": "0"
+        }
+      ],
+      "Data": [
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5898037"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1557"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1801"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "16112"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6029"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "30273"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "41686"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "320"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8318"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3242"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "599"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6947"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "178"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7507"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8062"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "549764"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3269"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "298319"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "934690"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5002"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1692"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6106"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "828"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4754"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3323"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8777"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1049"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3113334"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1295"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9688"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "930"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "442816"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "284570"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3535"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "27266"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "326"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4954"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21453"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5022"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2014",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "32644"
+        }
+      ],
+      "Notes": [
+        {
+          "NoteRef": "Note.",
+          "NoteText": "All dollar estimates are in thousands of current dollars (not adjusted for inflation). Statistics presented in thousands of dollars do not indicate more precision than statistics presented in millions of dollars."
+        },
+        {
+          "NoteRef": " ",
+          "NoteText": "Last updated: February 5, 2026-- new statistics for 2024; revised statistics for 2020-2023."
+        }
+      ]
+    }
+  }
+}

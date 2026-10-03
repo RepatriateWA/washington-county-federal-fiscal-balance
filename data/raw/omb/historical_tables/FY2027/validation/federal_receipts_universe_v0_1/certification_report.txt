@@ -1,0 +1,87 @@
+====================================================================================================
+OMB FEDERAL RECEIPTS UNIVERSE INVENTORY - ETL-172I-1
+====================================================================================================
+
+SOURCE
+----------------------------------------------------------------------------------------------------
+File   : data\raw\omb\historical_tables\FY2027\source\BUDGET-2027-TAB-3-1.xlsx
+SHA256 : 1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3
+Sheet  : Table
+Title  : Table 2.1 - RECEIPTS BY SOURCE:  1934 - 2031
+Units  : (in millions of dollars)
+
+SOURCE STRUCTURE
+----------------------------------------------------------------------------------------------------
+B : Individual Income Taxes
+C : Corporation Income Taxes
+D : Social Insurance and Retirement Receipts - Total
+E : Social Insurance and Retirement Receipts - On-Budget
+F : Social Insurance and Retirement Receipts - Off-Budget
+G : Excise Taxes
+H : Other
+I : Total Receipts
+J : Total Receipts - On-Budget
+K : Total Receipts - Off-Budget
+
+CERTIFIED IDENTITIES
+----------------------------------------------------------------------------------------------------
+Social Insurance Total = Social Insurance On-Budget + Off-Budget
+Total Receipts = Individual Income Taxes + Corporation Income Taxes + Social Insurance and Retirement Receipts + Excise Taxes + Other
+Total Receipts = Total On-Budget + Total Off-Budget
+
+NATIONAL FEDERAL RECEIPTS UNIVERSE
+----------------------------------------------------------------------------------------------------
+FFY          INDIVIDUAL     CORPORATE        SOCIAL      EXCISE       OTHER           TOTAL
+----------------------------------------------------------------------------------------------------
+2015          1,540,802       343,797     1,065,257      98,279     201,755       3,249,890
+2016          1,546,075       299,571     1,115,065      95,026     212,228       3,267,965
+2017          1,587,120       297,048     1,161,897      83,823     186,296       3,316,184
+2018          1,683,538       204,733     1,170,701      94,986     175,949       3,329,907
+2019          1,717,857       230,245     1,243,113      98,914     173,235       3,463,364
+2020          1,608,663       211,845     1,309,955      86,780     203,921       3,421,164
+2021          2,044,377       371,831     1,314,088      75,274     241,541       4,047,111
+2022          2,632,146       424,865     1,483,527      87,728     269,073       4,897,339
+2023          2,176,481       419,584     1,614,456      75,802     154,625       4,440,948
+2024          2,426,067       529,867     1,708,926     101,426     153,598       4,919,884
+
+CURRENT WCFFBP RECONSTRUCTION STATUS
+----------------------------------------------------------------------------------------------------
+Individual Income Taxes                 : RECONSTRUCTED_ECONOMIC_INCIDENCE
+Corporation Income Taxes                : RECONSTRUCTED_ECONOMIC_INCIDENCE
+Social Insurance and Retirement Receipts: PARTIAL
+Excise Taxes                            : NOT_YET_RECONSTRUCTED
+Other                                   : NOT_YET_DECOMPOSED
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+structure_title                             : PASS
+structure_units                             : PASS
+structure_headers                           : PASS
+structure_merged_headers                    : PASS
+expected_observations                       : 10
+actual_observations                         : 10
+fiscal_year_coverage                        : PASS
+fiscal_year_uniqueness                      : PASS
+source_row_mapping                          : PASS
+source_units                                : PASS
+million_to_dollar_conversion                : PASS
+social_insurance_nested_identity            : PASS
+top_level_receipts_identity                 : PASS
+total_budget_status_identity                : PASS
+washington_allocation_boundary              : PASS
+social_decomposition_boundary               : PASS
+other_decomposition_boundary                : PASS
+rockefeller_replication_boundary            : PASS
+irs_reconciliation_boundary                 : PASS
+database_write_boundary                     : PASS
+ledger_boundary                             : PASS
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+ETL-172I-1 establishes the national federal receipts accounting universe only.
+It does not calculate Washington receipts or Washington reconstruction completeness.
+Social Insurance and Retirement Receipts remain to be decomposed against the already reconstructed OASI, DI, and Medicare HI controls.
+Other receipts remain to be decomposed before allocability can be classified.
+No final receipts-ledger inclusion is authorized.
+
+ETL-172I-1 RESULT: PASS

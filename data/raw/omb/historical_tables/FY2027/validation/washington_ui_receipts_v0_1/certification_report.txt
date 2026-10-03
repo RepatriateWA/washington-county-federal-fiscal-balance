@@ -1,0 +1,68 @@
+========================================================================================================
+ETL-172J-4B WASHINGTON UNEMPLOYMENT-INSURANCE RECEIPT ALLOCATION v0.1
+========================================================================================================
+
+Overall status       : PASS
+ETA-2112 SHA256      : 777869F74882A4160E5AFCE3ADC671C21C557FE6C27F9FD7FE50FABAFF169A86
+Source geography     : 53 codes
+WCFFBP denominator   : 50 states + DC
+Excluded geography  : PR, VI
+
+CERTIFICATION CHECKS
+--------------------------------------------------------------------------------------------------------
+eta2112_source_sha256                                              PASS
+j4a_upstream_certification                                         PASS
+eta2112_source_geography                                           PASS
+wcffbp_state_dc_denominator_geography                              PASS
+washington_12_month_coverage                                       PASS
+allocator_denominator_nonzero                                      PASS
+omb_ui_control_coverage                                            PASS
+j3_work_queue_coverage                                             PASS
+ui_control_not_greater_than_j3_queue                               PASS
+washington_allocation_identity                                     PASS
+j3_work_queue_reduction                                            PASS
+post_j4b_actionable_queue_nonnegative                              PASS
+territories_explicitly_excluded                                    PASS
+omb_eta2112_forced_reconciliation_boundary                         PASS
+irs_forced_reconciliation_boundary                                 PASS
+database_write_boundary                                            PASS
+final_ledger_boundary                                              PASS
+
+WASHINGTON UI RECEIPT ALLOCATION
+--------------------------------------------------------------------------------------------------------
+FFY   OMB UI CTRL     WA c10          STATE+DC c10       WA SHARE     WA UI RECEIPTS
+--------------------------------------------------------------------------------------------------------
+2015       51,178M    1,333,767,832     41,743,644,869     3.1951%   $   1.635B
+2016       48,856M    1,202,531,078     39,434,908,910     3.0494%   $   1.490B
+2017       45,808M    1,115,846,284     36,945,466,889     3.0203%   $   1.384B
+2018       45,042M    1,004,651,268     35,087,562,919     2.8633%   $   1.290B
+2019       40,934M    1,003,908,862     33,550,458,409     2.9922%   $   1.225B
+2020       43,104M      855,830,057     31,911,274,782     2.6819%   $   1.156B
+2021       56,602M    1,449,573,121     36,899,116,762     3.9285%   $   2.224B
+2022       66,498M    2,141,334,713     42,409,941,359     5.0491%   $   3.358B
+2023       49,404M    1,666,526,101     37,727,529,759     4.4173%   $   2.182B
+2024       47,975M    1,906,099,030     36,720,990,982     5.1908%   $   2.490B
+
+POST-J4B WORK QUEUE
+--------------------------------------------------------------------------------------------------------
+FFY   J3 ACTIONABLE   UI CLOSED   ACTIONABLE AFTER J4B
+--------------------------------------------------------------------------------------------------------
+2015        62,439M     51,178M              11,261M
+2016        60,095M     48,856M              11,239M
+2017        45,876M     45,808M                  68M
+2018        49,723M     45,042M               4,681M
+2019        50,524M     40,934M               9,590M
+2020        58,420M     43,104M              15,316M
+2021        56,808M     56,602M                 206M
+2022        66,498M     66,498M                   0M
+2023        49,404M     49,404M                   0M
+2024        47,975M     47,975M                   0M
+
+BOUNDARIES
+--------------------------------------------------------------------------------------------------------
+ETA-2112 supplies geographic incidence only.
+OMB supplies the national accounting control.
+No forced ETA-2112 / OMB reconciliation.
+Health Insurance Providers remains unresolved.
+No PostgreSQL writes.
+No final-ledger authorization.

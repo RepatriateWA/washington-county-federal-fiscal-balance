@@ -1,0 +1,40 @@
+{
+  "etl_stage": "ETL-172J-4C",
+  "title": "Health Insurance Providers receipt disposition",
+  "overall_status": "PASS",
+  "methodological_decision": {
+    "component": "HEALTH_INSURANCE_PROVIDERS",
+    "rockefeller_allocator": "Oliver Wyman state tax-burden forecast",
+    "wcffbp_principal_ledger_treatment": "WITHHOLD_UNRESOLVED",
+    "zero_control_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "washington_amount_imputed": false,
+    "reason": "The Rockefeller methodology documents a third-party modeled state tax-burden forecast. WCFFBP does not substitute an invented incidence model where the applicable state allocator has not been independently certified."
+  },
+  "checks": {
+    "j4b_upstream_certification": "PASS",
+    "j4b_queue_year_coverage": "PASS",
+    "hip_control_year_coverage": "PASS",
+    "post_j4b_actionable_residual_equals_hip": "PASS",
+    "post_j4b_method_review_equals_hip": "PASS",
+    "allocator_method_documented_queue_zero": "PASS",
+    "hip_zero_control_2022_2024": "PASS",
+    "post_j4c_actionable_queue_zero": "PASS",
+    "post_j4c_method_review_queue_zero": "PASS",
+    "washington_hip_not_imputed": "PASS",
+    "irs_forced_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "final_ledger_boundary": "PASS"
+  },
+  "boundaries": [
+    "No Washington HIP receipt amount is imputed.",
+    "Nonzero HIP national controls are explicitly withheld.",
+    "Zero national-control years remain zero.",
+    "No IRS gross-collections forced reconciliation.",
+    "No PostgreSQL writes.",
+    "No final-ledger authorization."
+  ]
+}

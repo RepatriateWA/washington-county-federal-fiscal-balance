@@ -1,0 +1,76 @@
+{
+  "etl_step": "ETL-172J-2",
+  "title": "Washington Population-Allocated Remaining Federal Receipts",
+  "result": "PASS",
+  "study_period": "FFY2015-FFY2024",
+  "population_policy": {
+    "2015_2019": "Census 2010-2020 intercensal resident population",
+    "2020_2024": "Census Vintage 2025 resident population",
+    "allocation_formula": "Washington resident population / United States resident population",
+    "principal_ledger_policy": "Use latest revised official Census historical population series applicable to each period."
+  },
+  "components": [
+    "AIRPORT_AND_AIRWAY",
+    "OTHER_EXCISES",
+    "OTHER_RETIREMENT",
+    "TOBACCO"
+  ],
+  "source_files": {
+    "census_intercensal": {
+      "path": "data\\raw\\census\\population\\source\\nst-est2020int-pop.xlsx",
+      "sha256": "0B828E111E32C9233434FC872F3CF450119515BABB7794E9FF0370BF017E0D3D",
+      "bytes": 17949
+    },
+    "census_vintage_2025": {
+      "path": "data\\raw\\census\\population\\source\\NST-EST2025-ALLDATA.csv",
+      "sha256": "92188E29CB0A67DCF95AFA7D6C47359409782F086478B70EA4128EB70E223CA9",
+      "bytes": 53555
+    },
+    "etl_172i_2_decomposition": {
+      "path": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\social_insurance_excise_decomposition_v0_1\\national_social_insurance_excise_decomposition.csv",
+      "sha256": "9E96B0B7F91F8E902B40861E2BAB290655F876A351EC3FB38F4063686B56321F",
+      "bytes": 44618
+    },
+    "i5_crosswalk": {
+      "path": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\remaining_receipts_methodology_crosswalk_v0_1\\remaining_receipts_methodology_crosswalk.csv",
+      "sha256": "8224A432C59C1DA12EAC9BAEA1B9FF869F2F7DA0FFD0C60EB9C9CD2613217F2C",
+      "bytes": 3931
+    },
+    "j1_queue": {
+      "path": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_irs_table5_remaining_receipts_v0_1\\remaining_receipts_work_queue_after_j1.csv",
+      "sha256": "BFF8D7192E2BAA51CDD311D1A25453791BC59799BBC0AEEDC8C1FA354E3CCECE",
+      "bytes": 1003
+    }
+  },
+  "checks": {
+    "census_source_integrity": "PASS",
+    "intercensal_year_coverage": "PASS",
+    "vintage_2025_year_coverage": "PASS",
+    "population_year_alignment": "PASS",
+    "population_geography_uniqueness": "PASS",
+    "population_share_calculation": "PASS",
+    "i5_population_methodology": "PASS",
+    "national_control_year_component_coverage": "PASS",
+    "other_retirement_control_construction": "PASS",
+    "other_excises_residual_construction": "PASS",
+    "washington_allocation": "PASS",
+    "j1_work_queue_reduction": "PASS",
+    "database_write_boundary": "PASS",
+    "final_ledger_boundary": "PASS"
+  },
+  "failed_checks": [],
+  "outputs": {
+    "population_allocator": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_population_receipts_v0_1\\washington_population_allocator.csv",
+    "national_controls": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_population_receipts_v0_1\\population_allocated_national_controls.csv",
+    "washington_allocation": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_population_receipts_v0_1\\washington_population_receipts_allocation.csv",
+    "annual_summary": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_population_receipts_v0_1\\washington_population_receipts_annual_summary.csv",
+    "post_j2_queue": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_population_receipts_v0_1\\remaining_receipts_work_queue_after_j2.csv"
+  },
+  "boundaries": [
+    "No PostgreSQL writes.",
+    "No county allocation.",
+    "No Rockefeller publication-vintage replication.",
+    "No IRS gross-collections forced reconciliation.",
+    "No final ledger authorization."
+  ]
+}

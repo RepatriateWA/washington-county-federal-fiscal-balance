@@ -1,0 +1,56 @@
+====================================================================================================
+WASHINGTON SOCIAL-INSURANCE RECEIPTS ALLOCATION - ETL-172F-3
+====================================================================================================
+
+Allocation/certification only. No database writes, final receipts-ledger inclusion, forced IRS reconciliation, or Rockefeller dollar target.
+
+CERTIFIED INPUTS
+----------------------------------------------------------------------------------------------------
+OMB controls : data\raw\omb\historical_tables\FY2027\validation\social_insurance_receipt_controls_v0_1\national_social_insurance_receipt_controls.csv
+OMB SHA256   : 7EDB32670227A444F9BDE8859B3D034247011CFF000B3B688024D2E0ADA43960
+SSA shares   : data\raw\ssa\earnings_employment\validation\allocator_certification_v0_1\washington_ssa_receipts_allocator_extract.csv
+SSA SHA256   : 4C0456D39185AA504CCCC0B5D86A94C03F4B633C3EBE99F8DFB3E59BAB204E0E
+
+ALLOCATION POLICY
+----------------------------------------------------------------------------------------------------
+OASI = national OASI receipts x WA OASDI contribution share
+DI   = national DI receipts x WA OASDI contribution share
+HI   = national HI receipts x WA HI contribution share
+
+FY2015-FY2023: contemporaneous certified SSA contribution shares
+FY2024: certified 2023 SSA contribution share as latest available; lag explicitly preserved
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Detail observations          : 30 / 30
+Detail coverage              : PASS
+Detail uniqueness            : PASS
+OASI/DI share consistency    : PASS
+Allocator timing policy      : PASS
+Annual observations          : 10 / 10
+Annual arithmetic            : PASS
+
+WASHINGTON RECEIPTS
+----------------------------------------------------------------------------------------------------
+FY       OASI              DI              OASDI             HI                TOTAL
+----------------------------------------------------------------------------------------------------
+2015    17,157,435,493   2,913,551,361    20,070,986,854     5,808,064,370       25,879,051,224
+2016    17,720,212,520   3,846,808,144    21,567,020,664     6,363,402,593       27,930,423,257
+2017    18,716,747,475   4,422,339,193    23,139,086,668     6,762,177,941       29,901,264,609
+2018    19,114,077,459   4,522,128,882    23,636,206,341     7,147,043,093       30,783,249,434
+2019    21,755,785,766   4,067,718,085    25,823,503,850     7,830,645,725       33,654,149,576
+2020    23,580,772,771   4,003,554,388    27,584,327,159     8,355,625,292       35,939,952,451
+2021    23,328,792,585   3,963,121,194    27,291,913,778     8,693,492,119       35,985,405,897
+2022    25,878,943,649   4,396,055,727    30,274,999,376     9,657,664,725       39,932,664,101
+2023    28,932,930,227   4,914,000,929    33,846,931,157    10,427,679,500       44,274,610,657
+2024    30,536,084,293   5,185,767,611    35,721,851,904    11,275,710,691       46,997,562,595
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+These values are reconstructed Washington economic-incidence estimates produced from certified national OMB controls and certified SSA state contribution shares.
+They are not IRS administrative collections and are not forced to equal IRS gross collections.
+FY2024 uses the FY2023 SSA contribution share as a documented latest-available-data substitution.
+The FY2015 HI estimate retains the known SSA 2015 HI state-source limitation flag.
+This certification does not yet authorize final federal-receipts ledger inclusion.
+
+ETL-172F-3 RESULT: PASS

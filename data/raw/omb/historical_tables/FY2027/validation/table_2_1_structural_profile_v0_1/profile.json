@@ -1,0 +1,51 @@
+{
+  "etl_step": "ETL-172G-1B",
+  "source": {
+    "path": "data\\raw\\omb\\historical_tables\\FY2027\\source\\BUDGET-2027-TAB-3-1.xlsx",
+    "bytes": 12393,
+    "sha256_expected": "1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3",
+    "sha256_actual": "1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3",
+    "hash_status": "PASS"
+  },
+  "workbook": {
+    "sheet_names": [
+      "Table"
+    ],
+    "sheet_count": 1
+  },
+  "semantic_counts": {
+    "ACTUAL_ESTIMATE": 6,
+    "CORPORATE_INCOME_TAX": 1,
+    "EXCISE": 1,
+    "FOOTNOTE": 8,
+    "INDIVIDUAL_INCOME_TAX": 1,
+    "SOCIAL_INSURANCE": 1,
+    "TABLE_TITLE": 1,
+    "TOTAL_RECEIPTS": 3,
+    "UNITS": 1
+  },
+  "year_candidate_summary": {
+    "minimum": 1905,
+    "maximum": 2181,
+    "target_year_hit_counts": {
+      "2015": 1,
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1
+    }
+  },
+  "interpretation_boundary": {
+    "national_control_selected": false,
+    "washington_allocation": false,
+    "irs_allocator_applied": false,
+    "rockefeller_reconstruction": false,
+    "database_writes": false,
+    "ledger_inclusion_authorized": false
+  }
+}

@@ -1,0 +1,18 @@
+sheet_name,coordinate,row,column,category,value
+Table,A1,1,1,TABLE_TITLE,Table 2.4 - COMPOSITION OF SOCIAL INSURANCE AND RETIREMENT RECEIPTS AND OF EXCISE TAXES:  1940 - 2031
+Table,A2,2,1,UNITS,(in millions of dollars)
+Table,CK3,3,89,ACTUAL_ESTIMATE,2026 Estimate
+Table,CL3,3,90,ACTUAL_ESTIMATE,2027 Estimate
+Table,CM3,3,91,ACTUAL_ESTIMATE,2028 Estimate
+Table,CN3,3,92,ACTUAL_ESTIMATE,2029 Estimate
+Table,CO3,3,93,ACTUAL_ESTIMATE,2030 Estimate
+Table,CP3,3,94,ACTUAL_ESTIMATE,2031 Estimate
+Table,A4,4,1,TABLE_TITLE,Social Insurance and Retirement Receipts
+Table,A6,6,1,OASI,Old-age and survivors insurance:
+Table,A9,9,1,DI,Disability insurance (Off-Budget)
+Table,A10,10,1,HI,Hospital insurance
+Table,A24,24,1,TABLE_TITLE,"Total, Social Insurance and Retirement Receipts (1)"
+Table,A25,25,1,TABLE_TITLE,Excise Taxes
+Table,A42,42,1,DI,Black lung disability
+Table,A54,54,1,TABLE_TITLE,"Total, Excise Taxes"
+Table,A57,57,1,FOOTNOTE,"Note: Unless otherwise noted, all receipts shown in this table are trust funds and on-budget."

@@ -1,0 +1,48 @@
+{
+  "etl_step": "ETL-172G-1C",
+  "result": "PASS",
+  "purpose": "Extract and certify FY2015-FY2024 national Individual Income Taxes receipts from OMB Historical Table 2.1.",
+  "source": {
+    "path": "data\\raw\\omb\\historical_tables\\FY2027\\source\\BUDGET-2027-TAB-3-1.xlsx",
+    "bytes": 12393,
+    "sha256": "1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3",
+    "hash_status": "PASS"
+  },
+  "semantics": {
+    "title": "Table 2.1 - RECEIPTS BY SOURCE: 1934 - 2031",
+    "units": "(in millions of dollars)",
+    "series_label": "Individual Income Taxes",
+    "series_header_cell": "B3"
+  },
+  "year_profile": {
+    "first_explicit_estimate_year": 2026,
+    "target_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "target_year_status": "HISTORICAL_SIDE_OF_EXPLICIT_ESTIMATE_BOUNDARY"
+  },
+  "extract_certification": {
+    "expected_observations": 10,
+    "actual_observations": 10,
+    "coverage": "PASS",
+    "year_uniqueness": "PASS",
+    "source_cell_uniqueness": "PASS"
+  },
+  "interpretation_boundary": {
+    "washington_allocation": false,
+    "irs_soi_allocator_applied": false,
+    "rockefeller_reconstruction": false,
+    "forced_irs_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

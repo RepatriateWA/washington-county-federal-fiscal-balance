@@ -1,0 +1,44 @@
+============================================================================================================================
+WASHINGTON POPULATION-ALLOCATED REMAINING RECEIPTS - ETL-172J-2
+============================================================================================================================
+
+ANNUAL ALLOCATION
+----------------------------------------------------------------------------------------------------------------------------
+FFY         WA POP        US POP       WA %     J2 CLOSED    WA ALLOC $B     QUEUE LEFT
+2015     7,181,417   321,815,121    2.2315%        40,218          0.897        112,891
+2016     7,316,788   324,353,340    2.2558%        36,548          0.824        111,238
+2017     7,447,469   326,608,609    2.2802%        37,003          0.844         96,820
+2018     7,549,002   328,529,577    2.2978%        42,139          0.968        102,393
+2019     7,638,923   330,226,227    2.3132%        40,447          0.936        104,187
+2020     7,726,812   331,578,104    2.3303%        24,410          0.569        110,674
+2021     7,744,316   332,100,166    2.3319%        26,958          0.629        110,546
+2022     7,786,828   333,996,304    2.3314%        37,195          0.867        123,325
+2023     7,838,655   336,755,052    2.3277%        30,990          0.721        101,121
+2024     7,927,958   340,003,797    2.3317%        57,944          1.351         99,411
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------------------------------
+census_source_integrity                                         : PASS
+intercensal_year_coverage                                       : PASS
+vintage_2025_year_coverage                                      : PASS
+population_year_alignment                                       : PASS
+population_geography_uniqueness                                 : PASS
+population_share_calculation                                    : PASS
+i5_population_methodology                                       : PASS
+national_control_year_component_coverage                        : PASS
+other_retirement_control_construction                           : PASS
+other_excises_residual_construction                             : PASS
+washington_allocation                                           : PASS
+j1_work_queue_reduction                                         : PASS
+database_write_boundary                                         : PASS
+final_ledger_boundary                                           : PASS
+
+Population : data\raw\omb\historical_tables\FY2027\validation\washington_population_receipts_v0_1\washington_population_allocator.csv
+Controls   : data\raw\omb\historical_tables\FY2027\validation\washington_population_receipts_v0_1\population_allocated_national_controls.csv
+Allocation : data\raw\omb\historical_tables\FY2027\validation\washington_population_receipts_v0_1\washington_population_receipts_allocation.csv
+Annual     : data\raw\omb\historical_tables\FY2027\validation\washington_population_receipts_v0_1\washington_population_receipts_annual_summary.csv
+Queue      : data\raw\omb\historical_tables\FY2027\validation\washington_population_receipts_v0_1\remaining_receipts_work_queue_after_j2.csv
+JSON       : data\raw\omb\historical_tables\FY2027\validation\washington_population_receipts_v0_1\certification.json
+Report     : data\raw\omb\historical_tables\FY2027\validation\washington_population_receipts_v0_1\certification_report.txt
+
+ETL-172J-2 RESULT: PASS

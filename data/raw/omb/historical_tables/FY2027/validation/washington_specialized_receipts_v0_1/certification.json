@@ -1,0 +1,38 @@
+{
+  "etl": "ETL-172J-3C",
+  "result": "PASS",
+  "methodology": {
+    "transportation": "OMB national TRANSPORTATION_TRUST_FUND control allocated using contemporaneous FHWA FE-221B Washington share of Highway Account payments.",
+    "alcohol_2015_2023": "OMB national ALCOHOL control allocated using same-year NIAAA Washington share of all-beverage gallons of ethanol (absolute alcohol).",
+    "alcohol_2024": "OMB FFY2024 ALCOHOL control allocated using NIAAA 2023 LATEST_AVAILABLE_SHARE; no extrapolated 2024 NIAAA observation."
+  },
+  "boundaries": {
+    "raw_omb_reinterpretation": false,
+    "raw_fhwa_reinterpretation": false,
+    "raw_niaaa_reinterpretation": false,
+    "irs_forced_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_authorization": false
+  },
+  "checks": {
+    "j3b_upstream_certification": "PASS",
+    "national_control_year_component_coverage": "PASS",
+    "allocator_timing_coverage": "PASS",
+    "fhwa_timing_policy": "PASS",
+    "niaaa_timing_policy": "PASS",
+    "washington_allocation": "PASS",
+    "j2_work_queue_reduction": "PASS",
+    "allocator_method_documented_queue_closed": "PASS",
+    "ffy2024_expected_queue_structure": "PASS",
+    "irs_forced_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "final_ledger_boundary": "PASS"
+  },
+  "outputs": {
+    "controls": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_specialized_receipts_v0_1\\specialized_receipt_national_controls.csv",
+    "timing": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_specialized_receipts_v0_1\\specialized_receipt_allocator_timing.csv",
+    "allocation": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_specialized_receipts_v0_1\\washington_specialized_receipts_allocation.csv",
+    "annual": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_specialized_receipts_v0_1\\washington_specialized_receipts_annual_summary.csv",
+    "queue": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\washington_specialized_receipts_v0_1\\remaining_receipts_work_queue_after_j3.csv"
+  }
+}

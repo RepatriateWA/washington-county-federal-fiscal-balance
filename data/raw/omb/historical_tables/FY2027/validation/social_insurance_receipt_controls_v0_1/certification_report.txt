@@ -1,0 +1,78 @@
+====================================================================================================
+OMB NATIONAL SOCIAL-INSURANCE RECEIPT CONTROLS - ETL-172F-2C
+====================================================================================================
+
+National control extraction and certification only. No Washington allocation, SSA-share application, Rockefeller reconstruction, DB writes, or receipts-ledger inclusion.
+
+SOURCE CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Source : data\raw\omb\historical_tables\FY2027\source\BUDGET-2027-TAB-3-4.xlsx
+Bytes  : 26,752
+SHA256 : 21D071576D5627A18C3F62DE86BFC7FAECED1A68265F2DB87B4F737B2773C5BD
+Hash   : PASS
+
+SEMANTIC CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Sheet                    : Table
+Source units             : (in millions of dollars)
+Normalized source units  : millions of dollars
+Target fiscal years      : 2015-2024
+First explicit estimate  : 2026
+Target-year status       : HISTORICAL / ACTUAL SIDE OF EXPLICIT ESTIMATE BOUNDARY
+
+OASI  row=8   label='Trust funds (Off-Budget)' budget_status=OFF_BUDGET
+DI    row=9   label='Disability insurance (Off-Budget)' budget_status=OFF_BUDGET
+HI    row=10  label='Hospital insurance' budget_status=ON_BUDGET_UNLESS_OTHERWISE_NOTED
+
+EXTRACTION CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Expected observations : 30
+Actual observations   : 30
+Coverage              : PASS
+Uniqueness            : PASS
+
+EXTRACTED NATIONAL CONTROLS
+----------------------------------------------------------------------------------------------------
+FY    SERIES  CELL     SOURCE_MILLIONS       NORMALIZED_DOLLARS
+----------------------------------------------------------------------------------------------------
+2015  OASI    BZ8             658,543.000          658,543,000,000
+2015  DI      BZ9             111,829.000          111,829,000,000
+2015  HI      BZ10            234,189.000          234,189,000,000
+2016  OASI    CA8             665,672.000          665,672,000,000
+2016  DI      CA9             144,508.000          144,508,000,000
+2016  HI      CA10            246,812.000          246,812,000,000
+2017  OASI    CB8             688,048.000          688,048,000,000
+2017  DI      CB9             162,570.000          162,570,000,000
+2017  HI      CB10            255,930.000          255,930,000,000
+2018  OASI    CC8             691,215.000          691,215,000,000
+2018  DI      CC9             163,532.000          163,532,000,000
+2018  HI      CC10            260,659.000          260,659,000,000
+2019  OASI    CD8             770,282.000          770,282,000,000
+2019  DI      CD9             144,021.000          144,021,000,000
+2019  HI      CD10            277,572.000          277,572,000,000
+2020  OASI    CE8             825,307.000          825,307,000,000
+2020  DI      CE9             140,121.000          140,121,000,000
+2020  HI      CE10            291,778.000          291,778,000,000
+2021  OASI    CF8             814,034.000          814,034,000,000
+2021  DI      CF9             138,289.000          138,289,000,000
+2021  HI      CF10            294,818.000          294,818,000,000
+2022  OASI    CG8             911,191.000          911,191,000,000
+2022  DI      CG9             154,784.000          154,784,000,000
+2022  HI      CG10            339,145.000          339,145,000,000
+2023  OASI    CH8           1,020,442.000        1,020,442,000,000
+2023  DI      CH9             173,313.000          173,313,000,000
+2023  HI      CH10            357,762.000          357,762,000,000
+2024  OASI    CI8           1,076,984.000        1,076,984,000,000
+2024  DI      CI9             182,898.000          182,898,000,000
+2024  HI      CI10            386,857.000          386,857,000,000
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+PASS certifies source identity, semantic row identity, units, year coverage, historical-side status, numeric extraction, normalization, coverage, and uniqueness.
+PASS does not establish Washington's share of these national receipts.
+PASS does not apply SSA OASDI or HI contribution shares.
+PASS does not authorize a FY2024 SSA carry-forward assumption.
+PASS does not reproduce or validate Rockefeller state receipt estimates.
+PASS does not authorize federal receipts-ledger inclusion.
+
+ETL-172F-2C RESULT: PASS

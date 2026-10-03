@@ -1,0 +1,92 @@
+{
+  "etl_step": "ETL-172I-2",
+  "result": "PASS",
+  "artifact_type": "OMB_SOCIAL_INSURANCE_EXCISE_DECOMPOSITION",
+  "source": {
+    "file": "data\\raw\\omb\\historical_tables\\FY2027\\source\\BUDGET-2027-TAB-3-4.xlsx",
+    "sha256": "21D071576D5627A18C3F62DE86BFC7FAECED1A68265F2DB87B4F737B2773C5BD",
+    "sheet": "Table",
+    "title": "Table 2.4 - COMPOSITION OF SOCIAL INSURANCE AND RETIREMENT RECEIPTS AND OF EXCISE TAXES:  1940 - 2031",
+    "units": "(in millions of dollars)"
+  },
+  "upstream": {
+    "etl_172i_1_file": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\federal_receipts_universe_v0_1\\national_federal_receipts_universe.csv",
+    "etl_172i_1_sha256": "9F76F34692D6A12E19F1BCF762538C546671900134064E5D7980448F7744D89C"
+  },
+  "social_component_codes": [
+    "OASI_FEDERAL_FUNDS",
+    "OASI_TRUST_FUNDS_OFF_BUDGET",
+    "DISABILITY_INSURANCE_OFF_BUDGET",
+    "HOSPITAL_INSURANCE",
+    "RAILROAD_RETIREMENT_FEDERAL_FUNDS",
+    "RAILROAD_RETIREMENT_TRUST_FUNDS",
+    "RAILROAD_SOCIAL_SECURITY_EQUIVALENT",
+    "UNEMPLOYMENT_INSURANCE_FEDERAL_FUNDS",
+    "UNEMPLOYMENT_INSURANCE_TRUST_FUNDS",
+    "FEDERAL_EMPLOYEE_RETIREMENT_EMPLOYEE_SHARE",
+    "NONFEDERAL_EMPLOYEE_RETIREMENT"
+  ],
+  "excise_component_codes": [
+    "ALCOHOL",
+    "TOBACCO",
+    "CRUDE_OIL_WINDFALL_PROFIT",
+    "TELEPHONE",
+    "OZONE_DEPLETING_CHEMICALS_PRODUCTS",
+    "TRANSPORTATION_FUELS",
+    "CORPORATE_STOCK_REPURCHASE",
+    "HEALTH_INSURANCE_PROVIDERS",
+    "INDOOR_TANNING_SERVICES",
+    "MEDICAL_DEVICES",
+    "OTHER_FEDERAL_FUND_EXCISE",
+    "TRANSPORTATION_TRUST_FUND",
+    "AIRPORT_AIRWAY_TRUST_FUND",
+    "BLACK_LUNG_DISABILITY_TRUST_FUND",
+    "INLAND_WATERWAY_TRUST_FUND",
+    "HAZARDOUS_SUBSTANCE_SUPERFUND",
+    "POST_CLOSURE_LIABILITY_HAZARDOUS_WASTE",
+    "OIL_SPILL_LIABILITY",
+    "AQUATIC_RESOURCES",
+    "LEAKING_UNDERGROUND_STORAGE_TANK",
+    "TOBACCO_ASSESSMENTS",
+    "VACCINE_INJURY_COMPENSATION",
+    "SUPPLEMENTARY_MEDICAL_INSURANCE",
+    "PATIENT_CENTERED_OUTCOMES_RESEARCH"
+  ],
+  "structure_certification": {
+    "title": "PASS",
+    "units": "PASS",
+    "row_taxonomy": "PASS",
+    "worksheet_dimensions": "57x94"
+  },
+  "certification": {
+    "expected_detail_observations": 350,
+    "actual_detail_observations": 350,
+    "expected_annual_observations": 10,
+    "actual_annual_observations": 10,
+    "fiscal_year_coverage": "PASS",
+    "fiscal_year_uniqueness": "PASS",
+    "source_year_column_mapping": "PASS",
+    "source_units": "PASS",
+    "social_employment_general_retirement_identity": "PASS",
+    "social_unemployment_insurance_identity": "PASS",
+    "social_other_retirement_identity": "PASS",
+    "social_total_identity": "PASS",
+    "social_table_2_1_reconciliation": "PASS",
+    "excise_federal_funds_identity": "PASS",
+    "excise_trust_funds_identity": "PASS",
+    "excise_total_identity": "PASS",
+    "excise_table_2_1_reconciliation": "PASS",
+    "washington_allocation_boundary": "PASS",
+    "rockefeller_replication_boundary": "PASS",
+    "irs_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "washington_allocation_performed": false,
+    "rockefeller_replication": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

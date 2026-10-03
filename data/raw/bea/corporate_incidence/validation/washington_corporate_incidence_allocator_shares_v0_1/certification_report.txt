@@ -1,0 +1,65 @@
+====================================================================================================
+BEA WASHINGTON CORPORATE-INCOME-TAX INCIDENCE ALLOCATOR SHARES - ETL-172H-3
+====================================================================================================
+
+Construct Washington / United States capital and labor allocator shares.
+No Rockefeller 75/25 weighting and no OMB corporate-income-tax allocation are performed.
+
+UPSTREAM PROVENANCE
+----------------------------------------------------------------------------------------------------
+H-2B manifest SHA256 : 6B440627D18175004094509A9D123BBA16A500884D487244559EC776A6E7C25A
+SAINC4-46    SHA256 : BC115F4D7D0CB733DD501069E9E8EE1964434B8E7F0F94F3EC5DA1FE63F44800
+SAINC4-70    SHA256 : 53A34615A580D8D8964668098FA52098EF2A274D1871A38C125B4EA1BFD0C690
+SAINC4-50    SHA256 : FAC3A8DB29B130FC0BD47732B324729B19D07A679D6B3AE652082591889D346E
+
+METHOD
+----------------------------------------------------------------------------------------------------
+Capital = SAINC4-46 (Dividends, interest, and rent)
+        + SAINC4-70 (Proprietors' income)
+Capital share = Washington capital / United States capital
+Labor share = Washington SAINC4-50 wages and salaries / United States SAINC4-50 wages and salaries
+United States denominator = BEA source-provided GeoFips 00000.
+Washington numerator = BEA GeoFips 53000.
+BEA observations are annual calendar-year values.
+
+WASHINGTON ALLOCATOR SHARES
+----------------------------------------------------------------------------------------------------
+YEAR            WA CAPITAL          US CAPITAL       CAP SHARE          WA WAGES            US WAGES       LAB SHARE
+----------------------------------------------------------------------------------------------------
+2015             112,162.3         4,296,134.0       2.610773%         191,714.8         7,851,802.0       2.441666%
+2016             116,933.5         4,386,067.0       2.666022%         203,646.5         8,086,749.0       2.518274%
+2017             125,548.8         4,683,839.0       2.680468%         218,430.3         8,469,518.0       2.579017%
+2018             130,320.6         4,956,586.0       2.629241%         237,183.1         8,888,150.0       2.668532%
+2019             141,478.6         5,195,319.0       2.723194%         253,906.9         9,313,643.0       2.726182%
+2020             144,299.5         5,248,637.0       2.749276%         264,888.6         9,449,132.0       2.803311%
+2021             155,605.6         5,844,759.0       2.662310%         291,898.0        10,302,909.0       2.833161%
+2022             169,348.2         6,276,259.0       2.698235%         311,461.2        11,116,310.0       2.801840%
+2023             185,185.7         6,960,296.0       2.660601%         336,258.0        11,729,818.0       2.866694%
+2024             194,003.7         7,362,204.0       2.635131%         359,543.8        12,404,924.0       2.898396%
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+expected_observations                   : 10
+actual_observations                     : 10
+year_coverage                           : PASS
+year_uniqueness                         : PASS
+source_hash_integrity                   : PASS
+source_units                            : PASS
+source_geography                        : PASS
+wa_capital_arithmetic                   : PASS
+us_capital_arithmetic                   : PASS
+capital_share_arithmetic                : PASS
+labor_share_arithmetic                  : PASS
+bea_period_basis                        : PASS
+corporate_incidence_75_25_boundary      : PASS
+omb_allocation_boundary                 : PASS
+ledger_boundary                         : PASS
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+These are BEA-derived Washington / United States capital and labor shares only.
+The Rockefeller 75-percent capital / 25-percent labor weighting is not applied in ETL-172H-3.
+No national corporate-income-tax receipts are allocated to Washington.
+Final receipts-ledger inclusion remains unauthorized.
+
+ETL-172H-3 RESULT: PASS

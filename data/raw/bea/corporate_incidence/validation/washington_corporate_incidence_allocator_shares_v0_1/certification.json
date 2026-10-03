@@ -1,0 +1,59 @@
+{
+  "etl_step": "ETL-172H-3",
+  "result": "PASS",
+  "artifact_type": "WASHINGTON_CORPORATE_INCIDENCE_ALLOCATOR_SHARES",
+  "upstream": {
+    "etl_step": "ETL-172H-2B",
+    "manifest_file": "data\\raw\\bea\\corporate_incidence\\validation\\bea_corporate_incidence_acquisition_manifest_v0_1.json",
+    "manifest_sha256": "6B440627D18175004094509A9D123BBA16A500884D487244559EC776A6E7C25A",
+    "source_files": {
+      "SAINC4-46": {
+        "source_file": "data\\raw\\bea\\corporate_incidence\\source\\sainc4_dividends_interest_rent_2015_2024_retrieved_20261001T041524Z.json",
+        "source_sha256": "BC115F4D7D0CB733DD501069E9E8EE1964434B8E7F0F94F3EC5DA1FE63F44800"
+      },
+      "SAINC4-70": {
+        "source_file": "data\\raw\\bea\\corporate_incidence\\source\\sainc4_proprietors_income_2015_2024_retrieved_20261001T041524Z.json",
+        "source_sha256": "53A34615A580D8D8964668098FA52098EF2A274D1871A38C125B4EA1BFD0C690"
+      },
+      "SAINC4-50": {
+        "source_file": "data\\raw\\bea\\corporate_incidence\\source\\sainc4_wages_salaries_2015_2024_retrieved_20261001T041524Z.json",
+        "source_sha256": "FAC3A8DB29B130FC0BD47732B324729B19D07A679D6B3AE652082591889D346E"
+      }
+    }
+  },
+  "method": {
+    "capital_formula": "SAINC4-46 + SAINC4-70",
+    "capital_share_formula": "WA capital / US capital",
+    "labor_formula": "SAINC4-50",
+    "labor_share_formula": "WA wages and salaries / US wages and salaries",
+    "us_denominator_geofips": "00000",
+    "washington_numerator_geofips": "53000",
+    "period_basis": "CALENDAR_YEAR"
+  },
+  "certification": {
+    "expected_observations": 10,
+    "actual_observations": 10,
+    "year_coverage": "PASS",
+    "year_uniqueness": "PASS",
+    "source_hash_integrity": "PASS",
+    "source_units": "PASS",
+    "source_geography": "PASS",
+    "wa_capital_arithmetic": "PASS",
+    "us_capital_arithmetic": "PASS",
+    "capital_share_arithmetic": "PASS",
+    "labor_share_arithmetic": "PASS",
+    "bea_period_basis": "PASS",
+    "corporate_incidence_75_25_boundary": "PASS",
+    "omb_allocation_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "corporate_incidence_75_25_applied": false,
+    "combined_corporate_share_calculated": false,
+    "omb_corporate_receipts_allocated": false,
+    "rockefeller_target_matching": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

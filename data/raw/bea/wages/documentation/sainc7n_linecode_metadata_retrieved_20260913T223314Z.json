@@ -1,0 +1,492 @@
+{
+  "BEAAPI": {
+    "Request": {
+      "RequestParam": [
+        {
+          "ParameterName": "USERID",
+          "ParameterValue": "4C05625B-B27C-41B4-88AD-17EAF3401BFA"
+        },
+        {
+          "ParameterName": "METHOD",
+          "ParameterValue": "GETPARAMETERVALUESFILTERED"
+        },
+        {
+          "ParameterName": "DATASETNAME",
+          "ParameterValue": "REGIONAL"
+        },
+        {
+          "ParameterName": "TARGETPARAMETER",
+          "ParameterValue": "LINECODE"
+        },
+        {
+          "ParameterName": "TABLENAME",
+          "ParameterValue": "SAINC7N"
+        },
+        {
+          "ParameterName": "RESULTFORMAT",
+          "ParameterValue": "JSON"
+        }
+      ]
+    },
+    "Results": {
+      "ParamValue": [
+        {
+          "Key": "100",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Forestry, fishing, and related activities (113-115)"
+        },
+        {
+          "Key": "1000",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Finance and insurance (52)"
+        },
+        {
+          "Key": "1001",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Monetary Authorities-central bank (521)"
+        },
+        {
+          "Key": "1002",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Credit intermediation and related activities (522)"
+        },
+        {
+          "Key": "1003",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Securities, commodity contracts, and other financial investments and related activities (523)"
+        },
+        {
+          "Key": "1004",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Insurance carriers and related activities (524)"
+        },
+        {
+          "Key": "1005",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Funds, trusts, and other financial vehicles (525)"
+        },
+        {
+          "Key": "101",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Forestry and logging (113)"
+        },
+        {
+          "Key": "102",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Fishing, hunting and trapping (114)"
+        },
+        {
+          "Key": "103",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Support activities for agriculture and forestry (115)"
+        },
+        {
+          "Key": "1100",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Real estate and rental and leasing (53)"
+        },
+        {
+          "Key": "1101",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Real estate (531)"
+        },
+        {
+          "Key": "1102",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Rental and leasing services (532)"
+        },
+        {
+          "Key": "1103",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Lessors of nonfinancial intangible assets (except copyrighted works) (533)"
+        },
+        {
+          "Key": "1200",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Professional, scientific, and technical services (54)"
+        },
+        {
+          "Key": "1300",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Management of companies and enterprises (55)"
+        },
+        {
+          "Key": "1400",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Administrative and support and waste management and remediation services (56)"
+        },
+        {
+          "Key": "1401",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Administrative and support services (561)"
+        },
+        {
+          "Key": "1402",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Waste management and remediation services (562)"
+        },
+        {
+          "Key": "1500",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Educational services (61)"
+        },
+        {
+          "Key": "1600",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Health care and social assistance (62)"
+        },
+        {
+          "Key": "1601",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Ambulatory health care services (621)"
+        },
+        {
+          "Key": "1602",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Hospitals (622)"
+        },
+        {
+          "Key": "1603",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Nursing and residential care facilities (623)"
+        },
+        {
+          "Key": "1604",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Social assistance (624)"
+        },
+        {
+          "Key": "1700",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Arts, entertainment, and recreation (71)"
+        },
+        {
+          "Key": "1701",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Performing arts, spectator sports, and related industries (711)"
+        },
+        {
+          "Key": "1702",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Museums, historical sites, and similar institutions (712)"
+        },
+        {
+          "Key": "1703",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Amusement, gambling, and recreation industries (713)"
+        },
+        {
+          "Key": "1800",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Accommodation and food services (72)"
+        },
+        {
+          "Key": "1801",
+          "Desc": "[SAINC7N] Private wages and salaries: Accommodation (721)"
+        },
+        {
+          "Key": "1802",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Food services and drinking places (722)"
+        },
+        {
+          "Key": "1900",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Other services (except government and government enterprises) (81)"
+        },
+        {
+          "Key": "1901",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Repair and maintenance (811)"
+        },
+        {
+          "Key": "1902",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Personal and laundry services (812)"
+        },
+        {
+          "Key": "1903",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Religious, grantmaking, civic, professional, and similar organizations (813)"
+        },
+        {
+          "Key": "1904",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Private households (814)"
+        },
+        {
+          "Key": "200",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Mining, quarrying, and oil and gas extraction (21)"
+        },
+        {
+          "Key": "2000",
+          "Desc": "[SAINC7N] Wages and salaries: Government and government enterprises"
+        },
+        {
+          "Key": "2001",
+          "Desc": "[SAINC7N] Govt. and govt. enterprises wages and salaries: Federal civilian"
+        },
+        {
+          "Key": "2002",
+          "Desc": "[SAINC7N] Govt. and govt. enterprises wages and salaries: Military"
+        },
+        {
+          "Key": "201",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Oil and gas extraction (211)"
+        },
+        {
+          "Key": "2010",
+          "Desc": "[SAINC7N] Govt. and govt. enterprises wages and salaries: State and local"
+        },
+        {
+          "Key": "2011",
+          "Desc": "[SAINC7N] Govt. and govt. enterprises wages and salaries: State government"
+        },
+        {
+          "Key": "2012",
+          "Desc": "[SAINC7N] Govt. and govt. enterprises wages and salaries: Local government"
+        },
+        {
+          "Key": "202",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Mining (except oil and gas) (212)"
+        },
+        {
+          "Key": "203",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Support activities for mining (213)"
+        },
+        {
+          "Key": "300",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Utilities (22)"
+        },
+        {
+          "Key": "400",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Construction (23)"
+        },
+        {
+          "Key": "401",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Construction of buildings (236)"
+        },
+        {
+          "Key": "402",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Heavy and civil engineering construction (237)"
+        },
+        {
+          "Key": "403",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Specialty trade contractors (238)"
+        },
+        {
+          "Key": "50",
+          "Desc": "[SAINC7N] Wages and salaries by place of work (thousands of dollars)"
+        },
+        {
+          "Key": "500",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Manufacturing (31-33)"
+        },
+        {
+          "Key": "510",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Durable goods manufacturing (321,327-339)"
+        },
+        {
+          "Key": "511",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Wood product manufacturing (321)"
+        },
+        {
+          "Key": "512",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Nonmetallic mineral product manufacturing (327)"
+        },
+        {
+          "Key": "513",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Primary metal manufacturing (331)"
+        },
+        {
+          "Key": "514",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Fabricated metal product manufacturing (332)"
+        },
+        {
+          "Key": "515",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Machinery manufacturing (333)"
+        },
+        {
+          "Key": "516",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Computer and electronic product manufacturing (334)"
+        },
+        {
+          "Key": "517",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Electrical equipment, appliance, and component manufacturing (335)"
+        },
+        {
+          "Key": "518",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Motor vehicles, bodies and trailers, and parts manufacturing (3361-3363)"
+        },
+        {
+          "Key": "519",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Other transportation equipment manufacturing (3364-3466,3369)"
+        },
+        {
+          "Key": "521",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Furniture and related product manufacturing (337)"
+        },
+        {
+          "Key": "522",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Miscellaneous manufacturing (339)"
+        },
+        {
+          "Key": "530",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Nondurable goods manufacturing (311-316,322-326)"
+        },
+        {
+          "Key": "531",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Food manufacturing (311)"
+        },
+        {
+          "Key": "532",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Beverage and tobacco product manufacturing (312)"
+        },
+        {
+          "Key": "533",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Textile mills (313)"
+        },
+        {
+          "Key": "534",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Textile product mills (314)"
+        },
+        {
+          "Key": "535",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Apparel manufacturing (315)"
+        },
+        {
+          "Key": "536",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Leather and allied product manufacturing (316)"
+        },
+        {
+          "Key": "537",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Paper manufacturing (322)"
+        },
+        {
+          "Key": "538",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Printing and related support activities (323)"
+        },
+        {
+          "Key": "539",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Petroleum and coal products manufacturing (324)"
+        },
+        {
+          "Key": "541",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Chemical manufacturing (325)"
+        },
+        {
+          "Key": "542",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Plastics and rubber products manufacturing (326)"
+        },
+        {
+          "Key": "600",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Wholesale trade (42)"
+        },
+        {
+          "Key": "700",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Retail trade (44-45)"
+        },
+        {
+          "Key": "701",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Motor vehicle and parts dealers (441)"
+        },
+        {
+          "Key": "702",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Furniture and home furnishings stores (442)"
+        },
+        {
+          "Key": "703",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Electronics and appliance stores (443)"
+        },
+        {
+          "Key": "704",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Building material and garden equipment and supplies dealers (444)"
+        },
+        {
+          "Key": "705",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Food and beverage stores (445)"
+        },
+        {
+          "Key": "706",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Health and personal care stores (446)"
+        },
+        {
+          "Key": "707",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Gasoline stations (447)"
+        },
+        {
+          "Key": "708",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Clothing and clothing accessories stores (448)"
+        },
+        {
+          "Key": "709",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Sporting goods, hobby, musical instrument, and book stores (451)"
+        },
+        {
+          "Key": "711",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: General merchandise stores (452)"
+        },
+        {
+          "Key": "712",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Miscellaneous store retailers (453)"
+        },
+        {
+          "Key": "713",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Nonstore retailers (454)"
+        },
+        {
+          "Key": "800",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Transportation and warehousing (48-49)"
+        },
+        {
+          "Key": "801",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Air transportation (481)"
+        },
+        {
+          "Key": "802",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Rail transportation (482)"
+        },
+        {
+          "Key": "803",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Water transportation (483)"
+        },
+        {
+          "Key": "804",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Truck transportation (484)"
+        },
+        {
+          "Key": "805",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Transit and ground passenger transportation (485)"
+        },
+        {
+          "Key": "806",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Pipeline transportation (486)"
+        },
+        {
+          "Key": "807",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Scenic and sightseeing transportation (487)"
+        },
+        {
+          "Key": "808",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Support activities for transportation (488)"
+        },
+        {
+          "Key": "809",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Couriers and messengers (492)"
+        },
+        {
+          "Key": "81",
+          "Desc": "[SAINC7N] Farm wages and salaries (111-112)"
+        },
+        {
+          "Key": "811",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Warehousing and storage (493)"
+        },
+        {
+          "Key": "82",
+          "Desc": "[SAINC7N] Nonfarm wages and salaries"
+        },
+        {
+          "Key": "90",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries (113-814)"
+        },
+        {
+          "Key": "900",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Information (51)"
+        },
+        {
+          "Key": "901",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Publishing industries (except Internet) (511)"
+        },
+        {
+          "Key": "902",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Motion picture and sound recording industries (512)"
+        },
+        {
+          "Key": "903",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Broadcasting (except Internet) (515)"
+        },
+        {
+          "Key": "904",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Internet publishing and broadcasting (516)"
+        },
+        {
+          "Key": "905",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Telecommunications (517)"
+        },
+        {
+          "Key": "906",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Data processing, hosting, and related services (518)"
+        },
+        {
+          "Key": "907",
+          "Desc": "[SAINC7N] Private nonfarm wages and salaries: Other information services (519)"
+        }
+      ]
+    }
+  }
+}

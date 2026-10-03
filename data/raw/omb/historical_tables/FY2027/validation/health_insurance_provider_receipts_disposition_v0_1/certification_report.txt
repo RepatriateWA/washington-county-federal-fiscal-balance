@@ -1,0 +1,59 @@
+====================================================================================================
+ETL-172J-4C HEALTH INSURANCE PROVIDERS RECEIPT DISPOSITION v0.1
+====================================================================================================
+
+Overall status : PASS
+
+CERTIFICATION CHECKS
+----------------------------------------------------------------------------------------------------
+j4b_upstream_certification                                             PASS
+j4b_queue_year_coverage                                                PASS
+hip_control_year_coverage                                              PASS
+post_j4b_actionable_residual_equals_hip                                PASS
+post_j4b_method_review_equals_hip                                      PASS
+allocator_method_documented_queue_zero                                 PASS
+hip_zero_control_2022_2024                                             PASS
+post_j4c_actionable_queue_zero                                         PASS
+post_j4c_method_review_queue_zero                                      PASS
+washington_hip_not_imputed                                             PASS
+irs_forced_reconciliation_boundary                                     PASS
+database_write_boundary                                                PASS
+final_ledger_boundary                                                  PASS
+
+HIP DISPOSITION
+----------------------------------------------------------------------------------------------------
+FFY   NATIONAL CONTROL   WCFFBP DISPOSITION
+----------------------------------------------------------------------------------------------------
+2015         11,261M   WITHHOLD_UNRESOLVED
+2016         11,239M   WITHHOLD_UNRESOLVED
+2017             68M   WITHHOLD_UNRESOLVED
+2018          4,681M   WITHHOLD_UNRESOLVED
+2019          9,590M   WITHHOLD_UNRESOLVED
+2020         15,316M   WITHHOLD_UNRESOLVED
+2021            206M   WITHHOLD_UNRESOLVED
+2022              0M   ZERO_NATIONAL_CONTROL
+2023              0M   ZERO_NATIONAL_CONTROL
+2024              0M   ZERO_NATIONAL_CONTROL
+
+POST-J4C WORK QUEUE
+----------------------------------------------------------------------------------------------------
+FFY   ACTIONABLE BEFORE   HIP DISPOSED   ACTIONABLE AFTER
+----------------------------------------------------------------------------------------------------
+2015           11,261M       11,261M                 0M
+2016           11,239M       11,239M                 0M
+2017               68M           68M                 0M
+2018            4,681M        4,681M                 0M
+2019            9,590M        9,590M                 0M
+2020           15,316M       15,316M                 0M
+2021              206M          206M                 0M
+2022                0M            0M                 0M
+2023                0M            0M                 0M
+2024                0M            0M                 0M
+
+BOUNDARIES
+----------------------------------------------------------------------------------------------------
+No Washington HIP amount imputed.
+Nonzero HIP controls moved to WITHHOLD_UNRESOLVED.
+No IRS forced reconciliation.
+No PostgreSQL writes.
+No final-ledger authorization.

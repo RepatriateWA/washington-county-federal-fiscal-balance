@@ -1,0 +1,60 @@
+{
+  "etl_step": "ETL-172I-1",
+  "result": "PASS",
+  "artifact_type": "OMB_NATIONAL_FEDERAL_RECEIPTS_UNIVERSE",
+  "source": {
+    "file": "data\\raw\\omb\\historical_tables\\FY2027\\source\\BUDGET-2027-TAB-3-1.xlsx",
+    "sha256": "1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3",
+    "sheet": "Table",
+    "title": "Table 2.1 - RECEIPTS BY SOURCE:  1934 - 2031",
+    "units": "(in millions of dollars)"
+  },
+  "top_level_accounting_identity": "Total Receipts = Individual Income Taxes + Corporation Income Taxes + Social Insurance and Retirement Receipts + Excise Taxes + Other",
+  "nested_identities": [
+    "Social Insurance and Retirement Receipts = On-Budget + Off-Budget",
+    "Total Receipts = On-Budget + Off-Budget"
+  ],
+  "current_reconstruction_status": {
+    "individual_income_taxes": "RECONSTRUCTED_ECONOMIC_INCIDENCE",
+    "corporation_income_taxes": "RECONSTRUCTED_ECONOMIC_INCIDENCE",
+    "social_insurance_and_retirement_receipts": "PARTIAL",
+    "excise_taxes": "NOT_YET_RECONSTRUCTED",
+    "other": "NOT_YET_DECOMPOSED"
+  },
+  "structure_certification": {
+    "title": "PASS",
+    "units": "PASS",
+    "headers": "PASS",
+    "merged_headers": "PASS"
+  },
+  "certification": {
+    "expected_observations": 10,
+    "actual_observations": 10,
+    "fiscal_year_coverage": "PASS",
+    "fiscal_year_uniqueness": "PASS",
+    "source_row_mapping": "PASS",
+    "source_units": "PASS",
+    "million_to_dollar_conversion": "PASS",
+    "social_insurance_nested_identity": "PASS",
+    "top_level_receipts_identity": "PASS",
+    "total_budget_status_identity": "PASS",
+    "washington_allocation_boundary": "PASS",
+    "social_decomposition_boundary": "PASS",
+    "other_decomposition_boundary": "PASS",
+    "rockefeller_replication_boundary": "PASS",
+    "irs_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "washington_allocation_performed": false,
+    "washington_completeness_calculated": false,
+    "social_insurance_decomposed": false,
+    "other_receipts_decomposed": false,
+    "excise_receipts_reconstructed": false,
+    "rockefeller_replication": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

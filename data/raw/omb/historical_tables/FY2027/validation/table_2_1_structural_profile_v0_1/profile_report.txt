@@ -1,0 +1,92 @@
+====================================================================================================
+OMB HISTORICAL TABLE 2.1 STRUCTURAL / SEMANTIC PROFILE - ETL-172G-1B
+====================================================================================================
+
+Profile only. No national-control selection, Washington allocation, IRS allocator application, Rockefeller reconstruction, DB writes, or receipts-ledger inclusion.
+
+SOURCE CERTIFICATION
+----------------------------------------------------------------------------------------------------
+Source : data\raw\omb\historical_tables\FY2027\source\BUDGET-2027-TAB-3-1.xlsx
+Bytes  : 12,393
+SHA256 : 1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3
+Hash   : PASS
+
+WORKBOOK STRUCTURE
+----------------------------------------------------------------------------------------------------
+Sheet='Table' rows=106 cols=11 merged=12
+
+SEMANTIC HIT COUNTS
+----------------------------------------------------------------------------------------------------
+ACTUAL_ESTIMATE                     6
+CORPORATE_INCOME_TAX                1
+EXCISE                              1
+FOOTNOTE                            8
+INDIVIDUAL_INCOME_TAX               1
+SOCIAL_INSURANCE                    1
+TABLE_TITLE                         1
+TOTAL_RECEIPTS                      3
+UNITS                               1
+
+SEMANTIC HITS
+----------------------------------------------------------------------------------------------------
+Table!A1 | TABLE_TITLE | Table 2.1 - RECEIPTS BY SOURCE: 1934 - 2031
+Table!A2 | UNITS | (in millions of dollars)
+Table!A2 | FOOTNOTE | (in millions of dollars)
+Table!B3 | INDIVIDUAL_INCOME_TAX | Individual Income Taxes
+Table!C3 | CORPORATE_INCOME_TAX | Corporation Income Taxes (1)
+Table!D3 | SOCIAL_INSURANCE | Social Insurance and Retirement Receipts (2)
+Table!G3 | EXCISE | Excise Taxes (2)
+Table!I3 | TOTAL_RECEIPTS | Total Receipts
+Table!D4 | TOTAL_RECEIPTS | Total
+Table!E4 | FOOTNOTE | (On - Budget)
+Table!F4 | FOOTNOTE | (Off - Budget)
+Table!I4 | TOTAL_RECEIPTS | Total
+Table!J4 | FOOTNOTE | (On - Budget)
+Table!K4 | FOOTNOTE | (Off - Budget)
+Table!A98 | ACTUAL_ESTIMATE | 2026 estimate
+Table!A99 | ACTUAL_ESTIMATE | 2027 estimate
+Table!A100 | ACTUAL_ESTIMATE | 2028 estimate
+Table!A101 | ACTUAL_ESTIMATE | 2029 estimate
+Table!A102 | ACTUAL_ESTIMATE | 2030 estimate
+Table!A103 | ACTUAL_ESTIMATE | 2031 estimate
+Table!A104 | FOOTNOTE | (1) From 1987 through 2010, includes trust fund receipts for the hazardous substance superfund. In 1989 and 1990, includes trust fund receipts for the supplementary medical insurance trust fund.
+Table!A105 | FOOTNOTE | (2) See Table 2.4 for additional details
+Table!A106 | FOOTNOTE | (3) See Table 2.5 for additional details
+
+TARGET FISCAL-YEAR HITS
+----------------------------------------------------------------------------------------------------
+2015: 1 hit(s)
+    Table!A87 | 2015
+2016: 1 hit(s)
+    Table!A88 | 2016
+2017: 1 hit(s)
+    Table!A89 | 2017
+2018: 1 hit(s)
+    Table!A90 | 2018
+2019: 1 hit(s)
+    Table!A91 | 2019
+2020: 1 hit(s)
+    Table!A92 | 2020
+2021: 1 hit(s)
+    Table!A93 | 2021
+2022: 1 hit(s)
+    Table!A94 | 2022
+2023: 1 hit(s)
+    Table!A95 | 2023
+2024: 1 hit(s)
+    Table!A96 | 2024
+
+YEAR CANDIDATE SUMMARY
+----------------------------------------------------------------------------------------------------
+Minimum detected candidate : 1905
+Maximum detected candidate : 2181
+
+INTERPRETATION BOUNDARY
+----------------------------------------------------------------------------------------------------
+This profile establishes source integrity, workbook geometry, candidate year locations, and semantic locations only.
+It does not select a national individual-income-tax control row.
+It does not classify any study-year value as final for ETL-172G.
+It does not apply IRS SOI state shares.
+It does not authorize receipts-ledger inclusion.
+
+ETL-172G-1B RESULT: PASS

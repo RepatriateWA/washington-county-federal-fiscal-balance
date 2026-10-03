@@ -1,0 +1,59 @@
+====================================================================================================================
+OMB OTHER RECEIPTS DECOMPOSITION - ETL-172I-4
+====================================================================================================================
+
+UPSTREAM PROVENANCE
+--------------------------------------------------------------------------------------------------------------------
+Table 2.5 SHA256              : CF8F04A41F4A86515A1E3FBA6D544147D1AF8025BD451FEA809BD8D6968003FB
+ETL-172I-1 SHA256             : 9F76F34692D6A12E19F1BCF762538C546671900134064E5D7980448F7744D89C
+
+ANNUAL OTHER RECEIPTS DECOMPOSITION
+--------------------------------------------------------------------------------------------------------------------
+FFY           OTHER     EST/GIFT      CUSTOMS      FED RES   MISC OTHER    MEMO CUST   MEMO OTHER
+--------------------------------------------------------------------------------------------------------------------
+2015        201,755       19,232       35,041       96,468       51,014        1,514        1,446
+2016        212,228       21,354       34,838      115,672       40,364        1,397        1,708
+2017        186,296       22,768       34,574       81,287       47,667        1,477        1,625
+2018        175,949       22,983       41,299       70,750       40,917        1,607        1,770
+2019        173,235       16,672       70,784       52,793       32,986        1,648        1,660
+2020        203,921       17,624       68,551       81,880       35,866        1,397        1,874
+2021        241,541       27,140       79,985      100,054       34,362        1,673        1,458
+2022        269,073       32,550       99,908      106,674       29,941        2,265        1,269
+2023        154,625       33,668       80,338          581       40,038        2,087        1,359
+2024        153,598       31,616       77,036        3,131       41,815        2,129          964
+
+CERTIFICATION
+--------------------------------------------------------------------------------------------------------------------
+expected_annual_observations                          : 10
+actual_annual_observations                            : 10
+expected_detail_observations                          : 60
+actual_detail_observations                            : 60
+fiscal_year_coverage                                  : PASS
+fiscal_year_uniqueness                                : PASS
+source_file_signature                                 : PASS
+source_sheet_contract                                 : PASS
+source_title_contract                                 : PASS
+source_units_contract                                 : PASS
+source_header_contract                                : PASS
+miscellaneous_receipts_identity                       : PASS
+other_receipts_component_identity                     : PASS
+table_2_5_to_table_2_1_reconciliation                 : PASS
+million_to_dollar_conversion                          : PASS
+memorandum_preservation                               : PASS
+memorandum_nonadditivity                              : PASS
+allocation_classification_boundary                    : PASS
+rockefeller_methodology_boundary                      : PASS
+irs_reconciliation_boundary                           : PASS
+database_write_boundary                               : PASS
+ledger_boundary                                       : PASS
+
+BOUNDARIES
+--------------------------------------------------------------------------------------------------------------------
+ETL-172I-4 is a national-source decomposition and certification step only.
+No Table 2.5 component is classified as Washington-allocatable or unallocable in this step.
+The memorandum trust-fund amounts are already included within Other Receipts and are preserved as nonadditive.
+No Rockefeller allocation method is applied.
+No Washington receipt dollars are calculated.
+No database writes or final ledger inclusion occur.
+
+ETL-172I-4 RESULT: PASS

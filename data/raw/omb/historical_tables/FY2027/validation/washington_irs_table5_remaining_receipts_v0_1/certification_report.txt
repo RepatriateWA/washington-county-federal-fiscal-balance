@@ -1,0 +1,44 @@
+============================================================================================================================
+WASHINGTON IRS TABLE 5 REMAINING RECEIPTS ALLOCATION - ETL-172J-1
+============================================================================================================================
+
+ANNUAL ALLOCATION
+----------------------------------------------------------------------------------------------------------------------------
+FFY        RR CTRL     RR WA %     EG CTRL     EG WA %     J1 CLOSED   WA ALLOC $B    QUEUE LEFT
+----------------------------------------------------------------------------------------------------------------------------
+2015         5,866     0.1691%      19,232     1.2363%        25,098         0.248       153,109
+2016         5,313     0.1799%      21,354     1.4954%        26,667         0.329       147,786
+2017         5,349     0.1802%      22,768     1.4947%        28,117         0.350       133,823
+2018         5,749     0.1803%      22,983     1.2846%        28,732         0.306       144,532
+2019         5,518     0.1991%      16,672     3.4914%        22,190         0.593       144,634
+2020         4,445     0.2586%      17,624     4.7173%        22,069         0.843       135,084
+2021         4,717     0.2793%      27,140     1.1732%        31,857         0.332       137,504
+2022         5,615     0.2030%      32,550     3.4319%        38,165         1.128       160,520
+2023         6,630     0.2074%      33,668     2.1654%        40,298         0.743       132,111
+2024         6,258     0.2399%      31,616     1.2629%        37,874         0.414       157,355
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------------------------------
+irs_source_integrity                                          : PASS
+etl_171_parser_reuse                                          : PASS
+washington_row_uniqueness                                     : PASS
+united_states_total_row_uniqueness                            : PASS
+irs_numbered_column_semantics                                 : PASS
+washington_etl_171_reproduction                               : PASS
+railroad_national_control_construction                        : PASS
+estate_gift_national_control                                  : PASS
+washington_share_calculation                                  : PASS
+omb_control_application                                       : PASS
+i5_work_queue_reduction                                       : PASS
+database_write_boundary                                       : PASS
+final_ledger_boundary                                         : PASS
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------------------------------
+IRS Table 5 supplies the Washington geographic share. OMB supplies the national federal-receipts control.
+Washington IRS gross collections are not treated as the final economic-incidence receipt amount.
+Railroad Retirement uses OMB Table 2.4 rows 12 + 13 + 14. Row 15 is explicitly excluded.
+J-1 closes only Railroad Retirement and Estate and Gift Taxes from the I-5 actionable work queue.
+No database writes and no final ledger authorization are performed.
+
+ETL-172J-1 RESULT: PASS

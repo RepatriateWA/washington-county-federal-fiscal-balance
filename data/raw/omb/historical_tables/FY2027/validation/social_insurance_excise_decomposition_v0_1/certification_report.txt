@@ -1,0 +1,60 @@
+====================================================================================================
+OMB SOCIAL INSURANCE AND EXCISE RECEIPTS DECOMPOSITION - ETL-172I-2
+====================================================================================================
+
+UPSTREAM PROVENANCE
+----------------------------------------------------------------------------------------------------
+Table 2.4 SHA256 : 21D071576D5627A18C3F62DE86BFC7FAECED1A68265F2DB87B4F737B2773C5BD
+ETL-172I-1 SHA256: 9F76F34692D6A12E19F1BCF762538C546671900134064E5D7980448F7744D89C
+
+ANNUAL CONTROL RECONCILIATION
+----------------------------------------------------------------------------------------------------
+FFY              SOCIAL          EXCISE     T2.1 SOCIAL     T2.1 EXCISE
+----------------------------------------------------------------------------------------------------
+2015          1,065,257          98,279       1,065,257          98,279
+2016          1,115,065          95,026       1,115,065          95,026
+2017          1,161,897          83,823       1,161,897          83,823
+2018          1,170,701          94,986       1,170,701          94,986
+2019          1,243,113          98,914       1,243,113          98,914
+2020          1,309,955          86,780       1,309,955          86,780
+2021          1,314,088          75,274       1,314,088          75,274
+2022          1,483,527          87,728       1,483,527          87,728
+2023          1,614,456          75,802       1,614,456          75,802
+2024          1,708,926         101,426       1,708,926         101,426
+
+CERTIFICATION
+----------------------------------------------------------------------------------------------------
+structure_title                                     : PASS
+structure_units                                     : PASS
+structure_row_taxonomy                              : PASS
+structure_worksheet_dimensions                      : 57x94
+expected_detail_observations                        : 350
+actual_detail_observations                          : 350
+expected_annual_observations                        : 10
+actual_annual_observations                          : 10
+fiscal_year_coverage                                : PASS
+fiscal_year_uniqueness                              : PASS
+source_year_column_mapping                          : PASS
+source_units                                        : PASS
+social_employment_general_retirement_identity       : PASS
+social_unemployment_insurance_identity              : PASS
+social_other_retirement_identity                    : PASS
+social_total_identity                               : PASS
+social_table_2_1_reconciliation                     : PASS
+excise_federal_funds_identity                       : PASS
+excise_trust_funds_identity                         : PASS
+excise_total_identity                               : PASS
+excise_table_2_1_reconciliation                     : PASS
+washington_allocation_boundary                      : PASS
+rockefeller_replication_boundary                    : PASS
+irs_reconciliation_boundary                         : PASS
+database_write_boundary                             : PASS
+ledger_boundary                                     : PASS
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+ETL-172I-2 certifies national OMB decomposition and accounting identities only.
+No newly decomposed component is allocated to Washington in this step.
+No Rockefeller replication, IRS reconciliation, database write, or final ledger authorization occurs.
+
+ETL-172I-2 RESULT: PASS

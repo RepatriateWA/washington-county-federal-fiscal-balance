@@ -1,0 +1,70 @@
+====================================================================================================
+ETL-172F-1 NATIONAL SOCIAL-INSURANCE RECEIPT CONTROL INVENTORY
+====================================================================================================
+
+Inventory only. No acquisition, receipt extraction, allocation, reconciliation, or DB writes.
+
+Files scanned                 : 2,074
+Candidate files retained      : 358
+Potential national controls   : 42
+
+CLASSIFICATIONS
+----------------------------------------------------------------------------------------------------
+EXPENDITURE_SIDE_OMB                      13
+LOW_PRIORITY                             282
+METHODOLOGY_REFERENCE                     17
+POTENTIAL_NATIONAL_CONTROL                42
+SEMANTIC_REVIEW                            3
+STATE_ALLOCATOR_SOURCE                     1
+
+TOP POTENTIAL NATIONAL CONTROLS
+----------------------------------------------------------------------------------------------------
+  17 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_2\trustees_private_health_plans_header_boundary_evidence.csv
+  17 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_3\trustees_private_health_plans_header_boundary_evidence.csv
+  16 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_2\trustees_private_health_plans_header_boundary_resolution.csv
+  16 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_3\trustees_private_health_plans_header_boundary_resolution.csv
+  16 | data\raw\cms\medicare_trustees\validation\private_health_plans_profile\trustees_2026_private_health_plans_inspection.txt
+  16 | data\raw\cms\medicare_trustees\validation\status_structure_2021_2022\trustees_2021_2022_private_plan_pages.csv
+  15 | data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_1\trustees_incurred_boundary_evidence.csv
+  15 | data\raw\cms\medicare_trustees\validation\incurred_boundary_evidence_v0_2\trustees_private_plan_status_label_evidence.csv
+  15 | data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_table_contexts.csv
+  15 | data\raw\cms\medicare_trustees\validation\private_health_plans_structure_v0_2\cms_medicare_trustees_private_plans_table_evidence.csv
+  14 | data\raw\cms\medicare_trustees\validation\status_structure_2021_2022\trustees_2021_2022_status_term_evidence.csv
+  12 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_1\trustees_historical_estimate_local_evidence.csv
+  12 | data\raw\cms\medicare_trustees\validation\status_boundary_certification_v0_1\trustees_status_boundary_certification.csv
+  12 | data\raw\cms\medicare_trustees\validation\status_boundary_certification_v0_1\trustees_status_boundary_source_evidence.csv
+  12 | data\raw\cms\medicare_trustees\validation\status_boundary_certification_v0_2\trustees_status_boundary_certification.csv
+  12 | data\raw\cms\medicare_trustees\validation\status_boundary_certification_v0_2\trustees_status_boundary_source_evidence.csv
+   5 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_1\cms_mssp_historical_linkage_v0_1.csv
+   5 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_1\cms_mssp_historical_schema_v0_1.csv
+   5 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_1\cms_mssp_historical_source_inventory_v0_1.csv
+   5 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_linkage_v0_2.csv
+   5 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_source_inventory_v0_2.csv
+   5 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_historical_linkage_certification_checks_v0_3.csv
+   5 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_historical_linkage_certification_report_v0_3.txt
+   5 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_1\trustees_historical_estimate_boundary_summary.txt
+   5 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_2\trustees_private_health_plans_header_boundary_summary.txt
+   5 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_3\trustees_private_health_plans_header_boundary_summary.txt
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_1\cms_mssp_historical_linkage_checks_v0_1.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_1\cms_mssp_historical_linkage_report_v0_1.txt
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_1\cms_mssp_historical_period_profile_v0_1.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_1\cms_mssp_washington_connection_candidates_v0_1.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_aco_id_crosswalk_profile_v0_2.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_linkage_checks_v0_2.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_linkage_report_v0_2.txt
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_period_profile_v0_2.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_unresolved_identity_v0_2.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_washington_connection_candidates_v0_2.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_2015_explicit_wa_service_area_universe_v0_3.csv
+   4 | data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_historical_identity_accounting_v0_3.csv
+   4 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_1\trustees_historical_estimate_boundary_errors.csv
+   4 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_1\trustees_historical_estimate_boundary_resolution.csv
+   4 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_2\trustees_private_health_plans_header_boundary_errors.csv
+   4 | data\raw\cms\medicare_trustees\validation\historical_estimate_boundary_v0_3\trustees_private_health_plans_header_boundary_errors.csv
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------
+POTENTIAL_NATIONAL_CONTROL means only that an existing repository artifact merits semantic inspection as a possible federal receipt control.
+It does not certify that the artifact contains OASI, DI, or Hospital Insurance national receipts.
+METHODOLOGY_REFERENCE artifacts may describe the Rockefeller method but are not themselves federal national controls.
+STATE_ALLOCATOR_SOURCE artifacts contain allocation inputs, not federal national receipt totals.

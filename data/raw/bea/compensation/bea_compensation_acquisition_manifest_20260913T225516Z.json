@@ -1,0 +1,78 @@
+{
+  "generated_utc": "2026-09-13T22:55:16.078238+00:00",
+  "purpose": "WCFFBP federal civilian and military compensation source acquisition",
+  "requests": [
+    {
+      "retrieved_utc": "2026-09-13T22:55:12.678396+00:00",
+      "dataset": "Regional",
+      "table_name": "CAINC6N",
+      "line_code": "2001",
+      "geo_fips": "WA",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 400,
+      "file": "data\\raw\\bea\\compensation\\county\\cainc6n_federal_civilian_2015_2024_retrieved_20260913T225512Z.json",
+      "sha256": "e1177514ad392ffb0755742d8f650fcf91bd1bb82e0888b2821dacb3d27fd4fe"
+    },
+    {
+      "retrieved_utc": "2026-09-13T22:55:13.499670+00:00",
+      "dataset": "Regional",
+      "table_name": "CAINC6N",
+      "line_code": "2002",
+      "geo_fips": "WA",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 400,
+      "file": "data\\raw\\bea\\compensation\\county\\cainc6n_military_2015_2024_retrieved_20260913T225513Z.json",
+      "sha256": "715ebc2561e4c2615315fc1a865ed5930fde02dd47dea69e298c42fbf8b0d1ff"
+    },
+    {
+      "retrieved_utc": "2026-09-13T22:55:13.911404+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC6N",
+      "line_code": "2001",
+      "geo_fips": "53000",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 10,
+      "file": "data\\raw\\bea\\compensation\\state\\sainc6n_federal_civilian_2015_2024_retrieved_20260913T225513Z.json",
+      "sha256": "bc990e81c2263cca6f2b5d5850bb69cd00a44ca478a5dc943ab4c8387413c2f9"
+    },
+    {
+      "retrieved_utc": "2026-09-13T22:55:14.302782+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC6N",
+      "line_code": "2002",
+      "geo_fips": "53000",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 10,
+      "file": "data\\raw\\bea\\compensation\\state\\sainc6n_military_2015_2024_retrieved_20260913T225514Z.json",
+      "sha256": "c8f67af6d21a63d46ed28b3c4126b26ca1647229b3331005c7f5552f439bef50"
+    },
+    {
+      "retrieved_utc": "2026-09-13T22:55:14.925539+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC6N",
+      "line_code": "2001",
+      "geo_fips": "STATE",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 600,
+      "file": "data\\raw\\bea\\compensation\\state\\sainc6n_federal_civilian_all_states_2015_2024_retrieved_20260913T225514Z.json",
+      "sha256": "47710eb8706bcbddf2fd10a1a72b8f0be716f539075bfa10a0d1d915873da0ac"
+    },
+    {
+      "retrieved_utc": "2026-09-13T22:55:15.576665+00:00",
+      "dataset": "Regional",
+      "table_name": "SAINC6N",
+      "line_code": "2002",
+      "geo_fips": "STATE",
+      "years": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024",
+      "row_count": 600,
+      "file": "data\\raw\\bea\\compensation\\state\\sainc6n_military_all_states_2015_2024_retrieved_20260913T225515Z.json",
+      "sha256": "1e0a5a40b5f0176f1e8939bdf13d66e439a521dfedfdcd2e70d7f302523da48a"
+    }
+  ],
+  "metadata_file": "data\\raw\\bea\\compensation\\documentation\\cainc6n_linecode_metadata_retrieved_20260913T225516Z.json",
+  "metadata_sha256": "dab29de9f6ba1ddae20f86140af248ac720ddc8386f58d68ca50ac5459a267ba",
+  "line_code_evidence": {
+    "2001": "Federal civilian compensation",
+    "2002": "Military compensation"
+  }
+}

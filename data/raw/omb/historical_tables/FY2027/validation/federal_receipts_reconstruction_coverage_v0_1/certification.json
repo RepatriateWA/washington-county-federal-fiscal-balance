@@ -1,0 +1,62 @@
+{
+  "etl_step": "ETL-172I-3",
+  "result": "PASS",
+  "artifact_type": "FEDERAL_RECEIPTS_RECONSTRUCTION_COVERAGE",
+  "target_fiscal_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "covered_categories": [
+    "INDIVIDUAL_INCOME_TAXES",
+    "CORPORATION_INCOME_TAXES",
+    "OASI",
+    "DISABILITY_INSURANCE",
+    "HOSPITAL_INSURANCE"
+  ],
+  "remaining_categories": [
+    "REMAINING_SOCIAL_INSURANCE_AND_RETIREMENT",
+    "EXCISE_TAXES",
+    "OTHER_RECEIPTS"
+  ],
+  "upstream_sha256": {
+    "ETL-172I-1 universe": "9F76F34692D6A12E19F1BCF762538C546671900134064E5D7980448F7744D89C",
+    "ETL-172I-2 annual": "02146B1A060D03E37005807170DA693301C9C82BFE0DC2B167F4180AAA0B7756",
+    "ETL-172I-2 detail": "9E96B0B7F91F8E902B40861E2BAB290655F876A351EC3FB38F4063686B56321F",
+    "ETL-172F-2 controls": "7EDB32670227A444F9BDE8859B3D034247011CFF000B3B688024D2E0ADA43960"
+  },
+  "certification": {
+    "expected_annual_observations": 10,
+    "actual_annual_observations": 10,
+    "fiscal_year_coverage": "PASS",
+    "fiscal_year_uniqueness": "PASS",
+    "i1_i2_social_control_reconciliation": "PASS",
+    "i1_i2_excise_control_reconciliation": "PASS",
+    "f2_oasi_di_hi_control_use": "PASS",
+    "social_residual_identity": "PASS",
+    "social_residual_component_proof": "PASS",
+    "total_receipts_coverage_identity": "PASS",
+    "coverage_percentage_arithmetic": "PASS",
+    "coverage_interpretation_boundary": "PASS",
+    "washington_allocation_boundary": "PASS",
+    "rockefeller_replication_boundary": "PASS",
+    "irs_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "coverage_definition": "SHARE_OF_NATIONAL_RECEIPTS_UNIVERSE_FOR_WHICH_CERTIFIED_WASHINGTON_ALLOCATION_METHOD_EXISTS",
+    "new_washington_allocation_performed": false,
+    "rockefeller_replication": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

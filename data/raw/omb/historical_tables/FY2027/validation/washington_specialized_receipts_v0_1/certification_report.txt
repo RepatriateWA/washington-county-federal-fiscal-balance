@@ -1,0 +1,42 @@
+================================================================================================================================
+WASHINGTON SPECIALIZED REMAINING RECEIPTS - ETL-172J-3C
+================================================================================================================================
+
+ANNUAL ALLOCATION
+--------------------------------------------------------------------------------------------------------------------------------
+FFY       TRAN CTRL   TRAN WA %    ALC CTRL   ALC WA %   ALC SRC    J3 CLOSED   WA ALLOC $B    QUEUE LEFT
+2015         40,813     1.9521%       9,639    2.1772%      2015       50,452         1.007        62,439
+2016         41,344     1.9030%       9,799    2.1676%      2016       51,143         0.999        60,095
+2017         41,020     1.8194%       9,924    2.1810%      2017       50,944         0.963        45,876
+2018         42,613     1.9335%      10,057    2.1767%      2018       52,670         1.043        49,723
+2019         43,671     1.8937%       9,992    2.1738%      2019       53,663         1.044        50,524
+2020         42,764     1.8939%       9,490    2.1549%      2020       52,254         1.014        58,420
+2021         43,464     1.7777%      10,274    2.1053%      2021       53,738         0.989        56,808
+2022         46,631     1.7915%      10,196    2.0922%      2022       56,827         1.049        66,498
+2023         42,216     1.7997%       9,501    2.0500%      2023       51,717         0.955        49,404
+2024         42,507     1.7282%       8,929    2.0500%      2023       51,436         0.918        47,975
+
+CERTIFICATION
+--------------------------------------------------------------------------------------------------------------------------------
+j3b_upstream_certification                                                  : PASS
+national_control_year_component_coverage                                    : PASS
+allocator_timing_coverage                                                   : PASS
+fhwa_timing_policy                                                          : PASS
+niaaa_timing_policy                                                         : PASS
+washington_allocation                                                       : PASS
+j2_work_queue_reduction                                                     : PASS
+allocator_method_documented_queue_closed                                    : PASS
+ffy2024_expected_queue_structure                                            : PASS
+irs_forced_reconciliation_boundary                                          : PASS
+database_write_boundary                                                     : PASS
+final_ledger_boundary                                                       : PASS
+
+Controls   : data\raw\omb\historical_tables\FY2027\validation\washington_specialized_receipts_v0_1\specialized_receipt_national_controls.csv
+Timing     : data\raw\omb\historical_tables\FY2027\validation\washington_specialized_receipts_v0_1\specialized_receipt_allocator_timing.csv
+Allocation : data\raw\omb\historical_tables\FY2027\validation\washington_specialized_receipts_v0_1\washington_specialized_receipts_allocation.csv
+Annual     : data\raw\omb\historical_tables\FY2027\validation\washington_specialized_receipts_v0_1\washington_specialized_receipts_annual_summary.csv
+Queue      : data\raw\omb\historical_tables\FY2027\validation\washington_specialized_receipts_v0_1\remaining_receipts_work_queue_after_j3.csv
+JSON       : data\raw\omb\historical_tables\FY2027\validation\washington_specialized_receipts_v0_1\certification.json
+Report     : data\raw\omb\historical_tables\FY2027\validation\washington_specialized_receipts_v0_1\certification_report.txt
+
+ETL-172J-3C RESULT: PASS

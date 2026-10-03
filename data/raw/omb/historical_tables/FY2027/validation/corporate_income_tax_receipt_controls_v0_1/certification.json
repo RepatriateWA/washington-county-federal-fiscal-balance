@@ -1,0 +1,64 @@
+{
+  "etl_step": "ETL-172H-1",
+  "result": "PASS",
+  "artifact_type": "NATIONAL_RECEIPT_CONTROL",
+  "source": {
+    "path": "data\\raw\\omb\\historical_tables\\FY2027\\source\\BUDGET-2027-TAB-3-1.xlsx",
+    "bytes": 12393,
+    "sha256": "1212DA86947A71D9A0268E23D3DE789402BCFB80B308CD48A32926A65B2E7BC3",
+    "sheet": "Table"
+  },
+  "structure": {
+    "title": "Table 2.1 - RECEIPTS BY SOURCE: 1934 - 2031",
+    "units_text": "(in millions of dollars)",
+    "fiscal_year_column_index": 0,
+    "corporate_income_tax_column_index": 2,
+    "corporate_income_tax_header": "Corporation Income Taxes (1)",
+    "structure_status": "PASS"
+  },
+  "series": {
+    "receipt_series": "CORPORATE_INCOME_TAX",
+    "source_header": "Corporation Income Taxes (1)",
+    "source_units": "MILLIONS_OF_DOLLARS",
+    "dollar_conversion_factor": "1000000",
+    "period_basis": "FEDERAL_FISCAL_YEAR",
+    "target_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "first_explicit_estimate_year": 2026
+  },
+  "certification": {
+    "expected_observations": 10,
+    "actual_observations": 10,
+    "fiscal_year_coverage": "PASS",
+    "fiscal_year_uniqueness": "PASS",
+    "source_cell_uniqueness": "PASS",
+    "source_value_certification": "PASS",
+    "unit_conversion": "PASS",
+    "actual_estimate_boundary": "PASS",
+    "washington_allocation_boundary": "PASS",
+    "corporate_incidence_boundary": "PASS",
+    "rockefeller_replication_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "washington_allocation_performed": false,
+    "corporate_incidence_assumption_applied": false,
+    "capital_weight_applied": false,
+    "labor_weight_applied": false,
+    "bea_allocator_used": false,
+    "rockefeller_vintage_replication": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

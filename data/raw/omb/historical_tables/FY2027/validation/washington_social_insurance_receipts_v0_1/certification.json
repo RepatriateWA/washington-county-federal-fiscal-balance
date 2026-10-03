@@ -1,0 +1,66 @@
+{
+  "etl_step": "ETL-172F-3",
+  "result": "PASS",
+  "purpose": "Allocate certified national OASI, DI, and HI receipt controls to Washington using certified SSA contribution shares.",
+  "inputs": {
+    "omb_controls": {
+      "path": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\social_insurance_receipt_controls_v0_1\\national_social_insurance_receipt_controls.csv",
+      "sha256": "7EDB32670227A444F9BDE8859B3D034247011CFF000B3B688024D2E0ADA43960",
+      "rows": 30,
+      "coverage": "PASS"
+    },
+    "ssa_allocators": {
+      "path": "data\\raw\\ssa\\earnings_employment\\validation\\allocator_certification_v0_1\\washington_ssa_receipts_allocator_extract.csv",
+      "sha256": "4C0456D39185AA504CCCC0B5D86A94C03F4B633C3EBE99F8DFB3E59BAB204E0E",
+      "rows": 18,
+      "schema": {
+        "year": "data_year",
+        "program": "program",
+        "contribution_share": "contribution_share"
+      },
+      "required_coverage": "PASS"
+    }
+  },
+  "allocation_policy": {
+    "OASI": "OMB OASI x WA OASDI contribution share",
+    "DI": "OMB DI x WA OASDI contribution share",
+    "HI": "OMB HI x WA HI contribution share"
+  },
+  "allocator_year_policy": {
+    "2015": 2015,
+    "2016": 2016,
+    "2017": 2017,
+    "2018": 2018,
+    "2019": 2019,
+    "2020": 2020,
+    "2021": 2021,
+    "2022": 2022,
+    "2023": 2023,
+    "2024": 2023
+  },
+  "detail_certification": {
+    "expected_rows": 30,
+    "actual_rows": 30,
+    "coverage": "PASS",
+    "uniqueness": "PASS",
+    "oasi_di_share_consistency": "PASS",
+    "allocator_timing_policy": "PASS"
+  },
+  "annual_certification": {
+    "expected_rows": 10,
+    "actual_rows": 10,
+    "year_coverage": "PASS",
+    "oasdi_arithmetic": "PASS",
+    "annual_total_arithmetic": "PASS"
+  },
+  "known_limitations": {
+    "2015_HI": "SSA_SOURCE_LIMITATION_2015_HI_STATE_SELF_EMPLOYED",
+    "2024_allocator": "SSA_2023_LATEST_AVAILABLE_SHARE"
+  },
+  "interpretation_boundary": {
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false,
+    "forced_irs_reconciliation": false,
+    "rockefeller_target_imposed": false
+  }
+}

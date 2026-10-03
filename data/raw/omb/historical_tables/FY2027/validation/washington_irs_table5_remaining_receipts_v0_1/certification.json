@@ -1,0 +1,35 @@
+{
+  "etl_step": "ETL-172J-1",
+  "result": "PASS",
+  "method": {
+    "railroad_retirement": "OMB national Railroad Retirement receipts multiplied by Washington share of IRS Table 5 Railroad Retirement gross collections",
+    "estate_and_gift_taxes": "OMB national Estate and Gift Tax receipts multiplied by Washington share of combined IRS Table 5 Estate Tax and Gift Tax gross collections"
+  },
+  "source_hashes": {
+    "etl_171_semantic_extract": "3ECF50C7E21DC9BF9FC2F8F76ADA27704A2ADB852D6FFB1B7883399B72573A8B",
+    "omb_table_2_4": "21D071576D5627A18C3F62DE86BFC7FAECED1A68265F2DB87B4F737B2773C5BD",
+    "etl_172i_4_other_controls": "33A27F3D74B60DCDEE7C68CF4A15D40AA9AAAAD1F52185C9008C1BBAC5D78199",
+    "etl_172i_5_work_queue": "FC5344B91808D4DD4BBF29DF788E64BED3E5A0E8D7915C48FE9CA49000953509"
+  },
+  "certification": {
+    "irs_source_integrity": "PASS",
+    "etl_171_parser_reuse": "PASS",
+    "washington_row_uniqueness": "PASS",
+    "united_states_total_row_uniqueness": "PASS",
+    "irs_numbered_column_semantics": "PASS",
+    "washington_etl_171_reproduction": "PASS",
+    "railroad_national_control_construction": "PASS",
+    "estate_gift_national_control": "PASS",
+    "washington_share_calculation": "PASS",
+    "omb_control_application": "PASS",
+    "i5_work_queue_reduction": "PASS",
+    "database_write_boundary": "PASS",
+    "final_ledger_boundary": "PASS"
+  },
+  "boundaries": {
+    "database_writes": false,
+    "refund_adjustment": false,
+    "forced_irs_reconciliation": false,
+    "final_ledger_authorization": false
+  }
+}

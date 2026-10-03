@@ -1,0 +1,62 @@
+{
+  "etl_step": "ETL-172H-4",
+  "result": "PASS",
+  "artifact_type": "WASHINGTON_CORPORATE_INCOME_TAX_ECONOMIC_INCIDENCE_RECEIPTS",
+  "upstream": {
+    "h1": {
+      "etl_step": "ETL-172H-1",
+      "input_file": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\corporate_income_tax_receipt_controls_v0_1\\national_corporate_income_tax_receipt_controls.csv",
+      "input_sha256": "C2B18A92708F5AD171FE4561A98D1CF6EB45CDC5879C35D180DAC789C094859B",
+      "certification_file": "data\\raw\\omb\\historical_tables\\FY2027\\validation\\corporate_income_tax_receipt_controls_v0_1\\certification.json",
+      "certification_sha256": "747DB844E331523D2E05F970064363DA4772EC0C7DBAD408806089AE3EBE4320"
+    },
+    "h3": {
+      "etl_step": "ETL-172H-3",
+      "input_file": "data\\raw\\bea\\corporate_incidence\\validation\\washington_corporate_incidence_allocator_shares_v0_1\\washington_corporate_incidence_allocator_shares.csv",
+      "input_sha256": "B7B1031894F4B87242B54578F1AC44D58D8AD03B75575E92CA2FA34EBCD01BC6",
+      "certification_file": "data\\raw\\bea\\corporate_incidence\\validation\\washington_corporate_incidence_allocator_shares_v0_1\\certification.json",
+      "certification_sha256": "568F1698F563651B82F21D04C5A9CA8DEB7C8F6042F495943F25D81126AE5F70"
+    }
+  },
+  "method": {
+    "capital_weight": "0.75",
+    "labor_weight": "0.25",
+    "combined_share_formula": "0.75 * Washington capital share + 0.25 * Washington labor share",
+    "washington_receipt_formula": "OMB national corporate-income-tax receipts * Washington combined corporate-incidence share",
+    "national_receipt_period_basis": "FEDERAL_FISCAL_YEAR",
+    "allocator_period_basis": "CALENDAR_YEAR",
+    "timing_convention": "CONTEMPORANEOUS_FINAL_ALLOCATOR",
+    "timing_mapping": "FFY t -> finalized CY t BEA allocator",
+    "accounting_concept": "ECONOMIC_INCIDENCE_ESTIMATE"
+  },
+  "certification": {
+    "expected_observations": 10,
+    "actual_observations": 10,
+    "fiscal_year_coverage": "PASS",
+    "fiscal_year_uniqueness": "PASS",
+    "allocator_year_mapping": "PASS",
+    "capital_weight": "PASS",
+    "labor_weight": "PASS",
+    "weight_sum": "PASS",
+    "capital_weighted_share_arithmetic": "PASS",
+    "labor_weighted_share_arithmetic": "PASS",
+    "combined_share_arithmetic": "PASS",
+    "washington_receipt_arithmetic": "PASS",
+    "national_period_basis": "PASS",
+    "allocator_period_basis": "PASS",
+    "timing_convention": "PASS",
+    "accounting_concept": "PASS",
+    "rockefeller_replication_boundary": "PASS",
+    "irs_reconciliation_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "observed_washington_corporate_tax": false,
+    "economic_incidence_estimate": true,
+    "rockefeller_vintage_replication": false,
+    "rockefeller_target_matching": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

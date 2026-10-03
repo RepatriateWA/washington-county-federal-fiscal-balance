@@ -1,0 +1,24 @@
+sheet_name,row,column,coordinate,semantic,value
+Table,1,1,A1,TABLE_TITLE,Table 2.1 - RECEIPTS BY SOURCE: 1934 - 2031
+Table,2,1,A2,UNITS,(in millions of dollars)
+Table,2,1,A2,FOOTNOTE,(in millions of dollars)
+Table,3,2,B3,INDIVIDUAL_INCOME_TAX,Individual Income Taxes
+Table,3,3,C3,CORPORATE_INCOME_TAX,Corporation Income Taxes (1)
+Table,3,4,D3,SOCIAL_INSURANCE,Social Insurance and Retirement Receipts (2)
+Table,3,7,G3,EXCISE,Excise Taxes (2)
+Table,3,9,I3,TOTAL_RECEIPTS,Total Receipts
+Table,4,4,D4,TOTAL_RECEIPTS,Total
+Table,4,5,E4,FOOTNOTE,(On - Budget)
+Table,4,6,F4,FOOTNOTE,(Off - Budget)
+Table,4,9,I4,TOTAL_RECEIPTS,Total
+Table,4,10,J4,FOOTNOTE,(On - Budget)
+Table,4,11,K4,FOOTNOTE,(Off - Budget)
+Table,98,1,A98,ACTUAL_ESTIMATE,2026 estimate
+Table,99,1,A99,ACTUAL_ESTIMATE,2027 estimate
+Table,100,1,A100,ACTUAL_ESTIMATE,2028 estimate
+Table,101,1,A101,ACTUAL_ESTIMATE,2029 estimate
+Table,102,1,A102,ACTUAL_ESTIMATE,2030 estimate
+Table,103,1,A103,ACTUAL_ESTIMATE,2031 estimate
+Table,104,1,A104,FOOTNOTE,"(1) From 1987 through 2010, includes trust fund receipts for the hazardous substance superfund. In 1989 and 1990, includes trust fund receipts for the supplementary medical insurance trust fund."
+Table,105,1,A105,FOOTNOTE,(2) See Table 2.4 for additional details
+Table,106,1,A106,FOOTNOTE,(3) See Table 2.5 for additional details

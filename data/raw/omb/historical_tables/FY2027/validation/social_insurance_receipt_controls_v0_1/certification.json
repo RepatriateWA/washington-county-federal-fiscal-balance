@@ -1,0 +1,76 @@
+{
+  "etl_step": "ETL-172F-2C",
+  "result": "PASS",
+  "purpose": "Extract and certify FY2015-FY2024 national OASI, DI, and HI receipt controls from OMB Historical Table 2.4.",
+  "source": {
+    "source_file": "data\\raw\\omb\\historical_tables\\FY2027\\source\\BUDGET-2027-TAB-3-4.xlsx",
+    "source_bytes": 26752,
+    "source_sha256": "21D071576D5627A18C3F62DE86BFC7FAECED1A68265F2DB87B4F737B2773C5BD",
+    "source_hash_status": "PASS"
+  },
+  "units": {
+    "source_units_raw": "(in millions of dollars)",
+    "source_units_normalized": "millions of dollars"
+  },
+  "target_fiscal_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "first_explicit_estimate_year": 2026,
+  "target_year_status": "HISTORICAL_ACTUAL_SIDE_OF_ESTIMATE_BOUNDARY",
+  "series": {
+    "OASI": {
+      "row": 8,
+      "label": "Trust funds (Off-Budget)",
+      "parent_row": 6,
+      "parent_label": "Old-age and survivors insurance:",
+      "budget_status": "OFF_BUDGET"
+    },
+    "DI": {
+      "row": 9,
+      "label": "Disability insurance (Off-Budget)",
+      "parent_row": null,
+      "parent_label": null,
+      "budget_status": "OFF_BUDGET"
+    },
+    "HI": {
+      "row": 10,
+      "label": "Hospital insurance",
+      "parent_row": null,
+      "parent_label": null,
+      "budget_status": "ON_BUDGET_UNLESS_OTHERWISE_NOTED"
+    }
+  },
+  "extraction": {
+    "expected_observations": 30,
+    "actual_observations": 30,
+    "coverage_status": "PASS",
+    "uniqueness_status": "PASS",
+    "per_series_counts": {
+      "OASI": 10,
+      "DI": 10,
+      "HI": 10
+    }
+  },
+  "normalization": {
+    "source_units": "millions of dollars",
+    "target_units": "dollars",
+    "multiplier": "1000000"
+  },
+  "interpretation_boundary": {
+    "washington_allocation": false,
+    "ssa_shares_applied": false,
+    "ssa_2024_carry_forward_authorized": false,
+    "rockefeller_reconstruction": false,
+    "database_writes": false,
+    "ledger_inclusion_authorized": false
+  }
+}

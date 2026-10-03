@@ -1,0 +1,3696 @@
+{
+  "BEAAPI": {
+    "Request": {
+      "RequestParam": [
+        {
+          "ParameterName": "USERID",
+          "ParameterValue": "4C05625B-B27C-41B4-88AD-17EAF3401BFA"
+        },
+        {
+          "ParameterName": "METHOD",
+          "ParameterValue": "GETDATA"
+        },
+        {
+          "ParameterName": "DATASETNAME",
+          "ParameterValue": "REGIONAL"
+        },
+        {
+          "ParameterName": "TABLENAME",
+          "ParameterValue": "CAINC6N"
+        },
+        {
+          "ParameterName": "LINECODE",
+          "ParameterValue": "2002"
+        },
+        {
+          "ParameterName": "YEAR",
+          "ParameterValue": "2015,2016,2017,2018,2019,2020,2021,2022,2023,2024"
+        },
+        {
+          "ParameterName": "GEOFIPS",
+          "ParameterValue": "WA"
+        },
+        {
+          "ParameterName": "RESULTFORMAT",
+          "ParameterValue": "JSON"
+        }
+      ]
+    },
+    "Results": {
+      "Statistic": "Govt. and govt. enterprises compensation: Military",
+      "UnitOfMeasure": "Thousands of dollars",
+      "PublicTable": "CAINC6N Compensation of employees by NAICS industry",
+      "UTCProductionTime": "2026-09-14T01:46:15.587",
+      "NoteRef": " ",
+      "Dimensions": [
+        {
+          "Name": "Code",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "GeoFips",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "GeoName",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "TimePeriod",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "DataValue",
+          "DataType": "numeric",
+          "IsValue": "1"
+        },
+        {
+          "Name": "CL_UNIT",
+          "DataType": "string",
+          "IsValue": "0"
+        },
+        {
+          "Name": "UNIT_MULT",
+          "DataType": "numeric",
+          "IsValue": "0"
+        }
+      ],
+      "Data": [
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5854915"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6043204"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6016641"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5506324"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5525828"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5871859"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6376290"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6421092"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6692070"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53000",
+          "GeoName": "Washington",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6997127"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1462"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1481"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1555"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2141"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1723"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1752"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1747"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1815"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1974"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53001",
+          "GeoName": "Adams",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2111"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1823"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2015"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2120"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2144"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2047"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1969"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2143"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2273"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1683"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53003",
+          "GeoName": "Asotin",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1778"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "15581"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "16002"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "16791"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "18026"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "18864"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "18918"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "19532"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21034"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "22562"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53005",
+          "GeoName": "Benton",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24355"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6093"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5865"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5745"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8127"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7680"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7060"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6841"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6766"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6688"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53007",
+          "GeoName": "Chelan",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6482"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "31307"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "30089"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "46158"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "44698"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "42644"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "41298"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "40265"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "39144"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "34636"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53009",
+          "GeoName": "Clallam",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33522"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "43046"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "40774"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "39627"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "57759"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "53886"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "49393"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "50107"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "50056"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "48232"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53011",
+          "GeoName": "Clark",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "46282"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "308"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "326"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "335"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "342"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "340"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "350"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "383"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "404"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "298"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53013",
+          "GeoName": "Columbia",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "308"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8111"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7897"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12190"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11540"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10536"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9715"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9456"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9287"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9015"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53015",
+          "GeoName": "Cowlitz",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8387"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3253"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3476"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3611"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3641"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3800"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4300"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4658"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5058"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3095"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53017",
+          "GeoName": "Douglas",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3179"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "557"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "760"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "711"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "650"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "621"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "610"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "591"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "579"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "548"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53019",
+          "GeoName": "Ferry",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "561"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6583"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6750"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6987"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7554"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7853"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8033"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8170"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8465"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9302"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53021",
+          "GeoName": "Franklin",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10010"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "166"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "172"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "172"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "183"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "188"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "193"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "199"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "205"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "225"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53023",
+          "GeoName": "Garfield",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "242"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7079"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7215"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7391"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7904"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8206"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8336"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8625"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9208"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10163"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53025",
+          "GeoName": "Grant",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10855"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7727"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8088"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8588"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9228"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10091"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10138"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10325"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10530"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11074"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53027",
+          "GeoName": "Grays Harbor",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11797"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "562953"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "769139"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "867028"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "739252"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "800946"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "836720"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "958649"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "901738"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "960438"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53029",
+          "GeoName": "Island",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1002461"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3913"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3138"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9494"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8239"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7060"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7224"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6235"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6022"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5217"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53031",
+          "GeoName": "Jefferson",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4784"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "324502"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "328597"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "333552"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "335209"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "361715"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "365419"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "352294"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "359199"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "385104"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53033",
+          "GeoName": "King",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "411795"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "959742"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1047347"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "937765"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "638950"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "531031"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "561719"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "625697"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "601286"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "653427"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53035",
+          "GeoName": "Kitsap",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "668384"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5052"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4998"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6672"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6410"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5784"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5308"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5278"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5129"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5101"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53037",
+          "GeoName": "Kittitas",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4922"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1596"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1630"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1698"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1821"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1954"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1997"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1936"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1999"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2216"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53039",
+          "GeoName": "Klickitat",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2394"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6098"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6539"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6789"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7013"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7279"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7877"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8709"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9325"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5714"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53041",
+          "GeoName": "Lewis",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5858"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "781"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "792"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "817"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "872"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "908"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "931"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "964"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1021"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1125"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53043",
+          "GeoName": "Lincoln",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1203"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4708"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5080"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5307"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5449"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5609"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5855"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6406"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6894"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4499"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53045",
+          "GeoName": "Mason",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4614"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3213"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3163"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3123"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4449"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4106"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3710"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3567"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3501"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3512"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53047",
+          "GeoName": "Okanogan",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3410"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "8793"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9311"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10104"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10543"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12054"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11854"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12162"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12202"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11698"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53049",
+          "GeoName": "Pacific",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12931"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "996"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1186"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1319"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1589"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1796"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2041"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1634"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1240"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1368"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53051",
+          "GeoName": "Pend Oreille",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1447"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2917759"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2933553"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3005248"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3223601"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3503275"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3605675"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3686874"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3830086"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3020554"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53053",
+          "GeoName": "Pierce",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "2880264"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1316"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1420"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1485"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1519"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1593"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1643"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1781"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1893"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1228"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53055",
+          "GeoName": "San Juan",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1247"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9716"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9438"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "9199"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "13686"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "12860"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11824"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11264"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "11012"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10755"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53057",
+          "GeoName": "Skagit",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "10406"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "893"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "871"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1245"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1172"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1061"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1012"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "992"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "1019"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "982"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53059",
+          "GeoName": "Skamania",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "922"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "445066"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "442379"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "353011"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "211578"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "147680"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "158132"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "171819"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "168381"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "182439"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53061",
+          "GeoName": "Snohomish",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "206808"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "275619"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "488612"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "457595"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "443479"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "429271"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "395250"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "353611"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "340206"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "319388"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53063",
+          "GeoName": "Spokane",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "300897"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3320"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3396"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3503"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3771"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3880"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "3973"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4074"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4251"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4676"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53065",
+          "GeoName": "Stevens",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4973"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "27126"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "28632"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "30943"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33956"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "35919"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "36908"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "36804"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33219"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33268"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53067",
+          "GeoName": "Thurston",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "34179"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "317"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "305"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "488"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "457"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "414"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "394"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "380"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "369"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "354"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53069",
+          "GeoName": "Wahkiakum",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "326"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4791"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5152"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5677"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6343"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6886"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5886"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5701"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5573"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6210"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53071",
+          "GeoName": "Walla Walla",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6502"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "20999"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "21783"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "22696"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "24233"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "25870"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "26218"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "26744"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "28054"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "30027"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53073",
+          "GeoName": "Whatcom",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "31565"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4686"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4791"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4807"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "4983"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5944"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6133"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "5667"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "6324"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7044"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53075",
+          "GeoName": "Whitman",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "7598"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2024",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "39944"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2015",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "32727"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2016",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "31822"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2017",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "32105"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2018",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33109"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2019",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33066"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2020",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "33048"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2021",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "32982"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2022",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "34064"
+        },
+        {
+          "Code": "CAINC6N-2002",
+          "GeoFips": "53077",
+          "GeoName": "Yakima",
+          "TimePeriod": "2023",
+          "CL_UNIT": "Thousands of dollars",
+          "UNIT_MULT": "3",
+          "DataValue": "37422"
+        }
+      ],
+      "Notes": [
+        {
+          "NoteRef": "Note.",
+          "NoteText": "All dollar estimates are in thousands of current dollars (not adjusted for inflation). Statistics presented in thousands of dollars do not indicate more precision than statistics presented in millions of dollars."
+        },
+        {
+          "NoteRef": " ",
+          "NoteText": "Last updated: February 5, 2026-- new statistics for 2024; revised statistics for 2020-2023."
+        }
+      ]
+    }
+  }
+}

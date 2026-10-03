@@ -1,0 +1,67 @@
+==========================================================================================================================
+ETL-172J-5 WASHINGTON FEDERAL RECEIPTS FINAL RECONSTRUCTION v0.1
+==========================================================================================================================
+
+Overall status : PASS
+
+CERTIFICATION CHECKS
+--------------------------------------------------------------------------------------------------------------------------
+upstream_individual_income_certification                                                 PASS
+upstream_corporate_income_certification                                                  PASS
+upstream_social_insurance_certification                                                  PASS
+upstream_j1_irs_table5_certification                                                     PASS
+upstream_j2_population_certification                                                     PASS
+upstream_j3_specialized_certification                                                    PASS
+upstream_j4b_ui_certification                                                            PASS
+upstream_j4c_hip_certification                                                           PASS
+upstream_omb_receipts_universe_certification                                             PASS
+upstream_irs_gross_collections_certification                                             PASS
+component_keys_unique                                                                    PASS
+study_year_component_coverage                                                            PASS
+post_j4c_actionable_documented_method_review_queues_zero                                 PASS
+withheld_component_matches_final_queue                                                   PASS
+national_receipts_disposition_identity                                                   PASS
+washington_component_sum_identity                                                        PASS
+irs_comparison_diagnostic_only                                                           PASS
+irs_forced_reconciliation_boundary                                                       PASS
+database_write_boundary                                                                  PASS
+final_fiscal_balance_ledger_boundary                                                     PASS
+
+WASHINGTON FEDERAL RECEIPTS RECONSTRUCTION
+--------------------------------------------------------------------------------------------------------------------------
+FFY   OMB TOTAL     NATIONAL ALLOCATED   WITHHELD   UNALLOCABLE   WA RECONSTRUCTED   IRS GROSS    RECON - IRS
+--------------------------------------------------------------------------------------------------------------------------
+2015   $ 3.250T   $ 3.056T          $  11.3B   $  182.5B   $  79.254B   $ 73.334B   $  +5.919B
+2016   $ 3.268T   $ 3.066T          $  11.2B   $  190.9B   $  83.778B   $ 77.083B   $  +6.695B
+2017   $ 3.316T   $ 3.153T          $   0.1B   $  163.5B   $  86.452B   $ 85.876B   $  +0.577B
+2018   $ 3.330T   $ 3.172T          $   4.7B   $  153.0B   $  88.740B   $ 90.404B   $  -1.664B
+2019   $ 3.463T   $ 3.297T          $   9.6B   $  156.6B   $  96.138B   $100.610B   $  -4.472B
+2020   $ 3.421T   $ 3.220T          $  15.3B   $  186.3B   $  96.043B   $101.042B   $  -4.999B
+2021   $ 4.047T   $ 3.833T          $   0.2B   $  214.4B   $ 114.521B   $119.862B   $  -5.342B
+2022   $ 4.897T   $ 4.661T          $   0.0B   $  236.5B   $ 134.919B   $148.466B   $ -13.547B
+2023   $ 4.441T   $ 4.320T          $   0.0B   $  121.0B   $ 126.094B   $155.442B   $ -29.348B
+2024   $ 4.920T   $ 4.798T          $   0.0B   $  122.0B   $ 139.871B   $161.330B   $ -21.458B
+
+IRS DIAGNOSTIC DIFFERENCE
+--------------------------------------------------------------------------------------------------------------------------
+FFY   WA RECONSTRUCTED   IRS GROSS   DIFFERENCE   DIFFERENCE / IRS
+--------------------------------------------------------------------------------------------------------------------------
+2015   $  79.254B   $  73.334B   $  +5.919B      +8.07%
+2016   $  83.778B   $  77.083B   $  +6.695B      +8.69%
+2017   $  86.452B   $  85.876B   $  +0.577B      +0.67%
+2018   $  88.740B   $  90.404B   $  -1.664B      -1.84%
+2019   $  96.138B   $ 100.610B   $  -4.472B      -4.44%
+2020   $  96.043B   $ 101.042B   $  -4.999B      -4.95%
+2021   $ 114.521B   $ 119.862B   $  -5.342B      -4.46%
+2022   $ 134.919B   $ 148.466B   $ -13.547B      -9.12%
+2023   $ 126.094B   $ 155.442B   $ -29.348B     -18.88%
+2024   $ 139.871B   $ 161.330B   $ -21.458B     -13.30%
+
+INTERPRETATION BOUNDARIES
+--------------------------------------------------------------------------------------------------------------------------
+WA reconstructed receipts are an economic-incidence reconstruction from certified national controls and allocators.
+IRS gross collections are an independent administrative collection benchmark.
+A difference between the two is diagnostic information, not a certification failure.
+WITHHOLD_UNRESOLVED and intentionally unallocable national receipts are not silently assigned to Washington.
+No PostgreSQL writes.
+No final statewide fiscal-balance calculation is authorized by this stage.

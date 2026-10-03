@@ -1,0 +1,33 @@
+================================================================================================
+ETL-172J-3A - SPECIALIZED RECEIPT ALLOCATOR SOURCE ACQUISITION
+================================================================================================
+
+Acquired UTC: 2026-10-01T05:56:36.420250+00:00
+
+FHWA
+------------------------------------------------------------------------------------------------
+Series  : Highway Statistics 2024 Table FE-221B
+Artifact: data\raw\fhwa\highway_trust_fund\source\fhwa_highway_statistics_2024_fe221b.xlsx
+Bytes   : 37,308
+SHA256  : BBAEEE2EFBEB6EBF6651107DF331633D4EC09420E3B3659F5E66C2541455DB66
+Status  : PASS
+
+NIAAA
+------------------------------------------------------------------------------------------------
+Series  : Surveillance Report #122
+Artifact: data\raw\niaaa\alcohol_consumption\source\niaaa_surveillance_report_122.pdf
+Bytes   : 1,571,437
+SHA256  : 71F1E8531F2DE32138F99D20B239EC78215A23B50070294FBB80671507BC222A
+Status  : PASS
+
+Manifest: data\raw\fhwa\highway_trust_fund\validation\j3_specialized_allocator_acquisition_manifest.csv
+
+BOUNDARIES
+------------------------------------------------------------------------------------------------
+No allocator values extracted.
+No Washington shares calculated.
+No federal receipts allocated.
+No PostgreSQL writes.
+No final-ledger authorization.
+
+ETL-172J-3A RESULT: PASS

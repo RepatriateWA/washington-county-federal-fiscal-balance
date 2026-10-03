@@ -1,0 +1,179 @@
+{
+  "etl_step": "ETL-172I-5",
+  "result": "PASS",
+  "artifact_type": "REMAINING_FEDERAL_RECEIPTS_METHODOLOGY_CROSSWALK",
+  "target_fiscal_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "source_hashes": {
+    "etl_172i_2_csv": "9E96B0B7F91F8E902B40861E2BAB290655F876A351EC3FB38F4063686B56321F",
+    "etl_172i_3_csv": "3EC9797B44474AC0FA13C8448F9CD81E4FDAAF0AEB55C5D4C9E8D61812D55C07",
+    "etl_172i_4_csv": "33A27F3D74B60DCDEE7C68CF4A15D40AA9AAAAD1F52185C9008C1BBAC5D78199",
+    "omb_table_2_4_xlsx": "21D071576D5627A18C3F62DE86BFC7FAECED1A68265F2DB87B4F737B2773C5BD"
+  },
+  "classification_vocabulary": [
+    "ALLOCATOR_METHOD_DOCUMENTED",
+    "INTENTIONALLY_UNALLOCABLE",
+    "METHOD_CHANGE_REVIEW",
+    "ALLOCATOR_SOURCE_REQUIRED",
+    "WITHHOLD_UNRESOLVED"
+  ],
+  "crosswalk": [
+    {
+      "component_group": "SOCIAL_INSURANCE_REMAINDER",
+      "component_code": "OASI_FEDERAL_FUNDS",
+      "component_label": "Old-age and survivors insurance - Federal funds",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "",
+      "classification": "WITHHOLD_UNRESOLVED",
+      "classification_reason": "ETL-172I-3 preserves OASI Federal funds as a possible residual component when nonzero. No independent Rockefeller allocator classification is asserted in I-5."
+    },
+    {
+      "component_group": "SOCIAL_INSURANCE_REMAINDER",
+      "component_code": "RAILROAD_RETIREMENT",
+      "component_label": "Railroad retirement",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "IRS Gross Collections, Table 5",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology identifies IRS Gross Collections, Table 5 as the state allocation source for Railroad Retirement."
+    },
+    {
+      "component_group": "SOCIAL_INSURANCE_REMAINDER",
+      "component_code": "UNEMPLOYMENT_INSURANCE",
+      "component_label": "Unemployment insurance",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "US DOL Unemployment Insurance Financial Transaction Summary; method/source varies by Rockefeller vintage",
+      "classification": "METHOD_CHANGE_REVIEW",
+      "classification_reason": "Rockefeller documents state allocation of unemployment-insurance receipts, but preserved evidence shows source/method variation across report vintages. Historical reconstruction requires a year-specific method review before allocation."
+    },
+    {
+      "component_group": "SOCIAL_INSURANCE_REMAINDER",
+      "component_code": "OTHER_RETIREMENT",
+      "component_label": "Other retirement",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "Census Population",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology identifies Census population as the state allocator for Other Retirement."
+    },
+    {
+      "component_group": "EXCISE",
+      "component_code": "TRANSPORTATION_TRUST_FUND",
+      "component_label": "Transportation (Trust Fund)",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "FHWA payments into the FHTF Highway Account",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology identifies FHWA payments into the Federal Highway Trust Fund Highway Account as the allocator."
+    },
+    {
+      "component_group": "EXCISE",
+      "component_code": "TOBACCO",
+      "component_label": "Tobacco",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "Census Population",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology identifies Census population as the state allocator for tobacco excise receipts."
+    },
+    {
+      "component_group": "EXCISE",
+      "component_code": "AIRPORT_AND_AIRWAY",
+      "component_label": "Airport and Airway",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "Census Population",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology identifies Census population as the state allocator for Airport and Airway receipts."
+    },
+    {
+      "component_group": "EXCISE",
+      "component_code": "HEALTH_INSURANCE_PROVIDERS",
+      "component_label": "Health Insurance Providers",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "Oliver Wyman Analysis; vintage-specific applicability",
+      "classification": "METHOD_CHANGE_REVIEW",
+      "classification_reason": "Rockefeller evidence identifies Oliver Wyman analysis for this category, but the tax is not present uniformly across the study period and methodology applicability is vintage-specific."
+    },
+    {
+      "component_group": "EXCISE",
+      "component_code": "ALCOHOL",
+      "component_label": "Alcohol",
+      "national_source": "OMB Historical Table 2.4",
+      "rockefeller_method": "NIAAA alcohol consumption",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology identifies NIAAA alcohol consumption as the state allocator for alcohol excise receipts."
+    },
+    {
+      "component_group": "EXCISE",
+      "component_code": "OTHER_EXCISES",
+      "component_label": "Other Excises",
+      "national_source": "Calculated from OMB Historical Tables 2.1 and 2.4",
+      "rockefeller_method": "Census Population",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology allocates the calculated Other Excises residual using Census population."
+    },
+    {
+      "component_group": "OTHER_RECEIPTS",
+      "component_code": "ESTATE_AND_GIFT_TAXES",
+      "component_label": "Estate and Gift Taxes",
+      "national_source": "OMB Historical Table 2.5",
+      "rockefeller_method": "IRS Gross Collections, Table 5",
+      "classification": "ALLOCATOR_METHOD_DOCUMENTED",
+      "classification_reason": "Rockefeller methodology classifies Estate and Gift Taxes as allocable and identifies IRS Gross Collections, Table 5 as the state allocation source."
+    },
+    {
+      "component_group": "OTHER_RECEIPTS",
+      "component_code": "CUSTOMS_DUTIES_AND_FEES",
+      "component_label": "Customs Duties and Fees",
+      "national_source": "OMB Historical Table 2.5",
+      "rockefeller_method": "Unallocable receipts",
+      "classification": "INTENTIONALLY_UNALLOCABLE",
+      "classification_reason": "Rockefeller places Customs Duties and Fees in Unallocable Receipts rather than assigning them to states."
+    },
+    {
+      "component_group": "OTHER_RECEIPTS",
+      "component_code": "FEDERAL_RESERVE_DEPOSITS",
+      "component_label": "Federal Reserve Deposits",
+      "national_source": "OMB Historical Table 2.5",
+      "rockefeller_method": "Unallocable receipts",
+      "classification": "INTENTIONALLY_UNALLOCABLE",
+      "classification_reason": "Rockefeller explicitly treats deposits of Federal Reserve System earnings as unallocable federal receipts."
+    },
+    {
+      "component_group": "OTHER_RECEIPTS",
+      "component_code": "MISCELLANEOUS_ALL_OTHER",
+      "component_label": "All Other Miscellaneous Receipts",
+      "national_source": "OMB Historical Table 2.5",
+      "rockefeller_method": "Unallocable receipts",
+      "classification": "INTENTIONALLY_UNALLOCABLE",
+      "classification_reason": "Rockefeller places All Other Miscellaneous Receipts in Unallocable Receipts rather than assigning them to states."
+    }
+  ],
+  "certification": {
+    "crosswalk_component_count": 14,
+    "crosswalk_component_uniqueness": "PASS",
+    "classification_vocabulary": "PASS",
+    "fiscal_year_coverage": "PASS",
+    "i3_remaining_universe_reconciliation": "PASS",
+    "intentionally_unallocable_preserved_in_national_universe": "PASS",
+    "washington_allocation_boundary": "PASS",
+    "rockefeller_evidence_boundary": "PASS",
+    "irs_gross_collections_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "ledger_boundary": "PASS"
+  },
+  "methodological_boundaries": {
+    "washington_allocation_performed": false,
+    "incidence_inferred_without_documentation": false,
+    "intentionally_unallocable_removed_from_national_universe": false,
+    "irs_gross_collections_reconciliation": false,
+    "database_writes": false,
+    "final_ledger_inclusion_authorized": false
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "etl_stage": "ETL-172J-5",
+  "title": "Washington Federal Receipts Final Reconstruction v0.1",
+  "overall_status": "PASS",
+  "study_period": {
+    "first_fiscal_year": 2015,
+    "last_fiscal_year": 2024
+  },
+  "accounting_architecture": {
+    "national_control": "OMB Historical Tables complete federal receipts universe",
+    "washington_reconstruction": "Sum of independently certified Washington component allocations",
+    "withheld_treatment": "National control preserved; no Washington amount imputed",
+    "intentionally_unallocable_treatment": "National control preserved outside Washington allocated numerator",
+    "irs_gross_collections": "Independent administrative benchmark; diagnostic comparison only"
+  },
+  "checks": {
+    "upstream_individual_income_certification": "PASS",
+    "upstream_corporate_income_certification": "PASS",
+    "upstream_social_insurance_certification": "PASS",
+    "upstream_j1_irs_table5_certification": "PASS",
+    "upstream_j2_population_certification": "PASS",
+    "upstream_j3_specialized_certification": "PASS",
+    "upstream_j4b_ui_certification": "PASS",
+    "upstream_j4c_hip_certification": "PASS",
+    "upstream_omb_receipts_universe_certification": "PASS",
+    "upstream_irs_gross_collections_certification": "PASS",
+    "component_keys_unique": "PASS",
+    "study_year_component_coverage": "PASS",
+    "post_j4c_actionable_documented_method_review_queues_zero": "PASS",
+    "withheld_component_matches_final_queue": "PASS",
+    "national_receipts_disposition_identity": "PASS",
+    "washington_component_sum_identity": "PASS",
+    "irs_comparison_diagnostic_only": "PASS",
+    "irs_forced_reconciliation_boundary": "PASS",
+    "database_write_boundary": "PASS",
+    "final_fiscal_balance_ledger_boundary": "PASS"
+  },
+  "boundaries": [
+    "No new state-allocation methodology introduced in ETL-172J-5.",
+    "Health Insurance Providers remains WITHHOLD_UNRESOLVED where the national control is nonzero.",
+    "Customs duties and fees, Federal Reserve deposits, and miscellaneous all-other receipts remain intentionally unallocable under the certified methodology crosswalk.",
+    "ETL-171 IRS gross collections are diagnostic only and are not forced to reconcile with the economic-incidence reconstruction.",
+    "No PostgreSQL writes.",
+    "No final taxes-out minus spending-in balance is authorized by this stage."
+  ]
+}
