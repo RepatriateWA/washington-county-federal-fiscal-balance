@@ -1,0 +1,8 @@
+check,status,detail
+Seven certified source PDFs present,PASS,7/7 present
+Seven certified source PDFs readable,PASS,7/7 readable
+All seven documents yielded extractable text,PASS,7/7
+Evidence vocabulary found in every report,PASS,7/7 reports
+Performance-payment vocabulary found,PASS,7/7 reports
+At least one performance-payment context contains dollars,FAIL,0 evidence rows
+Profiler performs no inferred dollar reconstruction,PASS,Evidence extraction only

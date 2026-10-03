@@ -1,0 +1,1824 @@
+performance_period,column_position,field_name,normalized_field_name,candidate_classes
+2024,1,ACO_ID,aco id,ACO_IDENTITY
+2024,2,ACO_Name,aco name,ACO_IDENTITY
+2024,3,Agree_Type,agree type,
+2024,4,Agreement_Period_Num,agreement period num,
+2024,5,Current_Start_Date,current start date,
+2024,6,Current_Track,current track,
+2024,7,Risk_Model,risk model,
+2024,8,Assign_Type,assign type,BENEFICIARY_CANDIDATE
+2024,9,SNF_Waiver,snf waiver,
+2024,10,N_AB,n ab,
+2024,11,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2024,12,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2024,13,BnchmkMinExp,bnchmkminexp,
+2024,14,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2024,15,DisAdj,disadj,
+2024,16,Impact_Mid_Year_Termination,impact mid year termination,
+2024,17,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2024,18,DisAffQual,disaffqual,
+2024,19,Met_QPS,met qps,
+2024,20,Met_AltQPS,met altqps,
+2024,21,Met_40pctl,met 40pctl,
+2024,22,Met_Incentive,met incentive,
+2024,23,Met_FirstYear,met firstyear,
+2024,24,Report_WI,report wi,
+2024,25,Report_eCQM_CQM_MedicareCQM,report ecqm cqm medicarecqm,
+2024,26,Met_SSP_quality_reporting_requirements,met ssp quality reporting requirements,QUALITY_CANDIDATE
+2024,27,QualScore,qualscore,QUALITY_CANDIDATE
+2024,28,Recvd40p,recvd40p,
+2024,29,AIP,aip,
+2024,30,AIPBalance,aipbalance,
+2024,31,AIPRecoup,aiprecoup,ADVANCE_PAYMENT_CANDIDATE
+2024,32,AIPOwe,aipowe,
+2024,33,RegAdj,regadj,
+2024,34,PriorSavAdj,priorsavadj,SAVINGS_LOSS_CANDIDATE
+2024,35,FinalAdjCat,finaladjcat,
+2024,36,UpdatedBnchmk,updatedbnchmk,
+2024,37,Guardrail,guardrail,
+2024,38,HistBnchmk,histbnchmk,
+2024,39,ABtotBnchmk,abtotbnchmk,
+2024,40,ABtotExp,abtotexp,
+2024,41,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2024,42,ReducedSS,reducedss,
+2024,43,FinalLossRate,finallossrate,SAVINGS_LOSS_CANDIDATE
+2024,44,Rev_Exp_Cat,rev exp cat,
+2024,45,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2024,46,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2024,47,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2024,48,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2024,49,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2024,50,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2024,51,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2024,52,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2024,53,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2024,54,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2024,55,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2024,56,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2024,57,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2024,58,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2024,59,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2024,60,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2024,61,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2024,62,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2024,63,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2024,64,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2024,65,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2024,66,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2024,67,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2024,68,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2024,69,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2024,70,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2024,71,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2024,72,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2024,73,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2024,74,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2024,75,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2024,76,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2024,77,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2024,78,Demog_RiskScore_ESRD_PY,demog riskscore esrd py,QUALITY_CANDIDATE
+2024,79,Demog_RiskScore_DIS_PY,demog riskscore dis py,QUALITY_CANDIDATE
+2024,80,Demog_RiskScore_AGDU_PY,demog riskscore agdu py,QUALITY_CANDIDATE
+2024,81,Demog_RiskScore_AGND_PY,demog riskscore agnd py,QUALITY_CANDIDATE
+2024,82,Demog_RiskScore_ESRD_BY3,demog riskscore esrd by3,QUALITY_CANDIDATE
+2024,83,Demog_RiskScore_DIS_BY3,demog riskscore dis by3,QUALITY_CANDIDATE
+2024,84,Demog_RiskScore_AGDU_BY3,demog riskscore agdu by3,QUALITY_CANDIDATE
+2024,85,Demog_RiskScore_AGND_BY3,demog riskscore agnd by3,QUALITY_CANDIDATE
+2024,86,RR_weight_ESRD_PY,rr weight esrd py,
+2024,87,RR_weight_DIS_PY,rr weight dis py,
+2024,88,RR_weight_AGDU_PY,rr weight agdu py,
+2024,89,RR_weight_AGND_PY,rr weight agnd py,
+2024,90,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2024,91,N_AB_Year_DIS_BY3,n ab year dis by3,
+2024,92,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2024,93,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2024,94,N_AB_Year_PY,n ab year py,
+2024,95,N_AB_Year_ESRD_PY,n ab year esrd py,
+2024,96,N_AB_Year_DIS_PY,n ab year dis py,
+2024,97,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2024,98,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2024,99,N_AB_Year_Dual_PY,n ab year dual py,
+2024,100,N_AB_Year_NonDual_PY,n ab year nondual py,
+2024,101,N_Ben_VA_Only,n ben va only,
+2024,102,N_Ben_CBA_Only,n ben cba only,
+2024,103,N_Ben_CBA_and_VA,n ben cba and va,
+2024,104,N_Ben_Age_0_64,n ben age 0 64,
+2024,105,N_Ben_Age_65_74,n ben age 65 74,
+2024,106,N_Ben_Age_75_84,n ben age 75 84,
+2024,107,N_Ben_Age_85plus,n ben age 85plus,
+2024,108,N_Ben_Female,n ben female,
+2024,109,N_Ben_Male,n ben male,
+2024,110,N_Ben_Race_White,n ben race white,
+2024,111,N_Ben_Race_Black,n ben race black,
+2024,112,N_Ben_Race_Asian,n ben race asian,
+2024,113,N_Ben_Race_Hisp,n ben race hisp,
+2024,114,N_Ben_Race_Native,n ben race native,
+2024,115,N_Ben_Race_Other,n ben race other,
+2024,116,N_Ben_Race_Unknown,n ben race unknown,
+2024,117,CapAnn_INP_All,capann inp all,
+2024,118,CapAnn_INP_S_trm,capann inp s trm,
+2024,119,CapAnn_INP_L_trm,capann inp l trm,
+2024,120,CapAnn_INP_Rehab,capann inp rehab,
+2024,121,CapAnn_INP_Psych,capann inp psych,
+2024,122,CapAnn_HSP,capann hsp,
+2024,123,CapAnn_SNF,capann snf,
+2024,124,CapAnn_OPD,capann opd,
+2024,125,CapAnn_PB,capann pb,
+2024,126,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2024,127,CapAnn_HHA,capann hha,
+2024,128,CapAnn_DME,capann dme,
+2024,129,ADM,adm,
+2024,130,ADM_S_Trm,adm s trm,
+2024,131,ADM_L_Trm,adm l trm,
+2024,132,ADM_Rehab,adm rehab,
+2024,133,ADM_Psych,adm psych,
+2024,134,P_EDV_Vis,p edv vis,
+2024,135,P_EDV_Vis_HOSP,p edv vis hosp,
+2024,136,P_CT_VIS,p ct vis,
+2024,137,P_MRI_VIS,p mri vis,
+2024,138,P_EM_Total,p em total,
+2024,139,P_EM_PCP_Vis,p em pcp vis,
+2024,140,P_EM_SP_Vis,p em sp vis,
+2024,141,P_Nurse_Vis,p nurse vis,
+2024,142,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2024,143,P_SNF_ADM,p snf adm,
+2024,144,SNF_LOS,snf los,
+2024,145,SNF_PayperStay,snf payperstay,EXPENDITURE_CANDIDATE
+2024,146,N_CAH,n cah,
+2024,147,N_FQHC,n fqhc,
+2024,148,N_RHC,n rhc,
+2024,149,N_ETA,n eta,
+2024,150,N_Hosp,n hosp,
+2024,151,N_Fac_Other,n fac other,
+2024,152,N_PCP,n pcp,
+2024,153,N_Spec,n spec,
+2024,154,N_NP,n np,
+2024,155,N_PA,n pa,
+2024,156,N_CNS,n cns,
+2024,157,Perc_Dual,perc dual,
+2024,158,Perc_LTI,perc lti,
+2024,159,CAHPS_1,cahps 1,
+2024,160,CAHPS_2,cahps 2,
+2024,161,CAHPS_3,cahps 3,
+2024,162,CAHPS_4,cahps 4,
+2024,163,CAHPS_5,cahps 5,
+2024,164,CAHPS_6,cahps 6,
+2024,165,CAHPS_7,cahps 7,
+2024,166,CAHPS_11,cahps 11,
+2024,167,CAHPS_9,cahps 9,
+2024,168,CAHPS_8,cahps 8,
+2024,169,Measure_479,measure 479,
+2024,170,Measure_484,measure 484,
+2024,171,QualityID_318,qualityid 318,QUALITY_CANDIDATE
+2024,172,QualityID_110,qualityid 110,QUALITY_CANDIDATE
+2024,173,QualityID_226,qualityid 226,QUALITY_CANDIDATE
+2024,174,QualityID_134_WI,qualityid 134 wi,QUALITY_CANDIDATE
+2024,175,QualityID_134_eCQM,qualityid 134 ecqm,QUALITY_CANDIDATE
+2024,176,QualityID_134_MIPSCQM,qualityid 134 mipscqm,QUALITY_CANDIDATE
+2024,177,QualityID_134_MedicareCQM,qualityid 134 medicarecqm,QUALITY_CANDIDATE
+2024,178,QualityID_113,qualityid 113,QUALITY_CANDIDATE
+2024,179,QualityID_112,qualityid 112,QUALITY_CANDIDATE
+2024,180,QualityID_438,qualityid 438,QUALITY_CANDIDATE
+2024,181,QualityID_370,qualityid 370,QUALITY_CANDIDATE
+2024,182,QualityID_001_WI,qualityid 001 wi,QUALITY_CANDIDATE
+2024,183,QualityID_001_eCQM,qualityid 001 ecqm,QUALITY_CANDIDATE
+2024,184,QualityID_001_MIPSCQM,qualityid 001 mipscqm,QUALITY_CANDIDATE
+2024,185,QualityID_001_MedicareCQM,qualityid 001 medicarecqm,QUALITY_CANDIDATE
+2024,186,QualityID_236_WI,qualityid 236 wi,QUALITY_CANDIDATE
+2024,187,QualityID_236_eCQM,qualityid 236 ecqm,QUALITY_CANDIDATE
+2024,188,QualityID_236_MIPSCQM,qualityid 236 mipscqm,QUALITY_CANDIDATE
+2024,189,QualityID_236_MedicareCQM,qualityid 236 medicarecqm,QUALITY_CANDIDATE
+2015,1,ACO_Num,aco num,ACO_IDENTITY
+2015,2,ACO_Name,aco name,ACO_IDENTITY
+2015,3,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2015,4,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2015,5,N_AB,n ab,
+2015,6,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2015,7,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2015,8,BnchmkMinExp,bnchmkminexp,
+2015,9,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2015,10,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2015,11,QualScore,qualscore,QUALITY_CANDIDATE
+2015,12,UpdatedBnchmk,updatedbnchmk,
+2015,13,HistBnchmk,histbnchmk,
+2015,14,ABtotBnchmk,abtotbnchmk,
+2015,15,ABtotExp,abtotexp,
+2015,16,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2015,17,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2015,18,QualPerfShare,qualperfshare,SAVINGS_LOSS_CANDIDATE
+2015,19,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2015,20,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2015,21,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2015,22,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2015,23,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2015,24,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2015,25,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2015,26,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2015,27,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2015,28,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2015,29,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2015,30,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2015,31,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2015,32,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2015,33,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2015,34,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2015,35,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2015,36,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2015,37,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2015,38,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2015,39,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2015,40,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2015,41,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2015,42,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2015,43,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2015,44,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2015,45,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2015,46,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2015,47,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2015,48,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2015,49,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2015,50,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2015,51,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2015,52,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2015,53,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2015,54,N_AB_Year_DIS_BY3,n ab year dis by3,
+2015,55,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2015,56,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2015,57,N_AB_Year_PY,n ab year py,
+2015,58,N_AB_Year_ESRD_PY,n ab year esrd py,
+2015,59,N_AB_Year_DIS_PY,n ab year dis py,
+2015,60,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2015,61,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2015,62,N_Ben_Age_0_64,n ben age 0 64,
+2015,63,N_Ben_Age_65_74,n ben age 65 74,
+2015,64,N_Ben_Age_75_84,n ben age 75 84,
+2015,65,N_Ben_Age_85plus,n ben age 85plus,
+2015,66,N_Ben_Female,n ben female,
+2015,67,N_Ben_Male,n ben male,
+2015,68,N_Ben_Race_White,n ben race white,
+2015,69,N_Ben_Race_Black,n ben race black,
+2015,70,N_Ben_Race_Asian,n ben race asian,
+2015,71,N_Ben_Race_Hisp,n ben race hisp,
+2015,72,N_Ben_Race_Native,n ben race native,
+2015,73,N_Ben_Race_Other,n ben race other,
+2015,74,CapAnn_INP_All,capann inp all,
+2015,75,CapAnn_INP_S_trm,capann inp s trm,
+2015,76,CapAnn_INP_L_trm,capann inp l trm,
+2015,77,CapAnn_INP_Rehab,capann inp rehab,
+2015,78,CapAnn_INP_Psych,capann inp psych,
+2015,79,CapAnn_HSP,capann hsp,
+2015,80,CapAnn_SNF,capann snf,
+2015,81,CapAnn_INP_Other,capann inp other,
+2015,82,CapAnn_OPD,capann opd,
+2015,83,CapAnn_PB,capann pb,
+2015,84,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2015,85,CapAnn_HHA,capann hha,
+2015,86,CapAnn_DME,capann dme,
+2015,87,ADM,adm,
+2015,88,ADM_S_Trm,adm s trm,
+2015,89,ADM_L_Trm,adm l trm,
+2015,90,ADM_Rehab,adm rehab,
+2015,91,ADM_Psych,adm psych,
+2015,92,chf_adm,chf adm,
+2015,93,copd_adm,copd adm,
+2015,94,pneu_adm,pneu adm,
+2015,95,readm_Rate_1000,readm rate 1000,
+2015,96,prov_Rate_1000,prov rate 1000,
+2015,97,P_SNF_ADM,p snf adm,
+2015,98,P_EDV_Vis,p edv vis,
+2015,99,P_EDV_Vis_HOSP,p edv vis hosp,
+2015,100,P_CT_VIS,p ct vis,
+2015,101,P_MRI_VIS,p mri vis,
+2015,102,P_EM_Total,p em total,
+2015,103,P_EM_PCP_Vis,p em pcp vis,
+2015,104,P_EM_SP_Vis,p em sp vis,
+2015,105,P_Nurse_Vis,p nurse vis,
+2015,106,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2015,107,N_CAH,n cah,
+2015,108,N_FQHC,n fqhc,
+2015,109,N_RHC,n rhc,
+2015,110,N_ETA,n eta,
+2015,111,N_Fac_Other,n fac other,
+2015,112,N_PCP,n pcp,
+2015,113,N_Spec,n spec,
+2015,114,N_NP,n np,
+2015,115,N_PA,n pa,
+2015,116,N_CNS,n cns,
+2015,117,Start_Date,start date,
+2015,118,Track1,track1,
+2015,119,Track2,track2,
+2020,1,ACO_ID,aco id,ACO_IDENTITY
+2020,2,ACO_Name,aco name,ACO_IDENTITY
+2020,3,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2020,4,Agree_Type,agree type,
+2020,5,Agreement_Period_Num,agreement period num,
+2020,6,Initial_Start_Date,initial start date,
+2020,7,Current_Start_Date,current start date,
+2020,8,Current_Track_1,current track 1,
+2020,9,Current_Track_2,current track 2,
+2020,10,Current_Track_3,current track 3,
+2020,11,Current_Track_1_Plus,current track 1 plus,
+2020,12,Current_BASIC_A,current basic a,
+2020,13,Current_BASIC_B,current basic b,
+2020,14,Current_BASIC_C,current basic c,
+2020,15,Current_BASIC_D,current basic d,
+2020,16,Current_BASIC_E,current basic e,
+2020,17,Current_ENHANCED,current enhanced,
+2020,18,Risk_Model,risk model,
+2020,19,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2020,20,AIM,aim,ADVANCE_PAYMENT_CANDIDATE
+2020,21,SNF_Waiver,snf waiver,
+2020,22,N_AB,n ab,
+2020,23,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2020,24,BnchmkMinExp,bnchmkminexp,
+2020,25,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2020,26,DisAdj,disadj,
+2020,27,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2020,28,DisAffQual,disaffqual,
+2020,29,Met_QPS,met qps,
+2020,30,QualScore,qualscore,QUALITY_CANDIDATE
+2020,31,PosRegAdj,posregadj,
+2020,32,UpdatedBnchmk,updatedbnchmk,
+2020,33,HistBnchmk,histbnchmk,
+2020,34,ABtotBnchmk,abtotbnchmk,
+2020,35,ABtotExp,abtotexp,
+2020,36,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2020,37,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2020,38,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2020,39,RevLossLimit,revlosslimit,SAVINGS_LOSS_CANDIDATE
+2020,40,Rev_Exp_Cat,rev exp cat,
+2020,41,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2020,42,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2020,43,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2020,44,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2020,45,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2020,46,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2020,47,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2020,48,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2020,49,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2020,50,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2020,51,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2020,52,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2020,53,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2020,54,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2020,55,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2020,56,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2020,57,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2020,58,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2020,59,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2020,60,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2020,61,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2020,62,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2020,63,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2020,64,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2020,65,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2020,66,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2020,67,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2020,68,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2020,69,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2020,70,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2020,71,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2020,72,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2020,73,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2020,74,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2020,75,N_AB_Year_DIS_BY3,n ab year dis by3,
+2020,76,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2020,77,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2020,78,N_AB_Year_PY,n ab year py,
+2020,79,N_AB_Year_ESRD_PY,n ab year esrd py,
+2020,80,N_AB_Year_DIS_PY,n ab year dis py,
+2020,81,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2020,82,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2020,83,N_Ben_Age_0_64,n ben age 0 64,
+2020,84,N_Ben_Age_65_74,n ben age 65 74,
+2020,85,N_Ben_Age_75_84,n ben age 75 84,
+2020,86,N_Ben_Age_85plus,n ben age 85plus,
+2020,87,N_Ben_Female,n ben female,
+2020,88,N_Ben_Male,n ben male,
+2020,89,N_Ben_Race_White,n ben race white,
+2020,90,N_Ben_Race_Black,n ben race black,
+2020,91,N_Ben_Race_Asian,n ben race asian,
+2020,92,N_Ben_Race_Hisp,n ben race hisp,
+2020,93,N_Ben_Race_Native,n ben race native,
+2020,94,N_Ben_Race_Other,n ben race other,
+2020,95,CapAnn_INP_All,capann inp all,
+2020,96,CapAnn_INP_S_trm,capann inp s trm,
+2020,97,CapAnn_INP_L_trm,capann inp l trm,
+2020,98,CapAnn_INP_Rehab,capann inp rehab,
+2020,99,CapAnn_INP_Psych,capann inp psych,
+2020,100,CapAnn_HSP,capann hsp,
+2020,101,CapAnn_SNF,capann snf,
+2020,102,CapAnn_OPD,capann opd,
+2020,103,CapAnn_PB,capann pb,
+2020,104,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2020,105,CapAnn_HHA,capann hha,
+2020,106,CapAnn_DME,capann dme,
+2020,107,ADM,adm,
+2020,108,ADM_S_Trm,adm s trm,
+2020,109,ADM_L_Trm,adm l trm,
+2020,110,ADM_Rehab,adm rehab,
+2020,111,ADM_Psych,adm psych,
+2020,112,P_EDV_Vis,p edv vis,
+2020,113,P_EDV_Vis_HOSP,p edv vis hosp,
+2020,114,P_CT_VIS,p ct vis,
+2020,115,P_MRI_VIS,p mri vis,
+2020,116,P_EM_Total,p em total,
+2020,117,P_EM_PCP_Vis,p em pcp vis,
+2020,118,P_EM_SP_Vis,p em sp vis,
+2020,119,P_Nurse_Vis,p nurse vis,
+2020,120,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2020,121,P_SNF_ADM,p snf adm,
+2020,122,N_CAH,n cah,
+2020,123,N_FQHC,n fqhc,
+2020,124,N_RHC,n rhc,
+2020,125,N_ETA,n eta,
+2020,126,N_Hosp,n hosp,
+2020,127,N_Fac_Other,n fac other,
+2020,128,N_PCP,n pcp,
+2020,129,N_Spec,n spec,
+2020,130,N_NP,n np,
+2020,131,N_PA,n pa,
+2020,132,N_CNS,n cns,
+2020,133,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2020,134,RecvdMean,recvdmean,
+2020,135,RegTrndUpdt,regtrndupdt,
+2020,136,QualPerfShare,qualperfshare,SAVINGS_LOSS_CANDIDATE
+2020,137,chf_adm,chf adm,
+2020,138,copd_adm,copd adm,
+2020,139,prov_Rate_1000,prov rate 1000,
+2020,140,ACO1,aco1,
+2020,141,ACO2,aco2,
+2020,142,ACO3,aco3,
+2020,143,ACO4,aco4,
+2020,144,ACO5,aco5,
+2020,145,ACO6,aco6,
+2020,146,ACO7,aco7,
+2020,147,ACO34,aco34,
+2020,148,ACO45,aco45,
+2020,149,ACO46,aco46,
+2020,150,ACO8,aco8,
+2020,151,ACO38,aco38,
+2020,152,ACO43,aco43,
+2020,153,ACO13,aco13,
+2020,154,ACO14,aco14,
+2020,155,ACO17,aco17,
+2020,156,ACO18,aco18,
+2020,157,ACO19,aco19,
+2020,158,ACO20,aco20,
+2020,159,ACO42,aco42,
+2020,160,ACO40,aco40,
+2020,161,ACO27,aco27,
+2020,162,ACO28,aco28,
+2019,1,ACO_ID,aco id,ACO_IDENTITY
+2019,2,ACO_Name,aco name,ACO_IDENTITY
+2019,3,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2019,4,Agree_Type,agree type,
+2019,5,Participation_Six_Months,participation six months,
+2019,6,Agreement_Period_Num,agreement period num,
+2019,7,Initial_Start_Date,initial start date,
+2019,8,Initial_Track_1,initial track 1,
+2019,9,Initial_Track_2,initial track 2,
+2019,10,Initial_Track_3,initial track 3,
+2019,11,Initial_Track_1_Plus,initial track 1 plus,
+2019,12,Initial_BASIC_A,initial basic a,
+2019,13,Initial_BASIC_B,initial basic b,
+2019,14,Initial_BASIC_C,initial basic c,
+2019,15,Initial_BASIC_D,initial basic d,
+2019,16,Initial_BASIC_E,initial basic e,
+2019,17,Initial_ENHANCED,initial enhanced,
+2019,18,Current_Start_Date,current start date,
+2019,19,Current_Track_1,current track 1,
+2019,20,Current_Track_2,current track 2,
+2019,21,Current_Track_3,current track 3,
+2019,22,Current_Track_1_Plus,current track 1 plus,
+2019,23,Current_BASIC_A,current basic a,
+2019,24,Current_BASIC_B,current basic b,
+2019,25,Current_BASIC_C,current basic c,
+2019,26,Current_BASIC_D,current basic d,
+2019,27,Current_BASIC_E,current basic e,
+2019,28,Current_ENHANCED,current enhanced,
+2019,29,Risk_Model,risk model,
+2019,30,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2019,31,AIM,aim,ADVANCE_PAYMENT_CANDIDATE
+2019,32,SNF_Waiver,snf waiver,
+2019,33,N_AB,n ab,
+2019,34,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2019,35,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2019,36,BnchmkMinExp,bnchmkminexp,
+2019,37,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2019,38,DisAdj,disadj,
+2019,39,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2019,40,DisAffQual,disaffqual,
+2019,41,Met_QPS,met qps,
+2019,42,QualScore,qualscore,QUALITY_CANDIDATE
+2019,43,RecvdMean,recvdmean,
+2019,44,Prior_Sav_Adj,prior sav adj,SAVINGS_LOSS_CANDIDATE
+2019,45,RegTrndUpdt,regtrndupdt,
+2019,46,PosRegAdj,posregadj,
+2019,47,UpdatedBnchmk,updatedbnchmk,
+2019,48,HistBnchmk,histbnchmk,
+2019,49,ABtotBnchmk,abtotbnchmk,
+2019,50,ABtotExp,abtotexp,
+2019,51,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2019,52,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2019,53,QualPerfShare,qualperfshare,SAVINGS_LOSS_CANDIDATE
+2019,54,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2019,55,RevLossLimit,revlosslimit,SAVINGS_LOSS_CANDIDATE
+2019,56,Rev_Exp_Cat,rev exp cat,
+2019,57,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2019,58,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2019,59,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2019,60,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2019,61,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2019,62,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2019,63,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2019,64,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2019,65,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2019,66,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2019,67,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2019,68,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2019,69,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2019,70,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2019,71,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2019,72,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2019,73,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2019,74,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2019,75,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2019,76,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2019,77,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2019,78,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2019,79,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2019,80,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2019,81,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2019,82,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2019,83,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2019,84,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2019,85,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2019,86,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2019,87,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2019,88,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2019,89,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2019,90,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2019,91,N_AB_Year_DIS_BY3,n ab year dis by3,
+2019,92,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2019,93,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2019,94,N_AB_Year_PY,n ab year py,
+2019,95,N_AB_Year_ESRD_PY,n ab year esrd py,
+2019,96,N_AB_Year_DIS_PY,n ab year dis py,
+2019,97,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2019,98,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2019,99,N_Ben_Age_0_64,n ben age 0 64,
+2019,100,N_Ben_Age_65_74,n ben age 65 74,
+2019,101,N_Ben_Age_75_84,n ben age 75 84,
+2019,102,N_Ben_Age_85plus,n ben age 85plus,
+2019,103,N_Ben_Female,n ben female,
+2019,104,N_Ben_Male,n ben male,
+2019,105,N_Ben_Race_White,n ben race white,
+2019,106,N_Ben_Race_Black,n ben race black,
+2019,107,N_Ben_Race_Asian,n ben race asian,
+2019,108,N_Ben_Race_Hisp,n ben race hisp,
+2019,109,N_Ben_Race_Native,n ben race native,
+2019,110,N_Ben_Race_Other,n ben race other,
+2019,111,CapAnn_INP_All,capann inp all,
+2019,112,CapAnn_INP_S_trm,capann inp s trm,
+2019,113,CapAnn_INP_L_trm,capann inp l trm,
+2019,114,CapAnn_INP_Rehab,capann inp rehab,
+2019,115,CapAnn_INP_Psych,capann inp psych,
+2019,116,CapAnn_HSP,capann hsp,
+2019,117,CapAnn_SNF,capann snf,
+2019,118,CapAnn_INP_Other,capann inp other,
+2019,119,CapAnn_OPD,capann opd,
+2019,120,CapAnn_PB,capann pb,
+2019,121,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2019,122,CapAnn_HHA,capann hha,
+2019,123,CapAnn_DME,capann dme,
+2019,124,ADM,adm,
+2019,125,ADM_S_Trm,adm s trm,
+2019,126,ADM_L_Trm,adm l trm,
+2019,127,ADM_Rehab,adm rehab,
+2019,128,ADM_Psych,adm psych,
+2019,129,chf_adm,chf adm,
+2019,130,copd_adm,copd adm,
+2019,131,prov_Rate_1000,prov rate 1000,
+2019,132,P_EDV_Vis,p edv vis,
+2019,133,P_EDV_Vis_HOSP,p edv vis hosp,
+2019,134,P_CT_VIS,p ct vis,
+2019,135,P_MRI_VIS,p mri vis,
+2019,136,P_EM_Total,p em total,
+2019,137,P_EM_PCP_Vis,p em pcp vis,
+2019,138,P_EM_SP_Vis,p em sp vis,
+2019,139,P_Nurse_Vis,p nurse vis,
+2019,140,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2019,141,P_SNF_ADM,p snf adm,
+2019,142,N_CAH,n cah,
+2019,143,N_FQHC,n fqhc,
+2019,144,N_RHC,n rhc,
+2019,145,N_ETA,n eta,
+2019,146,N_Hosp,n hosp,
+2019,147,N_Fac_Other,n fac other,
+2019,148,N_PCP,n pcp,
+2019,149,N_Spec,n spec,
+2019,150,N_NP,n np,
+2019,151,N_PA,n pa,
+2019,152,N_CNS,n cns,
+2019,153,ACO1,aco1,
+2019,154,ACO2,aco2,
+2019,155,ACO3,aco3,
+2019,156,ACO4,aco4,
+2019,157,ACO5,aco5,
+2019,158,ACO6,aco6,
+2019,159,ACO7,aco7,
+2019,160,ACO34,aco34,
+2019,161,ACO45,aco45,
+2019,162,ACO46,aco46,
+2019,163,ACO8,aco8,
+2019,164,ACO38,aco38,
+2019,165,ACO43,aco43,
+2019,166,ACO13,aco13,
+2019,167,ACO14,aco14,
+2019,168,ACO17,aco17,
+2019,169,ACO18,aco18,
+2019,170,ACO19,aco19,
+2019,171,ACO20,aco20,
+2019,172,ACO42,aco42,
+2019,173,ACO40,aco40,
+2019,174,ACO27,aco27,
+2019,175,ACO28,aco28,
+2017,1,ACO_Name,aco name,ACO_IDENTITY
+2017,2,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2017,3,Agree_Type,agree type,
+2017,4,Agreement_Period_Num,agreement period num,
+2017,5,Initial_Start_Date,initial start date,
+2017,6,Initial_Track_1,initial track 1,
+2017,7,Initial_Track_2,initial track 2,
+2017,8,Initial_Track_3,initial track 3,
+2017,9,Current_Start_Date,current start date,
+2017,10,Current_Track_1,current track 1,
+2017,11,Current_Track_2,current track 2,
+2017,12,Current_Track_3,current track 3,
+2017,13,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2017,14,AIM,aim,ADVANCE_PAYMENT_CANDIDATE
+2017,15,N_AB,n ab,
+2017,16,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2017,17,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2017,18,BnchmkMinExp,bnchmkminexp,
+2017,19,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2017,20,DisAdj,disadj,
+2017,21,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2017,22,Met_QPS,met qps,
+2017,23,QualScore,qualscore,QUALITY_CANDIDATE
+2017,24,Prior_Sav_Adj,prior sav adj,SAVINGS_LOSS_CANDIDATE
+2017,25,RegTrndUpdt,regtrndupdt,
+2017,26,PosRegAdj,posregadj,
+2017,27,UpdatedBnchmk,updatedbnchmk,
+2017,28,HistBnchmk,histbnchmk,
+2017,29,ABtotBnchmk,abtotbnchmk,
+2017,30,ABtotExp,abtotexp,
+2017,31,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2017,32,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2017,33,QualPerfShare,qualperfshare,SAVINGS_LOSS_CANDIDATE
+2017,34,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2017,35,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2017,36,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2017,37,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2017,38,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2017,39,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2017,40,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2017,41,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2017,42,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2017,43,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2017,44,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2017,45,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2017,46,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2017,47,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2017,48,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2017,49,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2017,50,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2017,51,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2017,52,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2017,53,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2017,54,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2017,55,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2017,56,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2017,57,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2017,58,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2017,59,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2017,60,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2017,61,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2017,62,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2017,63,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2017,64,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2017,65,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2017,66,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2017,67,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2017,68,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2017,69,N_AB_Year_DIS_BY3,n ab year dis by3,
+2017,70,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2017,71,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2017,72,N_AB_Year_PY,n ab year py,
+2017,73,N_AB_Year_ESRD_PY,n ab year esrd py,
+2017,74,N_AB_Year_DIS_PY,n ab year dis py,
+2017,75,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2017,76,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2017,77,N_Ben_Age_0_64,n ben age 0 64,
+2017,78,N_Ben_Age_65_74,n ben age 65 74,
+2017,79,N_Ben_Age_75_84,n ben age 75 84,
+2017,80,N_Ben_Age_85plus,n ben age 85plus,
+2017,81,N_Ben_Female,n ben female,
+2017,82,N_Ben_Male,n ben male,
+2017,83,N_Ben_Race_White,n ben race white,
+2017,84,N_Ben_Race_Black,n ben race black,
+2017,85,N_Ben_Race_Asian,n ben race asian,
+2017,86,N_Ben_Race_Hisp,n ben race hisp,
+2017,87,N_Ben_Race_Native,n ben race native,
+2017,88,N_Ben_Race_Other,n ben race other,
+2017,89,CapAnn_INP_All,capann inp all,
+2017,90,CapAnn_INP_S_trm,capann inp s trm,
+2017,91,CapAnn_INP_L_trm,capann inp l trm,
+2017,92,CapAnn_INP_Rehab,capann inp rehab,
+2017,93,CapAnn_INP_Psych,capann inp psych,
+2017,94,CapAnn_HSP,capann hsp,
+2017,95,CapAnn_SNF,capann snf,
+2017,96,CapAnn_INP_Other,capann inp other,
+2017,97,CapAnn_OPD,capann opd,
+2017,98,CapAnn_PB,capann pb,
+2017,99,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2017,100,CapAnn_HHA,capann hha,
+2017,101,CapAnn_DME,capann dme,
+2017,102,ADM,adm,
+2017,103,ADM_S_Trm,adm s trm,
+2017,104,ADM_L_Trm,adm l trm,
+2017,105,ADM_Rehab,adm rehab,
+2017,106,ADM_Psych,adm psych,
+2017,107,chf_adm,chf adm,
+2017,108,copd_adm,copd adm,
+2017,109,prov_Rate_1000,prov rate 1000,
+2017,110,P_EDV_Vis,p edv vis,
+2017,111,P_EDV_Vis_HOSP,p edv vis hosp,
+2017,112,P_CT_VIS,p ct vis,
+2017,113,P_MRI_VIS,p mri vis,
+2017,114,P_EM_Total,p em total,
+2017,115,P_EM_PCP_Vis,p em pcp vis,
+2017,116,P_EM_SP_Vis,p em sp vis,
+2017,117,P_Nurse_Vis,p nurse vis,
+2017,118,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2017,119,P_SNF_ADM,p snf adm,
+2017,120,N_CAH,n cah,
+2017,121,N_FQHC,n fqhc,
+2017,122,N_RHC,n rhc,
+2017,123,N_ETA,n eta,
+2017,124,N_Fac_Other,n fac other,
+2017,125,N_PCP,n pcp,
+2017,126,N_Spec,n spec,
+2017,127,N_NP,n np,
+2017,128,N_PA,n pa,
+2017,129,N_CNS,n cns,
+2017,130,ACO1,aco1,
+2017,131,ACO2,aco2,
+2017,132,ACO3,aco3,
+2017,133,ACO4,aco4,
+2017,134,ACO5,aco5,
+2017,135,ACO6,aco6,
+2017,136,ACO7,aco7,
+2017,137,ACO34,aco34,
+2017,138,ACO8,aco8,
+2017,139,ACO35,aco35,
+2017,140,ACO36,aco36,
+2017,141,ACO37,aco37,
+2017,142,ACO38,aco38,
+2017,143,ACO44,aco44,
+2017,144,ACO43,aco43,
+2017,145,ACO11,aco11,
+2017,146,ACO12,aco12,
+2017,147,ACO13,aco13,
+2017,148,ACO14,aco14,
+2017,149,ACO15,aco15,
+2017,150,ACO16,aco16,
+2017,151,ACO17,aco17,
+2017,152,ACO18,aco18,
+2017,153,ACO19,aco19,
+2017,154,ACO20,aco20,
+2017,155,ACO42,aco42,
+2017,156,ACO40,aco40,
+2017,157,DM_Comp,dm comp,
+2017,158,ACO27,aco27,
+2017,159,ACO41,aco41,
+2017,160,ACO28,aco28,
+2017,161,ACO30,aco30,
+2017,162,ACO_Num,aco num,ACO_IDENTITY
+2017,163,acute_adm,acute adm,
+2017,164,readm_Rate_1000,readm rate 1000,
+2022,1,ACO_ID,aco id,ACO_IDENTITY
+2022,2,ACO_Name,aco name,ACO_IDENTITY
+2022,3,Agree_Type,agree type,
+2022,4,Agreement_Period_Num,agreement period num,
+2022,5,Current_Start_Date,current start date,
+2022,6,Current_Track,current track,
+2022,7,Risk_Model,risk model,
+2022,8,Assign_Type,assign type,BENEFICIARY_CANDIDATE
+2022,9,SNF_Waiver,snf waiver,
+2022,10,N_AB,n ab,
+2022,11,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2022,12,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2022,13,BnchmkMinExp,bnchmkminexp,
+2022,14,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2022,15,DisAdj,disadj,
+2022,16,Impact_Mid_Year_Termination,impact mid year termination,
+2022,17,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2022,18,DisAffQual,disaffqual,
+2022,19,Met_QPS,met qps,
+2022,20,Met_30pctl,met 30pctl,
+2022,21,Met_Incentive,met incentive,
+2022,22,Met_FirstYear,met firstyear,
+2022,23,Report_WI,report wi,
+2022,24,Report_eCQM_CQM,report ecqm cqm,
+2022,25,Report_Inc,report inc,
+2022,26,QualScore,qualscore,QUALITY_CANDIDATE
+2022,27,Recvd30p,recvd30p,
+2022,28,PosRegAdj,posregadj,
+2022,29,UpdatedBnchmk,updatedbnchmk,
+2022,30,HistBnchmk,histbnchmk,
+2022,31,ABtotBnchmk,abtotbnchmk,
+2022,32,ABtotExp,abtotexp,
+2022,33,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2022,34,Rev_Exp_Cat,rev exp cat,
+2022,35,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2022,36,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2022,37,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2022,38,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2022,39,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2022,40,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2022,41,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2022,42,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2022,43,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2022,44,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2022,45,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2022,46,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2022,47,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2022,48,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2022,49,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2022,50,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2022,51,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2022,52,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2022,53,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2022,54,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2022,55,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2022,56,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2022,57,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2022,58,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2022,59,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2022,60,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2022,61,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2022,62,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2022,63,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2022,64,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2022,65,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2022,66,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2022,67,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2022,68,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2022,69,N_AB_Year_DIS_BY3,n ab year dis by3,
+2022,70,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2022,71,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2022,72,N_AB_Year_PY,n ab year py,
+2022,73,N_AB_Year_ESRD_PY,n ab year esrd py,
+2022,74,N_AB_Year_DIS_PY,n ab year dis py,
+2022,75,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2022,76,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2022,77,N_Ben_VA_Only,n ben va only,
+2022,78,N_Ben_CBA_Only,n ben cba only,
+2022,79,N_Ben_CBA_and_VA,n ben cba and va,
+2022,80,N_Ben_Age_0_64,n ben age 0 64,
+2022,81,N_Ben_Age_65_74,n ben age 65 74,
+2022,82,N_Ben_Age_75_84,n ben age 75 84,
+2022,83,N_Ben_Age_85plus,n ben age 85plus,
+2022,84,N_Ben_Female,n ben female,
+2022,85,N_Ben_Male,n ben male,
+2022,86,N_Ben_Race_White,n ben race white,
+2022,87,N_Ben_Race_Black,n ben race black,
+2022,88,N_Ben_Race_Asian,n ben race asian,
+2022,89,N_Ben_Race_Hisp,n ben race hisp,
+2022,90,N_Ben_Race_Native,n ben race native,
+2022,91,N_Ben_Race_Other,n ben race other,
+2022,92,N_Ben_Race_Unknown,n ben race unknown,
+2022,93,CapAnn_INP_All,capann inp all,
+2022,94,CapAnn_INP_S_trm,capann inp s trm,
+2022,95,CapAnn_INP_L_trm,capann inp l trm,
+2022,96,CapAnn_INP_Rehab,capann inp rehab,
+2022,97,CapAnn_INP_Psych,capann inp psych,
+2022,98,CapAnn_HSP,capann hsp,
+2022,99,CapAnn_SNF,capann snf,
+2022,100,CapAnn_OPD,capann opd,
+2022,101,CapAnn_PB,capann pb,
+2022,102,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2022,103,CapAnn_HHA,capann hha,
+2022,104,CapAnn_DME,capann dme,
+2022,105,ADM,adm,
+2022,106,ADM_S_Trm,adm s trm,
+2022,107,ADM_L_Trm,adm l trm,
+2022,108,ADM_Rehab,adm rehab,
+2022,109,ADM_Psych,adm psych,
+2022,110,P_EDV_Vis,p edv vis,
+2022,111,P_EDV_Vis_HOSP,p edv vis hosp,
+2022,112,P_CT_VIS,p ct vis,
+2022,113,P_MRI_VIS,p mri vis,
+2022,114,P_EM_Total,p em total,
+2022,115,P_EM_PCP_Vis,p em pcp vis,
+2022,116,P_EM_SP_Vis,p em sp vis,
+2022,117,P_Nurse_Vis,p nurse vis,
+2022,118,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2022,119,P_SNF_ADM,p snf adm,
+2022,120,SNF_LOS,snf los,
+2022,121,SNF_PayperStay,snf payperstay,EXPENDITURE_CANDIDATE
+2022,122,N_CAH,n cah,
+2022,123,N_FQHC,n fqhc,
+2022,124,N_RHC,n rhc,
+2022,125,N_ETA,n eta,
+2022,126,N_Hosp,n hosp,
+2022,127,N_Fac_Other,n fac other,
+2022,128,N_PCP,n pcp,
+2022,129,N_Spec,n spec,
+2022,130,N_NP,n np,
+2022,131,N_PA,n pa,
+2022,132,N_CNS,n cns,
+2022,133,Perc_Dual,perc dual,
+2022,134,Perc_CovDiag,perc covdiag,
+2022,135,Perc_CovEpisode,perc covepisode,
+2022,136,Perc_LTI,perc lti,
+2022,137,CAHPS_1,cahps 1,
+2022,138,CAHPS_2,cahps 2,
+2022,139,CAHPS_3,cahps 3,
+2022,140,CAHPS_4,cahps 4,
+2022,141,CAHPS_5,cahps 5,
+2022,142,CAHPS_6,cahps 6,
+2022,143,CAHPS_7,cahps 7,
+2022,144,CAHPS_11,cahps 11,
+2022,145,CAHPS_9,cahps 9,
+2022,146,CAHPS_8,cahps 8,
+2022,147,Measure_479,measure 479,
+2022,148,Measure_484,measure 484,
+2022,149,QualityID_318,qualityid 318,QUALITY_CANDIDATE
+2022,150,QualityID_110,qualityid 110,QUALITY_CANDIDATE
+2022,151,QualityID_226,qualityid 226,QUALITY_CANDIDATE
+2022,152,QualityID_134_WI,qualityid 134 wi,QUALITY_CANDIDATE
+2022,153,QualityID_134_eCQM,qualityid 134 ecqm,QUALITY_CANDIDATE
+2022,154,QualityID_134_MIPSCQM,qualityid 134 mipscqm,QUALITY_CANDIDATE
+2022,155,QualityID_113,qualityid 113,QUALITY_CANDIDATE
+2022,156,QualityID_112,qualityid 112,QUALITY_CANDIDATE
+2022,157,QualityID_438,qualityid 438,QUALITY_CANDIDATE
+2022,158,QualityID_370,qualityid 370,QUALITY_CANDIDATE
+2022,159,QualityID_001_WI,qualityid 001 wi,QUALITY_CANDIDATE
+2022,160,QualityID_001_eCQM,qualityid 001 ecqm,QUALITY_CANDIDATE
+2022,161,QualityID_001_MIPSCQM,qualityid 001 mipscqm,QUALITY_CANDIDATE
+2022,162,QualityID_236_WI,qualityid 236 wi,QUALITY_CANDIDATE
+2022,163,QualityID_236_eCQM,qualityid 236 ecqm,QUALITY_CANDIDATE
+2022,164,QualityID_236_MIPSCQM,qualityid 236 mipscqm,QUALITY_CANDIDATE
+2016,1,ACO_Num,aco num,ACO_IDENTITY
+2016,2,ACO_Name,aco name,ACO_IDENTITY
+2016,3,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2016,4,Agree_Type,agree type,
+2016,5,Agreement_Period_Num,agreement period num,
+2016,6,Initial_Start_Date,initial start date,
+2016,7,Initial_Track_1,initial track 1,
+2016,8,Initial_Track_2,initial track 2,
+2016,9,Initial_Track_3,initial track 3,
+2016,10,Current_Start_Date,current start date,
+2016,11,Current_Track_1,current track 1,
+2016,12,Current_Track_2,current track 2,
+2016,13,Current_Track_3,current track 3,
+2016,14,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2016,15,AIM,aim,ADVANCE_PAYMENT_CANDIDATE
+2016,16,N_AB,n ab,
+2016,17,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2016,18,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2016,19,BnchmkMinExp,bnchmkminexp,
+2016,20,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2016,21,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2016,22,Met_QPS,met qps,
+2016,23,QualScore,qualscore,QUALITY_CANDIDATE
+2016,24,Prior_Sav_Adj,prior sav adj,SAVINGS_LOSS_CANDIDATE
+2016,25,UpdatedBnchmk,updatedbnchmk,
+2016,26,HistBnchmk,histbnchmk,
+2016,27,ABtotBnchmk,abtotbnchmk,
+2016,28,ABtotExp,abtotexp,
+2016,29,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2016,30,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2016,31,QualPerfShare,qualperfshare,SAVINGS_LOSS_CANDIDATE
+2016,32,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2016,33,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2016,34,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2016,35,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2016,36,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2016,37,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2016,38,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2016,39,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2016,40,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2016,41,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2016,42,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2016,43,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2016,44,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2016,45,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2016,46,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2016,47,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2016,48,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2016,49,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2016,50,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2016,51,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2016,52,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2016,53,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2016,54,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2016,55,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2016,56,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2016,57,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2016,58,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2016,59,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2016,60,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2016,61,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2016,62,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2016,63,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2016,64,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2016,65,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2016,66,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2016,67,N_AB_Year_DIS_BY3,n ab year dis by3,
+2016,68,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2016,69,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2016,70,N_AB_Year_PY,n ab year py,
+2016,71,N_AB_Year_ESRD_PY,n ab year esrd py,
+2016,72,N_AB_Year_DIS_PY,n ab year dis py,
+2016,73,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2016,74,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2016,75,N_Ben_Age_0_64,n ben age 0 64,
+2016,76,N_Ben_Age_65_74,n ben age 65 74,
+2016,77,N_Ben_Age_75_84,n ben age 75 84,
+2016,78,N_Ben_Age_85plus,n ben age 85plus,
+2016,79,N_Ben_Female,n ben female,
+2016,80,N_Ben_Male,n ben male,
+2016,81,N_Ben_Race_White,n ben race white,
+2016,82,N_Ben_Race_Black,n ben race black,
+2016,83,N_Ben_Race_Asian,n ben race asian,
+2016,84,N_Ben_Race_Hisp,n ben race hisp,
+2016,85,N_Ben_Race_Native,n ben race native,
+2016,86,N_Ben_Race_Other,n ben race other,
+2016,87,CapAnn_INP_All,capann inp all,
+2016,88,CapAnn_INP_S_trm,capann inp s trm,
+2016,89,CapAnn_INP_L_trm,capann inp l trm,
+2016,90,CapAnn_INP_Rehab,capann inp rehab,
+2016,91,CapAnn_INP_Psych,capann inp psych,
+2016,92,CapAnn_HSP,capann hsp,
+2016,93,CapAnn_SNF,capann snf,
+2016,94,CapAnn_INP_Other,capann inp other,
+2016,95,CapAnn_OPD,capann opd,
+2016,96,CapAnn_PB,capann pb,
+2016,97,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2016,98,CapAnn_HHA,capann hha,
+2016,99,CapAnn_DME,capann dme,
+2016,100,ADM,adm,
+2016,101,ADM_S_Trm,adm s trm,
+2016,102,ADM_L_Trm,adm l trm,
+2016,103,ADM_Rehab,adm rehab,
+2016,104,ADM_Psych,adm psych,
+2016,105,chf_adm,chf adm,
+2016,106,copd_adm,copd adm,
+2016,107,readm_Rate_1000,readm rate 1000,
+2016,108,prov_Rate_1000,prov rate 1000,
+2016,109,P_SNF_ADM,p snf adm,
+2016,110,P_EDV_Vis,p edv vis,
+2016,111,P_EDV_Vis_HOSP,p edv vis hosp,
+2016,112,P_CT_VIS,p ct vis,
+2016,113,P_MRI_VIS,p mri vis,
+2016,114,P_EM_Total,p em total,
+2016,115,P_EM_PCP_Vis,p em pcp vis,
+2016,116,P_EM_SP_Vis,p em sp vis,
+2016,117,P_Nurse_Vis,p nurse vis,
+2016,118,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2016,119,N_CAH,n cah,
+2016,120,N_FQHC,n fqhc,
+2016,121,N_RHC,n rhc,
+2016,122,N_ETA,n eta,
+2016,123,N_Fac_Other,n fac other,
+2016,124,N_PCP,n pcp,
+2016,125,N_Spec,n spec,
+2016,126,N_NP,n np,
+2016,127,N_PA,n pa,
+2016,128,N_CNS,n cns,
+2016,129,ACO1,aco1,
+2016,130,ACO2,aco2,
+2016,131,ACO3,aco3,
+2016,132,ACO4,aco4,
+2016,133,ACO5,aco5,
+2016,134,ACO6,aco6,
+2016,135,ACO7,aco7,
+2016,136,ACO34,aco34,
+2016,137,ACO8,aco8,
+2016,138,ACO35,aco35,
+2016,139,ACO36,aco36,
+2016,140,ACO37,aco37,
+2016,141,ACO38,aco38,
+2016,142,ACO11,aco11,
+2016,143,ACO13,aco13,
+2016,144,ACO14,aco14,
+2016,145,ACO15,aco15,
+2016,146,ACO16,aco16,
+2016,147,ACO17,aco17,
+2016,148,ACO18,aco18,
+2016,149,ACO19,aco19,
+2016,150,ACO20,aco20,
+2016,151,ACO42,aco42,
+2016,152,ACO40,aco40,
+2016,153,DM_Comp,dm comp,
+2016,154,ACO27,aco27,
+2016,155,ACO41,aco41,
+2016,156,ACO28,aco28,
+2016,157,ACO30,aco30,
+2016,158,pneu_adm,pneu adm,
+2016,159,ACO9,aco9,
+2016,160,ACO10,aco10,
+2016,161,ACO39,aco39,
+2016,162,ACO21,aco21,
+2016,163,ACO31,aco31,
+2016,164,ACO33,aco33,
+2021,1,ACO_ID,aco id,ACO_IDENTITY
+2021,2,ACO_Name,aco name,ACO_IDENTITY
+2021,3,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2021,4,Agree_Type,agree type,
+2021,5,Agreement_Period_Num,agreement period num,
+2021,6,Initial_Start_Date,initial start date,
+2021,7,Current_Start_Date,current start date,
+2021,8,Current_Track_1,current track 1,
+2021,9,Current_Track_2,current track 2,
+2021,10,Current_Track_3,current track 3,
+2021,11,Current_Track_1_Plus,current track 1 plus,
+2021,12,Current_BASIC_A,current basic a,
+2021,13,Current_BASIC_B,current basic b,
+2021,14,Current_BASIC_C,current basic c,
+2021,15,Current_BASIC_D,current basic d,
+2021,16,Current_BASIC_E,current basic e,
+2021,17,Current_ENHANCED,current enhanced,
+2021,18,Risk_Model,risk model,
+2021,19,Assign_Type,assign type,BENEFICIARY_CANDIDATE
+2021,20,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2021,21,AIM,aim,ADVANCE_PAYMENT_CANDIDATE
+2021,22,SNF_Waiver,snf waiver,
+2021,23,N_AB,n ab,
+2021,24,Sav_Rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2021,25,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2021,26,BnchmkMinExp,bnchmkminexp,
+2021,27,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2021,28,DisAdj,disadj,
+2021,29,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2021,30,DisAffQual,disaffqual,
+2021,31,Met_QPS,met qps,
+2021,32,Report_WI,report wi,
+2021,33,Report_eCQM,report ecqm,
+2021,34,Report_CQM,report cqm,
+2021,35,Report_Inc,report inc,
+2021,36,QualScore,qualscore,QUALITY_CANDIDATE
+2021,37,Recvd30p,recvd30p,
+2021,38,PosRegAdj,posregadj,
+2021,39,UpdatedBnchmk,updatedbnchmk,
+2021,40,HistBnchmk,histbnchmk,
+2021,41,ABtotBnchmk,abtotbnchmk,
+2021,42,ABtotExp,abtotexp,
+2021,43,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2021,44,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2021,45,MaxShareRate,maxsharerate,SAVINGS_LOSS_CANDIDATE
+2021,46,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2021,47,RevLossLimit,revlosslimit,SAVINGS_LOSS_CANDIDATE
+2021,48,Rev_Exp_Cat,rev exp cat,
+2021,49,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2021,50,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2021,51,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2021,52,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2021,53,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2021,54,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2021,55,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2021,56,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2021,57,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2021,58,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2021,59,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2021,60,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2021,61,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2021,62,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2021,63,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2021,64,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2021,65,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2021,66,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2021,67,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2021,68,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2021,69,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2021,70,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2021,71,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2021,72,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2021,73,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2021,74,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2021,75,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2021,76,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2021,77,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2021,78,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2021,79,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2021,80,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2021,81,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2021,82,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2021,83,N_AB_Year_DIS_BY3,n ab year dis by3,
+2021,84,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2021,85,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2021,86,N_AB_Year_PY,n ab year py,
+2021,87,N_AB_Year_ESRD_PY,n ab year esrd py,
+2021,88,N_AB_Year_DIS_PY,n ab year dis py,
+2021,89,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2021,90,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2021,91,N_Ben_Age_0_64,n ben age 0 64,
+2021,92,N_Ben_Age_65_74,n ben age 65 74,
+2021,93,N_Ben_Age_75_84,n ben age 75 84,
+2021,94,N_Ben_Age_85plus,n ben age 85plus,
+2021,95,N_Ben_Female,n ben female,
+2021,96,N_Ben_Male,n ben male,
+2021,97,N_Ben_Race_White,n ben race white,
+2021,98,N_Ben_Race_Black,n ben race black,
+2021,99,N_Ben_Race_Asian,n ben race asian,
+2021,100,N_Ben_Race_Hisp,n ben race hisp,
+2021,101,N_Ben_Race_Native,n ben race native,
+2021,102,N_Ben_Race_Other,n ben race other,
+2021,103,CapAnn_INP_All,capann inp all,
+2021,104,CapAnn_INP_S_trm,capann inp s trm,
+2021,105,CapAnn_INP_L_trm,capann inp l trm,
+2021,106,CapAnn_INP_Rehab,capann inp rehab,
+2021,107,CapAnn_INP_Psych,capann inp psych,
+2021,108,CapAnn_HSP,capann hsp,
+2021,109,CapAnn_SNF,capann snf,
+2021,110,CapAnn_OPD,capann opd,
+2021,111,CapAnn_PB,capann pb,
+2021,112,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2021,113,CapAnn_HHA,capann hha,
+2021,114,CapAnn_DME,capann dme,
+2021,115,ADM,adm,
+2021,116,ADM_S_Trm,adm s trm,
+2021,117,ADM_L_Trm,adm l trm,
+2021,118,ADM_Rehab,adm rehab,
+2021,119,ADM_Psych,adm psych,
+2021,120,P_EDV_Vis,p edv vis,
+2021,121,P_EDV_Vis_HOSP,p edv vis hosp,
+2021,122,P_CT_VIS,p ct vis,
+2021,123,P_MRI_VIS,p mri vis,
+2021,124,P_EM_Total,p em total,
+2021,125,P_EM_PCP_Vis,p em pcp vis,
+2021,126,P_EM_SP_Vis,p em sp vis,
+2021,127,P_Nurse_Vis,p nurse vis,
+2021,128,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2021,129,P_SNF_ADM,p snf adm,
+2021,130,SNF_LOS,snf los,
+2021,131,SNF_PayperStay,snf payperstay,EXPENDITURE_CANDIDATE
+2021,132,N_CAH,n cah,
+2021,133,N_FQHC,n fqhc,
+2021,134,N_RHC,n rhc,
+2021,135,N_ETA,n eta,
+2021,136,N_Hosp,n hosp,
+2021,137,N_Fac_Other,n fac other,
+2021,138,N_PCP,n pcp,
+2021,139,N_Spec,n spec,
+2021,140,N_NP,n np,
+2021,141,N_PA,n pa,
+2021,142,N_CNS,n cns,
+2021,143,Perc_Dual,perc dual,
+2021,144,Perc_CovDiag,perc covdiag,
+2021,145,Perc_CovEpisode,perc covepisode,
+2021,146,Perc_LTI,perc lti,
+2021,147,CAHPS_1,cahps 1,
+2021,148,CAHPS_2,cahps 2,
+2021,149,CAHPS_3,cahps 3,
+2021,150,CAHPS_4,cahps 4,
+2021,151,CAHPS_5,cahps 5,
+2021,152,CAHPS_6,cahps 6,
+2021,153,CAHPS_7,cahps 7,
+2021,154,CAHPS_11,cahps 11,
+2021,155,CAHPS_9,cahps 9,
+2021,156,CAHPS_8,cahps 8,
+2021,157,Measure_479,measure 479,
+2021,158,Measure_MCC1,measure mcc1,
+2021,159,QualityID_318,qualityid 318,QUALITY_CANDIDATE
+2021,160,QualityID_110,qualityid 110,QUALITY_CANDIDATE
+2021,161,QualityID_226,qualityid 226,QUALITY_CANDIDATE
+2021,162,QualityID_134_WI,qualityid 134 wi,QUALITY_CANDIDATE
+2021,163,QualityID_134_eCQM-CQM,qualityid 134 ecqm cqm,QUALITY_CANDIDATE
+2021,164,QualityID_113,qualityid 113,QUALITY_CANDIDATE
+2021,165,QualityID_112,qualityid 112,QUALITY_CANDIDATE
+2021,166,QualityID_438,qualityid 438,QUALITY_CANDIDATE
+2021,167,QualityID_370,qualityid 370,QUALITY_CANDIDATE
+2021,168,QualityID_001_WI,qualityid 001 wi,QUALITY_CANDIDATE
+2021,169,QualityID_001_eCQM-CQM,qualityid 001 ecqm cqm,QUALITY_CANDIDATE
+2021,170,QualityID_236_WI,qualityid 236 wi,QUALITY_CANDIDATE
+2021,171,QualityID_236_eCQM-CQM,qualityid 236 ecqm cqm,QUALITY_CANDIDATE
+2019A,1,ACO_ID,aco id,ACO_IDENTITY
+2019A,2,ACO_Name,aco name,ACO_IDENTITY
+2019A,3,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2019A,4,Agree_Type,agree type,
+2019A,5,Participation_Six_Months,participation six months,
+2019A,6,Agreement_Period_Num,agreement period num,
+2019A,7,Initial_Start_Date,initial start date,
+2019A,8,Initial_Track_1,initial track 1,
+2019A,9,Initial_Track_2,initial track 2,
+2019A,10,Initial_Track_3,initial track 3,
+2019A,11,Initial_Track_1_Plus,initial track 1 plus,
+2019A,12,Initial_BASIC_A,initial basic a,
+2019A,13,Initial_BASIC_B,initial basic b,
+2019A,14,Initial_BASIC_C,initial basic c,
+2019A,15,Initial_BASIC_D,initial basic d,
+2019A,16,Initial_BASIC_E,initial basic e,
+2019A,17,Initial_ENHANCED,initial enhanced,
+2019A,18,Current_Start_Date,current start date,
+2019A,19,Current_Track_1,current track 1,
+2019A,20,Current_Track_2,current track 2,
+2019A,21,Current_Track_3,current track 3,
+2019A,22,Current_Track_1_Plus,current track 1 plus,
+2019A,23,Current_BASIC_A,current basic a,
+2019A,24,Current_BASIC_B,current basic b,
+2019A,25,Current_BASIC_C,current basic c,
+2019A,26,Current_BASIC_D,current basic d,
+2019A,27,Current_BASIC_E,current basic e,
+2019A,28,Current_ENHANCED,current enhanced,
+2019A,29,Risk_Model,risk model,
+2019A,30,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2019A,31,AIM,aim,ADVANCE_PAYMENT_CANDIDATE
+2019A,32,SNF_Waiver,snf waiver,
+2019A,33,N_AB,n ab,
+2019A,34,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2019A,35,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2019A,36,BnchmkMinExp,bnchmkminexp,
+2019A,37,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2019A,38,DisAdj,disadj,
+2019A,39,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2019A,40,DisAffQual,disaffqual,
+2019A,41,Met_QPS,met qps,
+2019A,42,QualScore,qualscore,QUALITY_CANDIDATE
+2019A,43,RecvdMean,recvdmean,
+2019A,44,Prior_Sav_Adj,prior sav adj,SAVINGS_LOSS_CANDIDATE
+2019A,45,RegTrndUpdt,regtrndupdt,
+2019A,46,PosRegAdj,posregadj,
+2019A,47,UpdatedBnchmk,updatedbnchmk,
+2019A,48,HistBnchmk,histbnchmk,
+2019A,49,ABtotBnchmk,abtotbnchmk,
+2019A,50,ABtotExp,abtotexp,
+2019A,51,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2019A,52,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2019A,53,QualPerfShare,qualperfshare,SAVINGS_LOSS_CANDIDATE
+2019A,54,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2019A,55,RevLossLimit,revlosslimit,SAVINGS_LOSS_CANDIDATE
+2019A,56,Rev_Exp_Cat,rev exp cat,
+2019A,57,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2019A,58,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2019A,59,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2019A,60,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2019A,61,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2019A,62,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2019A,63,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2019A,64,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2019A,65,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2019A,66,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2019A,67,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2019A,68,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2019A,69,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2019A,70,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2019A,71,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2019A,72,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2019A,73,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2019A,74,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2019A,75,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2019A,76,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2019A,77,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2019A,78,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2019A,79,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2019A,80,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2019A,81,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2019A,82,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2019A,83,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2019A,84,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2019A,85,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2019A,86,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2019A,87,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2019A,88,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2019A,89,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2019A,90,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2019A,91,N_AB_Year_DIS_BY3,n ab year dis by3,
+2019A,92,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2019A,93,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2019A,94,N_AB_Year_PY,n ab year py,
+2019A,95,N_AB_Year_ESRD_PY,n ab year esrd py,
+2019A,96,N_AB_Year_DIS_PY,n ab year dis py,
+2019A,97,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2019A,98,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2019A,99,N_Ben_Age_0_64,n ben age 0 64,
+2019A,100,N_Ben_Age_65_74,n ben age 65 74,
+2019A,101,N_Ben_Age_75_84,n ben age 75 84,
+2019A,102,N_Ben_Age_85plus,n ben age 85plus,
+2019A,103,N_Ben_Female,n ben female,
+2019A,104,N_Ben_Male,n ben male,
+2019A,105,N_Ben_Race_White,n ben race white,
+2019A,106,N_Ben_Race_Black,n ben race black,
+2019A,107,N_Ben_Race_Asian,n ben race asian,
+2019A,108,N_Ben_Race_Hisp,n ben race hisp,
+2019A,109,N_Ben_Race_Native,n ben race native,
+2019A,110,N_Ben_Race_Other,n ben race other,
+2019A,111,CapAnn_INP_All,capann inp all,
+2019A,112,CapAnn_INP_S_trm,capann inp s trm,
+2019A,113,CapAnn_INP_L_trm,capann inp l trm,
+2019A,114,CapAnn_INP_Rehab,capann inp rehab,
+2019A,115,CapAnn_INP_Psych,capann inp psych,
+2019A,116,CapAnn_HSP,capann hsp,
+2019A,117,CapAnn_SNF,capann snf,
+2019A,118,CapAnn_INP_Other,capann inp other,
+2019A,119,CapAnn_OPD,capann opd,
+2019A,120,CapAnn_PB,capann pb,
+2019A,121,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2019A,122,CapAnn_HHA,capann hha,
+2019A,123,CapAnn_DME,capann dme,
+2019A,124,ADM,adm,
+2019A,125,ADM_S_Trm,adm s trm,
+2019A,126,ADM_L_Trm,adm l trm,
+2019A,127,ADM_Rehab,adm rehab,
+2019A,128,ADM_Psych,adm psych,
+2019A,129,chf_adm,chf adm,
+2019A,130,copd_adm,copd adm,
+2019A,131,prov_Rate_1000,prov rate 1000,
+2019A,132,P_EDV_Vis,p edv vis,
+2019A,133,P_EDV_Vis_HOSP,p edv vis hosp,
+2019A,134,P_CT_VIS,p ct vis,
+2019A,135,P_MRI_VIS,p mri vis,
+2019A,136,P_EM_Total,p em total,
+2019A,137,P_EM_PCP_Vis,p em pcp vis,
+2019A,138,P_EM_SP_Vis,p em sp vis,
+2019A,139,P_Nurse_Vis,p nurse vis,
+2019A,140,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2019A,141,P_SNF_ADM,p snf adm,
+2019A,142,N_CAH,n cah,
+2019A,143,N_FQHC,n fqhc,
+2019A,144,N_RHC,n rhc,
+2019A,145,N_ETA,n eta,
+2019A,146,N_Hosp,n hosp,
+2019A,147,N_Fac_Other,n fac other,
+2019A,148,N_PCP,n pcp,
+2019A,149,N_Spec,n spec,
+2019A,150,N_NP,n np,
+2019A,151,N_PA,n pa,
+2019A,152,N_CNS,n cns,
+2019A,153,ACO1,aco1,
+2019A,154,ACO2,aco2,
+2019A,155,ACO3,aco3,
+2019A,156,ACO4,aco4,
+2019A,157,ACO5,aco5,
+2019A,158,ACO6,aco6,
+2019A,159,ACO7,aco7,
+2019A,160,ACO34,aco34,
+2019A,161,ACO45,aco45,
+2019A,162,ACO46,aco46,
+2019A,163,ACO8,aco8,
+2019A,164,ACO38,aco38,
+2019A,165,ACO43,aco43,
+2019A,166,ACO13,aco13,
+2019A,167,ACO14,aco14,
+2019A,168,ACO17,aco17,
+2019A,169,ACO18,aco18,
+2019A,170,ACO19,aco19,
+2019A,171,ACO20,aco20,
+2019A,172,ACO42,aco42,
+2019A,173,ACO40,aco40,
+2019A,174,ACO27,aco27,
+2019A,175,ACO28,aco28,
+2018,1,chf_adm,chf adm,
+2018,2,copd_adm,copd adm,
+2018,3,ACO_ID,aco id,ACO_IDENTITY
+2018,4,ACO_Name,aco name,ACO_IDENTITY
+2018,5,ACO_State,aco state,ACO_IDENTITY;GEOGRAPHY_CANDIDATE
+2018,6,Agree_Type,agree type,
+2018,7,Agreement_Period_Num,agreement period num,
+2018,8,Initial_Start_Date,initial start date,
+2018,9,Initial_Track_1,initial track 1,
+2018,10,Initial_Track_2,initial track 2,
+2018,11,Initial_Track_3,initial track 3,
+2018,12,Initial_Track_1_Plus,initial track 1 plus,
+2018,13,Current_Start_Date,current start date,
+2018,14,Current_Track_1,current track 1,
+2018,15,Current_Track_2,current track 2,
+2018,16,Current_Track_3,current track 3,
+2018,17,Current_Track_1_Plus,current track 1 plus,
+2018,18,Adv_Pay,adv pay,EXPENDITURE_CANDIDATE
+2018,19,AIM,aim,ADVANCE_PAYMENT_CANDIDATE
+2018,20,SNF_Waiver,snf waiver,
+2018,21,N_AB,n ab,
+2018,22,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2018,23,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2018,24,BnchmkMinExp,bnchmkminexp,
+2018,25,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2018,26,DisAdj,disadj,
+2018,27,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2018,28,DisAffQual,disaffqual,
+2018,29,Met_QPS,met qps,
+2018,30,QualScore,qualscore,QUALITY_CANDIDATE
+2018,31,RecvdMean,recvdmean,
+2018,32,Prior_Sav_Adj,prior sav adj,SAVINGS_LOSS_CANDIDATE
+2018,33,RegTrndUpdt,regtrndupdt,
+2018,34,PosRegAdj,posregadj,
+2018,35,UpdatedBnchmk,updatedbnchmk,
+2018,36,HistBnchmk,histbnchmk,
+2018,37,ABtotBnchmk,abtotbnchmk,
+2018,38,ABtotExp,abtotexp,
+2018,39,Adv_Pay_Amt,adv pay amt,EXPENDITURE_CANDIDATE
+2018,40,Adv_Pay_Recoup,adv pay recoup,EXPENDITURE_CANDIDATE;ADVANCE_PAYMENT_CANDIDATE
+2018,41,QualPerfShare,qualperfshare,SAVINGS_LOSS_CANDIDATE
+2018,42,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2018,43,RevLossLimit,revlosslimit,SAVINGS_LOSS_CANDIDATE
+2018,44,Rev_Exp_Cat,rev exp cat,
+2018,45,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2018,46,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2018,47,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2018,48,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2018,49,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2018,50,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2018,51,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2018,52,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2018,53,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2018,54,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2018,55,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2018,56,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2018,57,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2018,58,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2018,59,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2018,60,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2018,61,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2018,62,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2018,63,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2018,64,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2018,65,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2018,66,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2018,67,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2018,68,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2018,69,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2018,70,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2018,71,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2018,72,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2018,73,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2018,74,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2018,75,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2018,76,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2018,77,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2018,78,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2018,79,N_AB_Year_DIS_BY3,n ab year dis by3,
+2018,80,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2018,81,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2018,82,N_AB_Year_PY,n ab year py,
+2018,83,N_AB_Year_ESRD_PY,n ab year esrd py,
+2018,84,N_AB_Year_DIS_PY,n ab year dis py,
+2018,85,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2018,86,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2018,87,N_Ben_Age_0_64,n ben age 0 64,
+2018,88,N_Ben_Age_65_74,n ben age 65 74,
+2018,89,N_Ben_Age_75_84,n ben age 75 84,
+2018,90,N_Ben_Age_85plus,n ben age 85plus,
+2018,91,N_Ben_Female,n ben female,
+2018,92,N_Ben_Male,n ben male,
+2018,93,N_Ben_Race_White,n ben race white,
+2018,94,N_Ben_Race_Black,n ben race black,
+2018,95,N_Ben_Race_Asian,n ben race asian,
+2018,96,N_Ben_Race_Hisp,n ben race hisp,
+2018,97,N_Ben_Race_Native,n ben race native,
+2018,98,N_Ben_Race_Other,n ben race other,
+2018,99,CapAnn_INP_All,capann inp all,
+2018,100,CapAnn_INP_S_trm,capann inp s trm,
+2018,101,CapAnn_INP_L_trm,capann inp l trm,
+2018,102,CapAnn_INP_Rehab,capann inp rehab,
+2018,103,CapAnn_INP_Psych,capann inp psych,
+2018,104,CapAnn_HSP,capann hsp,
+2018,105,CapAnn_SNF,capann snf,
+2018,106,CapAnn_INP_Other,capann inp other,
+2018,107,CapAnn_OPD,capann opd,
+2018,108,CapAnn_PB,capann pb,
+2018,109,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2018,110,CapAnn_HHA,capann hha,
+2018,111,CapAnn_DME,capann dme,
+2018,112,ADM,adm,
+2018,113,ADM_S_Trm,adm s trm,
+2018,114,ADM_L_Trm,adm l trm,
+2018,115,ADM_Rehab,adm rehab,
+2018,116,ADM_Psych,adm psych,
+2018,117,prov_Rate_1000,prov rate 1000,
+2018,118,P_EDV_Vis,p edv vis,
+2018,119,P_EDV_Vis_HOSP,p edv vis hosp,
+2018,120,P_CT_VIS,p ct vis,
+2018,121,P_MRI_VIS,p mri vis,
+2018,122,P_EM_Total,p em total,
+2018,123,P_EM_PCP_Vis,p em pcp vis,
+2018,124,P_EM_SP_Vis,p em sp vis,
+2018,125,P_Nurse_Vis,p nurse vis,
+2018,126,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2018,127,P_SNF_ADM,p snf adm,
+2018,128,SNF_LOS,snf los,
+2018,129,SNF_PayperStay,snf payperstay,EXPENDITURE_CANDIDATE
+2018,130,N_CAH,n cah,
+2018,131,N_FQHC,n fqhc,
+2018,132,N_RHC,n rhc,
+2018,133,N_ETA,n eta,
+2018,134,N_Hosp,n hosp,
+2018,135,N_Fac_Other,n fac other,
+2018,136,N_PCP,n pcp,
+2018,137,N_Spec,n spec,
+2018,138,N_NP,n np,
+2018,139,N_PA,n pa,
+2018,140,N_CNS,n cns,
+2018,141,ACO1,aco1,
+2018,142,ACO2,aco2,
+2018,143,ACO3,aco3,
+2018,144,ACO4,aco4,
+2018,145,ACO5,aco5,
+2018,146,ACO6,aco6,
+2018,147,ACO7,aco7,
+2018,148,ACO34,aco34,
+2018,149,ACO8,aco8,
+2018,150,ACO35,aco35,
+2018,151,ACO36,aco36,
+2018,152,ACO37,aco37,
+2018,153,ACO38,aco38,
+2018,154,ACO44,aco44,
+2018,155,ACO43,aco43,
+2018,156,ACO11,aco11,
+2018,157,ACO12,aco12,
+2018,158,ACO13,aco13,
+2018,159,ACO14,aco14,
+2018,160,ACO15,aco15,
+2018,161,ACO16,aco16,
+2018,162,ACO17,aco17,
+2018,163,ACO18,aco18,
+2018,164,ACO19,aco19,
+2018,165,ACO20,aco20,
+2018,166,ACO42,aco42,
+2018,167,ACO40,aco40,
+2018,168,DM_Comp,dm comp,
+2018,169,ACO27,aco27,
+2018,170,ACO41,aco41,
+2018,171,ACO28,aco28,
+2018,172,ACO30,aco30,
+2023,1,ACO_ID,aco id,ACO_IDENTITY
+2023,2,ACO_Name,aco name,ACO_IDENTITY
+2023,3,Agree_Type,agree type,
+2023,4,Agreement_Period_Num,agreement period num,
+2023,5,Current_Start_Date,current start date,
+2023,6,Current_Track,current track,
+2023,7,Risk_Model,risk model,
+2023,8,Assign_Type,assign type,BENEFICIARY_CANDIDATE
+2023,9,SNF_Waiver,snf waiver,
+2023,10,N_AB,n ab,
+2023,11,Sav_rate,sav rate,SAVINGS_LOSS_CANDIDATE
+2023,12,MinSavPerc,minsavperc,SAVINGS_LOSS_CANDIDATE
+2023,13,BnchmkMinExp,bnchmkminexp,
+2023,14,GenSaveLoss,gensaveloss,SAVINGS_LOSS_CANDIDATE
+2023,15,DisAdj,disadj,
+2023,16,Impact_Mid_Year_Termination,impact mid year termination,
+2023,17,EarnSaveLoss,earnsaveloss,SAVINGS_LOSS_CANDIDATE
+2023,18,DisAffQual,disaffqual,
+2023,19,Met_QPS,met qps,
+2023,20,Met_AltQPS,met altqps,
+2023,21,Met_30pctl,met 30pctl,
+2023,22,Met_Incentive,met incentive,
+2023,23,Met_FirstYear,met firstyear,
+2023,24,Report_WI,report wi,
+2023,25,Report_eCQM_CQM,report ecqm cqm,
+2023,26,Report_Inc,report inc,
+2023,27,QualScore,qualscore,QUALITY_CANDIDATE
+2023,28,Recvd30p,recvd30p,
+2023,29,PosRegAdj,posregadj,
+2023,30,UpdatedBnchmk,updatedbnchmk,
+2023,31,HistBnchmk,histbnchmk,
+2023,32,ABtotBnchmk,abtotbnchmk,
+2023,33,ABtotExp,abtotexp,
+2023,34,FinalShareRate,finalsharerate,SAVINGS_LOSS_CANDIDATE
+2023,35,FinalLossRate,finallossrate,SAVINGS_LOSS_CANDIDATE
+2023,36,Rev_Exp_Cat,rev exp cat,
+2023,37,Per_Capita_Exp_ALL_ESRD_BY1,per capita exp all esrd by1,
+2023,38,Per_Capita_Exp_ALL_DIS_BY1,per capita exp all dis by1,
+2023,39,Per_Capita_Exp_ALL_AGDU_BY1,per capita exp all agdu by1,
+2023,40,Per_Capita_Exp_ALL_AGND_BY1,per capita exp all agnd by1,
+2023,41,Per_Capita_Exp_ALL_ESRD_BY2,per capita exp all esrd by2,
+2023,42,Per_Capita_Exp_ALL_DIS_BY2,per capita exp all dis by2,
+2023,43,Per_Capita_Exp_ALL_AGDU_BY2,per capita exp all agdu by2,
+2023,44,Per_Capita_Exp_ALL_AGND_BY2,per capita exp all agnd by2,
+2023,45,Per_Capita_Exp_ALL_ESRD_BY3,per capita exp all esrd by3,
+2023,46,Per_Capita_Exp_ALL_DIS_BY3,per capita exp all dis by3,
+2023,47,Per_Capita_Exp_ALL_AGDU_BY3,per capita exp all agdu by3,
+2023,48,Per_Capita_Exp_ALL_AGND_BY3,per capita exp all agnd by3,
+2023,49,Per_Capita_Exp_ALL_ESRD_PY,per capita exp all esrd py,
+2023,50,Per_Capita_Exp_ALL_DIS_PY,per capita exp all dis py,
+2023,51,Per_Capita_Exp_ALL_AGDU_PY,per capita exp all agdu py,
+2023,52,Per_Capita_Exp_ALL_AGND_PY,per capita exp all agnd py,
+2023,53,Per_Capita_Exp_TOTAL_PY,per capita exp total py,
+2023,54,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1,QUALITY_CANDIDATE
+2023,55,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1,QUALITY_CANDIDATE
+2023,56,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1,QUALITY_CANDIDATE
+2023,57,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1,QUALITY_CANDIDATE
+2023,58,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2,QUALITY_CANDIDATE
+2023,59,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2,QUALITY_CANDIDATE
+2023,60,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2,QUALITY_CANDIDATE
+2023,61,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2,QUALITY_CANDIDATE
+2023,62,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3,QUALITY_CANDIDATE
+2023,63,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3,QUALITY_CANDIDATE
+2023,64,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3,QUALITY_CANDIDATE
+2023,65,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3,QUALITY_CANDIDATE
+2023,66,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py,QUALITY_CANDIDATE
+2023,67,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py,QUALITY_CANDIDATE
+2023,68,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py,QUALITY_CANDIDATE
+2023,69,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py,QUALITY_CANDIDATE
+2023,70,N_AB_Year_ESRD_BY3,n ab year esrd by3,
+2023,71,N_AB_Year_DIS_BY3,n ab year dis by3,
+2023,72,N_AB_Year_AGED_Dual_BY3,n ab year aged dual by3,
+2023,73,N_AB_Year_AGED_NonDual_BY3,n ab year aged nondual by3,
+2023,74,N_AB_Year_PY,n ab year py,
+2023,75,N_AB_Year_ESRD_PY,n ab year esrd py,
+2023,76,N_AB_Year_DIS_PY,n ab year dis py,
+2023,77,N_AB_Year_AGED_Dual_PY,n ab year aged dual py,
+2023,78,N_AB_Year_AGED_NonDual_PY,n ab year aged nondual py,
+2023,79,N_AB_Year_Dual_PY,n ab year dual py,
+2023,80,N_AB_Year_NonDual_PY,n ab year nondual py,
+2023,81,N_Ben_VA_Only,n ben va only,
+2023,82,N_Ben_CBA_Only,n ben cba only,
+2023,83,N_Ben_CBA_and_VA,n ben cba and va,
+2023,84,N_Ben_Age_0_64,n ben age 0 64,
+2023,85,N_Ben_Age_65_74,n ben age 65 74,
+2023,86,N_Ben_Age_75_84,n ben age 75 84,
+2023,87,N_Ben_Age_85plus,n ben age 85plus,
+2023,88,N_Ben_Female,n ben female,
+2023,89,N_Ben_Male,n ben male,
+2023,90,N_Ben_Race_White,n ben race white,
+2023,91,N_Ben_Race_Black,n ben race black,
+2023,92,N_Ben_Race_Asian,n ben race asian,
+2023,93,N_Ben_Race_Hisp,n ben race hisp,
+2023,94,N_Ben_Race_Native,n ben race native,
+2023,95,N_Ben_Race_Other,n ben race other,
+2023,96,N_Ben_Race_Unknown,n ben race unknown,
+2023,97,CapAnn_INP_All,capann inp all,
+2023,98,CapAnn_INP_S_trm,capann inp s trm,
+2023,99,CapAnn_INP_L_trm,capann inp l trm,
+2023,100,CapAnn_INP_Rehab,capann inp rehab,
+2023,101,CapAnn_INP_Psych,capann inp psych,
+2023,102,CapAnn_HSP,capann hsp,
+2023,103,CapAnn_SNF,capann snf,
+2023,104,CapAnn_OPD,capann opd,
+2023,105,CapAnn_PB,capann pb,
+2023,106,CapAnn_AmbPay,capann ambpay,EXPENDITURE_CANDIDATE
+2023,107,CapAnn_HHA,capann hha,
+2023,108,CapAnn_DME,capann dme,
+2023,109,ADM,adm,
+2023,110,ADM_S_Trm,adm s trm,
+2023,111,ADM_L_Trm,adm l trm,
+2023,112,ADM_Rehab,adm rehab,
+2023,113,ADM_Psych,adm psych,
+2023,114,P_EDV_Vis,p edv vis,
+2023,115,P_EDV_Vis_HOSP,p edv vis hosp,
+2023,116,P_CT_VIS,p ct vis,
+2023,117,P_MRI_VIS,p mri vis,
+2023,118,P_EM_Total,p em total,
+2023,119,P_EM_PCP_Vis,p em pcp vis,
+2023,120,P_EM_SP_Vis,p em sp vis,
+2023,121,P_Nurse_Vis,p nurse vis,
+2023,122,P_FQHC_RHC_Vis,p fqhc rhc vis,
+2023,123,P_SNF_ADM,p snf adm,
+2023,124,SNF_LOS,snf los,
+2023,125,SNF_PayperStay,snf payperstay,EXPENDITURE_CANDIDATE
+2023,126,N_CAH,n cah,
+2023,127,N_FQHC,n fqhc,
+2023,128,N_RHC,n rhc,
+2023,129,N_ETA,n eta,
+2023,130,N_Hosp,n hosp,
+2023,131,N_Fac_Other,n fac other,
+2023,132,N_PCP,n pcp,
+2023,133,N_Spec,n spec,
+2023,134,N_NP,n np,
+2023,135,N_PA,n pa,
+2023,136,N_CNS,n cns,
+2023,137,Perc_Dual,perc dual,
+2023,138,Perc_CovDiag,perc covdiag,
+2023,139,Perc_CovEpisode,perc covepisode,
+2023,140,Perc_LTI,perc lti,
+2023,141,CAHPS_1,cahps 1,
+2023,142,CAHPS_2,cahps 2,
+2023,143,CAHPS_3,cahps 3,
+2023,144,CAHPS_4,cahps 4,
+2023,145,CAHPS_5,cahps 5,
+2023,146,CAHPS_6,cahps 6,
+2023,147,CAHPS_7,cahps 7,
+2023,148,CAHPS_11,cahps 11,
+2023,149,CAHPS_9,cahps 9,
+2023,150,CAHPS_8,cahps 8,
+2023,151,Measure_479,measure 479,
+2023,152,Measure_484,measure 484,
+2023,153,QualityID_318,qualityid 318,QUALITY_CANDIDATE
+2023,154,QualityID_110,qualityid 110,QUALITY_CANDIDATE
+2023,155,QualityID_226,qualityid 226,QUALITY_CANDIDATE
+2023,156,QualityID_134_WI,qualityid 134 wi,QUALITY_CANDIDATE
+2023,157,QualityID_134_eCQM,qualityid 134 ecqm,QUALITY_CANDIDATE
+2023,158,QualityID_134_MIPSCQM,qualityid 134 mipscqm,QUALITY_CANDIDATE
+2023,159,QualityID_113,qualityid 113,QUALITY_CANDIDATE
+2023,160,QualityID_112,qualityid 112,QUALITY_CANDIDATE
+2023,161,QualityID_438,qualityid 438,QUALITY_CANDIDATE
+2023,162,QualityID_370,qualityid 370,QUALITY_CANDIDATE
+2023,163,QualityID_001_WI,qualityid 001 wi,QUALITY_CANDIDATE
+2023,164,QualityID_001_eCQM,qualityid 001 ecqm,QUALITY_CANDIDATE
+2023,165,QualityID_001_MIPSCQM,qualityid 001 mipscqm,QUALITY_CANDIDATE
+2023,166,QualityID_236_WI,qualityid 236 wi,QUALITY_CANDIDATE
+2023,167,QualityID_236_eCQM,qualityid 236 ecqm,QUALITY_CANDIDATE
+2023,168,QualityID_236_MIPSCQM,qualityid 236 mipscqm,QUALITY_CANDIDATE

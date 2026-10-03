@@ -1,0 +1,87 @@
+check_code,status,detail
+2016-BYTES,PASS,"4,421,455 expected 4,421,455"
+2016-SHA256,PASS,6D745C0F28949F53B4EDA8793CF050A15AFC8A947402901F9E94A9C3EE2FEB19
+2017-BYTES,PASS,"5,563,732 expected 5,563,732"
+2017-SHA256,PASS,D3C6EDF2B8B80E4244FAD4BC36E8E9E518055D97A0147ABA79DE7D3A61E6ABB3
+2018-BYTES,PASS,"6,503,795 expected 6,503,795"
+2018-SHA256,PASS,ABA3135EF3CD8F7AEC46F0354D246AD30821BF53EFB9B0D738C957612CE7597F
+2016-SCHEMA,PASS,beneficiary measure columns=6/6
+2016-YEAR,PASS,mismatched rows=0
+2016-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2016-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2016-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2016-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2016-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2016-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2016-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2016-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0
+2017-SCHEMA,PASS,beneficiary measure columns=6/6
+2017-YEAR,PASS,mismatched rows=0
+2017-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2017-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2017-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2017-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2017-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2017-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2017-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2017-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0
+2018-SCHEMA,PASS,beneficiary measure columns=6/6
+2018-YEAR,PASS,mismatched rows=0
+2018-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2018-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2018-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2018-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2018-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2018-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2018-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2018-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0
+2020-SCHEMA,PASS,beneficiary measure columns=6/6
+2020-YEAR,PASS,mismatched rows=0
+2020-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2020-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2020-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2020-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2020-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2020-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2020-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2020-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0
+2021-SCHEMA,PASS,beneficiary measure columns=6/6
+2021-YEAR,PASS,mismatched rows=0
+2021-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2021-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2021-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2021-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2021-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2021-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2021-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2021-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0
+2022-SCHEMA,PASS,beneficiary measure columns=6/6
+2022-YEAR,PASS,mismatched rows=0
+2022-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2022-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2022-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2022-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2022-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2022-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2022-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2022-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0
+2023-SCHEMA,PASS,beneficiary measure columns=6/6
+2023-YEAR,PASS,mismatched rows=0
+2023-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2023-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2023-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2023-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2023-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2023-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2023-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2023-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0
+2024-SCHEMA,PASS,beneficiary measure columns=6/6
+2024-YEAR,PASS,mismatched rows=0
+2024-AB_Psn_Yrs_ESRD-LEXICAL,PASS,unexpected raw states=0
+2024-AB_Psn_Yrs_DIS-LEXICAL,PASS,unexpected raw states=0
+2024-AB_Psn_Yrs_AGDU-LEXICAL,PASS,unexpected raw states=0
+2024-AB_Psn_Yrs_AGND-LEXICAL,PASS,unexpected raw states=0
+2024-Tot_AB_Psn_Yrs-LEXICAL,PASS,unexpected raw states=0
+2024-Tot_AB_Psn_Yrs-TOTAL-DOT,PASS,dot states in total field=0
+2024-Tot_AB-LEXICAL,PASS,unexpected raw states=0
+2024-Tot_AB-TOTAL-DOT,PASS,dot states in total field=0

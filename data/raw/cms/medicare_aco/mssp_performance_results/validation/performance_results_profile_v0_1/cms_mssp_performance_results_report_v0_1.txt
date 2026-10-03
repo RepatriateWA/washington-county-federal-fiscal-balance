@@ -1,0 +1,172 @@
+====================================================================================================
+CMS MSSP PERFORMANCE RESULTS SOURCE PROFILE v0.1
+====================================================================================================
+
+SOURCE ARTIFACT
+----------------------------------------------------------------------------------------------------
+Path:    data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+Bytes:   1,686,655
+SHA-256: C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+READ-ONLY source profiling.
+No Washington-dollar calculation.
+No geographic allocation.
+No economic-additivity conclusion.
+No database writes.
+No ledger inclusion.
+
+PERFORMANCE PERIODS
+----------------------------------------------------------------------------------------------------
+2015   | rows=   392 | columns=119 | Performance Year Financial and Quality Results/2015/Performance_Year_Financial_and_Quality_Results_2015_suppress.csv
+2016   | rows=   432 | columns=164 | Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv
+2017   | rows=   472 | columns=164 | Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv
+2018   | rows=   548 | columns=172 | Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv
+2019   | rows=   475 | columns=175 | Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv
+2019A  | rows=   205 | columns=175 | Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+2020   | rows=   513 | columns=162 | Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv
+2021   | rows=   475 | columns=171 | Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv
+2022   | rows=   482 | columns=164 | Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv
+2023   | rows=   453 | columns=168 | Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv
+2024   | rows=   476 | columns=189 | Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv
+
+CANDIDATE FIELD CLASSES
+----------------------------------------------------------------------------------------------------
+ACO_IDENTITY                      30
+GEOGRAPHY_CANDIDATE                8
+BENEFICIARY_CANDIDATE              4
+EXPENDITURE_CANDIDATE             40
+BENCHMARK_CANDIDATE                0
+SAVINGS_LOSS_CANDIDATE            76
+ADVANCE_PAYMENT_CANDIDATE         16
+QUALITY_CANDIDATE                260
+
+ACO_IDENTITY
+------------
+  ACO_ID | 2018,2019,2019A,2020,2021,2022,2023,2024
+  ACO_Name | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  ACO_Num | 2015,2016,2017
+  ACO_State | 2015,2016,2017,2018,2019,2019A,2020,2021
+
+GEOGRAPHY_CANDIDATE
+-------------------
+  ACO_State | 2015,2016,2017,2018,2019,2019A,2020,2021
+
+BENEFICIARY_CANDIDATE
+---------------------
+  Assign_Type | 2021,2022,2023,2024
+
+EXPENDITURE_CANDIDATE
+---------------------
+  Adv_Pay | 2015,2016,2017,2018,2019,2019A,2020,2021
+  Adv_Pay_Amt | 2015,2016,2017,2018,2019,2019A,2020,2021
+  Adv_Pay_Recoup | 2015,2016,2017,2018,2019,2019A,2020,2021
+  CapAnn_AmbPay | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  SNF_PayperStay | 2018,2021,2022,2023,2024
+
+BENCHMARK_CANDIDATE
+-------------------
+  NONE DISCOVERED
+
+SAVINGS_LOSS_CANDIDATE
+----------------------
+  EarnSaveLoss | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  FinalLossRate | 2023,2024
+  FinalShareRate | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  GenSaveLoss | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  MaxShareRate | 2021
+  MinSavPerc | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  Prior_Sav_Adj | 2016,2017,2018,2019,2019A
+  PriorSavAdj | 2024
+  QualPerfShare | 2015,2016,2017,2018,2019,2019A,2020
+  RevLossLimit | 2018,2019,2019A,2020,2021
+  Sav_Rate | 2021
+  Sav_rate | 2015,2016,2017,2018,2019,2019A,2020,2022,2023,2024
+
+ADVANCE_PAYMENT_CANDIDATE
+-------------------------
+  Adv_Pay_Recoup | 2015,2016,2017,2018,2019,2019A,2020,2021
+  AIM | 2016,2017,2018,2019,2019A,2020,2021
+  AIPRecoup | 2024
+
+QUALITY_CANDIDATE
+-----------------
+  CMS_HCC_RiskScore_AGDU_BY1 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_AGDU_BY2 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_AGDU_BY3 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_AGDU_PY | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_AGND_BY1 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_AGND_BY2 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_AGND_BY3 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_AGND_PY | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_DIS_BY1 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_DIS_BY2 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_DIS_BY3 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_DIS_PY | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_ESRD_BY1 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_ESRD_BY2 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_ESRD_BY3 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  CMS_HCC_RiskScore_ESRD_PY | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+  Demog_RiskScore_AGDU_BY3 | 2024
+  Demog_RiskScore_AGDU_PY | 2024
+  Demog_RiskScore_AGND_BY3 | 2024
+  Demog_RiskScore_AGND_PY | 2024
+  Demog_RiskScore_DIS_BY3 | 2024
+  Demog_RiskScore_DIS_PY | 2024
+  Demog_RiskScore_ESRD_BY3 | 2024
+  Demog_RiskScore_ESRD_PY | 2024
+  Met_SSP_quality_reporting_requirements | 2024
+  QualityID_001_eCQM | 2022,2023,2024
+  QualityID_001_eCQM-CQM | 2021
+  QualityID_001_MedicareCQM | 2024
+  QualityID_001_MIPSCQM | 2022,2023,2024
+  QualityID_001_WI | 2021,2022,2023,2024
+  QualityID_110 | 2021,2022,2023,2024
+  QualityID_112 | 2021,2022,2023,2024
+  QualityID_113 | 2021,2022,2023,2024
+  QualityID_134_eCQM | 2022,2023,2024
+  QualityID_134_eCQM-CQM | 2021
+  QualityID_134_MedicareCQM | 2024
+  QualityID_134_MIPSCQM | 2022,2023,2024
+  QualityID_134_WI | 2021,2022,2023,2024
+  QualityID_226 | 2021,2022,2023,2024
+  QualityID_236_eCQM | 2022,2023,2024
+  QualityID_236_eCQM-CQM | 2021
+  QualityID_236_MedicareCQM | 2024
+  QualityID_236_MIPSCQM | 2022,2023,2024
+  QualityID_236_WI | 2021,2022,2023,2024
+  QualityID_318 | 2021,2022,2023,2024
+  QualityID_370 | 2021,2022,2023,2024
+  QualityID_438 | 2021,2022,2023,2024
+  QualScore | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | Source ZIP exists and is nonzero | 1,686,655 bytes
+PASS | Exactly 11 CSV members observed | 11/11
+PASS | Expected performance-period universe resolved | Observed: 2015, 2016, 2017, 2018, 2019, 2019A, 2020, 2021, 2022, 2023, 2024
+PASS | Ordinary 2019 and 2019A remain distinct | 2019=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv | 2019A=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+PASS | All CSV members are nonzero | 0 zero-byte CSV members
+PASS | All CSV members parse | 0 parse failures
+PASS | All performance periods have headers | Empty-header periods: none
+PASS | All performance periods contain data rows | Zero-row periods: none
+PASS | Embedded CSV SHA-256 values are distinct | 0 duplicate embedded hashes
+PASS | No unresolved archive period | 0 unresolved CSV members
+PASS | 2024 CMS revision label preserved | Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv
+PASS | ACO identity candidate fields discovered | 30 field-period observations
+PASS | Savings/loss candidate fields discovered | 76 field-period observations
+PASS | Expenditure/payment candidate fields discovered | 40 field-period observations
+
+====================================================================================================
+OVERALL MSSP PERFORMANCE RESULTS SOURCE PROFILE v0.1: PASS
+====================================================================================================
+
+Interpretive boundary:
+  Candidate-field discovery is lexical only.
+  A field name containing payment, savings, loss, expenditure, AIM, advance, or geography terminology does not establish accounting meaning.
+  Ordinary PY2019 and CMS 2019A / Off-cycle-1 are preserved as distinct source periods.
+  The observed 2024 revised source vintage is preserved as provenance and is not silently generalized to other years.
+  No source or field is additive by default.
+  Washington beneficiary, participant, provider, or ACO presence does not by itself establish Washington payment-dollar incidence.
+  This profile supports systematic and reproducible review; it makes no claim of definitive Medicare completeness.

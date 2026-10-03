@@ -1,0 +1,6 @@
+check,status,detail
+Required CY2015-CY2024 RDS workbooks resolved uniquely,PASS,10/10 years
+All resolved RDS workbooks opened and profiled,PASS,10/10 years
+At least one worksheet profiled per required year,PASS,10 worksheet profile rows
+RDS columns inventoried,PASS,30 column observations
+Geographic structure explicitly inventoried,PASS,3 geography-like column observations

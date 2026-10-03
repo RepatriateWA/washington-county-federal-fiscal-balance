@@ -1,0 +1,8 @@
+check,status,detail
+Preserved MSSP performance-results ZIP exists,PASS,data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+Performance-results ZIP SHA-256 matches preserved acquisition,PASS,C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+All source CSVs parse without profiler errors,PASS,11 CSV members profiled; 0 errors
+Exactly 11 expected performance periods discovered,PASS,"11/11 | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+Financial row counts reproduce certified source profile,PASS,11/11
+EarnSaveLoss present in all 11 periods,PASS,11/11
+GenSaveLoss present in all 11 periods,PASS,11/11

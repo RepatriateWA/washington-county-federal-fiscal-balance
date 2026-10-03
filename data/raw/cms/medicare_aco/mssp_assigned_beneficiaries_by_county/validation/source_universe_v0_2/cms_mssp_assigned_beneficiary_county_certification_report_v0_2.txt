@@ -1,0 +1,47 @@
+CMS MSSP ASSIGNED BENEFICIARY COUNTY SOURCE UNIVERSE v0.2
+========================================================================
+
+BOUNDARY
+Read-only source authentication, schema/measure profiling, person-year
+identity testing, and exact ACO-ID linkage to the preserved MSSP financial
+PUF for 2020-2024.
+
+PASS DOES NOT ESTABLISH:
+- Washington payment-dollar incidence
+- county payment-dollar incidence
+- beneficiary-residence weighting as an allocation rule
+- cash / federal fiscal-year timing
+- principal-ledger inclusion
+
+County archive: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\Number of Accountable Care Organization Assigned Beneficiaries by County.zip
+County SHA-256: 2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+County bytes: 8,450,964
+Financial archive: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+
+ACQUISITION BOUNDARY
+Present in acquired county archive: 2020, 2021, 2022, 2023, 2024
+Not present in acquired county archive: 2015, 2016, 2017, 2018, 2019, 2019A
+The latter status does NOT assert that CMS never published those periods.
+
+CHECKS
+SOURCE-01: PASS - county archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02: PASS - county archive bytes=8,450,964 expected=8,450,964
+ARCHIVE-01: PASS - archive entries=21 expected=21
+ARCHIVE-02: PASS - year directories=2020,2021,2022,2023,2024
+ARCHIVE-03: PASS - exactly one CSV for acquired periods=2020,2021,2022,2023,2024
+ARCHIVE-04: PASS - PDF counts=2020:2,2021:2,2022:2,2023:2,2024:2
+SCHEMA-01: PASS - exact 12-column CMS schema reproduced for all acquired periods
+SCHEMA-02: PASS - Year field agrees with archive period for every row
+MEASURE-01: FAIL - Tot_AB_Psn_Yrs numeric on every acquired row
+MEASURE-02: FAIL - Tot_AB numeric on every acquired row
+IDENTITY-01: FAIL - Tot_AB_Psn_Yrs equals ESRD+DIS+AGDU+AGND on every acquired row
+LINK-01: PASS - exactly one governing financial CSV with ACO_ID found for each 2020-2024 period
+LINK-02: PASS - financial ACO-ID counts reproduce previously certified 2020-2024 universe
+LINK-03: PASS - county-PUF and financial-PUF ACO_ID sets are exactly equal for every 2020-2024 period
+
+DISPOSITION
+Beneficiary-residence geography is structurally linked to the MSSP financial
+ACO universe only if LINK-03 passes. This artifact makes no economic-incidence
+or allocation decision.
+
+OVERALL SOURCE-UNIVERSE INVENTORY v0.2: FAIL

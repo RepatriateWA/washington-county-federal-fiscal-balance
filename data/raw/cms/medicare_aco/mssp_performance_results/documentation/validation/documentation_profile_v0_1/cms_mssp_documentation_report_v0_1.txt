@@ -1,0 +1,138 @@
+====================================================================================================
+CMS MSSP DOCUMENTATION SOURCE PROFILE v0.1
+====================================================================================================
+
+SOURCE ARTIFACT
+----------------------------------------------------------------------------------------------------
+Path:    data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+Bytes:   8,030,679
+SHA-256: 054E06866C7EB4D1EF1A02580B02FBB4639999C9B2ED93AFC4FD593CDA1B8703
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+READ-ONLY documentation profiling.
+No payment reconstruction.
+No Washington-dollar calculation.
+No geographic allocation.
+No database writes.
+No ledger inclusion.
+
+PHYSICAL / LOGICAL DOCUMENT INVENTORY
+----------------------------------------------------------------------------------------------------
+Physical PDF members: 22
+Unique byte-level documents: 7
+Duplicate physical copies: 15
+
+UNIQUE DOCUMENT 1
+  SHA-256: 3029A6A8809393EF4B5FF58A895CC1B8099CAF0DDB3F3F6203D9B190938563FF
+  Physical copies: 1
+  Archive periods: 2023
+  Filenames: Data_Dictionary-Medicare_Shared_Savings_Program-Performance_Year_Financial_and_Quality_Results_2023.pdf
+  Bytes: 1,304,387
+  Pages: 20
+  Text characters: 65,274
+  First text: 1 of 20 Performance Year Financial and Quality Results PUF Data Dictionary Term Name Variable Name Definition ACO ID ACO_ID Unencrypted ACO Identifier. This identifier can be linked to the encrypted ACO identifier used for prior performance years using the ACO ID Crosswalk available at https://www.cms.gov/Medicare/Medicare-Fee-for-Service- Payment/sharedsavingsprogram/program-data. ACO name ACO_Name ACO Doing Business As (DBA) or Legal Business Name (LBN). Listed name is DBA unless DBA is not av
+
+UNIQUE DOCUMENT 2
+  SHA-256: 3D6ECA1229E73C186C5020E1C43537C559BAD0D2221960036D7E44789329D0F8
+  Physical copies: 1
+  Archive periods: 2022
+  Filenames: Data_Dictionary-Medicare_Shared_Savings_Program-Performance_Year_Financial_and_Quality_Results_2022.pdf
+  Bytes: 494,270
+  Pages: 18
+  Text characters: 60,448
+  First text: 1 of 18 Performance Year Financial and Quality Results PUF Data Dictionary Term Name Variable Name Definition ACO ID ACO_ID Unencrypted ACO Identifier. This identifier can be linked to the encrypted ACO identifier used for prior performance years (PY) using the ACO ID Crosswalk available at https://www.cms.gov/Medicare/Medicare-Fee-for-Service- Payment/sharedsavingsprogram/program-data. ACO name ACO_Name ACO Doing Business As (DBA) or Legal Business Name (LBN). Listed name is DBA unless DBA is n
+
+UNIQUE DOCUMENT 3
+  SHA-256: 4CC971542CA2F29B31D9E02BBBA0F36B5B3B16FCC36AF4E3A06EC8CB101B9F9F
+  Physical copies: 4
+  Archive periods: 2021;2022;2023;2024
+  Filenames: County-Level_FFS_Data_for_Shared_Savings_Program_Benchmark_PUF_Methodology-508_2022_01_01.pdf
+  Bytes: 253,197
+  Pages: 1
+  Text characters: 3,259
+  First text: This communication material was prepared as a service to the public and is not intended to grant rights or impose obligations. It may contain references or links to statutes, regulations, or other policy materials. The information provided is only intended to be a general summary. It is not intended to take the place of either the written law or regulations. We encourage readers to review the specific statutes, regulations, and other interpretive materials for a full and accurate statement of it
+
+UNIQUE DOCUMENT 4
+  SHA-256: 5B0FED033AFA5767A988BAB1DF411CF462F94CFA5A7F348C9BD747E64875B9F8
+  Physical copies: 1
+  Archive periods: 2024
+  Filenames: Data_Dictionary-Medicare_Shared_Savings_Program-Performance_Year_Financial_and_Quality_Results_2025_Nov2025.pdf
+  Bytes: 503,365
+  Pages: 31
+  Text characters: 80,936
+  First text: 1 of 31 Performance Year 2024 Financial and Quality Results PUF Data Dictionary Term Name Variable Name Definition ACO ID ACO_ID Unencrypted ACO Identifier. This identifier can be linked to the encrypted ACO identifier used for prior performance years using the ACO ID Crosswalk available at https://data.cms.gov/. ACO name ACO_Name ACO Doing Business As (DBA) or Legal Business Name (LBN). Listed name is DBA unless DBA is not available, in which case LBN is used. Agreement type Agree_Type Indicate
+
+UNIQUE DOCUMENT 5
+  SHA-256: 7CC10793972E311917B2ADBDF1A23DBEC81CF098CE783CB690681164EC908D00
+  Physical copies: 1
+  Archive periods: 2021
+  Filenames: Data_Dictionary-Medicare_Shared_Savings_Program-Performance_Year_Financial_and_Quality_Results_2021.pdf
+  Bytes: 419,577
+  Pages: 19
+  Text characters: 59,709
+  First text: 1 of 19 Performance Year Financial and Quality Results PUF Data Dictionary Term Name Variable Name Definition ACO ID ACO_ID Unencrypted ACO Identifier. This identifier can be linked to the encrypted ACO identifier used for prior performance years (PY) using the ACO ID Crosswalk available at https://www.cms.gov/Medicare/Medicare-Fee-for-Service- Payment/sharedsavingsprogram/program-data. ACO name ACO_Name ACO Doing Business As (DBA) or Legal Business Name (LBN). Listed name is DBA unless DBA is n
+
+UNIQUE DOCUMENT 6
+  SHA-256: 8896A175529E95546756882F3AB48B133D9DABDD09AE72961CBF2ED25EB8F37A
+  Physical copies: 7
+  Archive periods: 2015;2016;2017;2018;2019;2019A;2020
+  Filenames: Performance_Year_Financial_and_Quality_Results_PUF_Methodology.pdf
+  Bytes: 152,069
+  Pages: 1
+  Text characters: 1,533
+  First text: This communication material was prepared as a service to the public and is not intended to grant rights or impose obligations. It may contain references or links to statutes, regulations, or other policy materials. The information provided is only intended to be a general summary. It is not intended to take the place of either the written law or regulations. We encourage readers to review the specific statutes, regulations, and other interpretive materials for a full and accurate statement of it
+
+UNIQUE DOCUMENT 7
+  SHA-256: BB382F18982B73194D70198FC82FAEBA37E12BF6484CC358289ED8B14E0968F6
+  Physical copies: 7
+  Archive periods: 2015;2016;2017;2018;2019;2019A;2020
+  Filenames: Data_Dictionary-Medicare_Shared_Savings_Program-Performance_Year_Financial_and_Quality_Results_2013-2020.pdf
+  Bytes: 669,617
+  Pages: 31
+  Text characters: 87,196
+  First text: 1 of 31 Performance Year Financial and Quality Results PUF Data Dictionary Term Name Variable Name Definition Applicable Performance Year(s) ACO Number ACO_Num Encrypted ACO Identifier. Identifier is consistent across performance years (PY). 2019-2020 ACO ID ACO_ID Unencrypted ACO Identifier. This identifier can be linked to the encrypted ACO identifier used for prior performance years. 2013-2020 ACO name ACO_Name ACO Doing Business As (DBA) or Legal Business Name (LBN). 2013-2020 State(s) where
+
+TERM COVERAGE
+----------------------------------------------------------------------------------------------------
+EarnSaveLoss                   physical_docs=11 unique_docs= 5
+GenSaveLoss                    physical_docs=11 unique_docs= 5
+Adv_Pay                        physical_docs= 8 unique_docs= 2
+Adv_Pay_Amt                    physical_docs= 8 unique_docs= 2
+Adv_Pay_Recoup                 physical_docs= 8 unique_docs= 2
+AIPRecoup                      physical_docs= 1 unique_docs= 1
+AIM                            physical_docs=18 unique_docs= 6
+ACO_ID                         physical_docs=11 unique_docs= 5
+ACO_Num                        physical_docs= 7 unique_docs= 1
+ACO_State                      physical_docs= 8 unique_docs= 2
+benchmark                      physical_docs=15 unique_docs= 6
+generated savings              physical_docs=11 unique_docs= 5
+earned shared savings          physical_docs=11 unique_docs= 5
+shared savings payment         physical_docs= 8 unique_docs= 2
+advance payment                physical_docs=11 unique_docs= 5
+recoup                         physical_docs= 9 unique_docs= 3
+sequestration                  physical_docs=11 unique_docs= 5
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | Source documentation ZIP exists and is nonzero | 8,030,679 bytes
+PASS | Exactly 22 PDF members observed | 22/22
+PASS | All PDF members are nonzero | 0 zero-byte PDFs
+PASS | All PDF members yield readable page structure | 0 PDFs with zero readable pages
+PASS | All PDF members yield extractable text | 0 PDF text failures
+PASS | All documentation archive periods resolved | 0 unresolved members
+PASS | Duplicate physical documentation explicitly identified | 22 physical PDFs -> 7 unique byte-level documents; 15 duplicate copies
+PASS | EarnSaveLoss documented somewhere in package | Lexical documentation check only
+PASS | GenSaveLoss documented somewhere in package | Lexical documentation check only
+PASS | Advance-payment vocabulary documented somewhere | Lexical documentation check only
+
+====================================================================================================
+OVERALL CMS MSSP DOCUMENTATION SOURCE PROFILE v0.1: PASS
+====================================================================================================
+
+Interpretive boundary:
+  Archive-folder placement is provenance, not proof that a document semantically governs that performance year.
+  Byte-identical copies are retained in the physical manifest but collapsed for logical-document analysis.
+  Search-term occurrence establishes lexical coverage only, not accounting meaning.
+  The apparent 2025-named dictionary stored under the 2024 archive folder requires semantic inspection before it can be used as evidence for PY2024.
+  No MSSP payment field is additive by default.

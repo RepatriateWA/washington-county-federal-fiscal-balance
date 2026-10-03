@@ -1,0 +1,435 @@
+performance_period,candidate_class,column_position,field_name,normalized_field_name
+2024,ACO_IDENTITY,1,ACO_ID,aco id
+2024,ACO_IDENTITY,2,ACO_Name,aco name
+2024,BENEFICIARY_CANDIDATE,8,Assign_Type,assign type
+2024,SAVINGS_LOSS_CANDIDATE,11,Sav_rate,sav rate
+2024,SAVINGS_LOSS_CANDIDATE,12,MinSavPerc,minsavperc
+2024,SAVINGS_LOSS_CANDIDATE,14,GenSaveLoss,gensaveloss
+2024,SAVINGS_LOSS_CANDIDATE,17,EarnSaveLoss,earnsaveloss
+2024,QUALITY_CANDIDATE,26,Met_SSP_quality_reporting_requirements,met ssp quality reporting requirements
+2024,QUALITY_CANDIDATE,27,QualScore,qualscore
+2024,ADVANCE_PAYMENT_CANDIDATE,31,AIPRecoup,aiprecoup
+2024,SAVINGS_LOSS_CANDIDATE,34,PriorSavAdj,priorsavadj
+2024,SAVINGS_LOSS_CANDIDATE,41,FinalShareRate,finalsharerate
+2024,SAVINGS_LOSS_CANDIDATE,43,FinalLossRate,finallossrate
+2024,QUALITY_CANDIDATE,62,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2024,QUALITY_CANDIDATE,63,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2024,QUALITY_CANDIDATE,64,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2024,QUALITY_CANDIDATE,65,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2024,QUALITY_CANDIDATE,66,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2024,QUALITY_CANDIDATE,67,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2024,QUALITY_CANDIDATE,68,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2024,QUALITY_CANDIDATE,69,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2024,QUALITY_CANDIDATE,70,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2024,QUALITY_CANDIDATE,71,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2024,QUALITY_CANDIDATE,72,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2024,QUALITY_CANDIDATE,73,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2024,QUALITY_CANDIDATE,74,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2024,QUALITY_CANDIDATE,75,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2024,QUALITY_CANDIDATE,76,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2024,QUALITY_CANDIDATE,77,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2024,QUALITY_CANDIDATE,78,Demog_RiskScore_ESRD_PY,demog riskscore esrd py
+2024,QUALITY_CANDIDATE,79,Demog_RiskScore_DIS_PY,demog riskscore dis py
+2024,QUALITY_CANDIDATE,80,Demog_RiskScore_AGDU_PY,demog riskscore agdu py
+2024,QUALITY_CANDIDATE,81,Demog_RiskScore_AGND_PY,demog riskscore agnd py
+2024,QUALITY_CANDIDATE,82,Demog_RiskScore_ESRD_BY3,demog riskscore esrd by3
+2024,QUALITY_CANDIDATE,83,Demog_RiskScore_DIS_BY3,demog riskscore dis by3
+2024,QUALITY_CANDIDATE,84,Demog_RiskScore_AGDU_BY3,demog riskscore agdu by3
+2024,QUALITY_CANDIDATE,85,Demog_RiskScore_AGND_BY3,demog riskscore agnd by3
+2024,EXPENDITURE_CANDIDATE,126,CapAnn_AmbPay,capann ambpay
+2024,EXPENDITURE_CANDIDATE,145,SNF_PayperStay,snf payperstay
+2024,QUALITY_CANDIDATE,171,QualityID_318,qualityid 318
+2024,QUALITY_CANDIDATE,172,QualityID_110,qualityid 110
+2024,QUALITY_CANDIDATE,173,QualityID_226,qualityid 226
+2024,QUALITY_CANDIDATE,174,QualityID_134_WI,qualityid 134 wi
+2024,QUALITY_CANDIDATE,175,QualityID_134_eCQM,qualityid 134 ecqm
+2024,QUALITY_CANDIDATE,176,QualityID_134_MIPSCQM,qualityid 134 mipscqm
+2024,QUALITY_CANDIDATE,177,QualityID_134_MedicareCQM,qualityid 134 medicarecqm
+2024,QUALITY_CANDIDATE,178,QualityID_113,qualityid 113
+2024,QUALITY_CANDIDATE,179,QualityID_112,qualityid 112
+2024,QUALITY_CANDIDATE,180,QualityID_438,qualityid 438
+2024,QUALITY_CANDIDATE,181,QualityID_370,qualityid 370
+2024,QUALITY_CANDIDATE,182,QualityID_001_WI,qualityid 001 wi
+2024,QUALITY_CANDIDATE,183,QualityID_001_eCQM,qualityid 001 ecqm
+2024,QUALITY_CANDIDATE,184,QualityID_001_MIPSCQM,qualityid 001 mipscqm
+2024,QUALITY_CANDIDATE,185,QualityID_001_MedicareCQM,qualityid 001 medicarecqm
+2024,QUALITY_CANDIDATE,186,QualityID_236_WI,qualityid 236 wi
+2024,QUALITY_CANDIDATE,187,QualityID_236_eCQM,qualityid 236 ecqm
+2024,QUALITY_CANDIDATE,188,QualityID_236_MIPSCQM,qualityid 236 mipscqm
+2024,QUALITY_CANDIDATE,189,QualityID_236_MedicareCQM,qualityid 236 medicarecqm
+2015,ACO_IDENTITY,1,ACO_Num,aco num
+2015,ACO_IDENTITY,2,ACO_Name,aco name
+2015,ACO_IDENTITY,3,ACO_State,aco state
+2015,GEOGRAPHY_CANDIDATE,3,ACO_State,aco state
+2015,EXPENDITURE_CANDIDATE,4,Adv_Pay,adv pay
+2015,SAVINGS_LOSS_CANDIDATE,6,Sav_rate,sav rate
+2015,SAVINGS_LOSS_CANDIDATE,7,MinSavPerc,minsavperc
+2015,SAVINGS_LOSS_CANDIDATE,9,GenSaveLoss,gensaveloss
+2015,SAVINGS_LOSS_CANDIDATE,10,EarnSaveLoss,earnsaveloss
+2015,QUALITY_CANDIDATE,11,QualScore,qualscore
+2015,EXPENDITURE_CANDIDATE,16,Adv_Pay_Amt,adv pay amt
+2015,EXPENDITURE_CANDIDATE,17,Adv_Pay_Recoup,adv pay recoup
+2015,ADVANCE_PAYMENT_CANDIDATE,17,Adv_Pay_Recoup,adv pay recoup
+2015,SAVINGS_LOSS_CANDIDATE,18,QualPerfShare,qualperfshare
+2015,SAVINGS_LOSS_CANDIDATE,19,FinalShareRate,finalsharerate
+2015,QUALITY_CANDIDATE,37,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2015,QUALITY_CANDIDATE,38,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2015,QUALITY_CANDIDATE,39,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2015,QUALITY_CANDIDATE,40,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2015,QUALITY_CANDIDATE,41,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2015,QUALITY_CANDIDATE,42,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2015,QUALITY_CANDIDATE,43,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2015,QUALITY_CANDIDATE,44,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2015,QUALITY_CANDIDATE,45,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2015,QUALITY_CANDIDATE,46,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2015,QUALITY_CANDIDATE,47,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2015,QUALITY_CANDIDATE,48,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2015,QUALITY_CANDIDATE,49,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2015,QUALITY_CANDIDATE,50,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2015,QUALITY_CANDIDATE,51,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2015,QUALITY_CANDIDATE,52,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2015,EXPENDITURE_CANDIDATE,84,CapAnn_AmbPay,capann ambpay
+2020,ACO_IDENTITY,1,ACO_ID,aco id
+2020,ACO_IDENTITY,2,ACO_Name,aco name
+2020,ACO_IDENTITY,3,ACO_State,aco state
+2020,GEOGRAPHY_CANDIDATE,3,ACO_State,aco state
+2020,EXPENDITURE_CANDIDATE,19,Adv_Pay,adv pay
+2020,ADVANCE_PAYMENT_CANDIDATE,20,AIM,aim
+2020,SAVINGS_LOSS_CANDIDATE,23,MinSavPerc,minsavperc
+2020,SAVINGS_LOSS_CANDIDATE,25,GenSaveLoss,gensaveloss
+2020,SAVINGS_LOSS_CANDIDATE,27,EarnSaveLoss,earnsaveloss
+2020,QUALITY_CANDIDATE,30,QualScore,qualscore
+2020,EXPENDITURE_CANDIDATE,36,Adv_Pay_Amt,adv pay amt
+2020,EXPENDITURE_CANDIDATE,37,Adv_Pay_Recoup,adv pay recoup
+2020,ADVANCE_PAYMENT_CANDIDATE,37,Adv_Pay_Recoup,adv pay recoup
+2020,SAVINGS_LOSS_CANDIDATE,38,FinalShareRate,finalsharerate
+2020,SAVINGS_LOSS_CANDIDATE,39,RevLossLimit,revlosslimit
+2020,QUALITY_CANDIDATE,58,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2020,QUALITY_CANDIDATE,59,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2020,QUALITY_CANDIDATE,60,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2020,QUALITY_CANDIDATE,61,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2020,QUALITY_CANDIDATE,62,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2020,QUALITY_CANDIDATE,63,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2020,QUALITY_CANDIDATE,64,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2020,QUALITY_CANDIDATE,65,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2020,QUALITY_CANDIDATE,66,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2020,QUALITY_CANDIDATE,67,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2020,QUALITY_CANDIDATE,68,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2020,QUALITY_CANDIDATE,69,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2020,QUALITY_CANDIDATE,70,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2020,QUALITY_CANDIDATE,71,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2020,QUALITY_CANDIDATE,72,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2020,QUALITY_CANDIDATE,73,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2020,EXPENDITURE_CANDIDATE,104,CapAnn_AmbPay,capann ambpay
+2020,SAVINGS_LOSS_CANDIDATE,133,Sav_rate,sav rate
+2020,SAVINGS_LOSS_CANDIDATE,136,QualPerfShare,qualperfshare
+2019,ACO_IDENTITY,1,ACO_ID,aco id
+2019,ACO_IDENTITY,2,ACO_Name,aco name
+2019,ACO_IDENTITY,3,ACO_State,aco state
+2019,GEOGRAPHY_CANDIDATE,3,ACO_State,aco state
+2019,EXPENDITURE_CANDIDATE,30,Adv_Pay,adv pay
+2019,ADVANCE_PAYMENT_CANDIDATE,31,AIM,aim
+2019,SAVINGS_LOSS_CANDIDATE,34,Sav_rate,sav rate
+2019,SAVINGS_LOSS_CANDIDATE,35,MinSavPerc,minsavperc
+2019,SAVINGS_LOSS_CANDIDATE,37,GenSaveLoss,gensaveloss
+2019,SAVINGS_LOSS_CANDIDATE,39,EarnSaveLoss,earnsaveloss
+2019,QUALITY_CANDIDATE,42,QualScore,qualscore
+2019,SAVINGS_LOSS_CANDIDATE,44,Prior_Sav_Adj,prior sav adj
+2019,EXPENDITURE_CANDIDATE,51,Adv_Pay_Amt,adv pay amt
+2019,EXPENDITURE_CANDIDATE,52,Adv_Pay_Recoup,adv pay recoup
+2019,ADVANCE_PAYMENT_CANDIDATE,52,Adv_Pay_Recoup,adv pay recoup
+2019,SAVINGS_LOSS_CANDIDATE,53,QualPerfShare,qualperfshare
+2019,SAVINGS_LOSS_CANDIDATE,54,FinalShareRate,finalsharerate
+2019,SAVINGS_LOSS_CANDIDATE,55,RevLossLimit,revlosslimit
+2019,QUALITY_CANDIDATE,74,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2019,QUALITY_CANDIDATE,75,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2019,QUALITY_CANDIDATE,76,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2019,QUALITY_CANDIDATE,77,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2019,QUALITY_CANDIDATE,78,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2019,QUALITY_CANDIDATE,79,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2019,QUALITY_CANDIDATE,80,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2019,QUALITY_CANDIDATE,81,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2019,QUALITY_CANDIDATE,82,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2019,QUALITY_CANDIDATE,83,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2019,QUALITY_CANDIDATE,84,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2019,QUALITY_CANDIDATE,85,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2019,QUALITY_CANDIDATE,86,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2019,QUALITY_CANDIDATE,87,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2019,QUALITY_CANDIDATE,88,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2019,QUALITY_CANDIDATE,89,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2019,EXPENDITURE_CANDIDATE,121,CapAnn_AmbPay,capann ambpay
+2017,ACO_IDENTITY,1,ACO_Name,aco name
+2017,ACO_IDENTITY,2,ACO_State,aco state
+2017,GEOGRAPHY_CANDIDATE,2,ACO_State,aco state
+2017,EXPENDITURE_CANDIDATE,13,Adv_Pay,adv pay
+2017,ADVANCE_PAYMENT_CANDIDATE,14,AIM,aim
+2017,SAVINGS_LOSS_CANDIDATE,16,Sav_rate,sav rate
+2017,SAVINGS_LOSS_CANDIDATE,17,MinSavPerc,minsavperc
+2017,SAVINGS_LOSS_CANDIDATE,19,GenSaveLoss,gensaveloss
+2017,SAVINGS_LOSS_CANDIDATE,21,EarnSaveLoss,earnsaveloss
+2017,QUALITY_CANDIDATE,23,QualScore,qualscore
+2017,SAVINGS_LOSS_CANDIDATE,24,Prior_Sav_Adj,prior sav adj
+2017,EXPENDITURE_CANDIDATE,31,Adv_Pay_Amt,adv pay amt
+2017,EXPENDITURE_CANDIDATE,32,Adv_Pay_Recoup,adv pay recoup
+2017,ADVANCE_PAYMENT_CANDIDATE,32,Adv_Pay_Recoup,adv pay recoup
+2017,SAVINGS_LOSS_CANDIDATE,33,QualPerfShare,qualperfshare
+2017,SAVINGS_LOSS_CANDIDATE,34,FinalShareRate,finalsharerate
+2017,QUALITY_CANDIDATE,52,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2017,QUALITY_CANDIDATE,53,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2017,QUALITY_CANDIDATE,54,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2017,QUALITY_CANDIDATE,55,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2017,QUALITY_CANDIDATE,56,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2017,QUALITY_CANDIDATE,57,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2017,QUALITY_CANDIDATE,58,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2017,QUALITY_CANDIDATE,59,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2017,QUALITY_CANDIDATE,60,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2017,QUALITY_CANDIDATE,61,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2017,QUALITY_CANDIDATE,62,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2017,QUALITY_CANDIDATE,63,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2017,QUALITY_CANDIDATE,64,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2017,QUALITY_CANDIDATE,65,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2017,QUALITY_CANDIDATE,66,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2017,QUALITY_CANDIDATE,67,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2017,EXPENDITURE_CANDIDATE,99,CapAnn_AmbPay,capann ambpay
+2017,ACO_IDENTITY,162,ACO_Num,aco num
+2022,ACO_IDENTITY,1,ACO_ID,aco id
+2022,ACO_IDENTITY,2,ACO_Name,aco name
+2022,BENEFICIARY_CANDIDATE,8,Assign_Type,assign type
+2022,SAVINGS_LOSS_CANDIDATE,11,Sav_rate,sav rate
+2022,SAVINGS_LOSS_CANDIDATE,12,MinSavPerc,minsavperc
+2022,SAVINGS_LOSS_CANDIDATE,14,GenSaveLoss,gensaveloss
+2022,SAVINGS_LOSS_CANDIDATE,17,EarnSaveLoss,earnsaveloss
+2022,QUALITY_CANDIDATE,26,QualScore,qualscore
+2022,SAVINGS_LOSS_CANDIDATE,33,FinalShareRate,finalsharerate
+2022,QUALITY_CANDIDATE,52,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2022,QUALITY_CANDIDATE,53,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2022,QUALITY_CANDIDATE,54,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2022,QUALITY_CANDIDATE,55,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2022,QUALITY_CANDIDATE,56,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2022,QUALITY_CANDIDATE,57,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2022,QUALITY_CANDIDATE,58,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2022,QUALITY_CANDIDATE,59,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2022,QUALITY_CANDIDATE,60,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2022,QUALITY_CANDIDATE,61,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2022,QUALITY_CANDIDATE,62,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2022,QUALITY_CANDIDATE,63,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2022,QUALITY_CANDIDATE,64,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2022,QUALITY_CANDIDATE,65,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2022,QUALITY_CANDIDATE,66,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2022,QUALITY_CANDIDATE,67,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2022,EXPENDITURE_CANDIDATE,102,CapAnn_AmbPay,capann ambpay
+2022,EXPENDITURE_CANDIDATE,121,SNF_PayperStay,snf payperstay
+2022,QUALITY_CANDIDATE,149,QualityID_318,qualityid 318
+2022,QUALITY_CANDIDATE,150,QualityID_110,qualityid 110
+2022,QUALITY_CANDIDATE,151,QualityID_226,qualityid 226
+2022,QUALITY_CANDIDATE,152,QualityID_134_WI,qualityid 134 wi
+2022,QUALITY_CANDIDATE,153,QualityID_134_eCQM,qualityid 134 ecqm
+2022,QUALITY_CANDIDATE,154,QualityID_134_MIPSCQM,qualityid 134 mipscqm
+2022,QUALITY_CANDIDATE,155,QualityID_113,qualityid 113
+2022,QUALITY_CANDIDATE,156,QualityID_112,qualityid 112
+2022,QUALITY_CANDIDATE,157,QualityID_438,qualityid 438
+2022,QUALITY_CANDIDATE,158,QualityID_370,qualityid 370
+2022,QUALITY_CANDIDATE,159,QualityID_001_WI,qualityid 001 wi
+2022,QUALITY_CANDIDATE,160,QualityID_001_eCQM,qualityid 001 ecqm
+2022,QUALITY_CANDIDATE,161,QualityID_001_MIPSCQM,qualityid 001 mipscqm
+2022,QUALITY_CANDIDATE,162,QualityID_236_WI,qualityid 236 wi
+2022,QUALITY_CANDIDATE,163,QualityID_236_eCQM,qualityid 236 ecqm
+2022,QUALITY_CANDIDATE,164,QualityID_236_MIPSCQM,qualityid 236 mipscqm
+2016,ACO_IDENTITY,1,ACO_Num,aco num
+2016,ACO_IDENTITY,2,ACO_Name,aco name
+2016,ACO_IDENTITY,3,ACO_State,aco state
+2016,GEOGRAPHY_CANDIDATE,3,ACO_State,aco state
+2016,EXPENDITURE_CANDIDATE,14,Adv_Pay,adv pay
+2016,ADVANCE_PAYMENT_CANDIDATE,15,AIM,aim
+2016,SAVINGS_LOSS_CANDIDATE,17,Sav_rate,sav rate
+2016,SAVINGS_LOSS_CANDIDATE,18,MinSavPerc,minsavperc
+2016,SAVINGS_LOSS_CANDIDATE,20,GenSaveLoss,gensaveloss
+2016,SAVINGS_LOSS_CANDIDATE,21,EarnSaveLoss,earnsaveloss
+2016,QUALITY_CANDIDATE,23,QualScore,qualscore
+2016,SAVINGS_LOSS_CANDIDATE,24,Prior_Sav_Adj,prior sav adj
+2016,EXPENDITURE_CANDIDATE,29,Adv_Pay_Amt,adv pay amt
+2016,EXPENDITURE_CANDIDATE,30,Adv_Pay_Recoup,adv pay recoup
+2016,ADVANCE_PAYMENT_CANDIDATE,30,Adv_Pay_Recoup,adv pay recoup
+2016,SAVINGS_LOSS_CANDIDATE,31,QualPerfShare,qualperfshare
+2016,SAVINGS_LOSS_CANDIDATE,32,FinalShareRate,finalsharerate
+2016,QUALITY_CANDIDATE,50,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2016,QUALITY_CANDIDATE,51,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2016,QUALITY_CANDIDATE,52,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2016,QUALITY_CANDIDATE,53,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2016,QUALITY_CANDIDATE,54,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2016,QUALITY_CANDIDATE,55,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2016,QUALITY_CANDIDATE,56,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2016,QUALITY_CANDIDATE,57,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2016,QUALITY_CANDIDATE,58,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2016,QUALITY_CANDIDATE,59,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2016,QUALITY_CANDIDATE,60,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2016,QUALITY_CANDIDATE,61,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2016,QUALITY_CANDIDATE,62,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2016,QUALITY_CANDIDATE,63,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2016,QUALITY_CANDIDATE,64,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2016,QUALITY_CANDIDATE,65,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2016,EXPENDITURE_CANDIDATE,97,CapAnn_AmbPay,capann ambpay
+2021,ACO_IDENTITY,1,ACO_ID,aco id
+2021,ACO_IDENTITY,2,ACO_Name,aco name
+2021,ACO_IDENTITY,3,ACO_State,aco state
+2021,GEOGRAPHY_CANDIDATE,3,ACO_State,aco state
+2021,BENEFICIARY_CANDIDATE,19,Assign_Type,assign type
+2021,EXPENDITURE_CANDIDATE,20,Adv_Pay,adv pay
+2021,ADVANCE_PAYMENT_CANDIDATE,21,AIM,aim
+2021,SAVINGS_LOSS_CANDIDATE,24,Sav_Rate,sav rate
+2021,SAVINGS_LOSS_CANDIDATE,25,MinSavPerc,minsavperc
+2021,SAVINGS_LOSS_CANDIDATE,27,GenSaveLoss,gensaveloss
+2021,SAVINGS_LOSS_CANDIDATE,29,EarnSaveLoss,earnsaveloss
+2021,QUALITY_CANDIDATE,36,QualScore,qualscore
+2021,EXPENDITURE_CANDIDATE,43,Adv_Pay_Amt,adv pay amt
+2021,EXPENDITURE_CANDIDATE,44,Adv_Pay_Recoup,adv pay recoup
+2021,ADVANCE_PAYMENT_CANDIDATE,44,Adv_Pay_Recoup,adv pay recoup
+2021,SAVINGS_LOSS_CANDIDATE,45,MaxShareRate,maxsharerate
+2021,SAVINGS_LOSS_CANDIDATE,46,FinalShareRate,finalsharerate
+2021,SAVINGS_LOSS_CANDIDATE,47,RevLossLimit,revlosslimit
+2021,QUALITY_CANDIDATE,66,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2021,QUALITY_CANDIDATE,67,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2021,QUALITY_CANDIDATE,68,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2021,QUALITY_CANDIDATE,69,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2021,QUALITY_CANDIDATE,70,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2021,QUALITY_CANDIDATE,71,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2021,QUALITY_CANDIDATE,72,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2021,QUALITY_CANDIDATE,73,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2021,QUALITY_CANDIDATE,74,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2021,QUALITY_CANDIDATE,75,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2021,QUALITY_CANDIDATE,76,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2021,QUALITY_CANDIDATE,77,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2021,QUALITY_CANDIDATE,78,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2021,QUALITY_CANDIDATE,79,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2021,QUALITY_CANDIDATE,80,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2021,QUALITY_CANDIDATE,81,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2021,EXPENDITURE_CANDIDATE,112,CapAnn_AmbPay,capann ambpay
+2021,EXPENDITURE_CANDIDATE,131,SNF_PayperStay,snf payperstay
+2021,QUALITY_CANDIDATE,159,QualityID_318,qualityid 318
+2021,QUALITY_CANDIDATE,160,QualityID_110,qualityid 110
+2021,QUALITY_CANDIDATE,161,QualityID_226,qualityid 226
+2021,QUALITY_CANDIDATE,162,QualityID_134_WI,qualityid 134 wi
+2021,QUALITY_CANDIDATE,163,QualityID_134_eCQM-CQM,qualityid 134 ecqm cqm
+2021,QUALITY_CANDIDATE,164,QualityID_113,qualityid 113
+2021,QUALITY_CANDIDATE,165,QualityID_112,qualityid 112
+2021,QUALITY_CANDIDATE,166,QualityID_438,qualityid 438
+2021,QUALITY_CANDIDATE,167,QualityID_370,qualityid 370
+2021,QUALITY_CANDIDATE,168,QualityID_001_WI,qualityid 001 wi
+2021,QUALITY_CANDIDATE,169,QualityID_001_eCQM-CQM,qualityid 001 ecqm cqm
+2021,QUALITY_CANDIDATE,170,QualityID_236_WI,qualityid 236 wi
+2021,QUALITY_CANDIDATE,171,QualityID_236_eCQM-CQM,qualityid 236 ecqm cqm
+2019A,ACO_IDENTITY,1,ACO_ID,aco id
+2019A,ACO_IDENTITY,2,ACO_Name,aco name
+2019A,ACO_IDENTITY,3,ACO_State,aco state
+2019A,GEOGRAPHY_CANDIDATE,3,ACO_State,aco state
+2019A,EXPENDITURE_CANDIDATE,30,Adv_Pay,adv pay
+2019A,ADVANCE_PAYMENT_CANDIDATE,31,AIM,aim
+2019A,SAVINGS_LOSS_CANDIDATE,34,Sav_rate,sav rate
+2019A,SAVINGS_LOSS_CANDIDATE,35,MinSavPerc,minsavperc
+2019A,SAVINGS_LOSS_CANDIDATE,37,GenSaveLoss,gensaveloss
+2019A,SAVINGS_LOSS_CANDIDATE,39,EarnSaveLoss,earnsaveloss
+2019A,QUALITY_CANDIDATE,42,QualScore,qualscore
+2019A,SAVINGS_LOSS_CANDIDATE,44,Prior_Sav_Adj,prior sav adj
+2019A,EXPENDITURE_CANDIDATE,51,Adv_Pay_Amt,adv pay amt
+2019A,EXPENDITURE_CANDIDATE,52,Adv_Pay_Recoup,adv pay recoup
+2019A,ADVANCE_PAYMENT_CANDIDATE,52,Adv_Pay_Recoup,adv pay recoup
+2019A,SAVINGS_LOSS_CANDIDATE,53,QualPerfShare,qualperfshare
+2019A,SAVINGS_LOSS_CANDIDATE,54,FinalShareRate,finalsharerate
+2019A,SAVINGS_LOSS_CANDIDATE,55,RevLossLimit,revlosslimit
+2019A,QUALITY_CANDIDATE,74,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2019A,QUALITY_CANDIDATE,75,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2019A,QUALITY_CANDIDATE,76,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2019A,QUALITY_CANDIDATE,77,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2019A,QUALITY_CANDIDATE,78,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2019A,QUALITY_CANDIDATE,79,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2019A,QUALITY_CANDIDATE,80,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2019A,QUALITY_CANDIDATE,81,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2019A,QUALITY_CANDIDATE,82,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2019A,QUALITY_CANDIDATE,83,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2019A,QUALITY_CANDIDATE,84,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2019A,QUALITY_CANDIDATE,85,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2019A,QUALITY_CANDIDATE,86,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2019A,QUALITY_CANDIDATE,87,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2019A,QUALITY_CANDIDATE,88,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2019A,QUALITY_CANDIDATE,89,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2019A,EXPENDITURE_CANDIDATE,121,CapAnn_AmbPay,capann ambpay
+2018,ACO_IDENTITY,3,ACO_ID,aco id
+2018,ACO_IDENTITY,4,ACO_Name,aco name
+2018,ACO_IDENTITY,5,ACO_State,aco state
+2018,GEOGRAPHY_CANDIDATE,5,ACO_State,aco state
+2018,EXPENDITURE_CANDIDATE,18,Adv_Pay,adv pay
+2018,ADVANCE_PAYMENT_CANDIDATE,19,AIM,aim
+2018,SAVINGS_LOSS_CANDIDATE,22,Sav_rate,sav rate
+2018,SAVINGS_LOSS_CANDIDATE,23,MinSavPerc,minsavperc
+2018,SAVINGS_LOSS_CANDIDATE,25,GenSaveLoss,gensaveloss
+2018,SAVINGS_LOSS_CANDIDATE,27,EarnSaveLoss,earnsaveloss
+2018,QUALITY_CANDIDATE,30,QualScore,qualscore
+2018,SAVINGS_LOSS_CANDIDATE,32,Prior_Sav_Adj,prior sav adj
+2018,EXPENDITURE_CANDIDATE,39,Adv_Pay_Amt,adv pay amt
+2018,EXPENDITURE_CANDIDATE,40,Adv_Pay_Recoup,adv pay recoup
+2018,ADVANCE_PAYMENT_CANDIDATE,40,Adv_Pay_Recoup,adv pay recoup
+2018,SAVINGS_LOSS_CANDIDATE,41,QualPerfShare,qualperfshare
+2018,SAVINGS_LOSS_CANDIDATE,42,FinalShareRate,finalsharerate
+2018,SAVINGS_LOSS_CANDIDATE,43,RevLossLimit,revlosslimit
+2018,QUALITY_CANDIDATE,62,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2018,QUALITY_CANDIDATE,63,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2018,QUALITY_CANDIDATE,64,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2018,QUALITY_CANDIDATE,65,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2018,QUALITY_CANDIDATE,66,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2018,QUALITY_CANDIDATE,67,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2018,QUALITY_CANDIDATE,68,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2018,QUALITY_CANDIDATE,69,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2018,QUALITY_CANDIDATE,70,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2018,QUALITY_CANDIDATE,71,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2018,QUALITY_CANDIDATE,72,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2018,QUALITY_CANDIDATE,73,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2018,QUALITY_CANDIDATE,74,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2018,QUALITY_CANDIDATE,75,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2018,QUALITY_CANDIDATE,76,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2018,QUALITY_CANDIDATE,77,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2018,EXPENDITURE_CANDIDATE,109,CapAnn_AmbPay,capann ambpay
+2018,EXPENDITURE_CANDIDATE,129,SNF_PayperStay,snf payperstay
+2023,ACO_IDENTITY,1,ACO_ID,aco id
+2023,ACO_IDENTITY,2,ACO_Name,aco name
+2023,BENEFICIARY_CANDIDATE,8,Assign_Type,assign type
+2023,SAVINGS_LOSS_CANDIDATE,11,Sav_rate,sav rate
+2023,SAVINGS_LOSS_CANDIDATE,12,MinSavPerc,minsavperc
+2023,SAVINGS_LOSS_CANDIDATE,14,GenSaveLoss,gensaveloss
+2023,SAVINGS_LOSS_CANDIDATE,17,EarnSaveLoss,earnsaveloss
+2023,QUALITY_CANDIDATE,27,QualScore,qualscore
+2023,SAVINGS_LOSS_CANDIDATE,34,FinalShareRate,finalsharerate
+2023,SAVINGS_LOSS_CANDIDATE,35,FinalLossRate,finallossrate
+2023,QUALITY_CANDIDATE,54,CMS_HCC_RiskScore_ESRD_BY1,cms hcc riskscore esrd by1
+2023,QUALITY_CANDIDATE,55,CMS_HCC_RiskScore_DIS_BY1,cms hcc riskscore dis by1
+2023,QUALITY_CANDIDATE,56,CMS_HCC_RiskScore_AGDU_BY1,cms hcc riskscore agdu by1
+2023,QUALITY_CANDIDATE,57,CMS_HCC_RiskScore_AGND_BY1,cms hcc riskscore agnd by1
+2023,QUALITY_CANDIDATE,58,CMS_HCC_RiskScore_ESRD_BY2,cms hcc riskscore esrd by2
+2023,QUALITY_CANDIDATE,59,CMS_HCC_RiskScore_DIS_BY2,cms hcc riskscore dis by2
+2023,QUALITY_CANDIDATE,60,CMS_HCC_RiskScore_AGDU_BY2,cms hcc riskscore agdu by2
+2023,QUALITY_CANDIDATE,61,CMS_HCC_RiskScore_AGND_BY2,cms hcc riskscore agnd by2
+2023,QUALITY_CANDIDATE,62,CMS_HCC_RiskScore_ESRD_BY3,cms hcc riskscore esrd by3
+2023,QUALITY_CANDIDATE,63,CMS_HCC_RiskScore_DIS_BY3,cms hcc riskscore dis by3
+2023,QUALITY_CANDIDATE,64,CMS_HCC_RiskScore_AGDU_BY3,cms hcc riskscore agdu by3
+2023,QUALITY_CANDIDATE,65,CMS_HCC_RiskScore_AGND_BY3,cms hcc riskscore agnd by3
+2023,QUALITY_CANDIDATE,66,CMS_HCC_RiskScore_ESRD_PY,cms hcc riskscore esrd py
+2023,QUALITY_CANDIDATE,67,CMS_HCC_RiskScore_DIS_PY,cms hcc riskscore dis py
+2023,QUALITY_CANDIDATE,68,CMS_HCC_RiskScore_AGDU_PY,cms hcc riskscore agdu py
+2023,QUALITY_CANDIDATE,69,CMS_HCC_RiskScore_AGND_PY,cms hcc riskscore agnd py
+2023,EXPENDITURE_CANDIDATE,106,CapAnn_AmbPay,capann ambpay
+2023,EXPENDITURE_CANDIDATE,125,SNF_PayperStay,snf payperstay
+2023,QUALITY_CANDIDATE,153,QualityID_318,qualityid 318
+2023,QUALITY_CANDIDATE,154,QualityID_110,qualityid 110
+2023,QUALITY_CANDIDATE,155,QualityID_226,qualityid 226
+2023,QUALITY_CANDIDATE,156,QualityID_134_WI,qualityid 134 wi
+2023,QUALITY_CANDIDATE,157,QualityID_134_eCQM,qualityid 134 ecqm
+2023,QUALITY_CANDIDATE,158,QualityID_134_MIPSCQM,qualityid 134 mipscqm
+2023,QUALITY_CANDIDATE,159,QualityID_113,qualityid 113
+2023,QUALITY_CANDIDATE,160,QualityID_112,qualityid 112
+2023,QUALITY_CANDIDATE,161,QualityID_438,qualityid 438
+2023,QUALITY_CANDIDATE,162,QualityID_370,qualityid 370
+2023,QUALITY_CANDIDATE,163,QualityID_001_WI,qualityid 001 wi
+2023,QUALITY_CANDIDATE,164,QualityID_001_eCQM,qualityid 001 ecqm
+2023,QUALITY_CANDIDATE,165,QualityID_001_MIPSCQM,qualityid 001 mipscqm
+2023,QUALITY_CANDIDATE,166,QualityID_236_WI,qualityid 236 wi
+2023,QUALITY_CANDIDATE,167,QualityID_236_eCQM,qualityid 236 ecqm
+2023,QUALITY_CANDIDATE,168,QualityID_236_MIPSCQM,qualityid 236 mipscqm

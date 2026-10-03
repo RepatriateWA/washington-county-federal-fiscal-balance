@@ -1,0 +1,75 @@
+CMS MSSP ASSIGNED BENEFICIARY COUNTY SOURCE CERTIFICATION v0.4
+============================================================================
+
+PURPOSE
+Documentation-governed, suppression-aware source certification.
+
+CERTIFIED PUBLICATION SEMANTICS
+Enrollment-type person-year fields:
+  numeric = published CMS person-year value
+  *       = CMS suppressed; underlying value unresolved
+  .       = CMS Missing: county has no assigned beneficiaries with this
+            enrollment type
+
+Total measures Tot_AB_Psn_Yrs and Tot_AB:
+  numeric = published CMS value
+  *       = CMS suppressed; underlying value unresolved
+
+PROVENANCE RULE
+The raw '.' representation remains distinct in source/provenance.
+It is not silently rewritten in the preserved CMS source.
+
+SUPPRESSION RULE
+CMS '*' values are not treated as zero, are not assigned an inferred
+numeric bound, are not reconstructed, and are not imputed.
+
+INTENTIONALLY RETIRED TEST
+The four enrollment-type person-year fields are not required to sum to
+Tot_AB_Psn_Yrs. Suppression prevents that from being a valid universal
+source-certification identity.
+
+PASS DOES NOT ESTABLISH
+- beneficiary geography as economic payment-dollar incidence
+- Washington payment-dollar incidence
+- county payment-dollar incidence
+- cash / federal fiscal-year timing
+- principal-ledger inclusion
+
+County source: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\Number of Accountable Care Organization Assigned Beneficiaries by County.zip
+SHA-256: 2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+Bytes: 8,450,964
+
+ACQUISITION BOUNDARY
+Present: 2020, 2021, 2022, 2023, 2024
+Not present in this acquired archive: 2015, 2016, 2017, 2018, 2019, 2019A
+Not-present status does not assert that CMS never published those periods.
+
+CHECKS
+SOURCE-01: PASS - county archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02: PASS - county archive bytes=8,450,964 expected=8,450,964
+ARCHIVE-01: PASS - archive entries=21 expected=21
+ARCHIVE-02: PASS - year directories=2020,2021,2022,2023,2024
+ARCHIVE-03: PASS - CSV members=2020:1,2021:1,2022:1,2023:1,2024:1
+ARCHIVE-04: PASS - PDF members=2020:2,2021:2,2022:2,2023:2,2024:2
+SCHEMA-01: PASS - exact 12-column CMS schema reproduced for all acquired periods
+SCHEMA-02: PASS - Year field agrees with archive period on every row
+KEY-01: PASS - ACO_ID present on every acquired row
+MEASURE-01: PASS - every beneficiary-measure cell classified exactly once
+SEMANTICS-01: PASS - component fields contain only documented numeric, '*', or '.' states
+SEMANTICS-02: PASS - numeric + '*' + CMS zero-beneficiary '.' exactly equals source rows for every component/year
+SEMANTICS-03: PASS - Tot_AB_Psn_Yrs and Tot_AB contain only documented numeric or '*' states
+SEMANTICS-04: PASS - numeric + '*' exactly equals source rows for both total measures
+LINK-01: PASS - exactly one governing financial CSV with ACO_ID found per 2020-2024 period
+LINK-02: PASS - financial ACO-ID counts reproduce certified 2020-2024 universe
+LINK-03: PASS - county-PUF and financial-PUF ACO_ID sets exactly equal for every period
+
+CERTIFIED DISPOSITION IF PASS
+The 2020-2024 county PUF is a documentation-governed published
+ACO beneficiary-geography universe exactly linked to the corresponding
+MSSP financial ACO universe. Numeric geography is directly observed;
+component '.' denotes CMS's no-assigned-beneficiary state; '*' remains
+CMS_SUPPRESSED_UNRESOLVED.
+
+No settlement-dollar incidence or allocation rule is certified here.
+
+OVERALL SOURCE CERTIFICATION v0.4: PASS

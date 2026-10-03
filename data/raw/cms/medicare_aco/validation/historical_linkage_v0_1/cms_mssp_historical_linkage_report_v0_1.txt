@@ -1,0 +1,238 @@
+====================================================================================================
+CMS MSSP HISTORICAL LINKAGE AND WASHINGTON APPLICABILITY PROFILE v0.1
+====================================================================================================
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------
+READ-ONLY historical linkage/applicability profiling.
+No Washington payment-dollar incidence inferred.
+No beneficiary residence inferred.
+No MSSP dollar aggregation as Washington inflow.
+No FFS overlap/additivity conclusion.
+No advance/AIM/AIP netting.
+No database writes.
+No ledger inclusion.
+
+SOURCE UNIVERSE
+----------------------------------------------------------------------------------------------------
+FINANCIAL      periods=11 | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+ORGANIZATION   periods=11 | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PARTICIPANT    periods=11 | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+
+PERIOD PROFILE
+----------------------------------------------------------------------------------------------------
+2015   | financial=392 | organizations=397 | participants=15,392 | IDs=ACO_Num//
+       linkage exact=0 | no_match=392 | one_to_many=0
+       WA org=0 | WA participant=0 | either=0 | both=0
+       org_geo_fields=aco_address;aco_service_area;aco_website_address;aco_zip
+       participant_geo_fields=ACO Address;ACO Website Address
+2016   | financial=432 | organizations=433 | participants=14,817 | IDs=ACO_Num/aco_id/ACO_Num
+       linkage exact=0 | no_match=432 | one_to_many=0
+       WA org=0 | WA participant=3 | either=3 | both=0
+       org_geo_fields=aco_service_area;aco_address;aco_zip
+       participant_geo_fields=ACO_Address;Zip Code
+2017   | financial=472 | organizations=480 | participants=18,281 | IDs=ACO_Num/aco_id/ACO_Num
+       linkage exact=0 | no_match=472 | one_to_many=0
+       WA org=0 | WA participant=0 | either=0 | both=0
+       org_geo_fields=aco_service_area;aco_address;aco_zip
+       participant_geo_fields=ACO_Address
+2018   | financial=548 | organizations=561 | participants=20,808 | IDs=ACO_ID/aco_id/ACO_Num
+       linkage exact=548 | no_match=0 | one_to_many=0
+       WA org=12 | WA participant=0 | either=12 | both=0
+       org_geo_fields=aco_service_area;aco_address;aco_zip
+       participant_geo_fields=ACO_Address
+2019   | financial=475 | organizations=487 | participants=18,399 | IDs=ACO_ID/aco_id/ACO_Num
+       linkage exact=475 | no_match=0 | one_to_many=0
+       WA org=10 | WA participant=0 | either=10 | both=0
+       org_geo_fields=aco_service_area;aco_address;aco_zip
+       participant_geo_fields=ACO_Address
+2019A  | financial=205 | organizations=518 | participants=18,305 | IDs=ACO_ID/aco_id/ACO_ID
+       linkage exact=205 | no_match=0 | one_to_many=0
+       WA org=4 | WA participant=2 | either=4 | both=2
+       org_geo_fields=aco_service_area;aco_address;aco_zip
+       participant_geo_fields=ACO_Address;ACO_ZIP
+2020   | financial=513 | organizations=517 | participants=17,448 | IDs=ACO_ID/aco_id/ACO_ID
+       linkage exact=513 | no_match=0 | one_to_many=0
+       WA org=13 | WA participant=6 | either=13 | both=6
+       org_geo_fields=aco_service_area;aco_address;aco_zip
+       participant_geo_fields=ACO_Address;ACO_ZIP
+2021   | financial=475 | organizations=477 | participants=16,352 | IDs=ACO_ID/aco_id/ACO_ID
+       linkage exact=475 | no_match=0 | one_to_many=0
+       WA org=13 | WA participant=6 | either=13 | both=6
+       org_geo_fields=aco_service_area;aco_address;aco_zip
+       participant_geo_fields=ACO_Address;ACO_ZIP
+2022   | financial=482 | organizations=483 | participants=16,046 | IDs=ACO_ID/aco_id/aco_id
+       linkage exact=482 | no_match=0 | one_to_many=0
+       WA org=16 | WA participant=8 | either=16 | both=8
+       org_geo_fields=aco_service_area;aco_address
+       participant_geo_fields=aco_address
+2023   | financial=453 | organizations=456 | participants=15,551 | IDs=ACO_ID/aco_id/aco_id
+       linkage exact=453 | no_match=0 | one_to_many=0
+       WA org=20 | WA participant=9 | either=20 | both=9
+       org_geo_fields=aco_service_area;aco_address
+       participant_geo_fields=aco_address
+2024   | financial=476 | organizations=480 | participants=15,540 | IDs=ACO_ID/aco_id/aco_id
+       linkage exact=476 | no_match=0 | one_to_many=0
+       WA org=28 | WA participant=11 | either=28 | both=11
+       org_geo_fields=aco_service_area;aco_address
+       participant_geo_fields=aco_address
+
+WASHINGTON-CONNECTED FINANCIAL OBSERVATIONS
+----------------------------------------------------------------------------------------------------
+Candidate ACO-period observations: 119
+WA_ORGANIZATION_AND_PARTICIPANT              42
+WA_ORGANIZATION_ONLY                         74
+WA_PARTICIPANT_ONLY                           3
+
+NOTE: Financial values below are attached source observations.
+They are NOT certified Washington payment-dollar incidence.
+2016 | A64316 | The Polyclinic | WA_PARTICIPANT_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2016 | A78337 | Rainier Health Network | WA_PARTICIPANT_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2016 | A17898 | Health Connect Partners, LLC | WA_PARTICIPANT_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A1252 | The Polyclinic | WA_ORGANIZATION_ONLY | EarnSaveLoss=3198369 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A1694 | Rainier Health Network | WA_ORGANIZATION_ONLY | EarnSaveLoss=6705312 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A2342 | Health Connect Partners, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=12620610 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A2876 | Magnolia-Evergreen ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup=0 | AIPRecoup=
+2018 | A3104 | Rocky Mountain Accountable Care Organization, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=2114878 | Adv_Pay_Recoup=2114878 | AIPRecoup=
+2018 | A3554 | Community Health Center Network Of Idaho, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A3565 | CPSI ACO 2 LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A3621 | Kootenai Accountable Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=3460014 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A3631 | MultiCare Connected Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=2773357 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A3731 | Cascadia Care Network LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2018 | A3922 | Valley Medical Group-Renton | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A1252 | The Polyclinic | WA_ORGANIZATION_ONLY | EarnSaveLoss=2627974 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A1694 | Rainier Health Network | WA_ORGANIZATION_ONLY | EarnSaveLoss=6750254 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A2342 | Health Connect Partners, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=14116371 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A3554 | Community Health Center Network Of Idaho, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A3580 | Central Oregon ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=32923308 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A3621 | Kootenai Accountable Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=3829358 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A3631 | MultiCare Connected Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=5329366 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A3731 | Cascadia Care Network LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=1672993 | Adv_Pay_Recoup= | AIPRecoup=
+2019 | A3922 | Valley Medical Group-Renton | WA_ORGANIZATION_ONLY | EarnSaveLoss=2029170 | Adv_Pay_Recoup= | AIPRecoup=
+2019A | A1252 | The Polyclinic | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=850,594 | Adv_Pay_Recoup= | AIPRecoup=
+2019A | A1694 | Rainier Health Network | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=3,232,206 | Adv_Pay_Recoup= | AIPRecoup=
+2019A | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2019A | A4527 | Caravan Health ACO 20 LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=4,237,354 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A1252 | The Polyclinic | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=4987453 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A1694 | Rainier Health Network | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=9894971 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A2342 | Health Connect Partners, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=26113602 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=19404827 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A3554 | Community Health Center Network Of Idaho, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=2517896 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A3580 | Caravan Health Collaborative ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=23651131 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A3621 | Kootenai Accountable Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A3631 | MultiCare Connected Care, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=7366080 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A3731 | Cascadia Care Network LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=3294327 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A3922 | Valley Medical Group-Renton | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=1402716 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A4527 | Stratum Med ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=9787813 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A4604 | Caravan Collaborative Pathways | WA_ORGANIZATION_ONLY | EarnSaveLoss=15432521 | Adv_Pay_Recoup= | AIPRecoup=
+2020 | A4901 | TUALITY HEALTH PLAN SERVICES | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A1252 | The Polyclinic | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=4,695,452 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A1694 | Rainier Health Network | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=13,631,866 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A2342 | Health Connect Partners, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=19,867,717 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=25,813,466 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A3554 | Community Health Center Network Of Idaho, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=8,835,310 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A3580 | Caravan Health Collaborative ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=35,351,051 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A3621 | Kootenai Accountable Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=4,179,015 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A3630 | NC MSSP 2022 | WA_ORGANIZATION_ONLY | EarnSaveLoss=13,100,242 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A3631 | MultiCare Connected Care, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=11,087,755 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A3731 | Cascadia Care Network LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=3,364,289 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A3922 | Valley Medical Group-Renton | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=2,824,148 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A4527 | Stratum Med ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=9,324,828 | Adv_Pay_Recoup= | AIPRecoup=
+2021 | A4901 | TUALITY HEALTH PLAN SERVICES | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A1252 | The Polyclinic | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=11826019 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A1694 | Rainier Health Network | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=6665272 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A2342 | Health Connect Partners, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=48493423 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=22841776 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A3554 | Community Health Center Network Of Idaho, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=2027687 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A3621 | Kootenai Accountable Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=2208186 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A3631 | MultiCare Connected Care, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=8583749 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A3731 | Cascadia Care Network LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=1224716 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A3922 | Valley Medical Group-Renton | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=969135 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A4527 | Stratum Med ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=27144213 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A4901 | TUALITY HEALTH PLAN SERVICES | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A4968 | Caravan Health ACO 24 LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A4999 | Pacific Northwest MSSP | WA_ORGANIZATION_ONLY | EarnSaveLoss=6391504 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A5025 | AdvantagePoint Health Alliance - Northwest, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A5074 | UW Medicine Choice Care LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2022 | A5113 | CCCN ACO, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=2856396 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A1252 | The Polyclinic | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=10008637 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A1694 | Rainier Health Network | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=10184969 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A2098 | The Accountable Care Organization, Ltd. | WA_ORGANIZATION_ONLY | EarnSaveLoss=47640428 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A2342 | Health Connect Partners, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=101131611 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=38226022 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A3554 | Community Health Center Network Of Idaho, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=2894485 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A3621 | Kootenai Accountable Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A3631 | MultiCare Connected Care, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=4575313 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A3731 | Cascadia Care Network LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A3922 | Valley Medical Group-Renton | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=997228 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A4527 | Stratum Med ACO | WA_ORGANIZATION_ONLY | EarnSaveLoss=31430942 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A4777 | Aledade 61 WA CCCN CHC MSSP Enhanced | WA_ORGANIZATION_ONLY | EarnSaveLoss=7260217 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A4901 | TUALITY HEALTH PLAN SERVICES | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A4974 | Caravan Health ACO 43 LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A4999 | Aledade 99 Pacific Northwest MSSP Enhanced | WA_ORGANIZATION_ONLY | EarnSaveLoss=8167014 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A5025 | AdvantagePoint Health Alliance - Northwest, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A5074 | UW Medicine Choice Care LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A5220 | Sound Physicians Long Term Care Management, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=16877543 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A5231 | Aledade 149 Regional MSSP | WA_ORGANIZATION_ONLY | EarnSaveLoss=7189874 | Adv_Pay_Recoup= | AIPRecoup=
+2023 | A5275 | Jefferson Accountable Care, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=
+2024 | A1252 | Polyclinic Management Services Company | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=6656988 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A1694 | Franciscan Northwest Physicians Health Network, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=10779355 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A2342 | Health Connect Partners, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=122660765 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A2671 | USMM ACCOUNTABLE CARE PARTNERS, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=39355547 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A3554 | Community Health Center Network Of Idaho, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=1967239 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A3621 | Kootenai Accountable Care, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A3631 | MultiCare Connected Care, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=3174634 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A3731 | Cascadia Care Network LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A3783 | Privia Quality Network Gulf Coast II, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=20023801 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A3922 | Public Hospital District #1 of King County | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=733808 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A4527 | Caravan Health ACO 20 LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=50214333 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A4671 | Aledade Accountable Care 48, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=24146593 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A4777 | Aledade Accountable Care 61, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=7407922 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A4901 | TUALITY HEALTH PLAN SERVICES | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A4974 | Caravan Health ACO 43 LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=12385049 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A4999 | Aledade Accountable Care 99, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=23316588 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5025 | AdvantagePoint Health Alliance - Northwest, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5160 | Caravan Health ACO 50 LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5220 | Sound Physicians Long Term Care Management, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=83779293 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5231 | Aledade Accountable Care 149, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=8624207 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5275 | Jefferson Accountable Care, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5321 | PSW ACO 1, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5323 | PSW ACO 2, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=3571018 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5341 | TH-PTN, LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=6403731 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5375 | Eastside ACO, LLC | WA_ORGANIZATION_AND_PARTICIPANT | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5423 | PraxisCare 2 INC | WA_ORGANIZATION_ONLY | EarnSaveLoss=5123251 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5424 | PraxisCare 3 INC | WA_ORGANIZATION_ONLY | EarnSaveLoss=0 | Adv_Pay_Recoup= | AIPRecoup=-
+2024 | A5471 | KPC Excel LLC | WA_ORGANIZATION_ONLY | EarnSaveLoss=-111345 | Adv_Pay_Recoup= | AIPRecoup=-
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | Financial source has exact 11-period universe | 11/11 periods: 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PASS | Organization source has exact 11-period universe | 11/11 periods: 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PASS | Participant source has exact 11-period universe | 11/11 periods: 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PASS | All embedded source CSVs parse | 0 parse failures
+PASS | All periods expose financial ACO identifier | 0 missing
+FAIL | All periods expose organization ACO identifier | 1 missing
+FAIL | All periods expose participant ACO identifier | 1 missing
+PASS | No financial ACO-period links one-to-many to organizations | 0 one-to-many financial->organization links
+PASS | Financial-to-organization linkage profiled without silent fallback | 3,627/4,923 exact direct links; 1,296 unresolved direct links
+PASS | Washington candidates retain payment-dollar-incidence boundary | 119 WA-connected ACO-period candidates
+PASS | No Washington candidate is promoted to ledger treatment | No beneficiary/payment-dollar geography inferred
+
+ERRORS
+----------------------------------------------------------------------------------------------------
+FAIL | 2015: no organization ACO identifier field
+FAIL | 2015: no participant ACO identifier field
+
+====================================================================================================
+OVERALL CMS MSSP HISTORICAL LINKAGE PROFILE v0.1: FAIL
+====================================================================================================
+
+Interpretive boundary:
+  Washington organization or participant evidence establishes a historical Washington connection only.
+  It does not establish beneficiary residence or Washington payment-dollar incidence.
+  EarnSaveLoss and other financial values remain attached source observations pending separate geographic and economic-overlap certification.
+  Direct identifier nonmatches are surfaced rather than silently repaired. The separately acquired CMS ACO ID crosswalk may be used in a subsequent linkage gate.
+  One-to-many financial-to-organization identity linkage is a certification failure.
+  No source is additive by default.

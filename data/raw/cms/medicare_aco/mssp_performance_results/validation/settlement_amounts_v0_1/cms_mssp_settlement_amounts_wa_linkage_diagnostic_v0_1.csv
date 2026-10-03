@@ -1,0 +1,4 @@
+artifact,period_column,identifier_column,wa_flag_column,rows,usable_for_wa_subset,reason
+data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_2015_explicit_wa_service_area_universe_v0_3.csv,,,,4,NO,"missing period, identifier, explicit WA flag"
+data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_historical_identity_accounting_v0_3.csv,performance_period,,,11,NO,"missing identifier, explicit WA flag"
+data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_historical_linkage_certification_checks_v0_3.csv,,,,15,NO,"missing period, identifier, explicit WA flag"

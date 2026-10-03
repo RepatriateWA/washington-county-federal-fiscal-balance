@@ -1,0 +1,12 @@
+check,status,detail
+Financial source has exact 11-period universe,PASS,"11/11 periods: 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+Organization source has exact 11-period universe,PASS,"11/11 periods: 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+Participant source has exact 11-period universe,PASS,"11/11 periods: 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+All embedded source CSVs parse,PASS,0 parse failures
+All periods expose financial ACO identifier,PASS,0 missing
+All periods expose organization ACO identifier,FAIL,1 missing
+All periods expose participant ACO identifier,FAIL,1 missing
+No financial ACO-period links one-to-many to organizations,PASS,0 one-to-many financial->organization links
+Financial-to-organization linkage profiled without silent fallback,PASS,"3,627/4,923 exact direct links; 1,296 unresolved direct links"
+Washington candidates retain payment-dollar-incidence boundary,PASS,119 WA-connected ACO-period candidates
+No Washington candidate is promoted to ledger treatment,PASS,No beneficiary/payment-dollar geography inferred

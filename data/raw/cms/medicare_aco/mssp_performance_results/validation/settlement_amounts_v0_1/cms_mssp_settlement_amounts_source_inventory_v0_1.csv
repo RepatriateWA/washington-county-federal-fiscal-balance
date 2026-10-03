@@ -1,0 +1,12 @@
+performance_period,member_name,rows,columns,identifier_column,settlement_fields_present
+2024,Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv,476,189,ACO_ID,EarnSaveLoss;GenSaveLoss;AIPBalance;AIPRecoup;AIPOwe
+2015,Performance Year Financial and Quality Results/2015/Performance_Year_Financial_and_Quality_Results_2015_suppress.csv,392,119,ACO_Num,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2020,Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv,513,162,ACO_ID,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2019,Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv,475,175,ACO_ID,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2017,Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv,472,164,ACO_Num,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2022,Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv,482,164,ACO_ID,EarnSaveLoss;GenSaveLoss
+2016,Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv,432,164,ACO_Num,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2021,Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv,475,171,ACO_ID,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2019A,Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv,205,175,ACO_ID,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2018,Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv,548,172,ACO_ID,EarnSaveLoss;GenSaveLoss;Adv_Pay_Amt;Adv_Pay_Recoup
+2023,Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv,453,168,ACO_ID,EarnSaveLoss;GenSaveLoss

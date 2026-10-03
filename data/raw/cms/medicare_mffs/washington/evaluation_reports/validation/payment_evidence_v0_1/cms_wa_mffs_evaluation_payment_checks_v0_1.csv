@@ -1,0 +1,11 @@
+check,status,detail
+Five certified evaluation reports present,PASS,5/5 present
+Five certified evaluation reports readable,PASS,5/5 readable
+All reports yielded extractable text,PASS,5/5
+Payment evidence found,PASS,75 rows
+Classified payment evidence found,PASS,35 rows
+Explicit payment evidence found,PASS,25 rows
+Explicit payment evidence with dollars found,PASS,21 rows
+Gross/net reconciliation evidence inventoried,PASS,5 rows
+Pending/remittance evidence inventoried,PASS,5 rows
+No inferred DY payment reconstruction performed,PASS,Evidence extraction only

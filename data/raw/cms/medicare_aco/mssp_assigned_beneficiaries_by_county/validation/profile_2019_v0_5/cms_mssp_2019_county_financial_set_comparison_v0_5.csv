@@ -1,0 +1,5 @@
+county_cohort,financial_member,county_acos,financial_acos,intersection,county_only,financial_only,exact_equal
+2019_01_01,Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv,475,475,475,0,0,YES
+2019_07_01,Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv,205,475,139,66,336,NO
+2019_01_01,Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv,475,205,139,336,66,NO
+2019_07_01,Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv,205,205,205,0,0,YES

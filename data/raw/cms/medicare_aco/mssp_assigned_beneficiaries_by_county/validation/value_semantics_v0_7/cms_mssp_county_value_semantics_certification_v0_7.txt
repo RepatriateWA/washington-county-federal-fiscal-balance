@@ -1,0 +1,274 @@
+CMS MSSP COUNTY VALUE SEMANTICS CERTIFICATION v0.7
+====================================================================================================
+Scope: available assigned-beneficiary-by-county sources, 2016-2024.
+2015: SOURCE_NOT_RECOVERED; no fabricated observations.
+CMS documentary rule encoded for explicit symbols: '.' = no assigned beneficiaries
+for that enrollment type; '*' = primary/complementary suppression.
+2016 blanks remain unresolved and are NOT equated to '.', '*', or zero.
+
+2016-BYTES: PASS - 4,421,455 expected 4,421,455
+2016-SHA256: PASS - 6D745C0F28949F53B4EDA8793CF050A15AFC8A947402901F9E94A9C3EE2FEB19
+2017-BYTES: PASS - 5,563,732 expected 5,563,732
+2017-SHA256: PASS - D3C6EDF2B8B80E4244FAD4BC36E8E9E518055D97A0147ABA79DE7D3A61E6ABB3
+2018-BYTES: PASS - 6,503,795 expected 6,503,795
+2018-SHA256: PASS - ABA3135EF3CD8F7AEC46F0354D246AD30821BF53EFB9B0D738C957612CE7597F
+2020-2024 ZIP: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\Number of Accountable Care Organization Assigned Beneficiaries by County.zip
+ZIP bytes: 8,450,964
+ZIP SHA256: 2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+2020 member: Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2020_01_01.csv
+2021 member: Number of Accountable Care Organization Assigned Beneficiaries by County/2021/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2021_01_01.csv
+2022 member: Number of Accountable Care Organization Assigned Beneficiaries by County/2022/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2022_01_01.csv
+2023 member: Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2023_01_01.csv
+2024 member: Number of Accountable Care Organization Assigned Beneficiaries by County/2024/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2024_01_01.csv
+
+2019 STATUS
+----------------------------------------------------------------------------------------------------
+2019 is DEFERRED_TO_CERTIFIED_PERIOD_MODEL: regular and off-cycle county PUFs
+must remain separate participation-period observations; no annual collapsing is performed here.
+
+2016 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2016_01_01.csv
+rows=98,208
+2016-SCHEMA: PASS - beneficiary measure columns=6/6
+2016-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=432
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=1,325 dot=0 star=0 blank=96,883 other=0
+  certification=BOUNDED_OR_SENSITIVITY_ONLY_2016_ENCODING_UNRESOLVED
+2016-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=3,899 dot=0 star=0 blank=94,309 other=0
+  certification=BOUNDED_OR_SENSITIVITY_ONLY_2016_ENCODING_UNRESOLVED
+2016-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=2,142 dot=0 star=0 blank=96,066 other=0
+  certification=BOUNDED_OR_SENSITIVITY_ONLY_2016_ENCODING_UNRESOLVED
+2016-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=6,741 dot=0 star=0 blank=91,467 other=0
+  certification=BOUNDED_OR_SENSITIVITY_ONLY_2016_ENCODING_UNRESOLVED
+2016-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=11,951 dot=0 star=0 blank=86,257 other=0
+  certification=BOUNDED_OR_SENSITIVITY_ONLY_2016_ENCODING_UNRESOLVED
+2016-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2016-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=11,951 dot=0 star=0 blank=86,257 other=0
+  certification=BOUNDED_OR_SENSITIVITY_ONLY_2016_ENCODING_UNRESOLVED
+2016-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2016-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+2017 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2017_01_01.csv
+rows=109,900
+2017-SCHEMA: PASS - beneficiary measure columns=6/6
+2017-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=472
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=1,416 dot=101,676 star=6,808 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2017-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=4,380 dot=75,255 star=30,265 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2017-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=2,342 dot=87,066 star=20,492 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2017-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=7,625 dot=14,792 star=87,483 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2017-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=13,636 dot=0 star=96,264 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2017-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2017-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=13,636 dot=0 star=96,264 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2017-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2017-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+2018 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2018_01_01.csv
+rows=131,165
+2018-SCHEMA: PASS - beneficiary measure columns=6/6
+2018-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=548
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=1,567 dot=121,608 star=7,990 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2018-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=4,945 dot=91,280 star=34,940 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2018-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=2,701 dot=104,788 star=23,676 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2018-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=8,922 dot=16,820 star=105,423 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2018-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=16,116 dot=0 star=115,049 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2018-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2018-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=16,116 dot=0 star=115,049 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2018-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2018-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+2020 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2020_01_01.csv
+rows=135,418
+2020-SCHEMA: PASS - beneficiary measure columns=6/6
+2020-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=513
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=1,702 dot=124,985 star=8,731 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2020-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=5,162 dot=95,361 star=34,895 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2020-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=3,089 dot=107,558 star=24,771 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2020-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=9,706 dot=15,838 star=109,874 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2020-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=17,985 dot=0 star=117,433 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2020-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2020-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=17,985 dot=0 star=117,433 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2020-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2020-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+2021 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2021/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2021_01_01.csv
+rows=130,186
+2021-SCHEMA: PASS - beneficiary measure columns=6/6
+2021-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=475
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=1,467 dot=120,632 star=8,087 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2021-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=4,859 dot=93,014 star=32,313 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2021-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=2,786 dot=103,992 star=23,408 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2021-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=9,402 dot=14,017 star=106,767 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2021-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=17,617 dot=0 star=112,569 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2021-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2021-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=17,617 dot=0 star=112,569 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2021-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2021-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+2022 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2022/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2022_01_01.csv
+rows=136,150
+2022-SCHEMA: PASS - beneficiary measure columns=6/6
+2022-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=482
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=1,266 dot=125,017 star=9,867 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2022-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=4,868 dot=98,382 star=32,900 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2022-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=2,875 dot=108,237 star=25,038 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2022-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=9,922 dot=13,952 star=112,276 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2022-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=18,915 dot=0 star=117,235 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2022-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2022-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=18,915 dot=0 star=117,235 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2022-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2022-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+2023 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2023_01_01.csv
+rows=129,750
+2023-SCHEMA: PASS - beneficiary measure columns=6/6
+2023-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=453
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=912 dot=117,954 star=10,884 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2023-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=4,642 dot=93,429 star=31,679 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2023-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=2,992 dot=100,933 star=25,825 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2023-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=10,026 dot=12,565 star=107,159 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2023-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=19,582 dot=0 star=110,168 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2023-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2023-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=19,582 dot=0 star=110,168 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2023-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2023-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+2024 VALUE-STATE PROFILE
+----------------------------------------------------------------------------------------------------
+source=Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2024/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2024_01_01.csv
+rows=135,203
+2024-SCHEMA: PASS - beneficiary measure columns=6/6
+2024-YEAR: PASS - mismatched rows=0
+distinct_ACO_ID=476
+AB_Psn_Yrs_ESRD    kind=COMPONENT numeric=839 dot=122,006 star=12,358 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2024-AB_Psn_Yrs_ESRD-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_DIS     kind=COMPONENT numeric=4,668 dot=97,375 star=33,160 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2024-AB_Psn_Yrs_DIS-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGDU    kind=COMPONENT numeric=3,271 dot=104,190 star=27,742 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2024-AB_Psn_Yrs_AGDU-LEXICAL: PASS - unexpected raw states=0
+AB_Psn_Yrs_AGND    kind=COMPONENT numeric=10,822 dot=12,506 star=111,875 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2024-AB_Psn_Yrs_AGND-LEXICAL: PASS - unexpected raw states=0
+Tot_AB_Psn_Yrs     kind=TOTAL     numeric=21,705 dot=0 star=113,498 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2024-Tot_AB_Psn_Yrs-LEXICAL: PASS - unexpected raw states=0
+2024-Tot_AB_Psn_Yrs-TOTAL-DOT: PASS - dot states in total field=0
+Tot_AB             kind=TOTAL     numeric=21,705 dot=0 star=113,498 blank=0 other=0
+  certification=BOUNDED_OR_SUPPRESSION_POLICY_REQUIRED
+2024-Tot_AB-LEXICAL: PASS - unexpected raw states=0
+2024-Tot_AB-TOTAL-DOT: PASS - dot states in total field=0
+
+CERTIFICATION CONCLUSIONS
+----------------------------------------------------------------------------------------------------
+2015: SOURCE_NOT_RECOVERED. Do not impute from adjacent years.
+2016: Numeric observations are usable as observed; blank cells remain
+      UNRESOLVED_HISTORICAL_ENCODING and require bounded/sensitivity treatment
+      unless contemporaneous CMS documentation resolves the encoding.
+2017-2018 and 2020-2024: explicit '.'/'*' semantics may be carried forward
+      according to CMS documentation, while preserving the raw symbols.
+2019: preserve regular and off-cycle participation periods separately.
+No dollar allocation is authorized by this certification alone.
+
+GUARDRAILS
+----------------------------------------------------------------------------------------------------
+No source file was modified.
+No blank, '.', or '*' cell was converted to a numeric value.
+No EarnSaveLoss or other financial measure was allocated.
+No Washington or county dollar incidence was inferred.
+No ledger inclusion decision was made.
+
+OVERALL EXECUTION v0.7: PASS
+Checks: 86 total; 0 failed
+Evidence: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\validation\value_semantics_v0_7

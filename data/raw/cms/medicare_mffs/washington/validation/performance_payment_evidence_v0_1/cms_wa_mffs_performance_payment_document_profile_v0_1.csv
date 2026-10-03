@@ -1,0 +1,8 @@
+slot,final_dy,preliminary_dy,source_path,exists,pages,text_pages,evidence_hits,dollar_context_hits,status
+DY1_FINAL_DY2_PRELIM,1,2,data\raw\cms\medicare_mffs\washington\actuarial_reports\v0_2\DY1_FINAL_DY2_PRELIM__cms_wa_mffs_medicare_cost_savings_report.pdf,YES,88,88,219,105,PROFILED
+DY2_FINAL_DY3_PRELIM,2,3,data\raw\cms\medicare_mffs\washington\actuarial_reports\v0_2\DY2_FINAL_DY3_PRELIM__cms_wa_mffs_medicare_cost_savings_report.pdf,YES,102,102,259,127,PROFILED
+DY3_FINAL_DY4_PRELIM,3,4,data\raw\cms\medicare_mffs\washington\actuarial_reports\v0_2\DY3_FINAL_DY4_PRELIM__cms_wa_mffs_medicare_cost_savings_report.pdf,YES,119,119,361,184,PROFILED
+DY4_FINAL_DY5_PRELIM,4,5,data\raw\cms\medicare_mffs\washington\actuarial_reports\v0_2\DY4_FINAL_DY5_PRELIM__cms_wa_mffs_medicare_cost_savings_report.pdf,YES,138,138,418,217,PROFILED
+DY5_FINAL_DY6_PRELIM,5,6,data\raw\cms\medicare_mffs\washington\actuarial_reports\v0_2\DY5_FINAL_DY6_PRELIM__cms_wa_mffs_medicare_cost_savings_report.pdf,YES,157,157,467,254,PROFILED
+DY6_FINAL_DY7_PRELIM,6,7,data\raw\cms\medicare_mffs\washington\actuarial_reports\v0_2\DY6_FINAL_DY7_PRELIM__cms_wa_mffs_medicare_cost_savings_report.pdf,YES,172,172,490,286,PROFILED
+DY7_FINAL_DY8_PRELIM,7,8,data\raw\cms\medicare_mffs\washington\actuarial_reports\v0_2\DY7_FINAL_DY8_PRELIM__cms_wa_mffs_medicare_cost_savings_report.pdf,YES,194,194,481,305,PROFILED

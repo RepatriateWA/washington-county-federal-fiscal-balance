@@ -1,0 +1,174 @@
+check,status,detail
+source_year_min,PASS,observed=2014 expected=2014
+source_year_max,PASS,observed=2024 expected=2024
+study_years_present,PASS,FY2015-FY2024
+2015_wa_state_all_unique,PASS,rows=1
+2015_wa_county_all_count,FAIL,rows=40 expected=39
+2015_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2015_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1252610 county_sum=1252604 delta=-6 missing=1
+2015_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1098228 county_sum=1097647 delta=-581 missing=2
+2015_BENES_OM_CNT_county_to_state_exact,FAIL,state=743923 county_sum=743922 delta=-1 missing=1
+2015_BENES_MA_CNT_county_to_state_exact,FAIL,state=354305 county_sum=354297 delta=-8 missing=2
+2015_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=6285843586 county_sum=6285843210 delta=-376 missing=1
+2015_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=5668235910 county_sum=5668235482 delta=-428 missing=1
+2015_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2149968112 county_sum=2149968108 delta=-4 missing=1
+2015_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1111778463 county_sum=1111778461 delta=-2 missing=1
+2015_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=548791394 county_sum=548791395 delta=1 missing=1
+2015_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=61800053 county_sum=61023298 delta=-776755 missing=7
+2015_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=36288571 county_sum=30709447 delta=-5579124 missing=23
+2015_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=210609850 county_sum=210573055 delta=-36795 missing=2
+2015_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=179369543 county_sum=179300961 delta=-68582 missing=2
+2015_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=64646787 county_sum=64646764 delta=-23 missing=1
+2016_wa_state_all_unique,PASS,rows=1
+2016_wa_county_all_count,FAIL,rows=40 expected=39
+2016_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2016_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1296345 county_sum=1296340 delta=-5 missing=1
+2016_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1135198 county_sum=1134607 delta=-591 missing=2
+2016_BENES_OM_CNT_county_to_state_exact,FAIL,state=767431 county_sum=767430 delta=-1 missing=1
+2016_BENES_MA_CNT_county_to_state_exact,FAIL,state=367767 county_sum=367759 delta=-8 missing=2
+2016_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=6601670501 county_sum=6601669769 delta=-732 missing=1
+2016_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=5894000982 county_sum=5894000236 delta=-746 missing=1
+2016_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2240064774 county_sum=2240064775 delta=1 missing=1
+2016_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1212984005 county_sum=1212984007 delta=2 missing=1
+2016_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=552853523 county_sum=552853522 delta=-1 missing=1
+2016_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=72910885 county_sum=72646815 delta=-264070 missing=4
+2016_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=29541842 county_sum=24650539 delta=-4891303 missing=25
+2016_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=233801553 county_sum=233801552 delta=-1 missing=1
+2016_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=196497058 county_sum=196456051 delta=-41007 missing=2
+2016_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=65822549 county_sum=65822516 delta=-33 missing=1
+2017_wa_state_all_unique,PASS,rows=1
+2017_wa_county_all_count,FAIL,rows=40 expected=39
+2017_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2017_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1338611 county_sum=1338608 delta=-3 missing=1
+2017_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1170671 county_sum=1170670 delta=-1 missing=1
+2017_BENES_OM_CNT_county_to_state_exact,FAIL,state=781397 county_sum=781396 delta=-1 missing=1
+2017_BENES_MA_CNT_county_to_state_exact,FAIL,state=389274 county_sum=389274 delta=0 missing=1
+2017_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=6864299528 county_sum=6864298783 delta=-745 missing=1
+2017_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=6161567094 county_sum=6161566359 delta=-735 missing=1
+2017_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2306041600 county_sum=2306041597 delta=-3 missing=1
+2017_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1323573134 county_sum=1323572934 delta=-200 missing=1
+2017_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=546220649 county_sum=546220647 delta=-2 missing=1
+2017_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=71728381 county_sum=71361109 delta=-367272 missing=5
+2017_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=28304735 county_sum=23927455 delta=-4377280 missing=21
+2017_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=241743203 county_sum=241743203 delta=0 missing=1
+2017_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=210353888 county_sum=210347423 delta=-6465 missing=2
+2017_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=62087332 county_sum=62087314 delta=-18 missing=1
+2018_wa_state_all_unique,PASS,rows=1
+2018_wa_county_all_count,FAIL,rows=40 expected=39
+2018_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2018_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1383859 county_sum=1383857 delta=-2 missing=1
+2018_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1205769 county_sum=1205150 delta=-619 missing=2
+2018_BENES_OM_CNT_county_to_state_exact,FAIL,state=785400 county_sum=785400 delta=0 missing=1
+2018_BENES_MA_CNT_county_to_state_exact,FAIL,state=420369 county_sum=420360 delta=-9 missing=2
+2018_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=7073449110 county_sum=7073449110 delta=0 missing=1
+2018_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=6404561784 county_sum=6404561786 delta=2 missing=1
+2018_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2289347028 county_sum=2289347025 delta=-3 missing=1
+2018_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1433913372 county_sum=1433913375 delta=3 missing=1
+2018_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=525838400 county_sum=525838403 delta=3 missing=1
+2018_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=62008544 county_sum=60903453 delta=-1105091 missing=9
+2018_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=27018563 county_sum=22395876 delta=-4622687 missing=26
+2018_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=248477940 county_sum=248477940 delta=0 missing=1
+2018_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=218904785 county_sum=218829332 delta=-75453 missing=2
+2018_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=65627459 county_sum=65627459 delta=0 missing=1
+2019_wa_state_all_unique,PASS,rows=1
+2019_wa_county_all_count,FAIL,rows=40 expected=39
+2019_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2019_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1426634 county_sum=1426631 delta=-3 missing=1
+2019_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1240637 county_sum=1240636 delta=-1 missing=1
+2019_BENES_OM_CNT_county_to_state_exact,FAIL,state=782986 county_sum=782985 delta=-1 missing=1
+2019_BENES_MA_CNT_county_to_state_exact,FAIL,state=457651 county_sum=457651 delta=0 missing=1
+2019_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=7238789219 county_sum=7238789220 delta=1 missing=1
+2019_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=6506935349 county_sum=6506935351 delta=2 missing=1
+2019_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2305984749 county_sum=2305984748 delta=-1 missing=1
+2019_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1535100522 county_sum=1535100523 delta=1 missing=1
+2019_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=507243120 county_sum=507243119 delta=-1 missing=1
+2019_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=64633360 county_sum=63774029 delta=-859331 missing=8
+2019_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=20283309 county_sum=15184647 delta=-5098662 missing=26
+2019_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=246859491 county_sum=246859494 delta=3 missing=1
+2019_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=224812440 county_sum=224771679 delta=-40761 missing=2
+2019_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=64659144 county_sum=64659143 delta=-1 missing=1
+2020_wa_state_all_unique,PASS,rows=1
+2020_wa_county_all_count,FAIL,rows=40 expected=39
+2020_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2020_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1462640 county_sum=1462637 delta=-3 missing=1
+2020_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1278514 county_sum=1278513 delta=-1 missing=1
+2020_BENES_OM_CNT_county_to_state_exact,FAIL,state=771482 county_sum=771481 delta=-1 missing=1
+2020_BENES_MA_CNT_county_to_state_exact,FAIL,state=507032 county_sum=507032 delta=0 missing=1
+2020_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=6699487748 county_sum=6699487750 delta=2 missing=1
+2020_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=5980347538 county_sum=5980347534 delta=-4 missing=1
+2020_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2068246870 county_sum=2068246871 delta=1 missing=1
+2020_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1452733024 county_sum=1452733025 delta=1 missing=1
+2020_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=466839778 county_sum=466839777 delta=-1 missing=1
+2020_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=70051059 county_sum=68332584 delta=-1718475 missing=10
+2020_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=16592754 county_sum=11417903 delta=-5174851 missing=25
+2020_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=237090885 county_sum=237090887 delta=2 missing=1
+2020_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=225669817 county_sum=225669817 delta=0 missing=1
+2020_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=61252557 county_sum=61252560 delta=3 missing=1
+2021_wa_state_all_unique,PASS,rows=1
+2021_wa_county_all_count,FAIL,rows=40 expected=39
+2021_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2021_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1496825 county_sum=1496822 delta=-3 missing=1
+2021_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1309209 county_sum=1309208 delta=-1 missing=1
+2021_BENES_OM_CNT_county_to_state_exact,FAIL,state=747205 county_sum=747204 delta=-1 missing=1
+2021_BENES_MA_CNT_county_to_state_exact,FAIL,state=562004 county_sum=562004 delta=0 missing=1
+2021_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=7105195582 county_sum=7105195585 delta=3 missing=1
+2021_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=6277728804 county_sum=6277728802 delta=-2 missing=1
+2021_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2099090626 county_sum=2099090627 delta=1 missing=1
+2021_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1643070957 county_sum=1643070954 delta=-3 missing=1
+2021_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=450314389 county_sum=450314390 delta=1 missing=1
+2021_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=64965068 county_sum=63723869 delta=-1241199 missing=8
+2021_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=13777716 county_sum=7264462 delta=-6513254 missing=31
+2021_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=250219513 county_sum=250219515 delta=2 missing=1
+2021_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=214124950 county_sum=214124949 delta=-1 missing=1
+2021_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=64019082 county_sum=64019083 delta=1 missing=1
+2022_wa_state_all_unique,PASS,rows=1
+2022_wa_county_all_count,FAIL,rows=40 expected=39
+2022_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2022_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1525506 county_sum=1525503 delta=-3 missing=1
+2022_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1333981 county_sum=1333980 delta=-1 missing=1
+2022_BENES_OM_CNT_county_to_state_exact,FAIL,state=720167 county_sum=720166 delta=-1 missing=1
+2022_BENES_MA_CNT_county_to_state_exact,FAIL,state=613814 county_sum=613814 delta=0 missing=1
+2022_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=7105695324 county_sum=7105695326 delta=2 missing=1
+2022_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=6305799887 county_sum=6305799886 delta=-1 missing=1
+2022_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2096343706 county_sum=2096343704 delta=-2 missing=1
+2022_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1707700171 county_sum=1707700174 delta=3 missing=1
+2022_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=456175004 county_sum=456175004 delta=0 missing=1
+2022_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=54681133 county_sum=53153466 delta=-1527667 missing=10
+2022_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=11637206 county_sum=5659282 delta=-5977924 missing=30
+2022_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=244833963 county_sum=244833961 delta=-2 missing=1
+2022_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=204660154 county_sum=204660159 delta=5 missing=1
+2022_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=69418001 county_sum=69418001 delta=0 missing=1
+2023_wa_state_all_unique,PASS,rows=1
+2023_wa_county_all_count,FAIL,rows=40 expected=39
+2023_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2023_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1555950 county_sum=1555947 delta=-3 missing=1
+2023_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1353473 county_sum=1353472 delta=-1 missing=1
+2023_BENES_OM_CNT_county_to_state_exact,FAIL,state=684237 county_sum=684236 delta=-1 missing=1
+2023_BENES_MA_CNT_county_to_state_exact,FAIL,state=669236 county_sum=669236 delta=0 missing=1
+2023_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=7158354677 county_sum=7158354678 delta=1 missing=1
+2023_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=6454532231 county_sum=6454532232 delta=1 missing=1
+2023_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2020567310 county_sum=2020567308 delta=-2 missing=1
+2023_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1725378110 county_sum=1725378111 delta=1 missing=1
+2023_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=455356929 county_sum=455356927 delta=-2 missing=1
+2023_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=61333299 county_sum=59908037 delta=-1425262 missing=9
+2023_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=11618453 county_sum=5620857 delta=-5997596 missing=26
+2023_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=231421189 county_sum=231421188 delta=-1 missing=1
+2023_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=211405125 county_sum=211358260 delta=-46865 missing=2
+2023_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=62165876 county_sum=62165875 delta=-1 missing=1
+2024_wa_state_all_unique,PASS,rows=1
+2024_wa_county_all_count,FAIL,rows=40 expected=39
+2024_wa_county_fips_unique,FAIL,distinct=40 expected=39
+2024_BENES_TOTAL_CNT_county_to_state_exact,FAIL,state=1589604 county_sum=1589600 delta=-4 missing=1
+2024_BENES_WTH_PTAPTB_CNT_county_to_state_exact,FAIL,state=1379366 county_sum=1379364 delta=-2 missing=1
+2024_BENES_OM_CNT_county_to_state_exact,FAIL,state=644886 county_sum=644885 delta=-1 missing=1
+2024_BENES_MA_CNT_county_to_state_exact,FAIL,state=734480 county_sum=734479 delta=-1 missing=1
+2024_TOT_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=7249333762 county_sum=7249333743 delta=-19 missing=1
+2024_TOT_MDCR_STDZD_PYMT_AMT_county_to_state_exact,FAIL,state=6472435041 county_sum=6472435023 delta=-18 missing=1
+2024_IP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=2034879338 county_sum=2034879316 delta=-22 missing=1
+2024_OP_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=1767521028 county_sum=1767521007 delta=-21 missing=1
+2024_SNF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=474671824 county_sum=474671806 delta=-18 missing=1
+2024_IRF_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=66316937 county_sum=65371970 delta=-944967 missing=7
+2024_LTCH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=7788850 county_sum=4181268 delta=-3607582 missing=24
+2024_HH_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=223027164 county_sum=223027144 delta=-20 missing=1
+2024_HOSPC_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=210312284 county_sum=210175209 delta=-137075 missing=2
+2024_PTB_OTHR_SRVCS_MDCR_PYMT_AMT_county_to_state_exact,FAIL,state=51805378 county_sum=51805355 delta=-23 missing=1

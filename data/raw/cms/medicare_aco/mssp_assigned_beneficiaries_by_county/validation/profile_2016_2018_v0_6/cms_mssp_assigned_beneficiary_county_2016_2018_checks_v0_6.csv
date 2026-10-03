@@ -1,0 +1,22 @@
+check_code,status,detail
+2016-SOURCE-01,PASS,"bytes=4,421,455 expected=4,421,455"
+2016-SOURCE-02,PASS,SHA256=6D745C0F28949F53B4EDA8793CF050A15AFC8A947402901F9E94A9C3EE2FEB19
+2016-STRUCT-01,PASS,ACO universe=432 expected=432; blank=0
+2016-STRUCT-02,PASS,Year column present=True; mismatched rows=0
+2016-SEM-01,PASS,beneficiary measure columns found=6/6
+2017-SOURCE-01,PASS,"bytes=5,563,732 expected=5,563,732"
+2017-SOURCE-02,PASS,SHA256=D3C6EDF2B8B80E4244FAD4BC36E8E9E518055D97A0147ABA79DE7D3A61E6ABB3
+2017-STRUCT-01,PASS,ACO universe=472 expected=472; blank=0
+2017-STRUCT-02,PASS,Year column present=True; mismatched rows=0
+2017-SEM-01,PASS,beneficiary measure columns found=6/6
+2018-SOURCE-01,PASS,"bytes=6,503,795 expected=6,503,795"
+2018-SOURCE-02,PASS,SHA256=ABA3135EF3CD8F7AEC46F0354D246AD30821BF53EFB9B0D738C957612CE7597F
+2018-STRUCT-01,PASS,ACO universe=548 expected=548; blank=0
+2018-STRUCT-02,PASS,Year column present=True; mismatched rows=0
+2018-SEM-01,PASS,beneficiary measure columns found=6/6
+2016-FIN-01,PASS,financial candidates with ACO_ID=1
+2016-FIN-02,PASS,exact county-financial ACO-set matches=1
+2017-FIN-01,PASS,financial candidates with ACO_ID=1
+2017-FIN-02,PASS,exact county-financial ACO-set matches=1
+2018-FIN-01,PASS,financial candidates with ACO_ID=1
+2018-FIN-02,PASS,exact county-financial ACO-set matches=1

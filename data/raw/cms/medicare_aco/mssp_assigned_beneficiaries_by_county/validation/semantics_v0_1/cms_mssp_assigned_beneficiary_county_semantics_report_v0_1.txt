@@ -1,0 +1,79 @@
+CMS MSSP ASSIGNED BENEFICIARY COUNTY SEMANTICS EXTRACTOR v0.1
+========================================================================
+
+BOUNDARY
+Evidence extraction only. PASS means the preserved source was authenticated,
+the documentation corpus was inventoried/deduplicated/parsed, and the targeted
+semantic search completed.
+
+PASS DOES NOT ESTABLISH:
+- the meaning of an undocumented blank or nonnumeric value
+- a suppression threshold
+- that suppressed values are zero
+- that suppressed geography may be reconstructed or imputed
+- beneficiary-residence weighting as payment-dollar incidence
+- Washington or county payment-dollar incidence
+- cash / federal fiscal-year timing
+- principal-ledger inclusion
+
+Source archive: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\Number of Accountable Care Organization Assigned Beneficiaries by County.zip
+Source SHA-256: 2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+Source bytes: 8,450,964
+PDF members: 10
+Unique PDF byte streams: 3
+Evidence windows: 261
+
+SEARCH ACCOUNTING
+field_definition | AB_Psn_Yrs_ESRD | FOUND | windows=2
+field_definition | AB_Psn_Yrs_DIS | FOUND | windows=2
+field_definition | AB_Psn_Yrs_AGDU | FOUND | windows=2
+field_definition | AB_Psn_Yrs_AGND | FOUND | windows=2
+field_definition | Tot_AB_Psn_Yrs | FOUND | windows=2
+field_definition | Tot_AB | FOUND | windows=4
+suppression | suppress | FOUND | windows=41
+suppression | suppression | FOUND | windows=18
+suppression | suppressed | FOUND | windows=27
+suppression | cell size | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+suppression | minimum cell | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+suppression | privacy | FOUND | windows=3
+blank_missing | blank | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+blank_missing | missing | FOUND | windows=11
+blank_missing | null | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+blank_missing | not available | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+blank_missing | not applicable | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+blank_missing | n/a | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+rounding | round | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+rounding | rounded | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+rounding | rounding | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+geography | county | FOUND | windows=45
+geography | counties | FOUND | windows=4
+geography | residence | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+geography | resident | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+geography | geographic | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+geography | geography | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0
+geography | state | FOUND | windows=7
+beneficiary_person_year | beneficiary | FOUND | windows=29
+beneficiary_person_year | beneficiaries | FOUND | windows=46
+beneficiary_person_year | person-year | FOUND | windows=4
+beneficiary_person_year | person year | FOUND | windows=6
+beneficiary_person_year | person-years | FOUND | windows=1
+beneficiary_person_year | person years | FOUND | windows=1
+beneficiary_person_year | assigned beneficiary | FOUND | windows=4
+
+CHECKS
+SOURCE-01: PASS - archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02: PASS - archive bytes=8,450,964 expected=8,450,964
+DOC-01: PASS - PDF members=10 expected=10
+DOC-02: PASS - PDF members by period=2020:2,2021:2,2022:2,2023:2,2024:2
+DOC-03: PASS - unique PDF byte streams=3
+PARSE-01: PASS - PDF page parse errors=0
+PARSE-02: PASS - all unique PDFs yielded nonempty text
+SEARCH-01: PASS - targeted search terms accounted=35
+SEARCH-02: PASS - all six target fields included in search universe
+FIELD-01: PASS - target field names found in extracted documentation=AB_Psn_Yrs_AGDU,AB_Psn_Yrs_AGND,AB_Psn_Yrs_DIS,AB_Psn_Yrs_ESRD,Tot_AB,Tot_AB_Psn_Yrs
+
+INTERPRETIVE RULE
+NOT_FOUND_IN_EXTRACTED_TEXT is descriptive only. It is not evidence that a
+concept, rule, threshold, or mechanism does not exist.
+
+OVERALL SEMANTICS EXTRACTOR v0.1: PASS

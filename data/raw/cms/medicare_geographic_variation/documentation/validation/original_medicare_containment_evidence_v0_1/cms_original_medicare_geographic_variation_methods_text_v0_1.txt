@@ -1,0 +1,572 @@
+========================================================================================================================
+CMS GEOGRAPHIC VARIATION PUBLIC USE FILE METHODS PAPER
+========================================================================================================================
+
+[PAGE 1]
+------------------------------------------------------------------------------------------------------------------------
+1 
+
+Medicare Data for the Fee-for-Service Geographic Variation Public Use File: 
+A Methodological Overview 
+May 2024 Update 
+
+Introduction 
+
+Federal policymakers and health researchers have long recognized that the amount and quality of the health care services that Medicare 
+beneficiaries receive var ies substantially across different regions of the United States . Much of that variation does not appear to be 
+caused by differences in beneficiaries’ health, and one widely publicized estimate asserted that as much as 30 percent of Medicare 
+expenditures may be unnecessary.1 
+
+The Office of Enterprise Data and Analytics within the Centers for Medicare & Medicaid Services (CMS) has developed a public use 
+file, the Fee-for-Service Geographic Variation Public Use File (FFS GV PUF), to support further analysis of this important issue. This 
+public use file is based primarily on information from CMS’s Chronic Conditions Data Warehouse (CCW), which contains 100 percent 
+of Medicare claims for beneficiaries who are enrolled in the fee -for-service (FFS) program as well as enrollment and e ligibility data. 
+The FFS GV PUF covers calendar years 2007-2022 and has information on demographics, spending, and service utilization for Medicare 
+beneficiaries in different parts of the country. The FFS GV PUF also incorporates a variety of quality indicators that can be used to 
+analyze relationships between Medicare utilization and quality of care. 
+
+The May 2024 update to the FFS GV PUF includes data for 2007-2022. 
+
+This overview is divided into the following six sections: 
+
+1. Key Data Sources 
+2. Study Population 
+3. Risk Adjustment and Standardization of Spending 
+4. Payment Reduction 
+5. Utilization Measures 
+6. Quality Measures 
+
+
+1 John Wennberg et al. Tracking the Care of Patients with Severe Chronic Illness – The Dartmouth Atlas of Health Care 2008, The Dartmouth Institute for 
+Health Policy and Clinical Practice.
+
+[PAGE 2]
+------------------------------------------------------------------------------------------------------------------------
+2 
+
+1. Key Data Sources 
+
+The primary data source for these data is CMS’s Chronic Condition s Data Warehouse (CCW). The CCW contains 100 percent of 
+Medicare claims for beneficiaries who are enrolled in the FFS program as well as enrollment and eligibility data. The CCW was designed 
+as a database to support research on chronically ill beneficiaries, so it also contains other valuable features, such as a un ique identifier 
+for each beneficiary that makes it possible to track spending and utilization for individual beneficiaries over time and flags that indicate 
+if a beneficiary has one or more of 30 specific chronic conditions. 
+
+The detailed nature of the CCW claims data makes it possible to analyze differences in cost and/or utilization for specific s ettings of 
+care or types of services. Some of the settings include inpatient hospital, outpatient hospital, multiple post-acute care settings (long-term 
+care hospital, inpatient rehabilitation facility, skilled nursing facility, and home health agency), hospice, physicians, lab oratories, and 
+suppliers of durable medical equipment. 
+
+For years 2014-2022, physician services are defined using the Restructured BETOS Classification System (RBCS)2, which groups 
+services into eight major categories: evaluation and management (E&M), procedures, treatments, imaging, laboratory tests, durable 
+medical equipment (DME), anesthesia, and other. The total number of distinct RBCS codes is much larger – about 270 – when you 
+count the numerous sub -groupings within those major categories. See Appendix 2 for the complete list of RBCS categories and 
+subcategories. 
+
+For 2007-2013, physician services are defined using the historical BETOS classification scheme, which groups services into six major 
+categories: E&M, procedures, imaging, laboratory tests, DME and other. The FFS GV PUF uses BETOS for these years of data since 
+the RBCS covers services beginning in 2014. 
+
+The FFS GV PUF also incorporates several quality measures that were derived from the Prevention Quality Indicators (PQIs) measure 
+set, which is publicly available software that was developed by the Agency for Healthcare Research and Quality (AHRQ) 3 and uses 
+administrative data to measure hospital admission rates for ambulatory care sensitive conditions. These measures are well-known to 
+health care researchers and have historically been endorsed by the National Quality Forum through FY 20214, 5. 
+
+
+2 https://data.cms.gov/provider-summary-by-type-of-service/provider-service-classifications/restructured-betos-classification-system 
+3 https://www.qualityindicators.ahrq.gov/Modules/pqi_resources.aspx 
+4 https://www.qualityindicators.ahrq.gov/Modules/list_ahrq_qi.aspx 
+5 Note that as of FY 2022, AHRQ no longer seeks the re-endorsement of the National Quality Forum for the PQIs. More information can be found at: 
+https://qualityindicators.ahrq.gov/Downloads/News/AHRQ_Rationale4notseekingNQFendorsement-May2021.pdf
+
+[PAGE 3]
+------------------------------------------------------------------------------------------------------------------------
+3 
+
+In addition to the quality measures described above, the FFS GV PUF also includes the number of times that Medicare beneficiaries 
+visited hospital emergency departments and all-cause hospital 30-day readmission rates. 
+
+2. Study Population 
+
+Since the primary goal of the FFS GV PUF is to make it easier to analyze differences in health care utilization and spending for Medicare 
+beneficiaries living in differen t parts of the United States, the FFS GV PUF excludes certain categories of Medicare beneficiaries to 
+make those comparisons as meaningful as possible. 
+
+Table 1 shows the number and percent of beneficiaries excluded , by year. The same exclusions are applied to each year of the data. 
+Note that whether individual beneficiaries were part of the study population could vary from year to year, depending on wheth er and 
+when one of the exclusions described below applied to them. 
+
+First, beneficiaries who had both Part A and Part B coverage and were enrolled at any point during the year in a Medicare Advantage 
+(MA) plan are excluded.6 (There were approximately 31.3 million beneficiaries in MA plans in 2022, about 45.9 percent of the overall 
+total.) 7 
+
+Second, beneficiaries who were enrolled at any point in the year in Part A only or Part B only (roughly 7.2 million in 2022, about 10.6 
+percent of the overall total) are excluded. Since those beneficiaries are enrolled in only one part of Medicare, per -capita spending for 
+those beneficiaries cannot be compared directly to spending for beneficiaries that are enrolled in both Part A and Part B. 
+
+Although the FFS GV PUF reports data for beneficiaries of all ages, the data are also reported separately for two age groups: beneficiaries 
+who were under the age of 65 and receive d Medicare because they were either disabled or had end-stage renal disease (approximately 
+3.3 million in 2022), and beneficiaries aged 65 and older (nearly 26.4 million in 2022). The data are reported separately by age group 
+because beneficiaries under 65 differ in numerous respects from the over -65 population and could have dif ferent health service needs 
+that are difficult to adjust for across geographic regions. 
+
+It is also important to note that the analytic files do include beneficiaries who died during the calendar year ( about 1.9 percent of the 
+study population) as long as they were not excluded for one of the reasons outlined above. 
+
+6 Note that in the FFS GV PUF, the number of MA beneficiaries reported is the population of beneficiaries who had Part A and Part B coverage and were 
+enrolled in an MA plan for the entire time they were eligible, as opposed to beneficiaries who were enrolled in MA at any point during the year. 
+7 For information on beneficiaries enrolled in a MA plan during the year, please see the Medicare Advantage Geographic Variation Public Use File. 
+https://data.cms.gov/summary-statistics-on-use-and-payments/medicare-geographic-comparisons/medicare-advantage-geographic-variation-national-state
+
+[PAGE 4]
+------------------------------------------------------------------------------------------------------------------------
+4 
+
+
+In sum, the study population for the FFS GV PUF is comprised of individuals who have both Part A and Part B coverage and are fully 
+enrolled in Medicare’s FFS program. Individuals who have both Part A and Part B coverage can enroll in either the FFS program or an 
+MA plan, and the share enrolled in MA plans has risen steadily in recent years. The FFS GV PUF therefore includes three sets of 
+enrollment figures – the total number of beneficiaries with Part A and Part B, the total number of MA beneficiaries, and the total number 
+of FFS beneficiaries (i.e., the study population) – to help users understand what share of the overall Medicare population for a given 
+geographic area is described in the file. 
+
+Table 2 provides some basic demographic information about the beneficiaries. 
+
+Table 1: Study Population in the FFS GV PUF 
+
+2014 2017 2020 2022 
+Count Percent Count Percent Count Percent Count Percent 
+Total Medicare 
+Beneficiaries 
+56,767,775 100% 61,183,227 100% 65,843,042 100% 68,192,489 100% 
+
+
+Beneficiaries with Parts A 
+and B 
+49,302,821 86.9% 53,301,510 87.1% 57,338,473 87.1% 59,319,668 87.0% 
+
+
+FFS Study Population 33,462,969 58.9% 33,725,800 55.1% 32,407,829 49.2% 29,639,955 43.5% 
+
+MA-Equivalent Study 
+Population 
+15,839,852 27.9% 19,575,710 32.0% 24,930,644 37.9% 29,679,713 43.5% 
+
+
+Both FFS and MA 
+Enrollment 
+1,431,022 2.5% 1,275,628 2.1% 1,400,223 2.1% 1,641,286 2.4% 
+
+Other (e.g., Part A Only 
+or Part B Only) 
+6,033,932 10.6% 6,606,089 10.8% 7,104,346 10.8% 7,231,535 10.6% 
+
+
+Beneficiaries in Study 
+Population that Died 
+during the Year 
+1,454,528 2.6% 1,436,516 2.3% 1,538,096 2.3% 1,305,031 1.9%
+
+[PAGE 5]
+------------------------------------------------------------------------------------------------------------------------
+5 
+
+Table 2: Demographics of Beneficiaries in the FFS GV PUF 
+
+2014 2017 2020 2022 
+Count Percent Count Percent Count Percent Count Percent 
+Total FFS Medicare 
+Beneficiaries 33,462,969 58.9% 33,725,800 55.1% 32,407,829 49.2% 29,639,955 43.5% 
+By age: 
+< 40 958,710 2.9% 866,544 2.6% 733,358 2.3% 599,607 2.0% 
+40 to 64 4,908,460 14.7% 4,475,273 13.3% 3,549,070 11.0% 2,659,586 9.0% 
+65 to 74 14,383,910 43.0% 15,273,128 45.3% 15,329,610 47.3% 13,914,963 46.9% 
+75 to 84 8,655,615 25.9% 8,750,344 25.9% 8,763,014 27.0% 8,789,676 29.7% 
+85 to 94 4,085,058 12.2% 3,850,376 11.4% 3,526,300 10.9% 3,214,194 10.8% 
+95+ 471,216 1.4% 510,135 1.5% 506,477 1.6% 461,929 1.6% 
+By gender: 
+
+Female 18,420,120 55.0% 18,471,323 54.8% 17,666,576 54.5% 16,182,730 54.6% 
+Male 15,042,849 45.0% 15,254,477 45.2% 14,741,253 45.5% 13,457,225 45.4% 
+By race/ ethnicity: 
+White, non- 
+Hispanic 26,747,500 79.9% 26,834,416 79.6% 25,784,252 79.6% 23,815,035 80.3% 
+African 
+American 3,249,540 9.7% 3,129,950 9.3% 2,730,695 8.4% 2,167,909 7.3% 
+Hispanic 1,953,326 5.8% 1,924,543 5.7% 1,895,341 5.8% 1,682,304 5.7% 
+
+Asian/ 
+Pacific 
+Islander 
+783,813 2.3% 852,817 2.5% 903,018 2.8% 873,348 2.9% 
+Other 728,790 2.2% 984,074 2.9% 1,094,523 3.4% 1,101,359 3.7% 
+Note: Percentages may not sum to totals because of rounding. 
+
+
+Note: Percentages may not sum to totals because of rounding.
+
+[PAGE 6]
+------------------------------------------------------------------------------------------------------------------------
+6 
+
+3. Risk Adjustment and Standardization of Spending 
+
+These data will help users analyze underlying differences in resource use among Medicare 
+beneficiaries in different parts of the country. These differences reflect variation in such factors 
+as physicians’ practice patterns and beneficiaries’ ability and willingness to obtain care. However, 
+Medicare spending and utilization can vary for reasons that are not attributable to practice patterns 
+or willingness to seek care, and two of those reasons are particularly important. First, Medicare 
+often pays different amounts for the same ser vice in different areas (for example, to reflect 
+variation in local wages or input prices). Second, the health of Medicare beneficiaries also varies 
+geographically, and those differences will clearly affect spending and utilization. 
+
+To account for those factors, the data have been modified from the CCW in two ways: 
+
+• The average risk score accounts for differences in beneficiaries’ health using the risk -
+adjustment model that CMS uses to pay MA plans. 
+• Medicare’s payment amounts are standardized to remove geographic differences in 
+payment rates for individual services as a source of variation. 
+
+
+Risk Adjustment 
+
+CMS developed a risk-adjustment model that uses HCCs (hierarchical condition categories) to 
+assign risk scores 8. Those scores estimate how beneficiaries’ FFS spending will compare to the 
+overall average for the entire Medicare population. The average risk score is set at 1.0; 
+beneficiaries with scores greater than that are expected to have above-average spending, and vice 
+versa. Risk scores are based on a beneficiary’s age and sex; whether the beneficiary is eligible for 
+Medicaid, first qualified for Medicare on the basis of disability, or lives in an institution (usually 
+a nursing home); and the beneficiary’s diagnoses from the previous year. The HCC model was 
+designed for risk adjustment on larger populations, such as the enrollees in an MA plan, and 
+generates more accurate results when used to compare groups of beneficiaries rather than 
+individuals. For more information on risk adjustment, please see: 
+
+https://www.cms.gov/medicare/payment/medicare-advantage-rates-statistics/risk-adjustment. 
+
+By standardizing payment amounts and adjusting for differences in beneficiaries’ health status, 
+these data provide a more accurate picture of how resource use varies for Medicare beneficiaries 
+across the country. 
+
+Standardization 
+
+Payment rates were standardized using the same methodology that CMS uses to calculate its 
+Medicare spending per beneficiary (MSPB) metric for advanced payment initiatives such as the 
+hospital value-based purchasing program. The purpose of payment standardization is to facilitate 
+the measurement and meaningful comparison of resource use for Medicare covered services across 
+geographic areas and provider types. Standardization excludes geographic differences in labor 
+
+8 https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/mc86c07.pdf
+
+[PAGE 7]
+------------------------------------------------------------------------------------------------------------------------
+7 
+
+costs and practice expenses, measured by hospital wage indexes and geographic practice cost 
+indexes. The FFS GV PUF uses the standardized Medicare payment amount, rather than the 
+standardized allowed amount, to examine Medicare’s various FFS payment systems and identif y 
+the factors that lead to different payment rates for the same service. 
+
+To facilitate comparisons, standardization transforms actual spending amounts into standardized 
+amounts that exclude these adjustments. The standardized payment methodology preserves 
+differences resulting from health care delivery choices such as service set ting, type of healthcare 
+professional providing the service, number of services provided in an encounter, and outlier cases. 
+
+For additional information on Medicare payment standardization by service type, please see the 
+documentation on CMS Price (Payment) Standardization: 
+
+https://resdac.org/articles/cms-price-payment-standardization-overview. 
+
+
+4. Payment Reduction 
+
+Medicare claims use Value Codes and Other Applied Indicator Codes to indicate adjustments that 
+were made to base payment amounts. These codes can cover a wide variety of adjustments, 
+including sequestration, the Physician Quality Reporting System (PQRS), and the electronic health 
+record incentive program. In most cases, the codes correspond to payment adjustments that were 
+applied to the base Medicare payment amount which resulted in a net reduc tion (or increase) in 
+Medicare’s payment for a given claim or service. However, some codes reflect reductions that 
+were applied to the base Medicare payment to the provider but were then included in separate 
+lump-sum payments to that provider’s Accountable Care Organization (ACO) or other population-
+based payment (PBP) program.9 These “split payment” arrangements reflect a change in payment 
+to a given provider for a specific service, but not a change in total Medicare spending. This means 
+that a portion of the actual Medicare payment amount was not paid to the provider, rather it was 
+distributed to the ACO or PBP program. 
+
+To indicate the amount that the ACO or PBP programs were paid for applicable services, two 
+variables have been added to the FFS GV PUF: 
+
+• Total Population Based Payment Reduction Costs (i.e., the total payment reform amount 
+that was not paid to the provider, but rather was paid to the ACO or PBP program) 
+
+• Total Population Based Payment Reduction Costs Per Capita 
+
+Addition of the payment reduction costs was applied to 2017 through 2022 data only. It is 
+important to note that for these years, actual payment is the sum of the provider payments and the 
+value code/ other applied payment s made to ACOs or PBP program. In cases where there is no 
+value code/ other applied payment, the provider payment amount is equal to the actual payment. 
+
+9 For Part B non-institutional claims, the ACO/PBP payment reduction amount is obtained for each line when the line 
+other applied indicator code = “L”. For Part A and Part B institutional claims, the ACO/PBP payment reduction 
+amount is obtained for claims when the value code = “Q1”.
+
+[PAGE 8]
+------------------------------------------------------------------------------------------------------------------------
+8 
+
+
+5. Utilization Measures 
+
+In addition to standardizing spending amounts, the FFS GV PUF includes a series of figures that 
+measure actual utilization for certain major types of Medicare-covered services. Claims-level data 
+from the CCW is used to calculate five metrics on all-cause hospital readmissions10 and emergency 
+room (ER) use: 
+
+• Total number of all-cause hospital readmissions 
+
+• All-cause hospital 30-day readmission rate (i.e., the number of readmissions divided by the 
+total number of admissions where the beneficiary was discharged alive) 
+
+• Total number of ER visits11 
+
+• Total number of ER visits per 1,000 beneficiaries 
+
+• The percent of beneficiaries who had an ER visit 
+
+
+There are also three different types of utilization measures for each geographic region: 
+
+• The number of times that the beneficiaries in our study population used a particular service, 
+expressed in terms of usage per 1,000 beneficiaries. These figures were calculated across 
+all beneficiaries in our study population, not just the beneficiaries who used that service. 
+The metrics that we used to measure utilization varied by the type of service and are 
+described in more detail below. 
+
+• The number of beneficiaries in our study population who used a particular service. 
+
+• The percentage of beneficiaries in our study population who used a particular service. 
+
+These utilization measures were generated for 17 major service categories, which are defined using 
+the claim type code and the six-digit Medicare provider number for Part A services, bill types for 
+outpatient services, claim type code and RBCS codes for carrier claims . The service categories 
+below are grouped by the units of measurement that we used for each service: 
+
+• The number of covered days of care12 (Part A services only) that the beneficiaries in our 
+study population used for a particular service, expre ssed in terms of usage per 1,000 
+beneficiaries. 
+
+10 Readmissions that took place within 30 days of the initial discharge. 
+11 For all metrics related to ER visits, both inpatient and outpatient visits are counted in the number of ER visits. 
+12 Calculations for all hospital-related and skilled nursing facility services were based only on Medicare-covered 
+days.
+
+[PAGE 9]
+------------------------------------------------------------------------------------------------------------------------
+9 
+
+o Inpatient hospital care ( including i npatient acute care hospitals paid under the 
+Prospective Payment System ( PPS), critical access hospitals ( CAHs), and other 
+inpatient hospital care13) 
+o Long-Term Care Hospital (LTCHs) 
+o Inpatient Rehabilitation Facilities (IRFs) 
+o Skilled Nursing Facilities (SNFs) 
+o Hospice 
+
+• The number of stays (Part A services only), 
+o We identify “stays” by ordering a beneficiary’s claims by date of service and then 
+looking for continuous, uninterrupted periods of service use within each service 
+type, except home health (Service Types are: Acute (i.e., CAH, IPPS), IPF, IRF, 
+LTCH, SNF, Hospice, and Other). A stay begins when a beneficiary starts using a 
+particular type of service and ends when we cannot find another claim that 
+continues an uninterrupted period of use for that particular type of service. For the 
+various inpatient hospita l settings (CAH, IPPS, IPF, IRF, LTC H), we group the 
+claims into the same stay if: a) a beneficiary has two claims for the same service 
+and the start date on the second claim comes before the end date (this is rare), or b) 
+in the same scenario, the second claim has the same end date as the fi rst claim. 
+IPPS and CAH claims are the only service types that we group together into a single 
+stay and the remaining stay counts (IRF and LTC H) are distinct. For SNF and 
+Hospice, we employ similar rules to group claim s into stays; however, SNF and 
+Hospice also allow for the second claim to be the day after the end date on the 
+earlier claim. 
+
+• The number of episodes that the beneficiaries in our study population used for a particular 
+service, expressed in terms of usage per 1,000 beneficiaries. 
+o Home Health 
+
+• The number of visits that the beneficiaries in our study population used for a particular 
+service, expressed in terms of usage per 1,000 beneficiaries. 
+o Home Health 
+o Hospital Outpatient Services 
+o Outpatient Dialysis Facilities 
+o Clinics (Federally Qualified Health Centers and Rural Health Centers) 
+
+• The number of events (Part B services only) that the beneficiaries in our study population 
+used for a particular service, expressed in terms of usage per 1,000 beneficiaries. We 
+identify “events” by using each type of service (based on the subcategory of the RBCS 
+ID14) that a beneficiary received on a given claim and given day. 
+o Ambulatory Surgery Centers (ASCs) 
+o Evaluation and Management Services 
+
+13 This category includes hospitals such as inpatient psychiatric facilities and cancer hospitals. 
+14 The RBCS ID is the Restructured BETOS Classification System ID, and more information can be found here: 
+https://data.cms.gov/provider-summary-by-type-of-service/provider-service-classifications/restructured-betos-
+classification-system.
+
+[PAGE 10]
+------------------------------------------------------------------------------------------------------------------------
+10 
+
+o Procedures 
+o Tests (laboratory and non-laboratory) 
+o Imaging 
+o Durable Medical Equipment (DME) 
+o Ambulance 
+o Treatments 
+
+Finally, the FFS GV PUF includes actual and standardized costs for “other services” that do not 
+fit into the previous categories, but not the counts of these services due to the various services 
+included in this field. 
+
+6. Quality Measures 
+
+The relationships between the quality, use, and cost of health care are important elements to 
+consider when analyzing the geographic variation in Medicare spending. For example, do areas 
+with above-average spending provide high -quality care, or is there l ittle correlation between the 
+two? 
+
+The statistics on hospital readmissions and ER visits discussed above are useful in examining some 
+issues related to the quality of care, such as continuity of care and access to primary care . The 
+FFS GV PUF has supplemented those metrics by adding dozens of other quality-related measures 
+to support additional analyses. The FFS GV PUF contains individual quality measures from the 
+Prevention Quality Indicators’ (PQIs) measure set, which is publicly available software developed 
+by AHRQ that uses administrative data to measure hospital admission rates for ambulatory care 
+sensitive conditions. Due to small cell sizes for many of the measures, PQIs are not present in the 
+county-level data. 
+
+See Appendix 1 for a complete list of the measures that we included in the data set. 
+
+Calculation of state-level scores for individual measures. The current PQI software contains a 
+total of 17 different measures. OEDA does not use nine of those measures, either because they 
+address issues that are not significant for the Medicare population (such as obstetric care ) or 
+because the sample size is too small. OEDA then took the remaining 8 measures, which are usually 
+reported for an individual zip code or provider; and aggregated them at the national and state level. 
+
+These measures were aggregated by downloading the PQI software from the AHRQ website and 
+applying it to inpatient claims. The software generates results by metropolitan statistical area 
+(MSA); those results were then converted to the zip code level, using procedures developed by 
+AHRQ. Finally, the results were added for all zip codes in each state. AHRQ’s software was used 
+to calculate each PQI measure separately for beneficiaries under age 65, those between the ages of 
+65 and 74 , and those who were 75 or older (with some exceptions if the measure specifications 
+dictated otherwise; see Appendix 1).
+
+[PAGE 11]
+------------------------------------------------------------------------------------------------------------------------
+11 
+
+Appendix 1 – Quality Measures Included in the FFS GV PUF 
+
+Prevention Quality Indicators (8 measures, calculated per 100,000 beneficiaries in the 
+specified age groups) 
+• Diabetes long-term complications admission rate (<65, 65-74, 75+) 
+• Chronic obstructive pulmonary disease or asthma in older adults admission rate (40-64, 
+65-74, 75+) 
+• Hypertension admission rate (<65, 65-74, 75+) 
+• Congestive heart failure admission rate (<65, 65-74, 75+) 
+• Bacterial pneumonia admission rate (<65, 65-74, 75+) 
+• Urinary tract infection admission rate (<65, 65-74, 75+) 
+• Asthma in younger adults (<40) 
+• Rate of lower extremity amputations among patients with diabetes (<65, 65-74, 75+) 
+
+Readmissions and Emergency Room Use (5 measures) 
+• Total number of hospital readmissions 
+• Hospital readmission rate 
+• Total number of emergency room visits 
+• Total number of emergency room visits per 1,000 beneficiaries 
+• Percentage of beneficiaries with an emergency room visit
+
+[PAGE 12]
+------------------------------------------------------------------------------------------------------------------------
+12 
+
+Appendix 2 – Restructured BETOS Classification System Categories and Subcategories 
+
+For data years 2014-2022, the FFS GV PUF includes data from the following 
+categories/subcategories of the Restructured BETOS Classification System: 
+
+Evaluation and Management (E&M) 
+• Behavioral Health Services 
+• Critical Care Services 
+• Ophthalmological Services 
+• Home Services 
+• Hospital Inpatient Services 
+• Nursing Facility Services 
+• Care Management/Coordination 
+• Observation Care Services 
+• Hospice/Palliation 
+• Emergency Department Services 
+• Office/Outpatient Services 
+• Miscellaneous 
+
+Procedures 
+• Anesthesia15 
+• Breast 
+• Cardiovascular 
+• Eye 
+• Digestive/Gastrointestinal 
+• Hematology 
+• Musculoskeletal 
+• Skin 
+• Vascular 
+• Other Organ Systems 
+
+Treatments 
+• Dialysis 
+• Chemotherapy 
+• Injections and Infusions (non-oncologic) 
+• Radiation Oncology 
+• Physical, Occupational and Speech Therapy 
+• Miscellaneous 
+
+
+
+
+
+
+15 Anesthesia is a separate category in the RBCS but is classified under Procedures in the FFS GV PUF.
+
+[PAGE 13]
+------------------------------------------------------------------------------------------------------------------------
+13 
+
+Imaging 
+• Computerized Tomography (CT) 
+• Magnetic Resonance (MR) 
+• Nuclear 
+• Ultrasound 
+• Standard X-Ray 
+• Miscellaneous 
+
+Tests 
+• Anatomic Pathology 
+• Cardiology 
+• General Laboratory 
+• Molecular Testing 
+• Neurologic 
+• Pulmonary Function 
+• Miscellaneous 
+
+Durable Medical Equipment (DME) 
+• Medical/Surgical Supplies 
+• Hospital Beds 
+• Oxygen and Supplies 
+• Wheelchairs 
+• Orthotic Devices (includes Prosthetics) 
+• Enteral and Parenteral Nutrition 
+• Drugs administered through DME 
+• Other DME 
+
+Other16 
+• Chiropractic Services 
+• Vision, Hearing and Speech 
+
+16 Other does not include ambulance services. Ambulance services are included as a separate grouping in the FFS 
+GV PUF and the values for ambulance services correspond to the values in the Ambulance subcategory under Other.

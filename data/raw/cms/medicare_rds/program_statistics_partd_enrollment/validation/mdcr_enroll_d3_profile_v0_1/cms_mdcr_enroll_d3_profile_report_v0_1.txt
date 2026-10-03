@@ -1,0 +1,21 @@
+CMS MDCR ENROLL D 3 STRUCTURAL PROFILER v0.1
+==============================================================================
+
+Scope: CY2015-CY2023
+ZIP/member observations: 19
+Parsed preview observations: 0
+D3 candidate members: 7
+D3 candidate years: 7
+
+CHECKS
+------------------------------------------------------------------------------
+PASS | CY2015-CY2023 source ZIPs profiled | 9/9 years
+PASS | All text members parsed | 0/0 text members
+PASS | At least one D3 candidate identified | 7 candidate members across 7 years
+PASS | No structural profiling errors | 0 errors
+
+BOUNDARY
+------------------------------------------------------------------------------
+D3 candidate identification is structural only. A filename or textual match does not establish the geographic semantics of Area of Residence.
+No RDS enrollment count has been used for Washington allocation.
+No RDS payment dollar has been assigned to Washington or any Washington county.

@@ -1,0 +1,6 @@
+check,status,detail
+MSSP PY2015-PY2024 source slots defined,PASS,10/10
+ACO ID crosswalk source slot defined,PASS,Historical identifier continuity required
+Washington applicability sources defined,PASS,"Organization, participant, and beneficiary geography kept distinct"
+Residual ACO model candidates defined,PASS,"AIM, Next Generation, Pioneer"
+All required source slots locally present,FAIL,0/17 required slots presently have local files

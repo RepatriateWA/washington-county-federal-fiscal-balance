@@ -1,0 +1,10 @@
+check,status,detail
+Three principal Medicare streams explicitly defined,PASS,"MEDICARE_PART_C, MEDICARE_PART_D, ORIGINAL_MEDICARE_FFS"
+All three pairwise overlap relationships evaluated,PASS,3/3 unique pairs
+Every pair has explicit accounting classification,PASS,3/3 classified
+No unresolved pair promoted to additive,PASS,0 unresolved pairs
+No additive pair has identified payment-dollar overlap,PASS,0 additivity/overlap conflicts
+Beneficiary overlap distinguished from payment overlap,PASS,2 pairs permit beneficiary overlap
+Each additive stream references prior certification,PASS,3/3 streams
+Known reconciliation/overlap sources remain non-additive,PASS,2/2 controls non-additive
+FFS + Part C + Part D payment-stream additivity,PASS,3/3 pairwise relationships ADDITIVE

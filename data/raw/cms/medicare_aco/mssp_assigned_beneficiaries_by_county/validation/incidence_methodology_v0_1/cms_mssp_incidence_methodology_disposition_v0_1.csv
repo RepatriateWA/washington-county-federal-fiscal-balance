@@ -1,0 +1,6 @@
+dimension,status,note
+beneficiary_geography_as_payment_incidence,NOT_DECIDED_BY_EXTRACTOR,Requires substantive review of extracted CMS evidence. Benchmark weighting is not presumed to equal settlement-dollar incidence.
+suppressed_geography,CMS_SUPPRESSED_UNRESOLVED,No suppressed values reconstructed or imputed.
+washington_payment_dollar_incidence,UNRESOLVED,No dollars allocated.
+county_payment_dollar_incidence,UNRESOLVED,No dollars allocated.
+principal_ledger,WITHHOLD_UNRESOLVED,No ledger inclusion authorized.

@@ -1,0 +1,55 @@
+====================================================================================================
+CMS WASHINGTON MFFS PERFORMANCE-PAYMENT EVIDENCE PROFILER v0.1
+====================================================================================================
+
+READ-ONLY source profiling.
+No database writes.
+No payment reconstruction.
+No inferred payments.
+No ledger inclusion.
+
+DOCUMENT PROFILE
+----------------------------------------------------------------------------------------------------
+DY1_FINAL_DY2_PRELIM     pages= 88  text_pages= 88  hits= 219  dollar_context= 105  PROFILED
+DY2_FINAL_DY3_PRELIM     pages=102  text_pages=102  hits= 259  dollar_context= 127  PROFILED
+DY3_FINAL_DY4_PRELIM     pages=119  text_pages=119  hits= 361  dollar_context= 184  PROFILED
+DY4_FINAL_DY5_PRELIM     pages=138  text_pages=138  hits= 418  dollar_context= 217  PROFILED
+DY5_FINAL_DY6_PRELIM     pages=157  text_pages=157  hits= 467  dollar_context= 254  PROFILED
+DY6_FINAL_DY7_PRELIM     pages=172  text_pages=172  hits= 490  dollar_context= 286  PROFILED
+DY7_FINAL_DY8_PRELIM     pages=194  text_pages=194  hits= 481  dollar_context= 305  PROFILED
+
+EVIDENCE TYPE COUNTS
+----------------------------------------------------------------------------------------------------
+ELIGIBLE                                 2258
+GROSS_SAVINGS                              15
+MEDICARE_SAVINGS                          318
+PAYMENT_TO_STATE                            7
+PERFORMANCE_PAYMENT                        14
+QUALITY                                    13
+SHARED_SAVINGS                             70
+
+PERFORMANCE-PAYMENT DOLLAR CONTEXTS
+----------------------------------------------------------------------------------------------------
+None found in the seven actuarial reports.
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | Seven certified source PDFs present | 7/7 present
+PASS | Seven certified source PDFs readable | 7/7 readable
+PASS | All seven documents yielded extractable text | 7/7
+PASS | Evidence vocabulary found in every report | 7/7 reports
+PASS | Performance-payment vocabulary found | 7/7 reports
+FAIL | At least one performance-payment context contains dollars | 0 evidence rows
+PASS | Profiler performs no inferred dollar reconstruction | Evidence extraction only
+
+====================================================================================================
+OVERALL EVIDENCE PROFILER v0.1: FAIL
+====================================================================================================
+
+Interpretive boundary:
+  PASS means the certified actuarial reports were successfully profiled for payment-related evidence.
+  Dollar strings are evidence candidates only.
+  No dollar value is classified as a Washington performance payment merely because it appears near payment terminology.
+  Savings are not treated as payments.
+  Preliminary observations are not substituted for final observations.
+  No payment is additive to Original Medicare/FFS without a separate overlap certification.

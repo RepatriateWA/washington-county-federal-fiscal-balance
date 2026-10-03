@@ -1,0 +1,11 @@
+check,status,detail
+RDS identified as federal subsidy payment stream,PASS,Federal subsidy payment based on allowable prescription-drug costs for qualifying covered retirees
+RDS payee/grain identified as plan sponsor,PASS,Qualified employer/union retiree prescription-drug plan sponsor
+RDS and Part D beneficiary eligibility distinguished,PASS,RDS qualifying retiree is Part D eligible but not enrolled in a Part D plan
+RDS evaluated against all three certified Medicare streams,PASS,3/3 pairwise relationships
+No RDS additive pair has identified payment-dollar overlap,PASS,0 conflicts
+RDS economically distinct from evaluated Medicare streams,PASS,3/3 pairwise relationships ADDITIVE
+Published RDS table lacks explicit geographic allocation field,PASS,Business name; Subsidy Paid/Total Paid; Retiree Count/ELGBL Count
+Sponsor/business name prohibited as geographic allocation,PASS,"Organization name is sponsor identity, not a certified beneficiary-residence geography"
+Washington allocation remains unresolved,PASS,UNRESOLVED / NOT_YET_WA_ALLOCATABLE
+No unresolved RDS geography promoted into Washington ledger,PASS,RDS is additive in principle but remains outside the Washington ledger until geographic incidence is resolved

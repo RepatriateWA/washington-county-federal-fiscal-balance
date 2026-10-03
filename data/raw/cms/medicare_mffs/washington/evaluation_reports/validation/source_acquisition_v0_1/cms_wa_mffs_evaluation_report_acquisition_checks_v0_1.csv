@@ -1,0 +1,8 @@
+check,status,detail
+At least one official CMS discovery page resolved,PASS,3/3 pages
+Five required evaluation-report slots defined,PASS,5 slots
+All five evaluation reports certified,PASS,5/5 reports
+All certified sources are PDFs,PASS,5/5
+All certified PDFs yielded text,PASS,5/5
+All internal identities match,PASS,5/5
+Five distinct SHA-256 hashes,PASS,5/5 unique

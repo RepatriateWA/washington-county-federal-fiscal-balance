@@ -1,0 +1,111 @@
+CMS MSSP BENEFICIARY-GEOGRAPHY INCIDENCE METHODOLOGY EVIDENCE v0.1
+================================================================================
+
+QUESTION
+Does CMS methodology support assigned-beneficiary county/person-year
+geography as an economic geographic-incidence basis for MSSP settlement
+dollars such as positive EarnSaveLoss?
+
+BOUNDARY
+Evidence extraction only. PASS means the preserved documentation was
+authenticated, parsed, and searched successfully. PASS does NOT answer
+the incidence question.
+
+NO-ASSUMPTION RULE
+A CMS method that uses county/person-year weighting for regional benchmark
+or expenditure calculations is not automatically treated as a rule for
+allocating an ACO's settlement payment geographically.
+
+NO-SUPPRESSION-RECONSTRUCTION RULE
+CMS '*' values remain unresolved. No protected cell is zeroed, bounded,
+reconstructed, or imputed.
+
+Source archive: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\Number of Accountable Care Organization Assigned Beneficiaries by County.zip
+SHA-256: 2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+Bytes: 8,450,964
+PDF members: 10
+Unique PDF byte streams: 3
+Evidence windows: 186
+Settlement/payment search windows: 12
+Allocation/incidence search windows: 0
+
+SEARCH ACCOUNTING
+county_residence_geography | county of residence | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+county_residence_geography | county | FOUND | windows=65 | documents=3
+county_residence_geography | counties | FOUND | windows=4 | documents=2
+county_residence_geography | residence | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+county_residence_geography | resident | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+county_residence_geography | service area | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+county_residence_geography | regional service area | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+assigned_beneficiary_measure | assigned beneficiary | FOUND | windows=4 | documents=3
+assigned_beneficiary_measure | assigned beneficiaries | FOUND | windows=21 | documents=3
+assigned_beneficiary_measure | person-year | FOUND | windows=4 | documents=3
+assigned_beneficiary_measure | person year | FOUND | windows=6 | documents=3
+assigned_beneficiary_measure | person-years | FOUND | windows=1 | documents=1
+assigned_beneficiary_measure | person years | FOUND | windows=1 | documents=1
+assigned_beneficiary_measure | Tot_AB_Psn_Yrs | FOUND | windows=2 | documents=2
+assigned_beneficiary_measure | Tot_AB | FOUND | windows=4 | documents=2
+benchmark_weighting | benchmark | FOUND | windows=4 | documents=1
+benchmark_weighting | regional benchmark | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+benchmark_weighting | regional adjustment | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+benchmark_weighting | regional expenditures | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+benchmark_weighting | weighted | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+benchmark_weighting | weighting | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+benchmark_weighting | weighted average | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+benchmark_weighting | person-year weighted | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+benchmark_weighting | person year weighted | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+ffs_expenditure_basis | fee-for-service | FOUND | windows=1 | documents=1
+ffs_expenditure_basis | FFS | FOUND | windows=2 | documents=1
+ffs_expenditure_basis | expenditure | FOUND | windows=2 | documents=1
+ffs_expenditure_basis | expenditures | FOUND | windows=2 | documents=1
+ffs_expenditure_basis | Parts A and B | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+ffs_expenditure_basis | Parts A/B | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+ffs_expenditure_basis | Medicare Parts A and B | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+ffs_expenditure_basis | per capita | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+settlement_payment_link | shared savings | FOUND | windows=12 | documents=3
+settlement_payment_link | shared losses | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+settlement_payment_link | performance payment | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+settlement_payment_link | EarnSaveLoss | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+settlement_payment_link | settlement | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+settlement_payment_link | financial reconciliation | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+settlement_payment_link | payment | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+settlement_payment_link | payments | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | allocate | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | allocated | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | allocation | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | apportion | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | apportioned | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | attributable | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | attributed | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | incidence | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | distributed | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+allocation_incidence_language | distribution | NOT_FOUND_IN_EXTRACTED_TEXT | windows=0 | documents=0
+suppression_boundary | suppressed | FOUND | windows=27 | documents=3
+suppression_boundary | suppression | FOUND | windows=18 | documents=3
+suppression_boundary | privacy | FOUND | windows=3 | documents=3
+suppression_boundary | HIPAA | FOUND | windows=3 | documents=3
+
+CHECKS
+SOURCE-01: PASS - archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02: PASS - archive bytes=8,450,964 expected=8,450,964
+DOC-01: PASS - PDF members=10 expected=10
+DOC-02: PASS - one methodology and one data dictionary present for every 2020-2024 period
+PARSE-01: PASS - PDF page parse errors=0
+PARSE-02: PASS - all unique PDFs yielded nonempty extracted text
+SEARCH-01: PASS - targeted search terms accounted=54
+EVIDENCE-01: PASS - methodology produced county/geography evidence
+EVIDENCE-02: PASS - methodology produced assigned-beneficiary/person-year evidence
+EVIDENCE-03: PASS - methodology produced benchmark/weighting evidence
+EVIDENCE-04: PASS - methodology produced FFS/expenditure evidence
+
+INTERPRETIVE RULE
+NOT_FOUND_IN_EXTRACTED_TEXT is descriptive only and is not evidence that
+a rule, mechanism, or relationship does not exist.
+
+DISPOSITION
+beneficiary_geography_as_payment_incidence = NOT_DECIDED_BY_EXTRACTOR
+washington_payment_dollar_incidence = UNRESOLVED
+county_payment_dollar_incidence = UNRESOLVED
+principal_ledger = WITHHOLD_UNRESOLVED
+
+OVERALL INCIDENCE METHODOLOGY EVIDENCE v0.1: PASS

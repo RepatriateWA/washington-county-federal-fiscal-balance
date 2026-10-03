@@ -1,0 +1,9 @@
+check,status,detail
+All 11 financial periods resolved,PASS,11/11 financial periods
+Exactly one governing dictionary resolved per period,PASS,11/11 periods have governing dictionaries
+Target-field source presence reproduces certified v0.1 structure,PASS,0 mismatches
+Every observed target source field has governing dictionary evidence,PASS,0 observed source-field/documentation gaps
+GenSaveLoss source+documentation coverage all 11 periods,PASS,11/11
+EarnSaveLoss source+documentation coverage all 11 periods,PASS,11/11
+Observed advance/AIM/recoupment target fields have documentation,PASS,32/32
+PY2024 dictionary identity established from document text,PASS,5B0FED033AFA5767A988BAB1DF411CF462F94CFA5A7F348C9BD747E64875B9F8

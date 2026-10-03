@@ -1,0 +1,32 @@
+====================================================================================================
+CMS WASHINGTON MFFS EVALUATION REPORT ACQUISITION v0.1
+====================================================================================================
+
+SOURCE UNIVERSE
+----------------------------------------------------------------------------------------------------
+EVAL_01_FIRST        CERTIFIED_SOURCE   ea7dc1f1311a494d
+EVAL_02_SECOND       CERTIFIED_SOURCE   51972ed3cd2c51ba
+EVAL_03_THIRD        CERTIFIED_SOURCE   695a69d5e0057634
+EVAL_04_FOURTH       CERTIFIED_SOURCE   8c4f4bd787cb52b5
+EVAL_05_FIFTH        CERTIFIED_SOURCE   75e26d6eb75faf76
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | At least one official CMS discovery page resolved | 3/3 pages
+PASS | Five required evaluation-report slots defined | 5 slots
+PASS | All five evaluation reports certified | 5/5 reports
+PASS | All certified sources are PDFs | 5/5
+PASS | All certified PDFs yielded text | 5/5
+PASS | All internal identities match | 5/5
+PASS | Five distinct SHA-256 hashes | 5/5 unique
+
+====================================================================================================
+OVERALL EVALUATION REPORT ACQUISITION v0.1: PASS
+====================================================================================================
+
+Boundary:
+  Acquisition establishes preservation and identity of the five official CMS Washington evaluation reports.
+  It does NOT establish a performance-payment dollar series.
+  It does NOT distinguish determined payments from cash remittances.
+  It does NOT establish additivity to Original Medicare/FFS.
+  It does NOT authorize ledger inclusion.

@@ -1,0 +1,22 @@
+check_code,status,detail
+COUNTY-PERIODS,PASS,"periods=['2016', '2017', '2018', '2019', '2019A', '2020', '2021', '2022', '2023', '2024']"
+2016-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv; ACO column=ACO_Num
+2016-ACO-LINK,PASS,county=432; financial=432; intersection=432; county_only=0; financial_only=0
+2017-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv; ACO column=ACO_Num
+2017-ACO-LINK,PASS,county=472; financial=472; intersection=472; county_only=0; financial_only=0
+2018-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv; ACO column=ACO_ID
+2018-ACO-LINK,PASS,county=548; financial=548; intersection=548; county_only=0; financial_only=0
+2019-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv; ACO column=ACO_ID
+2019-ACO-LINK,PASS,county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2019A-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv; ACO column=ACO_ID
+2019A-ACO-LINK,PASS,county=205; financial=205; intersection=205; county_only=0; financial_only=0
+2020-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv; ACO column=ACO_ID
+2020-ACO-LINK,PASS,county=513; financial=513; intersection=513; county_only=0; financial_only=0
+2021-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv; ACO column=ACO_ID
+2021-ACO-LINK,PASS,county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2022-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv; ACO column=ACO_ID
+2022-ACO-LINK,PASS,county=482; financial=482; intersection=482; county_only=0; financial_only=0
+2023-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv; ACO column=ACO_ID
+2023-ACO-LINK,PASS,county=453; financial=453; intersection=453; county_only=0; financial_only=0
+2024-FIN-ACO-COL,PASS,financial member=Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv; ACO column=ACO_ID
+2024-ACO-LINK,PASS,county=476; financial=476; intersection=476; county_only=0; financial_only=0

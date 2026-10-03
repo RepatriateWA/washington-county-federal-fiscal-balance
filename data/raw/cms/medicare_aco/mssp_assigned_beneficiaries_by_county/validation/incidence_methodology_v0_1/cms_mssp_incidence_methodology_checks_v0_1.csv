@@ -1,0 +1,12 @@
+check_id,status,detail
+SOURCE-01,PASS,archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02,PASS,"archive bytes=8,450,964 expected=8,450,964"
+DOC-01,PASS,PDF members=10 expected=10
+DOC-02,PASS,one methodology and one data dictionary present for every 2020-2024 period
+PARSE-01,PASS,PDF page parse errors=0
+PARSE-02,PASS,all unique PDFs yielded nonempty extracted text
+SEARCH-01,PASS,targeted search terms accounted=54
+EVIDENCE-01,PASS,methodology produced county/geography evidence
+EVIDENCE-02,PASS,methodology produced assigned-beneficiary/person-year evidence
+EVIDENCE-03,PASS,methodology produced benchmark/weighting evidence
+EVIDENCE-04,PASS,methodology produced FFS/expenditure evidence

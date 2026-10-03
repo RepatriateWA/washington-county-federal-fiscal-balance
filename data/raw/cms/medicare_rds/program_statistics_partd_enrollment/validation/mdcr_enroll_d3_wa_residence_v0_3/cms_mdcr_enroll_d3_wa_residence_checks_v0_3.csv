@@ -1,0 +1,14 @@
+check,status,detail
+CY2015-CY2023 source ZIPs resolved,PASS,9/9 years
+Exactly one D3 data worksheet per year,PASS,9/9 years
+D3 title says by Area of Residence,PASS,9/9 years
+Area of Residence column present,PASS,9/9 years
+RDS No Part D Plan column present,PASS,9/9 years
+Exactly one Washington residence row per year,PASS,9/9 years
+Washington RDS enrollment numeric every year,PASS,9/9 years
+United States RDS control numeric every year,PASS,9/9 years
+All Areas RDS control numeric every year,PASS,9/9 years
+Published geography vocabulary is compact,PASS,76 distinct residence labels
+No county-labelled residence observations,PASS,0 county-labelled areas
+Washington appears as residence geography,PASS,Washington
+No certification errors,PASS,0 errors

@@ -1,0 +1,71 @@
+============================================================================================================
+CMS MSSP SETTLEMENT SEMANTICS PROFILE v0.1
+============================================================================================================
+
+BOUNDARY
+------------------------------------------------------------------------------------------------------------
+READ-ONLY extraction from the already-preserved CMS MSSP documentation package.
+No accounting formula inferred.
+No additivity conclusion.
+No advance/AIM/AIP netting.
+No Washington payment-dollar incidence inferred.
+No database writes.
+No ledger inclusion.
+
+DOCUMENTATION INVENTORY
+------------------------------------------------------------------------------------------------------------
+PDF members: 22
+Unique PDF byte streams: 7
+Unique data-dictionary byte streams: 6
+Documentation ZIP SHA-256: 054E06866C7EB4D1EF1A02580B02FBB4639999C9B2ED93AFC4FD593CDA1B8703
+
+PERIOD SEMANTICS MATRIX
+------------------------------------------------------------------------------------------------------------
+2015   | dictionary_docs=2 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2016   | dictionary_docs=2 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2017   | dictionary_docs=2 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2018   | dictionary_docs=2 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2019   | dictionary_docs=2 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2019A  | dictionary_docs=2 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2020   | dictionary_docs=2 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2021   | dictionary_docs=1 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=Adv_Pay,Adv_Pay_Amt,Adv_Pay_Recoup,AIM | recoup_term=YES | sequestration=YES | payment_limit=YES
+2022   | dictionary_docs=1 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=NONE | recoup_term=NO | sequestration=YES | payment_limit=YES
+2023   | dictionary_docs=1 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=NONE | recoup_term=NO | sequestration=YES | payment_limit=YES
+2024   | dictionary_docs=1 | EarnSaveLoss=YES | GenSaveLoss=YES | advance_fields=AIP,AIPBalance,AIPRecoup,AIPOwe | recoup_term=YES | sequestration=YES | payment_limit=YES
+
+SEARCH-EVIDENCE COUNTS
+------------------------------------------------------------------------------------------------------------
+AIM                              732
+AIP                               20
+Adv_Pay                           24
+EarnSaveLoss                      11
+GenSaveLoss                       11
+advance payment                   96
+advance payments                  19
+payment limit                     28
+recoup                            84
+sequestration                     22
+shared losses                     34
+shared savings                   412
+
+CHECKS
+------------------------------------------------------------------------------------------------------------
+PASS | Preserved MSSP documentation package exists | data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+PASS | All documentation PDFs parse | 22 PDFs parsed; 0 failures
+PASS | Documentation package reproduces 22 PDF members | 22/22
+PASS | Documentation package reproduces 7 unique PDF byte streams | 7/7
+PASS | All 11 performance periods have dictionary evidence from archive placement | 11/11 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+PASS | EarnSaveLoss documented across all 11 periods | 11/11
+PASS | GenSaveLoss documented across all 11 periods | 11/11
+PASS | Settlement-semantic evidence extracted | 1493 evidence windows | AIM=732; AIP=20; Adv_Pay=24; EarnSaveLoss=11; GenSaveLoss=11; advance payment=96; advance payments=19; payment limit=28; recoup=84; sequestration=22; shared losses=34; shared savings=412
+
+============================================================================================================
+OVERALL CMS MSSP SETTLEMENT SEMANTICS PROFILE v0.1: PASS
+============================================================================================================
+
+Interpretive boundary:
+  PASS means the preserved CMS documentation can support the next semantic review.
+  PASS does not establish an MSSP settlement accounting identity.
+  Field presence does not imply that two fields may be added, subtracted, or netted.
+  Extracted context remains documentary evidence, not an accounting conclusion.
+  No source is additive by default.

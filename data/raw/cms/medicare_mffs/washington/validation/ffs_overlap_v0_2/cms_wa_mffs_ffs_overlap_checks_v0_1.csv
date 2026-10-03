@@ -1,0 +1,15 @@
+check,status,detail
+Prior Original Medicare/FFS v0.2 certification evidence present,PASS,Validation artifact(s) found
+Prior MFFS evaluation-payment evidence present,PASS,75 evidence rows
+CMS evidence identifies performance payments to Washington State,PASS,Direct payment-to-State language found
+Gross Medicare savings evidence present,PASS,Gross savings language found
+Performance payments separately enter gross-to-net accounting,PASS,Subtraction/net-savings language found
+Issuance evidence remains distinct from recognized payment amount,PASS,Issued-payment language found
+Pending status remains explicitly represented,PASS,Pending-payment language found
+MFFS payment basis is distinct from beneficiary service payment,PASS,Retrospective savings/performance payment versus covered-service payment
+MFFS performance payment is not classified as a split claim payment,PASS,Separate retrospective state payment; not provider claim/PBP reduction restoration
+Economic overlap classification resolved,PASS,NO_PAYMENT_DOLLAR_OVERLAP
+Economic additivity classification resolved,PASS,ADDITIVE_IN_PRINCIPLE
+Annual federal fiscal-year cash timing remains unresolved,PASS,UNRESOLVED
+County payment-dollar incidence remains unresolved,PASS,UNRESOLVED
+Unresolved timing/geography not promoted into principal ledger,PASS,WITHHOLD_UNRESOLVED

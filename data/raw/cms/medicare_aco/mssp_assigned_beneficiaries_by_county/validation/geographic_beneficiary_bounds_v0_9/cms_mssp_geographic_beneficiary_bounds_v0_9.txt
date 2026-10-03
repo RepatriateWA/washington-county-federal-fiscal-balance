@@ -1,0 +1,234 @@
+CMS MSSP GEOGRAPHIC BENEFICIARY BOUNDS PROFILE v0.9
+================================================================================================================
+Read-only. No imputation, dollar allocation, DB writes, or ledger decision.
+BOUNDING RULE: '*' is NOT assumed to mean 1-10 in every cell.
+Complementary suppression prevents a universal 1-10 interpretation of '*'.
+2016 blanks remain unresolved historical encoding and are bounded separately.
+2019 and 2019A remain separate participation periods.
+
+COUNTY-PERIODS: PASS - periods=['2016', '2017', '2018', '2019', '2019A', '2020', '2021', '2022', '2023', '2024']
+Financial ZIP: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+
+2016 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2016_01_01.csv
+2016-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2016-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv; ACO=ACO_Num; N_AB=N_AB
+2016-ACO-LINK: PASS - county=432; financial=432; intersection=432; county_only=0; financial_only=0
+2016-N-AB-NUMERIC: PASS - numeric N_AB=432/432
+2016-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2016-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv
+ACO universe: 432
+N_AB total: 7,884,058
+Visible county Tot_AB total: 7,715,398
+Aggregate hidden residual: 168,660
+Visible Washington Tot_AB: 130,558
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 344
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 88
+Aggregate WA beneficiary bound: 130,558.000 to 280,105.000
+Aggregate WA share bound: 1.656% to 3.553%
+
+2017 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2017_01_01.csv
+2017-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2017-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv; ACO=ACO_Num; N_AB=N_AB
+2017-ACO-LINK: PASS - county=472; financial=472; intersection=472; county_only=0; financial_only=0
+2017-N-AB-NUMERIC: PASS - numeric N_AB=472/472
+2017-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2017-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv
+ACO universe: 472
+N_AB total: 8,992,886
+Visible county Tot_AB total: 8,802,732
+Aggregate hidden residual: 190,154
+Visible Washington Tot_AB: 136,957
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 369
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 103
+Aggregate WA beneficiary bound: 136,957.000 to 305,147.000
+Aggregate WA share bound: 1.523% to 3.393%
+
+2018 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2018_01_01.csv
+2018-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2018-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv; ACO=ACO_ID; N_AB=N_AB
+2018-ACO-LINK: PASS - county=548; financial=548; intersection=548; county_only=0; financial_only=0
+2018-N-AB-NUMERIC: PASS - numeric N_AB=548/548
+2018-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2018-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv
+ACO universe: 548
+N_AB total: 10,096,874
+Visible county Tot_AB total: 9,870,117
+Aggregate hidden residual: 226,757
+Visible Washington Tot_AB: 184,810
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 463
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 85
+Aggregate WA beneficiary bound: 184,810.000 to 392,754.000
+Aggregate WA share bound: 1.830% to 3.890%
+
+2019 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County 2019.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2019/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2019_01_01.csv
+2019-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2019-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv; ACO=ACO_ID; N_AB=N_AB
+2019-ACO-LINK: PASS - county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2019-N-AB-NUMERIC: PASS - numeric N_AB=475/475
+2019-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2019-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv
+ACO universe: 475
+N_AB total: 9,997,705
+Visible county Tot_AB total: 9,783,562
+Aggregate hidden residual: 214,143
+Visible Washington Tot_AB: 201,818
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 402
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 73
+Aggregate WA beneficiary bound: 201,818.000 to 399,258.000
+Aggregate WA share bound: 2.019% to 3.993%
+
+2019A BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County 2019.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2019_off-cycle_1/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2019_07_01.csv
+2019A-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2019A-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv; ACO=ACO_ID; N_AB=N_AB
+2019A-ACO-LINK: PASS - county=205; financial=205; intersection=205; county_only=0; financial_only=0
+2019A-N-AB-NUMERIC: PASS - numeric N_AB=205/205
+2019A-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2019A-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+ACO universe: 205
+N_AB total: 4,087,828
+Visible county Tot_AB total: 3,987,594
+Aggregate hidden residual: 100,234
+Visible Washington Tot_AB: 66,363
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 167
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 38
+Aggregate WA beneficiary bound: 66,363.000 to 157,970.000
+Aggregate WA share bound: 1.623% to 3.864%
+
+2020 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2020_01_01.csv
+2020-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2020-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv; ACO=ACO_ID; N_AB=N_AB
+2020-ACO-LINK: PASS - county=513; financial=513; intersection=513; county_only=0; financial_only=0
+2020-N-AB-NUMERIC: PASS - numeric N_AB=513/513
+2020-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2020-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv
+ACO universe: 513
+N_AB total: 10,614,589
+Visible county Tot_AB total: 10,375,157
+Aggregate hidden residual: 239,432
+Visible Washington Tot_AB: 198,205
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 438
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 75
+Aggregate WA beneficiary bound: 198,205.000 to 421,681.000
+Aggregate WA share bound: 1.867% to 3.973%
+
+2021 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2021/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2021_01_01.csv
+2021-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2021-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv; ACO=ACO_ID; N_AB=N_AB
+2021-ACO-LINK: PASS - county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2021-N-AB-NUMERIC: PASS - numeric N_AB=475/475
+2021-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2021-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv
+ACO universe: 475
+N_AB total: 10,124,325
+Visible county Tot_AB total: 9,894,008
+Aggregate hidden residual: 230,317
+Visible Washington Tot_AB: 203,358
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 405
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 70
+Aggregate WA beneficiary bound: 203,358.000 to 418,183.000
+Aggregate WA share bound: 2.009% to 4.130%
+
+2022 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2022/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2022_01_01.csv
+2022-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2022-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv; ACO=ACO_ID; N_AB=N_AB
+2022-ACO-LINK: PASS - county=482; financial=482; intersection=482; county_only=0; financial_only=0
+2022-N-AB-NUMERIC: PASS - numeric N_AB=482/482
+2022-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2022-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv
+ACO universe: 482
+N_AB total: 10,418,297
+Visible county Tot_AB total: 10,176,952
+Aggregate hidden residual: 241,345
+Visible Washington Tot_AB: 272,549
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 415
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 67
+Aggregate WA beneficiary bound: 272,549.000 to 498,172.000
+Aggregate WA share bound: 2.616% to 4.782%
+
+2023 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2023_01_01.csv
+2023-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2023-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv; ACO=ACO_ID; N_AB=N_AB
+2023-ACO-LINK: PASS - county=453; financial=453; intersection=453; county_only=0; financial_only=0
+2023-N-AB-NUMERIC: PASS - numeric N_AB=453/453
+2023-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2023-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv
+ACO universe: 453
+N_AB total: 10,235,411
+Visible county Tot_AB total: 10,004,736
+Aggregate hidden residual: 230,675
+Visible Washington Tot_AB: 278,357
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 380
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 73
+Aggregate WA beneficiary bound: 278,357.000 to 491,907.000
+Aggregate WA share bound: 2.720% to 4.806%
+
+2024 BENEFICIARY BOUNDS
+----------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2024/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2024_01_01.csv
+2024-COUNTY-LEXICAL: PASS - unexpected Tot_AB states=0
+2024-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv; ACO=ACO_ID; N_AB=N_AB
+2024-ACO-LINK: PASS - county=476; financial=476; intersection=476; county_only=0; financial_only=0
+2024-N-AB-NUMERIC: PASS - numeric N_AB=476/476
+2024-RESIDUAL-NONNEGATIVE: PASS - negative residual ACOs=0
+2024-RESIDUAL-EXPLAINED-BY-HIDDEN-CELLS: PASS - positive residual with no classified hidden cell=0
+Financial member: Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv
+ACO universe: 476
+N_AB total: 10,326,340
+Visible county Tot_AB total: 10,088,064
+Aggregate hidden residual: 238,276
+Visible Washington Tot_AB: 301,731
+Bound classes:
+  INTERVAL_BOTH_WA_AND_NONWA_HIDDEN: 409
+  POINT_IDENTIFIED_NO_WA_HIDDEN_CELLS: 67
+Aggregate WA beneficiary bound: 301,731.000 to 524,712.000
+Aggregate WA share bound: 2.922% to 5.081%
+
+INTERPRETIVE BOUNDARY
+----------------------------------------------------------------------------------------------------------------
+The interval is an assumption-minimal feasibility bound, not a point estimate.
+No '*' cell is assigned 1-10 solely because it is suppressed.
+Complementary-suppressed cells are not presumed to satisfy the primary-suppression threshold.
+2016 blank cells remain unresolved and are not relabeled as suppression.
+N_AB residuals are not assigned to individual counties.
+No visible-WA share or interval midpoint is authorized as a financial allocation weight.
+No EarnSaveLoss or other financial amount was allocated.
+
+OVERALL PROFILE EXECUTION v0.9: PASS
+Checks: 61 total; 0 failed
+Evidence: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\validation\geographic_beneficiary_bounds_v0_9

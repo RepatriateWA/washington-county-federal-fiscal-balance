@@ -1,0 +1,214 @@
+CMS MSSP EARNSAVELOSS GEOGRAPHIC ALLOCATION SENSITIVITY v1.1
+======================================================================================================================
+Read-only. Financial-field certification + sensitivity analysis; NOT ledger adoption.
+Certified beneficiary bounds remain controlling; modeled scenario is not an estimate.
+2015 excluded. 2016 retained with unresolved historical-encoding caveat.
+No suppressed county cell is individually imputed. No DB writes.
+
+PERIODS: PASS - periods=['2016', '2017', '2018', '2019', '2019A', '2020', '2021', '2022', '2023', '2024']
+Financial ZIP: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+
+2016 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2016-COUNTY-SCHEMA: PASS - ACO=ACO ID; Tot_AB=Total assigned beneficiaries
+2016-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv; ACO=ACO_Num; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2016-ACO-LINK: PASS - county=432; financial=432; intersection=432; county_only=0; financial_only=0
+2016-NAB-NUMERIC: PASS - numeric=432/432; blank=0; other=0
+2016-EARNSAVELOSS-NUMERIC: PASS - numeric=432/432; blank=0; star=0; dot=0; other=0
+2016-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2016-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv
+EarnSaveLoss inventory: positive=134; negative=4; zero=294; total=$691,275,105.00
+Absolute EarnSaveLoss magnitude: $709,940,719.00
+Washington certified dollar interval: $1,190,732.53 to $20,344,500.55
+Washington certified interval width: $19,153,768.02
+Width / absolute EarnSaveLoss magnitude: 2.698%
+Width / |net EarnSaveLoss total|: 2.771%
+Modeled scenario coverage: 432/432 ACOs
+Modeled scenario dollars: $1,451,666.91
+2016 STATUS: UNRESOLVED_HISTORICAL_ENCODING - sensitivity retained but not promoted to certified allocation.
+
+2017 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2017-COUNTY-SCHEMA: PASS - ACO=ACO ID; Tot_AB=Total assigned beneficiaries	
+2017-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv; ACO=ACO_Num; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2017-ACO-LINK: PASS - county=472; financial=472; intersection=472; county_only=0; financial_only=0
+2017-NAB-NUMERIC: PASS - numeric=472/472; blank=0; other=0
+2017-EARNSAVELOSS-NUMERIC: PASS - numeric=472/472; blank=0; star=0; dot=0; other=0
+2017-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2017-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv
+EarnSaveLoss inventory: positive=159; negative=11; zero=302; total=$780,803,976.00
+Absolute EarnSaveLoss magnitude: $818,037,148.00
+Washington certified dollar interval: $8,967,943.75 to $30,549,458.45
+Washington certified interval width: $21,581,514.69
+Width / absolute EarnSaveLoss magnitude: 2.638%
+Width / |net EarnSaveLoss total|: 2.764%
+Modeled scenario coverage: 472/472 ACOs
+Modeled scenario dollars: $9,653,089.17
+
+2018 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2018-COUNTY-SCHEMA: PASS - ACO=ACO ID; Tot_AB=Total assigned beneficiaries
+2018-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2018-ACO-LINK: PASS - county=548; financial=548; intersection=548; county_only=0; financial_only=0
+2018-NAB-NUMERIC: PASS - numeric=548/548; blank=0; other=0
+2018-EARNSAVELOSS-NUMERIC: PASS - numeric=548/548; blank=0; star=0; dot=0; other=0
+2018-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2018-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv
+EarnSaveLoss inventory: positive=205; negative=11; zero=332; total=$966,394,386.00
+Absolute EarnSaveLoss magnitude: $1,001,564,968.00
+Washington certified dollar interval: $13,887,908.61 to $39,650,439.96
+Washington certified interval width: $25,762,531.35
+Width / absolute EarnSaveLoss magnitude: 2.572%
+Width / |net EarnSaveLoss total|: 2.666%
+Modeled scenario coverage: 548/548 ACOs
+Modeled scenario dollars: $14,773,574.63
+
+2019 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2019-COUNTY-SCHEMA: PASS - ACO=aco_id; Tot_AB=tot_ab
+2019-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2019-ACO-LINK: PASS - county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2019-NAB-NUMERIC: PASS - numeric=475/475; blank=0; other=0
+2019-EARNSAVELOSS-NUMERIC: PASS - numeric=475/475; blank=0; star=0; dot=0; other=0
+2019-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2019-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv
+EarnSaveLoss inventory: positive=239; negative=6; zero=230; total=$1,117,881,599.00
+Absolute EarnSaveLoss magnitude: $1,150,156,565.00
+Washington certified dollar interval: $29,273,804.41 to $55,793,686.88
+Washington certified interval width: $26,519,882.47
+Width / absolute EarnSaveLoss magnitude: 2.306%
+Width / |net EarnSaveLoss total|: 2.372%
+Modeled scenario coverage: 475/475 ACOs
+Modeled scenario dollars: $30,240,495.21
+
+2019A FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2019A-COUNTY-SCHEMA: PASS - ACO=aco_id; Tot_AB=tot_ab
+2019A-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2019A-ACO-LINK: PASS - county=205; financial=205; intersection=205; county_only=0; financial_only=0
+2019A-NAB-NUMERIC: PASS - numeric=205/205; blank=0; other=0
+2019A-EARNSAVELOSS-NUMERIC: PASS - numeric=205/205; blank=0; star=0; dot=0; other=0
+2019A-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2019A-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+EarnSaveLoss inventory: positive=116; negative=2; zero=87; total=$336,281,617.00
+Absolute EarnSaveLoss magnitude: $338,014,321.00
+Washington certified dollar interval: $4,968,704.49 to $14,690,289.24
+Washington certified interval width: $9,721,584.75
+Width / absolute EarnSaveLoss magnitude: 2.876%
+Width / |net EarnSaveLoss total|: 2.891%
+Modeled scenario coverage: 205/205 ACOs
+Modeled scenario dollars: $5,093,649.45
+
+2020 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2020-COUNTY-SCHEMA: PASS - ACO=ACO_ID; Tot_AB=Tot_AB
+2020-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2020-ACO-LINK: PASS - county=513; financial=513; intersection=513; county_only=0; financial_only=0
+2020-NAB-NUMERIC: PASS - numeric=513/513; blank=0; other=0
+2020-EARNSAVELOSS-NUMERIC: PASS - numeric=513/513; blank=0; star=0; dot=0; other=0
+2020-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2020-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv
+EarnSaveLoss inventory: positive=345; negative=0; zero=168; total=$2,283,724,790.00
+Absolute EarnSaveLoss magnitude: $2,283,724,790.00
+Washington certified dollar interval: $45,367,159.42 to $97,069,290.33
+Washington certified interval width: $51,702,130.91
+Width / absolute EarnSaveLoss magnitude: 2.264%
+Width / |net EarnSaveLoss total|: 2.264%
+Modeled scenario coverage: 513/513 ACOs
+Modeled scenario dollars: $46,301,522.48
+
+2021 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2021-COUNTY-SCHEMA: PASS - ACO=ACO_ID; Tot_AB=Tot_AB
+2021-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2021-ACO-LINK: PASS - county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2021-NAB-NUMERIC: PASS - numeric=475/475; blank=0; other=0
+2021-EARNSAVELOSS-NUMERIC: PASS - numeric=475/475; blank=0; star=0; dot=0; other=0
+2021-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2021-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv
+EarnSaveLoss inventory: positive=274; negative=0; zero=201; total=$1,959,433,483.00
+Absolute EarnSaveLoss magnitude: $1,959,433,483.00
+Washington certified dollar interval: $53,563,219.68 to $101,232,584.46
+Washington certified interval width: $47,669,364.78
+Width / absolute EarnSaveLoss magnitude: 2.433%
+Width / |net EarnSaveLoss total|: 2.433%
+Modeled scenario coverage: 475/475 ACOs
+Modeled scenario dollars: $54,687,294.28
+
+2022 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2022-COUNTY-SCHEMA: PASS - ACO=ACO_ID; Tot_AB=Tot_AB
+2022-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2022-ACO-LINK: PASS - county=482; financial=482; intersection=482; county_only=0; financial_only=0
+2022-NAB-NUMERIC: PASS - numeric=482/482; blank=0; other=0
+2022-EARNSAVELOSS-NUMERIC: PASS - numeric=482/482; blank=0; star=0; dot=0; other=0
+2022-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2022-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv
+EarnSaveLoss inventory: positive=303; negative=0; zero=179; total=$2,523,385,141.00
+Absolute EarnSaveLoss magnitude: $2,523,385,141.00
+Washington certified dollar interval: $62,350,912.20 to $118,315,090.99
+Washington certified interval width: $55,964,178.79
+Width / absolute EarnSaveLoss magnitude: 2.218%
+Width / |net EarnSaveLoss total|: 2.218%
+Modeled scenario coverage: 482/482 ACOs
+Modeled scenario dollars: $63,393,010.73
+
+2023 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2023-COUNTY-SCHEMA: PASS - ACO=ACO_ID; Tot_AB=Tot_AB
+2023-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2023-ACO-LINK: PASS - county=453; financial=453; intersection=453; county_only=0; financial_only=0
+2023-NAB-NUMERIC: PASS - numeric=453/453; blank=0; other=0
+2023-EARNSAVELOSS-NUMERIC: PASS - numeric=453/453; blank=0; star=0; dot=0; other=0
+2023-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2023-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv
+EarnSaveLoss inventory: positive=313; negative=20; zero=120; total=$3,080,241,484.00
+Absolute EarnSaveLoss magnitude: $3,108,668,638.00
+Washington certified dollar interval: $89,364,220.19 to $165,817,729.74
+Washington certified interval width: $76,453,509.54
+Width / absolute EarnSaveLoss magnitude: 2.459%
+Width / |net EarnSaveLoss total|: 2.482%
+Modeled scenario coverage: 453/453 ACOs
+Modeled scenario dollars: $91,809,006.81
+
+2024 FINANCIAL SENSITIVITY
+----------------------------------------------------------------------------------------------------------------------
+2024-COUNTY-SCHEMA: PASS - ACO=ACO_ID; Tot_AB=Tot_AB
+2024-FIN-SCHEMA: PASS - member=Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2024-ACO-LINK: PASS - county=476; financial=476; intersection=476; county_only=0; financial_only=0
+2024-NAB-NUMERIC: PASS - numeric=476/476; blank=0; other=0
+2024-EARNSAVELOSS-NUMERIC: PASS - numeric=476/476; blank=0; star=0; dot=0; other=0
+2024-GEO-RECONSTRUCTION: PASS - ACO rows with invalid/unexpected geographic reconstruction=0
+2024-SCENARIO-WITHIN-BOUNDS: PASS - scenario dollar values outside certified endpoint interval=0
+Financial member: Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv
+EarnSaveLoss inventory: positive=360; negative=16; zero=100; total=$4,122,484,301.00
+Absolute EarnSaveLoss magnitude: $4,162,417,175.00
+Washington certified dollar interval: $113,180,925.24 to $226,800,538.65
+Washington certified interval width: $113,619,613.41
+Width / absolute EarnSaveLoss magnitude: 2.730%
+Width / |net EarnSaveLoss total|: 2.756%
+Modeled scenario coverage: 476/476 ACOs
+Modeled scenario dollars: $117,266,981.47
+
+INTERPRETIVE BOUNDARY
+----------------------------------------------------------------------------------------------------------------------
+Certified dollar endpoints are sensitivity products of EarnSaveLoss and certified beneficiary-share bounds.
+They are not yet ledger values and do not decide whether EarnSaveLoss is an additive federal inflow.
+The modeled central scenario is explicitly a sensitivity scenario, NOT an estimate.
+No midpoint or modeled scenario is adopted as the principal allocation weight.
+Negative EarnSaveLoss values use min/max of endpoint products so interval ordering remains correct.
+2015 remains NOT ESTIMATED due to unrecovered county source.
+2016 remains separately caveated because blank county encoding is unresolved.
+
+OVERALL PROFILE EXECUTION v1.1: PASS
+Checks: 71 total; 0 failed
+Evidence: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\validation\earn_save_loss_sensitivity_v1_1

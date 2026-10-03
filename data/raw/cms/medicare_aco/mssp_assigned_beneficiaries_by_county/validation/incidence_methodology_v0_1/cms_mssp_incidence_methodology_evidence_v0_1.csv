@@ -1,0 +1,1990 @@
+document_sha256,document_type,representative_member,search_group,search_term,matched_line_number,window_start_line,window_end_line,evidence_window
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,2,1,7,"1 of 4
+Number of ACO Assigned Beneficiaries by County PUF Data Dictionary
+Term Name Variable Name Definition Footnotes
+Year Year Calendar year (CY) for which assigned beneficiaries are
+determined.
+For calendar year 2019,
+two performance years"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,24,19,29,"across counties.
+ACO ID ACO_ID Unencrypted ACO identifier. This identifier can be linked
+to the encrypted ACO identifier used for prior
+performance years. (Refer to Notes.)
+State name State_Name State name
+County name County_Name County name
+State ID State_ID Social Security Administration (SSA) state code. This code
+should always include two numeric characters, though
+leading zeros may be dropped when opening the files in
+some programs (e.g. a value of “01” may appear as “1”).
+County ID County_ID SSA county code. This code should always include three"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,29,24,34,"County name County_Name County name
+State ID State_ID Social Security Administration (SSA) state code. This code
+should always include two numeric characters, though
+leading zeros may be dropped when opening the files in
+some programs (e.g. a value of “01” may appear as “1”).
+County ID County_ID SSA county code. This code should always include three
+numeric characters, though leading zeros may be
+dropped when opening the files in some programs (e.g. a
+value of “001” may appear as “1”).
+ESRD assigned
+beneficiary person"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,37,32,42,"value of “001” may appear as “1”).
+ESRD assigned
+beneficiary person
+years
+AB_Psn_Yrs_ESRD Number of assigned beneficiaries with ESRD enrollment
+type in the county in the report period, adjusted for the
+total number of months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county
+has no assigned
+beneficiaries with this"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,40,35,45,"years
+AB_Psn_Yrs_ESRD Number of assigned beneficiaries with ESRD enrollment
+type in the county in the report period, adjusted for the
+total number of months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,45,40,50,"(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,47,42,52,"beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+DISABLED assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,56,51,61,"for more information)
+DISABLED assigned
+beneficiary person
+years
+AB_Psn_Yrs_DIS Number of assigned beneficiaries with DISABLED
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as DISABLED.
+(.) = Missing (county
+has no assigned
+beneficiaries with this"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,59,54,64,"years
+AB_Psn_Yrs_DIS Number of assigned beneficiaries with DISABLED
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as DISABLED.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,64,59,69,"(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,66,61,71,"beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+2 of 4"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,78,73,83,"AGED/DUAL
+assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGDU Number of assigned beneficiaries with AGED/DUAL
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as AGED/DUAL.
+(.) = Missing (county
+has no assigned
+beneficiaries with this"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,81,76,86,"years
+AB_Psn_Yrs_AGDU Number of assigned beneficiaries with AGED/DUAL
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as AGED/DUAL.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,86,81,91,"(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,88,83,93,"beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+AGED/NON-DUAL"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,98,93,103,"AGED/NON-DUAL
+assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGND Number of assigned beneficiaries with AGED/NON-DUAL
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as AGED/NON-DUAL.
+(.) = Missing (county
+has no assigned
+beneficiaries with this"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,101,96,106,"years
+AB_Psn_Yrs_AGND Number of assigned beneficiaries with AGED/NON-DUAL
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as AGED/NON-DUAL.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,106,101,111,"(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,108,103,113,"beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+Total assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,116,111,121,"suppression; see Notes
+for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned beneficiaries in the county in
+the report period, adjusted for the total number of
+months that each beneficiary was classified as one of the
+four enrollment types.
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,121,116,126,"Tot_AB_Psn_Yrs Total number of assigned beneficiaries in the county in
+the report period, adjusted for the total number of
+months that each beneficiary was classified as one of the
+four enrollment types.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,123,118,128,"months that each beneficiary was classified as one of the
+four enrollment types.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+Total assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,130,125,135,"complementary
+suppression; see Notes
+for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned beneficiaries in the county in
+the report period.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,133,128,138,"Total assigned
+beneficiaries
+Tot_AB Total number of assigned beneficiaries in the county in
+the report period.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,135,130,140,"Tot_AB Total number of assigned beneficiaries in the county in
+the report period.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+3 of 4"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,155,150,160,"Alignment
+End Date
+Claims
+Run-Out
+2021 Number_Of_ACO_Assigned_Beneficiaries_
+by_County_PUF_2021_01_01.csv
+475 Preliminary
+Prospective:
+01/01/2021 -
+12/31/2021
+All ACOs:"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,167,162,172,"12/31/2021
+All ACOs:
+09/30/2020
+3 months
+2020 Number_Of_ACO_Assigned_Beneficiaries_
+by_County_PUF_2020_01_01.csv
+513 Prospective:
+10/01/2019 -
+09/30/2020
+All ACOs:
+01/01/2020 -"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,177,172,182,"01/01/2020 -
+12/31/2020
+All ACOs:
+09/30/2019
+3 months
+2019A ACO.SSP.COUNTY.ASSIGNED.PUF.2019A.csv 205 Preliminary
+Prospective:
+01/01/2020 -
+12/31/2020
+All ACOs:
+01/01/2019 -"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,187,182,192,"01/01/2019 -
+12/31/2019
+All ACOs:
+4/30/2019
+3 months
+2019 ACO.SSP.COUNTY.ASSIGNED.PUF.2019.csv 475 Prospective:
+10/01/2018 -
+09/30/2019
+All ACOs:
+01/01/2019 -
+12/31/2019"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,county,196,191,201,"01/01/2019 -
+12/31/2019
+All ACOs:
+10/31/2018
+3 months
+2018 ACO.SSP.COUNTY.ASSIGNED.PUF.2018.csv 548 Preliminary
+Prospective:
+01/01/2019 -
+12/31/2019
+All ACOs:
+01/01/2018 -"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,counties,19,14,24,"the Year field. ACOs
+can be in both
+performance years
+with differing
+beneficiary population
+across counties.
+ACO ID ACO_ID Unencrypted ACO identifier. This identifier can be linked
+to the encrypted ACO identifier used for prior
+performance years. (Refer to Notes.)
+State name State_Name State name
+County name County_Name County name"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,county_residence_geography,counties,263,258,266,"additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:
+Medicare Shared Savings Program Guidance & Specifications"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiary,246,241,251,"3 months
+4 of 4
+Notes
+1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, reference:
+ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance ye ar (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, reference:
+Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,2,1,7,"1 of 4
+Number of ACO Assigned Beneficiaries by County PUF Data Dictionary
+Term Name Variable Name Definition Footnotes
+Year Year Calendar year (CY) for which assigned beneficiaries are
+determined.
+For calendar year 2019,
+two performance years"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,4,1,9,"1 of 4
+Number of ACO Assigned Beneficiaries by County PUF Data Dictionary
+Term Name Variable Name Definition Footnotes
+Year Year Calendar year (CY) for which assigned beneficiaries are
+determined.
+For calendar year 2019,
+two performance years
+were present in the
+Shared Saving"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,36,31,41,"dropped when opening the files in some programs (e.g. a
+value of “001” may appear as “1”).
+ESRD assigned
+beneficiary person
+years
+AB_Psn_Yrs_ESRD Number of assigned beneficiaries with ESRD enrollment
+type in the county in the report period, adjusted for the
+total number of months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county
+has no assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,55,50,60,"suppression; see Notes
+for more information)
+DISABLED assigned
+beneficiary person
+years
+AB_Psn_Yrs_DIS Number of assigned beneficiaries with DISABLED
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as DISABLED.
+(.) = Missing (county
+has no assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,77,72,82,"Term Name Variable Name Definition Footnotes
+AGED/DUAL
+assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGDU Number of assigned beneficiaries with AGED/DUAL
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as AGED/DUAL.
+(.) = Missing (county
+has no assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,97,92,102,"for more information)
+AGED/NON-DUAL
+assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGND Number of assigned beneficiaries with AGED/NON-DUAL
+enrollment type in the county in the report period,
+adjusted for the total number of months that each
+beneficiary was classified as AGED/NON-DUAL.
+(.) = Missing (county
+has no assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,116,111,121,"suppression; see Notes
+for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned beneficiaries in the county in
+the report period, adjusted for the total number of
+months that each beneficiary was classified as one of the
+four enrollment types.
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,130,125,135,"complementary
+suppression; see Notes
+for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned beneficiaries in the county in
+the report period.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,person-year,246,241,251,"3 months
+4 of 4
+Notes
+1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, reference:
+ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance ye ar (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, reference:
+Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,person year,246,241,251,"3 months
+4 of 4
+Notes
+1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, reference:
+ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance ye ar (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, reference:
+Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,person year,264,259,266,"are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:
+Medicare Shared Savings Program Guidance & Specifications"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,Tot_AB_Psn_Yrs,116,111,121,"suppression; see Notes
+for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned beneficiaries in the county in
+the report period, adjusted for the total number of
+months that each beneficiary was classified as one of the
+four enrollment types.
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,Tot_AB,116,111,121,"suppression; see Notes
+for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned beneficiaries in the county in
+the report period, adjusted for the total number of
+months that each beneficiary was classified as one of the
+four enrollment types.
+(*) = Suppressed
+(county has between 1"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,assigned_beneficiary_measure,Tot_AB,130,125,135,"complementary
+suppression; see Notes
+for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned beneficiaries in the county in
+the report period.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,settlement_payment_link,shared savings,250,245,255,"ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance ye ar (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, reference:
+Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:
+Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,settlement_payment_link,shared savings,252,247,257,"with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, reference:
+Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:
+Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,settlement_payment_link,shared savings,254,249,259,"3. For information on assignment methodology, reference:
+Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:
+Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,settlement_payment_link,shared savings,266,261,266,"7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:
+Medicare Shared Savings Program Guidance & Specifications"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,44,39,49,"classified as ESRD.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,63,58,68,"beneficiary was classified as DISABLED.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,85,80,90,"beneficiary was classified as AGED/DUAL.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,105,100,110,"beneficiary was classified as AGED/NON-DUAL.
+(.) = Missing (county
+has no assigned
+beneficiaries with this
+enrollment type)
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,120,115,125,"years
+Tot_AB_Psn_Yrs Total number of assigned beneficiaries in the county in
+the report period, adjusted for the total number of
+months that each beneficiary was classified as one of the
+four enrollment types.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,132,127,137,"for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned beneficiaries in the county in
+the report period.
+(*) = Suppressed
+(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,255,250,260,"Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:
+Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*""."
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,256,251,261,"4. For definitions of primary care services, reference:
+Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,258,253,263,"5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties."
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,259,254,264,"Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppressed,260,255,265,"6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,50,45,55,"(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+DISABLED assigned
+beneficiary person
+years
+AB_Psn_Yrs_DIS Number of assigned beneficiaries with DISABLED"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,69,64,74,"(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+2 of 4
+Term Name Variable Name Definition Footnotes
+AGED/DUAL
+assigned"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,91,86,96,"(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+AGED/NON-DUAL
+assigned
+beneficiary person
+years"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,111,106,116,"(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned beneficiaries in the county in"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,126,121,131,"(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned beneficiaries in the county in
+the report period."
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,138,133,143,"(county has between 1
+and 10 total assigned
+beneficiaries or county
+was selected for
+complementary
+suppression; see Notes
+for more information)
+3 of 4
+Parameters
+File year File Name
+Number"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,255,250,260,"Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, reference:
+Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*""."
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,suppression,257,252,262,"Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,privacy,257,252,262,"Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary"
+06F9E77F663BAE3870E6D81D829C187F005E70BCD6E0E49242EBE22AE5C1C191,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,suppression_boundary,HIPAA,257,252,262,"Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, reference:
+Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (prima ry suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, eithe r no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,county_residence_geography,county,9,4,14,"the written law or regulations. We encourage readers to review the specific statutes, regulations, and other
+interpretive materials for a full and accurate statement of its contents.
+1
+Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,county_residence_geography,county,11,6,16,"1
+Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,county_residence_geography,county,14,9,19,"Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the
+Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,county_residence_geography,county,15,10,20,"The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the
+Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,county_residence_geography,county,33,28,38,"incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,assigned beneficiary,11,6,16,"1
+Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,assigned beneficiary,16,11,21,"Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the
+Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,assigned beneficiaries,11,6,16,"1
+Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,person-year,12,7,17,"Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,person-year,15,10,20,"The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the
+Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,person year,12,7,17,"Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,person year,15,10,20,"The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the
+Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,person-years,15,10,20,"The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the
+Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,assigned_beneficiary_measure,person years,15,10,20,"The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease
+(ESRD), disabled, aged/dual eligible, aged/non-dual eligible); total assigned beneficiary person-
+years; total number of beneficiaries contributing at least one person-month. It is the intent of the
+Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,benchmark_weighting,benchmark,24,19,29,"conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and
+subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,benchmark_weighting,benchmark,25,20,30,"“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and
+subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,benchmark_weighting,benchmark,27,22,32,"subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,benchmark_weighting,benchmark,29,24,34,"ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,ffs_expenditure_basis,fee-for-service,23,18,28,"Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and
+subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,ffs_expenditure_basis,FFS,23,18,28,"Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and
+subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,ffs_expenditure_basis,FFS,28,23,33,"CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,ffs_expenditure_basis,expenditure,23,18,28,"Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and
+subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,ffs_expenditure_basis,expenditure,28,23,33,"CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,ffs_expenditure_basis,expenditures,23,18,28,"Center for Medicare to publish this public use file (PUF) annually, in the fall following the
+conclusion of the calendar year to which it relates and when any file updates are available. The
+“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and
+subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,ffs_expenditure_basis,expenditures,28,23,33,"CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,settlement_payment_link,shared savings,7,2,12,"impose obligations. It may contain references or links to statutes, regulations, or other policy materials. The
+information provided is only intended to be a general summary. It is not intended to take the place of either
+the written law or regulations. We encourage readers to review the specific statutes, regulations, and other
+interpretive materials for a full and accurate statement of its contents.
+1
+Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,settlement_payment_link,shared savings,10,5,15,"interpretive materials for a full and accurate statement of its contents.
+1
+Methodology: Medicare Shared Savings Program
+Number of Accountable Care Organization Assigned
+Beneficiaries by County PUF
+The Medicare Shared Savings Program (Shared Savings Program) Number of Accountable
+Care Organization Assigned Beneficiaries by County PUF provides assigned beneficiary
+person-year counts. These counts are based on certified Accountable Care Organization (ACO)
+Participant Lists and assignment methodology for each given performance year. These data
+files include: ACO ID; state ID (Social Security Administration ((SSA) state code); county ID
+(SSA county code); total person-years by Medicare enrollment type (End-Stage Renal Disease"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,settlement_payment_link,shared savings,25,20,30,"“Definition” field in the “Data Dictionary”, provides further information on the data fields.
+The assignment methodology is specified in the program’s regulations at 42 CFR part 425, and
+subject to change through rulemaking. As finalized with the June 2016 final rule (81 FR 37950),
+CMS initially incorporated factors based on regional fee-for-service (FFS) expenditures into
+ACOs’ rebased historical benchmarks for second or subsequent agreement periods beginning
+in 2017 and onward, and annual updates to these rebased benchmarks. In the Shared Savings
+Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,settlement_payment_link,shared savings,31,26,36,"Program December 2018 final rule (83 FR 67816), for agreement periods beginning on July 1,
+2019, and in subsequent years, CMS revised the benchmarking methodology to also
+incorporate factors based on regional FFS expenditures in establishing the ACO’s historical
+benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,suppressed,34,29,39,"benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,suppressed,36,31,40,"Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,
+either no cells or at least two cells are suppressed."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,suppressed,37,32,40,"Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,
+either no cells or at least two cells are suppressed."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,suppressed,39,34,40,"between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,
+either no cells or at least two cells are suppressed."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,suppressed,40,35,40,"cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,
+either no cells or at least two cells are suppressed."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,suppression,34,29,39,"benchmark beginning with the ACO’s first agreement period.
+For additional assignment methodology information, please reference the Financial and
+Beneficiary Assignment Data resources included on the Shared Savings Program Program
+Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,"
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,suppression,37,32,40,"Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,
+either no cells or at least two cells are suppressed."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,privacy,37,32,40,"Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,
+either no cells or at least two cells are suppressed."
+562533A5A9C466173856D083A3D13B947BDE0AD79B68D71106ECA121019515A9,METHODOLOGY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,suppression_boundary,HIPAA,37,32,40,"Guidance & Specifications webpage.
+Note: The data in this data set is provided at the ACO-county level. All cells associated with
+between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional
+cells associated with either 11 or more beneficiaries or associated with missing values (i.e., zero
+beneficiaries) are suppressed as necessary ensure the data are de-identified in compliance with
+HIPAA privacy rules (complementary suppression). In general, additional cells are suppressed
+as necessary to ensure that within a given column for a given ACO either no cells or at least two
+cells are suppressed, and that among the four enrollment type columns within a given row,
+either no cells or at least two cells are suppressed."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,2,1,7,"1 of 5
+Number of ACO Assigned Beneficiaries by County PUF Data Dictionary
+Term Name Variable Name Definition Footnotes
+Year Year Calendar year (CY) for which
+assigned beneficiaries are
+determined.
+For calendar year 2019, two performance years"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,19,14,24,"identifier can be linked to the
+encrypted ACO identifier used for
+prior performance years. (Refer to
+Notes.)
+State name State_Name State name
+County name County_Name County name
+State ID State_ID Social Security Administration (SSA)
+state code. This code should always
+include two numeric characters,
+though leading zeros may be
+dropped when opening the files in"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,27,22,32,"include two numeric characters,
+though leading zeros may be
+dropped when opening the files in
+some programs (e.g. a value of “01”
+may appear as “1”).
+County ID County_ID SSA county code. This code should
+always include three numeric
+characters, though leading zeros
+may be dropped when opening the
+files in some programs (e.g. a value
+of “001” may appear as “1”)."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,38,33,43,"ESRD assigned
+beneficiary person
+years
+AB_Psn_Yrs_ESRD Number of assigned beneficiaries
+with ESRD enrollment type in the
+county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,42,37,47,"with ESRD enrollment type in the
+county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,44,39,49,"adjusted for the total number of
+months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+DISABLED assigned
+beneficiary person"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,45,40,50,"months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+DISABLED assigned
+beneficiary person
+years"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,53,48,58,"DISABLED assigned
+beneficiary person
+years
+AB_Psn_Yrs_DIS Number of assigned beneficiaries
+with DISABLED enrollment type in
+the county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as DISABLED.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,57,52,62,"with DISABLED enrollment type in
+the county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as DISABLED.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,59,54,64,"adjusted for the total number of
+months that each beneficiary was
+classified as DISABLED.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+2 of 5
+Term Name Variable Name Definition Footnotes"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,60,55,65,"months that each beneficiary was
+classified as DISABLED.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+2 of 5
+Term Name Variable Name Definition Footnotes
+AGED/DUAL"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,71,66,76,"assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGDU Number of assigned beneficiaries
+with AGED/DUAL enrollment type in
+the county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as AGED/DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,75,70,80,"with AGED/DUAL enrollment type in
+the county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as AGED/DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,77,72,82,"adjusted for the total number of
+months that each beneficiary was
+classified as AGED/DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+AGED/NON-DUAL
+assigned"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,78,73,83,"months that each beneficiary was
+classified as AGED/DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+AGED/NON-DUAL
+assigned
+beneficiary person"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,87,82,92,"assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGND Number of assigned beneficiaries
+with AGED/NON-DUAL enrollment
+type in the county in the report
+period, adjusted for the total
+number of months that each
+beneficiary was classified as
+AGED/NON-DUAL.
+(.) = Missing (county has no assigned"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,92,87,97,"type in the county in the report
+period, adjusted for the total
+number of months that each
+beneficiary was classified as
+AGED/NON-DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,94,89,99,"number of months that each
+beneficiary was classified as
+AGED/NON-DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiary person"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,95,90,100,"beneficiary was classified as
+AGED/NON-DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiary person
+years"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,102,97,107,"Notes for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned
+beneficiaries in the county in the
+report period, adjusted for the total
+number of months that each
+beneficiary was classified as one of
+the four enrollment types.
+(*) = Suppressed (county has between 1 and 10"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,107,102,112,"beneficiaries in the county in the
+report period, adjusted for the total
+number of months that each
+beneficiary was classified as one of
+the four enrollment types.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiaries"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,108,103,113,"report period, adjusted for the total
+number of months that each
+beneficiary was classified as one of
+the four enrollment types.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,114,109,119,"selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned
+beneficiaries in the county in the
+report period.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,116,111,121,"Total assigned
+beneficiaries
+Tot_AB Total number of assigned
+beneficiaries in the county in the
+report period.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+3 of 5
+Parameters"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,117,112,122,"beneficiaries
+Tot_AB Total number of assigned
+beneficiaries in the county in the
+report period.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+3 of 5
+Parameters
+File Year"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,136,131,141,"Alignment
+End Date
+Claims
+Run-Out
+2024 Number_Of_ACO_Assigned_Beneficiaries_
+by_County_PUF_2024_01_01.csv
+476 Preliminary
+Prospective:
+01/01/2024 -
+12/31/2024
+Prospective:"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,151,146,156,"12/31/2024
+All ACOs:
+09/30/2023
+3 months
+2023 Number_Of_ACO_Assigned_Beneficiaries_
+by_County_PUF_2023_01_01.csv
+453 Preliminary
+Prospective:
+01/01/2023 -
+12/31/2023
+Prospective:"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,166,161,171,"12/31/2023
+All ACOs:
+09/30/2022
+3 months
+2022 Number_Of_ACO_Assigned_Beneficiaries_ 482 Preliminary All ACOs: All ACOs: 3 months
+by_County_PUF_2022_01_01.csv Prospective: 01/01/2022 - 09/30/2021
+01/01/2022 - 12/31/2022
+12/31/2022
+Prospective:
+10/01/2020 -
+09/30/2021"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,173,168,178,"12/31/2022
+Prospective:
+10/01/2020 -
+09/30/2021
+2021 Number_Of_ACO_Assigned_Beneficiaries_ 475 Preliminary All ACOs: All ACOs: 3 months
+by_County_PUF_2021_01_01.csv Prospective: 01/01/2021 - 09/30/2020
+01/01/2021 - 12/31/2021
+12/31/2021
+Prospective:
+10/01/2019 -
+09/30/2020"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,county,180,175,185,"12/31/2021
+Prospective:
+10/01/2019 -
+09/30/2020
+2020 Number_Of_ACO_Assigned_Beneficiaries_ 513 Preliminary All ACOs: All ACOs: 3 months
+by_County_PUF_2020_01_01.csv Prospective: 01/01/2020 - 09/30/2019
+01/01/2020 - 12/31/2020
+12/31/2020
+Prospective:
+10/01/2018 -
+09/30/2019"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,counties,12,7,17,"For calendar year 2019, two performance years
+were present in the Shared Saving Program.
+Each performance year has a separate data file
+and both will list 2019 for the Year field. ACOs
+can be in both performance years with differing
+beneficiary population across counties.
+ACO ID ACO_ID Unencrypted ACO identifier. This
+identifier can be linked to the
+encrypted ACO identifier used for
+prior performance years. (Refer to
+Notes.)"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,county_residence_geography,counties,259,254,262,"additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:
+Medicare Shared Savings Program Guidance & Specifications"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiary,244,239,249,"Prospective: 12/31/2014 applicable
+10/01/2017 -
+09/30/2018
+Notes
+1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, refer to: ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance year (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,2,1,7,"1 of 5
+Number of ACO Assigned Beneficiaries by County PUF Data Dictionary
+Term Name Variable Name Definition Footnotes
+Year Year Calendar year (CY) for which
+assigned beneficiaries are
+determined.
+For calendar year 2019, two performance years"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,5,1,10,"1 of 5
+Number of ACO Assigned Beneficiaries by County PUF Data Dictionary
+Term Name Variable Name Definition Footnotes
+Year Year Calendar year (CY) for which
+assigned beneficiaries are
+determined.
+For calendar year 2019, two performance years
+were present in the Shared Saving Program.
+Each performance year has a separate data file
+and both will list 2019 for the Year field. ACOs"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,36,31,41,"files in some programs (e.g. a value
+of “001” may appear as “1”).
+ESRD assigned
+beneficiary person
+years
+AB_Psn_Yrs_ESRD Number of assigned beneficiaries
+with ESRD enrollment type in the
+county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as ESRD."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,45,40,50,"months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+DISABLED assigned
+beneficiary person
+years"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,51,46,56,"selected for complementary suppression; see
+Notes for more information)
+DISABLED assigned
+beneficiary person
+years
+AB_Psn_Yrs_DIS Number of assigned beneficiaries
+with DISABLED enrollment type in
+the county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as DISABLED."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,60,55,65,"months that each beneficiary was
+classified as DISABLED.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+2 of 5
+Term Name Variable Name Definition Footnotes
+AGED/DUAL"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,69,64,74,"Term Name Variable Name Definition Footnotes
+AGED/DUAL
+assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGDU Number of assigned beneficiaries
+with AGED/DUAL enrollment type in
+the county in the report period,
+adjusted for the total number of
+months that each beneficiary was
+classified as AGED/DUAL."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,78,73,83,"months that each beneficiary was
+classified as AGED/DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+AGED/NON-DUAL
+assigned
+beneficiary person"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,85,80,90,"Notes for more information)
+AGED/NON-DUAL
+assigned
+beneficiary person
+years
+AB_Psn_Yrs_AGND Number of assigned beneficiaries
+with AGED/NON-DUAL enrollment
+type in the county in the report
+period, adjusted for the total
+number of months that each
+beneficiary was classified as"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,95,90,100,"beneficiary was classified as
+AGED/NON-DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiary person
+years"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,108,103,113,"report period, adjusted for the total
+number of months that each
+beneficiary was classified as one of
+the four enrollment types.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,assigned beneficiaries,117,112,122,"beneficiaries
+Tot_AB Total number of assigned
+beneficiaries in the county in the
+report period.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+3 of 5
+Parameters
+File Year"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,person-year,244,239,249,"Prospective: 12/31/2014 applicable
+10/01/2017 -
+09/30/2018
+Notes
+1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, refer to: ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance year (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,person year,244,239,249,"Prospective: 12/31/2014 applicable
+10/01/2017 -
+09/30/2018
+Notes
+1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, refer to: ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance year (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,person year,260,255,262,"are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:
+Medicare Shared Savings Program Guidance & Specifications"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,Tot_AB_Psn_Yrs,101,96,106,"selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned
+beneficiaries in the county in the
+report period, adjusted for the total
+number of months that each
+beneficiary was classified as one of
+the four enrollment types."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,Tot_AB,101,96,106,"selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned
+beneficiaries in the county in the
+report period, adjusted for the total
+number of months that each
+beneficiary was classified as one of
+the four enrollment types."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,assigned_beneficiary_measure,Tot_AB,113,108,118,"total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned
+beneficiaries in the county in the
+report period.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,settlement_payment_link,shared savings,247,242,252,"Notes
+1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, refer to: ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance year (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,settlement_payment_link,shared savings,248,243,253,"1. To link unencrypted ACO identifiers with encrypted identifiers used for prior performance years, refer to: ACO ID Crosswalk
+2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance year (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,settlement_payment_link,shared savings,249,244,254,"2. Assigned beneficiary person-year counts are based on certified ACO Participant Lists for the performance year (PY) associated
+with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,settlement_payment_link,shared savings,262,257,262,"7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:
+Medicare Shared Savings Program Guidance & Specifications"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,44,39,49,"adjusted for the total number of
+months that each beneficiary was
+classified as ESRD.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+DISABLED assigned
+beneficiary person"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,59,54,64,"adjusted for the total number of
+months that each beneficiary was
+classified as DISABLED.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+2 of 5
+Term Name Variable Name Definition Footnotes"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,77,72,82,"adjusted for the total number of
+months that each beneficiary was
+classified as AGED/DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+AGED/NON-DUAL
+assigned"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,94,89,99,"number of months that each
+beneficiary was classified as
+AGED/NON-DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiary person"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,107,102,112,"beneficiaries in the county in the
+report period, adjusted for the total
+number of months that each
+beneficiary was classified as one of
+the four enrollment types.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiaries"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,116,111,121,"Total assigned
+beneficiaries
+Tot_AB Total number of assigned
+beneficiaries in the county in the
+report period.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+3 of 5
+Parameters"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,250,245,255,"with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,251,246,256,"performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*""."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,254,249,259,"5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties."
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,255,250,260,"6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppressed,256,251,261,"associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary
+population across counties.
+8. Person year variables for the applicable file years have been adjusted to exclude months associated with episodes of care for
+treatment of COVID-19. For more information on these adjustments, reference:"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,46,41,51,"classified as ESRD.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+DISABLED assigned
+beneficiary person
+years
+AB_Psn_Yrs_DIS Number of assigned beneficiaries"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,61,56,66,"classified as DISABLED.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+2 of 5
+Term Name Variable Name Definition Footnotes
+AGED/DUAL
+assigned"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,79,74,84,"classified as AGED/DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+AGED/NON-DUAL
+assigned
+beneficiary person
+years"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,96,91,101,"AGED/NON-DUAL.
+(.) = Missing (county has no assigned
+beneficiaries with this enrollment type)
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiary person
+years
+Tot_AB_Psn_Yrs Total number of assigned"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,109,104,114,"number of months that each
+beneficiary was classified as one of
+the four enrollment types.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+Total assigned
+beneficiaries
+Tot_AB Total number of assigned
+beneficiaries in the county in the"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,118,113,123,"Tot_AB Total number of assigned
+beneficiaries in the county in the
+report period.
+(*) = Suppressed (county has between 1 and 10
+total assigned beneficiaries or county was
+selected for complementary suppression; see
+Notes for more information)
+3 of 5
+Parameters
+File Year
+File Name"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,250,245,255,"with the file year and based on the assignment methodology and definition of dual eligible beneficiaries in effect for that
+performance year.
+3. For information on assignment methodology, refer to: Medicare Shared Savings Program Guidance & Specifications
+4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,suppression,253,248,258,"4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,privacy,253,248,258,"4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary"
+56EBAEA5550AF0C26E8D0483DA7DC9330D951D55AF982BBD2818746E31FD3CF8,DATA_DICTIONARY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,suppression_boundary,HIPAA,253,248,258,"4. For definitions of primary care services, refer to: Medicare Shared Savings Program Statutes & Regulations
+5. For definitions of providers, refer to: Medicare Shared Savings Program Statutes & Regulations
+6. All cells associated with between 1 and 10 beneficiaries are automatically suppressed (primary suppression). Additional cells
+associated with either 11 or more beneficiaries or associated with missing values (i.e. zero beneficiaries) are suppressed as
+5 of 5
+necessary to ensure the data are de-identified in compliance with HIPAA privacy rules (complementary suppression). In general,
+additional cells are suppressed as necessary to ensure that within a given column for a given ACO either no cells or at least two cells
+are suppressed, and that among the four enrollment type columns within a given row, either no cells or at least two cells are
+suppressed. Values in suppressed cells are set equal to ""*"".
+7. For calendar year 2019, two performance years were present in the Shared Saving Program. Each performance year has a
+separate data file and both will list 2019 for the Year field. ACOs can be in both performance years with differing beneficiary"

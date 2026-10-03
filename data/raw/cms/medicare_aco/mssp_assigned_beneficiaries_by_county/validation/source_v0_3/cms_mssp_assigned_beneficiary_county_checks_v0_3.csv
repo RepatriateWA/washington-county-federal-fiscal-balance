@@ -1,0 +1,17 @@
+check_id,status,detail
+SOURCE-01,PASS,county archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02,PASS,"county archive bytes=8,450,964 expected=8,450,964"
+ARCHIVE-01,PASS,archive entries=21 expected=21
+ARCHIVE-02,PASS,"year directories=2020,2021,2022,2023,2024"
+ARCHIVE-03,PASS,"CSV members=2020:1,2021:1,2022:1,2023:1,2024:1"
+ARCHIVE-04,PASS,"PDF members=2020:2,2021:2,2022:2,2023:2,2024:2"
+SCHEMA-01,PASS,exact 12-column CMS schema reproduced for all acquired periods
+SCHEMA-02,PASS,Year field agrees with archive period on every row
+KEY-01,PASS,ACO_ID present on every acquired row
+MEASURE-01,PASS,every beneficiary-measure cell classified exactly once
+SUPPRESSION-01,PASS,Tot_AB_Psn_Yrs and Tot_AB contain only numeric values or CMS '*' suppression
+SUPPRESSION-02,PASS,numeric + suppressed exactly equals source rows for both total measures
+SUPPRESSION-03,FAIL,four enrollment-type person-year fields contain only numeric values or '*'
+LINK-01,PASS,exactly one governing financial CSV with ACO_ID found per 2020-2024 period
+LINK-02,PASS,financial ACO-ID counts reproduce certified 2020-2024 universe
+LINK-03,PASS,county-PUF and financial-PUF ACO_ID sets exactly equal for every period

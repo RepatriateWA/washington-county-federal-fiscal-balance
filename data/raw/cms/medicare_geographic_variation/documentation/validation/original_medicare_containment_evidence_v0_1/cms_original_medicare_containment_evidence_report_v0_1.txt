@@ -1,0 +1,91 @@
+========================================================================================================================
+CMS ORIGINAL MEDICARE CONTAINMENT EVIDENCE EXTRACTOR v0.1
+========================================================================================================================
+
+BOUNDARY
+------------------------------------------------------------------------------------------------------------------------
+Extracts source evidence defining the Original Medicare Geographic Variation PUF and TOT_MDCR_PYMT_AMT.
+This artifact does NOT determine MSSP/FFS economic additivity or overlap.
+It does NOT determine Washington payment-dollar incidence.
+It does NOT write to the database or principal ledger.
+Search-term absence is NOT interpreted as evidence of exclusion.
+
+SOURCE PROVENANCE
+------------------------------------------------------------------------------------------------------------------------
+data\raw\cms\medicare_geographic_variation\documentation\Geographic Variation Public Use File Methods Paper.pdf
+Methods Paper SHA-256: 94666A9FC128F8CB469A55B3D2494368EBFF66F314CD88ED2440C6AE4BE3087F
+
+data\raw\cms\medicare_geographic_variation\documentation\Medicare Geographic Variation - by National, State & County.zip
+CMS ZIP SHA-256: 17D5BFE2F9388E5BF03552AE8BB97A312B6FFDB9581C434F8FDE5AF0F188BA57
+
+Embedded dictionary member:
+Medicare Geographic Variation - by National, State & County/2024/2014-2024 Original Medicare Geographic Variation Data Dictionary.pdf
+Embedded dictionary SHA-256: 75A8D4BEF07D1900A50732C78A2AEC688BA3CA132DAD1DC6CAB1A9243D55109F
+Embedded dictionary bytes: 563,924
+
+CMS ZIP INVENTORY
+------------------------------------------------------------------------------------------------------------------------
+Medicare Geographic Variation - by National, State & County/
+Medicare Geographic Variation - by National, State & County/2024/
+Medicare Geographic Variation - by National, State & County/2024/2014-2024 Original Medicare Geographic Variation Data Dictionary.pdf
+
+DATA DICTIONARY SEARCH SUMMARY
+------------------------------------------------------------------------------------------------------------------------
+TOT_MDCR_PYMT_AMT: 1 occurrence(s)
+Total Medicare Payment: 1 occurrence(s)
+Medicare Payment: 331 occurrence(s)
+
+METHODS PAPER SEARCH SUMMARY
+------------------------------------------------------------------------------------------------------------------------
+claim: 25 occurrence(s)
+claims: 14 occurrence(s)
+payment: 40 occurrence(s)
+payments: 3 occurrence(s)
+expenditure: 1 occurrence(s)
+expenditures: 1 occurrence(s)
+Original Medicare: NOT FOUND (absence is not evidence of exclusion)
+fee-for-service: 2 occurrence(s)
+FFS: 35 occurrence(s)
+Chronic Conditions Data Warehouse: 1 occurrence(s)
+CCW: 7 occurrence(s)
+ACO: 7 occurrence(s)
+Accountable Care Organization: 1 occurrence(s)
+MSSP: NOT FOUND (absence is not evidence of exclusion)
+Shared Savings: NOT FOUND (absence is not evidence of exclusion)
+shared savings: NOT FOUND (absence is not evidence of exclusion)
+
+CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS | Preserved Geographic Variation Methods Paper exists | data\raw\cms\medicare_geographic_variation\documentation\Geographic Variation Public Use File Methods Paper.pdf
+PASS | Preserved CMS Geographic Variation ZIP exists | data\raw\cms\medicare_geographic_variation\documentation\Medicare Geographic Variation - by National, State & County.zip
+PASS | Methods Paper SHA-256 matches preserved acquisition | 94666A9FC128F8CB469A55B3D2494368EBFF66F314CD88ED2440C6AE4BE3087F
+PASS | CMS ZIP SHA-256 matches preserved acquisition | 17D5BFE2F9388E5BF03552AE8BB97A312B6FFDB9581C434F8FDE5AF0F188BA57
+PASS | Exact 2014-2024 Original Medicare data dictionary member exists | Medicare Geographic Variation - by National, State & County/2024/2014-2024 Original Medicare Geographic Variation Data Dictionary.pdf
+PASS | CMS ZIP contains exactly one substantive member | 1 substantive member(s)
+PASS | Embedded data dictionary is non-empty | 563,924 bytes
+PASS | Embedded data dictionary PDF yields extractable text | 14/14 pages non-empty
+PASS | Methods Paper PDF yields extractable text | 13/13 pages non-empty
+PASS | TOT_MDCR_PYMT_AMT is explicitly present in the 2014-2024 data dictionary | 1 occurrence(s)
+PASS | Methods Paper contains explicit claims terminology | 39 combined 'claim'/'claims' occurrence(s)
+PASS | Methods Paper contains explicit FFS terminology | 37 combined fee-for-service/FFS occurrence(s)
+PASS | Methods Paper contains explicit CCW terminology | 8 combined CCW occurrence(s)
+
+========================================================================================================================
+OVERALL CMS ORIGINAL MEDICARE CONTAINMENT EVIDENCE EXTRACTOR v0.1: PASS
+========================================================================================================================
+
+INTERPRETIVE BOUNDARY
+------------------------------------------------------------------------------------------------------------------------
+PASS means the preserved CMS documentation was successfully authenticated and the targeted Original Medicare evidence was extracted.
+PASS does NOT mean MSSP EarnSaveLoss has been proven additive to Original Medicare / FFS.
+PASS does NOT mean MSSP payments have Washington payment-dollar incidence.
+The extracted evidence must be reviewed before an economic-overlap conclusion is made.
+No source is additive by default.
+
+EVIDENCE WRITTEN
+------------------------------------------------------------------------------------------------------------------------
+data\raw\cms\medicare_geographic_variation\documentation\validation\original_medicare_containment_evidence_v0_1\cms_original_medicare_geographic_variation_dictionary_text_v0_1.txt
+data\raw\cms\medicare_geographic_variation\documentation\validation\original_medicare_containment_evidence_v0_1\cms_original_medicare_geographic_variation_methods_text_v0_1.txt
+data\raw\cms\medicare_geographic_variation\documentation\validation\original_medicare_containment_evidence_v0_1\cms_original_medicare_dictionary_evidence_v0_1.txt
+data\raw\cms\medicare_geographic_variation\documentation\validation\original_medicare_containment_evidence_v0_1\cms_original_medicare_methods_evidence_v0_1.txt
+data\raw\cms\medicare_geographic_variation\documentation\validation\original_medicare_containment_evidence_v0_1\cms_original_medicare_containment_evidence_report_v0_1.txt

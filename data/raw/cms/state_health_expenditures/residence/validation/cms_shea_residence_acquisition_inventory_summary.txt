@@ -1,0 +1,40 @@
+============================================================================================
+CMS SHEA STATE-OF-RESIDENCE ACQUISITION / INVENTORY v0.1
+============================================================================================
+
+Research question: Does the official CMS SHEA package expose a separately identifiable
+Medicare managed-care / Medicare Advantage expenditure series suitable for an independent
+Washington CY2015-CY2020 reconciliation?
+
+Official landing page              : https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/state-residence
+Artifacts required                  : 2
+Artifacts acquired/preserved        : 2
+ZIP members inventoried             : 15
+Spreadsheet sheets profiled         : 5
+Semantic hits recorded              : 61
+MA/managed-care-related hits         : 9
+Profile/read errors                 : 0
+
+SEARCH TERMS FOUND
+--------------------------------------------------------------------------------------------
+hmo, medicare, washington
+
+VALIDATION CHECKS
+--------------------------------------------------------------------------------------------
+PASS  Official artifacts acquired/preserved
+PASS  Residence estimates ZIP valid and inventoried
+PASS  Methodology ZIP valid and inventoried
+PASS  Spreadsheet profile errors
+
+OVERALL ACQUISITION / INVENTORY STATUS: PASS
+
+IMPORTANT: PASS establishes source preservation/readable inventory only. It does not
+establish a separable MA control, definitional comparability, or successful reconciliation.
+
+OUTPUTS
+--------------------------------------------------------------------------------------------
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\state_health_expenditures\residence\validation\cms_shea_residence_acquisition_manifest.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\state_health_expenditures\residence\validation\cms_shea_residence_zip_inventory.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\state_health_expenditures\residence\validation\cms_shea_residence_spreadsheet_inventory.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\state_health_expenditures\residence\validation\cms_shea_residence_semantic_hits.csv
+D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\state_health_expenditures\residence\validation\cms_shea_residence_profile_errors.csv

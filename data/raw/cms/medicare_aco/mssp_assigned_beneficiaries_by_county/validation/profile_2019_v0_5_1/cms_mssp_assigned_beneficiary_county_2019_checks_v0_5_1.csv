@@ -1,0 +1,6 @@
+check_id,status,detail
+SOURCE-01,PASS,"county bytes=1,685,820 expected=1,685,820"
+SOURCE-02,PASS,county SHA-256=17D8441928A6B725C11BAD6E2C8E536634108E9877409D164EDBBE51B4F9EEAE
+COUNTY-01,PASS,exactly the January and July/off-cycle county CSVs were identified
+COUNTY-02,PASS,ACO_ID is populated on every county row
+FIN-01,PASS,profiled financial 2019 candidate members=2

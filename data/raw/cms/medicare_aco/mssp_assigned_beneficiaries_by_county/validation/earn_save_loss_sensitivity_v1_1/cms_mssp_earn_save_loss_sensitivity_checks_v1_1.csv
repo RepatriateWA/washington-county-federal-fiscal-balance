@@ -1,0 +1,72 @@
+check_code,status,detail
+PERIODS,PASS,"periods=['2016', '2017', '2018', '2019', '2019A', '2020', '2021', '2022', '2023', '2024']"
+2016-COUNTY-SCHEMA,PASS,ACO=ACO ID; Tot_AB=Total assigned beneficiaries
+2016-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv; ACO=ACO_Num; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2016-ACO-LINK,PASS,county=432; financial=432; intersection=432; county_only=0; financial_only=0
+2016-NAB-NUMERIC,PASS,numeric=432/432; blank=0; other=0
+2016-EARNSAVELOSS-NUMERIC,PASS,numeric=432/432; blank=0; star=0; dot=0; other=0
+2016-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2016-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2017-COUNTY-SCHEMA,PASS,ACO=ACO ID; Tot_AB=Total assigned beneficiaries	
+2017-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv; ACO=ACO_Num; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2017-ACO-LINK,PASS,county=472; financial=472; intersection=472; county_only=0; financial_only=0
+2017-NAB-NUMERIC,PASS,numeric=472/472; blank=0; other=0
+2017-EARNSAVELOSS-NUMERIC,PASS,numeric=472/472; blank=0; star=0; dot=0; other=0
+2017-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2017-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2018-COUNTY-SCHEMA,PASS,ACO=ACO ID; Tot_AB=Total assigned beneficiaries
+2018-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2018-ACO-LINK,PASS,county=548; financial=548; intersection=548; county_only=0; financial_only=0
+2018-NAB-NUMERIC,PASS,numeric=548/548; blank=0; other=0
+2018-EARNSAVELOSS-NUMERIC,PASS,numeric=548/548; blank=0; star=0; dot=0; other=0
+2018-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2018-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2019-COUNTY-SCHEMA,PASS,ACO=aco_id; Tot_AB=tot_ab
+2019-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2019-ACO-LINK,PASS,county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2019-NAB-NUMERIC,PASS,numeric=475/475; blank=0; other=0
+2019-EARNSAVELOSS-NUMERIC,PASS,numeric=475/475; blank=0; star=0; dot=0; other=0
+2019-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2019-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2019A-COUNTY-SCHEMA,PASS,ACO=aco_id; Tot_AB=tot_ab
+2019A-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2019A-ACO-LINK,PASS,county=205; financial=205; intersection=205; county_only=0; financial_only=0
+2019A-NAB-NUMERIC,PASS,numeric=205/205; blank=0; other=0
+2019A-EARNSAVELOSS-NUMERIC,PASS,numeric=205/205; blank=0; star=0; dot=0; other=0
+2019A-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2019A-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2020-COUNTY-SCHEMA,PASS,ACO=ACO_ID; Tot_AB=Tot_AB
+2020-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2020-ACO-LINK,PASS,county=513; financial=513; intersection=513; county_only=0; financial_only=0
+2020-NAB-NUMERIC,PASS,numeric=513/513; blank=0; other=0
+2020-EARNSAVELOSS-NUMERIC,PASS,numeric=513/513; blank=0; star=0; dot=0; other=0
+2020-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2020-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2021-COUNTY-SCHEMA,PASS,ACO=ACO_ID; Tot_AB=Tot_AB
+2021-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2021-ACO-LINK,PASS,county=475; financial=475; intersection=475; county_only=0; financial_only=0
+2021-NAB-NUMERIC,PASS,numeric=475/475; blank=0; other=0
+2021-EARNSAVELOSS-NUMERIC,PASS,numeric=475/475; blank=0; star=0; dot=0; other=0
+2021-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2021-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2022-COUNTY-SCHEMA,PASS,ACO=ACO_ID; Tot_AB=Tot_AB
+2022-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2022-ACO-LINK,PASS,county=482; financial=482; intersection=482; county_only=0; financial_only=0
+2022-NAB-NUMERIC,PASS,numeric=482/482; blank=0; other=0
+2022-EARNSAVELOSS-NUMERIC,PASS,numeric=482/482; blank=0; star=0; dot=0; other=0
+2022-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2022-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2023-COUNTY-SCHEMA,PASS,ACO=ACO_ID; Tot_AB=Tot_AB
+2023-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2023-ACO-LINK,PASS,county=453; financial=453; intersection=453; county_only=0; financial_only=0
+2023-NAB-NUMERIC,PASS,numeric=453/453; blank=0; other=0
+2023-EARNSAVELOSS-NUMERIC,PASS,numeric=453/453; blank=0; star=0; dot=0; other=0
+2023-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2023-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0
+2024-COUNTY-SCHEMA,PASS,ACO=ACO_ID; Tot_AB=Tot_AB
+2024-FIN-SCHEMA,PASS,member=Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv; ACO=ACO_ID; N_AB=N_AB; EarnSaveLoss=EarnSaveLoss
+2024-ACO-LINK,PASS,county=476; financial=476; intersection=476; county_only=0; financial_only=0
+2024-NAB-NUMERIC,PASS,numeric=476/476; blank=0; other=0
+2024-EARNSAVELOSS-NUMERIC,PASS,numeric=476/476; blank=0; star=0; dot=0; other=0
+2024-GEO-RECONSTRUCTION,PASS,ACO rows with invalid/unexpected geographic reconstruction=0
+2024-SCENARIO-WITHIN-BOUNDS,PASS,scenario dollar values outside certified endpoint interval=0

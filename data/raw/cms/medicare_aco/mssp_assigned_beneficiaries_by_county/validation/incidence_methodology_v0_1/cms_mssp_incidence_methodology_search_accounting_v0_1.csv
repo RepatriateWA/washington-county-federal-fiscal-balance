@@ -1,0 +1,55 @@
+search_group,search_term,status,evidence_windows,documents_with_hits
+county_residence_geography,county of residence,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+county_residence_geography,county,FOUND,65,3
+county_residence_geography,counties,FOUND,4,2
+county_residence_geography,residence,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+county_residence_geography,resident,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+county_residence_geography,service area,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+county_residence_geography,regional service area,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+assigned_beneficiary_measure,assigned beneficiary,FOUND,4,3
+assigned_beneficiary_measure,assigned beneficiaries,FOUND,21,3
+assigned_beneficiary_measure,person-year,FOUND,4,3
+assigned_beneficiary_measure,person year,FOUND,6,3
+assigned_beneficiary_measure,person-years,FOUND,1,1
+assigned_beneficiary_measure,person years,FOUND,1,1
+assigned_beneficiary_measure,Tot_AB_Psn_Yrs,FOUND,2,2
+assigned_beneficiary_measure,Tot_AB,FOUND,4,2
+benchmark_weighting,benchmark,FOUND,4,1
+benchmark_weighting,regional benchmark,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+benchmark_weighting,regional adjustment,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+benchmark_weighting,regional expenditures,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+benchmark_weighting,weighted,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+benchmark_weighting,weighting,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+benchmark_weighting,weighted average,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+benchmark_weighting,person-year weighted,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+benchmark_weighting,person year weighted,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+ffs_expenditure_basis,fee-for-service,FOUND,1,1
+ffs_expenditure_basis,FFS,FOUND,2,1
+ffs_expenditure_basis,expenditure,FOUND,2,1
+ffs_expenditure_basis,expenditures,FOUND,2,1
+ffs_expenditure_basis,Parts A and B,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+ffs_expenditure_basis,Parts A/B,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+ffs_expenditure_basis,Medicare Parts A and B,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+ffs_expenditure_basis,per capita,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+settlement_payment_link,shared savings,FOUND,12,3
+settlement_payment_link,shared losses,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+settlement_payment_link,performance payment,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+settlement_payment_link,EarnSaveLoss,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+settlement_payment_link,settlement,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+settlement_payment_link,financial reconciliation,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+settlement_payment_link,payment,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+settlement_payment_link,payments,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,allocate,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,allocated,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,allocation,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,apportion,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,apportioned,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,attributable,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,attributed,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,incidence,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,distributed,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+allocation_incidence_language,distribution,NOT_FOUND_IN_EXTRACTED_TEXT,0,0
+suppression_boundary,suppressed,FOUND,27,3
+suppression_boundary,suppression,FOUND,18,3
+suppression_boundary,privacy,FOUND,3,3
+suppression_boundary,HIPAA,FOUND,3,3

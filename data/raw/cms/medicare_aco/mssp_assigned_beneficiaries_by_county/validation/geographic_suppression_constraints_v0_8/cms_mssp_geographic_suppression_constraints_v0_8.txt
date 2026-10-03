@@ -1,0 +1,232 @@
+CMS MSSP GEOGRAPHIC SUPPRESSION CONSTRAINTS PROFILE v0.8
+============================================================================================================
+Read-only. No imputation, financial allocation, DB writes, or ledger decision.
+2015 excluded: original county artifact not recovered.
+2016 blanks remain unresolved historical encoding.
+2019 regular and off-cycle are separate participation periods.
+
+COUNTY-PERIODS: PASS - periods=['2016', '2017', '2018', '2019', '2019A', '2020', '2021', '2022', '2023', '2024']
+Financial ZIP: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+
+2016 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2016_01_01.csv
+County ACO universe: 432
+2016-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv; ACO column=ACO_Num
+2016-ACO-LINK: PASS - county=432; financial=432; intersection=432; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=432; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=432; negative residual vs visible Tot_AB=279; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 344
+ACOs with WA numeric Tot_AB: 25
+ACOs with WA suppressed/unresolved Tot_AB: 344
+ACOs with non-WA suppressed/unresolved Tot_AB: 432
+Visible WA Tot_AB sum: 130,558.000
+Visible all-geography Tot_AB sum: 7,715,398.000
+
+2017 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2017_01_01.csv
+County ACO universe: 472
+2017-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv; ACO column=ACO_Num
+2017-ACO-LINK: PASS - county=472; financial=472; intersection=472; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=472; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=472; negative residual vs visible Tot_AB=295; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 369
+ACOs with WA numeric Tot_AB: 25
+ACOs with WA suppressed/unresolved Tot_AB: 369
+ACOs with non-WA suppressed/unresolved Tot_AB: 472
+Visible WA Tot_AB sum: 136,957.000
+Visible all-geography Tot_AB sum: 8,802,732.000
+
+2018 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2018_01_01.csv
+County ACO universe: 548
+2018-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv; ACO column=ACO_ID
+2018-ACO-LINK: PASS - county=548; financial=548; intersection=548; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=548; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=548; negative residual vs visible Tot_AB=299; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 463
+ACOs with WA numeric Tot_AB: 31
+ACOs with WA suppressed/unresolved Tot_AB: 463
+ACOs with non-WA suppressed/unresolved Tot_AB: 548
+Visible WA Tot_AB sum: 184,810.000
+Visible all-geography Tot_AB sum: 9,870,117.000
+
+2019 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County 2019.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2019/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2019_01_01.csv
+County ACO universe: 475
+2019-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv; ACO column=ACO_ID
+2019-ACO-LINK: PASS - county=475; financial=475; intersection=475; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=475; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=475; negative residual vs visible Tot_AB=283; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 402
+ACOs with WA numeric Tot_AB: 31
+ACOs with WA suppressed/unresolved Tot_AB: 402
+ACOs with non-WA suppressed/unresolved Tot_AB: 475
+Visible WA Tot_AB sum: 201,818.000
+Visible all-geography Tot_AB sum: 9,783,562.000
+
+2019A SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County 2019.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2019_off-cycle_1/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2019_07_01.csv
+County ACO universe: 205
+2019A-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv; ACO column=ACO_ID
+2019A-ACO-LINK: PASS - county=205; financial=205; intersection=205; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=205; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=205; negative residual vs visible Tot_AB=95; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 167
+ACOs with WA numeric Tot_AB: 13
+ACOs with WA suppressed/unresolved Tot_AB: 167
+ACOs with non-WA suppressed/unresolved Tot_AB: 205
+Visible WA Tot_AB sum: 66,363.000
+Visible all-geography Tot_AB sum: 3,987,594.000
+
+2020 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2020_01_01.csv
+County ACO universe: 513
+2020-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv; ACO column=ACO_ID
+2020-ACO-LINK: PASS - county=513; financial=513; intersection=513; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=513; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=513; negative residual vs visible Tot_AB=306; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 438
+ACOs with WA numeric Tot_AB: 37
+ACOs with WA suppressed/unresolved Tot_AB: 438
+ACOs with non-WA suppressed/unresolved Tot_AB: 513
+Visible WA Tot_AB sum: 198,205.000
+Visible all-geography Tot_AB sum: 10,375,157.000
+
+2021 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2021/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2021_01_01.csv
+County ACO universe: 475
+2021-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv; ACO column=ACO_ID
+2021-ACO-LINK: PASS - county=475; financial=475; intersection=475; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=475; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=475; negative residual vs visible Tot_AB=272; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 405
+ACOs with WA numeric Tot_AB: 37
+ACOs with WA suppressed/unresolved Tot_AB: 405
+ACOs with non-WA suppressed/unresolved Tot_AB: 475
+Visible WA Tot_AB sum: 203,358.000
+Visible all-geography Tot_AB sum: 9,894,008.000
+
+2022 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2022/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2022_01_01.csv
+County ACO universe: 482
+2022-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv; ACO column=ACO_ID
+2022-ACO-LINK: PASS - county=482; financial=482; intersection=482; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=482; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=482; negative residual vs visible Tot_AB=243; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 415
+ACOs with WA numeric Tot_AB: 44
+ACOs with WA suppressed/unresolved Tot_AB: 415
+ACOs with non-WA suppressed/unresolved Tot_AB: 482
+Visible WA Tot_AB sum: 272,549.000
+Visible all-geography Tot_AB sum: 10,176,952.000
+
+2023 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2023_01_01.csv
+County ACO universe: 453
+2023-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv; ACO column=ACO_ID
+2023-ACO-LINK: PASS - county=453; financial=453; intersection=453; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=453; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=453; negative residual vs visible Tot_AB=166; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 380
+ACOs with WA numeric Tot_AB: 51
+ACOs with WA suppressed/unresolved Tot_AB: 380
+ACOs with non-WA suppressed/unresolved Tot_AB: 453
+Visible WA Tot_AB sum: 278,357.000
+Visible all-geography Tot_AB sum: 10,004,736.000
+
+2024 SUPPRESSION CONSTRAINT PROFILE
+------------------------------------------------------------------------------------------------------------
+County source: Number of Accountable Care Organization Assigned Beneficiaries by County.zip::Number of Accountable Care Organization Assigned Beneficiaries by County/2024/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2024_01_01.csv
+County ACO universe: 476
+2024-FIN-ACO-COL: PASS - financial member=Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv; ACO column=ACO_ID
+2024-ACO-LINK: PASS - county=476; financial=476; intersection=476; county_only=0; financial_only=0
+Financial member: Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv
+Candidate assigned-beneficiary fields (2):
+  N_AB
+  N_AB_Year_PY
+
+CANDIDATE N_AB: numeric_ACOs=476; negative residual vs visible Tot_AB=0; vs visible Tot_AB_Psn_Yrs=0
+CANDIDATE N_AB_Year_PY: numeric_ACOs=476; negative residual vs visible Tot_AB=170; vs visible Tot_AB_Psn_Yrs=0
+
+ACOs with any WA county row: 409
+ACOs with WA numeric Tot_AB: 55
+ACOs with WA suppressed/unresolved Tot_AB: 409
+ACOs with non-WA suppressed/unresolved Tot_AB: 476
+Visible WA Tot_AB sum: 301,731.000
+Visible all-geography Tot_AB sum: 10,088,064.000
+
+INTERPRETIVE BOUNDARY
+------------------------------------------------------------------------------------------------------------
+Candidate financial fields are profiled, not certified as equivalent to county Tot_AB.
+A nonnegative residual is a mathematical difference, not permission to impute its geography.
+A negative residual is evidence that the candidate field is not a simple governing total
+for that county measure (or differs in timing/definition/rounding).
+Visible WA share is descriptive only and MUST NOT be used as a financial allocation weight yet.
+No EarnSaveLoss or other financial amount was allocated.
+
+OVERALL PROFILE EXECUTION v0.8: PASS
+Checks: 21 total; 0 failed
+Evidence: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\validation\geographic_suppression_constraints_v0_8

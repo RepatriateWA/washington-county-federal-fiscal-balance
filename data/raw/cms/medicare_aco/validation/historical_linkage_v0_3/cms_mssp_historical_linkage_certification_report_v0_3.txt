@@ -1,0 +1,94 @@
+========================================================================================================
+CMS MSSP HISTORICAL IDENTITY AND WASHINGTON APPLICABILITY CERTIFICATION v0.3
+========================================================================================================
+
+CERTIFICATION BOUNDARY
+--------------------------------------------------------------------------------------------------------
+READ-ONLY certification of historical identity accounting and explicit Washington service-area applicability.
+No fuzzy matching or manual identity overrides.
+No beneficiary residence inferred.
+No Washington payment-dollar incidence inferred.
+No county payment-dollar incidence inferred.
+No MSSP-vs-FFS economic additivity conclusion.
+No advance/AIM/AIP netting.
+No ledger inclusion.
+
+NATIONAL IDENTITY ACCOUNTING
+--------------------------------------------------------------------------------------------------------
+2015   | financial=392 | resolved=372 | unresolved=18 | ambiguous= 2 | accounted=392 | difference= 0
+2016   | financial=432 | resolved=432 | unresolved= 0 | ambiguous= 0 | accounted=432 | difference= 0
+2017   | financial=472 | resolved=472 | unresolved= 0 | ambiguous= 0 | accounted=472 | difference= 0
+2018   | financial=548 | resolved=548 | unresolved= 0 | ambiguous= 0 | accounted=548 | difference= 0
+2019   | financial=475 | resolved=475 | unresolved= 0 | ambiguous= 0 | accounted=475 | difference= 0
+2019A  | financial=205 | resolved=205 | unresolved= 0 | ambiguous= 0 | accounted=205 | difference= 0
+2020   | financial=513 | resolved=513 | unresolved= 0 | ambiguous= 0 | accounted=513 | difference= 0
+2021   | financial=475 | resolved=475 | unresolved= 0 | ambiguous= 0 | accounted=475 | difference= 0
+2022   | financial=482 | resolved=482 | unresolved= 0 | ambiguous= 0 | accounted=482 | difference= 0
+2023   | financial=453 | resolved=453 | unresolved= 0 | ambiguous= 0 | accounted=453 | difference= 0
+2024   | financial=476 | resolved=476 | unresolved= 0 | ambiguous= 0 | accounted=476 | difference= 0
+
+TOTAL  | financial=4,923 | resolved=4,903 | unresolved=18 | ambiguous=2 | accounted=4,923
+
+CERTIFIED NATIONAL STATUS
+--------------------------------------------------------------------------------------------------------
+FULLY_ACCOUNTED_WITH_EXPLICIT_2015_RESIDUALS
+
+2015: 372 uniquely resolved + 18 explicitly unresolved + 2 explicitly ambiguous = 392.
+2016-2017: 904/904 uniquely resolved using official CMS ACO ID crosswalk.
+2018-2024 including 2019A: 3,627/3,627 uniquely resolved using direct ACO_ID.
+
+2015 EXPLICIT-WASHINGTON SERVICE-AREA UNIVERSE
+--------------------------------------------------------------------------------------------------------
+Source member: Accountable Care Organizations/2015/SSP_ACOs_2015_12_31.csv
+Explicit-WA organization rows: 4
+
+Health Connect Partners, LLC | service_area=AK, MT, WA | financial_id=A17898 | identity=RESOLVED_UNIQUE | payment_dollar_incidence=NOT_ESTABLISHED
+The Polyclinic | service_area=WA | financial_id=A64316 | identity=RESOLVED_UNIQUE | payment_dollar_incidence=NOT_ESTABLISHED
+Northwest Rural ACO | service_area=OR, WA | financial_id=A65906 | identity=RESOLVED_UNIQUE | payment_dollar_incidence=NOT_ESTABLISHED
+Rainier Health Network | service_area=WA | financial_id=A78337 | identity=RESOLVED_UNIQUE | payment_dollar_incidence=NOT_ESTABLISHED
+
+CERTIFIED WASHINGTON APPLICABILITY STATUS
+--------------------------------------------------------------------------------------------------------
+EXPLICIT_WA_SERVICE_AREA_UNIVERSE_FULLY_LINKED
+
+All four 2015 CMS organization records with explicit WA service-area evidence are uniquely linked to financial observations.
+The remaining 2015 national identity residuals do not contain an unresolved explicit-WA organization record.
+
+ACCOUNTING / GEOGRAPHIC DISPOSITION
+--------------------------------------------------------------------------------------------------------
+Expenditure/financial observation: OBSERVED
+Historical identity: FULLY_ACCOUNTED_WITH_EXPLICIT_2015_RESIDUALS
+2015 explicit-WA organizational applicability: FULLY_LINKED
+Beneficiary residence: NOT_ESTABLISHED
+Washington payment-dollar incidence: NOT_ESTABLISHED
+Washington county payment-dollar incidence: NOT_ESTABLISHED
+Economic additivity to Original Medicare/FFS: NOT_ESTABLISHED
+Principal ledger treatment: WITHHOLD_PENDING_RECONCILIATION
+
+CHECKS
+--------------------------------------------------------------------------------------------------------
+PASS | Required input exists: Accountable Care Organizations.zip | data\raw\cms\medicare_aco\mssp_organizations\Accountable Care Organizations.zip
+PASS | Required input exists: cms_mssp_historical_linkage_v0_2.csv | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_linkage_v0_2.csv
+PASS | Required input exists: cms_mssp_historical_period_profile_v0_2.csv | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_period_profile_v0_2.csv
+PASS | Required input exists: cms_mssp_historical_linkage_checks_v0_2.csv | data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_linkage_checks_v0_2.csv
+PASS | v0.2 period profile contains exact 11-period universe | 11/11 periods | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024
+PASS | Every period reproduces expected financial row count and closes identity accounting | total financial=4,923; resolved=4,903; unresolved=18; ambiguous=2
+PASS | 2015 identity universe is fully accounted with explicit residuals | 372 resolved + 18 unresolved + 2 ambiguous = 392
+PASS | 2016-2017 official CMS crosswalk identity bridge is complete | 904/904 resolved; 0 residual
+PASS | 2018-2024 including 2019A direct ACO_ID linkage is complete | 3,627/3,627 resolved; 0 residual
+PASS | Full MSSP financial identity universe is explicitly accounted | 4,903 resolved + 18 unresolved + 2 ambiguous = 4,923 / 4,923
+PASS | 2015 source independently reproduces exactly four explicit-WA service-area organizations | 4 rows | Health Connect Partners, LLC; Northwest Rural ACO; Rainier Health Network; The Polyclinic
+PASS | Every 2015 explicit-WA service-area organization uniquely links to one financial observation | 4/4 resolved; 0 unresolved; 0 ambiguous
+PASS | No unresolved or ambiguous 2015 financial identity carries explicit linked WA-organization evidence | 0 residual rows with WA organization evidence
+PASS | 2015 WA applicability evidence remains distinct from payment-dollar incidence | All explicit-WA organization records retain payment_dollar_incidence=NOT_ESTABLISHED
+PASS | v0.2 failures are exactly the bounded 2015 residual conditions | 3 failures | No ambiguous organization identity linkage; Every financial ACO-period resolves uniquely; 2015 exact normalized-name linkage resolves all financial observations
+
+========================================================================================================
+OVERALL CMS MSSP HISTORICAL IDENTITY / WASHINGTON APPLICABILITY CERTIFICATION v0.3: PASS
+========================================================================================================
+
+Interpretive boundary:
+  This PASS certifies identity accounting and explicit Washington organizational/service-area applicability only.
+  It does not certify Washington beneficiary residence, payment-dollar incidence, county incidence, or economic additivity.
+  The 20 unresolved/ambiguous 2015 national observations remain explicitly preserved rather than imputed.
+  No federal expenditure source is additive by default.

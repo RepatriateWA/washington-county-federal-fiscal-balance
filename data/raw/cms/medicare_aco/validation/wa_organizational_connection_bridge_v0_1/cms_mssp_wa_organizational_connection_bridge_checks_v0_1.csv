@@ -1,0 +1,30 @@
+check,status,detail
+Performance results source exists,PASS,data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+Performance results SHA-256 matches preserved acquisition,PASS,C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+Organizations source exists,PASS,data\raw\cms\medicare_aco\mssp_organizations\Accountable Care Organizations.zip
+Organizations SHA-256 matches preserved acquisition,PASS,157BAF296573BC1D18AC1E0DE10121855508D6C919CC11188C3892A094D16259
+Participants source exists,PASS,data\raw\cms\medicare_aco\mssp_participants\Accountable Care Organization Participants.zip
+Participants SHA-256 matches preserved acquisition,PASS,B2E45C33A2F6D9DB4D3A5FEF8C9D6E0BEE8F75A37666202E4268E0E08F689BAF
+ACO ID crosswalk source exists,PASS,data\raw\cms\medicare_aco\mssp_aco_id_crosswalk\ssp-aco-id-crosswalk.xlsx
+ACO ID crosswalk SHA-256 matches preserved acquisition,PASS,0996CC8DC0C15961FB99012734F236B656F4CA935D4D4B793EDB11F281B244F4
+Financial source reproduces exact 11-period universe,PASS,"2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+Organization source reproduces exact 11-period universe,PASS,"2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+Participant source reproduces exact 11-period universe,PASS,"2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+Official ACO ID crosswalk reproduces 767 unique mappings,PASS,767
+Every consumed CSV member has an explicit successful encoding,PASS,33/33
+2015 explicit-WA exact-name universe reproduces four certified financial IDs,PASS,"A17898,A64316,A65906,A78337"
+2015 WA organizational-connection count reproduces frozen v0.3,PASS,4/4
+2016 WA organizational-connection count reproduces frozen v0.3,PASS,6/6
+2017 WA organizational-connection count reproduces frozen v0.3,PASS,6/6
+2018 WA organizational-connection count reproduces frozen v0.3,PASS,12/12
+2019 WA organizational-connection count reproduces frozen v0.3,PASS,10/10
+2019A WA organizational-connection count reproduces frozen v0.3,PASS,4/4
+2020 WA organizational-connection count reproduces frozen v0.3,PASS,13/13
+2021 WA organizational-connection count reproduces frozen v0.3,PASS,13/13
+2022 WA organizational-connection count reproduces frozen v0.3,PASS,16/16
+2023 WA organizational-connection count reproduces frozen v0.3,PASS,20/20
+2024 WA organizational-connection count reproduces frozen v0.3,PASS,28/28
+Total WA organizational-connection observations reproduce frozen v0.3,PASS,132/132
+Bridge has zero duplicate period + financial identifier keys,PASS,132 rows; 132 unique keys
+Every bridge row preserves non-incidence geographic boundary,PASS,132/132
+Bridge contains no settlement-dollar fields,PASS,identity/geographic evidence only

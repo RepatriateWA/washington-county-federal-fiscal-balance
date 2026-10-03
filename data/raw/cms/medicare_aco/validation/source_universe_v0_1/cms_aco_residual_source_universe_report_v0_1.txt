@@ -1,0 +1,78 @@
+====================================================================================================
+CMS ACO RESIDUAL SOURCE UNIVERSE INVENTORY v0.1
+====================================================================================================
+
+Purpose: define the reproducible source universe before Medicare v1.0 closeout.
+
+No network acquisition.
+No payment reconstruction.
+No geographic allocation.
+No database writes.
+No ledger inclusion.
+
+SOURCE UNIVERSE
+----------------------------------------------------------------------------------------------------
+MSSP_PY2015                            MISSING
+MSSP_PY2016                            MISSING
+MSSP_PY2017                            MISSING
+MSSP_PY2018                            MISSING
+MSSP_PY2019                            MISSING
+MSSP_PY2020                            MISSING
+MSSP_PY2021                            MISSING
+MSSP_PY2022                            MISSING
+MSSP_PY2023                            MISSING
+MSSP_PY2024                            MISSING
+MSSP_ACO_ID_CROSSWALK                  MISSING
+MSSP_ACO_ORGANIZATION_REFERENCE        MISSING
+MSSP_ACO_PARTICIPANTS_REFERENCE        MISSING
+MSSP_BENEFICIARY_COUNTY_REFERENCE      MISSING
+AIM_PAYMENT_EVIDENCE                   MISSING
+NGACO_FINANCIAL_RESULTS                MISSING
+PIONEER_WA_APPLICABILITY               MISSING
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Source slots:       17
+Required slots:     17
+Present locally:    0
+Missing locally:    17
+
+MISSING REQUIRED SLOTS
+----------------------------------------------------------------------------------------------------
+MSSP_PY2015 | MSSP_PERFORMANCE_RESULTS | 2015-2015
+MSSP_PY2016 | MSSP_PERFORMANCE_RESULTS | 2016-2016
+MSSP_PY2017 | MSSP_PERFORMANCE_RESULTS | 2017-2017
+MSSP_PY2018 | MSSP_PERFORMANCE_RESULTS | 2018-2018
+MSSP_PY2019 | MSSP_PERFORMANCE_RESULTS | 2019-2019
+MSSP_PY2020 | MSSP_PERFORMANCE_RESULTS | 2020-2020
+MSSP_PY2021 | MSSP_PERFORMANCE_RESULTS | 2021-2021
+MSSP_PY2022 | MSSP_PERFORMANCE_RESULTS | 2022-2022
+MSSP_PY2023 | MSSP_PERFORMANCE_RESULTS | 2023-2023
+MSSP_PY2024 | MSSP_PERFORMANCE_RESULTS | 2024-2024
+MSSP_ACO_ID_CROSSWALK | MSSP_ACO_ID_CROSSWALK | PRE_2019-POST_2019
+MSSP_ACO_ORGANIZATION_REFERENCE | MSSP_ACO_ORGANIZATION | 2015-2024
+MSSP_ACO_PARTICIPANTS_REFERENCE | MSSP_ACO_PARTICIPANTS | 2015-2024
+MSSP_BENEFICIARY_COUNTY_REFERENCE | MSSP_BENEFICIARY_GEOGRAPHY | 2015-2024
+AIM_PAYMENT_EVIDENCE | ACO_INVESTMENT_MODEL | 2015-2018
+NGACO_FINANCIAL_RESULTS | NEXT_GENERATION_ACO | 2016-2021
+PIONEER_WA_APPLICABILITY | PIONEER_ACO | 2015-2016
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | MSSP PY2015-PY2024 source slots defined | 10/10
+PASS | ACO ID crosswalk source slot defined | Historical identifier continuity required
+PASS | Washington applicability sources defined | Organization, participant, and beneficiary geography kept distinct
+PASS | Residual ACO model candidates defined | AIM, Next Generation, Pioneer
+FAIL | All required source slots locally present | 0/17 required slots presently have local files
+
+====================================================================================================
+SOURCE-UNIVERSE STATUS: ACQUISITION_REQUIRED
+====================================================================================================
+
+Interpretive boundary:
+  A missing source is not evidence of zero expenditure.
+  A Washington participant is not automatically evidence that payment dollars belong to Washington.
+  Washington beneficiary incidence is not automatically a payment-dollar allocation key.
+  Different CMS datasets are not additive by default.
+  Every candidate requires an explicit economic-overlap classification before ledger inclusion.
+  This inventory supports a systematic and reproducible review; it makes no claim of definitive completeness.

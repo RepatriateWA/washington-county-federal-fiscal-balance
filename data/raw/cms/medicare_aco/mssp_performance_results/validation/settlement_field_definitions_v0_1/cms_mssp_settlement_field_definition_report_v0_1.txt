@@ -1,0 +1,145 @@
+================================================================================================================
+CMS MSSP SETTLEMENT FIELD DEFINITION PRECISION EXTRACTION v0.1
+================================================================================================================
+
+BOUNDARY
+----------------------------------------------------------------------------------------------------------------
+READ-ONLY extraction of exact named-field evidence from preserved CMS MSSP data dictionaries.
+No accounting formula inferred.
+No additivity conclusion.
+No advance/AIM/AIP netting.
+No payment timing inferred.
+No Washington payment-dollar incidence inferred.
+No database writes.
+No ledger inclusion.
+
+SOURCE
+----------------------------------------------------------------------------------------------------------------
+data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+SHA-256: 054E06866C7EB4D1EF1A02580B02FBB4639999C9B2ED93AFC4FD593CDA1B8703
+PDF members parsed: 22
+Dictionary archive members: 18
+Raw exact-field observations: 120
+Deduplicated observations: 117
+
+PERIOD / FIELD PROFILE
+----------------------------------------------------------------------------------------------------------------
+2015   | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2016   | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2017   | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2018   | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2019   | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2019A  | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2020   | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2021   | EarnSaveLoss, GenSaveLoss, Adv_Pay, Adv_Pay_Amt, Adv_Pay_Recoup, AIM
+2022   | EarnSaveLoss, GenSaveLoss
+2023   | EarnSaveLoss, GenSaveLoss
+2024   | EarnSaveLoss, GenSaveLoss, AIP, AIPBalance, AIPRecoup, AIPOwe
+
+HIGH-VALUE DEFINITION EVIDENCE
+----------------------------------------------------------------------------------------------------------------
+
+[2015]
+EarnSaveLoss | page=4 | sha=BB382F18982B...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance
+Adv_Pay_Amt | page=7 | sha=BB382F18982B...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. 2013-2020 Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually
+Adv_Pay_Recoup | page=7 | sha=BB382F18982B...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. 2013-2020 Quality sharing rate QualPerfShare Maximum percentage of savings an ACO can share
+
+[2016]
+EarnSaveLoss | page=4 | sha=BB382F18982B...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance
+Adv_Pay_Amt | page=7 | sha=BB382F18982B...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. 2013-2020 Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually
+Adv_Pay_Recoup | page=7 | sha=BB382F18982B...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. 2013-2020 Quality sharing rate QualPerfShare Maximum percentage of savings an ACO can share
+
+[2017]
+EarnSaveLoss | page=4 | sha=BB382F18982B...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance
+Adv_Pay_Amt | page=7 | sha=BB382F18982B...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. 2013-2020 Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually
+Adv_Pay_Recoup | page=7 | sha=BB382F18982B...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. 2013-2020 Quality sharing rate QualPerfShare Maximum percentage of savings an ACO can share
+
+[2018]
+EarnSaveLoss | page=4 | sha=BB382F18982B...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance
+Adv_Pay_Amt | page=7 | sha=BB382F18982B...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. 2013-2020 Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually
+Adv_Pay_Recoup | page=7 | sha=BB382F18982B...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. 2013-2020 Quality sharing rate QualPerfShare Maximum percentage of savings an ACO can share
+
+[2019]
+EarnSaveLoss | page=4 | sha=BB382F18982B...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance
+Adv_Pay_Amt | page=7 | sha=BB382F18982B...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. 2013-2020 Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually
+Adv_Pay_Recoup | page=7 | sha=BB382F18982B...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. 2013-2020 Quality sharing rate QualPerfShare Maximum percentage of savings an ACO can share
+
+[2019A]
+EarnSaveLoss | page=4 | sha=BB382F18982B...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance
+Adv_Pay_Amt | page=7 | sha=BB382F18982B...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. 2013-2020 Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually
+Adv_Pay_Recoup | page=7 | sha=BB382F18982B...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. 2013-2020 Quality sharing rate QualPerfShare Maximum percentage of savings an ACO can share
+
+[2020]
+EarnSaveLoss | page=4 | sha=BB382F18982B...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance
+Adv_Pay_Amt | page=7 | sha=BB382F18982B...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. 2013-2020 Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually
+Adv_Pay_Recoup | page=7 | sha=BB382F18982B...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. 2013-2020 Quality sharing rate QualPerfShare Maximum percentage of savings an ACO can share
+
+[2021]
+EarnSaveLoss | page=3 | sha=7CC10793972E...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance (based on ACO track), as well as the reduction in performance payment due to sequestration and application of the
+Adv_Pay_Amt | page=6 | sha=7CC10793972E...
+  Advance payment amount Adv_Pay_Amt Maximum amount of advance payment/AIM available for recoupment at the time of financial reconciliation. Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount
+Adv_Pay_Recoup | page=6 | sha=7CC10793972E...
+  Advance payment recoupment Adv_Pay_Recoup Amount of advance payment/AIM actually recouped at the time of financial reconciliation. Populated for advance payment/AIM ACOs that shared savings and is no greater than the maximum amount owed. Maximum Sharing Rate MaxShareRate Maximum percentage of savings an ACO can share based on the ACO’s
+
+[2022]
+EarnSaveLoss | page=2 | sha=3D6ECA1229E7...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance (based on ACO track), as well as the reduction in performance payment due to sequestration and application of the
+
+[2023]
+EarnSaveLoss | page=2 | sha=3029A6A88093...
+  payments/owed losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, and who were eligible for a performance payment because they met the program’s quality performance standard or the alternative quality perfor mance standard. This amount accounts for the application of the ACO’s final sharing rate based on quality performance (which can vary based on ACO track and, if applicable, the ACO’s health equity adjusted quality
+
+[2024]
+EarnSaveLoss | page=3 | sha=5B0FED033AFA...
+  Payments/Owed Losses EarnSaveLoss Total earned shared savings: The ACO’s share of savings for ACOs whose savings rate equaled or exceeded their MSR, or met criteria for opportunities for low revenue ACOs to share in savings, and who were eligible for a performance payment because they met the program’s quality performance standard or the alternative quality performance standard. This amount
+AIPBalance | page=7 | sha=5B0FED033AFA...
+  the performance year, maximum AIPBalance Maximum amount of AIP available for recoupment at the time of financial reconciliation for the performance year. If the ACO received AIP, and no amount of AIP is available for recoupment at the time of financial reconciliation for the performance year, equal to $0. If the ACO did not receive AIP, blank (represented by “-”).
+AIPRecoup | page=7 | sha=5B0FED033AFA...
+  the performance year, actual AIPRecoup Actual amount of AIP recouped by CMS at performance year settlement. If the ACO received AIP, and no amount of AIP is recouped by CMS at performance year settlement, equal to $0. If the ACO did not receive AIP, blank (represented by “-”). AIP balance still owed to CMS after
+AIPOwe | page=7 | sha=5B0FED033AFA...
+  owed to CMS after recoupment AIPOwe AIP amount of the performance year eligible balance still owed to CMS after recoupment process. If the ACO received AIP, and no balance is owed, equal to $0. If the ACO did not receive AIP, blank (represented by “-”).
+
+CHECKS
+----------------------------------------------------------------------------------------------------------------
+PASS | Preserved MSSP documentation ZIP exists | data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+PASS | All documentation PDFs parse | 22 PDFs parsed; 0 failures
+PASS | Documentation package reproduces 22 PDF members | 22/22
+PASS | Dictionary members discovered | 18 dictionary archive members
+PASS | EarnSaveLoss exact field evidence found for all 11 periods | 11/11
+PASS | GenSaveLoss exact field evidence found for all 11 periods | 11/11
+PASS | Historical advance/AIM field evidence appears through 2021 | 2015,2016,2017,2018,2019,2019A,2020,2021
+PASS | AIP field evidence is present for 2024 | 2024
+PASS | Precision evidence extracted | 120 raw exact-field observations; 117 deduplicated observations
+
+================================================================================================================
+OVERALL CMS MSSP SETTLEMENT FIELD DEFINITION PRECISION EXTRACTION v0.1: PASS
+================================================================================================================
+
+Interpretive boundary:
+  PASS means exact named-field documentary evidence was reproducibly extracted.
+  PASS does not establish a settlement accounting identity.
+  Documentary context must be reviewed before fields are added, subtracted, or netted.
+  Absence of a field from a performance-year dictionary is not evidence of zero dollars.
+  No source is additive by default.

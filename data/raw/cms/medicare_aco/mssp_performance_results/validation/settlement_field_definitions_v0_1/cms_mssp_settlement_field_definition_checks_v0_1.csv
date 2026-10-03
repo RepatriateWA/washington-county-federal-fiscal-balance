@@ -1,0 +1,10 @@
+check,status,detail
+Preserved MSSP documentation ZIP exists,PASS,data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+All documentation PDFs parse,PASS,22 PDFs parsed; 0 failures
+Documentation package reproduces 22 PDF members,PASS,22/22
+Dictionary members discovered,PASS,18 dictionary archive members
+EarnSaveLoss exact field evidence found for all 11 periods,PASS,11/11
+GenSaveLoss exact field evidence found for all 11 periods,PASS,11/11
+Historical advance/AIM field evidence appears through 2021,PASS,"2015,2016,2017,2018,2019,2019A,2020,2021"
+AIP field evidence is present for 2024,PASS,2024
+Precision evidence extracted,PASS,120 raw exact-field observations; 117 deduplicated observations

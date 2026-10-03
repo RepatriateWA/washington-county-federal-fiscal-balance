@@ -1,0 +1,31 @@
+year,sheet,header_row,ordinal,column_name,normalized_column
+2015,Total Elig Count And Total Paid,3,1,Business name,business_name
+2015,Total Elig Count And Total Paid,3,2,Subsidy Paid,subsidy_paid
+2015,Total Elig Count And Total Paid,3,3,Retiree Count,retiree_count
+2016,Total Elig Count And Total Paid,3,1,Business name,business_name
+2016,Total Elig Count And Total Paid,3,2,Subsidy Paid,subsidy_paid
+2016,Total Elig Count And Total Paid,3,3,Retiree Count,retiree_count
+2017,Total Elig Count And Total Paid,3,1,Business name,business_name
+2017,Total Elig Count And Total Paid,3,2,Subsidy Paid,subsidy_paid
+2017,Total Elig Count And Total Paid,3,3,Retiree Count,retiree_count
+2018,Total Elig Count And Total Paid,3,1,Business name,business_name
+2018,Total Elig Count And Total Paid,3,2,Subsidy Paid,subsidy_paid
+2018,Total Elig Count And Total Paid,3,3,Retiree Count,retiree_count
+2019,Total Elig Count And Total Paid,3,1,Business name,business_name
+2019,Total Elig Count And Total Paid,3,2,Total Paid,total_paid
+2019,Total Elig Count And Total Paid,3,3,ELGBL Count,elgbl_count
+2020,Total Elig Count And Total Paid,3,1,Business name,business_name
+2020,Total Elig Count And Total Paid,3,2,Total Paid,total_paid
+2020,Total Elig Count And Total Paid,3,3,ELGBL Count,elgbl_count
+2021,Total Elig Count And Total Paid,30,1,Alachua County Board of County Commissioners,alachua_county_board_of_county_commissioners
+2021,Total Elig Count And Total Paid,30,2,45951.35,45951_35
+2021,Total Elig Count And Total Paid,30,3,103,103
+2022,Total Elig Count And Total Paid,12,1,Natl Railway Carriers & Unit Transp Union H&W Plan,natl_railway_carriers_unit_transp_union_h_w_plan
+2022,Total Elig Count And Total Paid,12,2,11011.57,11011_57
+2022,Total Elig Count And Total Paid,12,3,13,13
+2023,Total Elig Count And Total Paid,28,1,Alachua County Board of County Commissioners,alachua_county_board_of_county_commissioners
+2023,Total Elig Count And Total Paid,28,2,53223.86,53223_86
+2023,Total Elig Count And Total Paid,28,3,87,87
+2024,TotalEligCount And TotalPaid,5,1,Lee County Board of County Commissioners,lee_county_board_of_county_commissioners
+2024,TotalEligCount And TotalPaid,5,2,361718.38,361718_38
+2024,TotalEligCount And TotalPaid,5,3,465,465

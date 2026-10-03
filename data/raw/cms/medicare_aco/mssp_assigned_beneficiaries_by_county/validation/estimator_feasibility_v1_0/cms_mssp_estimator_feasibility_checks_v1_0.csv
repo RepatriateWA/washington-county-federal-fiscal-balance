@@ -1,0 +1,52 @@
+check_code,status,detail
+PERIODS,PASS,"periods=['2016', '2017', '2018', '2019', '2019A', '2020', '2021', '2022', '2023', '2024']"
+2016-COUNTY-SCHEMA,PASS,ACO=ACO ID; tot_ab=Total assigned beneficiaries; tot_py=Total assigned beneficiary person-years; esrd_py=ESRD assigned beneficiary person-years; dis_py=DISABLED assigned beneficiary person-years; agdu_py=AGED/DUAL assigned beneficiary person-years; agnd_py=AGED/NON-DUAL assigned beneficiary person-years
+2016-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv; ACO=ACO_Num; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2016-ACO-LINK,PASS,county=432; financial=432; intersection=432
+2016-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2016-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2017-COUNTY-SCHEMA,PASS,ACO=ACO ID; tot_ab=Total assigned beneficiaries	; tot_py=Total assigned beneficiary person-years	; esrd_py=ESRD assigned beneficiary person-years	; dis_py=DISABLED assigned beneficiary person-years	; agdu_py=AGED/DUAL assigned beneficiary person-years	; agnd_py=AGED/NON-DUAL assigned beneficiary person-years	
+2017-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv; ACO=ACO_Num; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2017-ACO-LINK,PASS,county=472; financial=472; intersection=472
+2017-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2017-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2018-COUNTY-SCHEMA,PASS,ACO=ACO ID; tot_ab=Total assigned beneficiaries; tot_py=Total assigned beneficiary person-years; esrd_py=ESRD assigned beneficiary person-years; dis_py=DISABLED assigned beneficiary person-years; agdu_py=AGED/DUAL assigned beneficiary person-years; agnd_py=AGED/NON-DUAL assigned beneficiary person-years
+2018-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2018-ACO-LINK,PASS,county=548; financial=548; intersection=548
+2018-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2018-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2019-COUNTY-SCHEMA,PASS,ACO=aco_id; tot_ab=tot_ab; tot_py=tot_ab_psn_yrs; esrd_py=ab_psn_yrs_esrd; dis_py=ab_psn_yrs_dis; agdu_py=ab_psn_yrs_agdu; agnd_py=ab_psn_yrs_agnd
+2019-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2019-ACO-LINK,PASS,county=475; financial=475; intersection=475
+2019-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2019-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2019A-COUNTY-SCHEMA,PASS,ACO=aco_id; tot_ab=tot_ab; tot_py=tot_ab_psn_yrs; esrd_py=ab_psn_yrs_esrd; dis_py=ab_psn_yrs_dis; agdu_py=ab_psn_yrs_agdu; agnd_py=ab_psn_yrs_agnd
+2019A-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2019A-ACO-LINK,PASS,county=205; financial=205; intersection=205
+2019A-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2019A-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2020-COUNTY-SCHEMA,PASS,ACO=ACO_ID; tot_ab=Tot_AB; tot_py=Tot_AB_Psn_Yrs; esrd_py=AB_Psn_Yrs_ESRD; dis_py=AB_Psn_Yrs_DIS; agdu_py=AB_Psn_Yrs_AGDU; agnd_py=AB_Psn_Yrs_AGND
+2020-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2020-ACO-LINK,PASS,county=513; financial=513; intersection=513
+2020-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2020-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2021-COUNTY-SCHEMA,PASS,ACO=ACO_ID; tot_ab=Tot_AB; tot_py=Tot_AB_Psn_Yrs; esrd_py=AB_Psn_Yrs_ESRD; dis_py=AB_Psn_Yrs_DIS; agdu_py=AB_Psn_Yrs_AGDU; agnd_py=AB_Psn_Yrs_AGND
+2021-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2021-ACO-LINK,PASS,county=475; financial=475; intersection=475
+2021-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2021-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2022-COUNTY-SCHEMA,PASS,ACO=ACO_ID; tot_ab=Tot_AB; tot_py=Tot_AB_Psn_Yrs; esrd_py=AB_Psn_Yrs_ESRD; dis_py=AB_Psn_Yrs_DIS; agdu_py=AB_Psn_Yrs_AGDU; agnd_py=AB_Psn_Yrs_AGND
+2022-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2022-ACO-LINK,PASS,county=482; financial=482; intersection=482
+2022-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2022-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2023-COUNTY-SCHEMA,PASS,ACO=ACO_ID; tot_ab=Tot_AB; tot_py=Tot_AB_Psn_Yrs; esrd_py=AB_Psn_Yrs_ESRD; dis_py=AB_Psn_Yrs_DIS; agdu_py=AB_Psn_Yrs_AGDU; agnd_py=AB_Psn_Yrs_AGND
+2023-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2023-ACO-LINK,PASS,county=453; financial=453; intersection=453
+2023-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2023-PY-RESIDUAL,PASS,negative=0; unexplained=0
+2024-COUNTY-SCHEMA,PASS,ACO=ACO_ID; tot_ab=Tot_AB; tot_py=Tot_AB_Psn_Yrs; esrd_py=AB_Psn_Yrs_ESRD; dis_py=AB_Psn_Yrs_DIS; agdu_py=AB_Psn_Yrs_AGDU; agnd_py=AB_Psn_Yrs_AGND
+2024-FIN-CONTROLS,PASS,member=Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv; ACO=ACO_ID; N_AB=N_AB; N_AB_Year_PY=N_AB_Year_PY
+2024-ACO-LINK,PASS,county=476; financial=476; intersection=476
+2024-COUNT-RESIDUAL,PASS,negative=0; unexplained=0
+2024-PY-RESIDUAL,PASS,negative=0; unexplained=0

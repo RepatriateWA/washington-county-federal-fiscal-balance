@@ -1,0 +1,21 @@
+CMS MDCR ENROLL D 3 XLSX STRUCTURAL PROFILER v0.2
+==============================================================================
+
+Scope: CY2015-CY2023
+Worksheet observations: 31
+Preview observations: 682
+Years with positive D3 candidate: 9
+
+CHECKS
+------------------------------------------------------------------------------
+PASS | CY2015-CY2023 XLSX sources profiled | 9/9 years
+PASS | Positive D3 candidate found for every year | 9/9 years
+FAIL | Unique strongest D3 candidate for every year | 7/9 years
+PASS | No XLSX profiling errors | 0 errors
+
+BOUNDARY
+------------------------------------------------------------------------------
+This profiler identifies the structurally strongest MDCR ENROLL D 3 worksheet for each year.
+It does not yet certify the meaning of Area of Residence.
+It does not treat RDS enrollment as a dollar-allocation weight.
+No RDS payment has been assigned to Washington or any county.

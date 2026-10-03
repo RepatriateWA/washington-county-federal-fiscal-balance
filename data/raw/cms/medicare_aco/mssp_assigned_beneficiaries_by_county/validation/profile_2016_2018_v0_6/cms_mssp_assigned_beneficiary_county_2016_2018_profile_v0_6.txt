@@ -1,0 +1,94 @@
+CMS MSSP ASSIGNED BENEFICIARY COUNTY 2016-2018 HISTORICAL SOURCE PROFILE v0.6
+================================================================================================
+Read-only. Raw beneficiary value states are inventoried without semantic coercion.
+
+2016 COUNTY SOURCE
+------------------------------------------------------------------------------------------------
+2016-SOURCE-01: PASS - bytes=4,421,455 expected=4,421,455
+2016-SOURCE-02: PASS - SHA256=6D745C0F28949F53B4EDA8793CF050A15AFC8A947402901F9E94A9C3EE2FEB19
+rows=98,208
+exact headers (12): ['Year', 'ACO ID', 'State Name', 'County Name', 'State ID', 'County ID', 'ESRD assigned beneficiary person-years', 'DISABLED assigned beneficiary person-years', 'AGED/DUAL assigned beneficiary person-years', 'AGED/NON-DUAL assigned beneficiary person-years', 'Total assigned beneficiary person-years', 'Total assigned beneficiaries']
+normalized headers (12): ['year', 'aco_id', 'state name', 'county name', 'state_id', 'county_id', 'esrd assigned beneficiary person-years', 'disabled assigned beneficiary person-years', 'aged/dual assigned beneficiary person-years', 'aged/non-dual assigned beneficiary person-years', 'total assigned beneficiary person-years', 'total assigned beneficiaries']
+2016-STRUCT-01: PASS - ACO universe=432 expected=432; blank=0
+2016-STRUCT-02: PASS - Year column present=True; mismatched rows=0
+duplicate ACO+state_id+county_id rows=0
+RAW BENEFICIARY VALUE STATES
+  'ESRD assigned beneficiary person-years': numeric=1,325 '<BLANK>'=96,883
+  'DISABLED assigned beneficiary person-years': numeric=3,899 '<BLANK>'=94,309
+  'AGED/DUAL assigned beneficiary person-years': numeric=2,142 '<BLANK>'=96,066
+  'AGED/NON-DUAL assigned beneficiary person-years': numeric=6,741 '<BLANK>'=91,467
+  'Total assigned beneficiary person-years': numeric=11,951 '<BLANK>'=86,257
+  'Total assigned beneficiaries': numeric=11,951 '<BLANK>'=86,257
+2016-SEM-01: PASS - beneficiary measure columns found=6/6
+
+2017 COUNTY SOURCE
+------------------------------------------------------------------------------------------------
+2017-SOURCE-01: PASS - bytes=5,563,732 expected=5,563,732
+2017-SOURCE-02: PASS - SHA256=D3C6EDF2B8B80E4244FAD4BC36E8E9E518055D97A0147ABA79DE7D3A61E6ABB3
+rows=109,900
+exact headers (12): ['Year', 'ACO ID', 'State Name', 'County Name', 'State ID', 'County ID', 'ESRD assigned beneficiary person-years\t', 'DISABLED assigned beneficiary person-years\t', 'AGED/DUAL assigned beneficiary person-years\t', 'AGED/NON-DUAL assigned beneficiary person-years\t', 'Total assigned beneficiary person-years\t', 'Total assigned beneficiaries\t']
+normalized headers (12): ['year', 'aco_id', 'state name', 'county name', 'state_id', 'county_id', 'esrd assigned beneficiary person-years', 'disabled assigned beneficiary person-years', 'aged/dual assigned beneficiary person-years', 'aged/non-dual assigned beneficiary person-years', 'total assigned beneficiary person-years', 'total assigned beneficiaries']
+2017-STRUCT-01: PASS - ACO universe=472 expected=472; blank=0
+2017-STRUCT-02: PASS - Year column present=True; mismatched rows=0
+duplicate ACO+state_id+county_id rows=0
+RAW BENEFICIARY VALUE STATES
+  'ESRD assigned beneficiary person-years\t': numeric=1,416 '.'=101,676 '*'=6,808
+  'DISABLED assigned beneficiary person-years\t': numeric=4,380 '.'=75,255 '*'=30,265
+  'AGED/DUAL assigned beneficiary person-years\t': numeric=2,342 '.'=87,066 '*'=20,492
+  'AGED/NON-DUAL assigned beneficiary person-years\t': numeric=7,625 '*'=87,483 '.'=14,792
+  'Total assigned beneficiary person-years\t': numeric=13,636 '*'=96,264
+  'Total assigned beneficiaries\t': numeric=13,636 '*'=96,264
+2017-SEM-01: PASS - beneficiary measure columns found=6/6
+
+2018 COUNTY SOURCE
+------------------------------------------------------------------------------------------------
+2018-SOURCE-01: PASS - bytes=6,503,795 expected=6,503,795
+2018-SOURCE-02: PASS - SHA256=ABA3135EF3CD8F7AEC46F0354D246AD30821BF53EFB9B0D738C957612CE7597F
+rows=131,165
+exact headers (12): ['Year', 'ACO ID', 'State name', 'County name', 'State ID', 'County ID', 'ESRD assigned beneficiary person-years', 'DISABLED assigned beneficiary person-years', 'AGED/DUAL assigned beneficiary person-years', 'AGED/NON-DUAL assigned beneficiary person-years', 'Total assigned beneficiary person-years', 'Total assigned beneficiaries']
+normalized headers (12): ['year', 'aco_id', 'state name', 'county name', 'state_id', 'county_id', 'esrd assigned beneficiary person-years', 'disabled assigned beneficiary person-years', 'aged/dual assigned beneficiary person-years', 'aged/non-dual assigned beneficiary person-years', 'total assigned beneficiary person-years', 'total assigned beneficiaries']
+2018-STRUCT-01: PASS - ACO universe=548 expected=548; blank=0
+2018-STRUCT-02: PASS - Year column present=True; mismatched rows=0
+duplicate ACO+state_id+county_id rows=0
+RAW BENEFICIARY VALUE STATES
+  'ESRD assigned beneficiary person-years': numeric=1,567 '.'=121,608 '*'=7,990
+  'DISABLED assigned beneficiary person-years': numeric=4,945 '.'=91,280 '*'=34,940
+  'AGED/DUAL assigned beneficiary person-years': numeric=2,701 '.'=104,788 '*'=23,676
+  'AGED/NON-DUAL assigned beneficiary person-years': numeric=8,922 '*'=105,423 '.'=16,820
+  'Total assigned beneficiary person-years': numeric=16,116 '*'=115,049
+  'Total assigned beneficiaries': numeric=16,116 '*'=115,049
+2018-SEM-01: PASS - beneficiary measure columns found=6/6
+
+FINANCIAL PUF LINKAGE
+------------------------------------------------------------------------------------------------
+2016: candidate CSV members=1
+  Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv
+    rows=432 financial_ACOs=432
+    county=432 intersection=432 county_only=0 financial_only=0 exact_equal=YES
+2016-FIN-01: PASS - financial candidates with ACO_ID=1
+2016-FIN-02: PASS - exact county-financial ACO-set matches=1
+
+2017: candidate CSV members=1
+  Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv
+    rows=472 financial_ACOs=472
+    county=472 intersection=472 county_only=0 financial_only=0 exact_equal=YES
+2017-FIN-01: PASS - financial candidates with ACO_ID=1
+2017-FIN-02: PASS - exact county-financial ACO-set matches=1
+
+2018: candidate CSV members=1
+  Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv
+    rows=548 financial_ACOs=548
+    county=548 intersection=548 county_only=0 financial_only=0 exact_equal=YES
+2018-FIN-01: PASS - financial candidates with ACO_ID=1
+2018-FIN-02: PASS - exact county-financial ACO-set matches=1
+
+INTERPRETATION GUARDRAILS
+------------------------------------------------------------------------------------------------
+PROFILE-ONLY: Blank, '*', and '.' states are lexical observations; no meaning is assigned here.
+PROFILE-ONLY: No suppressed observation is treated as zero.
+PROFILE-ONLY: No EarnSaveLoss or other financial measure is allocated.
+PROFILE-ONLY: No Washington dollar incidence or ledger-inclusion decision is made.
+
+OVERALL PROFILE EXECUTION v0.6: PASS
+Checks: 21 total; 0 failed
+Evidence: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\validation\profile_2016_2018_v0_6

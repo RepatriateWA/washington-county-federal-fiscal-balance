@@ -1,0 +1,6 @@
+field_scope,raw_value,certified_semantic_state,accounting_treatment,note
+ENROLLMENT_COMPONENTS,<numeric>,PUBLISHED_NUMERIC_VALUE,OBSERVED,Published CMS person-year value.
+ENROLLMENT_COMPONENTS,*,CMS_SUPPRESSED,UNRESOLVED,"Do not zero, bound, reconstruct, or impute."
+ENROLLMENT_COMPONENTS,.,CMS_MISSING_ZERO_BENEFICIARIES,KNOWN_ZERO_BENEFICIARY_STATE,CMS dictionary: county has no assigned beneficiaries with this enrollment type. Preserve raw '.' in provenance.
+TOTAL_MEASURES,<numeric>,PUBLISHED_NUMERIC_VALUE,OBSERVED,Published CMS total value.
+TOTAL_MEASURES,*,CMS_SUPPRESSED,UNRESOLVED,"Do not zero, bound, reconstruct, or impute."

@@ -1,0 +1,15 @@
+check_id,status,detail
+SOURCE-01,PASS,county archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02,PASS,"county archive bytes=8,450,964 expected=8,450,964"
+ARCHIVE-01,PASS,archive entries=21 expected=21
+ARCHIVE-02,PASS,"year directories=2020,2021,2022,2023,2024"
+ARCHIVE-03,PASS,"exactly one CSV for acquired periods=2020,2021,2022,2023,2024"
+ARCHIVE-04,PASS,"PDF counts=2020:2,2021:2,2022:2,2023:2,2024:2"
+SCHEMA-01,PASS,exact 12-column CMS schema reproduced for all acquired periods
+SCHEMA-02,PASS,Year field agrees with archive period for every row
+MEASURE-01,FAIL,Tot_AB_Psn_Yrs numeric on every acquired row
+MEASURE-02,FAIL,Tot_AB numeric on every acquired row
+IDENTITY-01,FAIL,Tot_AB_Psn_Yrs equals ESRD+DIS+AGDU+AGND on every acquired row
+LINK-01,PASS,exactly one governing financial CSV with ACO_ID found for each 2020-2024 period
+LINK-02,PASS,financial ACO-ID counts reproduce previously certified 2020-2024 universe
+LINK-03,PASS,county-PUF and financial-PUF ACO_ID sets are exactly equal for every 2020-2024 period

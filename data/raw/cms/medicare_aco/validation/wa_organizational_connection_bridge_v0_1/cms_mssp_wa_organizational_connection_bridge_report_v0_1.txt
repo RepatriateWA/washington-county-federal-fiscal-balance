@@ -1,0 +1,125 @@
+========================================================================================================================
+CMS MSSP WASHINGTON ORGANIZATIONAL CONNECTION BRIDGE v0.1
+========================================================================================================================
+
+BOUNDARY
+------------------------------------------------------------------------------------------------------------------------
+Machine-readable bridge reproducing the Washington organizational-connection universe certified by historical linkage v0.3.
+NO settlement dollars are contained in this bridge.
+ACO organizational connection is NOT Washington payment-dollar incidence.
+No beneficiary residence inferred.
+No county incidence inferred.
+No economic additivity inferred.
+No cash timing inferred.
+No ledger inclusion.
+
+SOURCE PROVENANCE
+------------------------------------------------------------------------------------------------------------------------
+Performance results: data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+  SHA-256: C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+Organizations: data\raw\cms\medicare_aco\mssp_organizations\Accountable Care Organizations.zip
+  SHA-256: 157BAF296573BC1D18AC1E0DE10121855508D6C919CC11188C3892A094D16259
+Participants: data\raw\cms\medicare_aco\mssp_participants\Accountable Care Organization Participants.zip
+  SHA-256: B2E45C33A2F6D9DB4D3A5FEF8C9D6E0BEE8F75A37666202E4268E0E08F689BAF
+ACO ID crosswalk: data\raw\cms\medicare_aco\mssp_aco_id_crosswalk\ssp-aco-id-crosswalk.xlsx
+  SHA-256: 0996CC8DC0C15961FB99012734F236B656F4CA935D4D4B793EDB11F281B244F4
+
+SOURCE CSV ENCODING INVENTORY
+------------------------------------------------------------------------------------------------------------------------
+utf-8-sig    |  29 CSV members
+cp1252       |   4 CSV members
+
+Organizations        | 2015   | utf-8-sig  | rows=397    | Accountable Care Organizations/2015/SSP_ACOs_2015_12_31.csv
+Organizations        | 2016   | utf-8-sig  | rows=433    | Accountable Care Organizations/2016/SSP_ACOs_2016_12_31.csv
+Organizations        | 2017   | utf-8-sig  | rows=480    | Accountable Care Organizations/2017/SSP_ACOs_2017_01_01.csv
+Organizations        | 2018   | utf-8-sig  | rows=561    | Accountable Care Organizations/2018/SSP_ACOs_2018_01_01.csv
+Organizations        | 2019   | utf-8-sig  | rows=487    | Accountable Care Organizations/2019/SSP_ACOs_2019_01_01.csv
+Organizations        | 2019A  | cp1252     | rows=518    | Accountable Care Organizations/2019_off-cycle_1/SSP_ACOs_2019_07_31.csv
+Organizations        | 2020   | cp1252     | rows=517    | Accountable Care Organizations/2020/SSP_ACOs_2020_01_07.csv
+Organizations        | 2021   | cp1252     | rows=477    | Accountable Care Organizations/2021/SSP_ACOs_2021_01_01.csv
+Organizations        | 2022   | utf-8-sig  | rows=483    | Accountable Care Organizations/2022/SSP_ACOs_2022_01_01.csv
+Organizations        | 2023   | utf-8-sig  | rows=456    | Accountable Care Organizations/2023/SSP_ACOs_2023_01_01.csv
+Organizations        | 2024   | utf-8-sig  | rows=480    | Accountable Care Organizations/2024/PY2024_Medicare_Shared_Savings_Program_Organizations.csv
+Participants         | 2015   | utf-8-sig  | rows=15392  | Accountable Care Organization Participants/2015/SSP_ACO_Participants_2015_01_01.csv
+Participants         | 2016   | utf-8-sig  | rows=14817  | Accountable Care Organization Participants/2016/SSP_ACO_Participants_2016_01_01.csv
+Participants         | 2017   | utf-8-sig  | rows=18281  | Accountable Care Organization Participants/2017/SSP_ACO_Participants_2017_01_01.csv
+Participants         | 2018   | utf-8-sig  | rows=20808  | Accountable Care Organization Participants/2018/SSP_ACO_Participants_2018_01_01.csv
+Participants         | 2019   | utf-8-sig  | rows=18399  | Accountable Care Organization Participants/2019/SSP_ACO_Participants_2019_01_01.csv
+Participants         | 2019A  | utf-8-sig  | rows=18305  | Accountable Care Organization Participants/2019_off-cycle_1/SSP_ACO_Participants_2019_07_01.csv
+Participants         | 2020   | utf-8-sig  | rows=17448  | Accountable Care Organization Participants/2020/SSP_ACO_Participants_2020_01_01.csv
+Participants         | 2021   | cp1252     | rows=16352  | Accountable Care Organization Participants/2021/SSP_ACO_Participants_2021_01_01.csv
+Participants         | 2022   | utf-8-sig  | rows=16046  | Accountable Care Organization Participants/2022/SSP_ACO_Participants_2022_01_01.csv
+Participants         | 2023   | utf-8-sig  | rows=15551  | Accountable Care Organization Participants/2023/SSP_ACO_Participants_2023_01_01.csv
+Participants         | 2024   | utf-8-sig  | rows=15540  | Accountable Care Organization Participants/2024/PY2024_Medicare_Shared_Savings_Program_Participants.csv
+Performance results  | 2015   | utf-8-sig  | rows=392    | Performance Year Financial and Quality Results/2015/Performance_Year_Financial_and_Quality_Results_2015_suppress.csv
+Performance results  | 2016   | utf-8-sig  | rows=432    | Performance Year Financial and Quality Results/2016/Performance_Year_Financial_and_Quality_Results_2016_suppress.csv
+Performance results  | 2017   | utf-8-sig  | rows=472    | Performance Year Financial and Quality Results/2017/Performance_Year_Financial_and_Quality_Results_2017_suppress.csv
+Performance results  | 2018   | utf-8-sig  | rows=548    | Performance Year Financial and Quality Results/2018/Performance_Year_Financial_and_Quality_Results_2018_suppress.csv
+Performance results  | 2019   | utf-8-sig  | rows=475    | Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv
+Performance results  | 2019A  | utf-8-sig  | rows=205    | Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+Performance results  | 2020   | utf-8-sig  | rows=513    | Performance Year Financial and Quality Results/2020/Performance_Year_Financial_and_Quality_Results_2020_suppress.csv
+Performance results  | 2021   | utf-8-sig  | rows=475    | Performance Year Financial and Quality Results/2021/Performance_Year_Financial_and_Quality_Results_2021_suppress.csv
+Performance results  | 2022   | utf-8-sig  | rows=482    | Performance Year Financial and Quality Results/2022/Performance_Year_Financial_and_Quality_Results_PUF_2022_01_01.csv
+Performance results  | 2023   | utf-8-sig  | rows=453    | Performance Year Financial and Quality Results/2023/PY 2023 ACO Results PUF.csv
+Performance results  | 2024   | utf-8-sig  | rows=476    | Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv
+
+PERIOD ACCOUNTING
+------------------------------------------------------------------------------------------------------------------------
+2015   | connected=  4 | org_only=  4 | participant_only=  0 | both=  0 | expected_v0_3=  4
+2016   | connected=  6 | org_only=  6 | participant_only=  0 | both=  0 | expected_v0_3=  6
+2017   | connected=  6 | org_only=  6 | participant_only=  0 | both=  0 | expected_v0_3=  6
+2018   | connected= 12 | org_only= 12 | participant_only=  0 | both=  0 | expected_v0_3= 12
+2019   | connected= 10 | org_only= 10 | participant_only=  0 | both=  0 | expected_v0_3= 10
+2019A  | connected=  4 | org_only=  0 | participant_only=  0 | both=  4 | expected_v0_3=  4
+2020   | connected= 13 | org_only=  0 | participant_only=  0 | both= 13 | expected_v0_3= 13
+2021   | connected= 13 | org_only=  0 | participant_only=  0 | both= 13 | expected_v0_3= 13
+2022   | connected= 16 | org_only=  0 | participant_only=  0 | both= 16 | expected_v0_3= 16
+2023   | connected= 20 | org_only=  0 | participant_only=  0 | both= 20 | expected_v0_3= 20
+2024   | connected= 28 | org_only=  0 | participant_only=  0 | both= 28 | expected_v0_3= 28
+------------------------------------------------------------------------------------------------------------------------
+TOTAL | connected=132 | expected_v0_3=132
+
+CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS | Performance results source exists | data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+PASS | Performance results SHA-256 matches preserved acquisition | C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+PASS | Organizations source exists | data\raw\cms\medicare_aco\mssp_organizations\Accountable Care Organizations.zip
+PASS | Organizations SHA-256 matches preserved acquisition | 157BAF296573BC1D18AC1E0DE10121855508D6C919CC11188C3892A094D16259
+PASS | Participants source exists | data\raw\cms\medicare_aco\mssp_participants\Accountable Care Organization Participants.zip
+PASS | Participants SHA-256 matches preserved acquisition | B2E45C33A2F6D9DB4D3A5FEF8C9D6E0BEE8F75A37666202E4268E0E08F689BAF
+PASS | ACO ID crosswalk source exists | data\raw\cms\medicare_aco\mssp_aco_id_crosswalk\ssp-aco-id-crosswalk.xlsx
+PASS | ACO ID crosswalk SHA-256 matches preserved acquisition | 0996CC8DC0C15961FB99012734F236B656F4CA935D4D4B793EDB11F281B244F4
+PASS | Financial source reproduces exact 11-period universe | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PASS | Organization source reproduces exact 11-period universe | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PASS | Participant source reproduces exact 11-period universe | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PASS | Official ACO ID crosswalk reproduces 767 unique mappings | 767
+PASS | Every consumed CSV member has an explicit successful encoding | 33/33
+PASS | 2015 explicit-WA exact-name universe reproduces four certified financial IDs | A17898,A64316,A65906,A78337
+PASS | 2015 WA organizational-connection count reproduces frozen v0.3 | 4/4
+PASS | 2016 WA organizational-connection count reproduces frozen v0.3 | 6/6
+PASS | 2017 WA organizational-connection count reproduces frozen v0.3 | 6/6
+PASS | 2018 WA organizational-connection count reproduces frozen v0.3 | 12/12
+PASS | 2019 WA organizational-connection count reproduces frozen v0.3 | 10/10
+PASS | 2019A WA organizational-connection count reproduces frozen v0.3 | 4/4
+PASS | 2020 WA organizational-connection count reproduces frozen v0.3 | 13/13
+PASS | 2021 WA organizational-connection count reproduces frozen v0.3 | 13/13
+PASS | 2022 WA organizational-connection count reproduces frozen v0.3 | 16/16
+PASS | 2023 WA organizational-connection count reproduces frozen v0.3 | 20/20
+PASS | 2024 WA organizational-connection count reproduces frozen v0.3 | 28/28
+PASS | Total WA organizational-connection observations reproduce frozen v0.3 | 132/132
+PASS | Bridge has zero duplicate period + financial identifier keys | 132 rows; 132 unique keys
+PASS | Every bridge row preserves non-incidence geographic boundary | 132/132
+PASS | Bridge contains no settlement-dollar fields | identity/geographic evidence only
+
+========================================================================================================================
+OVERALL CMS MSSP WASHINGTON ORGANIZATIONAL CONNECTION BRIDGE v0.1: PASS
+========================================================================================================================
+
+Interpretive boundary:
+  PASS means this bridge reproduces the frozen v0.3 Washington organizational-connection universe.
+  A bridge row establishes organizational connection only.
+  It does not establish that the ACO's settlement dollars economically accrued to Washington.
+  It does not establish beneficiary residence, county incidence, cash timing, or ledger inclusion.
+  2015 participant evidence is NOT asserted by this bridge unless independently demonstrated.
+  Source CSV encodings are explicitly inventoried; no undecodable bytes are silently replaced.
+  No source is additive by default.

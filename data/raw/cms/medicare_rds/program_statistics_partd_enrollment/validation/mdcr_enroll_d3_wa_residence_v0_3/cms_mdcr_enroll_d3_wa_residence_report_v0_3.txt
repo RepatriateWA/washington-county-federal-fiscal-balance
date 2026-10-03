@@ -1,0 +1,32 @@
+CMS MDCR ENROLL D 3 WASHINGTON RESIDENCE CERTIFICATION v0.3
+==============================================================================
+
+Scope: CY2015-CY2023
+
+CERTIFIED SEMANTIC BOUNDARY
+------------------------------------------------------------------------------
+MDCR ENROLL D 3 publishes Retiree Drug Subsidy (No Part D Plan) enrollment by Area of Residence.
+Washington is directly observed as a published residence geography.
+The source therefore supports a Washington-resident RDS enrollment series for CY2015-CY2023.
+
+NON-CERTIFIED INFERENCES
+------------------------------------------------------------------------------
+This source does not establish Washington RDS payment dollars.
+RDS beneficiary counts are not treated as payment-dollar allocation weights.
+This source does not establish county-level Washington RDS enrollment or payments.
+
+CHECKS
+------------------------------------------------------------------------------
+PASS | CY2015-CY2023 source ZIPs resolved | 9/9 years
+PASS | Exactly one D3 data worksheet per year | 9/9 years
+PASS | D3 title says by Area of Residence | 9/9 years
+PASS | Area of Residence column present | 9/9 years
+PASS | RDS No Part D Plan column present | 9/9 years
+PASS | Exactly one Washington residence row per year | 9/9 years
+PASS | Washington RDS enrollment numeric every year | 9/9 years
+PASS | United States RDS control numeric every year | 9/9 years
+PASS | All Areas RDS control numeric every year | 9/9 years
+PASS | Published geography vocabulary is compact | 76 distinct residence labels
+PASS | No county-labelled residence observations | 0 county-labelled areas
+PASS | Washington appears as residence geography | Washington
+PASS | No certification errors | 0 errors

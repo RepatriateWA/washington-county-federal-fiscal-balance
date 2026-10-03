@@ -1,0 +1,39 @@
+====================================================================================================
+CMS WASHINGTON MFFS MEDICARE SAVINGS REPORT ACQUISITION v0.1
+====================================================================================================
+
+OFFICIAL CMS SOURCES ONLY
+No database writes.
+No payment reconstruction.
+No ledger inclusion.
+
+SUMMARY
+----------------------------------------------------------------------------------------------------
+Discovery pages:             2
+Candidate links:             6
+Resolved candidate links:    5
+Unique official PDF hashes:  4
+Resolution errors:           1
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | Official CMS discovery pages resolved | 2/2 pages
+PASS | Washington MFFS savings-report candidates discovered | 6 candidate links
+FAIL | All discovered candidates resolved without error | 5/6 resolved
+PASS | All resolved sources are valid PDF files | 5/5 valid PDFs
+PASS | SHA-256 recorded for every resolved source | 5/5 hashed
+FAIL | At least six unique official actuarial reports preserved | 4 unique PDF hashes
+
+====================================================================================================
+OVERALL SOURCE ACQUISITION: FAIL
+====================================================================================================
+
+Boundary:
+  Acquisition establishes preservation of official CMS Washington MFFS savings-report sources.
+  It does NOT establish Washington performance-payment dollars.
+  It does NOT establish additivity to Original Medicare/FFS.
+  It does NOT authorize ledger inclusion.
+
+RESOLUTION ERRORS
+----------------------------------------------------------------------------------------------------
+Demonstration Year 2 Final and Demonstration Year 3 Preliminary Medicare Cost Savings Report for the Washington managed fee-for-service model demonstration under the Medicare-Medicaid Financial Alignment Initiative (11/16/2018) | HTTPError: HTTP Error 404: Not Found

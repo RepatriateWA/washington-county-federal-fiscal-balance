@@ -1,0 +1,11 @@
+check_id,status,detail
+SOURCE-01,PASS,archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+SOURCE-02,PASS,"archive bytes=8,450,964 expected=8,450,964"
+DOC-01,PASS,PDF members=10 expected=10
+DOC-02,PASS,"PDF members by period=2020:2,2021:2,2022:2,2023:2,2024:2"
+DOC-03,PASS,unique PDF byte streams=3
+PARSE-01,PASS,PDF page parse errors=0
+PARSE-02,PASS,all unique PDFs yielded nonempty text
+SEARCH-01,PASS,targeted search terms accounted=35
+SEARCH-02,PASS,all six target fields included in search universe
+FIELD-01,PASS,"target field names found in extracted documentation=AB_Psn_Yrs_AGDU,AB_Psn_Yrs_AGND,AB_Psn_Yrs_DIS,AB_Psn_Yrs_ESRD,Tot_AB,Tot_AB_Psn_Yrs"

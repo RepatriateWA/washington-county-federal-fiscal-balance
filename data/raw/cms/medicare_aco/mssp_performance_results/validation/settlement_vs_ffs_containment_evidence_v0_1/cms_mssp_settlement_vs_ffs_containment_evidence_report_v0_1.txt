@@ -1,0 +1,55 @@
+==============================================================================================================
+CMS MSSP SETTLEMENT vs FFS CONTAINMENT EVIDENCE EXTRACTOR v0.1
+==============================================================================================================
+
+BOUNDARY
+--------------------------------------------------------------------------------------------------------------
+Searches preserved CMS MSSP documentation for evidence needed to distinguish EarnSaveLoss from FFS-contained payments.
+This extractor does NOT make the economic-overlap or additivity decision.
+Absence of terminology is NOT interpreted as proof of exclusion.
+No Washington incidence, cash timing, database write, or ledger inclusion.
+
+SOURCE
+--------------------------------------------------------------------------------------------------------------
+data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+SHA-256: 054E06866C7EB4D1EF1A02580B02FBB4639999C9B2ED93AFC4FD593CDA1B8703
+
+DOCUMENT UNIVERSE
+--------------------------------------------------------------------------------------------------------------
+PDF archive members: 22
+Unique PDF byte streams: 7
+Unique PDFs parsed: 7
+Parse errors: 0
+
+EVIDENCE SUMMARY
+--------------------------------------------------------------------------------------------------------------
+EARNSAVELOSS: 8 unique evidence window(s)
+PERFORMANCE PAYMENT: 11 unique evidence window(s)
+UNDERLYING CLAIMS / EXPENDITURES: 73 unique evidence window(s)
+POPULATION-BASED / SPLIT PAYMENT: NOT FOUND (absence is not evidence of exclusion)
+CLAIM PAYMENT REDIRECTION MECHANISM: NOT FOUND (absence is not evidence of exclusion)
+ADVANCE / AIM / AIP SETTLEMENT: 12 unique evidence window(s)
+
+CHECKS
+--------------------------------------------------------------------------------------------------------------
+PASS | Preserved MSSP documentation ZIP exists | data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+PASS | MSSP documentation ZIP SHA-256 matches preserved acquisition | 054E06866C7EB4D1EF1A02580B02FBB4639999C9B2ED93AFC4FD593CDA1B8703
+PASS | Documentation ZIP contains 22 PDF members | 22/22
+PASS | Documentation ZIP reproduces 7 unique PDF byte streams | 7/7
+PASS | All 7 unique PDF byte streams parse | 7/7 parsed; errors=0
+PASS | EarnSaveLoss / earned shared-savings evidence is present | 8 unique evidence window(s)
+PASS | Underlying claims / expenditure evidence is present | 73 unique evidence window(s)
+
+==============================================================================================================
+OVERALL CMS MSSP SETTLEMENT vs FFS CONTAINMENT EVIDENCE EXTRACTOR v0.1: PASS
+==============================================================================================================
+
+INTERPRETIVE BOUNDARY
+--------------------------------------------------------------------------------------------------------------
+PASS means the preserved MSSP documentation was authenticated and the targeted settlement/containment evidence was extracted.
+PASS does NOT establish that EarnSaveLoss is economically distinct from Original Medicare / FFS.
+PASS does NOT establish Washington payment-dollar incidence.
+No source is additive by default.
+
+Evidence file:
+data\raw\cms\medicare_aco\mssp_performance_results\validation\settlement_vs_ffs_containment_evidence_v0_1\cms_mssp_settlement_vs_ffs_containment_evidence_v0_1.txt

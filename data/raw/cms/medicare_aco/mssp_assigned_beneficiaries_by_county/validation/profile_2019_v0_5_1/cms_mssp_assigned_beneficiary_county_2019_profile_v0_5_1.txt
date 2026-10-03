@@ -1,0 +1,81 @@
+CMS MSSP ASSIGNED BENEFICIARY COUNTY 2019 SEMANTIC PROFILE v0.5
+========================================================================================
+Read-only profiling. No DB writes, dollar allocation, or ledger decision.
+
+County source: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\Number of Accountable Care Organization Assigned Beneficiaries by County 2019.zip
+County bytes : 1,685,820
+County SHA256: 17D8441928A6B725C11BAD6E2C8E536634108E9877409D164EDBBE51B4F9EEAE
+Financial source: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+
+SOURCE-01: PASS - county bytes=1,685,820 expected=1,685,820
+SOURCE-02: PASS - county SHA-256=17D8441928A6B725C11BAD6E2C8E536634108E9877409D164EDBBE51B4F9EEAE
+
+COUNTY PERIOD PROFILES
+----------------------------------------------------------------------------------------
+2019_01_01
+  member: Number of Accountable Care Organization Assigned Beneficiaries by County/2019/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2019_01_01.csv
+  rows=122,627 distinct_ACO_ID=475 blank_ACO_ID=0
+  ACO column: aco_id
+  geography columns used for duplicate diagnostic: ['state_name', 'county_name', 'state_id', 'county_id']
+  duplicate ACO+geography keys: 0
+  columns (12): ['year', 'aco_id', 'state_name', 'county_name', 'state_id', 'county_id', 'ab_psn_yrs_esrd', 'ab_psn_yrs_dis', 'ab_psn_yrs_agdu', 'ab_psn_yrs_agnd', 'tot_ab_psn_yrs', 'tot_ab']
+  tot_ab_psn_yrs: numeric=15,840 suppressed=106,787
+  tot_ab: numeric=15,840 suppressed=106,787
+  ab_psn_yrs_esrd: numeric=1,586 suppressed=8,029 cms-zero-dot=113,012
+  ab_psn_yrs_dis: numeric=4,924 suppressed=32,323 cms-zero-dot=85,380
+  ab_psn_yrs_agdu: numeric=2,802 suppressed=22,702 cms-zero-dot=97,123
+  ab_psn_yrs_agnd: numeric=8,869 suppressed=98,700 cms-zero-dot=15,058
+
+2019_07_01
+  member: Number of Accountable Care Organization Assigned Beneficiaries by County/2019_off-cycle_1/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2019_07_01.csv
+  rows=56,444 distinct_ACO_ID=205 blank_ACO_ID=0
+  ACO column: aco_id
+  geography columns used for duplicate diagnostic: ['state_name', 'county_name', 'state_id', 'county_id']
+  duplicate ACO+geography keys: 0
+  columns (12): ['year', 'aco_id', 'state_name', 'county_name', 'state_id', 'county_id', 'ab_psn_yrs_esrd', 'ab_psn_yrs_dis', 'ab_psn_yrs_agdu', 'ab_psn_yrs_agnd', 'tot_ab_psn_yrs', 'tot_ab']
+  tot_ab_psn_yrs: numeric=7,022 suppressed=49,422
+  tot_ab: numeric=7,022 suppressed=49,422
+  ab_psn_yrs_esrd: numeric=653 suppressed=3,216 cms-zero-dot=52,575
+  ab_psn_yrs_dis: numeric=2,007 suppressed=14,573 cms-zero-dot=39,864
+  ab_psn_yrs_agdu: numeric=1,198 suppressed=10,410 cms-zero-dot=44,836
+  ab_psn_yrs_agnd: numeric=3,759 suppressed=45,706 cms-zero-dot=6,979
+
+COUNTY COHORT SET RELATIONSHIP
+----------------------------------------------------------------------------------------
+January ACOs : 475
+July ACOs    : 205
+Intersection : 139
+January only : 336
+July only    : 66
+Union        : 541
+
+FINANCIAL 2019 CANDIDATE MEMBERS
+----------------------------------------------------------------------------------------
+Candidate 2019 CSV members found: 2
+  Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv
+    rows=475 distinct_ACO_ID=475 blank_ACO_ID=0
+    ACO column: ACO_ID
+    columns (175): ['ACO_ID', 'ACO_Name', 'ACO_State', 'Agree_Type', 'Participation_Six_Months', 'Agreement_Period_Num', 'Initial_Start_Date', 'Initial_Track_1', 'Initial_Track_2', 'Initial_Track_3', 'Initial_Track_1_Plus', 'Initial_BASIC_A', 'Initial_BASIC_B', 'Initial_BASIC_C', 'Initial_BASIC_D', 'Initial_BASIC_E', 'Initial_ENHANCED', 'Current_Start_Date', 'Current_Track_1', 'Current_Track_2', 'Current_Track_3', 'Current_Track_1_Plus', 'Current_BASIC_A', 'Current_BASIC_B', 'Current_BASIC_C', 'Current_BASIC_D', 'Current_BASIC_E', 'Current_ENHANCED', 'Risk_Model', 'Adv_Pay', 'AIM', 'SNF_Waiver', 'N_AB', 'Sav_rate', 'MinSavPerc', 'BnchmkMinExp', 'GenSaveLoss', 'DisAdj', 'EarnSaveLoss', 'DisAffQual', 'Met_QPS', 'QualScore', 'RecvdMean', 'Prior_Sav_Adj', 'RegTrndUpdt', 'PosRegAdj', 'UpdatedBnchmk', 'HistBnchmk', 'ABtotBnchmk', 'ABtotExp', 'Adv_Pay_Amt', 'Adv_Pay_Recoup', 'QualPerfShare', 'FinalShareRate', 'RevLossLimit', 'Rev_Exp_Cat', 'Per_Capita_Exp_ALL_ESRD_BY1', 'Per_Capita_Exp_ALL_DIS_BY1', 'Per_Capita_Exp_ALL_AGDU_BY1', 'Per_Capita_Exp_ALL_AGND_BY1', 'Per_Capita_Exp_ALL_ESRD_BY2', 'Per_Capita_Exp_ALL_DIS_BY2', 'Per_Capita_Exp_ALL_AGDU_BY2', 'Per_Capita_Exp_ALL_AGND_BY2', 'Per_Capita_Exp_ALL_ESRD_BY3', 'Per_Capita_Exp_ALL_DIS_BY3', 'Per_Capita_Exp_ALL_AGDU_BY3', 'Per_Capita_Exp_ALL_AGND_BY3', 'Per_Capita_Exp_ALL_ESRD_PY', 'Per_Capita_Exp_ALL_DIS_PY', 'Per_Capita_Exp_ALL_AGDU_PY', 'Per_Capita_Exp_ALL_AGND_PY', 'Per_Capita_Exp_TOTAL_PY', 'CMS_HCC_RiskScore_ESRD_BY1', 'CMS_HCC_RiskScore_DIS_BY1', 'CMS_HCC_RiskScore_AGDU_BY1', 'CMS_HCC_RiskScore_AGND_BY1', 'CMS_HCC_RiskScore_ESRD_BY2', 'CMS_HCC_RiskScore_DIS_BY2', 'CMS_HCC_RiskScore_AGDU_BY2', 'CMS_HCC_RiskScore_AGND_BY2', 'CMS_HCC_RiskScore_ESRD_BY3', 'CMS_HCC_RiskScore_DIS_BY3', 'CMS_HCC_RiskScore_AGDU_BY3', 'CMS_HCC_RiskScore_AGND_BY3', 'CMS_HCC_RiskScore_ESRD_PY', 'CMS_HCC_RiskScore_DIS_PY', 'CMS_HCC_RiskScore_AGDU_PY', 'CMS_HCC_RiskScore_AGND_PY', 'N_AB_Year_ESRD_BY3', 'N_AB_Year_DIS_BY3', 'N_AB_Year_AGED_Dual_BY3', 'N_AB_Year_AGED_NonDual_BY3', 'N_AB_Year_PY', 'N_AB_Year_ESRD_PY', 'N_AB_Year_DIS_PY', 'N_AB_Year_AGED_Dual_PY', 'N_AB_Year_AGED_NonDual_PY', 'N_Ben_Age_0_64', 'N_Ben_Age_65_74', 'N_Ben_Age_75_84', 'N_Ben_Age_85plus', 'N_Ben_Female', 'N_Ben_Male', 'N_Ben_Race_White', 'N_Ben_Race_Black', 'N_Ben_Race_Asian', 'N_Ben_Race_Hisp', 'N_Ben_Race_Native', 'N_Ben_Race_Other', 'CapAnn_INP_All', 'CapAnn_INP_S_trm', 'CapAnn_INP_L_trm', 'CapAnn_INP_Rehab', 'CapAnn_INP_Psych', 'CapAnn_HSP', 'CapAnn_SNF', 'CapAnn_INP_Other', 'CapAnn_OPD', 'CapAnn_PB', 'CapAnn_AmbPay', 'CapAnn_HHA', 'CapAnn_DME', 'ADM', 'ADM_S_Trm', 'ADM_L_Trm', 'ADM_Rehab', 'ADM_Psych', 'chf_adm', 'copd_adm', 'prov_Rate_1000', 'P_EDV_Vis', 'P_EDV_Vis_HOSP', 'P_CT_VIS', 'P_MRI_VIS', 'P_EM_Total', 'P_EM_PCP_Vis', 'P_EM_SP_Vis', 'P_Nurse_Vis', 'P_FQHC_RHC_Vis', 'P_SNF_ADM', 'N_CAH', 'N_FQHC', 'N_RHC', 'N_ETA', 'N_Hosp', 'N_Fac_Other', 'N_PCP', 'N_Spec', 'N_NP', 'N_PA', 'N_CNS', 'ACO1', 'ACO2', 'ACO3', 'ACO4', 'ACO5', 'ACO6', 'ACO7', 'ACO34', 'ACO45', 'ACO46', 'ACO8', 'ACO38', 'ACO43', 'ACO13', 'ACO14', 'ACO17', 'ACO18', 'ACO19', 'ACO20', 'ACO42', 'ACO40', 'ACO27', 'ACO28']
+    vs 2019_01_01: county=475 financial=475 intersection=475 county_only=0 financial_only=0 exact_equal=YES
+    vs 2019_07_01: county=205 financial=475 intersection=139 county_only=66 financial_only=336 exact_equal=NO
+
+  Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+    rows=205 distinct_ACO_ID=205 blank_ACO_ID=0
+    ACO column: ACO_ID
+    columns (175): ['ACO_ID', 'ACO_Name', 'ACO_State', 'Agree_Type', 'Participation_Six_Months', 'Agreement_Period_Num', 'Initial_Start_Date', 'Initial_Track_1', 'Initial_Track_2', 'Initial_Track_3', 'Initial_Track_1_Plus', 'Initial_BASIC_A', 'Initial_BASIC_B', 'Initial_BASIC_C', 'Initial_BASIC_D', 'Initial_BASIC_E', 'Initial_ENHANCED', 'Current_Start_Date', 'Current_Track_1', 'Current_Track_2', 'Current_Track_3', 'Current_Track_1_Plus', 'Current_BASIC_A', 'Current_BASIC_B', 'Current_BASIC_C', 'Current_BASIC_D', 'Current_BASIC_E', 'Current_ENHANCED', 'Risk_Model', 'Adv_Pay', 'AIM', 'SNF_Waiver', 'N_AB', 'Sav_rate', 'MinSavPerc', 'BnchmkMinExp', 'GenSaveLoss', 'DisAdj', 'EarnSaveLoss', 'DisAffQual', 'Met_QPS', 'QualScore', 'RecvdMean', 'Prior_Sav_Adj', 'RegTrndUpdt', 'PosRegAdj', 'UpdatedBnchmk', 'HistBnchmk', 'ABtotBnchmk', 'ABtotExp', 'Adv_Pay_Amt', 'Adv_Pay_Recoup', 'QualPerfShare', 'FinalShareRate', 'RevLossLimit', 'Rev_Exp_Cat', 'Per_Capita_Exp_ALL_ESRD_BY1', 'Per_Capita_Exp_ALL_DIS_BY1', 'Per_Capita_Exp_ALL_AGDU_BY1', 'Per_Capita_Exp_ALL_AGND_BY1', 'Per_Capita_Exp_ALL_ESRD_BY2', 'Per_Capita_Exp_ALL_DIS_BY2', 'Per_Capita_Exp_ALL_AGDU_BY2', 'Per_Capita_Exp_ALL_AGND_BY2', 'Per_Capita_Exp_ALL_ESRD_BY3', 'Per_Capita_Exp_ALL_DIS_BY3', 'Per_Capita_Exp_ALL_AGDU_BY3', 'Per_Capita_Exp_ALL_AGND_BY3', 'Per_Capita_Exp_ALL_ESRD_PY', 'Per_Capita_Exp_ALL_DIS_PY', 'Per_Capita_Exp_ALL_AGDU_PY', 'Per_Capita_Exp_ALL_AGND_PY', 'Per_Capita_Exp_TOTAL_PY', 'CMS_HCC_RiskScore_ESRD_BY1', 'CMS_HCC_RiskScore_DIS_BY1', 'CMS_HCC_RiskScore_AGDU_BY1', 'CMS_HCC_RiskScore_AGND_BY1', 'CMS_HCC_RiskScore_ESRD_BY2', 'CMS_HCC_RiskScore_DIS_BY2', 'CMS_HCC_RiskScore_AGDU_BY2', 'CMS_HCC_RiskScore_AGND_BY2', 'CMS_HCC_RiskScore_ESRD_BY3', 'CMS_HCC_RiskScore_DIS_BY3', 'CMS_HCC_RiskScore_AGDU_BY3', 'CMS_HCC_RiskScore_AGND_BY3', 'CMS_HCC_RiskScore_ESRD_PY', 'CMS_HCC_RiskScore_DIS_PY', 'CMS_HCC_RiskScore_AGDU_PY', 'CMS_HCC_RiskScore_AGND_PY', 'N_AB_Year_ESRD_BY3', 'N_AB_Year_DIS_BY3', 'N_AB_Year_AGED_Dual_BY3', 'N_AB_Year_AGED_NonDual_BY3', 'N_AB_Year_PY', 'N_AB_Year_ESRD_PY', 'N_AB_Year_DIS_PY', 'N_AB_Year_AGED_Dual_PY', 'N_AB_Year_AGED_NonDual_PY', 'N_Ben_Age_0_64', 'N_Ben_Age_65_74', 'N_Ben_Age_75_84', 'N_Ben_Age_85plus', 'N_Ben_Female', 'N_Ben_Male', 'N_Ben_Race_White', 'N_Ben_Race_Black', 'N_Ben_Race_Asian', 'N_Ben_Race_Hisp', 'N_Ben_Race_Native', 'N_Ben_Race_Other', 'CapAnn_INP_All', 'CapAnn_INP_S_trm', 'CapAnn_INP_L_trm', 'CapAnn_INP_Rehab', 'CapAnn_INP_Psych', 'CapAnn_HSP', 'CapAnn_SNF', 'CapAnn_INP_Other', 'CapAnn_OPD', 'CapAnn_PB', 'CapAnn_AmbPay', 'CapAnn_HHA', 'CapAnn_DME', 'ADM', 'ADM_S_Trm', 'ADM_L_Trm', 'ADM_Rehab', 'ADM_Psych', 'chf_adm', 'copd_adm', 'prov_Rate_1000', 'P_EDV_Vis', 'P_EDV_Vis_HOSP', 'P_CT_VIS', 'P_MRI_VIS', 'P_EM_Total', 'P_EM_PCP_Vis', 'P_EM_SP_Vis', 'P_Nurse_Vis', 'P_FQHC_RHC_Vis', 'P_SNF_ADM', 'N_CAH', 'N_FQHC', 'N_RHC', 'N_ETA', 'N_Hosp', 'N_Fac_Other', 'N_PCP', 'N_Spec', 'N_NP', 'N_PA', 'N_CNS', 'ACO1', 'ACO2', 'ACO3', 'ACO4', 'ACO5', 'ACO6', 'ACO7', 'ACO34', 'ACO45', 'ACO46', 'ACO8', 'ACO38', 'ACO43', 'ACO13', 'ACO14', 'ACO17', 'ACO18', 'ACO19', 'ACO20', 'ACO42', 'ACO40', 'ACO27', 'ACO28']
+    vs 2019_01_01: county=475 financial=205 intersection=139 county_only=336 financial_only=66 exact_equal=NO
+    vs 2019_07_01: county=205 financial=205 intersection=205 county_only=0 financial_only=0 exact_equal=YES
+
+INTERPRETATION GUARDRAILS
+----------------------------------------------------------------------------------------
+PROFILE-ONLY: This script does not choose a governing 2019 financial period.
+PROFILE-ONLY: It does not treat suppressed beneficiary observations as zero.
+PROFILE-ONLY: It does not allocate EarnSaveLoss or any other financial measure.
+PROFILE-ONLY: It does not establish Washington dollar incidence or ledger inclusion.
+
+COUNTY-01: PASS - exactly the January and July/off-cycle county CSVs were identified
+COUNTY-02: PASS - ACO_ID is populated on every county row
+FIN-01: PASS - profiled financial 2019 candidate members=2
+
+OVERALL PROFILE EXECUTION v0.5.1: PASS
+Evidence: D:\GitHub\washington-county-federal-fiscal-balance\data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\validation\profile_2019_v0_5_1

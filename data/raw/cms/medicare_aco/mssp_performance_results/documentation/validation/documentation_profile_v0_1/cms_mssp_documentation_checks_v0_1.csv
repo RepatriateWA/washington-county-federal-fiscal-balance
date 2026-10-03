@@ -1,0 +1,11 @@
+check,status,detail
+Source documentation ZIP exists and is nonzero,PASS,"8,030,679 bytes"
+Exactly 22 PDF members observed,PASS,22/22
+All PDF members are nonzero,PASS,0 zero-byte PDFs
+All PDF members yield readable page structure,PASS,0 PDFs with zero readable pages
+All PDF members yield extractable text,PASS,0 PDF text failures
+All documentation archive periods resolved,PASS,0 unresolved members
+Duplicate physical documentation explicitly identified,PASS,22 physical PDFs -> 7 unique byte-level documents; 15 duplicate copies
+EarnSaveLoss documented somewhere in package,PASS,Lexical documentation check only
+GenSaveLoss documented somewhere in package,PASS,Lexical documentation check only
+Advance-payment vocabulary documented somewhere,PASS,Lexical documentation check only

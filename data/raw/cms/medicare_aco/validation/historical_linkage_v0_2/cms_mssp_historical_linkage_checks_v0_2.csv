@@ -1,0 +1,13 @@
+check,status,detail
+Financial source exact 11-period universe,PASS,11/11
+Organization source exact 11-period universe,PASS,11/11
+Participant source exact 11-period universe,PASS,11/11
+All source CSVs parse,PASS,0 parse failures
+Official ACO ID crosswalk loaded,PASS,767 unique ACO_NUM->ACO_ID mappings | SHA-256=0996CC8DC0C15961FB99012734F236B656F4CA935D4D4B793EDB11F281B244F4
+No ambiguous organization identity linkage,FAIL,2 ambiguous financial ACO-periods
+Every financial ACO-period resolves uniquely,FAIL,"4,903/4,923 resolved | 18 unresolved | 2 ambiguous"
+2015 exact normalized-name linkage resolves all financial observations,FAIL,372/392 resolved; 18 unresolved; 2 ambiguous
+2016 CMS crosswalk linkage resolves all financial observations,PASS,432/432 resolved; 0 unresolved; 0 ambiguous
+2017 CMS crosswalk linkage resolves all financial observations,PASS,472/472 resolved; 0 unresolved; 0 ambiguous
+Washington candidates retain payment-dollar-incidence boundary,PASS,132 resolved WA-connected observations
+No Washington candidate promoted beyond connection evidence,PASS,No beneficiary/payment-dollar geography inferred

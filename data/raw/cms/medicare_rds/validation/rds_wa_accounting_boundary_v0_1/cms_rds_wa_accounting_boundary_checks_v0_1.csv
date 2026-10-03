@@ -1,0 +1,12 @@
+result,check,detail
+PASS,RDS federal expenditure existence established,Expected OBSERVED federal RDS expenditure.
+PASS,Public RDS payment-dollar grain identified,Expected public payment-dollar grain = SPONSOR.
+PASS,RDS economic additivity established,Expected ADDITIVE_IN_PRINCIPLE.
+PASS,Washington beneficiary incidence established,Expected DIRECTLY_OBSERVED Washington RDS enrollment.
+PASS,Washington payment-dollar incidence remains unresolved,No validated public residence-dollar bridge.
+PASS,Washington county payment-dollar incidence remains unresolved,No validated public county-dollar bridge.
+PASS,Beneficiary-count dollar allocation rejected,Enrollment share is not treated as observed payment incidence.
+PASS,Sponsor-name geographic allocation rejected,Sponsor identity is not beneficiary residence.
+PASS,Unresolved geography not promoted to Washington dollars,Fail-closed geographic accounting boundary preserved.
+PASS,Withheld RDS not interpreted as zero,WITHHOLD_UNRESOLVED is distinct from $0.
+PASS,Principal-ledger treatment is WITHHOLD_UNRESOLVED,RDS remains outside principal WA ledger until a validated geographic-dollar source exists.

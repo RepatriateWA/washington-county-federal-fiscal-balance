@@ -1,0 +1,13 @@
+check_id,status,detail
+SOURCE-01,PASS,archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+ARCHIVE-01,PASS,archive entries=21 expected=21
+ARCHIVE-02,PASS,"year directories=2020,2021,2022,2023,2024"
+ARCHIVE-03,PASS,CSV datasets=5 expected=5
+ARCHIVE-04,PASS,PDF documentation files=10 expected=10
+ARCHIVE-05,PASS,exactly one CSV for each acquired period
+ARCHIVE-06,PASS,exactly two PDFs for each acquired period
+SCHEMA-01,PASS,ACO identity field found in every acquired CSV
+SCHEMA-02,PASS,state geography field found in every acquired CSV
+SCHEMA-03,PASS,county geography field found in every acquired CSV
+SCHEMA-04,FAIL,beneficiary count/person-year measure found in every acquired CSV
+SCHEMA-05,PASS,all five acquired CSV schemas profiled

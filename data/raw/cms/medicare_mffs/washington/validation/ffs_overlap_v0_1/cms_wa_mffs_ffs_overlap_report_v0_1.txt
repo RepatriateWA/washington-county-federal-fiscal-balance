@@ -1,0 +1,56 @@
+====================================================================================================
+CMS WASHINGTON MFFS PERFORMANCE PAYMENT ↔ ORIGINAL MEDICARE/FFS OVERLAP CERTIFICATION v0.1
+====================================================================================================
+
+READ-ONLY semantic/accounting-boundary certification.
+
+ACCOUNTING BOUNDARY
+----------------------------------------------------------------------------------------------------
+Original Medicare/FFS:
+  Medicare payment for covered beneficiary services.
+
+Washington MFFS performance payment:
+  Retrospective federal payment to Washington State based on demonstration Medicare savings and performance conditions.
+
+CMS evaluation accounting:
+  Performance payments are separately subtracted from gross Medicare savings to determine net Medicare savings.
+
+CLASSIFICATION
+----------------------------------------------------------------------------------------------------
+Expenditure existence:             OBSERVED
+Federal payor:                     CMS
+Immediate payee:                   WASHINGTON_STATE
+Economic overlap with FFS:         NO_PAYMENT_DOLLAR_OVERLAP
+Economic additivity:               ADDITIVE_IN_PRINCIPLE
+Washington state incidence:        DIRECTLY_OBSERVED
+Annual FFY cash timing:            UNRESOLVED
+County payment-dollar incidence:   UNRESOLVED
+Principal annual county ledger:    WITHHOLD_UNRESOLVED
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+FAIL | Prior Original Medicare/FFS v0.2 certification evidence present | Expected v0.2 validation directory/artifacts not found
+PASS | Prior MFFS evaluation-payment evidence present | 75 evidence rows
+PASS | CMS evidence identifies performance payments to Washington State | Direct payment-to-State language found
+PASS | Gross Medicare savings evidence present | Gross savings language found
+PASS | Performance payments separately enter gross-to-net accounting | Subtraction/net-savings language found
+PASS | Issuance evidence remains distinct from recognized payment amount | Issued-payment language found
+PASS | Pending status remains explicitly represented | Pending-payment language found
+PASS | MFFS payment basis is distinct from beneficiary service payment | Retrospective savings/performance payment versus covered-service payment
+PASS | MFFS performance payment is not classified as a split claim payment | Separate retrospective state payment; not provider claim/PBP reduction restoration
+PASS | Economic overlap classification resolved | NO_PAYMENT_DOLLAR_OVERLAP
+PASS | Economic additivity classification resolved | ADDITIVE_IN_PRINCIPLE
+PASS | Annual federal fiscal-year cash timing remains unresolved | UNRESOLVED
+PASS | County payment-dollar incidence remains unresolved | UNRESOLVED
+PASS | Unresolved timing/geography not promoted into principal ledger | WITHHOLD_UNRESOLVED
+
+====================================================================================================
+OVERALL MFFS ↔ FFS OVERLAP CERTIFICATION v0.1: FAIL
+====================================================================================================
+
+Interpretive boundary:
+  PASS means Washington MFFS performance payments are economically distinct from the Original Medicare/FFS service-payment stream.
+  PASS does NOT establish exact federal fiscal-year cash-remittance timing.
+  PASS does NOT establish county payment-dollar incidence.
+  ADDITIVE_IN_PRINCIPLE does NOT mean the payment is automatically added to the principal annual county ledger.
+  Unresolved timing and county geography remain explicitly withheld rather than treated as zero.

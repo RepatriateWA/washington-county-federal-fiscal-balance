@@ -1,0 +1,62 @@
+﻿artifact_id,member_name,sheet_name,location,search_term,matched_text
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R7C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R8C4,medicare,Medicare
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R10C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R11C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R12C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R13C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R14C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R15C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R17C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R18C4,medicare,All Payers (Total); Medicare; Medicaid; Private Health Insuranceq
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R19C4,medicare,All Payers (Total); Medicare; Medicaid
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R20C4,medicare,All Payers (Total); Medicare; Medicaid; Private Health Insurancet
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R21C1,washington,"a Cooper, B.S., Worthington, N.L., and Piro, P.A.: Personal Health Care Expenditures by State, Vol. II, Public and Private Funds, 1966 and 1969. DHEW Pub. No. (SSA) 75-11906. Social Security Administration. Washington. U.S. Government Printing Office, 1975."
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R22C1,washington,"b Levit, K.: Personal Health Care Expenditures by State, Selected Years 1966-78. Health Care Financing Review. Vol. 4, No. 2. HCFA Pub. No. 03149. Office of Research and Demonstrations, Health Care Financing Administration. Washington. U.S. Government Printing Office, Dec. 1982."
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R26C1,medicare,"f Basu, J., Lazenby, H., and Levit, K.: Medicare Spending by State: The Border-Crossing Adjustment. Health Care Financing Review 17 (2): 219-241, Winter 1995."
+STATE_DSM,State Methodology Tables 2020.xls,Table 1,R33C1,medicare,"m Cuckler, G., Martin, A., Whittle, L. et al.: Health Spending by State Of Residence, 1991-2009. Medicare & Medicaid Research Review 1 (4): E1-E31, 2011."
+STATE_DSM,State Methodology Tables 2020.xls,Table 2,R1C1,medicare,"Table 2: Medicare Flow Matrices Used to Compute Medicare Fee-for-Service Flows of Personal Health Care Expenditures, by Type of Service"
+STATE_DSM,State Methodology Tables 2020.xls,Table 2,R2C1,medicare,Medicare Categories
+STATE_DSM,State Methodology Tables 2020.xls,Table 2,R2C2,medicare,Medicare Flow Matrix
+STATE_DSM,State Methodology Tables 2020.xls,Table 2,R21C1,medicare,"Note: Unless otherwise specified, Medicare fee-for-service expenditures based on state of provider were adjusted for spending by its residents using Medicare data for 1991-1993, 1996, 1999, 2002, 2005, 2009, and 2013. Provider to residence-based flow matrices were interpolated for all other years."
+STATE_DSM,State Methodology Tables 2020.xls,Table 3,R1C1,medicare,"Table 3: Medicare Flow Matrices Used to Compute Non-Medicare, Non-Medicaid Flows of Personal Health Care Expenditures, by Type of Service"
+STATE_DSM,State Methodology Tables 2020.xls,Table 3,R2C1,medicare,Non-Medicare Non-Medicaid Categories
+STATE_DSM,State Methodology Tables 2020.xls,Table 3,R2C2,medicare,Medicare Flow Matrix
+STATE_DSM,State Methodology Tables 2020.xls,Table 3,R16C1,medicare,"Note: Unless otherwise specified, Non-Medicare Non-Medicaid expenditures based on state of provider were adjusted for spending by its residents using Medicare data for 1991-1993, 1996, 1999, 2002, 2005, 2009, and 2013. Provider to residence-based flow matrices were interpolated for all other years."
+STATE_DSM,State Methodology Tables 2020.xls,Table 3,R17C1,medicare,1 The matrix for Non-Medicare Non-Medicaid Physician expenditures was not available for 2002.
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R1C1,medicare,"Table 4: Aggregation of Residence-Adjusted Estimates for Medicare, Medicaid, and Non-Medicare Non-Medicaid Services"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R2C4,medicare,Medicare Matrix Used
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R4C2,medicare,"Medicare-Inpatient, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R5C2,medicare,"Medicare-Outpatient, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R6C2,medicare,"Medicare-Hospital-based HH, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R7C2,medicare,"Medicare-Hospital-based SNF, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R8C2,medicare,"Medicare-Hospital-based Hospice, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R9C2,medicare,"Medicare-Hospitals, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R9C2,hmo,"Medicare-Hospitals, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R14C2,medicare,"Medicare-Physician Services, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R15C2,medicare,"Medicare-ESRD Clinics, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R16C2,medicare,"Medicare-Physician Services, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R16C2,hmo,"Medicare-Physician Services, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R20C2,medicare,"Medicare-Home Health Care, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R21C2,medicare,"Medicare-Home Health Care, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R21C2,hmo,"Medicare-Home Health Care, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R22C2,medicare,"Medicare-Home Health-based Hospice, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R26C2,medicare,"Medicare-Skilled Nursing Facilities, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R27C2,medicare,"Medicare-SNF-based Hospice, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R28C2,medicare,"Medicare-Skilled Nursing Facilities, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R28C2,hmo,"Medicare-Skilled Nursing Facilities, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R32C2,medicare,"Medicare-Other Professionals, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R33C2,medicare,"Medicare-Other Professionals, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R33C2,hmo,"Medicare-Other Professionals, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R37C2,medicare,"Medicare-Durable Medical Products, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R38C2,medicare,"Medicare-Durable Medical Products, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R38C2,hmo,"Medicare-Durable Medical Products, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R42C2,medicare,"Medicare-Dental Services, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R43C2,medicare,"Medicare-Dental Services, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R43C2,hmo,"Medicare-Dental Services, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R47C2,medicare,"Medicare-Part B Prescription Drugs, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R48C2,medicare,"Medicare-Part D Prescription Drugs, FFS"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R49C2,hmo,"Medicare-Part B Prescription Drugs, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 4,R50C2,hmo,"Medicare-Part D Prescription Drugs, HMO"
+STATE_DSM,State Methodology Tables 2020.xls,Table 5,R62C2,washington,Washington
+STATE_DSM,State Methodology Tables 2020.xls,Table 5,R63C1,medicare,"Source: Centers for Medicare and Medicaid Services, Office of the Actuary, National Health Statistics Group."

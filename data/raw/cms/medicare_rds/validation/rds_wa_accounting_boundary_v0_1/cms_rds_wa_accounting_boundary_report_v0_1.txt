@@ -1,0 +1,122 @@
+====================================================================================================
+CMS RETIREE DRUG SUBSIDY (RDS) WASHINGTON ACCOUNTING BOUNDARY CERTIFICATION v0.1
+====================================================================================================
+
+READ-ONLY
+No database writes.
+No Washington RDS dollar calculation.
+No beneficiary-count dollar allocation.
+No county allocation.
+Withheld RDS is NOT treated as zero.
+
+====================================================================================================
+ACCOUNTING BOUNDARY
+====================================================================================================
+
+FEDERAL_EXPENDITURE_EXISTENCE
+----------------------------------------------------------------------------------------------------
+Status: OBSERVED
+Evidence: CMS Plan Payment Data publishes Retiree Drug Subsidy plan payment data by plan year.
+Ledger implication: RDS is a known federal expenditure stream; it must not be treated as nonexistent or zero.
+
+PAYMENT_DOLLAR_GRAIN
+----------------------------------------------------------------------------------------------------
+Status: SPONSOR
+Evidence: The public CMS RDS Plan Payment PUF reports payment information by plan sponsor/business rather than by beneficiary residence.
+Ledger implication: Sponsor identity cannot be used as beneficiary geography.
+
+ECONOMIC_ADDITIVITY
+----------------------------------------------------------------------------------------------------
+Status: ADDITIVE_IN_PRINCIPLE
+Evidence: Prior WCFFBP RDS semantic/additivity certification found RDS payment dollars economically distinct from Original Medicare/FFS, Part C, and Part D payment streams.
+Ledger implication: RDS is not excluded as a duplicate of FFS, Part C, or Part D.
+
+WASHINGTON_BENEFICIARY_INCIDENCE
+----------------------------------------------------------------------------------------------------
+Status: DIRECTLY_OBSERVED
+Evidence: CMS MDCR ENROLL D 3 publishes Retiree Drug Subsidy (No Part D Plan) enrollment by Area of Residence. WCFFBP v0.3 certified Washington observations for CY2015-CY2023.
+Ledger implication: Washington RDS beneficiary incidence is established, but beneficiary counts are not payment dollars.
+
+WASHINGTON_DOLLAR_INCIDENCE
+----------------------------------------------------------------------------------------------------
+Status: UNRESOLVED
+Evidence: No validated public CMS source has been identified that links actual RDS subsidy dollars to beneficiary residence in Washington.
+Ledger implication: Actual RDS dollars cannot currently be assigned to Washington in the principal ledger.
+
+WASHINGTON_COUNTY_DOLLAR_INCIDENCE
+----------------------------------------------------------------------------------------------------
+Status: UNRESOLVED
+Evidence: No validated public CMS source has been identified that reports or links actual RDS subsidy dollars to Washington county beneficiary residence.
+Ledger implication: No county RDS dollar allocation is permitted.
+
+BENEFICIARY_COUNT_ALLOCATION
+----------------------------------------------------------------------------------------------------
+Status: REJECTED_FOR_PRINCIPAL_LEDGER
+Evidence: CMS RDS subsidy payments depend on allowable retiree prescription-drug costs and are not a fixed payment per RDS beneficiary.
+Ledger implication: Washington's share of RDS beneficiaries must not be used as though it were observed Washington payment incidence.
+
+SPONSOR_NAME_GEOGRAPHY
+----------------------------------------------------------------------------------------------------
+Status: REJECTED
+Evidence: RDS PUF business/sponsor identity describes the payment recipient/sponsor and does not establish beneficiary residence.
+Ledger implication: Sponsor names, including geographically named sponsors, must not be converted into Washington expenditure incidence.
+
+PRINCIPAL_LEDGER_TREATMENT
+----------------------------------------------------------------------------------------------------
+Status: WITHHOLD_UNRESOLVED
+Evidence: Economic additivity has been established, but Washington payment-dollar geographic incidence has not.
+Ledger implication: Withhold RDS from the principal Washington ledger pending a validated geographic-dollar source.
+
+ZERO_INTERPRETATION
+----------------------------------------------------------------------------------------------------
+Status: PROHIBITED
+Evidence: Withholding results from unresolved geographic attribution, not evidence of zero Washington RDS expenditure.
+Ledger implication: Do not encode withheld RDS as $0.
+
+====================================================================================================
+CHECKS
+====================================================================================================
+
+PASS | RDS federal expenditure existence established | Expected OBSERVED federal RDS expenditure.
+PASS | Public RDS payment-dollar grain identified | Expected public payment-dollar grain = SPONSOR.
+PASS | RDS economic additivity established | Expected ADDITIVE_IN_PRINCIPLE.
+PASS | Washington beneficiary incidence established | Expected DIRECTLY_OBSERVED Washington RDS enrollment.
+PASS | Washington payment-dollar incidence remains unresolved | No validated public residence-dollar bridge.
+PASS | Washington county payment-dollar incidence remains unresolved | No validated public county-dollar bridge.
+PASS | Beneficiary-count dollar allocation rejected | Enrollment share is not treated as observed payment incidence.
+PASS | Sponsor-name geographic allocation rejected | Sponsor identity is not beneficiary residence.
+PASS | Unresolved geography not promoted to Washington dollars | Fail-closed geographic accounting boundary preserved.
+PASS | Withheld RDS not interpreted as zero | WITHHOLD_UNRESOLVED is distinct from $0.
+PASS | Principal-ledger treatment is WITHHOLD_UNRESOLVED | RDS remains outside principal WA ledger until a validated geographic-dollar source exists.
+
+====================================================================================================
+OVERALL RDS WASHINGTON ACCOUNTING BOUNDARY: PASS
+====================================================================================================
+
+Certified boundary:
+  Federal RDS expenditure: OBSERVED
+  Public payment-dollar grain: SPONSOR
+  Economic status: ADDITIVE_IN_PRINCIPLE
+  Washington beneficiary incidence: DIRECTLY_OBSERVED
+  Washington dollar incidence: UNRESOLVED
+  Washington county dollar incidence: UNRESOLVED
+  Principal ledger treatment: WITHHOLD_UNRESOLVED
+
+Methodological interpretation:
+  RDS is a known and economically distinct federal Medicare expenditure stream.
+  Public CMS data establish actual RDS subsidy payments and independently establish RDS beneficiary residence, but do not provide a validated public linkage between subsidy dollars and beneficiary residence.
+  WCFFBP therefore does not allocate RDS payments to Washington using beneficiary counts or sponsor identity.
+  RDS is withheld from the principal Washington ledger pending a validated geographic-dollar source.
+  Withholding does not imply zero Washington RDS expenditure.
+
+Rejected principal-ledger estimator:
+
+  RDS_WA = RDS_US * (RDS_Beneficiaries_WA / RDS_Beneficiaries_US)
+
+Reason: RDS subsidy dollars depend on allowable retiree prescription-drug costs rather than a fixed payment per beneficiary. Such a calculation would be a model, not an observed Washington expenditure.
+
+Accounting invariant:
+
+  Economic additivity does not imply geographic allocatability.
+  No federal expenditure is geographically attributable by default.
+  Geographic attribution must be demonstrated independently of expenditure existence and economic additivity.

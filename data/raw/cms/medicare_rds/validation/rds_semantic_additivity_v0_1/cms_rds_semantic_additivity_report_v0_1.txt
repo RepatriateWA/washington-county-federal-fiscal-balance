@@ -1,0 +1,28 @@
+CMS RETIREE DRUG SUBSIDY SEMANTIC / ADDITIVITY CERTIFICATION v0.1
+==============================================================================
+
+SEMANTIC CONCLUSION
+------------------------------------------------------------------------------
+RDS is a federal Medicare prescription-drug subsidy payment to qualified employer/union retiree plan sponsors.
+A qualifying covered retiree is eligible for Medicare Part D but is not enrolled in a Medicare Part D plan.
+
+ADDITIVITY CONCLUSION
+------------------------------------------------------------------------------
+RDS is economically distinct from the WCFFBP-certified Original Medicare/FFS, Part C, and Part D payment streams.
+
+Medicare evaluated streams, if geographic incidence is resolved:
+  Original Medicare/FFS + Part C + Part D + RDS
+
+GEOGRAPHIC BOUNDARY
+------------------------------------------------------------------------------
+The profiled public RDS Plan Payment table contains sponsor/business identity, payment amount, and retiree count.
+It does not contain an explicit state, county, ZIP, or beneficiary-residence field usable for WCFFBP allocation.
+A geographic word appearing inside Business Name does not constitute geographic evidence.
+
+WASHINGTON LEDGER STATUS
+------------------------------------------------------------------------------
+Economic distinctness: ADDITIVE_IN_PRINCIPLE
+Washington incidence: UNRESOLVED
+Current ledger treatment: NOT_YET_WA_ALLOCATABLE
+
+No RDS dollar receives a Washington plus sign until an independent geographic-incidence method is certified.

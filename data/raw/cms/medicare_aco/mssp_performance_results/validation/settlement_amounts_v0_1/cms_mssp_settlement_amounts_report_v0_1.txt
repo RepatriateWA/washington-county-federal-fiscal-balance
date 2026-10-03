@@ -1,0 +1,122 @@
+========================================================================================================================
+CMS MSSP SETTLEMENT AMOUNTS PROFILE v0.1
+========================================================================================================================
+
+BOUNDARY
+------------------------------------------------------------------------------------------------------------------------
+READ-ONLY numerical profile of preserved CMS MSSP performance-result fields.
+EarnSaveLoss and recoupment quantities remain separate.
+No net settlement formula inferred.
+Negative EarnSaveLoss is not classified as negative federal spending.
+ACO organizational connection is not payment-dollar incidence.
+Absent fields are not interpreted as zero-dollar programs.
+No database writes.
+No ledger inclusion.
+
+SOURCE
+------------------------------------------------------------------------------------------------------------------------
+data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+SHA-256: C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+
+NATIONAL EARNED SHARED SAVINGS / LOSSES
+------------------------------------------------------------------------------------------------------------------------
+2015   | rows= 392 | positive= 119    $645,543,866.00 | negative=   0              $0.00 | zero= 273
+2016   | rows= 432 | positive= 134    $700,607,912.00 | negative=   4     $-9,332,807.00 | zero= 294
+2017   | rows= 472 | positive= 159    $799,420,562.00 | negative=  11    $-18,616,586.00 | zero= 302
+2018   | rows= 548 | positive= 205    $983,979,677.00 | negative=  11    $-17,585,291.00 | zero= 332
+2019   | rows= 475 | positive= 239  $1,134,019,082.00 | negative=   6    $-16,137,483.00 | zero= 230
+2019A  | rows= 205 | positive= 116    $337,147,969.00 | negative=   2       $-866,352.00 | zero=  87
+2020   | rows= 513 | positive= 345  $2,283,724,790.00 | negative=   0              $0.00 | zero= 168
+2021   | rows= 475 | positive= 274  $1,959,433,483.00 | negative=   0              $0.00 | zero= 201
+2022   | rows= 482 | positive= 303  $2,523,385,141.00 | negative=   0              $0.00 | zero= 179
+2023   | rows= 453 | positive= 313  $3,094,455,061.00 | negative=  20    $-14,213,577.00 | zero= 120
+2024   | rows= 476 | positive= 360  $4,142,450,738.00 | negative=  16    $-19,966,437.00 | zero= 100
+------------------------------------------------------------------------------------------------------------------------
+TOTAL positive EarnSaveLoss: $18,604,168,281.00
+TOTAL negative EarnSaveLoss: $-96,718,533.00
+
+SETTLEMENT FIELD AMOUNTS
+------------------------------------------------------------------------------------------------------------------------
+[2015]
+  EarnSaveLoss       numeric= 392 | positive= 119 | negative=   0 | zero= 273 | arithmetic_total=$645,543,866.00
+  GenSaveLoss        numeric= 392 | positive= 120 | negative=   0 | zero= 272 | arithmetic_total=$1,390,761,430.00
+  Adv_Pay_Amt        numeric=  44 | positive=  31 | negative=   0 | zero=  13 | arithmetic_total=$44,910,385.00
+  Adv_Pay_Recoup     numeric=  44 | positive=   7 | negative=   0 | zero=  37 | arithmetic_total=$8,195,566.00
+[2016]
+  EarnSaveLoss       numeric= 432 | positive= 134 | negative=   4 | zero= 294 | arithmetic_total=$691,275,105.00
+  GenSaveLoss        numeric= 432 | positive= 134 | negative=   4 | zero= 294 | arithmetic_total=$1,428,172,258.00
+  Adv_Pay_Amt        numeric=  63 | positive=  51 | negative=   0 | zero=  12 | arithmetic_total=$93,066,068.00
+  Adv_Pay_Recoup     numeric=  63 | positive=  15 | negative=   0 | zero=  48 | arithmetic_total=$22,672,487.00
+[2017]
+  EarnSaveLoss       numeric= 472 | positive= 159 | negative=  11 | zero= 302 | arithmetic_total=$780,803,976.00
+  GenSaveLoss        numeric= 472 | positive= 162 | negative=  11 | zero= 299 | arithmetic_total=$1,664,233,685.00
+  Adv_Pay_Amt        numeric=  62 | positive=  49 | negative=   0 | zero=  13 | arithmetic_total=$85,610,061.00
+  Adv_Pay_Recoup     numeric=  62 | positive=  14 | negative=   0 | zero=  48 | arithmetic_total=$19,113,338.00
+[2018]
+  EarnSaveLoss       numeric= 548 | positive= 205 | negative=  11 | zero= 332 | arithmetic_total=$966,394,386.00
+  GenSaveLoss        numeric= 548 | positive= 205 | negative=  70 | zero= 273 | arithmetic_total=$1,562,124,625.00
+  Adv_Pay_Amt        numeric=  60 | positive=  37 | negative=   0 | zero=  23 | arithmetic_total=$63,830,583.00
+  Adv_Pay_Recoup     numeric=  60 | positive=   9 | negative=   0 | zero=  51 | arithmetic_total=$12,149,677.00
+[2019]
+  EarnSaveLoss       numeric= 475 | positive= 239 | negative=   6 | zero= 230 | arithmetic_total=$1,117,881,599.00
+  GenSaveLoss        numeric= 475 | positive= 239 | negative=  56 | zero= 180 | arithmetic_total=$1,844,758,696.00
+  Adv_Pay_Amt        numeric=  36 | positive=  14 | negative=   0 | zero=  22 | arithmetic_total=$24,585,299.00
+  Adv_Pay_Recoup     numeric=  36 | positive=   2 | negative=   0 | zero=  34 | arithmetic_total=$2,935,345.12
+[2019A]
+  EarnSaveLoss       numeric= 205 | positive= 116 | negative=   2 | zero=  87 | arithmetic_total=$336,281,617.00
+  GenSaveLoss        numeric= 205 | positive= 116 | negative=   4 | zero=  85 | arithmetic_total=$596,134,185.00
+  Adv_Pay_Amt        numeric=  23 | positive=   6 | negative=   0 | zero=  17 | arithmetic_total=$9,958,094.90
+  Adv_Pay_Recoup     numeric=  23 | positive=   5 | negative=   0 | zero=  18 | arithmetic_total=$6,567,711.18
+[2020]
+  EarnSaveLoss       numeric= 513 | positive= 345 | negative=   0 | zero= 168 | arithmetic_total=$2,283,724,790.00
+  GenSaveLoss        numeric= 513 | positive= 345 | negative=   1 | zero= 167 | arithmetic_total=$4,374,368,710.00
+  Adv_Pay_Amt        numeric=  25 | positive=   4 | negative=   0 | zero=  21 | arithmetic_total=$8,402,561.00
+  Adv_Pay_Recoup     numeric=  25 | positive=   2 | negative=   0 | zero=  23 | arithmetic_total=$2,893,145.00
+[2021]
+  EarnSaveLoss       numeric= 475 | positive= 274 | negative=   0 | zero= 201 | arithmetic_total=$1,959,433,483.00
+  GenSaveLoss        numeric= 475 | positive= 274 | negative=  15 | zero= 186 | arithmetic_total=$3,644,483,481.00
+  Adv_Pay_Amt        numeric=  21 | positive=   1 | negative=   0 | zero=  20 | arithmetic_total=$2,182,153.00
+  Adv_Pay_Recoup     numeric=  21 | positive=   0 | negative=   0 | zero=  21 | arithmetic_total=$0.00
+[2022]
+  EarnSaveLoss       numeric= 482 | positive= 303 | negative=   0 | zero= 179 | arithmetic_total=$2,523,385,141.00
+  GenSaveLoss        numeric= 482 | positive= 304 | negative=  15 | zero= 163 | arithmetic_total=$4,164,500,263.00
+[2023]
+  EarnSaveLoss       numeric= 453 | positive= 313 | negative=  20 | zero= 120 | arithmetic_total=$3,080,241,484.00
+  GenSaveLoss        numeric= 453 | positive= 313 | negative=  20 | zero= 120 | arithmetic_total=$4,997,217,350.00
+[2024]
+  EarnSaveLoss       numeric= 476 | positive= 360 | negative=  16 | zero= 100 | arithmetic_total=$4,122,484,301.00
+  GenSaveLoss        numeric= 476 | positive= 360 | negative=  16 | zero= 100 | arithmetic_total=$6,546,635,453.00
+  AIPBalance         numeric=  19 | positive=  18 | negative=   0 | zero=   1 | arithmetic_total=$24,455,802.00
+  AIPRecoup          numeric=  19 | positive=  16 | negative=   0 | zero=   3 | arithmetic_total=$9,378,303.04
+  AIPOwe             numeric=  19 | positive=  14 | negative=   0 | zero=   5 | arithmetic_total=$15,077,498.96
+
+CERTIFIED WA-LINKAGE ARTIFACT DIAGNOSTIC
+------------------------------------------------------------------------------------------------------------------------
+No certified v0.3 artifact exposed period + identifier + explicit WA flag in a form this profiler can safely consume.
+WA-connected numerical profiling is therefore DEFERRED rather than reconstructed or inferred.
+
+NO  | data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_2015_explicit_wa_service_area_universe_v0_3.csv | missing period, identifier, explicit WA flag
+NO  | data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_historical_identity_accounting_v0_3.csv | missing identifier, explicit WA flag
+NO  | data\raw\cms\medicare_aco\validation\historical_linkage_v0_3\cms_mssp_historical_linkage_certification_checks_v0_3.csv | missing period, identifier, explicit WA flag
+
+CHECKS
+------------------------------------------------------------------------------------------------------------------------
+PASS | Preserved MSSP performance-results ZIP exists | data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+PASS | Performance-results ZIP SHA-256 matches preserved acquisition | C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+PASS | All source CSVs parse without profiler errors | 11 CSV members profiled; 0 errors
+PASS | Exactly 11 expected performance periods discovered | 11/11 | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023
+PASS | Financial row counts reproduce certified source profile | 11/11
+PASS | EarnSaveLoss present in all 11 periods | 11/11
+PASS | GenSaveLoss present in all 11 periods | 11/11
+
+========================================================================================================================
+OVERALL CMS MSSP SETTLEMENT AMOUNTS PROFILE v0.1: PASS
+========================================================================================================================
+
+Interpretive boundary:
+  PASS certifies reproducible numerical profiling of the preserved MSSP performance-result fields.
+  PASS does not certify economic additivity, cash timing, Washington incidence, or ledger inclusion.
+  GenSaveLoss remains a derived/control quantity.
+  Positive EarnSaveLoss remains an additive-in-principle candidate pending remaining gates.
+  Advance/AIM/AIP amounts and recoupments remain separately reported; no netting formula is imposed.
+  No source is additive by default.

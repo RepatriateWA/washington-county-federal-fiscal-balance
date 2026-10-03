@@ -1,0 +1,12 @@
+performance_period,financial_rows,organization_rows,participant_rows,financial_id_field,organization_id_field,participant_id_field,financial_name_field,organization_name_field,participant_name_field,organization_geography_fields,participant_geography_fields,financial_exact_one_org_links,financial_no_org_match,financial_one_to_many_org_match,wa_organization_aco_periods,wa_participant_aco_periods,wa_either_aco_periods,wa_both_aco_periods
+2015,392,397,15392,ACO_Num,,,ACO_Name,aco_name,,aco_address;aco_service_area;aco_website_address;aco_zip,ACO Address;ACO Website Address,0,392,0,0,0,0,0
+2016,432,433,14817,ACO_Num,aco_id,ACO_Num,ACO_Name,aco_name,ACO_Name,aco_service_area;aco_address;aco_zip,ACO_Address;Zip Code,0,432,0,0,3,3,0
+2017,472,480,18281,ACO_Num,aco_id,ACO_Num,ACO_Name,aco_name,ACO_Name,aco_service_area;aco_address;aco_zip,ACO_Address,0,472,0,0,0,0,0
+2018,548,561,20808,ACO_ID,aco_id,ACO_Num,ACO_Name,aco_name,ACO_Name,aco_service_area;aco_address;aco_zip,ACO_Address,548,0,0,12,0,12,0
+2019,475,487,18399,ACO_ID,aco_id,ACO_Num,ACO_Name,aco_name,ACO_Name,aco_service_area;aco_address;aco_zip,ACO_Address,475,0,0,10,0,10,0
+2019A,205,518,18305,ACO_ID,aco_id,ACO_ID,ACO_Name,aco_name,ACO_Name,aco_service_area;aco_address;aco_zip,ACO_Address;ACO_ZIP,205,0,0,4,2,4,2
+2020,513,517,17448,ACO_ID,aco_id,ACO_ID,ACO_Name,aco_name,ACO_Name,aco_service_area;aco_address;aco_zip,ACO_Address;ACO_ZIP,513,0,0,13,6,13,6
+2021,475,477,16352,ACO_ID,aco_id,ACO_ID,ACO_Name,aco_name,ACO_Name,aco_service_area;aco_address;aco_zip,ACO_Address;ACO_ZIP,475,0,0,13,6,13,6
+2022,482,483,16046,ACO_ID,aco_id,aco_id,ACO_Name,aco_name,aco_name,aco_service_area;aco_address,aco_address,482,0,0,16,8,16,8
+2023,453,456,15551,ACO_ID,aco_id,aco_id,ACO_Name,aco_name,aco_name,aco_service_area;aco_address,aco_address,453,0,0,20,9,20,9
+2024,476,480,15540,ACO_ID,aco_id,aco_id,ACO_Name,aco_name,aco_name,aco_service_area;aco_address,aco_address,476,0,0,28,11,28,11

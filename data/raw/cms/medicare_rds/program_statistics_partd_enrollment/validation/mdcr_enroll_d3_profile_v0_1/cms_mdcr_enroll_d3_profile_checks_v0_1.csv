@@ -1,0 +1,5 @@
+check,status,detail
+CY2015-CY2023 source ZIPs profiled,PASS,9/9 years
+All text members parsed,PASS,0/0 text members
+At least one D3 candidate identified,PASS,7 candidate members across 7 years
+No structural profiling errors,PASS,0 errors

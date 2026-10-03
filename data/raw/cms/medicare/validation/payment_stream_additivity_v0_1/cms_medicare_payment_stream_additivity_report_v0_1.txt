@@ -1,0 +1,74 @@
+CMS MEDICARE PAYMENT-STREAM ADDITIVITY CERTIFICATION v0.1
+==============================================================================
+
+ACCOUNTING INVARIANT
+------------------------------------------------------------------------------
+No federal expenditure source is additive by default.
+A plus sign is permitted only after affirmative evidence that the candidate represents an economically distinct federal payment stream.
+
+PRINCIPAL STREAMS
+------------------------------------------------------------------------------
+ORIGINAL_MEDICARE_FFS
+  Component: Original Medicare / Fee-for-Service
+  Benefit scope: Medicare Part A and Part B
+  Payment scope: Actual Original Medicare / FFS payments represented by TOT_MDCR_PYMT_AMT in the CMS Geographic Variation PUF
+  Source: CMS Medicare Geographic Variation by National, State & County
+  Prior certification: Original Medicare / FFS source mechanics v0.2 PASS
+
+MEDICARE_PART_C
+  Component: Medicare Advantage Part C
+  Benefit scope: Medicare Part A/B benefits delivered through Medicare Advantage plans
+  Payment scope: Risk-adjusted A/B plan payment plus Part C rebate
+  Source: CMS Plan Payment PUF + monthly CPSC enrollment
+  Prior certification: Washington Medicare Advantage Part C reconstruction v0.2 PASS
+
+MEDICARE_PART_D
+  Component: Medicare Part D
+  Benefit scope: Medicare outpatient prescription-drug benefit
+  Payment scope: Risk-adjusted Direct Subsidy plus Reinsurance plus Low-Income Cost Sharing subsidy
+  Source: CMS Plan Payment PUF + monthly CPSC enrollment
+  Prior certification: Washington Medicare Part D reconstruction v0.3 PASS
+
+PAIRWISE OVERLAP MATRIX
+------------------------------------------------------------------------------
+ORIGINAL_MEDICARE_FFS <-> MEDICARE_PART_C
+  Beneficiary overlap possible: NO_FOR_SAME_COVERAGE_MONTH
+  Payment-stream overlap: NO
+  Classification: ADDITIVE
+  Basis: Original Medicare/FFS represents Part A/B claims for the traditional FFS population. Part C represents Medicare Advantage plan payments for Part A/B benefits delivered through MA plans. These are alternative Part A/B delivery systems rather than two representations of the same payment.
+  Boundary: Do not infer additivity merely from different datasets. Additivity rests on mutually distinct Part A/B payment delivery streams.
+
+ORIGINAL_MEDICARE_FFS <-> MEDICARE_PART_D
+  Beneficiary overlap possible: YES
+  Payment-stream overlap: NO
+  Classification: ADDITIVE
+  Basis: An Original Medicare beneficiary may also enroll in Part D, so beneficiary populations can overlap. The payment streams do not: the FFS Geographic Variation expenditure measure is the Original Medicare Part A/B stream, whereas Part D is the prescription-drug subsidy stream reconstructed from Direct Subsidy, Reinsurance, and LICS.
+  Boundary: Beneficiary overlap is not payment-dollar overlap.
+
+MEDICARE_PART_C <-> MEDICARE_PART_D
+  Beneficiary overlap possible: YES
+  Payment-stream overlap: NO
+  Classification: ADDITIVE
+  Basis: MA-PD beneficiaries may generate both Part C and Part D payments. Certified Part C reconstruction consists of risk-adjusted A/B payment plus rebate. Certified Part D reconstruction consists of risk-adjusted Direct Subsidy, Reinsurance, and LICS. The components are economically distinct federal payment streams.
+  Boundary: Shared contract, plan, or beneficiary identity does not make Part C and Part D payments the same dollars.
+
+KNOWN NON-ADDITIVE REPRESENTATIONS
+------------------------------------------------------------------------------
+PART_D_RECONCILIATION_WORKBOOK -> MEDICARE_PART_D
+  Classification: CONTROL_ONLY
+  Reason: Alternative reconciliation representation of Part D; not a second additive expenditure stream.
+
+USASPENDING_ASSISTANCE_93.774 -> MEDICARE_SMI
+  Classification: OVERLAPPING_EXCLUDE_DUPLICATE
+  Reason: Aggregate Medicare SMI reporting retained for provenance and reconciliation; not additive to CMS-native Medicare.
+
+CONCLUSION
+------------------------------------------------------------------------------
+For the certified CMS-native payment streams evaluated here:
+
+  Medicare = Original Medicare/FFS + Part C + Part D
+
+The plus signs refer to economically distinct federal payment streams, not mutually exclusive beneficiary populations.
+
+This certification does NOT assert that these three streams constitute the complete Medicare federal inflow universe.
+RDS and any other candidate Medicare payment streams require their own accounting-source/additivity gates before inclusion.

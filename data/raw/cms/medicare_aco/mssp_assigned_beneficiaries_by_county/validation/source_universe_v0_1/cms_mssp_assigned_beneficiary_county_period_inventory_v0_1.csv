@@ -1,0 +1,12 @@
+period,archive_status,csv_count,pdf_count,interpretive_note
+2015,NOT_PRESENT_IN_ACQUIRED_ARCHIVE,0,0,This does not mean CMS did not publish the period; only that it is absent from this acquired archive.
+2016,NOT_PRESENT_IN_ACQUIRED_ARCHIVE,0,0,This does not mean CMS did not publish the period; only that it is absent from this acquired archive.
+2017,NOT_PRESENT_IN_ACQUIRED_ARCHIVE,0,0,This does not mean CMS did not publish the period; only that it is absent from this acquired archive.
+2018,NOT_PRESENT_IN_ACQUIRED_ARCHIVE,0,0,This does not mean CMS did not publish the period; only that it is absent from this acquired archive.
+2019,NOT_PRESENT_IN_ACQUIRED_ARCHIVE,0,0,This does not mean CMS did not publish the period; only that it is absent from this acquired archive.
+2019A,NOT_PRESENT_IN_ACQUIRED_ARCHIVE,0,0,This does not mean CMS did not publish the period; only that it is absent from this acquired archive.
+2020,PRESENT_IN_ACQUIRED_ARCHIVE,1,2,Presence only; no payment-incidence conclusion.
+2021,PRESENT_IN_ACQUIRED_ARCHIVE,1,2,Presence only; no payment-incidence conclusion.
+2022,PRESENT_IN_ACQUIRED_ARCHIVE,1,2,Presence only; no payment-incidence conclusion.
+2023,PRESENT_IN_ACQUIRED_ARCHIVE,1,2,Presence only; no payment-incidence conclusion.
+2024,PRESENT_IN_ACQUIRED_ARCHIVE,1,2,Presence only; no payment-incidence conclusion.

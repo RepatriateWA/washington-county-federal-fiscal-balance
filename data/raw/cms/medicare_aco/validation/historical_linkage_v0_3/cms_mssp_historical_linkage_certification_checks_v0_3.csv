@@ -1,0 +1,16 @@
+check,status,detail
+Required input exists: Accountable Care Organizations.zip,PASS,data\raw\cms\medicare_aco\mssp_organizations\Accountable Care Organizations.zip
+Required input exists: cms_mssp_historical_linkage_v0_2.csv,PASS,data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_linkage_v0_2.csv
+Required input exists: cms_mssp_historical_period_profile_v0_2.csv,PASS,data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_period_profile_v0_2.csv
+Required input exists: cms_mssp_historical_linkage_checks_v0_2.csv,PASS,data\raw\cms\medicare_aco\validation\historical_linkage_v0_2\cms_mssp_historical_linkage_checks_v0_2.csv
+v0.2 period profile contains exact 11-period universe,PASS,"11/11 periods | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024"
+Every period reproduces expected financial row count and closes identity accounting,PASS,"total financial=4,923; resolved=4,903; unresolved=18; ambiguous=2"
+2015 identity universe is fully accounted with explicit residuals,PASS,372 resolved + 18 unresolved + 2 ambiguous = 392
+2016-2017 official CMS crosswalk identity bridge is complete,PASS,904/904 resolved; 0 residual
+2018-2024 including 2019A direct ACO_ID linkage is complete,PASS,"3,627/3,627 resolved; 0 residual"
+Full MSSP financial identity universe is explicitly accounted,PASS,"4,903 resolved + 18 unresolved + 2 ambiguous = 4,923 / 4,923"
+2015 source independently reproduces exactly four explicit-WA service-area organizations,PASS,"4 rows | Health Connect Partners, LLC; Northwest Rural ACO; Rainier Health Network; The Polyclinic"
+Every 2015 explicit-WA service-area organization uniquely links to one financial observation,PASS,4/4 resolved; 0 unresolved; 0 ambiguous
+No unresolved or ambiguous 2015 financial identity carries explicit linked WA-organization evidence,PASS,0 residual rows with WA organization evidence
+2015 WA applicability evidence remains distinct from payment-dollar incidence,PASS,All explicit-WA organization records retain payment_dollar_incidence=NOT_ESTABLISHED
+v0.2 failures are exactly the bounded 2015 residual conditions,PASS,3 failures | No ambiguous organization identity linkage; Every financial ACO-period resolves uniquely; 2015 exact normalized-name linkage resolves all financial observations

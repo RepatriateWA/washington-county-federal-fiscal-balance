@@ -1,0 +1,9 @@
+check,status,detail
+At least one official CMS discovery page resolved,PASS,3/3 pages
+Seven required semantic slots defined,PASS,7 slots
+All seven slots discovered and certified,PASS,7/7 slots
+All certified files have PDF signatures,PASS,7/7
+All certified PDFs yielded extractable text,PASS,7/7
+All internal PDF identities match required slots,PASS,7/7
+Seven distinct SHA-256 hashes,PASS,7/7 unique
+Every certified source has nonzero bytes,PASS,7/7

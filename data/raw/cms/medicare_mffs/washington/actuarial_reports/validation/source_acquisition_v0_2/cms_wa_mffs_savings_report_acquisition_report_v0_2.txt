@@ -1,0 +1,43 @@
+====================================================================================================
+CMS WASHINGTON MFFS MEDICARE SAVINGS REPORT ACQUISITION v0.2
+====================================================================================================
+
+Seven-slot source universe.
+Official CMS sources only.
+Internal PDF identity validation required.
+No database writes.
+No payment reconstruction.
+No ledger inclusion.
+
+SOURCE UNIVERSE
+----------------------------------------------------------------------------------------------------
+DY1_FINAL_DY2_PRELIM     CERTIFIED_SOURCE   22c341e0a854034c
+DY2_FINAL_DY3_PRELIM     CERTIFIED_SOURCE   86cf53954909d752
+DY3_FINAL_DY4_PRELIM     CERTIFIED_SOURCE   13fefaec5dbffeb1
+DY4_FINAL_DY5_PRELIM     CERTIFIED_SOURCE   98595fc3ee88f2f4
+DY5_FINAL_DY6_PRELIM     CERTIFIED_SOURCE   512e164cbc1970f3
+DY6_FINAL_DY7_PRELIM     CERTIFIED_SOURCE   f8ad177ccd8d2c69
+DY7_FINAL_DY8_PRELIM     CERTIFIED_SOURCE   b65a200bb9012d2a
+
+CHECKS
+----------------------------------------------------------------------------------------------------
+PASS | At least one official CMS discovery page resolved | 3/3 pages
+PASS | Seven required semantic slots defined | 7 slots
+PASS | All seven slots discovered and certified | 7/7 slots
+PASS | All certified files have PDF signatures | 7/7
+PASS | All certified PDFs yielded extractable text | 7/7
+PASS | All internal PDF identities match required slots | 7/7
+PASS | Seven distinct SHA-256 hashes | 7/7 unique
+PASS | Every certified source has nonzero bytes | 7/7
+
+====================================================================================================
+OVERALL SOURCE ACQUISITION v0.2: PASS
+====================================================================================================
+
+Certified boundary:
+  PASS establishes a complete seven-slot official CMS actuarial-report chain from DY1-final/DY2-preliminary through DY7-final/DY8-preliminary.
+  PASS establishes catalog-to-document identity for the preserved PDFs.
+  It does NOT establish performance-payment amounts.
+  It does NOT establish payment timing.
+  It does NOT establish additivity to Original Medicare/FFS.
+  It does NOT authorize ledger inclusion.

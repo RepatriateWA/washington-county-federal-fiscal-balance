@@ -1,0 +1,20 @@
+year,zip_path,member_name,extension,compressed_bytes,uncompressed_bytes,encoding,delimiter,row_count,column_count,header,d3_candidate
+2015,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2015\cms_program_statistics_partd_enrollment_2015.zip,CPS_MDCR_ENROLL_D_1.XLSX,.xlsx,9697,12410,,,,,,NO
+2015,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2015\cms_program_statistics_partd_enrollment_2015.zip,CPS_MDCR_ENROLL_D_2.XLSX,.xlsx,12085,14790,,,,,,NO
+2015,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2015\cms_program_statistics_partd_enrollment_2015.zip,CPS_MDCR_ENROLL_D_3.XLSX,.xlsx,15111,17873,,,,,,YES
+2016,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2016\cms_program_statistics_partd_enrollment_2016.zip,CPS_MDCR_ENROLL_D_1.XLSX,.xlsx,9672,12410,,,,,,NO
+2016,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2016\cms_program_statistics_partd_enrollment_2016.zip,CPS_MDCR_ENROLL_D_2.XLSX,.xlsx,12075,14805,,,,,,NO
+2016,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2016\cms_program_statistics_partd_enrollment_2016.zip,CPS_MDCR_ENROLL_D_3.XLSX,.xlsx,15091,17841,,,,,,YES
+2017,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2017\cms_program_statistics_partd_enrollment_2017.zip,CPS_MDCR_ENROLL_D_1.XLSX,.xlsx,9685,12429,,,,,,NO
+2017,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2017\cms_program_statistics_partd_enrollment_2017.zip,CPS_MDCR_ENROLL_D_2.XLSX,.xlsx,12384,15090,,,,,,NO
+2017,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2017\cms_program_statistics_partd_enrollment_2017.zip,CPS_MDCR_ENROLL_D_3.XLSX,.xlsx,15098,17842,,,,,,YES
+2018,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2018\cms_program_statistics_partd_enrollment_2018.zip,CPS MDCR ENROLL D 1.XLSX,.xlsx,9691,12421,,,,,,NO
+2018,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2018\cms_program_statistics_partd_enrollment_2018.zip,CPS MDCR ENROLL D 2.XLSX,.xlsx,12002,14738,,,,,,NO
+2018,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2018\cms_program_statistics_partd_enrollment_2018.zip,CPS MDCR ENROLL D 3.XLSX,.xlsx,15095,17839,,,,,,YES
+2019,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2019\cms_program_statistics_partd_enrollment_2019.zip,CPS_MDCR_ENROLL_D_1.XLSX,.xlsx,9706,12427,,,,,,NO
+2019,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2019\cms_program_statistics_partd_enrollment_2019.zip,CPS_MDCR_ENROLL_D_2.XLSX,.xlsx,12028,14757,,,,,,NO
+2019,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2019\cms_program_statistics_partd_enrollment_2019.zip,CPS_MDCR_ENROLL_D_3.XLSX,.xlsx,15126,17866,,,,,,YES
+2020,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2020\cms_program_statistics_partd_enrollment_2020.zip,CPS MDCR ENROLL D 2020.xlsx,.xlsx,23416,27106,,,,,,NO
+2021,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2021\cms_program_statistics_partd_enrollment_2021.zip,CPS MDCR ENROLL D 2021.xlsx,.xlsx,29890,36036,,,,,,NO
+2022,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2022\cms_program_statistics_partd_enrollment_2022.zip,MDCR ENROLL D_CPS_03EPD_2022.xlsx,.xlsx,26398,31068,,,,,,YES
+2023,data\raw\cms\medicare_rds\program_statistics_partd_enrollment\2023\cms_program_statistics_partd_enrollment_2023.zip,MDCR ENROLL D_CPS_03EPD_2023.xlsx,.xlsx,25211,28210,,,,,,YES

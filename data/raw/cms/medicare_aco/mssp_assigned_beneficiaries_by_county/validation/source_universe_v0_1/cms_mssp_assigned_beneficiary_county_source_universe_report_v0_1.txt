@@ -1,0 +1,58 @@
+CMS MSSP ASSIGNED BENEFICIARY COUNTY SOURCE UNIVERSE v0.1
+========================================================================
+
+BOUNDARY
+Inventory and structural profiling only. Beneficiary-residence geography does not establish payment-dollar incidence.
+No geographic allocation, no settlement-dollar allocation, no DB writes, and no ledger writes are performed.
+
+Source archive: data\raw\cms\medicare_aco\mssp_assigned_beneficiaries_by_county\Number of Accountable Care Organization Assigned Beneficiaries by County.zip
+SHA-256: 2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+Archive bytes: 8,450,964
+
+PERIOD STATUS
+2015: NOT_PRESENT_IN_ACQUIRED_ARCHIVE (CSV=0, PDF=0)
+2016: NOT_PRESENT_IN_ACQUIRED_ARCHIVE (CSV=0, PDF=0)
+2017: NOT_PRESENT_IN_ACQUIRED_ARCHIVE (CSV=0, PDF=0)
+2018: NOT_PRESENT_IN_ACQUIRED_ARCHIVE (CSV=0, PDF=0)
+2019: NOT_PRESENT_IN_ACQUIRED_ARCHIVE (CSV=0, PDF=0)
+2019A: NOT_PRESENT_IN_ACQUIRED_ARCHIVE (CSV=0, PDF=0)
+2020: PRESENT_IN_ACQUIRED_ARCHIVE (CSV=1, PDF=2)
+2021: PRESENT_IN_ACQUIRED_ARCHIVE (CSV=1, PDF=2)
+2022: PRESENT_IN_ACQUIRED_ARCHIVE (CSV=1, PDF=2)
+2023: PRESENT_IN_ACQUIRED_ARCHIVE (CSV=1, PDF=2)
+2024: PRESENT_IN_ACQUIRED_ARCHIVE (CSV=1, PDF=2)
+
+DATASET PROFILE
+2020: rows=135,418; cols=12; ACOs=513; encoding=utf-8-sig
+  ACO=ACO_ID; state=State_ID; county=County_ID; person-years=NOT_FOUND; beneficiary-count=NOT_FOUND
+2021: rows=130,186; cols=12; ACOs=475; encoding=utf-8-sig
+  ACO=ACO_ID; state=State_ID; county=County_ID; person-years=NOT_FOUND; beneficiary-count=NOT_FOUND
+2022: rows=136,150; cols=12; ACOs=482; encoding=utf-8-sig
+  ACO=ACO_ID; state=State_ID; county=County_ID; person-years=NOT_FOUND; beneficiary-count=NOT_FOUND
+2023: rows=129,750; cols=12; ACOs=453; encoding=utf-8-sig
+  ACO=ACO_ID; state=State_ID; county=County_ID; person-years=NOT_FOUND; beneficiary-count=NOT_FOUND
+2024: rows=135,203; cols=12; ACOs=476; encoding=utf-8-sig
+  ACO=ACO_ID; state=State_ID; county=County_ID; person-years=NOT_FOUND; beneficiary-count=NOT_FOUND
+
+CHECKS
+SOURCE-01: PASS — archive SHA-256=2BDD88C3B00B3035914426286BE38E518FA6E552D54285B19289EB964878F942
+ARCHIVE-01: PASS — archive entries=21 expected=21
+ARCHIVE-02: PASS — year directories=2020,2021,2022,2023,2024
+ARCHIVE-03: PASS — CSV datasets=5 expected=5
+ARCHIVE-04: PASS — PDF documentation files=10 expected=10
+ARCHIVE-05: PASS — exactly one CSV for each acquired period
+ARCHIVE-06: PASS — exactly two PDFs for each acquired period
+SCHEMA-01: PASS — ACO identity field found in every acquired CSV
+SCHEMA-02: PASS — state geography field found in every acquired CSV
+SCHEMA-03: PASS — county geography field found in every acquired CSV
+SCHEMA-04: FAIL — beneficiary count/person-year measure found in every acquired CSV
+SCHEMA-05: PASS — all five acquired CSV schemas profiled
+
+INTERPRETIVE GUARDRAILS
+1. NOT_PRESENT_IN_ACQUIRED_ARCHIVE does not mean NOT_PUBLISHED_BY_CMS.
+2. ACO organizational connection is not payment-dollar incidence.
+3. Beneficiary residence is not certified as an allocation rule by this profiler.
+4. Economic additivity and geographic allocatability remain independent gates.
+5. No missing historical period is imputed or back-cast.
+
+OVERALL SOURCE-UNIVERSE INVENTORY v0.1: FAIL

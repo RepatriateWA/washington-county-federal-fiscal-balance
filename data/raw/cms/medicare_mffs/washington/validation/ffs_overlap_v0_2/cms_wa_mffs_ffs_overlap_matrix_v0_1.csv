@@ -1,0 +1,10 @@
+dimension,original_medicare_ffs,wa_mffs_performance_payment,relationship,implication
+payor,CMS / Medicare,CMS,SAME_PAYOR,Same federal payor does not establish economic overlap.
+primary_payee_or_incidence,Providers / suppliers for covered beneficiary services,Washington State,DISTINCT,Different immediate payment recipient/grain.
+payment_basis,Medicare-covered service payment,Retrospective sharing of demonstrated Medicare savings subject to performance conditions,DISTINCT,Performance payment is not itself a beneficiary service claim payment.
+economic_trigger,Covered Medicare service / payment system,Demonstration savings plus performance and Medicaid-cost conditions,DISTINCT,Different economic event creates payment.
+evaluation_accounting,Gross Medicare Parts A & B expenditures,Subtracted from gross savings to derive net Medicare savings,SEPARATELY_ACCOUNTED,CMS evaluation accounting treats the performance payment as a separate federal cost after measuring service-expenditure savings.
+split_claim_or_pbp_reduction,Geographic Variation actual-payment methodology can restore claim amounts redirected to ACO/PBP programs,Retrospective state performance payment,NOT_SAME_MECHANISM,Do not confuse service-linked split payments with retrospective savings-sharing.
+economic_overlap,Certified Original Medicare/FFS stream,Washington MFFS performance-payment stream,NO_PAYMENT_DOLLAR_OVERLAP,Streams are economically additive in principle.
+annual_cash_timing,Observed annual CMS Geographic Variation payment measure,Exact federal fiscal-year cash timing not established,UNRESOLVED_FOR_MFFS,Economic additivity does not authorize annual ledger placement.
+county_geography,Beneficiary-residence county observed,State payee observed; county dollar incidence unresolved,UNRESOLVED_FOR_MFFS,Economic additivity does not authorize county allocation.

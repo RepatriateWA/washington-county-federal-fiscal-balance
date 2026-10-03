@@ -1,0 +1,22 @@
+period,role,member_name,uncompressed_bytes,compressed_bytes,crc32
+,DIRECTORY,Number of Accountable Care Organization Assigned Beneficiaries by County/,0,0,00000000
+2024,DIRECTORY,Number of Accountable Care Organization Assigned Beneficiaries by County/2024/,0,0,00000000
+2024,DATASET,Number of Accountable Care Organization Assigned Beneficiaries by County/2024/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2024_01_01.csv,6725362,1292293,0E6D793F
+2024,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2024/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,181346,172632,FB506577
+2024,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2024/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,247187,222195,3CA440AD
+2020,DIRECTORY,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/,0,0,00000000
+2020,DATASET,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2020_01_01.csv,6728528,1280027,4866F5CF
+2020,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,313846,217007,3EB75C8C
+2020,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2020/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,247187,222195,3CA440AD
+2022,DIRECTORY,Number of Accountable Care Organization Assigned Beneficiaries by County/2022/,0,0,00000000
+2022,DATASET,Number of Accountable Care Organization Assigned Beneficiaries by County/2022/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2022_01_01.csv,6764277,1287380,BFD7E02D
+2022,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2022/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508.pdf,313846,217007,3EB75C8C
+2022,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2022/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,247187,222195,3CA440AD
+2021,DIRECTORY,Number of Accountable Care Organization Assigned Beneficiaries by County/2021/,0,0,00000000
+2021,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2021/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary-508_0.pdf,313846,217007,3EB75C8C
+2021,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2021/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,247187,222195,3CA440AD
+2021,DATASET,Number of Accountable Care Organization Assigned Beneficiaries by County/2021/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2021_01_01.csv,6397391,1237331,941F216F
+2023,DIRECTORY,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/,0,0,00000000
+2023,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Data_Dictionary_2024.pdf,181346,172632,FB506577
+2023,DATASET,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_Of_ACO_Assigned_Beneficiaries_by_County_PUF_2023_01_01.csv,6495900,1238599,ABD52C92
+2023,DOCUMENTATION,Number of Accountable Care Organization Assigned Beneficiaries by County/2023/Number_of_ACO_Assigned_Beneficiaries_by_County_PUF_Methodology-508.pdf,247187,222195,3CA440AD

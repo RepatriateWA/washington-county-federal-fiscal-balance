@@ -1,0 +1,12 @@
+dimension,status,note
+source_authentication,AUTHENTICATED,Subject to SOURCE-01 and SOURCE-02 PASS.
+publication_semantics,DOCUMENTATION_GOVERNED,"Numeric, '*', and component-field '.' states explicitly separated."
+aco_universe_2020_2024,EXACTLY_LINKED_TO_FINANCIAL_PUF,Subject to LINK-03 PASS.
+numeric_county_geography,DIRECTLY_OBSERVED,Published numeric beneficiary measures are observed CMS values.
+component_dot_state,CMS_MISSING_ZERO_BENEFICIARIES,Known no-beneficiary enrollment-type state; raw '.' preserved.
+suppressed_county_geography,CMS_SUPPRESSED_UNRESOLVED,"'*' is neither zeroed, bounded, reconstructed, nor imputed."
+beneficiary_geography_as_payment_incidence,NOT_ESTABLISHED,Requires separate incidence-methodology certification.
+washington_payment_dollar_incidence,UNRESOLVED,No settlement dollars allocated here.
+county_payment_dollar_incidence,UNRESOLVED,No settlement dollars allocated here.
+cash_ffy_timing,UNRESOLVED,Performance year is not converted to cash/FFY.
+principal_ledger,WITHHOLD_UNRESOLVED,No ledger inclusion authorized by this certification.

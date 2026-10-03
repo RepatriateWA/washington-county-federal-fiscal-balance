@@ -1,0 +1,5 @@
+check,status,detail
+CY2015-CY2023 XLSX sources profiled,PASS,9/9 years
+Positive D3 candidate found for every year,PASS,9/9 years
+Unique strongest D3 candidate for every year,FAIL,7/9 years
+No XLSX profiling errors,PASS,0 errors

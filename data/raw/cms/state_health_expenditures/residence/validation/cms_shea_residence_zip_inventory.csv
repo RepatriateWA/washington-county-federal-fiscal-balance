@@ -1,0 +1,16 @@
+﻿artifact_id,role,zip_path,member_name,member_bytes,compressed_bytes,crc32,extension
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,Documentation for the State Health Expenditure Data Files_Residence.docx,34063,29649,db7c97ed,.docx
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,MEDICAID_AGGREGATE20.CSV,127187,36761,c78358a9,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,MEDICAID_ENROLLMENT20.CSV,12624,4706,59854e83,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,MEDICAID_PER_ENROLLEE20.CSV,118491,37179,293a77ae,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,MEDICARE_AGGREGATE20.CSV,125904,35247,c11389c2,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,MEDICARE_ENROLLMENT20.CSV,12637,4617,1ea2eebd,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,MEDICARE_PER_ENROLLEE20.CSV,116574,35125,513a0d15,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,PHI_AGGREGATE20.CSV,13064,4413,c98c0c1a,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,PHI_ENROLLMENT20.CSV,11751,3862,cad73c6b,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,PHI_PER_ENROLLEE20.CSV,11235,3840,a07ba138,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,US_AGGREGATE20.CSV,138185,45921,832325d6,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,US_PER_CAPITA20.CSV,115316,35843,41df4449,.csv
+RESIDENCE_ESTIMATES,SOURCE,data\raw\cms\state_health_expenditures\residence\source\resident-state-estimates.zip,US_POPULATION20.CSV,13020,5393,409f2bc1,.csv
+STATE_DSM,DOCUMENTATION,data\raw\cms\state_health_expenditures\residence\documentation\state-dsm-14.zip,State Methodology Tables 2020.xls,57856,13726,56f96f78,.xls
+STATE_DSM,DOCUMENTATION,data\raw\cms\state_health_expenditures\residence\documentation\state-dsm-14.zip,StateDSM-20.pdf,263272,252456,0a3dde02,.pdf

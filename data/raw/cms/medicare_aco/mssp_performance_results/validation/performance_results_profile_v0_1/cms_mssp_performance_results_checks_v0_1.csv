@@ -1,0 +1,15 @@
+check,status,detail
+Source ZIP exists and is nonzero,PASS,"1,686,655 bytes"
+Exactly 11 CSV members observed,PASS,11/11
+Expected performance-period universe resolved,PASS,"Observed: 2015, 2016, 2017, 2018, 2019, 2019A, 2020, 2021, 2022, 2023, 2024"
+Ordinary 2019 and 2019A remain distinct,PASS,2019=Performance Year Financial and Quality Results/2019/Performance_Year_Financial_and_Quality_Results_2019_suppress.csv | 2019A=Performance Year Financial and Quality Results/2019_off-cycle_1/Performance_Year_Financial_and_Quality_Results_2019A_suppress.csv
+All CSV members are nonzero,PASS,0 zero-byte CSV members
+All CSV members parse,PASS,0 parse failures
+All performance periods have headers,PASS,Empty-header periods: none
+All performance periods contain data rows,PASS,Zero-row periods: none
+Embedded CSV SHA-256 values are distinct,PASS,0 duplicate embedded hashes
+No unresolved archive period,PASS,0 unresolved CSV members
+2024 CMS revision label preserved,PASS,Performance Year Financial and Quality Results/2024/PY_Financial_and_Quality_Results_2024_revised 2026_07_17.csv
+ACO identity candidate fields discovered,PASS,30 field-period observations
+Savings/loss candidate fields discovered,PASS,76 field-period observations
+Expenditure/payment candidate fields discovered,PASS,40 field-period observations

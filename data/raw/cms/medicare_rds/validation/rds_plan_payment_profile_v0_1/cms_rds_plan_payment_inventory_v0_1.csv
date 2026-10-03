@@ -1,0 +1,12 @@
+year,zip_path,member,member_bytes,member_sha256,status
+2015,data\raw\cms\medicare_advantage\plan_payment\2015\2015-payment-data.zip,RDS PUF 2015 data.xlsx,103130,6a70656a7b59e17d2ff70a26caa536d2fd3d32f8fb55c01f295ff08325df9098,RDS_CANDIDATE
+2016,data\raw\cms\medicare_advantage\plan_payment\2016\2016-payment-data.zip,RDS PUF 2016 data.xlsx,91952,630e9634b2628da48be8e7d532f74e72e4652c7750968d53d3b8d9cbc8087ea4,RDS_CANDIDATE
+2017,data\raw\cms\medicare_advantage\plan_payment\2017\2017-payment-data.zip,RDS PUF 2017 data.xlsx,85051,e2719f5a200242b55038f044620fae1c9156f859536235194acfc2cfe39fbb89,RDS_CANDIDATE
+2018,data\raw\cms\medicare_advantage\plan_payment\2018\2018paymentdata.zip,RDS PUF 2018 data.xlsx,81090,c3496045c0b9b0705f989ac1dccc13876e1c864ac99e6eb80012349d04c9c5fd,RDS_CANDIDATE
+2019,data\raw\cms\medicare_advantage\plan_payment\2019\2019paymentdata.zip,RDS PUF 2019 data.xlsx,65646,a257dbc43a47f0737556807cb9c98e9dac2c76737c7a8d7a8dc731331ba1e104,RDS_CANDIDATE
+2020,data\raw\cms\medicare_advantage\plan_payment\2020\2020paymentdata.zip,RDS PUF 2020 data.xlsx,69138,96608baa5b51afaa4be6a54e4913c3ce70ef6d05729eb6858baf3230a832affa,RDS_CANDIDATE
+2021,data\raw\cms\medicare_advantage\plan_payment\2021\2021paymentdata.zip,RDS PUF 2021 data.xlsx,66530,0a60aedb2a4403f4e521c06a5f56aba725c088da1d52ab9a809b86c0791ef9d0,RDS_CANDIDATE
+2022,data\raw\cms\medicare_advantage\plan_payment\2022\2022-plan-payment.zip,2022_Plan_Payment/RDS 2022 PUF.xlsx,67335,765e9fded4b2a3370fdedd1f1afd4f54b0e35fca2fbefc7ff1bf587f2a2deadc,RDS_CANDIDATE
+2023,data\raw\cms\medicare_advantage\plan_payment\2023\2023-plan-payment-data-file.zip,RDS PUF 2023.xlsx,53922,61f408244ecb9c7c239bd88d75ed3f05686948b4d36d64da9b552e288b7a2e85,RDS_CANDIDATE
+2024,data\raw\cms\medicare_advantage\plan_payment\2024\2024-plan-payment-puf.zip,2024_Plan_Payment/RDS PUF 2024.xlsx,53883,49b7f9ed48c96bb3aaa625cb9160f6e35126d60dbc59a0a65a082118a8b55bcc,RDS_CANDIDATE
+2024,data\raw\cms\medicare_advantage\plan_payment\2024\2024_plan_payment.zip,2024_Plan_Payment/RDS PUF 2024.xlsx,53883,49b7f9ed48c96bb3aaa625cb9160f6e35126d60dbc59a0a65a082118a8b55bcc,RDS_CANDIDATE

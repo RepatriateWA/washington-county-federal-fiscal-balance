@@ -1,0 +1,10 @@
+dimension,status,note
+source_authentication,AUTHENTICATED,Frozen county archive authenticated by SHA-256.
+aco_universe_2020_2024,EXACTLY_LINKED_TO_FINANCIAL_PUF,Subject to LINK-03 PASS.
+numeric_county_geography,DIRECTLY_OBSERVED,Published numeric beneficiary measures are observed CMS values.
+suppressed_county_geography,CMS_SUPPRESSED_UNRESOLVED,"'*' is neither zeroed, bounded, reconstructed, nor imputed."
+beneficiary_residence_as_payment_incidence,NOT_ESTABLISHED,Reserved for a separate incidence-methodology gate.
+washington_payment_dollar_incidence,UNRESOLVED,No settlement dollars allocated by this validator.
+county_payment_dollar_incidence,UNRESOLVED,No settlement dollars allocated by this validator.
+cash_ffy_timing,UNRESOLVED,Performance year is not converted to cash/FFY.
+principal_ledger,WITHHOLD_UNRESOLVED,No ledger inclusion authorized by this source certification.

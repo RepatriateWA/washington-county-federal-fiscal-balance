@@ -1,0 +1,44 @@
+check,status,detail
+Preserved MSSP performance-results ZIP exists,PASS,data\raw\cms\medicare_aco\mssp_performance_results\Performance Year Financial and Quality Results.zip
+Frozen WA organizational-connection bridge exists,PASS,data\raw\cms\medicare_aco\validation\wa_organizational_connection_bridge_v0_1\cms_mssp_wa_organizational_connection_bridge_v0_1.csv
+Official CMS ACO ID crosswalk exists,PASS,data\raw\cms\medicare_aco\mssp_aco_id_crosswalk\ssp-aco-id-crosswalk.xlsx
+Performance-results ZIP SHA-256 matches preserved acquisition,PASS,C7555FA4849ADCA9AB4ECACAC607715F3B6BAA2DDA5CE4D422CA8668B1A9F128
+Official CMS crosswalk SHA-256 matches preserved acquisition,PASS,0996CC8DC0C15961FB99012734F236B656F4CA935D4D4B793EDB11F281B244F4
+Exactly 11 expected performance periods discovered,PASS,"11/11 | 2024,2015,2020,2019,2017,2022,2016,2021,2019A,2018,2023"
+Official crosswalk reproduces 767 unique ACO_Num mappings,PASS,767
+Official crosswalk reproduces 767 unique canonical ACO_ID mappings,PASS,767
+Bridge exposes required certified identity fields,PASS,complete
+2015 bridge count reproduces certified v0.1,PASS,4/4
+2016 bridge count reproduces certified v0.1,PASS,6/6
+2017 bridge count reproduces certified v0.1,PASS,6/6
+2018 bridge count reproduces certified v0.1,PASS,12/12
+2019 bridge count reproduces certified v0.1,PASS,10/10
+2019A bridge count reproduces certified v0.1,PASS,4/4
+2020 bridge count reproduces certified v0.1,PASS,13/13
+2021 bridge count reproduces certified v0.1,PASS,13/13
+2022 bridge count reproduces certified v0.1,PASS,16/16
+2023 bridge count reproduces certified v0.1,PASS,20/20
+2024 bridge count reproduces certified v0.1,PASS,28/28
+Bridge contains exactly 132 certified observations,PASS,132/132
+Bridge keys are unique,PASS,132 rows; 132 unique keys
+All bridge rows retain non-incidence geographic status,PASS,132/132
+All 2016-2017 financial rows were presented to the official crosswalk,PASS,904/904
+All 2016-2017 financial rows resolve through official CMS crosswalk,PASS,904/904
+Exactly 12 certified 2016-2017 bridge observations require crosswalk linkage,PASS,12/12
+All 12 certified 2016-2017 bridge observations join through official CMS crosswalk,PASS,12/12
+All 132 certified bridge observations join exactly once,PASS,joined=132; unmatched=0
+Joined observation keys remain unique,PASS,132 rows; 132 unique keys
+EarnSaveLoss is numeric for every joined observation,PASS,132/132 numeric
+2015 joined financial count reproduces frozen bridge,PASS,4/4
+2016 joined financial count reproduces frozen bridge,PASS,6/6
+2017 joined financial count reproduces frozen bridge,PASS,6/6
+2018 joined financial count reproduces frozen bridge,PASS,12/12
+2019 joined financial count reproduces frozen bridge,PASS,10/10
+2019A joined financial count reproduces frozen bridge,PASS,4/4
+2020 joined financial count reproduces frozen bridge,PASS,13/13
+2021 joined financial count reproduces frozen bridge,PASS,13/13
+2022 joined financial count reproduces frozen bridge,PASS,16/16
+2023 joined financial count reproduces frozen bridge,PASS,20/20
+2024 joined financial count reproduces frozen bridge,PASS,28/28
+Period-profile observation counts sum to 132,PASS,132/132
+EarnSaveLoss classifications account for all 132 observations,PASS,132/132

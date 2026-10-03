@@ -1,0 +1,36 @@
+search_group,search_term,evidence_windows,status
+field_definition,AB_Psn_Yrs_ESRD,2,FOUND
+field_definition,AB_Psn_Yrs_DIS,2,FOUND
+field_definition,AB_Psn_Yrs_AGDU,2,FOUND
+field_definition,AB_Psn_Yrs_AGND,2,FOUND
+field_definition,Tot_AB_Psn_Yrs,2,FOUND
+field_definition,Tot_AB,4,FOUND
+suppression,suppress,41,FOUND
+suppression,suppression,18,FOUND
+suppression,suppressed,27,FOUND
+suppression,cell size,0,NOT_FOUND_IN_EXTRACTED_TEXT
+suppression,minimum cell,0,NOT_FOUND_IN_EXTRACTED_TEXT
+suppression,privacy,3,FOUND
+blank_missing,blank,0,NOT_FOUND_IN_EXTRACTED_TEXT
+blank_missing,missing,11,FOUND
+blank_missing,null,0,NOT_FOUND_IN_EXTRACTED_TEXT
+blank_missing,not available,0,NOT_FOUND_IN_EXTRACTED_TEXT
+blank_missing,not applicable,0,NOT_FOUND_IN_EXTRACTED_TEXT
+blank_missing,n/a,0,NOT_FOUND_IN_EXTRACTED_TEXT
+rounding,round,0,NOT_FOUND_IN_EXTRACTED_TEXT
+rounding,rounded,0,NOT_FOUND_IN_EXTRACTED_TEXT
+rounding,rounding,0,NOT_FOUND_IN_EXTRACTED_TEXT
+geography,county,45,FOUND
+geography,counties,4,FOUND
+geography,residence,0,NOT_FOUND_IN_EXTRACTED_TEXT
+geography,resident,0,NOT_FOUND_IN_EXTRACTED_TEXT
+geography,geographic,0,NOT_FOUND_IN_EXTRACTED_TEXT
+geography,geography,0,NOT_FOUND_IN_EXTRACTED_TEXT
+geography,state,7,FOUND
+beneficiary_person_year,beneficiary,29,FOUND
+beneficiary_person_year,beneficiaries,46,FOUND
+beneficiary_person_year,person-year,4,FOUND
+beneficiary_person_year,person year,6,FOUND
+beneficiary_person_year,person-years,1,FOUND
+beneficiary_person_year,person years,1,FOUND
+beneficiary_person_year,assigned beneficiary,4,FOUND

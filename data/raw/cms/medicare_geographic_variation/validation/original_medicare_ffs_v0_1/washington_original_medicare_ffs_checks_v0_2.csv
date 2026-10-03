@@ -1,0 +1,8 @@
+check,status,detail
+Required source columns,PASS,All required columns present
+39 named Washington counties per year,PASS,390 county-year rows
+WA-UNKNOWN isolated as FIPS 53000,PASS,10 unknown rows
+Aggregate actual payment populated for all named counties,PASS,390/390 populated
+Aggregate/per-capita payment identity,PASS,390/390 rows testable; max abs diff=$0.005034; mean abs diff=$0.002517
+Standardized aggregate/per-capita identity,PASS,390/390 rows testable; max abs diff=$0.005254
+Unique county-year keys,PASS,0 duplicate rows

@@ -1,0 +1,9 @@
+check,status,detail
+Preserved MSSP documentation package exists,PASS,data\raw\cms\medicare_aco\mssp_performance_results\documentation\Performance Year Financial and Quality Results - Documentation.zip
+All documentation PDFs parse,PASS,22 PDFs parsed; 0 failures
+Documentation package reproduces 22 PDF members,PASS,22/22
+Documentation package reproduces 7 unique PDF byte streams,PASS,7/7
+All 11 performance periods have dictionary evidence from archive placement,PASS,"11/11 | 2015,2016,2017,2018,2019,2019A,2020,2021,2022,2023,2024"
+EarnSaveLoss documented across all 11 periods,PASS,11/11
+GenSaveLoss documented across all 11 periods,PASS,11/11
+Settlement-semantic evidence extracted,PASS,1493 evidence windows | AIM=732; AIP=20; Adv_Pay=24; EarnSaveLoss=11; GenSaveLoss=11; advance payment=96; advance payments=19; payment limit=28; recoup=84; sequestration=22; shared losses=34; shared savings=412
