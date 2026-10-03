@@ -232,3 +232,48 @@ data/raw/usaspending/procurement/**/website_download/extracted/*.csv
 # Temporary ETL diagnostics and dry-run output
 data/working/
 data/raw/usaspending/procurement/**/rejected_acquisitions/*.zip
+
+# ---------------------------------------------------------------------------
+# WCFFBP publication and local-source archive policy
+# ---------------------------------------------------------------------------
+#
+# Large reproducible source acquisitions are retained locally but are not
+# ordinarily stored in Git. Reproducibility is provided through authoritative
+# source URLs, acquisition metadata, checksums, manifests, and acquisition
+# scripts.
+#
+# Do NOT add blanket ignores for data/raw, *.zip, *.pdf, *.csv, or *.xlsx.
+# Selected source artifacts and derived validation evidence may intentionally
+# remain version-controlled.
+#
+# Existing tracked files are grandfathered unless explicitly migrated.
+#
+# CMS bulk source acquisitions
+# These files are reproducible from authoritative CMS sources and are retained
+# in the local research archive rather than using GitHub as a binary mirror.
+data/raw/cms/medicare_advantage/enrollment/**/*.zip
+data/raw/cms/medicare_partd/landscape/*.zip
+
+# Additional CMS reproducible bulk source acquisitions
+data/raw/cms/medicare_partd/pbp_benefits/**/*.zip
+data/raw/cms/medicare_geographic_variation/*.zip
+data/raw/cms/medicare_aco/**/*.zip
+
+# Temporary CMS acquisition workspace
+data/raw/cms/**/validation/**/_tmp/
+
+# OPM FedScope reproducible source archives
+data/raw/opm/fedscope/employment/**/*.zip
+
+# HUD VMS reproducible source workbooks
+data/raw/hud/vms/quarterly/**/*.xlsx
+
+# Rockefeller Institute source publications
+# Retained in the local research archive; not redistributed through Git.
+data/raw/rockefeller/balance_of_payments/source/*.pdf
+
+# Additional CMS reproducible bulk source archives
+data/raw/cms/medicare_advantage/enrollment_controls/**/*.zip
+data/raw/cms/medicare_advantage/plan_payment/**/*.zip
+data/raw/cms/medicare_advantage/snp/**/*.zip
+data/raw/cms/medicare_trustees/expanded_tables/*.zip
