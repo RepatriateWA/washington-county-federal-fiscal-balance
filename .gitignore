@@ -302,3 +302,11 @@ data/raw/cms/medicare_trustees/reports/*.pdf
 # State Health Expenditures source/documentation archives
 data/raw/cms/state_health_expenditures/residence/documentation/*.zip
 data/raw/cms/state_health_expenditures/residence/source/*.zip
+
+# Rockefeller Institute publications and substantial text derivatives
+# Retained in the local research archive; WCFFBP does not redistribute
+# source publications or substantial full-text extractions through Git.
+data/raw/rockefeller/balance_of_payments/validation/methodology_evidence_v0_1/evidence_passages.txt
+data/raw/rockefeller/balance_of_payments/validation/methodology_evidence_v0_1/income_tax_methodology_review.txt
+data/raw/rockefeller/balance_of_payments/validation/methodology_evidence_v0_1/other_receipts_methodology_review.txt
+data/raw/rockefeller/balance_of_payments/validation/text_extraction_v0_1/rockefeller_bop_report_*.txt
