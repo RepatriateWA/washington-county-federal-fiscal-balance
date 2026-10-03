@@ -1,0 +1,89 @@
+============================================================================================
+ROCKEFELLER RECEIPTS METHODOLOGY EVIDENCE EXTRACTION v0.1 - ETL-172C-2B
+============================================================================================
+
+REPORT 2017
+--------------------------------------------------------------------------------------------
+Text SHA-256: 24B7EC1527784182A1A76D554AB06851F251649B5CFE6090CEC50B735850F191
+Pages        : 40
+INDIVIDUAL_INCOME_TAX        : 8 matching pages
+CORPORATE_INCOME_TAX         : 10 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 31 matching pages
+VINTAGE_LAG_HANDLING         : 15 matching pages
+
+REPORT 2019
+--------------------------------------------------------------------------------------------
+Text SHA-256: C4C636B64438C1ADA8E37C8DACCEB69C70E816021F21E91CEEF062BCA54E200F
+Pages        : 44
+INDIVIDUAL_INCOME_TAX        : 10 matching pages
+CORPORATE_INCOME_TAX         : 11 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 32 matching pages
+VINTAGE_LAG_HANDLING         : 16 matching pages
+
+REPORT 2020
+--------------------------------------------------------------------------------------------
+Text SHA-256: 5EEA124754DD48684D8502ACD59EBD3E6355EEE2A61989831B8C60F04BC64BCE
+Pages        : 44
+INDIVIDUAL_INCOME_TAX        : 10 matching pages
+CORPORATE_INCOME_TAX         : 11 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 29 matching pages
+VINTAGE_LAG_HANDLING         : 18 matching pages
+
+REPORT 2021
+--------------------------------------------------------------------------------------------
+Text SHA-256: 1BB96F439D10B2E1B765A4F600F5D342A2F7BF404D9BF37ED956350CE3774722
+Pages        : 48
+INDIVIDUAL_INCOME_TAX        : 13 matching pages
+CORPORATE_INCOME_TAX         : 11 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 33 matching pages
+VINTAGE_LAG_HANDLING         : 21 matching pages
+
+REPORT 2022
+--------------------------------------------------------------------------------------------
+Text SHA-256: E0F358B1D4770A83B380181B43DBC8C6EFFB8EC0DB85193665FB75284244C98E
+Pages        : 56
+INDIVIDUAL_INCOME_TAX        : 11 matching pages
+CORPORATE_INCOME_TAX         : 10 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 42 matching pages
+VINTAGE_LAG_HANDLING         : 22 matching pages
+
+REPORT 2023
+--------------------------------------------------------------------------------------------
+Text SHA-256: 0D033BBFC12A614D8A744FA3BFE2D05F73849A58EEABE4D4B96E19B226451326
+Pages        : 56
+INDIVIDUAL_INCOME_TAX        : 11 matching pages
+CORPORATE_INCOME_TAX         : 10 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 42 matching pages
+VINTAGE_LAG_HANDLING         : 26 matching pages
+
+REPORT 2024
+--------------------------------------------------------------------------------------------
+Text SHA-256: 197DD8C9CEB72A1274D0AF719934CAA068F08407FFD294937A678EDA2951E358
+Pages        : 64
+INDIVIDUAL_INCOME_TAX        : 11 matching pages
+CORPORATE_INCOME_TAX         : 10 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 44 matching pages
+VINTAGE_LAG_HANDLING         : 31 matching pages
+
+REPORT 2025
+--------------------------------------------------------------------------------------------
+Text SHA-256: CE23EB766D8C88BBDF0BB0F29F21660C80E7299EA493B1DAE39B3164DEFF15C2
+Pages        : 68
+INDIVIDUAL_INCOME_TAX        : 10 matching pages
+CORPORATE_INCOME_TAX         : 11 matching pages
+NATIONAL_ACCOUNTING_CONTROL  : 45 matching pages
+VINTAGE_LAG_HANDLING         : 26 matching pages
+
+============================================================================================
+EXTRACTION SUMMARY
+============================================================================================
+
+Reports processed       : 8
+PDF pages represented   : 420
+Evidence records        : 641
+Missing report/clusters : 0
+
+Evidence extraction is mechanical only.
+Matching text has not been interpreted or certified.
+
+EXTRACTION RESULT: PASS

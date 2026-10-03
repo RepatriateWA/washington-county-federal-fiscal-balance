@@ -1,0 +1,212 @@
+============================================================================================
+ROCKEFELLER BOP PDF TEXT EXTRACTION AND STRUCTURAL PROFILE v0.1 - ETL-172C-2A
+============================================================================================
+
+pdftotext version : 25.07.0
+pdfinfo version   : 25.07.0
+
+REPORT 2017
+--------------------------------------------------------------------------------------------
+PDF pages              : 40
+Text pages represented : 40
+Pages with text        : 40
+Pages without text     : 0
+Extracted characters   : 152371
+Extracted lines        : 1993
+Individual income tax  : 7
+Corporate income tax   : 7
+Social insurance       : 3
+OASDI                   : 0
+Medicare                : 21
+Railroad retirement     : 5
+Unemployment insurance : 3
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 11
+Federal budget          : 43
+IRS                     : 11
+BEA                     : 2
+75 percent / 75%        : 2
+25 percent / 25%        : 1
+
+REPORT 2019
+--------------------------------------------------------------------------------------------
+PDF pages              : 44
+Text pages represented : 44
+Pages with text        : 44
+Pages without text     : 0
+Extracted characters   : 120537
+Extracted lines        : 1986
+Individual income tax  : 7
+Corporate income tax   : 7
+Social insurance       : 3
+OASDI                   : 2
+Medicare                : 18
+Railroad retirement     : 8
+Unemployment insurance : 6
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 11
+Federal budget          : 33
+IRS                     : 13
+BEA                     : 7
+75 percent / 75%        : 3
+25 percent / 25%        : 1
+
+REPORT 2020
+--------------------------------------------------------------------------------------------
+PDF pages              : 44
+Text pages represented : 44
+Pages with text        : 44
+Pages without text     : 0
+Extracted characters   : 137835
+Extracted lines        : 2071
+Individual income tax  : 7
+Corporate income tax   : 8
+Social insurance       : 3
+OASDI                   : 1
+Medicare                : 19
+Railroad retirement     : 8
+Unemployment insurance : 6
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 11
+Federal budget          : 29
+IRS                     : 12
+BEA                     : 7
+75 percent / 75%        : 2
+25 percent / 25%        : 1
+
+REPORT 2021
+--------------------------------------------------------------------------------------------
+PDF pages              : 48
+Text pages represented : 48
+Pages with text        : 48
+Pages without text     : 0
+Extracted characters   : 131238
+Extracted lines        : 1971
+Individual income tax  : 16
+Corporate income tax   : 9
+Social insurance       : 3
+OASDI                   : 1
+Medicare                : 19
+Railroad retirement     : 8
+Unemployment insurance : 7
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 11
+Federal budget          : 30
+IRS                     : 13
+BEA                     : 7
+75 percent / 75%        : 1
+25 percent / 25%        : 1
+
+REPORT 2022
+--------------------------------------------------------------------------------------------
+PDF pages              : 56
+Text pages represented : 56
+Pages with text        : 56
+Pages without text     : 0
+Extracted characters   : 181304
+Extracted lines        : 2613
+Individual income tax  : 8
+Corporate income tax   : 7
+Social insurance       : 3
+OASDI                   : 1
+Medicare                : 27
+Railroad retirement     : 8
+Unemployment insurance : 15
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 10
+Federal budget          : 37
+IRS                     : 18
+BEA                     : 8
+75 percent / 75%        : 1
+25 percent / 25%        : 1
+
+REPORT 2023
+--------------------------------------------------------------------------------------------
+PDF pages              : 56
+Text pages represented : 56
+Pages with text        : 56
+Pages without text     : 0
+Extracted characters   : 190968
+Extracted lines        : 2672
+Individual income tax  : 10
+Corporate income tax   : 5
+Social insurance       : 3
+OASDI                   : 1
+Medicare                : 22
+Railroad retirement     : 8
+Unemployment insurance : 13
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 11
+Federal budget          : 36
+IRS                     : 22
+BEA                     : 8
+75 percent / 75%        : 2
+25 percent / 25%        : 1
+
+REPORT 2024
+--------------------------------------------------------------------------------------------
+PDF pages              : 64
+Text pages represented : 64
+Pages with text        : 64
+Pages without text     : 0
+Extracted characters   : 241792
+Extracted lines        : 3222
+Individual income tax  : 10
+Corporate income tax   : 6
+Social insurance       : 3
+OASDI                   : 1
+Medicare                : 25
+Railroad retirement     : 8
+Unemployment insurance : 11
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 10
+Federal budget          : 35
+IRS                     : 17
+BEA                     : 13
+75 percent / 75%        : 1
+25 percent / 25%        : 1
+
+REPORT 2025
+--------------------------------------------------------------------------------------------
+PDF pages              : 68
+Text pages represented : 68
+Pages with text        : 68
+Pages without text     : 0
+Extracted characters   : 256487
+Extracted lines        : 3367
+Individual income tax  : 8
+Corporate income tax   : 3
+Social insurance       : 3
+OASDI                   : 1
+Medicare                : 27
+Railroad retirement     : 9
+Unemployment insurance : 9
+Estate tax              : 0
+Gift tax                : 0
+Excise tax              : 11
+Federal budget          : 31
+IRS                     : 17
+BEA                     : 18
+75 percent / 75%        : 1
+25 percent / 25%        : 1
+
+============================================================================================
+PROFILE SUMMARY
+============================================================================================
+
+Expected reports       : 8
+Extracted reports      : 8
+All reports have text  : YES
+All PDF pages have text: YES
+
+Methodology term counts are diagnostic only.
+No methodological meaning has been certified.
+
+PROFILE RESULT: PASS

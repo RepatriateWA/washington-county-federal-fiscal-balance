@@ -1,0 +1,149 @@
+============================================================================================
+FEDERAL RECEIPTS INPUT GAP ANALYSIS v0.1 - ETL-172D-1
+============================================================================================
+
+Generated UTC : 2026-10-01T02:08:48.981213+00:00
+Repository    : D:\GitHub\washington-county-federal-fiscal-balance
+Files scanned : 2,054
+Requirements  : 13
+
+IMPORTANT
+--------------------------------------------------------------------------------------------
+This is a repository inventory and gap-screening step only.
+Filename/path matches do NOT certify source semantics.
+No files were acquired.
+No receipt values were calculated.
+No database writes were performed.
+
+REQUIREMENT SUMMARY
+--------------------------------------------------------------------------------------------
+INDIVIDUAL_INCOME_TAX
+  category   : Individual income tax
+  source     : IRS SOI Historic Table 2
+  allocator  : State share of A06500 + A85530 + A85300
+  candidates : 34
+  status     : READY_OR_NEAR_READY
+  assessment : 34 candidate files found and prior ETL work already supports this source family. Verify required years/fields.
+
+OASDI_RECEIPTS
+  category   : OASI / DI employment taxes
+  source     : Social Security Administration
+  allocator  : State share of covered earnings or contributions
+  candidates : 20
+  status     : SEMANTIC_REVIEW_REQUIRED
+  assessment : 20 candidate files found, but filename/path evidence alone cannot certify that the required allocator is present.
+
+MEDICARE_HI_RECEIPTS
+  category   : Medicare Hospital Insurance employment taxes
+  source     : Social Security Administration
+  allocator  : State share of Medicare-covered earnings or HI contributions
+  candidates : 1166
+  status     : SEMANTIC_REVIEW_REQUIRED
+  assessment : 1166 candidate files found, but filename/path evidence alone cannot certify that the required allocator is present.
+
+RAILROAD_RETIREMENT
+  category   : Railroad retirement
+  source     : IRS Gross Collections Table 5
+  allocator  : Direct state gross collections
+  candidates : 23
+  status     : READY_OR_NEAR_READY
+  assessment : 23 candidate files found and prior ETL work already supports this source family. Verify required years/fields.
+
+UNEMPLOYMENT_INSURANCE
+  category   : Unemployment insurance
+  source     : US DOL ETA-2112 and/or IRS Gross Collections
+  allocator  : State UI contributions / gross collections
+  candidates : 22
+  status     : METHOD_CHANGE_REVIEW
+  assessment : 22 candidate files found. Vintage-specific Rockefeller allocator treatment must be resolved before use.
+
+OTHER_RETIREMENT
+  category   : Other retirement receipts
+  source     : US Census Bureau population estimates
+  allocator  : State population share
+  candidates : 2
+  status     : SEMANTIC_REVIEW_REQUIRED
+  assessment : 2 candidate files found, but filename/path evidence alone cannot certify that the required allocator is present.
+
+CORPORATE_CAPITAL
+  category   : Corporate income tax - capital component
+  source     : BEA State Personal Income
+  allocator  : Dividends + interest + rent + proprietors' income
+  candidates : 27
+  status     : SEMANTIC_REVIEW_REQUIRED
+  assessment : 27 candidate files found, but filename/path evidence alone cannot certify that the required allocator is present.
+
+CORPORATE_LABOR
+  category   : Corporate income tax - labor component
+  source     : BEA State Personal Income
+  allocator  : Wages and salaries
+  candidates : 29
+  status     : SEMANTIC_REVIEW_REQUIRED
+  assessment : 29 candidate files found, but filename/path evidence alone cannot certify that the required allocator is present.
+
+TRANSPORTATION_EXCISE
+  category   : Transportation / Highway Trust Fund excise
+  source     : Federal Highway Administration
+  allocator  : State share of FHTF receipts attributable to highway users
+  candidates : 0
+  status     : MISSING
+  assessment : No filename/path candidates found. Acquisition likely required.
+
+ALCOHOL_EXCISE
+  category   : Alcohol excise
+  source     : NIAAA
+  allocator  : State alcohol-consumption share
+  candidates : 0
+  status     : MISSING
+  assessment : No filename/path candidates found. Acquisition likely required.
+
+OTHER_EXCISE
+  category   : Other excise taxes
+  source     : US Census Bureau population estimates
+  allocator  : State population share
+  candidates : 2
+  status     : SEMANTIC_REVIEW_REQUIRED
+  assessment : 2 candidate files found, but filename/path evidence alone cannot certify that the required allocator is present.
+
+ESTATE_GIFT
+  category   : Estate and gift taxes
+  source     : IRS Gross Collections Table 5
+  allocator  : Direct state gross collections
+  candidates : 23
+  status     : READY_OR_NEAR_READY
+  assessment : 23 candidate files found and prior ETL work already supports this source family. Verify required years/fields.
+
+FEDERAL_RECEIPT_CONTROLS
+  category   : National federal receipt controls
+  source     : Budget of the United States Government / OMB Historical Tables
+  allocator  : Federal fiscal-year national receipt totals by category
+  candidates : 78
+  status     : SEMANTIC_REVIEW_REQUIRED
+  assessment : 78 candidate files found, but filename/path evidence alone cannot certify that the required allocator is present.
+
+============================================================================================
+SCREENING COUNTS
+============================================================================================
+
+READY_OR_NEAR_READY      : 3
+SEMANTIC_REVIEW_REQUIRED : 7
+METHOD_CHANGE_REVIEW     : 1
+MISSING                  : 2
+
+APPARENT ACQUISITION GAPS
+--------------------------------------------------------------------------------------------
+TRANSPORTATION_EXCISE: Federal Highway Administration
+ALCOHOL_EXCISE: NIAAA
+
+OUTPUTS
+--------------------------------------------------------------------------------------------
+data\raw\rockefeller\balance_of_payments\validation\receipts_input_gap_analysis_v0_1\candidate_file_inventory.csv
+data\raw\rockefeller\balance_of_payments\validation\receipts_input_gap_analysis_v0_1\input_gap_summary.csv
+data\raw\rockefeller\balance_of_payments\validation\receipts_input_gap_analysis_v0_1\gap_analysis_report.txt
+
+SCREENING RESULT: COMPLETE
+
+COMPLETE means the repository was screened against the
+ETL-172C Rockefeller receipts allocator requirements.
+It does not certify that candidate files contain the required
+variables, years, geographies, units, or accounting periods.
