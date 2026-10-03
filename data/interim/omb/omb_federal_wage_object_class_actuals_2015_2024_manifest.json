@@ -1,0 +1,88 @@
+{
+  "purpose": "Normalized primary-source evidence for WCFFBP federal wage-obligation controls, FFY2015-FFY2024.",
+  "observation_count": 60,
+  "expected_observation_count": 60,
+  "coverage": "FFY2015-FFY2024",
+  "value_status": "ACTUAL",
+  "accounting_measure": "OBLIGATIONS_BY_OBJECT_CLASS",
+  "scope": "GOVERNMENT_WIDE",
+  "object_classes": {
+    "11.1": "Full-time permanent",
+    "11.3": "Other than full-time permanent",
+    "11.5": "Other personnel compensation",
+    "11.6": "Military personnel - basic allowance for housing",
+    "11.7": "Military personnel",
+    "11.8": "Special personal services payments"
+  },
+  "derivation_rules": {
+    "MILITARY_WAGES": "11.6 + 11.7",
+    "NONMILITARY_WAGES": "11.1 + 11.3 + 11.5 + 11.8",
+    "TOTAL_WAGES": "MILITARY_WAGES + NONMILITARY_WAGES"
+  },
+  "source_verification": "MANUALLY_VERIFIED",
+  "known_source_note": "The FY2019 Budget publication's FFY2017 actual object-class values and the FY2020 Budget publication's FFY2018 actual values are identical for all six harvested object classes. Both source PDFs were manually rechecked and the published values are preserved without alteration. WCFFBP does not infer whether this reflects identical underlying actuals, a publication carry-forward, or another source-publication issue.",
+  "derived_controls": [
+    {
+      "fiscal_year": 2015,
+      "military_wage_obligations_millions": 98258,
+      "nonmilitary_wage_obligations_millions": 151722,
+      "total_wage_obligations_millions": 249980
+    },
+    {
+      "fiscal_year": 2016,
+      "military_wage_obligations_millions": 98238,
+      "nonmilitary_wage_obligations_millions": 156145,
+      "total_wage_obligations_millions": 254383
+    },
+    {
+      "fiscal_year": 2017,
+      "military_wage_obligations_millions": 99471,
+      "nonmilitary_wage_obligations_millions": 160144,
+      "total_wage_obligations_millions": 259615
+    },
+    {
+      "fiscal_year": 2018,
+      "military_wage_obligations_millions": 99471,
+      "nonmilitary_wage_obligations_millions": 160144,
+      "total_wage_obligations_millions": 259615
+    },
+    {
+      "fiscal_year": 2019,
+      "military_wage_obligations_millions": 105899,
+      "nonmilitary_wage_obligations_millions": 170536,
+      "total_wage_obligations_millions": 276435
+    },
+    {
+      "fiscal_year": 2020,
+      "military_wage_obligations_millions": 109572,
+      "nonmilitary_wage_obligations_millions": 181373,
+      "total_wage_obligations_millions": 290945
+    },
+    {
+      "fiscal_year": 2021,
+      "military_wage_obligations_millions": 115002,
+      "nonmilitary_wage_obligations_millions": 195549,
+      "total_wage_obligations_millions": 310551
+    },
+    {
+      "fiscal_year": 2022,
+      "military_wage_obligations_millions": 116550,
+      "nonmilitary_wage_obligations_millions": 198465,
+      "total_wage_obligations_millions": 315015
+    },
+    {
+      "fiscal_year": 2023,
+      "military_wage_obligations_millions": 121022,
+      "nonmilitary_wage_obligations_millions": 207461,
+      "total_wage_obligations_millions": 328483
+    },
+    {
+      "fiscal_year": 2024,
+      "military_wage_obligations_millions": 125047,
+      "nonmilitary_wage_obligations_millions": 227393,
+      "total_wage_obligations_millions": 352440
+    }
+  ],
+  "csv_file": "data\\interim\\omb\\omb_federal_wage_object_class_actuals_2015_2024.csv",
+  "csv_sha256": "504d2951c0a9d513e9ffe11883fb0020085271fe3510479409772e870ab17de9"
+}
