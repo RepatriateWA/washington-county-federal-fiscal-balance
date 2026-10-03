@@ -1,0 +1,26 @@
+CMS PBP BENEFITS ACQUISITION v0.1
+============================================================================
+Generated UTC: 2026-09-23T21:39:25.130918+00:00
+CMS landing page: https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/benefits-data
+
+BOUNDARY
+----------------------------------------------------------------------------
+Official CMS Benefits Data only. Acquisition and preservation only.
+No semantic classification, linkage, imputation, payment propagation,
+reconstruction, DB writes, or ledger inclusion.
+
+CHECKS
+----------------------------------------------------------------------------
+all CY2015-CY2024 acquired: PASS
+exactly ten selected source ZIPs: PASS
+all selected ZIPs pass integrity: PASS
+no acquisition errors: PASS
+
+ERRORS
+----------------------------------------------------------------------------
+None
+
+OVERALL
+----------------------------------------------------------------------------
+OVERALL: PASS
+Manifest: data\raw\cms\medicare_partd\pbp_benefits\cms_pbp_benefits_acquisition_manifest.csv

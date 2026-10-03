@@ -1,0 +1,21 @@
+CMS PROGRAM STATISTICS PART D / RDS CATALOG DISCOVERY v0.1
+==============================================================================
+
+Retrieved UTC: 2026-09-24T04:18:30.735285+00:00
+Catalog: https://data.cms.gov/data.json
+Catalog datasets: 159
+Candidate datasets: 1
+Distribution rows: 11
+
+CHECKS
+------------------------------------------------------------------------------
+PASS | CMS catalog retrieved | 159 datasets
+PASS | At least one Part D/RDS candidate discovered | 1 candidate datasets
+PASS | Candidate distribution metadata exposed | 11 distribution rows
+PASS | At least one programmatic access/download path exposed | CMS accessURL/downloadURL present
+
+BOUNDARY
+------------------------------------------------------------------------------
+This stage performs catalog discovery only. No source distribution has been selected, downloaded, transformed, or interpreted.
+A programmatic URL is evidence of accessibility, not evidence that the distribution contains the required MDCR ENROLL D 3 residence-based RDS table.
+Historical coverage and table semantics must be certified before acquisition or ledger use.

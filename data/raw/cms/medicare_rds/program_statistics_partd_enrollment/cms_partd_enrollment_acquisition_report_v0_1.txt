@@ -1,0 +1,24 @@
+CMS PROGRAM STATISTICS PART D / RDS ACQUISITION v0.1
+==============================================================================
+
+Scope: CY2015-CY2023
+
+This acquisition preserves the exact CMS ZIP distributions
+identified by the previously preserved CMS catalog discovery.
+
+No files were transformed or interpreted.
+No Washington RDS dollars were reconstructed.
+
+CHECKS
+------------------------------------------------------------------------------
+PASS | CY2015-CY2023 resolved uniquely | 9/9 required years
+PASS | CY2015-CY2023 source files acquired | 9/9 years
+PASS | All acquired files pass ZIP integrity | 9/9 files
+PASS | SHA-256 recorded for every acquired source | 9/9 files
+PASS | ZIP members inventoried | 19 members
+
+BOUNDARY
+------------------------------------------------------------------------------
+CY2024 is not included because the CMS catalog discovery did not expose a CY2024 distribution for this dataset.
+Acquisition does not establish that any ZIP member is MDCR ENROLL D 3 or that its geography is suitable for WCFFBP allocation.
+The next stage must profile ZIP contents and identify the exact D3 table and its published geographic grain.

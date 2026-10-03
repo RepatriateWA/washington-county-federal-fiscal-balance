@@ -1,0 +1,172 @@
+{
+  "retrieved_utc": "2026-09-24T04:18:30.731912+00:00",
+  "catalog_url": "https://data.cms.gov/data.json",
+  "search_terms": [
+    "medicare part d enrollment",
+    "mdcr enroll d 3",
+    "retiree drug subsidy"
+  ],
+  "candidate_count": 1,
+  "datasets": [
+    {
+      "@type": "dcat:Dataset",
+      "accessLevel": "public",
+      "accessRights": "Open",
+      "accrualPeriodicity": "R/P1Y",
+      "bureauCode": [
+        "009:38"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "CMS Program Statistics - OEDA",
+        "hasEmail": "mailto:IPAG_Data_Products@cms.hhs.gov"
+      },
+      "describedBy": "https://data.cms.gov/resources/cms-program-statistics-glossary",
+      "dataQuality": true,
+      "description": "The CMS Program Statistics - Medicare Part D Enrollment tables provide data on characteristics of the Medicare Part D covered population. \n\nFor additional information on enrollment, providers, and Medicare use and payment, visit the CMS Program Statistics page.\n\n \n\nBelow is the list of tables:\n\n\n\tMDCR ENROLL D 1. Medicare Part D Enrollment: Part D Enrollees by Type of Plan, Low Income Subsidy (LIS), and Retiree Drug Subsidy, Yearly Trend\n\tMDCR ENROLL D 2. Medicare Part D Enrollment: Part D Enrollees by Type of Plan, Low Income Subsidy (LIS), and Retiree Drug Subsidy, by Demographic Characteristics\n\tMDCR ENROLL D 3. Medicare Part D Enrollment: Part D Enrollees by Type of Plan, Low Income Subsidy (LIS), and Retiree Drug Subsidy, by Area of Residence",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2025-09/c0458b01-5731-43b4-a45c-16944a8253e7/MDCR%20ENROLL%20D_CPS_03EPD_2023.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/96ae3f16-9e68-4f58-a604-a61abbb71b38",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2023-01-01",
+          "modified": "2025-09-30",
+          "temporal": "2023-01-01/2023-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2025-09/3b6620c9-ee79-4472-8fef-a234638070c5/MDCR%20ENROLL%20D_CPS_03EPD_2022.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/89fb5d47-a17b-4cb9-ae3b-bdeb984119ec",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2022-01-01",
+          "modified": "2025-09-30",
+          "temporal": "2022-01-01/2022-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2023-02/CPS%20MDCR%20ENROLL%20D%202021.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/c62d1526-12b2-40ed-a8c0-446dc71d5f2a",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2021-01-01",
+          "modified": "2025-09-08",
+          "temporal": "2021-01-01/2021-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2022-02/CPS%20MDCR%20ENROLL%20D%202020.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/af0582a1-3706-405b-b974-cf0231f9be17",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2020-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2020-01-01/2020-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2021-01/CPS_MDCR_ENROLL_D_1-3.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/5f9e4acd-5996-4ebe-8ffc-0a33ed0d3c8f",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2019-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2019-01-01/2019-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2021-01/CPS%20MDCR%20TOTAL%20ENROLL%20D.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/123dd60a-acd9-4066-b9ed-f47893e86aad",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2018-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2018-01-01/2018-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2019-12/CPS_MDCR_ENROLL_D_2017.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/67ddfd83-be7c-414d-a194-cc70250d1d8d",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2017-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2017-01-01/2017-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2020-01/CPS_MDCR_ENROLL_D_ALL.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/78439d05-e8fd-4bdd-a3f5-613f0b9de781",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2016-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2016-01-01/2016-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2020-01/CPS_MDCR_ENROLL_D_ALL_0.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/822b230b-ab2c-4f91-8591-169a5d056b9f",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2015-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2015-01-01/2015-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2020-01/CPS_MDCR_ENROLL_D_ALL_1.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/ffb5fe92-a8a8-4b77-acf2-36fa62fa6bfa",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2014-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2014-01-01/2014-12-31"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://data.cms.gov/sites/default/files/2020-01/CPS_MDCR_ENROLL_D_ALL_2.zip",
+          "mediaType": "application/zip",
+          "format": "ZIP",
+          "resourcesAPI": "https://data.cms.gov/data-api/v1/dataset-resources/adaca380-da17-4168-b2de-5779e48d969e",
+          "title": "CMS Program Statistics - Medicare Part D Enrollment : 2013-12-31",
+          "modified": "2025-05-14",
+          "temporal": "2013-01-01/2013-12-31"
+        }
+      ],
+      "identifier": "https://data.cms.gov/data-api/v1/dataset/d8c69aca-2497-4a83-a181-706a960c77f0/data-viewer",
+      "keyword": [
+        "National",
+        "States & Territories",
+        "Medicare",
+        "Medicare Advantage",
+        "Medicare Prescription Drug",
+        "Beneficiary Enrollment",
+        "Health Equity"
+      ],
+      "landingPage": "https://data.cms.gov/summary-statistics-on-beneficiary-enrollment/medicare-and-medicaid-reports/cms-program-statistics-medicare-part-d-enrollment",
+      "language": [
+        "en-US"
+      ],
+      "license": "https://www.usa.gov/government-works",
+      "modified": "2025-09-30",
+      "programCode": [
+        "009:000"
+      ],
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Centers for Medicare & Medicaid Services"
+      },
+      "references": [
+        "https://data.cms.gov/resources/cms-program-statistics-methodology"
+      ],
+      "temporal": "2013-01-01/2023-12-31",
+      "theme": [
+        "Medicare"
+      ],
+      "title": "CMS Program Statistics - Medicare Part D Enrollment"
+    }
+  ]
+}

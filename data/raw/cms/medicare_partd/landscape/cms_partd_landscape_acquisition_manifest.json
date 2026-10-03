@@ -1,0 +1,10 @@
+{
+  "source_url": "https://www.cms.gov/files/zip/cy2006-cy2025-landscape-files.zip",
+  "retrieved_utc": "2026-09-23T20:44:02.353385+00:00",
+  "local_path": "data\\raw\\cms\\medicare_partd\\landscape\\cy2006-cy2025-landscape-files.zip",
+  "bytes": 190768604,
+  "sha256": "3f034779fe00ddd3b7ad18de890ef7a98a69053fd9c3787e79aa8e631649a390",
+  "zip_member_count": 16,
+  "zip_test_first_bad_member": "",
+  "disposition": "DOWNLOADED_OFFICIAL"
+}
