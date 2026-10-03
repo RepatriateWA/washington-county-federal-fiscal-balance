@@ -1,0 +1,13 @@
+{
+  "received_utc": "2026-09-07T21:35:36.070685+00:00",
+  "response": {
+    "file_name": "All_PrimeTransactions_2026-09-07_H21M35S36097598.zip",
+    "file_url": "https://files.usaspending.gov/generated_downloads/All_PrimeTransactions_2026-09-07_H21M35S36097598.zip",
+    "message": null,
+    "seconds_elapsed": null,
+    "status": "ready",
+    "total_columns": null,
+    "total_rows": null,
+    "total_size": null
+  }
+}
