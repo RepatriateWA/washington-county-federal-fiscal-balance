@@ -1,0 +1,31 @@
+Washington County Federal Fiscal Balance Project (WCFFBP)
+Copyright 2026 William Cavanagh
+
+WCFFBP is an open, reproducible research project.
+
+Original software and code distributed as part of this project are made
+available under the Apache License, Version 2.0, except where otherwise noted.
+
+The repository incorporates, references, transforms, or analyzes data and
+materials originating from federal agencies, state agencies, research
+organizations, and other third parties. Those source materials remain subject
+to their respective rights, terms, and conditions. Inclusion, citation,
+transformation, or analysis by WCFFBP does not assert WCFFBP ownership of
+third-party material.
+
+Independent reproduction, criticism, extension, and modification of WCFFBP
+are encouraged subject to the applicable license and rights of third parties.
+
+A modified or independently derived analysis may accurately identify its
+relationship to WCFFBP, but should not be represented as the official WCFFBP
+Reference Calculation unless the relevant methodology and result have been
+adopted into the versioned WCFFBP research record.
+
+The WCFFBP name, repository history, Reference Methodology, and version
+identifiers are used to distinguish the project's maintained research record
+from independent derivative analyses.
+
+For citation information, see CITATION.cff.
+For contribution and methodological-review guidance, see CONTRIBUTING.md.
+For methodology and reproducibility standards, see METHODOLOGY.md and
+REPRODUCIBILITY.md.

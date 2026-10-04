@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata below."
+title: "Washington County Federal Fiscal Balance Project"
+type: software
+authors:
+  - family-names: "Cavanagh"
+    given-names: "William"
+repository-code: "https://github.com/BillCavanagh471/washington-county-federal-fiscal-balance"
+license: "Apache-2.0"
+version: "DRAFT-1"
+abstract: >-
+  The Washington County Federal Fiscal Balance Project (WCFFBP) is an open,
+  reproducible research project for measuring federal fiscal flows attributable
+  to Washington State and, ultimately, its 39 counties. The project develops
+  source provenance, accounting policy, reconciliation, validation, geographic
+  attribution, and reproducible methods for comparing federal inflows to
+  federal outflows.
+keywords:
+  - federal fiscal balance
+  - Washington State
+  - county fiscal balance
+  - federal expenditures
+  - federal receipts
+  - fiscal federalism
+  - reproducible research
