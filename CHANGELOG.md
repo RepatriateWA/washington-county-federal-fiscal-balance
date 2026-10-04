@@ -6,6 +6,25 @@ This project follows a milestone-based versioning strategy.
 
 ---
 
+## Current Research State
+
+**DRAFT-1**
+
+The version entries below document early WCFFBP development milestones and are
+retained as part of the project's research history. They do not constitute a
+complete record of the analytical work now present in the repository.
+
+Subsequent development expanded substantially beyond the revenue-foundation
+milestones recorded here, including federal expenditure source acquisition,
+accounting-policy development, overlap reconciliation, geographic attribution,
+validation, and public research documentation.
+
+For the current project framework, see `README.md`, `METHODOLOGY.md`,
+`DATA_SOURCES.md`, `DATA_DICTIONARY.md`, `REPRODUCIBILITY.md`, and
+`KNOWN_LIMITATIONS.md`.
+
+DRAFT-1 is a research state, not a claim of finality.
+
 # v0.7 – Revenue Foundation Complete (Unreleased)
 
 ## Added
