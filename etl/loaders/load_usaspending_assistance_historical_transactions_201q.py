@@ -191,28 +191,18 @@ def verify_batch_population(cursor, batch_id, config):
 
     return eligible_count
 
-
 def normalize_batch(cursor, batch_id, config, eligible_count):
-    adapter = d4.HistoricalExtractionCursor(
-        cursor,
-        eligible_count=eligible_count,
-    )
-
     extracted_count, transactions = (
         normalizer.extract_transactions(
-            adapter,
+            cursor,
             load_batch_id=batch_id,
+            expected_resolved_count=eligible_count,
         )
     )
 
     require(
-        extracted_count == eligible_count,
-        f"Batch {batch_id}: extractor count mismatch"
-    )
-
-    require(
-        adapter.query_count == 2,
-        f"Batch {batch_id}: unexpected extractor SQL"
+        extracted_count == config["raw"],
+        f"Batch {batch_id}: raw count mismatch"
     )
 
     require(

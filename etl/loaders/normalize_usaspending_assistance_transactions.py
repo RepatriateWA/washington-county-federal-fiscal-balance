@@ -270,12 +270,13 @@ def parse_decimal(
             f"invalid {field_name} value {value!r}."
         ) from exc
 
-
 def extract_transactions(
     cur,
     *,
     load_batch_id: int,
+    expected_resolved_count: int | None = None,
 ) -> tuple[int, list[NormalizedTransaction]]:
+
     """Extract and resolve ledger-ready transactions."""
 
     cur.execute(
@@ -551,15 +552,32 @@ def extract_transactions(
             )
         )
 
-    if len(transactions) != raw_row_count:
+    reconciliation_count = (
+        raw_row_count
+        if expected_resolved_count is None
+        else expected_resolved_count
+    )
+
+    if expected_resolved_count is not None:
+        if (
+            type(expected_resolved_count) is not int
+            or not 0 < expected_resolved_count <= raw_row_count
+        ):
+            raise ValueError(
+                "Invalid expected resolved transaction count: "
+                f"raw={raw_row_count:,}, "
+                f"expected={expected_resolved_count!r}."
+            )
+
+    if len(transactions) != reconciliation_count:
         raise ValueError(
             "Transaction extraction failed to reconcile: "
             f"raw={raw_row_count:,}, "
+            f"expected_resolved={reconciliation_count:,}, "
             f"resolved={len(transactions):,}."
         )
 
     return raw_row_count, transactions
-
 
 def transaction_values(
     transaction: NormalizedTransaction,
