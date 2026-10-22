@@ -1,0 +1,49 @@
+ETL-224M / ETL-224N
+HISTORICAL WASHINGTON ASSISTANCE GEOGRAPHY CERTIFICATION
+Date: 2026-10-21
+
+Scope:
+  FY2018: load_batch_id 20
+  FY2019: load_batch_id 21
+
+GEOGRAPHIC RESTORATION
+                           FY2018    FY2019     TOTAL
+Canonical transactions     100426    106917    207343
+WA county-specific          96575    103211    199786
+WA state-only                3851      3706      7557
+Missing links                   0         0         0
+Orphan links                    0         0         0
+
+ETL-224M migration: COMMIT, exit code 0
+ETL-224N geographic certification: PASS
+
+ADDITIVE ASSISTANCE ACCOUNTING
+                           FY2018             FY2019
+Transactions                16910              15884
+Net obligations     7388375150.75      7913240351.71
+
+Combined transactions: 32794
+Combined obligations: 15301615502.46
+
+Post-repair ETL-224G reconciliation:
+  Accounting controls reproduced exactly.
+  All INCLUDE_ADDITIVE transactions Washington-attributed.
+  Geographic categories: WA_COUNTY and WA_UNSPECIFIED.
+
+Methodological limitations:
+  WA_UNSPECIFIED is valid for statewide accounting,
+  not county-specific allocation.
+  Aggregate financial continuity verified; no independent
+  transaction-by-transaction financial comparison performed.
+  Inclusion in the final statewide ledger remains subject
+  to the existing source-family reconciliation.
+
+Database backup:
+  D:\PostgreSQL_Backups\wcffbp_pre_ETL224M_20261021_164657.dump
+  Custom-format pg_dump, 953.1 MB, archive listing PASS.
+  Full test restoration not performed.
+
+Source evidence:
+  ETL-224M migration execution log
+  ETL-224N read-only geographic certification results
+  ETL-224G post-repair accounting reconciliation results
