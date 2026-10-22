@@ -138,3 +138,27 @@
 - Evidence-verified annual observations: 49 of 161.
 - No canonical ledger authorization or statewide fiscal
   balance certification implied.
+
+## v0.3.5 working - ETL-225Q Medicare FFS A/B verification
+
+- Verified seven Washington Original Medicare FFS A/B
+  calendar-year observations, 2018-2024.
+- Reproduced all seven registry amounts exactly from
+  cms.medicare_core_state_year.
+- Confirmed Washington state linkage and 39 county
+  observations for every year.
+- Confirmed seven unique annual database observations.
+- Preserved the existing source SHA-256 provenance.
+- Reused the certified CMS Medicare accounting-integration
+  profile without reopening the underlying reconstruction.
+- Preserved CALENDAR_YEAR measurement semantics.
+- Confirmed FFY conversion remains unauthorized.
+- Updated only coverage_status and evidence_path in the
+  annual accounting matrix.
+- Preserved observed amounts, accounting statuses, and
+  all ledger authorizations.
+- Standardized evidence-verified observations: 56 of 161.
+- Two previously verified HCV observations remain separately
+  classified outside this standardized count.
+- No canonical ledger authorization or statewide fiscal
+  balance certification implied.
