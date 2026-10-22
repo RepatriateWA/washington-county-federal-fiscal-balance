@@ -114,3 +114,27 @@
 - Evidence-verified annual observations: 42 of 161.
 - No canonical ledger authorization or statewide balance
   certification implied.
+
+## v0.3.4 working - ETL-225O SSA OASDI evidence verification
+
+- Verified seven Washington SSA OASDI observations, 2018-2024.
+- Reproduced all seven registry amounts exactly from the current
+  PostgreSQL reporting view.
+- Confirmed three reporting components and 39 published county
+  TOTAL observations per year.
+- Independently reproduced authoritative SSA published TOTAL
+  controls from the underlying benefit_payments table.
+- Reconciled all seven reporting-versus-published differences
+  to the certified SSA source-rounding evidence.
+- Reused EP-SSA-OASDI-001, certified with 17 validation checks
+  passed and zero failed.
+- Preserved ANNUALIZED_DECEMBER_SNAPSHOT measurement semantics.
+- These observations are not observed federal fiscal-year
+  cash expenditures.
+- Updated only coverage_status and evidence_path in the
+  annual accounting matrix.
+- Preserved observed amounts, accounting statuses, and all
+  ledger authorizations.
+- Evidence-verified annual observations: 49 of 161.
+- No canonical ledger authorization or statewide fiscal
+  balance certification implied.
