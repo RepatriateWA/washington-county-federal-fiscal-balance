@@ -6,21 +6,21 @@
 
 **Registry status:** VALIDATED WORKING ? NOT FINAL FISCAL BALANCE
 
-**Current working version:** `v0_3_2_working`
+**Current working version:** `v0_3_3_working`
 
 ## Start Here
 
 Read:
 
 1. [Registry Governance](accounting_registry/REGISTRY_GOVERNANCE.md)
-2. [Current Registry README](accounting_registry/v0_3_2_working/README.md)
-3. [Current Changelog](accounting_registry/v0_3_2_working/CHANGELOG.md)
-4. [Canonical Annual Ledger](accounting_registry/v0_3_2_working/canonical_annual_ledger.csv)
-5. [Annual Accounting Matrix](accounting_registry/v0_3_2_working/annual_accounting_matrix.csv)
+2. [Current Registry README](accounting_registry/v0_3_3_working/README.md)
+3. [Current Changelog](accounting_registry/v0_3_3_working/CHANGELOG.md)
+4. [Canonical Annual Ledger](accounting_registry/v0_3_3_working/canonical_annual_ledger.csv)
+5. [Annual Accounting Matrix](accounting_registry/v0_3_3_working/annual_accounting_matrix.csv)
 
 ## Latest Validated Checkpoint
 
-ETL-228D: Medicaid qualified authorization regression PASS.
+ETL-229C: CHIP qualified authorization regression PASS.
 
 | Measure | Count |
 |---|---:|
@@ -28,8 +28,8 @@ ETL-228D: Medicaid qualified authorization regression PASS.
 | Fiscal years | 7 (2018-2024) |
 | Family-year observations | 161 |
 | Potential ledger observations | 147 |
-| Authorized annual observations | 14 |
-| Authorized families | 2 |
+| Authorized annual observations | 21 |
+| Authorized families | 3 |
 
 Authorized families:
 
@@ -37,17 +37,19 @@ Authorized families:
   outflow controls, totaling $877,156,759,000.
 - MEDICAID: seven qualified provisional inflow
   controls, totaling $73,016,313,670.
+- CHIP: seven qualified provisional inflow
+  controls, totaling $1,137,550,029.
 
 These are individual accounting controls, not a complete
 or publishable federal fiscal balance.
 
 ## Current Work
 
-**Next task:** ETL-229 ? CHIP family authorization review.
+**Next task:** Select the next unauthorised accounting family
+using the registry's evidence and readiness status.
 
-Review existing ANALYSIS-218 and ETL-225N evidence before
-creating new ETL scripts. Preserve the distinction between
-CMS expenditure controls and USAspending obligations.
+Maintain separate treatment of expenditure controls,
+obligations, timing bases, and overlapping source families.
 
 ## Mandatory Operating Discipline
 
