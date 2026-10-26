@@ -270,3 +270,14 @@ MEDICAID_AUTHORIZATION_DECISION.md.
 - Retained all seven candidate amounts without modification.
 - Qualified provisional ledger remains 28 of 147 entries.
 - No database writes or canonical ledger changes.
+## ETL-233 - Housing Choice Voucher authorization review
+
+- Reviewed existing FY2018-FY2024 HCV source controls.
+- Preserved ETL-184 and ETL-208 additive program-policy treatment.
+- Confirmed USAspending net federal action obligation basis.
+- Reviewed prior HUD VMS expenditure/use reconciliation.
+- Preserved VMS non-addition and county-incidence safeguards.
+- Withheld principal-ledger authorization pending expenditure evidence.
+- Retained all seven candidate observations without modification.
+- Qualified provisional ledger remains 28 of 147 entries.
+- No database writes or canonical ledger changes.
