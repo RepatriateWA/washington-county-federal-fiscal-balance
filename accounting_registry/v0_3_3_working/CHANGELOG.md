@@ -260,3 +260,13 @@ MEDICAID_AUTHORIZATION_DECISION.md.
 - Withheld additive authorization pending accounting-basis and cross-family overlap reconciliation.
 - Qualified provisional ledger remains 28 of 147 entries.
 - No database writes or annual accounting amount changes.
+## ETL-232 - SSA OASDI authorization review
+
+- Reviewed existing SSA source certification and reporting basis.
+- Confirmed seven FY2018-FY2024 candidate observations.
+- Preserved ANNUALIZED_DECEMBER_SNAPSHOT semantics.
+- Withheld additive authorization pending actual FFY payment evidence.
+- Preserved existing OASDI USAspending overlap safeguards.
+- Retained all seven candidate amounts without modification.
+- Qualified provisional ledger remains 28 of 147 entries.
+- No database writes or canonical ledger changes.
