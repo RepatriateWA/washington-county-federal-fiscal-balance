@@ -2,7 +2,7 @@
 
 - Status: validated working registry; not a final fiscal balance.
 - 23 source families; 161 annual family-year observations.
-- 21 of 147 potential additive ledger observations authorized.
+- 28 of 147 potential additive ledger observations authorized.
 - IRS gross collections: seven qualified provisional outflows,
   FY2018?FY2024, totaling $877,156,759,000.
 - Medicaid: seven qualified provisional inflows,
@@ -14,12 +14,17 @@
 - USAspending AL 93.767: tested transactions excluded as duplicates
   or withheld unresolved; no separate additive authorization.
 - Independent regression validation: ETL-229C PASS.
+- VA GDX: seven qualified provisional inflows, FY2018-FY2024, totaling $39,565,398,612.58.
+- VA procurement is not independently additive; unresolved VA assistance remains withheld.
+- VA cross-family nonduplication is not universally certified.
+- ETL-230E3 independent regression: PASS; 140 non-VA canonical ledger entries unchanged.
 - Existing IRS and Medicaid authorizations unchanged.
 - No county allocation or complete statewide balance certified.
 
 See IRS_AUTHORIZATION_DECISION.md,
 MEDICAID_AUTHORIZATION_DECISION.md, and
-CHIP_AUTHORIZATION_DECISION.md.
+CHIP_AUTHORIZATION_DECISION.md, and
+VA_GDX_AUTHORIZATION_DECISION.md.
 
 ---
 

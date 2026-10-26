@@ -233,3 +233,21 @@ MEDICAID_AUTHORIZATION_DECISION.md.
   separately classified outside this standardized count.
 - No canonical ledger authorization or statewide fiscal
   balance certification implied.
+
+## v0.3.7 working - ETL-230E VA GDX authorization
+
+- Authorized seven Washington VA GDX annual expenditure controls,
+  FY2018-FY2024, as QUALIFIED_PROVISIONAL_INFLOW.
+- Seven-year authorized total: $39,565,398,612.58.
+- Reused EP-VA-001 and ETL-219B5 source certification.
+- Reused ETL-220D source-policy and reporting-boundary evidence.
+- Preserved VA procurement duplicate-exclusion safeguards.
+- Withheld unresolved VA assistance from independent addition.
+- Did not subtract USAspending obligations from GDX expenditures.
+- Preserved qualifications concerning cross-family duplication,
+  county economic incidence, and complete fiscal-balance coverage.
+- ETL-230E3 independent regression PASS:
+  all 140 non-VA canonical ledger rows unchanged.
+- Qualified provisional authorizations increased from 21 to 28
+  of 147 candidate annual ledger observations.
+- No PostgreSQL database or reporting-view modifications.
