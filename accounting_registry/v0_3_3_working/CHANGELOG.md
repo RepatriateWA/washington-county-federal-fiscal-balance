@@ -251,3 +251,12 @@ MEDICAID_AUTHORIZATION_DECISION.md.
 - Qualified provisional authorizations increased from 21 to 28
   of 147 candidate annual ledger observations.
 - No PostgreSQL database or reporting-view modifications.
+
+## ETL-231 - Federal wage authorization review
+
+- Reviewed OMB wage obligations, OPM civilian allocation, and BEA military allocation.
+- Confirmed existing ANALYSIS-157-v1, ANALYSIS-158-v1, and ANALYSIS-160-v1 methodology.
+- Retained 14 reproduced FY2018-FY2024 wage observations.
+- Withheld additive authorization pending accounting-basis and cross-family overlap reconciliation.
+- Qualified provisional ledger remains 28 of 147 entries.
+- No database writes or annual accounting amount changes.
