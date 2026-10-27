@@ -1,0 +1,36 @@
+Pager usage is off.
+============================================================
+ETL-235C - SSI ANNUAL CONTROLS
+============================================================
+BEGIN
+
+=== A. FY2018-FY2024 ANNUAL CONTROLS ===
+ fiscal_year | transaction_count | net_obligations_usd | distinct_fain_count | distinct_recipients | earliest_action | latest_action
+-------------+-------------------+---------------------+---------------------+---------------------+-----------------+---------------
+        2018 |               848 |        995804337.00 |                   0 |                   0 | 2017-10-31      | 2018-09-30
+        2019 |               810 |       1088456509.00 |                   0 |                   0 | 2018-10-31      | 2019-09-30
+        2020 |               908 |       1104856696.00 |                   0 |                   1 | 2019-10-31      | 2020-09-30
+        2021 |               905 |       1094843681.00 |                   0 |                   1 | 2020-10-31      | 2021-09-30
+        2022 |               904 |       1191303562.00 |                   0 |                   1 | 2021-10-31      | 2022-09-30
+        2023 |               924 |       1168650267.00 |                   0 |                   1 | 2022-10-31      | 2023-09-30
+        2024 |               894 |       1116434589.00 |                   0 |                   1 | 2023-10-31      | 2024-09-30
+(7 rows)
+
+
+=== B. FY2018-FY2019 HISTORICAL SOURCE PROFILE ===
+ fiscal_year | cfda_number |          cfda_title          | recipient_name |                               assistance_type_description                               | transaction_count | net_obligations_usd
+-------------+-------------+------------------------------+----------------+-----------------------------------------------------------------------------------------+-------------------+---------------------
+        2018 | 96.006      | SUPPLEMENTAL SECURITY INCOME |                | DIRECT PAYMENT WITH UNRESTRICTED USE (RETIREMENT, PENSION, VETERANS BENEFITS, ETC.) (D) |               848 |        995804337.00
+        2019 | 96.006      | SUPPLEMENTAL SECURITY INCOME |                | DIRECT PAYMENT WITH UNRESTRICTED USE (RETIREMENT, PENSION, VETERANS BENEFITS, ETC.) (D) |               810 |       1088456509.00
+(2 rows)
+
+
+=== C. FY2020-FY2024 CERTIFICATION REPRODUCTION ===
+ transactions | obligations_usd | etl_176_control
+--------------+-----------------+-----------------
+         4535 |   5676088795.00 | PASS
+(1 row)
+
+ROLLBACK
+
+=== END ETL-235C ===

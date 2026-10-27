@@ -292,3 +292,13 @@ MEDICAID_AUTHORIZATION_DECISION.md.
 - Withheld expenditure-ledger authorization.
 - No annual matrix, canonical ledger, or database changes.
 - Qualified provisional ledger remains 28 of 147 entries.
+
+
+## ETL-235 - SSI obligation evidence recovery
+
+- Verified seven FFY2018-FFY2024 SSI observations.
+- Recovered $7,760,349,641.00 in net obligations.
+- Reproduced ETL-176 FY2020-FY2024 controls.
+- Documented FY2018-FY2019 provenance limitations.
+- Withheld all seven SSI ledger authorizations.
+- Canonical annual ledger unchanged.
