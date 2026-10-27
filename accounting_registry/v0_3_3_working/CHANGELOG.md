@@ -281,3 +281,14 @@ MEDICAID_AUTHORIZATION_DECISION.md.
 - Retained all seven candidate observations without modification.
 - Qualified provisional ledger remains 28 of 147 entries.
 - No database writes or canonical ledger changes.
+
+## ETL-234 - Railroad Retirement authorization review
+
+- Recovered ETL-189/190 award-level benefit classifications.
+- Confirmed FY2020-FY2024 $1,357,308,008.42 obligation control.
+- Preserved FY2018-FY2019 additive and withheld partitions.
+- Confirmed net federal action obligation accounting basis.
+- Preserved SSA/OASDI overlap and nonduplication safeguards.
+- Withheld expenditure-ledger authorization.
+- No annual matrix, canonical ledger, or database changes.
+- Qualified provisional ledger remains 28 of 147 entries.
