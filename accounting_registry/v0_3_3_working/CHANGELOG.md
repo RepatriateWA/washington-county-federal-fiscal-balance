@@ -302,3 +302,17 @@ MEDICAID_AUTHORIZATION_DECISION.md.
 - Documented FY2018-FY2019 provenance limitations.
 - Withheld all seven SSI ledger authorizations.
 - Canonical annual ledger unchanged.
+
+## ETL-240A2H11 — AL 10.561 materiality closure
+
+- Documented seven-year Washington USAspending obligations:
+  $911,621,660.30 across 303 observations.
+- FY2020–FY2024 obligations: $680,891,395.15.
+- All observations matched the certified assistance view.
+- Preserved distinction between certified-view membership
+  and canonical ledger authorization.
+- Recorded independent USDA controls, FY2020 table anomaly,
+  COVID/ARPA qualifications, and missing FY2024 report.
+- Deferred further source research under materiality criteria.
+- No database, annual registry status, or ledger changes.
+- Decision: SNAP_10561_MATERIALITY_CLOSURE.md.
