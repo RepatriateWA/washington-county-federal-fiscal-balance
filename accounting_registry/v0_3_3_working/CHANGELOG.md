@@ -316,3 +316,14 @@ MEDICAID_AUTHORIZATION_DECISION.md.
 - Deferred further source research under materiality criteria.
 - No database, annual registry status, or ledger changes.
 - Decision: SNAP_10561_MATERIALITY_CLOSURE.md.
+
+## ETL-242A5 - Medicare Part D qualified provisional reporting
+
+- Recovered and reused certified Medicare stream additivity.
+- Reconciled seven 2018-2024 Part D candidate amounts to CMS and registry.
+- Qualified provisional addition: $9,869,347,614.65.
+- Preserved partial-dollar coverage and 2024 Jan-Sep limitation.
+- Preserved calendar-year labels and mixed-basis reporting warning.
+- Cross-family selected-assistance nonduplication remains qualified.
+- Created separate reporting bridge; canonical ledger unchanged.
+- Decision: MEDICARE_PART_D_PROVISIONAL_DECISION.md.
