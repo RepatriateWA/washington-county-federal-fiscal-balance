@@ -1,0 +1,197 @@
+We are resuming the Washington County Federal Fiscal Balance Project (WCFFBP) from the October 28, 2026 ETL-244B publication checkpoint.
+
+Our four-view FY2018–FY2024 interactive presentation is publicly hosted at https://repatriatewa.github.io/washington-county-federal-fiscal-balance/presentations/wcffbp-244b/ and preserved in GitHub commit 2f5a2ca, tag presentation-2026-10-29-v1. The local rebuild passed exact-cent reconciliation for 7 years × 11 inflow components.
+
+I have attached the detailed restart checkpoint. Please first inspect the live RepatriateWA GitHub repository and working accounting registry. Follow our established GitHub-first, evidence-first, one-step-at-a-time PowerShell/ETL workflow. Preserve ETL-244B as a historical release; do not reopen resolved investigations or authorize ledger entries without new evidence.
+
+Let's review feedback from the presentation, determine our current registry/readiness point, and choose the most material next task toward a defensible FY2018–FY2024 Washington federal fiscal balance.
+
+
+
+WASHINGTON COUNTY FEDERAL FISCAL BALANCE PROJECT (WCFFBP)
+RESTART CHECKPOINT — 2026-10-28 — AFTER ETL-244B PRESENTATION PUBLICATION
+=======================================================================
+
+PROJECT OBJECTIVE
+-----------------
+Construct a transparent, reproducible, evidence-linked Washington State
+federal fiscal balance for FY2018–FY2024, with later allocation across
+Washington's 39 counties. Compare federal dollars withdrawn (net federal
+taxes collected) with federal dollars expended or otherwise entering the
+state. Negative balance = net dollars withdrawn from Washington.
+Guiding principle: "Measure first. Explain later."
+The work is ongoing and provisional snapshots are useful for collaborators,
+provided coverage, measure basis, timing, and uncertainty are disclosed.
+
+CURRENT VERIFIED BREAKPOINT: ETL-244B
+-------------------------------------
+A four-view interactive presentation was built, locally regenerated,
+reconciled, committed, pushed, tagged, and published using GitHub Pages.
+The user confirmed that the public presentation opens in two browsers.
+
+Public presentation:
+https://repatriatewa.github.io/washington-county-federal-fiscal-balance/presentations/wcffbp-244b/
+
+GitHub repository:
+https://github.com/RepatriateWA/washington-county-federal-fiscal-balance
+Commit: 2f5a2ca
+Commit message: presentation: preserve reproducible four-view provisional fiscal balance
+Tag: presentation-2026-10-29-v1 (pushed successfully)
+Presentation repository directory:
+docs/presentations/wcffbp-244b/
+
+Staged and committed files (10):
+- README.md
+- build_dashboard.py
+- data/243e1_first_draft_annual_balance.csv
+- data/244b_chart_data.csv
+- evidence/244a4_original_component_assembly.txt
+- evidence/244a5_chart_component_inputs.txt
+- fiscal_balance_original.html
+- fiscal_drilldown_original.html
+- stacked_inflows_original.html
+- index.html
+
+Local rebuild result: PASS: 7 years x 11 segments, exact cent reconciliation;
+dashboard and chart data written. Git diff --cached --check produced no
+errors. LF-to-CRLF warnings were ordinary Windows line-ending notices.
+The package is committed and the tag is on the remote. Do not represent
+additional revisions as already committed unless verified.
+
+FOUR PRESENTATION LOOKS
+-----------------------
+1. Annual fiscal balance: federal inflows versus net IRS collections.
+2. Stacked inflow composition: major federal programs and assistance.
+3. COVID-related assistance: documented tagged assistance, NOT all
+   pandemic-related spending.
+4. DoD / DOE / Hanford context: agency procurement obligations are
+   contextual, not additive cash inflows; Hanford-specific amounts require
+   independent verification. Do not infer Hanford dollars from DOE totals.
+
+IMPORTANT ACCOUNTING BOUNDARIES
+-------------------------------
+- The user has long insisted on measuring actual dollars spent in Washington,
+  rather than merely obligations; do not repeatedly explain this elementary
+  distinction. Use available obligation evidence transparently where needed.
+- Procurement obligations are NOT included in Provisional Reference inflows.
+- Agency views (DoD/DOE) and purpose/source-family stacks are different
+  classification dimensions. Never add agency overlays to program stacks.
+- Medicare Part C 2024 is Jan–Sep partial coverage; time bases are mixed.
+- Net IRS collections and Medicare Part D are qualified provisional.
+- The registry distinguishes observed candidates from authorized ledger
+  entries. No ledger authorization without explicit verification/certification.
+- DRAFT-1 vs Provisional Reference discrepancy investigation was deferred
+  until after the presentation. Do not silently treat them as equivalent.
+
+SEVEN-YEAR PROVISIONAL REFERENCE CONTROL TOTALS (USD)
+----------------------------------------------------
+FY    Inflows             Net IRS collections   Balance (inflows - net IRS)
+2018  63,333,359,413.95   81,780,012,000.00    -18,446,652,586.05
+2019  67,746,511,795.53   91,011,011,000.00    -23,264,499,204.47
+2020  79,256,662,324.60   86,396,514,000.00     -7,139,851,675.40
+2021  98,897,149,523.39   94,476,991,000.00      4,420,158,523.39
+2022  89,324,368,958.65  136,176,322,000.00    -46,851,953,041.35
+2023  93,445,411,481.45  143,025,683,000.00    -49,580,271,518.55
+2024  94,916,457,289.62  152,195,942,000.00    -57,279,484,710.38
+Seven-year provisional balance: -198,142,554,212.81 USD.
+
+SOURCE-FAMILY STACK LINEAGE
+---------------------------
+ETL-238A original core includes:
+SSA_OASDI; MEDICARE_FFS_AB; MEDICARE_PART_C; MEDICAID; CHIP; VA_GDX;
+FEDERAL_CIVILIAN_WAGES; FEDERAL_MILITARY_WAGES.
+ETL-238A also adds USASPENDING_ASSISTANCE_ADDITIVE (policy-classified).
+ETL-238B8 adds ADDITIONAL_QUALIFIED_ASSISTANCE.
+ETL-242A5 adds qualified MEDICARE_PART_D.
+ETL-239B1G2 uses net IRS collections.
+ETL-243E1 produces the Provisional Reference.
+ETL-244A1 through ETL-244A5 traced this lineage; ETL-244B generated the
+published presentation. Eleven stack segments reconcile exactly to annual
+Provisional Reference inflows. Source detail and code are preserved in the
+ETL-244B presentation directory.
+Federal pensions, procurement, and refundable credits are NOT to be
+inserted into the additive stack merely because registry entries exist.
+
+REPOSITORY AND LOCAL ENVIRONMENT
+--------------------------------
+Windows PowerShell; Python 3.14.6, PostgreSQL 18.4, database wcffbp.
+Local repo: D:\GitHub\washington-county-federal-fiscal-balance
+Git remote: https://github.com/RepatriateWA/washington-county-federal-fiscal-balance.git
+Working registry: accounting_registry/v0_3_3_working/
+Key registry files: README.md, annual_accounting_matrix.csv,
+canonical_annual_ledger.csv, evidence_crosswalk.csv,
+source_family_registry.csv, CHANGELOG.md and decision notes.
+Registry is the source-family progress/evidence inventory; ledger inclusion
+and authorization require their own explicit decisions.
+
+ESTABLISHED EFFICIENT WORKFLOW — PRESERVE THIS
+---------------------------------------------
+1. QUERY THE LIVE GITHUB REPOSITORY FIRST at the start of each session;
+   inspect existing scripts, evidence, decisions, and registry before
+   proposing new work. Verify remote state rather than assuming it.
+2. Begin with a concise checkpoint/readiness review, not a wholesale
+   re-investigation. Prefer targeted materiality-based follow-up.
+3. One small numbered ETL diagnostic or decision at a time; read-only
+   preflight before any change. Keep SQL SELECT-only when using read-only
+   transactions (no CREATE TEMP TABLE in a read-only transaction).
+4. Supply executable Windows PowerShell commands and Python/SQL scripts
+   INLINE in copyable code blocks. Include psql wrapper for SQL. Redirect
+   large output to named .txt files; avoid overflowing the console.
+5. User uploads diagnostic output; inspect and report PASS/FAIL, what it
+   proves, what it does not prove, and one next step. User generally reports
+   exit codes only when nonzero, and stderr only if nonempty/non-NOTICE.
+6. No unauthorized DB writes, registry authorizations, or accounting
+   policy changes. Require evidence and explicit certification.
+7. Stage only specific relevant files; avoid unbounded git status output
+   because many unrelated untracked files exist. Use git diff --cached
+   --stat and --check, then commit and push after review.
+8. Preserve source extracts, derivation scripts, validation output,
+   methodological qualifications, and generated graphics together. Tag
+   major public snapshots; never silently overwrite historical evidence.
+9. User favors public verification, reproducibility, explicit uncertainties,
+   and a pragmatic first seven-year statewide balance before county work.
+
+RECOMMENDED FIRST TASK NEXT SESSION
+-----------------------------------
+A. Confirm the GitHub ETL-244B commit/tag and review the working registry
+   to establish the actual accounting progress point.
+B. Ask for feedback from the discussion of the four-view presentation;
+   prioritize changes as ETL-244C while preserving ETL-244B untouched.
+C. Audit the published presentation against its source extracts and
+   README for missing provenance, qualifications, or confusing labels.
+D. Resume the broader FY2018–2024 statewide completeness/readiness review,
+   especially large-magnitude inflow gaps, timing issues, DRAFT-1 vs
+   Provisional Reference differences, and DoD/DOE/Hanford evidence.
+   Do not assume all these are next-day priorities; triage by materiality.
+E. When ready, make a versioned ETL-244C revision and tag a new release.
+
+OPEN QUESTIONS / GUARDRAILS
+---------------------------
+- Determine what collaborators found confusing or most compelling.
+- Verify any site-specific Hanford spending evidence before charting.
+- Avoid claiming COVID tags cover all pandemic spending.
+- The presentation was browser-opened by user in two browsers, but this
+  does not itself certify every interaction or every data-source semantics.
+- Maintain the distinction between the public presentation release and
+  the unfinished, not-yet-authorized statewide canonical ledger.
+
+READY-TO-PASTE RESTART PROMPT
+-----------------------------
+We are resuming the Washington County Federal Fiscal Balance Project
+(WCFFBP) from the 2026-10-28 ETL-244B publication checkpoint. Our
+four-view FY2018–FY2024 interactive presentation is publicly hosted at
+https://repatriatewa.github.io/washington-county-federal-fiscal-balance/presentations/wcffbp-244b/
+and preserved in GitHub commit 2f5a2ca, tag presentation-2026-10-29-v1.
+The local rebuild passed exact-cent reconciliation for 7 years x 11
+inflow segments. Please FIRST inspect the live RepatriateWA GitHub
+repository and the working accounting registry, following our established
+GitHub-first, evidence-first, one-step-at-a-time PowerShell/ETL workflow.
+Do not reopen resolved investigations or authorize ledger entries without
+new evidence. Preserve the ETL-244B presentation as an immutable snapshot.
+Let's review any feedback from the presentation, determine our current
+registry/readiness point, and select the most material next task (likely
+ETL-244C or statewide completeness), keeping the objective of a defensible
+FY2018–FY2024 federal fiscal balance in view. I have attached the full
+restart checkpoint document for context.
+
+END CHECKPOINT
