@@ -16,7 +16,7 @@ Optional explicit batch:
 from __future__ import annotations
 
 import argparse
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date
 from decimal import Decimal
 from typing import Any
@@ -69,6 +69,18 @@ def parse_arguments() -> argparse.Namespace:
             "Raw procurement load batch to normalize. Defaults to the latest "
             "completed batch containing raw observations."
         ),
+    )
+    parser.add_argument(
+        "--preserve-existing",
+        action="store_true",
+        help=("Historical backfill: insert missing transactions only; "
+              "preserve existing canonical transactions and provenance."),
+    )
+    parser.add_argument(
+        "--allow-missing-classifications",
+        action="store_true",
+        help=("Historical backfill only: store NULL canonical NAICS/PSC when "
+              "a nonblank raw code is absent from the reference table."),
     )
     return parser.parse_args()
 
@@ -366,11 +378,38 @@ def validate_reference_codes(
         )
 
 
+
+def resolve_missing_classifications(conn, facts: list[TransactionFact]) -> tuple[list[TransactionFact], dict[str, int]]:
+    """Use NULL for unknown FK codes, leaving immutable raw JSON untouched."""
+    naics = {f.naics_code for f in facts if f.naics_code is not None}
+    psc = {f.psc_code for f in facts if f.psc_code is not None}
+    with conn.cursor() as cur:
+        cur.execute("SELECT naics_code FROM procurement.naics WHERE naics_code = ANY(%s)", (list(naics),))
+        valid_naics = {r[0] for r in cur.fetchall()}
+        cur.execute("SELECT psc_code FROM procurement.psc WHERE psc_code = ANY(%s)", (list(psc),))
+        valid_psc = {r[0] for r in cur.fetchall()}
+    counts = {"naics_observations": 0, "psc_observations": 0, "affected_observations": 0,
+              "missing_naics_codes": len(naics - valid_naics), "missing_psc_codes": len(psc - valid_psc)}
+    resolved = []
+    for fact in facts:
+        bad_n = fact.naics_code is not None and fact.naics_code not in valid_naics
+        bad_p = fact.psc_code is not None and fact.psc_code not in valid_psc
+        counts["naics_observations"] += int(bad_n)
+        counts["psc_observations"] += int(bad_p)
+        counts["affected_observations"] += int(bad_n or bad_p)
+        resolved.append(replace(fact,
+            naics_code=None if bad_n else fact.naics_code,
+            psc_code=None if bad_p else fact.psc_code))
+    return resolved, counts
+
+
 def upsert_transaction_facts(
     conn,
     facts: list[TransactionFact],
+    *,
+    preserve_existing: bool = False,
 ) -> int:
-    """Insert or update normalized transaction facts idempotently."""
+    """Insert or update facts; preservation mode never updates existing rows."""
     sql = """
         INSERT INTO procurement.award_transaction (
             usaspending_transaction_id,
@@ -409,6 +448,11 @@ def upsert_transaction_facts(
             source_file = EXCLUDED.source_file,
             source_row_number = EXCLUDED.source_row_number;
     """
+
+    if preserve_existing:
+        sql = sql.split("ON CONFLICT (usaspending_transaction_id)")[0] + (
+            "ON CONFLICT (usaspending_transaction_id) DO NOTHING;"
+        )
 
     values = [
         (
@@ -529,12 +573,103 @@ def validate_loaded_facts(
             )
 
 
+def validate_preserved_facts(
+    conn,
+    *,
+    load_batch_id: int,
+    expected_facts: list[TransactionFact],
+    previous_batch_ids: dict[str, int],
+) -> tuple[int, int]:
+    """Verify canonical identity, financial facts and original provenance.
+
+    The preexisting snapshot is taken before insertion; every overlapping
+    transaction must retain its original load batch after insertion.
+    """
+    found: set[str] = set()
+    old_count = 0
+    new_count = 0
+    with conn.cursor() as cur:
+        for offset in range(0, len(expected_facts), 1000):
+            chunk = expected_facts[offset:offset + 1000]
+            by_id = {f.usaspending_transaction_id: f for f in chunk}
+            cur.execute("""
+                SELECT usaspending_transaction_id, award_id, load_batch_id,
+                       action_date, fiscal_year, fiscal_quarter,
+                       modification_number, federal_action_obligation,
+                       current_total_value, potential_total_value
+                FROM procurement.award_transaction
+                WHERE usaspending_transaction_id = ANY(%s)
+            """, (list(by_id),))
+            for row in cur.fetchall():
+                (txid, award_id, batch_id, action_date, fy, fq,
+                 mod, obligation, current, potential) = row
+                if txid in found:
+                    raise ValueError(f"Duplicate canonical transaction {txid!r}")
+                found.add(txid)
+                fact = by_id[txid]
+                expected = (
+                    fact.award_id, fact.action_date, fact.fiscal_year,
+                    fact.fiscal_quarter, fact.modification_number,
+                    fact.federal_action_obligation, fact.current_total_value,
+                    fact.potential_total_value,
+                )
+                actual = (award_id, action_date, fy, fq, mod,
+                          obligation, current, potential)
+                if actual != expected:
+                    raise ValueError(
+                        f"Canonical/source mismatch for transaction {txid!r}: "
+                        f"canonical={actual!r}; source={expected!r}"
+                    )
+                if txid in previous_batch_ids:
+                    old_count += 1
+                    if batch_id != previous_batch_ids[txid]:
+                        raise ValueError(
+                            f"Existing transaction {txid!r} changed load batch "
+                            f"from {previous_batch_ids[txid]} to {batch_id}"
+                        )
+                else:
+                    new_count += 1
+                    if batch_id != load_batch_id:
+                        raise ValueError(
+                            f"New transaction {txid!r} has incorrect load batch"
+                        )
+    if len(found) != len(expected_facts):
+        missing = {f.usaspending_transaction_id for f in expected_facts} - found
+        raise ValueError(f"{len(missing)} source transactions missing from canonical")
+    return old_count, new_count
+
+
+def snapshot_existing_batch_ids(
+    conn, facts: list[TransactionFact]
+) -> dict[str, int]:
+    """Capture provenance of existing source IDs before any insert."""
+    existing: dict[str, int] = {}
+    with conn.cursor() as cur:
+        for offset in range(0, len(facts), 1000):
+            ids = [f.usaspending_transaction_id for f in facts[offset:offset + 1000]]
+            cur.execute("""
+                SELECT usaspending_transaction_id, load_batch_id
+                FROM procurement.award_transaction
+                WHERE usaspending_transaction_id = ANY(%s)
+            """, (ids,))
+            existing.update((str(txid), int(batch)) for txid, batch in cur.fetchall())
+    return existing
+
+
 def main() -> None:
     args = parse_arguments()
 
     print("=" * 72)
     print("ETL-004A.3B — Normalize USAspending Award Transactions")
     print("=" * 72)
+
+    if args.preserve_existing and args.load_batch_id is None:
+        raise SystemExit(
+            "--preserve-existing requires an explicit --load-batch-id."
+        )
+
+    if args.allow_missing_classifications and (not args.preserve_existing or args.load_batch_id not in (22, 23)):
+        raise SystemExit("--allow-missing-classifications requires --preserve-existing and batch 22 or 23.")
 
     conn = get_connection()
 
@@ -563,17 +698,34 @@ def main() -> None:
         )
         print(f"Transaction facts derived: {len(facts):,}")
 
+        if args.allow_missing_classifications:
+            facts, counts = resolve_missing_classifications(conn, facts)
+            print(f"Classification exceptions (raw retained): {counts}")
         validate_reference_codes(conn, facts)
         print("Classification foreign-key validation: PASS")
 
-        affected_rows = upsert_transaction_facts(conn, facts)
-        print(f"Transaction facts upserted: {affected_rows:,}")
-
-        validate_loaded_facts(
-            conn,
-            load_batch_id=load_batch_id,
-            expected_facts=facts,
-        )
+        if args.preserve_existing:
+            previous_batch_ids = snapshot_existing_batch_ids(conn, facts)
+            print(f"Previously existing transactions: {len(previous_batch_ids):,}")
+            upsert_transaction_facts(
+                conn, facts, preserve_existing=True,
+            )
+            old_count, new_count = validate_preserved_facts(
+                conn,
+                load_batch_id=load_batch_id,
+                expected_facts=facts,
+                previous_batch_ids=previous_batch_ids,
+            )
+            print(f"Existing transactions preserved: {old_count:,}")
+            print(f"New transactions verified: {new_count:,}")
+        else:
+            affected_rows = upsert_transaction_facts(conn, facts)
+            print(f"Transaction facts upserted: {affected_rows:,}")
+            validate_loaded_facts(
+                conn,
+                load_batch_id=load_batch_id,
+                expected_facts=facts,
+            )
         print("Transaction reconciliation: PASS")
 
         conn.commit()

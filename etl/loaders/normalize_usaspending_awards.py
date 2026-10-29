@@ -38,6 +38,14 @@ def parse_arguments() -> argparse.Namespace:
             "Defaults to the latest completed batch containing raw rows."
         ),
     )
+    parser.add_argument(
+        "--preserve-existing",
+        action="store_true",
+        help=(
+            "Historical backfill: insert missing awards only; "
+            "never update existing canonical awards."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -338,8 +346,13 @@ def upsert_awards(
     conn,
     *,
     awards: dict[str, dict[str, Any]],
+    preserve_existing: bool = False,
 ) -> tuple[int, int]:
-    """Insert new awards and update awards already present."""
+    """Insert awards; optionally preserve existing awards without updates.
+
+    Returns (inserted_count, updated_count). In preservation mode,
+    updated_count is always zero and conflicting rows are skipped.
+    """
     sql = """
         INSERT INTO procurement.award (
             generated_unique_award_id,
@@ -429,8 +442,17 @@ def upsert_awards(
         RETURNING (xmax = 0) AS inserted;
     """
 
+    if preserve_existing:
+        # Replace only the conflict action; preserve the INSERT columns and
+        # value parameters. RETURNING yields no row for a skipped conflict.
+        sql = sql.split("ON CONFLICT (generated_unique_award_id)", 1)[0] + """
+        ON CONFLICT (generated_unique_award_id) DO NOTHING
+        RETURNING award_id;
+        """
+
     inserted_count = 0
     updated_count = 0
+    skipped_count = 0
 
     with conn.cursor() as cur:
         for generated_id in sorted(awards):
@@ -452,12 +474,19 @@ def upsert_awards(
                 ),
             )
 
-            inserted = bool(cur.fetchone()[0])
-
-            if inserted:
-                inserted_count += 1
+            returned = cur.fetchone()
+            if preserve_existing:
+                if returned is None:
+                    skipped_count += 1
+                else:
+                    inserted_count += 1
             else:
-                updated_count += 1
+                if returned is None:
+                    raise RuntimeError("Award upsert returned no result")
+                if bool(returned[0]):
+                    inserted_count += 1
+                else:
+                    updated_count += 1
 
     return inserted_count, updated_count
 
@@ -521,6 +550,10 @@ def validate_awards(
 def main() -> None:
     """Run ETL-004A.3A."""
     args = parse_arguments()
+    if args.preserve_existing and args.load_batch_id is None:
+        raise SystemExit(
+            "--preserve-existing requires an explicit --load-batch-id"
+        )
 
     print("=" * 68)
     print("ETL-004A.3A — Normalize USAspending Awards")
@@ -534,6 +567,7 @@ def main() -> None:
             args.load_batch_id,
         )
         print(f"Target raw load batch: {load_batch_id}")
+        print(f"Preserve existing awards: {args.preserve_existing}")
 
         raw_rows = read_raw_award_rows(
             conn,
@@ -555,6 +589,7 @@ def main() -> None:
         inserted_count, updated_count = upsert_awards(
             conn,
             awards=awards,
+            preserve_existing=args.preserve_existing,
         )
 
         exception_count = record_normalization_exceptions(
@@ -571,6 +606,8 @@ def main() -> None:
 
         print(f"Awards inserted: {inserted_count:,}")
         print(f"Awards updated: {updated_count:,}")
+        if args.preserve_existing:
+            print(f"Existing awards preserved: {len(awards) - inserted_count:,}")
 
         print(
            f"Normalization exceptions recorded: "
