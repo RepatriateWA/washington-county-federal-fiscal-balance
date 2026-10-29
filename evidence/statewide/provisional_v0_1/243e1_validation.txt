@@ -1,0 +1,42 @@
+ETL-243E1 - FIRST DRAFT STATEWIDE ANNUAL BALANCE
+=================================================================
+FY2018-2024 | USD | QUALIFIED PROVISIONAL
+
+Fiscal year | Reference balance | Procurement sensitivity
+2018 | -18,446,652,586.05 | -4,570,162,217.43
+2019 | -23,264,499,204.47 | -7,718,054,636.13
+2020 | -7,139,851,675.40 | 5,310,205,667.40
+2021 | 4,420,158,523.39 | 19,719,636,067.92
+2022 | -46,851,953,041.35 | -35,019,392,200.76
+2023 | -49,580,271,518.55 | -36,844,657,705.60
+2024 | -57,279,484,710.38 | -42,308,955,395.80
+
+Seven-year net IRS baseline: -208,011,901,827.46
+Part D qualified addition: 9,869,347,614.65
+Part D-inclusive reference: -198,142,554,212.81
+Non-VA procurement obligations: 96,711,173,792.41
+Procurement sensitivity: -101,431,380,420.40
+
+PASS: Seven annual IRS reconciliations
+PASS: Seven annual Part D reconciliations
+PASS: Seven annual procurement reconciliations
+PASS: Seven-year aggregate controls
+PASS: Procurement geography and funding-code checks
+
+SOURCE FILES:
+239b1g2_irs_net_balance_scenario.csv
+evidence\statewide\provisional_v0_1\242a5_partd_inclusive_balance.csv
+243d1_procurement_bridge.txt
+
+QUALIFICATIONS:
+- IRS net collections remain qualified provisional.
+- Part D addition remains qualified provisional.
+- FY2024 Medicare Part C evidence has partial-year coverage.
+- Procurement obligations are not cash expenditures.
+- Procurement overlap and economic incidence are unresolved.
+- The procurement scenario is illustrative, not an upper bound.
+- Mixed source timing and incomplete coverage remain.
+- COVID-related payment effects materially affect comparisons.
+- No canonical ledger authorization or database changes.
+
+PASS: ETL-243E1 reporting-only validation
