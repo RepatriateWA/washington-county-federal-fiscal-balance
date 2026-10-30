@@ -1,0 +1,8 @@
+ETL-246D1 - REVISED INTERACTIVE DASHBOARD
+PASS: Seven years
+PASS: Fifteen components per year
+PASS: Exact annual source-dollar reconciliation
+PASS: Seven-year balance -85,863,188,344.12
+HTML: D:\GitHub\washington-county-federal-fiscal-balance\docs\presentations\wcffbp-246d\index.html
+STATUS: QUALIFIED_PROVISIONAL_CANDIDATE
+Original ETL-244B presentation unchanged

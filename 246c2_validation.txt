@@ -1,0 +1,35 @@
+ETL-246C2 - REVISED PROVISIONAL STATEWIDE BALANCE
+============================================================================
+FY2018-2024 | USD | MIXED MEASURES | NOT AUTHORIZED
+
+Year | Original inflows | Procurement | Military retirement | Revised inflows | Revised balance
+2018 | 63,333,359,413.95 | 13,876,490,368.62 | 2,097,324,000.00 | 79,307,173,782.57 | -2,472,838,217.43
+2019 | 67,746,511,795.53 | 15,546,444,568.34 | 2,125,980,000.00 | 85,418,936,363.87 | -5,592,074,636.13
+2020 | 79,256,662,324.60 | 12,450,057,342.80 | 2,170,938,000.00 | 93,877,657,667.40 | 7,481,143,667.40
+2021 | 98,897,149,523.39 | 15,299,477,544.53 | 2,195,004,000.00 | 116,391,631,067.92 | 21,914,640,067.92
+2022 | 89,324,368,958.65 | 11,832,560,840.59 | 2,254,584,000.00 | 103,411,513,799.24 | -32,764,808,200.76
+2023 | 93,445,411,481.45 | 12,735,613,812.95 | 2,334,123,892.68 | 108,515,149,187.08 | -34,510,533,812.92
+2024 | 94,916,457,289.62 | 14,970,529,314.58 | 2,390,238,183.60 | 112,277,224,787.80 | -39,918,717,212.20
+
+SEVEN-YEAR CONTROLS
+----------------------------------------------------------------------------
+original_inflows_usd: 586,919,920,787.19
+dod_procurement_usd: 60,130,979,120.73
+doe_procurement_usd: 24,978,396,324.83
+other_non_va_procurement_usd: 11,601,798,346.85
+total_non_va_procurement_usd: 96,711,173,792.41
+military_retirement_trend_usd: 15,568,192,076.28
+revised_inflows_usd: 699,199,286,655.88
+irs_net_collections_usd: 785,062,475,000.00
+original_balance_usd: -198,142,554,212.81
+revised_balance_usd: -85,863,188,344.12
+
+QUALIFICATIONS
+- Procurement amounts are federal obligations, not cash outlays.
+- Military retirement uses modeled trend-interpolated estimates.
+- VA procurement is withheld pending overlap review.
+- Procurement overlap and Washington economic incidence remain unresolved.
+- Other source timing and coverage qualifications remain.
+- No canonical ledger authorization or database changes.
+
+PASS: Seven annual reconciliations and aggregate controls

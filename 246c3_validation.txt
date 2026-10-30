@@ -1,0 +1,17 @@
+ETL-246C3 - FIFTEEN-COMPONENT INFLOW RECONCILIATION
+============================================================================
+No database writes. No canonical ledger authorization.
+
+FY2018: 15 components | inflows $79,307,173,782.57 | balance $-2,472,838,217.43 | PASS
+FY2019: 15 components | inflows $85,418,936,363.87 | balance $-5,592,074,636.13 | PASS
+FY2020: 15 components | inflows $93,877,657,667.40 | balance $7,481,143,667.40 | PASS
+FY2021: 15 components | inflows $116,391,631,067.92 | balance $21,914,640,067.92 | PASS
+FY2022: 15 components | inflows $103,411,513,799.24 | balance $-32,764,808,200.76 | PASS
+FY2023: 15 components | inflows $108,515,149,187.08 | balance $-34,510,533,812.92 | PASS
+FY2024: 15 components | inflows $112,277,224,787.80 | balance $-39,918,717,212.20 | PASS
+
+PASS: 7 years x 15 components; exact annual reconciliation.
+Procurement obligations are not cash outlays.
+Military retirement is modeled.
+VA procurement withheld pending overlap review.
+No canonical ledger authorization.

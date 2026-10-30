@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Washington Federal Fiscal Balance — Revised Candidate</title>
+<style>
+:root{font-family:system-ui,Segoe UI,Arial,sans-serif;color:#183345;background:#f3f7fa}
+*{box-sizing:border-box}
+body{margin:0}
+main{max-width:1200px;margin:auto;padding:24px}
+h1{margin-bottom:6px}
+h2{font-size:1.2rem}
+p{line-height:1.55}
+.muted{color:#536d7d}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+button{padding:11px 15px;border:1px solid #bacdd8;background:white;border-radius:8px;cursor:pointer;font:inherit}
+button.active{background:#204d68;color:white}
+.card{background:white;border:1px solid #dae4ea;border-radius:12px;padding:20px;margin:14px 0}
+.stats{display:flex;flex-wrap:wrap;gap:12px}
+.stat{flex:1;min-width:180px;padding:14px;background:#eef3f6;border-radius:8px}
+.stat strong{display:block;font-size:1.45rem;margin-top:5px}
+.warning{font-weight:700;color:#84552c}
+svg{width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.82rem;margin-top:12px}
+.swatch{display:inline-block;width:12px;height:12px;margin-right:5px}
+table{width:100%;border-collapse:collapse}
+td{padding:8px;border-bottom:1px solid #e6edf0}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:1.5fr 1fr;gap:14px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<h1>Washington's Federal Fiscal Balance</h1>
+<p class="muted">FY2018–2024 · Revised fifteen-component provisional candidate</p>
+<p class="warning">MIXED MEASURES · NOT CERTIFIED CASH FLOWS · NOT LEDGER-AUTHORIZED</p>
+
+<div class="stats">
+<div class="stat">Selected year<strong id="year"></strong></div>
+<div class="stat">Federal inflows<strong id="inflows"></strong></div>
+<div class="stat">IRS net collections<strong id="taxes"></strong></div>
+<div class="stat">Fiscal balance<strong id="balance"></strong></div>
+</div>
+
+<div class="tabs">
+<button class="active" data-view="annual">1 · Annual balance</button>
+<button data-view="stacked">2 · Stacked inflows</button>
+<button data-view="covid">3 · COVID / IIJA</button>
+<button data-view="agency">4 · DoD / DOE / Hanford</button>
+</div>
+
+<section id="annual" class="card">
+<h2>Annual identified inflows versus IRS net collections</h2>
+<div id="annualChart"></div>
+<p>Seven-year revised provisional balance: <strong>−$85.863 billion</strong>.</p>
+</section>
+
+<section id="stacked" class="card" hidden>
+<h2>Fifteen-component federal inflows</h2>
+<p class="muted">Click a year to inspect the component values. All segments reconcile to the annual candidate balance.</p>
+<div class="grid">
+<div><div id="stackedChart"></div><div id="legend" class="legend"></div></div>
+<div><h2 id="detailTitle"></h2><table id="details"></table></div>
+</div>
+</section>
+
+<section id="covid" class="card" hidden>
+<h2>COVID and IIJA assistance tags</h2>
+<p>These are annotations within previously included assistance, not additional inflows.</p>
+<div id="covidChart"></div>
+<p id="covidDetail"></p>
+</section>
+
+<section id="agency" class="card" hidden>
+<h2>DoD and DOE procurement obligations</h2>
+<p class="muted">These amounts are now included in the statewide candidate balance and stacked inflows.</p>
+<div id="agencyChart"></div>
+<p id="agencyDetail"></p>
+<p><strong>Hanford:</strong> A separately verified site-specific series has not yet been isolated. DOE procurement is not synonymous with Hanford expenditure.</p>
+</section>
+
+<div class="card">
+<h2>Evidence and qualifications</h2>
+<p>Source: ETL-246C3 fifteen-component reconciliation, ETL-246C2 annual balance, and ETL-244B COVID/IIJA tags. Procurement and assistance include federal obligations rather than necessarily cash outlays. Military retirement is modeled. VA procurement is withheld pending overlap review. Timing differences, overlap, geographic economic incidence, and other coverage limitations remain unresolved. No canonical ledger authorization is implied.</p>
+</div>
+</main>
+<script>
+const DATA=[{"year":2018,"parts":[22.964784,7.07344911,4.13789915231,1.2793535604,7.542439851,0.153667008,4.37726831665,4.36626132991,4.04986193493,7.38837515075,0.0,9.53381596271,3.34674093587,0.99593347004,2.097324],"inflows":79.30717378257,"taxes":81.780012,"balance":-2.47283821743,"covid":0.0,"iija":0.0,"both":0.0},{"year":2019,"parts":[24.211632,7.23878922,4.82640652372,1.28719641005,8.258800793,0.192747238,4.89634622298,4.74179681236,4.17955622371,7.91324035171,0.0,10.91123032508,3.40036018388,1.23485405938,2.12598],"inflows":85.41893636387,"taxes":91.011011,"balance":-5.59207463613,"covid":0.0,"iija":0.0,"both":0.0},{"year":2020,"parts":[25.423704,6.69948775,5.55989692084,1.28935538977,8.834856423,0.162259293,5.29654403,5.04153219265,4.36935063256,15.58813395875,0.99154173403,7.01026060819,3.64589473275,1.79390200186,2.170938],"inflows":93.8776576674,"taxes":86.396514,"balance":7.4811436674,"covid":8.70571511639,"iija":0.1,"both":0.0},{"year":2021,"parts":[27.643404,7.105195585,6.17284870371,1.36667842675,11.442944427,0.183473223,5.32328170303,5.42862993622,4.65761844014,27.01235413613,2.56072094241,10.05073173541,3.53415068903,1.71459512009,2.195004],"inflows":116.39163106792,"taxes":94.476991,"balance":21.91464006792,"covid":21.47423006046,"iija":0.13155146499,"both":0.0},{"year":2022,"parts":[30.92442,7.105695326,7.20120261174,1.53448080615,12.133362252,0.163783821,6.21886629372,5.5135107118,4.73756176751,11.99703671062,1.79444865811,6.83656608196,3.37758723603,1.6184075226,2.254584],"inflows":103.41151379924,"taxes":136.176322,"balance":-32.76480820076,"covid":5.28224417068,"iija":1.01076564856,"both":0.00134436922},{"year":2023,"parts":[32.990628,7.158354678,8.50754154841,1.63505493035,12.21908713,0.150504673,6.52616835517,5.73339998403,4.86696783356,11.25731993471,2.40038441422,7.05665908141,3.65819277948,2.02076195206,2.33412389268],"inflows":108.51514918708,"taxes":143.025683,"balance":-34.51053381292,"covid":3.80205237735,"iija":1.57393220177,"both":0.00122777502},{"year":2024,"parts":[35.08212,7.249333743,6.97192061364,1.47722809118,12.584822794,0.131114773,6.92692369103,6.3662192824,4.93062936472,11.8398732554,1.35627168125,8.73171532597,4.01546976779,2.22334422082,2.3902381836],"inflows":112.2772247878,"taxes":152.195942,"balance":-39.9187172122,"covid":1.76236822545,"iija":2.74398738699,"both":0.00152700646}];
+const NAMES=["Social Security", "Medicare A/B", "Medicare C", "Medicare D", "Medicaid", "CHIP", "Veterans / VA", "Civilian wages", "Military wages", "Assistance obligations", "Additional assistance", "DoD procurement", "DOE procurement", "Other procurement", "Military retirement (modeled)"];
+const COLORS=["#4263a3", "#327fa4", "#4ba3b1", "#91cbd0", "#47865e", "#8fbf7c", "#9063a5", "#c58c48", "#e1b65f", "#c26b5b", "#e7a28b", "#305b91", "#d19b42", "#8796a6", "#785c9d"];
+let selected=2024;
+const $=id=>document.getElementById(id);
+const fmt=x=>(x<0?"−":"")+"$"+Math.abs(x).toFixed(2)+"B";
+const current=()=>DATA.find(d=>d.year===selected);
+function svg(w,h,content){return `<svg viewBox="0 0 ${w} ${h}" role="img">${content}</svg>`}
+function rect(x,y,w,h,color){return `<rect x="${x}" y="${y}" width="${w}" height="${Math.max(0,h)}" fill="${color}"/>`}
+function label(x,y,s,anchor="middle"){return `<text x="${x}" y="${y}" text-anchor="${anchor}" font-size="12" fill="#4f6574">${s}</text>`}
+function choose(y){selected=y;render()}
+function render(){
+ const d=current();
+ $("year").textContent="FY"+selected;
+ $("inflows").textContent=fmt(d.inflows);
+ $("taxes").textContent=fmt(d.taxes);
+ $("balance").textContent=fmt(d.balance);
+ renderAnnual();renderStacked();renderCovid();renderAgency();
+}
+function renderAnnual(){
+ let s="";
+ DATA.forEach((d,i)=>{
+   const x=60+i*110,b=340,scale=2.0;
+   s+=rect(x,b-d.inflows*scale,32,d.inflows*scale,"#357b9f");
+   s+=rect(x+36,b-d.taxes*scale,32,d.taxes*scale,"#a0adb9");
+   s+=label(x+34,364,d.year);
+   s+=`<rect x="${x}" y="15" width="75" height="350" fill="transparent" onclick="choose(${d.year})" style="cursor:pointer"/>`;
+ });
+ $("annualChart").innerHTML=svg(850,385,s)+
+ '<p class="muted">Blue: revised inflows · Gray: IRS net collections · Click a year</p>';
+}
+function renderStacked(){
+ let s="";
+ DATA.forEach((d,i)=>{
+   let x=55+i*96,y=385;
+   d.parts.forEach((v,j)=>{
+     const h=v*2.8;y-=h;
+     s+=rect(x,y,58,h,COLORS[j]);
+   });
+   s+=label(x+29,410,d.year);
+   s+=`<rect x="${x}" y="0" width="58" height="385" fill="transparent" onclick="choose(${d.year})" style="cursor:pointer"/>`;
+ });
+ $("stackedChart").innerHTML=svg(760,430,s);
+ $("legend").innerHTML=NAMES.map((n,i)=>`<span><i class="swatch" style="background:${COLORS[i]}"></i>${n}</span>`).join("");
+ $("detailTitle").textContent="FY"+selected+" components";
+ $("details").innerHTML=current().parts.map((v,i)=>`<tr><td>${NAMES[i]}</td><td>${fmt(v)}</td></tr>`).join("")+
+ `<tr><td><strong>Total inflows</strong></td><td><strong>${fmt(current().inflows)}</strong></td></tr>`;
+}
+function renderCovid(){
+ let s="";
+ DATA.forEach((d,i)=>{
+   let x=55+i*96,b=310;
+   s+=rect(x,b-d.covid*8,26,d.covid*8,"#cb7654");
+   s+=rect(x+30,b-d.iija*8,26,d.iija*8,"#7b9eaf");
+   s+=label(x+28,332,d.year);
+   s+=`<rect x="${x}" y="0" width="62" height="310" fill="transparent" onclick="choose(${d.year})" style="cursor:pointer"/>`;
+ });
+ $("covidChart").innerHTML=svg(760,350,s)+
+ '<p class="muted">Orange: COVID-tagged assistance · Blue-gray: IIJA-tagged assistance · Tags may overlap</p>';
+ let d=current();
+ $("covidDetail").textContent=`FY${selected}: COVID ${fmt(d.covid)}, IIJA ${fmt(d.iija)}, overlapping tags ${fmt(d.both)}. These amounts must not be added again.`;
+}
+function renderAgency(){
+ let s="";
+ DATA.forEach((d,i)=>{
+   let x=55+i*96,b=320,scale=14;
+   let dod=d.parts[11],doe=d.parts[12],other=d.parts[13];
+   s+=rect(x,b-dod*scale,19,dod*scale,"#305b91");
+   s+=rect(x+22,b-doe*scale,19,doe*scale,"#d19b42");
+   s+=rect(x+44,b-other*scale,19,other*scale,"#8796a6");
+   s+=label(x+31,344,d.year);
+   s+=`<rect x="${x}" y="0" width="65" height="320" fill="transparent" onclick="choose(${d.year})" style="cursor:pointer"/>`;
+ });
+ $("agencyChart").innerHTML=svg(760,360,s)+
+ '<p class="muted">Blue: DoD · Gold: DOE · Gray: other non-VA procurement · Click a year</p>';
+ let d=current();
+ $("agencyDetail").textContent=`FY${selected}: DoD ${fmt(d.parts[11])}; DOE ${fmt(d.parts[12])}; other non-VA ${fmt(d.parts[13])}. All three are included in revised statewide inflows.`;
+}
+document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll("[data-view]").forEach(z=>z.classList.toggle("active",z===b));
+ document.querySelectorAll("section[id]").forEach(s=>s.hidden=s.id!==b.dataset.view);
+});
+render();
+</script>
+</body></html>
