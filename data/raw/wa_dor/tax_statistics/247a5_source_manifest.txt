@@ -1,0 +1,62 @@
+ETL-247A5 - WASHINGTON STATE NET TAX COLLECTIONS
+SOURCE MANIFEST AND METHODOLOGICAL NOTES
+========================================================================
+
+Measure: NET WASHINGTON STATE TAX COLLECTIONS
+Source: Washington Department of Revenue, Tax Statistics, Table 2
+Published total row: ALL STATE TAXES
+Source units: thousands of dollars ($000)
+Normalized units: USD, rounded to cents
+Coverage: Washington State FY2018-FY2024
+Fiscal-year basis: July 1 through June 30
+Purpose: presentation comparison series only
+Canonical federal ledger authorization: NONE
+
+SOURCE WORKBOOKS
+------------------------------------------------------------------------
+File: Table2_2019.xlsx
+URL: https://dor.wa.gov/sites/default/files/2024-03/Table2_2019.xlsx
+Bytes: 14816
+SHA-256: A215053880D0292B7071FF75BB336564208E716EE87B5F2BFC4B6DEC7120F584
+ALL STATE TAXES row: 6
+
+File: Table2_2024.xlsx
+URL: https://dor.wa.gov/sites/default/files/2025-10/Table2_2024.xlsx
+Bytes: 99321
+SHA-256: FDA13D7347326D82605EDFECC7B3F10289D524346FF5952302F9E63B011B9ACA
+ALL STATE TAXES row: 56
+
+ACCOUNTING AND INTERPRETATION
+------------------------------------------------------------------------
+1. Values are taken directly from the published ALL STATE TAXES
+   row in Washington DOR Tax Statistics, Table 2.
+2. DOR net tax collections are used as published. This extraction
+   does not independently reconstruct individual tax categories.
+3. Washington State fiscal years end June 30; federal fiscal years
+   end September 30. Year labels do not imply identical periods.
+4. This series is contextual. It is not an additional federal
+   inflow or outflow and must not alter federal balance arithmetic.
+5. Spreadsheet numeric values are read through openpyxl as Python
+   numbers, converted using Decimal(str(value)), multiplied by
+   1,000, and rounded to cents using ROUND_HALF_UP.
+6. The cents are normalized spreadsheet precision, not an
+   independent certification of cash receipts to the cent.
+7. The DOR published total may include items such as penalties
+   and interest. Preserve the published measure definition.
+8. Original source workbooks are retained without modification.
+
+SOURCE CELL CROSSWALK
+------------------------------------------------------------------------
+FY2018: Table2_2019.xlsx!F6 = $23,885,195,569.33
+FY2019: Table2_2019.xlsx!G6 = $25,743,776,587.68
+FY2020: Table2_2024.xlsx!C56 = $26,834,600,500.65
+FY2021: Table2_2024.xlsx!D56 = $29,969,618,786.66
+FY2022: Table2_2024.xlsx!E56 = $33,443,686,463.26
+FY2023: Table2_2024.xlsx!F56 = $35,387,867,161.72
+FY2024: Table2_2024.xlsx!G56 = $34,507,403,198.56
+
+SEVEN-YEAR TOTAL: $209,772,148,267.86
+
+STATUS: VALIDATED COMPARISON SERIES
+PRESENTATION STATUS: NOT YET INCORPORATED
+FEDERAL LEDGER STATUS: UNCHANGED

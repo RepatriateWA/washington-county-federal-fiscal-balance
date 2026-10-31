@@ -1,0 +1,49 @@
+ETL-247A5 - VALIDATION REPORT
+========================================================================
+
+PASS: Table2_2019.xlsx exists
+PASS: Table2_2019.xlsx SHA-256 matches acquisition
+PASS: Table2_2019.xlsx is a valid ZIP container
+PASS: Table2_2019.xlsx ZIP members pass CRC checks
+PASS: Table2_2019.xlsx contains Table 2
+PASS: Table2_2019.xlsx!A6 is ALL STATE TAXES
+PASS: Table2_2019.xlsx reports values in $000
+PASS: Table2_2019.xlsx!F5 identifies FY2018
+PASS: Table2_2019.xlsx!F6 is numeric
+PASS: FY2018 matches independently observed amount
+PASS: Table2_2019.xlsx!G5 identifies FY2019
+PASS: Table2_2019.xlsx!G6 is numeric
+PASS: FY2019 matches independently observed amount
+PASS: Table2_2024.xlsx exists
+PASS: Table2_2024.xlsx SHA-256 matches acquisition
+PASS: Table2_2024.xlsx is a valid ZIP container
+PASS: Table2_2024.xlsx ZIP members pass CRC checks
+PASS: Table2_2024.xlsx contains Table 2
+PASS: Table2_2024.xlsx!A56 is ALL STATE TAXES
+PASS: Table2_2024.xlsx reports values in $000
+PASS: Table2_2024.xlsx!C5 identifies FY2020
+PASS: Table2_2024.xlsx!C56 is numeric
+PASS: FY2020 matches independently observed amount
+PASS: Table2_2024.xlsx!D5 identifies FY2021
+PASS: Table2_2024.xlsx!D56 is numeric
+PASS: FY2021 matches independently observed amount
+PASS: Table2_2024.xlsx!E5 identifies FY2022
+PASS: Table2_2024.xlsx!E56 is numeric
+PASS: FY2022 matches independently observed amount
+PASS: Table2_2024.xlsx!F5 identifies FY2023
+PASS: Table2_2024.xlsx!F56 is numeric
+PASS: FY2023 matches independently observed amount
+PASS: Table2_2024.xlsx!G5 identifies FY2024
+PASS: Table2_2024.xlsx!G56 is numeric
+PASS: FY2024 matches independently observed amount
+PASS: Exactly seven unique consecutive fiscal years, FY2018-FY2024
+PASS: Seven-year total matches prior ETL-247A4 validation
+
+OBSERVATIONS: 7
+SEVEN-YEAR TOTAL USD: 209772148267.86
+CHECKS PASSED: 37
+CHECKS FAILED: 0
+VALIDATION: PASS
+DATABASE WRITES: NONE
+ACCOUNTING REGISTRY WRITES: NONE
+PRESENTATION WRITES: NONE
