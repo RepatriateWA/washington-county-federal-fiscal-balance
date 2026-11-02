@@ -1,4 +1,4 @@
-# ETL-249D6 ? FY2025 VA GDX Provisional Extension
+# ETL-249D6 - FY2025 VA GDX Provisional Extension
 
 ## Decision
 
@@ -13,7 +13,7 @@ reporting views, or certify a complete statewide federal fiscal balance.
 ## Historical authority
 
 - `VA_GDX_AUTHORIZATION_DECISION.md`
-- Historical scope: FY2018?FY2024.
+- Historical scope: FY2018-FY2024.
 - Historical decision: `QUALIFIED_PROVISIONAL_INFLOW`.
 - Historical certification: ETL-219B5 / ETL-230B3.
 - FY2024 method: Total Direct Expenditure plus Total Indirect Expenditure.
@@ -123,7 +123,7 @@ Not authorized:
 
 FY2025 VA GDX: QUALIFIED_PROVISIONAL_INFLOW_FY2025.
 
-Historical FY2018?FY2024 VA GDX authorization is preserved.
+Historical FY2018-FY2024 VA GDX authorization is preserved.
 
 The complete FY2025 statewide fiscal balance remains provisional
 and subject to coverage, timing, overlap, and source-family
