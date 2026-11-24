@@ -1,0 +1,437 @@
+WCFFBP ETL-250D9B1A
+RECOVERY ARCHIVE INVENTORY AND INTEGRITY AUDIT
+STATUS: PASS
+MODE: READ-ONLY SOURCE AUDIT
+UTC: 2026-11-11T06:59:28.065414+00:00
+
+Archive root: D:\GitHub\WCFFBP_housekeeping_archive
+Portable root variable: WCFFBP_ARCHIVE_ROOT
+
+ZIP archives discovered: 6
+Archives passing integrity checks: 6
+ZIP members inspected: 399
+Members verified: 399
+Exact-content duplicate groups: 5
+Archives requiring review: 0
+
+ARCHIVE DETAILS
+
+250d4b_empty_duplicates.zip
+  Status: PASS
+  Bytes: 35858
+  SHA256: 4f9b6059c52395f2c8a7f639cfe99116360408e79d1af42a512316e1277bd6cd
+  ZIP members: 308
+  Verified members: 308
+  Manifests: 0
+  Provenance files: 0
+  Issues: NONE
+
+250d5d_tracked_duplicates.zip
+  Status: PASS
+  Bytes: 11630
+  SHA256: 19145c39f6964bc10e8dc0eb2e380c0625de0b9c1b09124d1a141b327a96cf24
+  ZIP members: 7
+  Verified members: 7
+  Manifests: 0
+  Provenance files: 0
+  Issues: NONE
+
+250d6e_diagnostic_outputs.zip
+  Status: PASS
+  Bytes: 2028
+  SHA256: 6c2b7881b97b65fb26f52076f5d1b2bf0c509190a664c43bf108c0f77673a491
+  ZIP members: 6
+  Verified members: 6
+  Manifests: 0
+  Provenance files: 1
+  Issues: NONE
+
+250d7d_diagnostic_batch.zip
+  Status: PASS
+  Bytes: 198673
+  SHA256: 0616e10143f6e80e84224b1db2eebe775a57ad674450953bc3f4fd9a43a0c983
+  ZIP members: 59
+  Verified members: 59
+  Manifests: 1
+  Provenance files: 1
+  Issues: NONE
+
+250d8d_git_evidence.zip
+  Status: PASS
+  Bytes: 5956
+  SHA256: 076cdc183fd813cefd3927be67e544b4e34c9f9703c0fd78033c9483b99ce963
+  ZIP members: 9
+  Verified members: 9
+  Manifests: 1
+  Provenance files: 1
+  Issues: NONE
+
+250d8h_routine_diagnostics.zip
+  Status: PASS
+  Bytes: 7213
+  SHA256: 49c60b61e87b3de353dac1708b65296d16e8e0c5c9a7ddc2ec5886b9ef0db089
+  ZIP members: 10
+  Verified members: 10
+  Manifests: 1
+  Provenance files: 1
+  Issues: NONE
+
+EXACT-CONTENT DUPLICATE GROUPS
+SHA256=397db1071c425198d902e87e262e07b08ffb8c56464c63c9b8d2f9cc7d2f6547 BYTES=904
+  250d8h_routine_diagnostics.zip :: 246a1_database.txt
+  250d8h_routine_diagnostics.zip :: 246a_database_tables.txt
+SHA256=b12b22c9f59aad6a290bc13ba66d2b28c4018ecb2c31fb44105eace92cd50ef8 BYTES=6964
+  250d7d_diagnostic_batch.zip :: 238b5b_stdout.txt
+  250d7d_diagnostic_batch.zip :: 240a2c_assistance_bridge_stdout.txt
+SHA256=bfcea13c3e87a02774e632be3b917b53a00be50fe64058a9c0cbc870241c6087 BYTES=3582
+  250d5d_tracked_duplicates.zip :: 201q_e2c4c6_preflight_v2.txt
+  250d5d_tracked_duplicates.zip :: 201q_e2c4c7_release_preflight.txt
+SHA256=cc640d0aa65d30bf3d9aa1ba96c9bce1844f2c731655fb8909d84b7092e2c3bb BYTES=182
+  250d8d_git_evidence.zip :: git_review_224m/diff_check.txt
+  250d8d_git_evidence.zip :: git_review_224m/final_check.txt
+SHA256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 BYTES=0
+  250d4b_empty_duplicates.zip :: 211g_stderr.txt
+  250d4b_empty_duplicates.zip :: 211i_view_errors.txt
+  250d4b_empty_duplicates.zip :: 211j2_stderr.txt
+  250d4b_empty_duplicates.zip :: 211j_columns_stderr.txt
+  250d4b_empty_duplicates.zip :: 211j_stderr.txt
+  250d4b_empty_duplicates.zip :: 211k2_stderr.txt
+  250d4b_empty_duplicates.zip :: 211k3_stderr.txt
+  250d4b_empty_duplicates.zip :: 211k4_stderr.txt
+  250d4b_empty_duplicates.zip :: 211k_stderr.txt
+  250d4b_empty_duplicates.zip :: 211l0_stderr.txt
+  250d4b_empty_duplicates.zip :: 211l2_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m1_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m2_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m3_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m4_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m5a_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m5b_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m5c_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m6a_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m6b_schema_stderr.txt
+  250d4b_empty_duplicates.zip :: 211m7_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n1_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n2_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n3_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n4_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n5_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n5b_retry_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n5b_stderr.txt
+  250d4b_empty_duplicates.zip :: 211n6_stderr.txt
+  250d4b_empty_duplicates.zip :: 212a_stderr.txt
+  250d4b_empty_duplicates.zip :: 212b_stderr.txt
+  250d4b_empty_duplicates.zip :: 212c_stderr.txt
+  250d4b_empty_duplicates.zip :: 212d_stderr.txt
+  250d4b_empty_duplicates.zip :: 212e_stderr.txt
+  250d4b_empty_duplicates.zip :: 212f_stderr.txt
+  250d4b_empty_duplicates.zip :: 212g_stderr.txt
+  250d4b_empty_duplicates.zip :: 212h_stderr.txt
+  250d4b_empty_duplicates.zip :: 212i_stderr.txt
+  250d4b_empty_duplicates.zip :: 212j_stderr.txt
+  250d4b_empty_duplicates.zip :: 212j_v02_stderr.txt
+  250d4b_empty_duplicates.zip :: 212k_stderr.txt
+  250d4b_empty_duplicates.zip :: 212q_stderr.txt
+  250d4b_empty_duplicates.zip :: 212r_stderr.txt
+  250d4b_empty_duplicates.zip :: 212t_stderr.txt
+  250d4b_empty_duplicates.zip :: 213a_stderr.txt
+  250d4b_empty_duplicates.zip :: 213b_stderr.txt
+  250d4b_empty_duplicates.zip :: 213c_stderr.txt
+  250d4b_empty_duplicates.zip :: 213d_stderr.txt
+  250d4b_empty_duplicates.zip :: 213e_stderr.txt
+  250d4b_empty_duplicates.zip :: 213f_stderr.txt
+  250d4b_empty_duplicates.zip :: 213g_stderr.txt
+  250d4b_empty_duplicates.zip :: 213h_stderr.txt
+  250d4b_empty_duplicates.zip :: 213i_stderr.txt
+  250d4b_empty_duplicates.zip :: 213j_stderr.txt
+  250d4b_empty_duplicates.zip :: 213k_stderr.txt
+  250d4b_empty_duplicates.zip :: 213l_stderr.txt
+  250d4b_empty_duplicates.zip :: 213m_stderr.txt
+  250d4b_empty_duplicates.zip :: 213n_stderr.txt
+  250d4b_empty_duplicates.zip :: 213o_stderr.txt
+  250d4b_empty_duplicates.zip :: 213p_stderr.txt
+  250d4b_empty_duplicates.zip :: 213q_stderr.txt
+  250d4b_empty_duplicates.zip :: 213r_stderr.txt
+  250d4b_empty_duplicates.zip :: 213s_stderr.txt
+  250d4b_empty_duplicates.zip :: 213t_stderr.txt
+  250d4b_empty_duplicates.zip :: 213u_stderr.txt
+  250d4b_empty_duplicates.zip :: 213v_stderr.txt
+  250d4b_empty_duplicates.zip :: 213w_stderr.txt
+  250d4b_empty_duplicates.zip :: 213x_stderr.txt
+  250d4b_empty_duplicates.zip :: 213y2_stderr.txt
+  250d4b_empty_duplicates.zip :: 213z_stderr.txt
+  250d4b_empty_duplicates.zip :: 214a_stderr.txt
+  250d4b_empty_duplicates.zip :: 214b_stderr.txt
+  250d4b_empty_duplicates.zip :: 214c_stderr.txt
+  250d4b_empty_duplicates.zip :: 214d_stderr.txt
+  250d4b_empty_duplicates.zip :: 214e_stderr.txt
+  250d4b_empty_duplicates.zip :: 214f_stderr.txt
+  250d4b_empty_duplicates.zip :: 214g_stderr.txt
+  250d4b_empty_duplicates.zip :: 214h_stderr.txt
+  250d4b_empty_duplicates.zip :: 214i_stderr.txt
+  250d4b_empty_duplicates.zip :: 214j_stderr.txt
+  250d4b_empty_duplicates.zip :: 214k_stderr.txt
+  250d4b_empty_duplicates.zip :: 214l_stderr.txt
+  250d4b_empty_duplicates.zip :: 214m1_stderr.txt
+  250d4b_empty_duplicates.zip :: 214m2a1_stderr.txt
+  250d4b_empty_duplicates.zip :: 214m2a2_stderr.txt
+  250d4b_empty_duplicates.zip :: 214m2a_stderr.txt
+  250d4b_empty_duplicates.zip :: 214m2b0_stderr.txt
+  250d4b_empty_duplicates.zip :: 215a1_stderr.txt
+  250d4b_empty_duplicates.zip :: 215a_stderr.txt
+  250d4b_empty_duplicates.zip :: 215b_stderr.txt
+  250d4b_empty_duplicates.zip :: 215c_stderr.txt
+  250d4b_empty_duplicates.zip :: 215d_stderr.txt
+  250d4b_empty_duplicates.zip :: 215e_stderr.txt
+  250d4b_empty_duplicates.zip :: 215f_stderr.txt
+  250d4b_empty_duplicates.zip :: 215h0_stderr.txt
+  250d4b_empty_duplicates.zip :: 216a_stderr.txt
+  250d4b_empty_duplicates.zip :: 216b_stderr.txt
+  250d4b_empty_duplicates.zip :: 216d_stderr.txt
+  250d4b_empty_duplicates.zip :: 216e_stderr.txt
+  250d4b_empty_duplicates.zip :: 216g_stderr.txt
+  250d4b_empty_duplicates.zip :: 218c_stderr.txt
+  250d4b_empty_duplicates.zip :: 219b3_stderr.txt
+  250d4b_empty_duplicates.zip :: 221a_stderr.txt
+  250d4b_empty_duplicates.zip :: 221c_stderr.txt
+  250d4b_empty_duplicates.zip :: 221d_stderr.txt
+  250d4b_empty_duplicates.zip :: 221e_stderr.txt
+  250d4b_empty_duplicates.zip :: 221f_stderr.txt
+  250d4b_empty_duplicates.zip :: 221g_stderr.txt
+  250d4b_empty_duplicates.zip :: 221h_stderr.txt
+  250d4b_empty_duplicates.zip :: 221i_stderr.txt
+  250d4b_empty_duplicates.zip :: 221j_stderr.txt
+  250d4b_empty_duplicates.zip :: 221k_stderr.txt
+  250d4b_empty_duplicates.zip :: 221l_stderr.txt
+  250d4b_empty_duplicates.zip :: 221m_stderr.txt
+  250d4b_empty_duplicates.zip :: 221n_stderr.txt
+  250d4b_empty_duplicates.zip :: 221o_stderr.txt
+  250d4b_empty_duplicates.zip :: 221p_stderr.txt
+  250d4b_empty_duplicates.zip :: 221q_stderr.txt
+  250d4b_empty_duplicates.zip :: 221r_stderr.txt
+  250d4b_empty_duplicates.zip :: 221s_stderr.txt
+  250d4b_empty_duplicates.zip :: 221t_stderr.txt
+  250d4b_empty_duplicates.zip :: 221u1_stderr.txt
+  250d4b_empty_duplicates.zip :: 221u2_stderr.txt
+  250d4b_empty_duplicates.zip :: 221u3_stderr.txt
+  250d4b_empty_duplicates.zip :: 221u4_stderr.txt
+  250d4b_empty_duplicates.zip :: 221u5_stderr.txt
+  250d4b_empty_duplicates.zip :: 221u6a_stderr.txt
+  250d4b_empty_duplicates.zip :: 222a1_stderr.txt
+  250d4b_empty_duplicates.zip :: 222b_stderr.txt
+  250d4b_empty_duplicates.zip :: 222c_stderr.txt
+  250d4b_empty_duplicates.zip :: 223a_stderr.txt
+  250d4b_empty_duplicates.zip :: 223b_stderr.txt
+  250d4b_empty_duplicates.zip :: 223c_stderr.txt
+  250d4b_empty_duplicates.zip :: 223d_stderr.txt
+  250d4b_empty_duplicates.zip :: 223e_stderr.txt
+  250d4b_empty_duplicates.zip :: 223f_stderr.txt
+  250d4b_empty_duplicates.zip :: 223g_stderr.txt
+  250d4b_empty_duplicates.zip :: 223h_stderr.txt
+  250d4b_empty_duplicates.zip :: 223i_stderr.txt
+  250d4b_empty_duplicates.zip :: 223j_stderr.txt
+  250d4b_empty_duplicates.zip :: 223k_stderr.txt
+  250d4b_empty_duplicates.zip :: 223l_stderr.txt
+  250d4b_empty_duplicates.zip :: 223m_stderr.txt
+  250d4b_empty_duplicates.zip :: 223n1_stderr.txt
+  250d4b_empty_duplicates.zip :: 223n3_stderr.txt
+  250d4b_empty_duplicates.zip :: 223n4_stderr.txt
+  250d4b_empty_duplicates.zip :: 223n5_stderr.txt
+  250d4b_empty_duplicates.zip :: 223n_staged_check.txt
+  250d4b_empty_duplicates.zip :: 224b_historical_assistance_errors.txt
+  250d4b_empty_duplicates.zip :: 224c_statewide_component_errors.txt
+  250d4b_empty_duplicates.zip :: 224d_reporting_integration_stderr.txt
+  250d4b_empty_duplicates.zip :: 224e_existing_assembly_stderr.txt
+  250d4b_empty_duplicates.zip :: 224f_assistance_ledger_errors.txt
+  250d4b_empty_duplicates.zip :: 224g_post_224m_stderr.txt
+  250d4b_empty_duplicates.zip :: 224g_stderr.txt
+  250d4b_empty_duplicates.zip :: 224h_stderr.txt
+  250d4b_empty_duplicates.zip :: 224i_recovery_preflight_stderr.txt
+  250d4b_empty_duplicates.zip :: 225h_preferred_source_stderr.txt
+  250d4b_empty_duplicates.zip :: 225i_state_identifier_stderr.txt
+  250d4b_empty_duplicates.zip :: 225k_statewide_components_stderr.txt
+  250d4b_empty_duplicates.zip :: 225l1_stderr.txt
+  250d4b_empty_duplicates.zip :: 225l2_stderr.txt
+  250d4b_empty_duplicates.zip :: 225m2_stderr.txt
+  250d4b_empty_duplicates.zip :: 225m3_stderr.txt
+  250d4b_empty_duplicates.zip :: 225m4_stderr.txt
+  250d4b_empty_duplicates.zip :: 225n2_stderr.txt
+  250d4b_empty_duplicates.zip :: 225n3_stderr.txt
+  250d4b_empty_duplicates.zip :: 225o3_stderr.txt
+  250d4b_empty_duplicates.zip :: 225o4_stderr.txt
+  250d4b_empty_duplicates.zip :: 225q2_medicare_schema_stderr.txt
+  250d4b_empty_duplicates.zip :: 225q3_state_linkage_stderr.txt
+  250d4b_empty_duplicates.zip :: 225q4_medicare_reconciliation_stderr.txt
+  250d4b_empty_duplicates.zip :: 225r1_medicare_partc_stderr.txt
+  250d4b_empty_duplicates.zip :: 225r2_medicare_partc_precision_stderr.txt
+  250d4b_empty_duplicates.zip :: 225r2_medicare_partc_precision_stdout.txt
+  250d4b_empty_duplicates.zip :: 226c3_stderr.txt
+  250d4b_empty_duplicates.zip :: 226c4_stderr.txt
+  250d4b_empty_duplicates.zip :: 230c_216d_stderr.txt
+  250d4b_empty_duplicates.zip :: 235c_ssi_stderr.txt
+  250d4b_empty_duplicates.zip :: 235d3_stderr.txt
+  250d4b_empty_duplicates.zip :: 235d4_stderr.txt
+  250d4b_empty_duplicates.zip :: 235d5_stderr.txt
+  250d4b_empty_duplicates.zip :: 235d8_stderr.txt
+  250d4b_empty_duplicates.zip :: 235d_stderr.txt
+  250d4b_empty_duplicates.zip :: 235d_stdout.txt
+  250d4b_empty_duplicates.zip :: 236a_stderr.txt
+  250d4b_empty_duplicates.zip :: 236b_stderr.txt
+  250d4b_empty_duplicates.zip :: 236c_stderr.txt
+  250d4b_empty_duplicates.zip :: 236d_stderr.txt
+  250d4b_empty_duplicates.zip :: 236e_stderr.txt
+  250d4b_empty_duplicates.zip :: 236f_stderr.txt
+  250d4b_empty_duplicates.zip :: 236g_stderr.txt
+  250d4b_empty_duplicates.zip :: 236h_stderr.txt
+  250d4b_empty_duplicates.zip :: 236i_stderr.txt
+  250d4b_empty_duplicates.zip :: 236j_railroad_source_inventory.txt
+  250d4b_empty_duplicates.zip :: 236j_stderr.txt
+  250d4b_empty_duplicates.zip :: 237a_stderr.txt
+  250d4b_empty_duplicates.zip :: 237b_stderr.txt
+  250d4b_empty_duplicates.zip :: 238a_stderr.txt
+  250d4b_empty_duplicates.zip :: 238b4_stderr.txt
+  250d4b_empty_duplicates.zip :: 238b5a_stderr.txt
+  250d4b_empty_duplicates.zip :: 238b5b_fy2023_named_programs_stderr.txt
+  250d4b_empty_duplicates.zip :: 238b5b_fy2023_program_profile_stderr.txt
+  250d4b_empty_duplicates.zip :: 238b5b_fy2023_retirement_universe_errors.txt
+  250d4b_empty_duplicates.zip :: 238b5b_program_description_errors.txt
+  250d4b_empty_duplicates.zip :: 238b5b_stderr.txt
+  250d4b_empty_duplicates.zip :: 238b6c_stderr.txt
+  250d4b_empty_duplicates.zip :: 238b8_stderr.txt
+  250d4b_empty_duplicates.zip :: 239a10_county_refund_profile_stderr.txt
+  250d4b_empty_duplicates.zip :: 239a11_refund_geography_reconciliation_stderr.txt
+  250d4b_empty_duplicates.zip :: 239a14_stderr.txt
+  250d4b_empty_duplicates.zip :: 239a15_washington_refundable_credit_stderr.txt
+  250d4b_empty_duplicates.zip :: 239a17_irs_monetary_units_stderr.txt
+  250d4b_empty_duplicates.zip :: 239a8_tax_credit_database_inventory_stderr.txt
+  250d4b_empty_duplicates.zip :: 239a9_refund_credit_evidence_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1a_irs_refund_source_inventory_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1b_irs_refund_acquisition_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1c_irs_refund_structure_retry_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1c_irs_refund_structure_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1d_irs_refund_reconciliation_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e2_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e3_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e5_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e6b_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e6c_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e6d_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e7a_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e7d_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e8a_diagnostic_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e8a_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e8a_stdout.txt
+  250d4b_empty_duplicates.zip :: 239b1e8b_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e8c_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e8d_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e9a_stderr.txt
+  250d4b_empty_duplicates.zip :: 239b1e9c_stderr.txt
+  250d4b_empty_duplicates.zip :: 240a2a_stderr.txt
+  250d4b_empty_duplicates.zip :: 240a2c_assistance_bridge_stderr.txt
+  250d4b_empty_duplicates.zip :: 240a2e_unresolved_assistance_stderr.txt
+  250d4b_empty_duplicates.zip :: 240a2h10_stderr.txt
+  250d4b_empty_duplicates.zip :: 240a2h8_schema_stderr.txt
+  250d4b_empty_duplicates.zip :: 240a2h9_stderr.txt
+  250d4b_empty_duplicates.zip :: 242a5_stderr.txt
+  250d4b_empty_duplicates.zip :: 243a2_stderr.txt
+  250d4b_empty_duplicates.zip :: 243a3_stderr.txt
+  250d4b_empty_duplicates.zip :: 243a4_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b1_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b2_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b3a_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b3b_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b4_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b5_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b6a_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b6b1_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b6b2_stderr.txt
+  250d4b_empty_duplicates.zip :: 243b6b3_stderr.txt
+  250d4b_empty_duplicates.zip :: 243c1_stderr.txt
+  250d4b_empty_duplicates.zip :: 243c2_stderr.txt
+  250d4b_empty_duplicates.zip :: 243c3_stderr.txt
+  250d4b_empty_duplicates.zip :: 243d1_stderr.txt
+  250d4b_empty_duplicates.zip :: 243e1_stderr.txt
+  250d4b_empty_duplicates.zip :: 243e1_stdout.txt
+  250d4b_empty_duplicates.zip :: 243e1a_stdout.txt
+  250d4b_empty_duplicates.zip :: 243e1b_stderr.txt
+  250d4b_empty_duplicates.zip :: 245a_retirement_content_errors.txt
+  250d4b_empty_duplicates.zip :: 245m10_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m11_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m12_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m13_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m14_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m15b_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m15c_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m15d_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m15f_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m15g_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m15h_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m15i_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m1_acquisition_stdout.txt
+  250d4b_empty_duplicates.zip :: 245m1a_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m1b_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m5_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m6_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m7_stderr.txt
+  250d4b_empty_duplicates.zip :: 245m9_stderr.txt
+  250d4b_empty_duplicates.zip :: 245r5_presentation_component_errors.txt
+  250d4b_empty_duplicates.zip :: 245r6_provisional_coverage_errors.txt
+  250d4b_empty_duplicates.zip :: 246a1_dashboard_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a1_database_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a1_repository_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a2_annual_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a2_columns_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a3_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a4_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a5_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a6_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a7_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a8_stderr.txt
+  250d4b_empty_duplicates.zip :: 246a_database_stderr.txt
+  250d4b_empty_duplicates.zip :: 246b1_stderr.txt
+  250d4b_empty_duplicates.zip :: 246c1_stderr.txt
+  250d4b_empty_duplicates.zip :: 246c2_stderr.txt
+  250d4b_empty_duplicates.zip :: 246c3_stderr.txt
+  250d4b_empty_duplicates.zip :: 246d1_stderr.txt
+  250d4b_empty_duplicates.zip :: 247a1_stderr.txt
+  250d4b_empty_duplicates.zip :: 249e1b_python_stderr.txt
+  250d4b_empty_duplicates.zip :: git_review_224m/final_check_2.txt
+  250d4b_empty_duplicates.zip :: military_retirement_db_inventory.err.txt
+  250d4b_empty_duplicates.zip :: military_retirement_db_inventory.txt
+
+ISSUES
+NONE
+
+EXISTING ROOT-LEVEL HOUSEKEEPING REPORTS
+250d4a_empty_duplicate_preflight.txt
+250d4b_archive_verification.txt
+250d4c_cleanup_verification.txt
+250d5a_tracked_duplicate_verification.txt
+250d5d_archive_verification.txt
+250d5e_cleanup_verification.txt
+250d6d_referenced_artifact_preflight.txt
+250d6e_archive_verification.txt
+250d6f_cleanup_verification.txt
+250d7d_archive_verification.txt
+250d7e_authorized_preflight.txt
+250d7e_cleanup_verification.txt
+250d8c_git_commit_verification.txt
+250d8d_archive_verification.txt
+250d8e_authorized_preflight.txt
+250d8e_cleanup_verification.txt
+250d8f_archive_candidate_summary.txt
+250d8h_archive_verification.txt
+250d8i_authorized_preflight.txt
+250d8i_cleanup_verification.txt
+
+LIMITATIONS
+ZIP integrity and member SHA256 verified.
+Manifest fields have not yet been reconciled.
+Historical deletion counts not yet reconciled.
+Accounting-family classifications not yet certified.
+Backup storage copies not yet verified.
+
+Archive files modified: NONE
+Original files deleted: NONE
+Git staging/commit: NONE
+Database modifications: NONE

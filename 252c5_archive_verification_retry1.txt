@@ -1,0 +1,23 @@
+WCFFBP ETL-252C5 ? VERIFIED ARCHIVAL COPY
+Generated UTC: 2026-11-24T00:39:47.818851+00:00
+Repository: D:\GitHub\washington-county-federal-fiscal-balance
+Archive: D:\GitHub\WCFFBP_housekeeping_archive\252c5_historical_diagnostics.zip
+
+Authorization: COPY AND VERIFY ONLY
+Deletion authorized: NO
+Git changes authorized: NO
+
+Source preflight: PASS (963 files)
+Archive member verification: PASS
+Verified source files: 963
+Verified ZIP members: 964
+Archive size: 4,677,493
+Archive SHA-256: 3dcc825ac89d29fc6cd930a5619ea973e444f6a97695edf3530c2e76f18ff0f7
+Archive index: D:\GitHub\washington-county-federal-fiscal-balance\252c5_archived_file_index_retry1.csv
+
+Original files deleted: 0
+Original files moved: 0
+Existing archives modified: 0
+Git commits performed: 0
+
+ETL-252C5: PASS

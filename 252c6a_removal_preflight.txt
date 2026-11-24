@@ -1,0 +1,17 @@
+WCFFBP ETL-252C6A ? REMOVAL PREFLIGHT
+READ-ONLY SOURCE AND ARCHIVE VERIFICATION
+
+Archive: D:\GitHub\WCFFBP_housekeeping_archive\252c5_historical_diagnostics.zip
+Archive SHA-256: 3dcc825ac89d29fc6cd930a5619ea973e444f6a97695edf3530c2e76f18ff0f7
+Indexed files: 963
+Verified candidates: 963
+Exceptions: 0
+
+EXCEPTIONS:
+
+Deletion authorized: NO
+Files moved or deleted: 0
+Archives modified: 0
+Git changes performed: 0
+
+ETL-252C6A: PASS
