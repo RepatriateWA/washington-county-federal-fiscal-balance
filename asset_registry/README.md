@@ -91,3 +91,30 @@ catalog and index, not the external ZIP payloads.
 - ETL-252C8G: selective content retrieval
 - ETL-252C8H: permanent index preparation
 - ETL-252C8I: index validation
+
+## ETL-252C9I selective recovery verification
+
+The ETL-252C9I recovery exercise selected 20 working
+assets using a deterministic size-distributed sample,
+including the smallest and largest assets.
+
+All 20 selected backup files passed in-memory byte-stream
+reconstruction, size comparison, and SHA-256 verification
+against the registered source fingerprints.
+
+The `recovery_tested` field is YES only for these 20
+individually tested assets. The remaining 697 records
+retain NO.
+
+This test demonstrates selective backup readability and
+byte-level reconstruction. It does not constitute
+restoration to a separate filesystem location, application
+execution, database restoration, or disaster recovery
+testing.
+
+Evidence:
+- `../252c9i_recovery_summary.txt`
+- `../252c9i_recovery_test.csv`
+
+No asset disposition or deletion authorization follows
+from this recovery test.

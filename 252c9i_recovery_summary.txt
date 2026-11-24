@@ -1,0 +1,13 @@
+ETL-252C9I SELECTIVE BACKUP RECOVERY TEST
+
+Assets sampled: 20
+Recovery PASS: 20
+Recovery FAIL: 0
+Selection: smallest, largest, 18 size-distributed
+Method: in-memory backup byte-stream reconstruction
+Original assets modified: NO
+Backup assets modified: NO
+Registry modified: NO
+Git operations: NONE
+
+STATUS: PASS

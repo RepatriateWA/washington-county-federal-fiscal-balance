@@ -1,0 +1,13 @@
+ETL-252C9J RECOVERY REGISTRATION
+
+Backup verified YES: 717
+Recovery tested YES: 20
+Recovery tested NO: 697
+Recovery method: in-memory byte-stream reconstruction
+Separate filesystem restoration performed: NO
+Asset disposition changes: NONE
+Deletion authorization changes: NONE
+Historical ZIPs modified: NO
+Git stage/commit/push: NO
+
+STATUS: PREPARED_FOR_REVIEW
