@@ -87,3 +87,9 @@ At the beginning of each substantive WCFFBP session:
 **Progress is cumulative. Accounting conclusions may change, but the evidence and reasoning that produced them must remain auditable.**
 
 The registry is the project's institutional memory and completeness control—not merely a reporting convenience.
+
+## Asset Preservation Registry reference
+
+See [Asset Preservation Registry](../asset_registry/README.md) for the preservation inventory and archive discovery workflow.
+
+Before acquiring replacement evidence, review the Asset Preservation Registry and existing archives. An archived source remains part of the project's available evidence and must retain discoverable provenance, retrieval instructions, and verifiable integrity information. Archive completion requires demonstrated retrievability.

@@ -106,3 +106,7 @@ Update this catalog whenever archives are added, relocated, or restored.
 
 **Preservation principle:** Never sacrifice source provenance or
 reproducibility merely to obtain a clean Git working tree.
+
+## Asset Preservation Registry reference
+
+See [Asset Preservation Registry](../../asset_registry/ARCHIVE_CROSSWALK.md) for the preservation inventory and archive discovery workflow.

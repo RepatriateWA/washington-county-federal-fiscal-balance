@@ -245,3 +245,7 @@ The registry shall be maintained according to the following principles:
 **Nonpartisanship:** Accounting inclusion, exclusion, and measurement decisions must be determined by evidence and methodology rather than by the direction or magnitude of the resulting fiscal balance.
 
 **Measure first. Explain later.**
+
+## Asset Preservation Registry reference
+
+See [Asset Preservation Registry](../../asset_registry/README.md) for the preservation inventory and archive discovery workflow.

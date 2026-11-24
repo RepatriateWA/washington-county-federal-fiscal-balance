@@ -65,3 +65,7 @@ obligations, timing bases, and overlapping source families.
 
 The registry is the permanent restart reference.
 Update this page after each committed family authorization.
+
+## Asset Preservation Registry reference
+
+See [Asset Preservation Registry](asset_registry/README.md) for the preservation inventory and archive discovery workflow.
