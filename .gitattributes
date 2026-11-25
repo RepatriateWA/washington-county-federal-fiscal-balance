@@ -388,3 +388,7 @@
 /validate_assistance_FY2018_batch20.sql -text
 /validate_assistance_FY2019_batch21.sql -text
 /docs/preservation/ETL-252D_CODE_MANIFEST.csv -text
+/data/raw/irs/refunds_issued/validation/acquisition_manifest.csv -text
+/data/raw/irs/refunds_issued/validation/reconciliation_v0_1/refund_categories.csv -text
+/data/raw/irs/refunds_issued/validation/reconciliation_v0_1/refund_totals.csv -text
+/data/raw/irs/refunds_issued/validation/reconciliation_v0_1/source_notes.csv -text

@@ -1,0 +1,73 @@
+WCFFBP — ETL-252D12F6C
+PROPOSED IRS REFUND EVIDENCE PUBLICATION DECISION RECORD
+STATUS: DRAFT FOR REVIEW — NOT APPROVED — NOT STAGED
+
+1. PURPOSE AND SCOPE
+This proposed record evaluates public GitHub publication of 11 preserved IRS refund evidence assets (WCFFBP-ASSET-00334 through WCFFBP-ASSET-00344): seven recorded IRS statistical workbooks for FY2018–FY2024 and four project-generated validation/reconciliation CSVs. The separately staged preservation manifest and .gitattributes rules are part of the 13-path technical transaction. This draft is not a release decision.
+
+2. TECHNICAL EVIDENCE ESTABLISHED
+ETL-252D12F5C4 and ETL-252D12F6A verified the approved 13-path staging scope, exact staged/working byte identity, all 11 SHA-256 fingerprints, the permanent precommit manifest, the effective exact-byte attributes for the four CSVs, and consistency with the backup registry. ETL-252D12F6B repeated staged byte/fingerprint checks and reported zero hits for the specified email, SSN-like, private-key-header, and credential-label patterns. Six XLSX files had no flagged special archive components. The legacy 2018 XLS received a limited binary scan in F6B; a prior F4A structured inspection was reported separately and should be retained as an independent reference rather than implied by F6B.
+
+3. PROVENANCE AND RIGHTS — REVIEW BASIS, NOT LEGAL CONCLUSION
+The seven source workbook paths are recorded as official IRS Data Book Table 8 statistical workbooks. The acquisition manifest reportedly records IRS source URLs. The four CSVs are project-generated derivatives documenting acquisition, refund categories, totals, and source notes. Official public-source provenance supports a presumption of public statistical content but does not alone establish every reuse right or resolve possible third-party material. Confirm attribution, source URLs, and applicable federal-government/public-domain or reuse terms before approval. In particular, confirm that copied IRS explanatory notes are appropriately attributed and no third-party material is included. No live source URL or legal-terms verification was performed in F6B.
+
+4. SENSITIVITY — REVIEW BASIS, NOT GUARANTEE
+No indicators were detected in the four searched pattern classes. These are heuristic checks and do not rule out all personal information, metadata, external links, embedded content, or confidential material. The CSVs parsed successfully; record counts were 7, 128, 14, and 79. The six XLSX files received XML/archive scans; the 2018 XLS scan in F6B was limited, with prior separate F4A inspection noted. A human reviewer should inspect representative workbook content and metadata, CSV headers and values, and the 2018 XLS inspection evidence before recording clearance.
+
+5. ACCOUNTING AND ARCHIVAL BOUNDARIES
+Publication or preservation of these assets does NOT certify refund category classifications, net IRS tax collections, ledger authorization, or the provisional statewide balance. The derived refund categories contain SOURCE_CATEGORY_UNRECONCILED classifications and refund totals include NOT_AUTHORIZED ledger statuses. No source data is modified, and no historical methodology decision is reopened by this record. The permanent preservation manifest remains a precommit snapshot with PROPOSED_NOT_COMMITTED. A future actual commit SHA belongs in a separate preservation-event record. No deletion is authorized. Backup recovery testing remains a separate open control.
+
+6. GIT WHITESPACE OBSERVATION
+The F6A git diff --cached --check returned code 2 with warnings against preserved CSV CRLF line endings. The exact original bytes must not be rewritten merely to silence these warnings. The active four-path -text rules prevent normal Git line-ending conversion for those paths; F5C4 verified exact staged bytes.
+
+7. OUTSTANDING RELEASE GATES
+[ ] Confirm official IRS workbook source URLs and source attribution.
+[ ] Document applicable reuse terms, including treatment of copied source notes.
+[ ] Manually examine the four derived CSVs for unintended disclosures.
+[ ] Confirm legacy XLS review evidence and any workbook metadata concerns.
+[ ] Record a named reviewer, review date, and explicit approval or rejection for public GitHub publication.
+[ ] Separately authorize the preservation commit and subsequent push; approval of this draft alone authorizes neither.
+
+8. PROPOSED DECISION (NOT EXECUTED)
+Decision: PENDING — DO NOT TREAT AS PUBLICATION APPROVAL.
+Technical preservation readiness: VERIFIED.
+Automated sensitivity indicators: NO MATCHES IN DEFINED SCANS.
+Licensing/reuse clearance: PENDING HUMAN REVIEW.
+Sensitivity clearance: PENDING HUMAN REVIEW.
+Accounting certification: NOT DETERMINED BY PRESERVATION.
+Public commit/push authorization: NOT GRANTED.
+Deletion authorization: NO.
+
+9. ASSET-SPECIFIC TRACEABILITY
+Asset ID | Origin | Path | Bytes | SHA-256 | Inspection | Licensing | Sensitivity
+WCFFBP-ASSET-00334 | IRS_WORKBOOK_RECORDED | data/raw/irs/refunds_issued/source/18db08rf.xls | 68096 | ff4e3acd8ea63be54f7a1f843d77948d7f06cee97c4ef6e14947b4dc64521870 | LEGACY_XLS_LIMITED_BINARY_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00335 | IRS_WORKBOOK_RECORDED | data/raw/irs/refunds_issued/source/19dbs01t08rf.xlsx | 35338 | 581185929452f584b265c3a3a246a7f4a2bd99ee9dfadb0809da0fbfa9209d6a | XLSX_XML_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00336 | IRS_WORKBOOK_RECORDED | data/raw/irs/refunds_issued/source/20dbs01t08rf.xlsx | 36146 | 423d56f65aca1bad95e09ebf097e4dc30b687fbba1ff42abe8c710994908a2c4 | XLSX_XML_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00337 | IRS_WORKBOOK_RECORDED | data/raw/irs/refunds_issued/source/21dbs01t08rf.xlsx | 38493 | 764575a1ca594378b395dbec5d9dba89ece1ae924301db2d0cdb54f27a8067cb | XLSX_XML_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00338 | IRS_WORKBOOK_RECORDED | data/raw/irs/refunds_issued/source/22dbs01t08rf.xlsx | 40736 | ec43c8e828b91077260538b788a08f6d3ff98e6f63dc7135d49f1982c3ac249f | XLSX_XML_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00339 | IRS_WORKBOOK_RECORDED | data/raw/irs/refunds_issued/source/23dbs01t08rf.xlsx | 33084 | c0f4f348ccdf6d34a7428c913955ffc0bff4df4661e58ad484a0cf0cd7189ac7 | XLSX_XML_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00340 | IRS_WORKBOOK_RECORDED | data/raw/irs/refunds_issued/source/24dbs01t08rf.xlsx | 33028 | 5a339fe2f14e19134e5b9bb52e959c05fd6bb898b4f0f3de790996f3f30ca927 | XLSX_XML_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00341 | PROJECT_DERIVED_CSV_RECORDED | data/raw/irs/refunds_issued/validation/acquisition_manifest.csv | 2409 | 133f635fb731a987ac42248dff1faaaac857e7878064f397223cffa1fd7b77a9 | FULL_CSV_BYTE_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00342 | PROJECT_DERIVED_CSV_RECORDED | data/raw/irs/refunds_issued/validation/reconciliation_v0_1/refund_categories.csv | 14088 | 33b329ec1276a0afc8ec0f29869b252462f65bfb7ce97d617b49a40d604b87e3 | FULL_CSV_BYTE_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00343 | PROJECT_DERIVED_CSV_RECORDED | data/raw/irs/refunds_issued/validation/reconciliation_v0_1/refund_totals.csv | 1716 | 55d0ea1a73539de6d0eeb8a38c8cf0fcc52dbaca994283166a79d04a913e3d0b | FULL_CSV_BYTE_SCAN | PENDING | PENDING_MANUAL
+WCFFBP-ASSET-00344 | PROJECT_DERIVED_CSV_RECORDED | data/raw/irs/refunds_issued/validation/reconciliation_v0_1/source_notes.csv | 35647 | f1daa35c59a5b460558fd8f109a2222c7200aa54930321ce60e6dd46d4301e17 | FULL_CSV_BYTE_SCAN | PENDING | PENDING_MANUAL
+
+10. EVIDENCE REFERENCES
+252d12f5c4_exact_byte_summary.txt; 252d12f5c4_exact_byte_verification.csv
+252d12f6a_precommit_review.txt; 252d12f6a_precommit_matrix.csv
+252d12f6b_publication_review_summary.txt; 252d12f6b_publication_review_matrix.csv
+252d12f5a_permanent_manifest_candidate.csv
+docs/preservation/ETL-252D_IRS_REFUND_SOURCE_MANIFEST.csv (staged, not committed)
+data/raw/irs/refunds_issued/validation/acquisition_manifest.csv (staged, not committed)
+ETL-252D12F4A legacy XLS inspection (previously reported; verify retained report before clearance)
+
+11. SIGN-OFF FIELDS (INTENTIONALLY BLANK)
+Reviewer: ____________________
+Review date: ____________________
+Licensing/reuse decision and basis: ____________________
+Sensitivity decision and basis: ____________________
+Public-release decision: ____________________
+Separate commit authorization: ____________________
+Separate push authorization: ____________________
+
+END OF DRAFT — NO FILES IN USER REPOSITORY MODIFIED

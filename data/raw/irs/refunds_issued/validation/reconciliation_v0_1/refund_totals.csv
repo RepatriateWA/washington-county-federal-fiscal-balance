@@ -1,0 +1,15 @@
+fiscal_year,geography,refund_total_thousands,refund_total_usd,source_workbook,source_sheet,source_cell,measure,ledger_authorization
+2018,US,463884727.0,463884727000.0,18db08rf.xls,Table 8,B5,IRS refunds issued including interest,NOT_AUTHORIZED
+2018,WA,8624096.0,8624096000.0,18db08rf.xls,Table 8,B53,IRS refunds issued including interest,NOT_AUTHORIZED
+2019,US,452103909,452103909000,19dbs01t08rf.xlsx,Table 8,B5,IRS refunds issued including interest,NOT_AUTHORIZED
+2019,WA,9598756,9598756000,19dbs01t08rf.xlsx,Table 8,B53,IRS refunds issued including interest,NOT_AUTHORIZED
+2020,US,736154793,736154793000,20dbs01t08rf.xlsx,Table 8,B6,IRS refunds issued including interest,NOT_AUTHORIZED
+2020,WA,14645411,14645411000,20dbs01t08rf.xlsx,Table 8,B54,IRS refunds issued including interest,NOT_AUTHORIZED
+2021,US,1137821285,1137821285000,21dbs01t08rf.xlsx,Table 8,B6,IRS refunds issued including interest,NOT_AUTHORIZED
+2021,WA,25385461,25385461000,21dbs01t08rf.xlsx,Table 8,B54,IRS refunds issued including interest,NOT_AUTHORIZED
+2022,US,641731694,641731694000,22dbs01t08rf.xlsx,Table 8,B6,IRS refunds issued including interest,NOT_AUTHORIZED
+2022,WA,12290153,12290153000,22dbs01t08rf.xlsx,Table 8,B54,IRS refunds issued including interest,NOT_AUTHORIZED
+2023,US,659051685,659051685000,23dbs01t08rf.xlsx,Table 8,B5,IRS refunds issued including interest,NOT_AUTHORIZED
+2023,WA,12416366,12416366000,23dbs01t08rf.xlsx,Table 8,B53,IRS refunds issued including interest,NOT_AUTHORIZED
+2024,US,552661058,552661058000,24dbs01t08rf.xlsx,Table 8,B5,IRS refunds issued including interest,NOT_AUTHORIZED
+2024,WA,9134041,9134041000,24dbs01t08rf.xlsx,Table 8,B53,IRS refunds issued including interest,NOT_AUTHORIZED

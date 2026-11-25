@@ -1,0 +1,48 @@
+WCFFBP ETL-252D12F6G
+FINAL IRS REFUND EVIDENCE PUBLICATION CLEARANCE
+
+Decision: APPROVED FOR PUBLIC GITHUB PRESERVATION
+Scope: WCFFBP-ASSET-00334 through WCFFBP-ASSET-00344
+Number of assets: 11
+Authorizing party: WCFFBP project owner
+Authorization: Explicit approval in project conversation,
+following review of ETL-252D12F6F results.
+
+EVIDENCE BASIS
+
+ETL-252D12F6A: Verified precommit staging.
+ETL-252D12F6B: Publication sensitivity screening.
+ETL-252D12F6C: Approved preservation decision record.
+ETL-252D12F6D: Exact-byte decision record integration.
+ETL-252D12F6F: Comprehensive workbook and CSV inspection.
+
+Seven IRS workbooks and four project-derived CSV files
+are included in the approved public preservation scope.
+
+All eleven original asset fingerprints were verified.
+No specified sensitive-data patterns were detected.
+Six XLSX files contained ordinary author metadata.
+The legacy 2018 XLS OLE-format inspection limitation
+is expressly acknowledged and accepted.
+
+The authorizing party accepts the documented inspection
+limitations and approves public publication of all
+eleven assets and associated preservation documentation.
+
+This is a project publication decision, not a guarantee
+that every conceivable sensitive-data or reuse issue
+has been excluded.
+
+ACCOUNTING AND ARCHIVE RESTRICTIONS
+
+Publication does not certify IRS refund reconciliation,
+ledger authorization, or any provisional fiscal balance.
+No original source bytes may be modified.
+No archive deletion is authorized.
+Backup and recovery obligations remain unchanged.
+
+The earlier F6C decision record is retained unchanged
+as historical evidence of the review process.
+
+Git commit and remote publication are to be recorded
+by the ETL-252D12F6G publication result.
